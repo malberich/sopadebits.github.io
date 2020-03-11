@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sopadebits.com/sitemap.xml

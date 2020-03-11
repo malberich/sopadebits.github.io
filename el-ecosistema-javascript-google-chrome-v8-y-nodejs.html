@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>El ecosistema javascript (Google chrome, V8 y nodejs) - Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <div class="row">
+    <div class="col-sm-4 hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/los-datos-abiertos-y-los-anuarios-estadisticos">&laquo;&nbsp;Los datos abiertos y los anuarios estadísticos</a>
+        
+    </div>
+    <div class="col-sm-4 hidden-xs text-center">
+        <a class="btn btn-lg" href="https://sopadebits.com/">
+            <span class="fa fa-home"></span>
+        </a>
+    </div>
+    <div class="col-sm-4 text-right pull-right hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/el-testeo-para-la-mejora-de-la-experiencia-de-usuario">El testeo para la mejora de la experiencia de usuario&nbsp;&raquo;</a>
+        
+    </div>
+
+    <div class="col-xs-6 visible-xs">
+        
+            <a class="badge" href="/los-datos-abiertos-y-los-anuarios-estadisticos" alt="Los datos abiertos y los anuarios estadísticos" title="Los datos abiertos y los anuarios estadísticos">&laquo;&nbsp;Previous</a>
+        
+    </div>
+    <div class="col-xs-6 text-right pull-right visible-xs">
+        
+            <a class="badge" href="/el-testeo-para-la-mejora-de-la-experiencia-de-usuario">Previous&nbsp;&raquo;</a>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <header class="major">
+            <p class="alert alert-info text-center pull-right">
+                Apr 04<br/>
+                2011
+            </p>
+            <h2 class="post-title">El ecosistema javascript (Google chrome, V8 y nodejs)</h2>
+            <p class="post-meta">
+                
+                    Mario Alberich
+                
+            </p>
+        </header>
+        <section>
+            <p></p><!--more-->
+<h2><span style="font-size: 16px; color: #444444; line-height: 24px;"><a href="http://www.sopadebits.com/wp-content/uploads/2011/03/V8_JavaScript_engine_logo.png"><img class="alignleft size-full wp-image-26915" title="V8_JavaScript_engine_logo" alt="" src="http://www.sopadebits.com/wp-content/uploads/2011/03/V8_JavaScript_engine_logo.png" width="68" height="55" /></a>Durante el tiempo en que Rhino ha estado en el escenario, el concepto de javascript en general se asociaba a bugs, inmadurez en las herramientas de desarrollo y testeo, y sobretodo&nbsp;<strong>lentitud</strong>. &nbsp;En especial por lo último habría que hablar de Internet Explorer 6 (del que <a title="IE6 - Sorry" href="http://www.smashingapps.com/2011/03/11/hey-microsoft-it-took-you-almost-a-decade-to-feel-sorry-about-ie6.html">ahora, quizá un poco tarde, piden disculpas</a>).</span></h2><br />
+Vale la pena decir que esta lentitud no era tanto debida al propio javascript sino al <a title="Document Object Model - Wikipedia" href="http://es.wikipedia.org/wiki/Document_Object_Model">DOM</a> (la estructura que se genera a partir del HTML para que el navegador muestre las páginas web como se espera). &nbsp;Pero para un usuario final eso da lo mismo (y con razón): si hay javascript y va lento, entonces javascript es lento.</p>
+<p>Pero entonces llegó Chrome, su <a title="V8 javascript engine" href="http://code.google.com/p/v8/">motor de Javascript</a> con nombre de <a title="V8 supercars" href="http://www.v8supercars.com.au/">coches de carreras</a>, y una visión clara: <strong>velocidad</strong>. &nbsp;Su <a title="Google Chrome Internals" href="http://www.google.com/events/io/2009/sessions/ExploringChromeInternals.html">funcionamiento interno</a> lo posicionaba para todo lo que se podíamos so&ntilde;ar para la web, pero que no podíamos realizar. &nbsp;Cualquier prueba de rendimiento puede dar fe de su potencia. &nbsp;Complementando V8 con el motor de renderizado de Webkit (el mismo de Safari), el resultado es un caballo ganador que ha entrado fuerte en la web (y se ha notado en las estadísticas).</p>
+<p>Quizá conociendo el concepto de Javascript en el servidor derivado de Rhino, alguien decidió seguir sus pasos: si V8 es capaz de ejecutar JS a velocidades cercanas al C++, por qué no desarrollar en javascript para el cliente (navegador) &nbsp;y también en el servidor?</p>
+<p>Hay varias ventajas:</p>
+<ul>
+<li>No hay que hacer un&nbsp;<em>cambio de chip</em> en un mismo proyecto en la parte cliente y servidor. &nbsp;No hay lenguaje de cliente y lenguaje de servidor.</li>
+<li>El intercambio de datos para aplicaciones Ajax tiene un formato ideal: <a title="JSON - JavaScript Object Notation" href="http://www.json.org/">JSON</a>. &nbsp;Un formato nativo del lenguaje es lo mejor que puede pasar para simplificar el intercambio.</li>
+<li>Su ligereza y su simplicidad en el desarrollo (sobretodo en comparación con Java, pero también con otros de&nbsp;<em>Scripting</em> como PHP, Ruby, Python).</li>
+<li>Para todos los desarrolladores de javascript en la web se abre un campo inmenso en el cual expandirse.</li><br />
+</ul><br />
+Y así fue que apareció <a title="nodejs" href="http://nodejs.org">nodejs</a>. &nbsp; No se trata de utilizar javascript sin más: incorpora los eventos como parte interna del lenguaje (y aparentemente evitando el bloqueo de I/O), permitiendo la devolución de respuestas de forma asíncrona y sin necesidad de trabajar con&nbsp;<em>hilos</em> de ejecución como por ejemplo lo hace java.</p>
+<p>Todo esto sin considerar que puede ejecutar en el servidor lo último del HTML5 (web workers, web sockets, etc) <strong>sin las restricciones de seguridad de un navegador</strong>.</p>
+<p>De ahí que estén surgiendo ideas para la <a href="http://nodeknockout.com/teams/anansi">computación distribuída</a> utilizando V8 en el servidor (o conectando varios usuarios a una misma página, por ejemplo), o crawlers (se puede integrar <a title="jQuery" href="http://jquery.com/">jQuery</a> y sus selectores en el javascript de nodejs). &nbsp;Pero esto ya es un tema aparte.</p>
+<p>El cambio de reglas que ha introducido nodejs ha provocado un crecimiento muy rápido de un ecosistema a su alrededor. &nbsp;En poco tiempo ya tiene varios frameworks de desarrollo, motores de plantillas, e incluso&nbsp;<a title="Node package manager" href="http://npmjs.org/">un gestor de paquetes</a> para facilitar la instalación de componentes en el servidor.</p>
+<p>En la web el desarrollo se asienta por dos filosofías opuestas que se combinan en menor o mayor grado: los que buscan soluciones estables, verificadas, seguras (certificadas) sobre las que canalizar un negocio preexistente; y por otra los que quieren hacer algo sin preocuparse demasiado por aplicar técnicas formales de análisis y desarrollo de aplicaciones, desarrollando <a title="Aplicaciones bala de plata y core wrapping - La pastilla roja" href="http://lapastillaroja.net/2010/12/aplicaciones-bala-de-plata-y-core-wrapping/">silver bullets</a> y siguiendo el criterio del&nbsp;<em>release early release often</em>.</p>
+<p>Pero sucedía una paradoja: mientras que los primeros han utilizado Java como tecnología principal y han creado un gran paquete de herramientas, los segundos trabajan con variedad de lenguajes, herramientas de soporte más simples (y quizá menos productivas).</p>
+<p>Para los segundos, Javascript en el servidor me parece una apuesta arriesgada, pero con&nbsp;muy buenas perspectivas. &nbsp;Eso sí, los nuevos conceptos obligan a practicar unas horas (depende del nivel de cada uno) antes de ponerse a fondo.</p>
+<p>Si te ha picado la curiosidad, deja de leer y pruébalo ya ;-)</p>
+
+        </section>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

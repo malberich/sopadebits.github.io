@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Las tareas y la motivación - Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <div class="row">
+    <div class="col-sm-4 hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/reutilizar-intercambiar-intereses-tagging">&laquo;&nbsp;Reutilizar e intercambiar intereses con el tagging</a>
+        
+    </div>
+    <div class="col-sm-4 hidden-xs text-center">
+        <a class="btn btn-lg" href="https://sopadebits.com/">
+            <span class="fa fa-home"></span>
+        </a>
+    </div>
+    <div class="col-sm-4 text-right pull-right hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/clustering-recursos-corporativos-generalistas">Clustering en recursos corporativos y generalistas&nbsp;&raquo;</a>
+        
+    </div>
+
+    <div class="col-xs-6 visible-xs">
+        
+            <a class="badge" href="/reutilizar-intercambiar-intereses-tagging" alt="Reutilizar e intercambiar intereses con el tagging" title="Reutilizar e intercambiar intereses con el tagging">&laquo;&nbsp;Previous</a>
+        
+    </div>
+    <div class="col-xs-6 text-right pull-right visible-xs">
+        
+            <a class="badge" href="/clustering-recursos-corporativos-generalistas">Previous&nbsp;&raquo;</a>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <header class="major">
+            <p class="alert alert-info text-center pull-right">
+                Feb 21<br/>
+                2008
+            </p>
+            <h2 class="post-title">Las tareas y la motivación</h2>
+            <p class="post-meta">
+                
+                    Mario Alberich
+                
+            </p>
+        </header>
+        <section>
+            <p><br />
+<h2>Fundamentos teóricos </h2>
+<p>Tradicionamente, el proceso de resolución de tareas se ha modelizado utilizando la denominada <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Poisson" title="Wikipedia: Distribución de Poisson">Ley de Poisson</a>, y que consiste en suponer que el número de eventos que suceden dentro de una unidad temporal (llamadas a un teléfono por hora, clientes por minuto en el cajero del supermercado), con un intervalo de tiempo entre eventos que sigue una <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_exponencial" title="Wikipedia: Distribución Exponencial">Ley Exponencial</a>.</p>
+<p>A nivel de análisis del proceso, la resolución de tareas se modeliza aplicando la <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_colas" title="Wikipedia: Teoría de colas">teoría de colas</a>. Lo que plantea esta teoría es que hay uno o más individuos (servidores) que procesa peticiones (clientes) uno tras el otro. Hay diferentes variantes en base al establecimiento de prioridades, si dos servidores colaboran o son independientes, etc. Aunque en general, si no se comenta lo contrario, el proceso de las peticiones se realiza según el método <a href="http://es.wikipedia.org/wiki/FIFO" title="Wikipedia: FIFO">FIFO</a>.</p><br />
+<h2>De la gestión de tareas a la gestión de la motivación</h2>
+<p>El proceso explicado hasta aquí es todo lo matemático que se puede esperar. Sin embargo hay una característica de la distribución exponencial que la hace <em>demasiado racional</em>: Se considera que la distribución exponencial <strong>no tiene memoria</strong>, es decir, que su probabilidad condicionada (el lapso de espera hasta el próximo evento sabiendo el tiempo del anterior lapso) es igual a su probabilidad incondicionada.</p>
+<p>Utilizando términos más llanos: un proceso o una persona que se modeliza utilizando la ley exponencial no se cansaría, ni se aburriría, ni se motivaría.  Simplemente resolvería según la <em>dificultad racional</em> de la tarea.  Esta premisa quizá sea aplicable a entornos de trabajo con alta mecanización de tareas, pero en entornos informacionalmente intensivos, el criterio no está tan claro.</p>
+<p>Ante este escenario, el Artículo <a href="http://arxiv.org/abs/0711.0741" title="Arxiv: Human Dynamics with adaptive interest">Human Dynamics with Adaptive Interest</a> propone un cambio de paradigma para encontrar soluciones más ajustadas a la realidad, escogiendo el modelo basado en el interés (<em>interest-based model</em>) enfrente al orientado a tareas (<em>task based</em>). </p><br />
+<h2>Análisis y metodología<br /></h2>
+<p> La metodología seguida en el estudio es el de la simulación estadística del proceso, introduciendo el factor de motivación como una variable más, y extrayendo de los resultados el nuevo modelo estadístico de periodicidad en la resolución de tareas.</p>
+<p>Este cambio de modelo matemático trata de analizar el cambio del concepto <em>habilidad de resolución</em> enfrente a <em>motivación de la resolución</em> de las tareas encomendadas. Sin ánimo de grandilocuencia, se podría decir que este cambio equivale al paso de la inteligencia racional a la inteligencia emocional. </p>
+<p>El resultado de la simulación demuestra que las fases más activas se concentran mucho más y las inactivas se dilatan dando lugar a fases frenéticas (con niveles intensos de interacción) seguidas de fases más largas de inactividad (poca motivación). Se entiende que son <em>más largas</em> <strong>en relación a</strong> lo que cabría esperar aplicando los modelos Poisson-Exponencial.</p><br />
+<h2>Conclusiones</h2>
+<p>El estudio afirma que el modelo matemático que se ajusta a esta nueva circunstancia es una <a href="http://es.wikipedia.org/wiki/Ley_potencial" title="Wikipedia: Ley potencial">ley potencial</a> con exponente -1 para modelizar el tiempo entre eventos.</p>
+<p>Esta conclusión puede ser de interés para analizar los patrones de fenómenos tan dispares como la navegación web, el zapping, y en general cualquier tarea que implique motivación.  Dos áreas de aplicación que pueden ser interesantes son el análisis del tiempo en estudios de interacción persona-ordenador (para identificar el grado de usabilidad del sistema cuando existe motivación por el usuario), y a un nivel más concreto, los estudios de búsqueda y recuperación de la información, para obtener una métrica de motivación en el tiempo entre eventos.</p>
+<p>A pesar de lo interesante del modelo, los autores apuntan algunas limitaciones de éste, ya que existen muchos ingredientes que intervienen en la motivación humana, varios de los cuales ni siquiera se han estudiado a fondo a nivel psicológico. Es un estudio que llevará tiempo, para el que las conclusiones del estudio (que además son simulaciones y no un trabajo de campo)  pueden servir de base para otros análisis.</p>
+<p>Volviendo a la pregunta inicial, el ordenador no tiene toda la información necesaria para poder extraer conclusiones. Por ejemplo, el ordenador no tiene información sobre si estás hablando por teléfono o alguien te interrumpe a mitad de una tarea. Pero podría empezar a disponer de indicadores objetivos (matemáticos) que le indicaran que te está bajando la moral.</p>
+<p>Y... &iquest;Quién lo sabe? Quizá se está creando un nicho de mercado para salvapantallas motivadores ;-).  </p></p>
+
+        </section>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

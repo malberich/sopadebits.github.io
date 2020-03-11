@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+<div class="page-header">
+	<h2>Tag: 'muestreo estadístico'</h2>
+</div>
+
+
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            May 01<br/>
+            2014
+        </p>
+        <h3><a href="/anscombe">El cuarteto de Anscombe, cuando la forma importa</a></h3>
+    </header>
+    <section>
+        <p>Tómate un minutillo para hacer unos cálculos sobre estas dos muestras de datos:</p>
+
+
+        <a href="/anscombe">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Apr 22<br/>
+            2014
+        </p>
+        <h3><a href="/visualizar-datos-explorar">Visualizar para inducir, analizar para deducir</a></h3>
+    </header>
+    <section>
+        <p>Quieres comerte una naranja y la pelas, porque la corteza de naranja es amarga y no te gusta, &iquest;cierto? Pero claro, luego viene tu madre, o tu abuela, y te dice que no tires la pela. Y con eso ellas te cocinan una especie de almíbar que luego a&ntilde;adirán al bizcocho que vas a disfrutar de lo lindo. Y así te das cuenta que te has estado perdiendo algo, tirando a la basura todas las pelas de naranjas anteriores.</p>
+
+
+        <a href="/visualizar-datos-explorar">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Sep 26<br/>
+            2013
+        </p>
+        <h3><a href="/espana-en-llamas-la-dificultad-de-obtener-la-informacion">Espa&ntilde;a en llamas: la dificultad de obtener la información</a></h3>
+    </header>
+    <section>
+        <div>El proyecto&nbsp;<a href="http://www.espanaenllamas.es/gasto-publico-contra-incendios-forestales-sin-transparencia/" target="_blank" shape="rect">Espa&ntilde;a en llamas</a>&nbsp;se promocionó&nbsp;<a href="http://www.civio.es/proyectos/espana-en-llamas/" target="_blank" shape="rect">desde la fundación Civio</a>&nbsp;para recopilar la información sobre los incendios forestales en Espa&ntilde;a a lo largo de los a&ntilde;os. Posteriormente&nbsp;<a href="http://goteo.org/project/espana-en-llamas" target="_blank" shape="rect">obtuvo la financiación necesaria vía goteo.org</a>, y echó a andar.</div></p>
+
+
+        <a href="/espana-en-llamas-la-dificultad-de-obtener-la-informacion">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Sep 16<br/>
+            2013
+        </p>
+        <h3><a href="/los-datos-no-crecen-en-las-hojas-de-calculo-mira-en-la-basura">Los datos no crecen en las hojas de cálculo (mira en la basura)</a></h3>
+    </header>
+    <section>
+        <p>En más de una conversación de café he sacado el comentario sobre lo vacíos que últimamente están los contenedores de basura. Por no hablar del metro y otros transportes públicos. &nbsp;Son claros indicadores de la crisis, contrapuestos a la retórica de los macroindicadores.</p>
+
+
+        <a href="/los-datos-no-crecen-en-las-hojas-de-calculo-mira-en-la-basura">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Aug 21<br/>
+            2013
+        </p>
+        <h3><a href="/prediciendo-los-trending-topics-de-twitter-antes-que-sucedan">Prediciendo los trending topics de twitter antes que sucedan</a></h3>
+    </header>
+    <section>
+        <p>Reconozco que afronto con escepticismo los análisis de predicción de tendencias. &nbsp;Pero la metodología que han seguido, más allá del puro algoritmo matemático, merece mención aparte. Aunque no lo he puesto a prueba, merece mención por los resultados finales:</p>
+
+
+        <a href="/prediciendo-los-trending-topics-de-twitter-antes-que-sucedan">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 09<br/>
+            2011
+        </p>
+        <h3><a href="/politicos-accidentales-c2-bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria">Políticos accidentales: &iquest;Seleccionar legisladores aleatorios mejora la eficiencia parlamentaria?</a></h3>
+    </header>
+    <section>
+        <p>Curioso artículo el que he encontrado hoy en <a title="arrxiv.org" href="http://arxiv.org/">arxiv.org</a>, sobre una simulación que propone la hipótesis con la que titulo esta entrada (salvo los interrogantes, que los he a&ntilde;adido yo). &nbsp;El <em>preprint</em> en cuestión está en inglés y se titula&nbsp;<em><a title="Accidental Politicians: How Randomly Selected Legislators Can Improve Parliament Efficiency" href="http://arxiv.org/abs/1103.1224" target="_blank">Accidental Politicians: How Randomly Selected Legislators Can Improve Parliament Efficiency</a> (puedes descargar directamente la&nbsp;<a href="http://arxiv.org/pdf/1103.1224v2" target="_blank">versión PDF del artículo</a>).</em></p>
+
+
+        <a href="/politicos-accidentales-c2-bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Mar 28<br/>
+            2011
+        </p>
+        <h3><a href="/los-datos-abiertos-son-el-micelio-de-la-transparencia">Los datos abiertos son el micelio de la transparencia</a></h3>
+    </header>
+    <section>
+        <p>Hace pocos días <a title="Open Data is not transparency - Data Mining Blog" href="http://datamining.typepad.com/data_mining/2011/03/open-data-is-not-transparency.html">Matthew Hurst hacía un comentario en su blog <em>Data Mining</em></a> que posteriormente fue&nbsp;<a title="Presentación del Open Data Cordoba - Barrapunto" href="http://ciberderechos.barrapunto.com/article.pl?sid=11/03/23/1550213">mencionado en Barrapunto</a> a propósito de la presentación de <a title="Open Data Cordoba" href="http://www.opendatacordoba.com/">Open Data Cordoba</a>:</p>
+
+
+        <a href="/los-datos-abiertos-son-el-micelio-de-la-transparencia">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Feb 19<br/>
+            2009
+        </p>
+        <h3><a href="/muestreo-estadistico">Muestreo estadístico</a></h3>
+    </header>
+    <section>
+        Quizá este artículo podría resumirse diciendo que el muestreo estadístico es algo similar a una fotografía, pero dirigido a los datos, no a las imágenes.<br /><br />Bueno, ya está. Ha quedado claro &iquest;no? Si es así, déjame pensar: no te dedicas a la fotografía, &iquest;verdad? Un conocedor de este arte podría argumentar: &quot;en fotografía hay muchos estilos, técnicas y herramientas&quot;.&nbsp; En el muestreo también, sólo que un buen resultado no luce tanto <img src="/resources/tiny_mce/jscripts/tiny_mce/plugins/emotions/images/smiley-wink.gif" border="0" alt="Gui&ntilde;o" title="Gui&ntilde;o" />.<br /><br />El muestreo estadístico es la toma de contacto con la realidad antes de llevar la muestra al <em>laboratorio</em>.&nbsp; Desde el punto de vista teórico de las matemáticas puras, es un <em>mal necesario</em>.&nbsp; Pero desde el punto de vista del trabajo de campo y del análisis empírico, escoger el tipo de muestreo estadístico es todo un arte.<br /><br />Y desde luego, es un arte que va mucho más allá que el muestreo aleatorio simple.<br />
+        <a href="/muestreo-estadistico">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jan 05<br/>
+            2008
+        </p>
+        <h3><a href="/por-que-p-q-0-5">Por qué P = Q = 0,5?</a></h3>
+    </header>
+    <section>
+        <p>Nada más refrescante en la víspera de Reyes que un poco de estadística, &iquest;verdad? Pues ya me imagino que no, pero me apetecía comentar esta especie de axioma que aparece en la inmensa mayoría de encuestas de opinión, y que todo el mundo cree o simplemente ignora, mientras que unos pocos entienden a fondo.</p><!--more--><p>Si te interesa, continúa, y sino, ya nos vemos en otro momento...</p>
+        <a href="/por-que-p-q-0-5">Read more &raquo;</a>
+    </section>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xs-6">
+        
+    </div>
+    <div class="col-xs-6 pull-right text-right">
+        
+    </div>
+</div>
+
+
+<!-- <div id="paging">
+
+	<a href="#" class="btn btn-default pull-left" disabled="disabled">&larr; Older</a>
+
+
+
+		<a href="#" class="btn btn-default pull-right" disabled="disabled">Newer &rarr;</a>
+	</li>
+
+</div>
+<div class="clearfix page-bottom"></div>
+ -->
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

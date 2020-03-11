@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>La teoría de la relevancia en ling&uuml;ística - Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <div class="row">
+    <div class="col-sm-4 hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/no-es-HAL-ni-Icarus">&laquo;&nbsp;No es HAL ni Icarus...</a>
+        
+    </div>
+    <div class="col-sm-4 hidden-xs text-center">
+        <a class="btn btn-lg" href="https://sopadebits.com/">
+            <span class="fa fa-home"></span>
+        </a>
+    </div>
+    <div class="col-sm-4 text-right pull-right hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/indicadores-el-ajo-dorado">Indicadores: El ajo dorado&nbsp;&raquo;</a>
+        
+    </div>
+
+    <div class="col-xs-6 visible-xs">
+        
+            <a class="badge" href="/no-es-HAL-ni-Icarus" alt="No es HAL ni Icarus..." title="No es HAL ni Icarus...">&laquo;&nbsp;Previous</a>
+        
+    </div>
+    <div class="col-xs-6 text-right pull-right visible-xs">
+        
+            <a class="badge" href="/indicadores-el-ajo-dorado">Previous&nbsp;&raquo;</a>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <header class="major">
+            <p class="alert alert-info text-center pull-right">
+                Jun 20<br/>
+                2007
+            </p>
+            <h2 class="post-title">La teoría de la relevancia en ling&uuml;ística</h2>
+            <p class="post-meta">
+                
+                    Mario Alberich
+                
+            </p>
+        </header>
+        <section>
+            <p><br />
+<h2>De la pragmática a la teoría de la relevancia </h2>
+<p>La teoría de la relevancia recoge el testimonio de la pragmática aceptando la comunicación inferencial como parte del mensaje.  Eso no implica que todas las comunicaciones incluyan mensajes con contenidos inferenciales: simplemente se tiene en cuenta ese factor.  De hecho, se va un poco más lejos poniendo en tela de juicio la máxima de calidad de Grice, indicando que existen situaciones en las que el mensaje no es falso ni veraz, pero que simplemente puede ser impreciso (léase <a href="http://sopadebits2/%20logica_borrosa_y_tagging_1" title="Lógica borrosa y tagging">borroso</a>), y que eso es consustancial a la comunicación humana.</p>
+<p>Una vez aceptado ese grado de imprecisión, la teoría de la relevancia afirma que el usuario busca maximizar contínuamente su relevancia. Esa relevancia se consigue cuando al decodificar una comunicación, el mensaje aporta un <strong>valor cognitivo positivo</strong> al usuario.</p>
+<p>Para que tenga lugar el proceso de decodificación del mensaje, se debe dar las circunstancias suficientes como para que el receptor haga el esfuerzo de decodificar el mensaje. Esto que parece propio de perogrullo, es digno de ser tenido en cuenta, ya que el mensaje puede ser descartado porque el usuario no tiene suficientes conocimientos. Varios ejemplos que se me ocurren son: un idioma desconocido, conocimientos y habilidades insuficientes (desde cálculo matemático hasta habilidades informáticas). </p>
+<p>Desde luego, están los aspectos relacionados con la falta de interés, y otros aspectos situacionales concretos (me puede interesar pero no es exactamente lo que busco ahora). Eso también cuenta para valorar la relevancia, como ya exponía Saracevic en su modelo estratificado. </p>
+<p>Así, la relevancia está en cualquier forma de comunicación, y eso es algo muy conocido por los publicistas.  A corte de ejemplo, he leído la <a href="http://fernandotrujillo.com/publicaciones/relevancia.pdf" title="Teoría de la relevancia en publicidad">aplicación de la teoría de la relevancia a un mensaje publicitario</a>.</p><br />
+<h2>Relevancia, Inferencia y familiaridad</h2>
+<p>Después de lo comentado anteriormente, creo que no está fuera de lugar afirmar que <strong>la familiaridad aumenta la relevancia</strong>. Esa familiaridad puede dirigirse al emisor y a su entorno social o profesional.  Es por eso que esa relevancia se puede dar en mayor grado en un entorno cercano (no necesariamente físico).</p>
+<p>Revisando los factores que Saracevic comenta en su modelo, podemos imaginar que esos factores pueden ser compartidos con miembros de una misma comunidad.  En una empresa los aspectos situacionales pueden ser compartidos.  En un sector profesional, se utiliza jerga o lenguaje especializado (recopilado en la experiencia previa).</p>
+<p>Al compartir un mismo lenguaje, tanto verbal como no verbal, el esfuerzo para la decodificación del mensaje disminuye, y por ello la relevancia aumenta. Por eso, creo que un elemento clave para aumentar la relevancia es la <strong>familiaridad con el emisor</strong>: si conoces el emisor conoces su ironía, los chistes malos,  las figuras más habituales en sus metáforas... Y desde luego su jerga, terminología científica, algunas de sus experiencias, etc. </p>
+<p>Conoces la relevancia personal que la intimidad del emisor <a href="http://en.wikipedia.org/wiki/Rorschach_inkblot_test" title="Wikipedia: Test de Roschach">proyecta sus propias manchas sobre el mensaje</a>. Ya lo comentaba Emilio Lledó en su Hermenéutica del lenguaje: "El lenguaje es la expresión de la Intimidad" (me gustaría dar mejores referencias interesantes sobre este tema, queda en la lista de tareas pendientes).</p>
+<p>La conclusión que yo he sacado (y esto puede ser puesto en tela de juicio) es que en base a la teoría de la relevancia, <strong>la capacidad (y la motivación) para decodificar un mensaje es una medida de la intimidad compartida (y la confianza) entre emisor y receptor</strong>.</p>
+<p>Debo aclarar que utilizo el término <em>intimidad</em> en el sentido amplio, el de la comunicación que utiliza la inferencia para seleccionar los receptores aptos para decodificar el mensaje. Da igual que la selección de receptores sea hablando en voz baja o cualquiera que sea el sistema. La intimidad aquí no la trato en un plano <em>sentimental</em>, sino social. </p>
+<p>Trasladando el caso de la ciberpragmática a las folksonomías: si la ausencia de comunicación plena permite crear una identidad propia, compartir plenamente las experiencias &iquest;puede llevar a crear una simbología colectiva? Entramos en el terreno de la antropología cultural y la etnografía... </p>
+<p>Cuando esto se da en un grupo social más o menos grande, los individuos pueden haber convertido la inferencia en referencia. Las combinación ropa-lenguaje-actitud se convierte en un nuevo lenguaje común, que cohesiona a sus miembros y los diferencia del resto del entorno social (que debe inferir los mensajes que trasnmiten los miembros). Este lenguaje como principio de cohesión es una intimidad compartida por los miembros que relaciona directamente la <em>intencionalidad</em> de sus mensajes, con los objetivos como grupo. </p>
+<p>Trasladando todo el fenómeno a la web social, y en especial todo lo relacionado con el etiquetado, la aparición de las folksonomías y el análisis de las conductas de etiquetado de los usuarios permite identificar grupos que comparten objetivos, conocimientos y demás. Por ejemplo, <a href="http://beukis.wordpress.com/2007/06/19/&Acirc;&iquest;para-cuando-un-hall-o-un-icarus-que-interpreten-las-funciones-inferenciales-del-lenguaje/" title="Beukis: Funciones inferenciales del lenguaje y folksonomías">Beukis comenta la aplicación de las folksonomías en la Intranet de IBM</a>, entre otros casos. Ese es un reto que abordó la gestión del conocimiento, sin mucho éxito.  Ahora que se puede reencarnar en una web social corporativa, vale la pena tener en cuenta que una intranet corporativa recibe un uso de acuerdo con la cultura corporativa de su organización. </p>
+<p>En realidad, el lenguaje propio de un grupo es un factor clave en el análisis etnográfico (aplicable a redes sociales <a href="http://ideant.typepad.com/ideant/2004/12/a_delicious_stu.html" title="del.icio.us ethnographic study">como del.icio.us</a> o en <a href="http://mindspace.wordpress.com/2006/06/01/notes-on-corporate-ethnography/" title="Notes on corporate ethnography">entornos corporativos</a> como en el caso de <a href="http://www.xerox.com/go/xrx/template/inv_rel_newsroom.jsp?app=Newsroom&amp;ed_name=NR_2005July12_TextSieve&amp;format=article&amp;view=newsrelease&amp;Xcntry=USA&amp;Xlang=en_US" title="Xerox Scientists Apply Insights From Ethnography to Develop New Way to Categorize Documents">Xerox</a>). En estos casos, <a href="http://www.personalinfocloud.com/2007/06/folksonomy_prov.html" title="Folksonomy Provides 70 Percent More Terms Than Taxonomy">es posible que la folksonomía aporte hasta un 70% más de términos que la taxonomía</a>. </p>
+<p>Pero esos términos resumen la variedad de la red: un 70% más de términos significa un 70% más de identidad virtual del conocimiento, según la pragmática. El lenguaje escrito que incluye pragmática puede incluir  factores de ruido que pueden ser reducidos por <em>stemmers</em> y otras herramentas del PLN. Pero al final, encontramos la muralla de la intimidad (del grupo o del individuo). Sólo que ahora, con la ayuda de las herramientas del etiquetado social, podemos saber qué grado de intimidad y consenso tiene cada etiqueta.  </p>
+<p>Quizá este documento sobre <a href="http://informatics.buffalo.edu/org/lsj/articles/speller_2007_2_collaborative.php" title="Collaborative tagging, folksonomies, distributed classification or ethnoclassification: a literature review">etiquetado colaborativo y etnoclasificación</a>, que incluye una buena lista de referencias, pueda aportar más información. </p><br />
+<h2>Si quieres profundizar en la teoría de la relevancia</h2>
+<p>Espero que tanta mención a disciplinas tan distantes no hay aguado el tema central.  Creo que era necesario abordar el tema como un todo, y eso que no he entrado en aspectos de recuperación de la información.  De todos modos, sé que no he entrado ni en una décima parte de lo que he leído sobre la teoría de la relevancia. </p>
+<p>Me ha interesado mucho el documento sobre la <a href="http://www.um.es/dp-lengua-espa/revista/vol7/relevancia.pdf" title="Teoría de la relevancia">teoría de la relevancia</a> en la revista del <a href="http://www.um.es/dp-lengua-espa/" title="Universidad de Murcia: Departamento de Ling&uuml;ística">departamento de ling&uuml;ística de la Universidad de Murcia</a>. Ha sido el documento base para entender la teoría. También he consultado la <a href="http://www.dan.sperber.com/" title="Dan Sperber">página de Dan Sperber</a>, responsable junto a Wilson de la enunciación de la teoría de la relevancia en 1986.</p>
+<p>Espero que la larga lectura haya aportado una experiencia cognitiva positiva. Yo he disfrutado como un crío ;-). </p></p>
+
+        </section>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

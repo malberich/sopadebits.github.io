@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+<div class="page-header">
+	<h2>Category: 'Informática'</h2>
+</div>
+
+
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            May 04<br/>
+            2014
+        </p>
+        <h3><a href="/enlaces-de-interes-2014-18">Enlaces de interés 2014-18</a></h3>
+    </header>
+    <section>
+        <ul>
+<li>Un documento interesante, <a href="https://docs.google.com/document/d/16tDVNb8VPAZlcm1ObRtsHxPSesN3YYUOwALtZRro6io/edit?pli=1#heading=h.qh4vqcqj7d53">Open Data Resource Kit</a>.</li>
+<li><a href="http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html">WebRTC black magic</a>, para entender algo más sobre esta especificación.</li>
+<li><a href="http://github.hubspot.com/offline/docs/welcome/">OfflineJS</a>, una biblioteca para gestionar el momento en el que los usuarios de nuestra aplicación se quedan sin conexión.</li>
+<li><a href="http://www.mozilla.org/en-US/lightbeam/">Mozilla Lightbeam</a>, una herramienta para tomar conciencia de la propia privacidad, y ver (con Firefox) quién sigue tu navegación web.</li>
+<li><a href="http://codecombat.com/">Code Combat</a>, para aprender a desarrollar javascript mientras jugamos.</li>
+<li>&iquest;Qué operadores de comparación en javascript utilizarías para verificar si dos valores valen cero? Una pregunta fácil, hasta que le echas un vistazo a esta <a href="http://zero.milosz.ca/">tabla comparativa de operadores</a>.</li>
+<li>Last but not least, las <a href="http://digitalpublishing.ons.gov.uk/2013/10/29/the-infographic-superhighway/">directrices para la realización de infografías</a>, PDF de la <a href="http://www.ons.gov.uk/">Office for National Statistics</a> británica, en un enlace al final del artículo. Muy pero que muy interesante.</li><br />
+</ul><br />
+Y el vídeo, para conectar <a href="http://sopadebits.com/tag/nodejs">NodeJS</a> con Arduino, mediante el framework <a href="https://github.com/rwaldron/johnny-five" target="_blank">JonnyFive</a>:</p>
+
+
+        <a href="/enlaces-de-interes-2014-18">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Apr 29<br/>
+            2014
+        </p>
+        <h3><a href="/mapreduce-linux-hadoop">#MapReduce: probar en #linux antes de ejecutar en #Hadoop</a></h3>
+    </header>
+    <section>
+        <h2>Diez a&ntilde;os de MapReduce</h2><br />
+En Diciembre se cumplirán diez a&ntilde;os desde que <a href="http://research.google.com/archive/mapreduce.html">Google publicó el&nbsp;<em>paper</em> sobre MapReduce</a>. El objetivo de ese artículo era exponer un algoritmo para procesar paralelamente grandes cantidades de datos utilizando una infraestructura basada en equipos informáticos modestos, y que por ello fuera más fácilmente escalable.</p>
+
+
+        <a href="/mapreduce-linux-hadoop">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Apr 27<br/>
+            2014
+        </p>
+        <h3><a href="/enlaces-de-interes-2014-17">Enlaces de interés 2014-17</a></h3>
+    </header>
+    <section>
+        <ul>
+<li><a href="http://blog.safaribooksonline.com/2013/10/02/decoupling-backbone-applications-with-pubsub/">Desvincular las partes de la aplicación Bacfkbone implementando el Pub/Sub</a>, entrada antigua pero digna de ser leída.</li>
+<li><a href="https://leanpub.com/javascript-allonge/read">Javascript Allongé</a>, en <a href="https://leanpub.com/">leanpub</a>.</li>
+<li>Una muestra de los modelos de <a href="http://blog.vctr.me/experiments/transition-tweens.html">transiciones de animación con D3</a>.</li>
+<li><a title="TogetherJS - Mozilla Foundation" href="https://togetherjs.com/">TogetherJS</a>, uno de los varios sistemas que aprovechan WebRTC para la colaboración en tiempo real.</li>
+<li><a href="http://sonar.bottlenose.com/">Sonar Solo</a>, un servicio interesante que muestra hashtags de twitter, el nivel de relación con otros hashtags (con visualización en hiperárbol), y los recursos aparentemente más relevantes.</li>
+<li><a href="http://diytoolkit.org/about/">Development Impact and You Toolkit</a>, herramientas interesantes para canalizar los procesos en de innovación.</li><br />
+</ul><br />
+&nbsp;</p>
+
+
+        <a href="/enlaces-de-interes-2014-17">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Apr 20<br/>
+            2014
+        </p>
+        <h3><a href="/enlaces-de-interes-2014-16">Enlaces de interés 2014-16</a></h3>
+    </header>
+    <section>
+        <ul>
+<li>El <a href="http://www.stanfordlawreview.org/online/privacy-and-big-data/big-data-and-its-exclusions">big data y sus exclusiones</a>, según <a title="Stanford Law Review" href="http://www.stanfordlawreview.org/">Stanford Law Review</a>. Espero tener un rato para escribir sobre esto.</li>
+<li>Como crear un <a href="http://noisehack.com/how-to-build-supersaw-synth-web-audio-api/">sintetizador de audio en el navegador</a>.</li>
+<li>La biblioteca <a href="http://retinajs.com/">RetinaJS</a>, para mostrar gráficos con calidad retina en la web.</li>
+<li>Motor de simulación física <a href="http://wellcaffeinated.net/PhysicsJS/">PhysicsJS</a>.</li>
+<li><a href="http://svonava.com/post/62186512058/datasets-released-by-google">Datasets liberados por Google</a>, en <a href="http://svonava.com/">Daily learnings</a>.</li>
+<li>Esteganografía mediante javascript, con <a href="http://www.peter-eigenschink.at/projects/steganographyjs/">SteganographyJS</a>.</li><br />
+</ul></p>
+
+
+        <a href="/enlaces-de-interes-2014-16">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Apr 13<br/>
+            2014
+        </p>
+        <h3><a href="/enlaces-de-interes-2014-15">Enlaces de interés 2014-15</a></h3>
+    </header>
+    <section>
+        <ul>
+<li><a href="http://alistapart.com/column/your-side-project-as-insurance-policy">Tener un&nbsp;<em>side project&nbsp;</em>como seguro contra accidentes</a>, en A List Apart.</li>
+<li>El <a href="http://michaelbabwahsingh.com/2013/11/29/the-real-meaning-of-information-design/">significado real de la visualización de información</a>.</li>
+<li>Porque hay que repetirlo sin tregua: <a href="http://gaussianos.com/hay-que-decirlo-mas-correlacion-implica-causalidad/">Correlación no implica causalidad</a>, en Gaussianos.</li>
+<li>Una <a title="Understanding Statistical Power and Significance Testing" href="http://rpsychologist.com/d3/NHST/">visualización para representar la potencia de test, y los errores tipo 1 y 2</a>, en rpsychologist.</li>
+<li><a href="http://yahoo.github.io/samoa/">SAMOA</a>, un proyecto de Yahoo! para ejecutar Machine Learning sobre flujos de datos (<a href="https://mahout.apache.org/">Mahout</a>&nbsp;pero sin Hadoop).</li>
+<li>Simplificando la tarea de generar <a href="http://tech.pro/tutorial/1649/very-easy-changelogs-with-git">changelogs correctamente formateados con git</a>.</li>
+<li>Para los aficionados al tracking y los GPS, <a href="http://blog.thematicmapping.org/2013/11/showing-gps-tracks-in-3d-with-threejs.html">mostrar tracks en 3D con three.js</a>.</li>
+<li>Balanceo de carga con NodeJS, <a href="https://mazira.com/blog/introduction-load-balancing-nodejs/">parte 1</a> y <a href="https://mazira.com/blog/introduction-load-balancing-nodejs-2">2</a>.</li><br />
+</ul><br />
+El video de hoy: Santiago Ortiz (<a href="http://twitter.com/moebio">@moebio</a>) en <a title="Visualized 2014" href="http://visualized.com/2014/">Visualized 2014</a>, expone <a href="http://visualized.com/2014/presents/santiago-ortiz/">ejemplos no lineales de visualizaciones de datos</a>. Interesante y divertida a la vez.<br />
+<iframe src="//player.vimeo.com/video/88326173" height="281" width="500" allowfullscreen=""></iframe></p>
+
+
+        <a href="/enlaces-de-interes-2014-15">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Apr 08<br/>
+            2014
+        </p>
+        <h3><a href="/d3-crossfilter-dc">D3 + Crossfilter = DC</a></h3>
+    </header>
+    <section>
+        <p>En un artículo anterior ya comentaba las <a title="Crossfilter, múltiples vistas sincronizadas de datos" href="http://www.sopadebits.com/crossfilter-vistas-sincronizadas-datos">posibilidades de Crossfilter</a>, una herramienta especialmente aplicable a datasets de un tama&ntilde;o mayor que el habitual para un navegador web. Con esta biblioteca tenemos una parte muy importante de la tarea de la&nbsp;<em>sala de máquinas</em>, cargando y filtrando los datos según nos convenga.</p>
+
+
+        <a href="/d3-crossfilter-dc">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Mar 31<br/>
+            2014
+        </p>
+        <h3><a href="/crossfilter-vistas-sincronizadas-datos">Crossfilter, múltiples vistas sincronizadas de datos</a></h3>
+    </header>
+    <section>
+        <p>El análisis exploratorio que tiene lugar durante la primera toma de contacto con un conjunto de datos tiene un objetivo muy concreto: familiarizarnos con su estructura. Por un lado la distribución de algunas variables clave, por el otro los valores extremos, y también las relaciones entre pares de variables. Esta familiarización permite aplicar el sentido común y la intuición a la verificación del análisis. &nbsp;No es un momento para las conclusiones, sino para la toma de contacto.</p>
+
+
+        <a href="/crossfilter-vistas-sincronizadas-datos">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Mar 30<br/>
+            2014
+        </p>
+        <h3><a href="/enlaces-de-interes-2014-13">Enlaces de interés 2014-13</a></h3>
+    </header>
+    <section>
+        <ul>
+<li>Previsión nada halag&uuml;e&ntilde;a de <a href="http://www.businessinsider.com/the-future-of-jobs-the-onrushing-wave-2014-1">Business Insider sobre el futuro del trabajo</a>.</li>
+<li>Curso <a href="http://try.github.io/">interactivo de github</a>, practica con git y el sistema de control de versiones.</li>
+<li>El <a href="http://blogs.sas.com/content/datamanagement/2014/03/06/netflix-and-the-human-element-of-data/">factor humano en Netflix y su sistema de análisis de datos</a>&nbsp;en el blog de SAS.</li>
+<li><a href="http://politikon.es/2014/03/05/regulando-el-crowdfunding/">Regulando el crowdfunding</a>, en <a href="http://politikon.es/">Politikon</a>.</li><br />
+</ul><br />
+El video de esta semana es sobre la modularidad con nodejs y su gestor de paquetes npm. Vale la pena contrastarlo con el artículo sobre los <a title="NodeJS y el tipo de valores retornados por la función require" href="http://www.sopadebits.com/nodejs-y-el-funcionamiento-de-require">valores retornados por nuestros módulos</a>.</p>
+
+
+        <a href="/enlaces-de-interes-2014-13">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Mar 24<br/>
+            2014
+        </p>
+        <h3><a href="/enlaces-de-interes-2014-12">Enlaces de interés 2014-12</a></h3>
+    </header>
+    <section>
+        <p>Más tarde de lo previsto, pero aquí dejo los enlaces de esta semana (pasada).</p>
+
+
+        <a href="/enlaces-de-interes-2014-12">Read more &raquo;</a>
+    </section>
+</div>
+
+	<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Mar 20<br/>
+            2014
+        </p>
+        <h3><a href="/analytics-platform-principles-google">Google Analytics Platform Principles, para entender mejor analytics</a></h3>
+    </header>
+    <section>
+        <p><a href="http://www.sopadebits.com/wp-content/uploads/2014/03/Selecció_039.png"><img class="alignleft size-medium wp-image-27763" alt="Ceritificado Google Analytics Platform Principles" src="http://www.sopadebits.com/wp-content/uploads/2014/03/Selecció_039-300x220.png" width="300" height="220" /></a></p>
+
+
+        <a href="/analytics-platform-principles-google">Read more &raquo;</a>
+    </section>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xs-6">
+        
+            <br/>
+            <p>
+                <a class="btn btn-primary" href="/page4">&laquo; Past</a>
+            </p>
+        
+    </div>
+    <div class="col-xs-6 pull-right text-right">
+        
+            <br/>
+            <p>
+                <a class="btn btn-primary" href="/page2">Present &raquo;</a>
+            </p>
+        
+    </div>
+</div>
+
+
+<!-- <div id="paging">
+
+	<a href="/category/informática/page4" class="btn btn-default pull-left">&larr; Older</a>
+
+
+
+	
+		<a href="/category/informática/page2" class="btn btn-default pull-right">Newer &rarr;</a>
+	
+
+</div>
+<div class="clearfix page-bottom"></div>
+ -->
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

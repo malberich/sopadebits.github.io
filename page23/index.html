@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <!-- Main -->
+<div class="row">
+    <div class="col-xs-6">
+        
+            <br/>
+            <p>
+                <a class="btn btn-primary" href="/page24">&laquo; Past</a>
+            </p>
+        
+    </div>
+    <div class="col-xs-6 pull-right text-right">
+        
+            <br/>
+            <p>
+                <a class="btn btn-primary" href="/page22">Present &raquo;</a>
+            </p>
+        
+    </div>
+</div>
+
+
+<!-- <div id="paging">
+
+	<a href="page24" class="btn btn-default pull-left">&larr; Older</a>
+
+
+
+	
+		<a href="page22" class="btn btn-default pull-right">Newer &rarr;</a>
+	
+
+</div>
+<div class="clearfix page-bottom"></div>
+ -->
+
+<div class="row">
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jul 05<br/>
+            2007
+        </p>
+        <h3><a href="/cadena-trofica-fagocitar-rumiar-digerir-informacion">Cadena trófica: Fagocitar, rumiar y digerir información</a></h3>
+    </header>
+    <section>
+        <p>Hoy ha sido el último día de exámenes de este curso académico, y el examen ha sido uno de esos pocos donde sabes que <a href="http://www.directorioexit.info/consulta.php?directorio=exit&amp;campo=ID&amp;texto=55" title="Directorio Exit: Cristóbal Urbano">hay quien desarrolla con esmero su actividad pedagógica</a>. Eso es de agradecer. Pocos profesores harán un examen personalizado (sí sí, personalizado: un alumno, un examen), en el que no sólo deberás esforzarte por responder, sino que vas a sacar conclusiones interesantes sobre lo que sabías hasta ahora.</p><!--more--><p>Ante la pregunta &quot;Crees que los usuarios del servicio X solicitan un tipo de información tan básica? No sería posible pensar que lo que demandan es una información con mayor grado de síntesis, que es más fácil de asimilar y aplicar?&quot;...</p><p>Mi respuesta ha incluído el concepto de <a href="http://es.wikipedia.org/wiki/Cadena_tr%C3%B3fica" title="Wikipedia: Cadena trófica">cadena trófica</a>... </p><p>&nbsp;</p>
+        <a href="/cadena-trofica-fagocitar-rumiar-digerir-informacion">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jul 03<br/>
+            2007
+        </p>
+        <h3><a href="/veracidad-informacion-internet-debate">La veracidad de la información en Internet, a debate</a></h3>
+    </header>
+    <section>
+        <p>Ayer Catuxa publicaba en Deakialli un comentario sobre la fiabilidad de la información en Internet. Lo hacía basándose en la lectura de un artículo de <a href="http://www.generacionred.net/2007/06/28/me-fio-o-no-me-fio/" title="Lara Rey: me fío o no me fío">Lara Rey: Me fío o no me fío</a>. También enlaza a una <a href="http://listserv.rediris.es/cgi-bin/wa?A2=ind0706c&amp;L=iwetel&amp;D=1&amp;T=0&amp;O=D&amp;P=7366" title="Iwetel: La dictadura de los idiotas">polémica en Iwetel sobre el tema &quot;2.0&quot;</a>.  </p><!--more--><p>No es un caso aislado, ni siquiera una conversación reservada a los círculos eruditos, porque la adquisición de conocimiento depende de la fiabilidad de su materia prima: la información. </p><p>Es un tema complejo al cual yo quiero aportar mi visión no solo en aspectos documentales sino también tecnológicos. </p>
+        <a href="/veracidad-informacion-internet-debate">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jul 03<br/>
+            2007
+        </p>
+        <h3><a href="/google-mashups-el-contraataque-a-yahoo-pipes">Google Mashups: El contraataque a Yahoo! Pipes</a></h3>
+    </header>
+    <section>
+        <p>Ha pasado ya un tiempo desde que Yahoo! presentara sus ca&ntilde;erías de datos, <a href="http://pipes.yahoo.com" title="Yahoo! Pipes">Yahoo! Pipes</a>. </p><!--more--><p>Google no se podía quedar de brazos cruzados.  Así que, el mismo día que Yahoo! da a conocer sus Smart Ads, que <a href="http://www.error500.net/yahoo-smartads-publicidad-redes-sociales" title="Error 500: Yahoo SmartAds publicidad en redes sociales">según cuentan en error500</a>, tratarán de entrar en el mercado de las redes sociales, el líder en búsquedas presenta Google Mashups, me informa que tengo acceso a una beta cerrada a Google Mashups, así que a probar...</p><p>&nbsp;</p>
+        <a href="/google-mashups-el-contraataque-a-yahoo-pipes">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 30<br/>
+            2007
+        </p>
+        <h3><a href="/introduccion-al-procesamiento-del-lenguaje-natural">Descarga: introducción al procesamiento del lenguaje natural</a></h3>
+    </header>
+    <section>
+        <p>He creado una nueva <a href="/descargas">área de descargas</a> donde he colgado un primer documento, referente al procesamiento del lenguaje natural.  El documento está disponible en: <a href="/descargas#pln" title="Sopa de bits: introducción al procesamiento del lenguaje natural">http://www.sopadebits.com/descargas#pln</a>.</p><!--more--><p>El documento parte de la necesidad de estudiar la asignatura de PLN, con lo que está claro que no me he convertido en un experto de la noche a la ma&ntilde;ana. Eso sí, espero que os sea de ayuda y que sirva de introducción a este tema que puede servir para entender la utilidad (y las limitaciones) de buscadores en PLN como <a href="http://www.powerset.com/" title="Powerset">Powerset</a>.</p><p>En el capítulo de agradecimientos cabe mencionar a <a href="http://palgueilburt.blogspot.com" title="Blog de Paloma">Paloma</a>, que me cedió sus apuntes. </p>
+        <a href="/introduccion-al-procesamiento-del-lenguaje-natural">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 29<br/>
+            2007
+        </p>
+        <h3><a href="/facetas-aplicaciones-en-informatica">Facetas: aplicaciones en informática</a></h3>
+    </header>
+    <section>
+        <p>En el post anterior comenté las características principales de las facetas, así como sus implicaciones a la hora de construir una representación del conocimiento.</p><!--more--><p>Después de echarle un vistazo, he de reconocer que me quedó algo ambiguo en algunos apartados, así que he pensado que sería de interés exponer ejemplos y aplicaciones de las facetas. </p><p>Creo que la representación del conocimiento utilizando lenguajes controlados, puede ser entendida como un sistema de <em>consenso para la comunicación ágil</em> en contextos delimitados. No es el tema que quiero tratar en este post, así que ya profundizaré más adelante.</p><p>De momento, podemos ver varias aplicaciones... </p>
+        <a href="/facetas-aplicaciones-en-informatica">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 26<br/>
+            2007
+        </p>
+        <h3><a href="/facetas-las-matematicas-en-la-semantica">Facetas: las matemáticas en la semántica</a></h3>
+    </header>
+    <section>
+        <p>Ahora que ya baja el ritmo de trabajo, retomaré los <a href="/epoca-de-examenes" title="Sopa de bits: época de exámenes">temas pendientes que dejé apuntados</a>.</p><!--more--><p>He publicado algunos posts (relacionados con mi <em>hacer codos</em> en PLN), y ya tengo ganas de marcar un ritmo de producción (tanto de posts como de mejoras en el blog) que espero poder definir a lo largo de este mes de Julio.</p><p>Para empezar, una de facetas.  Es uno de los conocimientos que más me ha gustado aprender. Quizá el hecho que fuera un matemático quien lo enunciara (<a href="http://en.wikipedia.org/wiki/S._R._Ranganathan" title="Wikipedia: Shiyali Ramamrita Ranganathan">Shiyali Ramamrita Ranganathan</a>) es un motivo de debilidad. Su base conceptual aporta un esquema formal para organizar el conocimiento...</p>
+        <a href="/facetas-las-matematicas-en-la-semantica">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 23<br/>
+            2007
+        </p>
+        <h3><a href="/apuntes-procesamiento-del-lenguaje-natural">Apuntes sobre Procesamiento del lenguaje natural</a></h3>
+    </header>
+    <section>
+        <p>El procesamiento del lenguaje natural es una de las áreas con más interés para todas las aproximaciones a un tratamiento de la información que se centren en los aspectos semánticos.&nbsp; Los apuntes son un extracto&nbsp; </p><!--more--><p>El documento describe los aspectos clave del procesamiento del lenguaje natural, y las interacciones y aportaciones entre la ling&uuml;ística y la informática.&nbsp; Expone de forma muy básica el funcionamiento interno de de los sistemas de PLN, así como los recursos utilizados para conseguir esta finalidad.</p><p>&nbsp;El documento tiene una licencia <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.es" title="Creative Commons - Atribución">Creative Commons - Atribución</a>. <br /></p>
+        <a href="/apuntes-procesamiento-del-lenguaje-natural">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 21<br/>
+            2007
+        </p>
+        <h3><a href="/indicadores-el-ajo-dorado">Indicadores: El ajo dorado</a></h3>
+    </header>
+    <section>
+        <p>Esta es una de aquellas entradas que probablemente generen accesos erróneos desde buscadores: que sepas que este post no va de cocina, sino de estadística... que tiene también una cocina particular.</p><!--more--><p>Esta ma&ntilde;ana escuchaba la radio mientras realizaba tareas caseras. El programa, sobre cocina, hablaba de la cocina Wok, sus bondades y las características de su estilo de cocción. Parece ser que uno de los grandes problemas que encuentra la gente es el de encontrar la temperatura óptima de cocción. En una primera fase, el invitado conocedor de la cocina Wok ha hablado de las temperaturas, tanto para aceinte de girasol como de oliva.</p><p>En vista que no era suficiente y la duda se repetía, ha soltado el truco: &quot;el truco está en echar un ajo y esperar a que esté dorado. La oyente que llamaba insistiendo en la duda ha emitido un sonoro &quot;aaaah!&quot;. Por fin tiene un <strong>indicador</strong> para conocer la temperatura.</p><p>Sabes de qué te estoy hablando...? Sin ánimos de precisión académica, quizá te lo pueda aclarar. </p><p>&nbsp;</p>
+        <a href="/indicadores-el-ajo-dorado">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 20<br/>
+            2007
+        </p>
+        <h3><a href="/teoria-de-la-relevancia-en-linguistica">La teoría de la relevancia en ling&uuml;ística</a></h3>
+    </header>
+    <section>
+        <p>En el post sobre <a href="/posicionamiento-en-buscadores-y-pragmatica" title="Posicionamiento en buscadores y pragmática">el concepto de la pragmática</a>, se comentaba el hecho que existe un aspecto de la codificación del mensaje que se centra en la postura del emisor, y no del código.  Para evitar al máximo los errores de decodificación del mensaje, Grice proponía sus máximas y su principio de cooperacion que en resumen venían a decir: &quot;si quieres que te entiendan, se claro, conciso y directo&quot;.</p><!--more--><p>Después es necesario identificar ese factor de ruido y determinar una posible vía de solución, siempre dependiente del consenso entre emisor y receptor. </p><p>Para cerrar el tema estricto de la pragmática, vale la pena comentar que en el artículo sobre <a href="http://www.cibersociedad.net/archivo/articulo.php?art=42" title="Cibersociedad - Ciberpragmática: entre la compensación y el desconcierto">ciberpragmática</a> se analiza la temática del procesamiento del lenguaje natural en entornos de comunicación de poca calidad comunicativa (comunicación por texto, o voz, sin capacidad para percibir gran parte del lenguaje verbal), se establecía que esa situación exponía a cierto nivel de desconcierto a los usuarios. En algunos casos, la reacción es aprovechar ese nivel de intimidad para convertir en sistema un conjunto de falsedades que generan una identidad virtual.</p><p>Aunque estoy más interesado por la comunicación escrita, es un artículo interesante por lo que expone en cuanto a la relación entre comunicación, identidad e intimidad.  En el momento que una persona tiene la opción de descartar su parte <em>pragmática</em> de la comunicación, puede dejar de lado su propia identidad, reservando la identidad.</p><p>Alrededor del 1986, Sperber y Wilson definieron la teoría de la relevancia como la teoría que estudia la forma como los usuarios valoran la relevancia de un mensaje en base a la decodificación.</p><p>A diferencia de la pragmática, que tiene una base más filosófica, la teoría de la relevancia tiene una base más empírica, y en cualquier caso (aunque se asume que la relevancia en sí no es cuantificable) establece los objetivos básicos del emisor y receptor, además del análisis de la comunicación para la maximización de la relevancia. </p><p>Pues nada, espero que las siguientes aportaciones os sean relevantes ;-) ...<br /> </p>
+        <a href="/teoria-de-la-relevancia-en-linguistica">Read more &raquo;</a>
+    </section>
+</div>
+    
+        <div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
+            Jun 19<br/>
+            2007
+        </p>
+        <h3><a href="/no-es-HAL-ni-Icarus">No es HAL ni Icarus...</a></h3>
+    </header>
+    <section>
+        <p>Pues no. Ni tampoco se llama <a href="http://en.wikipedia.org/wiki/Memex" title="Wikipedia: Memex">Memex</a>, ni Google....</p><!--more--><p>Porque el ganador tiene el mismo nombre que aquél que trajo el fuego al mundo. él es... </p><p>&nbsp;</p>
+        <a href="/no-es-HAL-ni-Icarus">Read more &raquo;</a>
+    </section>
+</div>
+    
+</div>
+<div class="row">
+    <div class="col-xs-6">
+        
+            <br/>
+            <p>
+                <a class="btn btn-primary" href="/page24">&laquo; Past</a>
+            </p>
+        
+    </div>
+    <div class="col-xs-6 pull-right text-right">
+        
+            <br/>
+            <p>
+                <a class="btn btn-primary" href="/page22">Present &raquo;</a>
+            </p>
+        
+    </div>
+</div>
+
+
+<!-- <div id="paging">
+
+	<a href="page24" class="btn btn-default pull-left">&larr; Older</a>
+
+
+
+	
+		<a href="page22" class="btn btn-default pull-right">Newer &rarr;</a>
+	
+
+</div>
+<div class="clearfix page-bottom"></div>
+ -->
+
+<!-- Last build: a7e35d6c52ba7924c050ce14d50850d4  -->
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trabajando con subversion y awk - Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <div class="row">
+    <div class="col-sm-4 hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/web-2-0-y-profesionales-de-la-informacion-i-software-social">&laquo;&nbsp;Web 2.0 y profesionales de la información (I): Software social</a>
+        
+    </div>
+    <div class="col-sm-4 hidden-xs text-center">
+        <a class="btn btn-lg" href="https://sopadebits.com/">
+            <span class="fa fa-home"></span>
+        </a>
+    </div>
+    <div class="col-sm-4 text-right pull-right hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/web-social-y-aspectos-sociales">Web social y aspectos sociales&nbsp;&raquo;</a>
+        
+    </div>
+
+    <div class="col-xs-6 visible-xs">
+        
+            <a class="badge" href="/web-2-0-y-profesionales-de-la-informacion-i-software-social" alt="Web 2.0 y profesionales de la información (I): Software social" title="Web 2.0 y profesionales de la información (I): Software social">&laquo;&nbsp;Previous</a>
+        
+    </div>
+    <div class="col-xs-6 text-right pull-right visible-xs">
+        
+            <a class="badge" href="/web-social-y-aspectos-sociales">Previous&nbsp;&raquo;</a>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <header class="major">
+            <p class="alert alert-info text-center pull-right">
+                May 31<br/>
+                2007
+            </p>
+            <h2 class="post-title">Trabajando con subversion y awk</h2>
+            <p class="post-meta">
+                
+                    Mario Alberich
+                
+            </p>
+        </header>
+        <section>
+            <p><br />
+<h2>Para los impacientes: resultado final</h2>
+<p>Empezando por el final, las instrucciones a realizar son:</p>
+<p><strong>$ svn log -v -r 400:`svn info | grep Revisión | awk &#39;{print $1}&#39;` | grep dirprj  | awk &#39;{print $1}&#39; | sort | uniq | awk &#39;{print "."$0}&#39; > dirprj-`svn info | grep Revisión | awk &#39;{print $1}&#39;`.txt</strong> </p>
+<p>y luego....</p>
+<p><strong>$ tar -zcvf dirprj-`svn info | grep Revisión | awk &#39;{print $1}&#39;`.tar.gz -T -`svn info | grep Revisión | awk &#39;{print $1}&#39;`.txt</strong></p>
+<p>Traducido al verbo humano, el proceso es como sigue:</p>
+<ul>
+<li>Selección de los archivos<br /></li>
+<ul>
+<li>Lístame los cambios del repositorio desde la revisión 400 hasta la última versión.</li></ul>
+<ul>
+<li>Del resultado, selecciona sólo lo que incluya la cadena dirprj. [grep dirprj]<br /></li></ul>
+<ul>
+<li>De los datos seleccionados, selecciona la segunda palabra de cada línea. [awk print $1]</li></ul>
+<ul>
+<li>Ordena alfabéticamente los datos resultantes (sort).</li></ul>
+<ul>
+<li>Elimina los datos repetidos [uniq]</li></ul>
+<ul>
+<li>A las rutas recuperadas les pones un punto delante y los guardas en el archivo con nombre "dirprj-[ultimarevision].txt"</li></ul>
+<li>Segunda parte: Compresión</li>
+<ul>
+<li>Comprime en formato tar y gzip los archivos que aparecen listados en el archivo dirprj-[ultimaversion].txt. y lo guardas en el archivo llamado dirprj-[ultimaversion].tar.gz </li></ul></ul><br />
+<h2>Ahora, por partes </h2>
+<p>Así, a palo seco, la instrucción de consola es un poco bestia. Voy desglosando instrucciones para sacar conclusiones:</p><br />
+<h3>svn log</h3>
+<p>svn log es una llamada que se realiza sobre subversion para saber la actividad que ha tenido el repositorio.  Al aplicar la opción <em>-v</em>, lo que conseguimos es que nos muestre los archivos alterados para cada actualización.</p>
+<p>Si sacáramos todo el log quizá nos pasamos 10 minutos viendo pasar listas de archivos modificados, con lo que lo mejor es establecer un margen de revisiones. Para especificar un número de revisiones se utiliza la opción <em>-r</em>, que tiene la forma:</p>
+<p>-r a:b, donde a es la revisión más antigua y b la más actual. En nuestro caso, nos interesa que <strong>b</strong> sea la última revisión realizada.  Para no tener que estar cambiando continuamente el valor, ejecutamos la instrucción:</p>
+<p>svn info | grep Revisión | awk &#39;{print $1}&#39;</p>
+<p>Para ir más rápido, utilizo directamente las salidas `entrecomillando las instrucciones`. Eso sustituye el la instrucción entrecomillada por el valor devuelto.</p><br />
+<h3>Seleccionando los archivos que nos interesan</h3>
+<p>La instrucción grep que se muestra a continuación es una cuestión de estilo. El caso sirve para los repositorios que almacenan más de un proyecto, como es mi caso.  Eso permite que los subdirectorios identifiquen los proyectos relacionados.  Este punto es el más adaptable a cada caso, como expone el propio manual de subversion en cuanto a estilos de gestión de repositorios se refiere.  Para el caso, la instrucción:</p>
+<p>grep  nos devuelve sólo los archivos que tienen en su <em>path</em> el nombre indicado. La desambig&uuml;ación no está de más para estos casos.</p><br />
+<h3>Eliminando ruido e información innecesaria</h3>
+<p>Los listados de log del subversion  están bastante, <em>maquetados</em>, por decirlo de algún modo.  Al menos la versión por defecto encuadra los resultados con guiones u otros caracteres. Además, para cada archivo indica qué tipo de modificación se ha realizado. Eso aclara la visualización pero entorpece el proceso de ca&ntilde;erías. </p>
+<p>Para eliminar ese ruido, ejecuto awk:</p>
+<p>$ ... | awk &#39;{print $1}&#39; | ...</p>
+<p>Esto hace que de todos los resultados retornados por grep, me coja "la segunda palabra", es decir, la secuencia de caracteres posterior al primer conjunto de espacios.  Esto lo que devuelve en definitiva es la ruta del archivo.</p>
+<p>Dado que es probable que hayan habido varias alteraciones de un mismo archivo, decido ordenar los resultados (<strong>sort</strong>) y luego eliminar de la lista ordenada los valores repetidos. Cambiar el orden de estas dos instrucciones no da buenos resultados, porque <strong>uniq</strong> sólo mira si la fila actual es igual que la anterior.</p><br />
+<h3>Relativizando rutas y guardando datos<br /></h3>
+<p>Dado que el repositorio no tendrá un path completo, la última instrucción le a&ntilde;ade un punto (.) al principio de toda la cadena, para dar a entender que se refiere a un path relativo al path actual (en awk, el valor de $0 equivale a toda la cadena).</p>
+<p>&iquest;Por qué?</p>
+<p>Pues porque svn me devuelve "paths absolutos" respecto la raíz del repositorio, pero cuando trabajo directamente sobre la raíz de mi sistema operativo, esas rutas no son correctas. Es importante tener claro en cada momento el contexto de ejecución, y especialmente cuando trabajamos con <em>pipes</em>. </p>
+<p>Almacenamos la lista de rutas limpitas y preparadas para la exportación en un archivo de texto, que para el caso hemos denominado combinando el nombre del directorio del proyecto y el número de revisión, así no hay que estar pendientes de grandes fiascos...</p><br />
+<h3>Golpe de gracia: compresión con Tar</h3>
+<p>Para acabar, llamaremos al programa tar,  utilizando la opción -T, que nos permite seleccionar de un archivo la lista de recursos a empaquetar. Así pues, ejecutamos la instrucción comentada antes:</p>
+<p>$ tar -zcvf dirprj-`svn info | grep Revisión | awk &#39;{print $1}&#39;`.tar.gz -T -`svn info | grep Revisión | awk &#39;{print $1}&#39;`.txt </p>
+<p>Como antes, el entrecomillado de svn info nos devuelve un valor. Por eso, es importante entender que lo que acaba recibiendo el ordenador (suponiendo que dirprj=proyecto1 y que la última revisión sea 425) es algo así como:</p>
+<p>$ tar -zcvf proyecto1-425.tar.gz -T proyecto1-425.txt</p><br />
+<h2>Mejoras, temas pendientes y <em>Further research</em><br /></h2>
+<p>Por lo menos detecto las siguientes mejoras posibles:</p>
+<ul>
+<li>Subversion indica el tipo de modificación que se ha realizado sobre un archivo.  Actualmente no se ha realizado el control sobre lo que pasa con el archivo en cuestión, por lo que quizá estemos tratando de empaquetar un archivo que ya no existe. No obstante, ese no era el problema principal, y por eso lo dejo como caso a desarrollar.</li>
+<li>el "grep Revisión" es ciertamente mejorable, por ejemplo comprobando si se puede hacer con un <strong>tail -n1 -c5 | awk &#39;{print $1}&#39;</strong>, que nos daría el mismo resultado.  Sólo que la versión de subversion fuera en inglés, ya no valdría lo anterior, aunque es fácilmente adaptable.</li>
+<li>El ejemplo anterior se podría desarrollar en un archivo bash para hacerlo más sencillo, y parametrizable.</li></ul>
+<p><strong>Si quieres saber más...</strong> </p>
+<p>Puedes seguir investigando sobre los anteriores comandos en los enlaces comentados anteriormente. Te recomiendo <a href="http://www.gnu.org/software/gawk/manual/gawk.html" title="gnu.org: Awk">awk</a> (puedes empezar por <a href="http://www.vectorsite.net/tsawk_3.html" title="Awk: Examples">algunos ejemplos de awk</a>), ese gran olvidado que yo conocí a fondo estudiando procesamiento del lenguaje natural, cuando para procesar un corpus y categorizar los términos utilizamos esta herramienta. Ahora ya forma parte de mi vida laboral :-D. </p></p>
+
+        </section>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Análisis web com Piwik y GNU R (II) - Sopa de bits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="A blog about data, information and IT, by Mario Alberich" />
+		<meta name="keywords" content="information science, technology, statistics, estadistica, documentacion, informatica, machine learning
+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+		<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Html Elements for Search -->
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a href="/"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="/">
+                    <img src="/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  
+                    <p>A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a></p>
+                  
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  <h3>Resources</h3>
+  
+      <p><a href="/en-la-cocina">En la cocina &raquo;</a></p>
+  
+      <p><a href="/contacto">Contacto &raquo;</a></p>
+  
+      <p><a href="/descargas">Descargas &raquo;</a></p>
+  
+</ul>
+                  <a name="tags"></a>
+<h3>Categories</h3>
+<div class="row">
+	
+		<div class="col-xs-2">
+			<span class="badge">157</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/informatica/">Informática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">58</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/documentacion/">Documentación </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">45</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/economia/">Economía </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">9</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/ocio/">Ocio </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">7</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/sin-categorizar/">Sin categorizar </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">11</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/personas/">Personas </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">88</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/matematica/">Matemática </a>
+		</div>
+	
+		<div class="col-xs-2">
+			<span class="badge">1</span>
+		</div>
+		<div class="col-xs-10">
+			<a href="/category/miscelanea/">Miscelánea </a>
+		</div>
+	
+</div>
+                </div>
+                <div class="col-sm-12">
+                  <!-- Script pointing to jekyll-search.js -->
+                  
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <article>
+                        {{#date}}
+                        <p class="alert alert-info text-center pull-right">
+                            {{pubdate}}
+                        </p>
+                        {{/date}}
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                        {{#is_post}}
+                        <p>
+                          {{#categories}}{{.}}  {{/categories}}
+                        </p>
+                        <p>
+                          {{#tags}}{{.}}, {{/tags}}
+                        </p>
+                        {{/is_post}}
+                      </article>
+                      <hr style="clear:both"/>
+                    {{/entries}}
+                  </script>
+                  
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#search-query').lunrSearch({
+                        indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+                        results   : '#search-results',          // selector for containing search results element
+                        template  : '#search-results-template', // selector for Mustache.js template
+                        titleMsg  : '<h3>Search results<h3>',   // message attached in front of results (can be empty)
+                        emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="/">
+                        <img src="/images/avatar.jpg"
+                            class="img img-responsive img-circle"
+                            alt="Mario Alberich"
+                            title="Mario Alberich" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="/">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="/">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-2 col-xs-12 text-center">
+                  <p>A blog about data, information and IT, by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  <a target="_new" href="https://linkedin.com/in/marioalberich">
+    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
+  </a>
+
+
+  <a target="_new" href="https://twitter.com/sopadebits">
+    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
+  </a>
+
+
+  <a target="_new" href="/feed.xml">
+    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
+  </a>
+
+
+  <a target="_new" href="https://github.com/malberich">
+    <span class="btn-lg icon fa fa-2x fa-github"></span>
+  </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <div class="row">
+    <div class="col-sm-4 hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/analisis-web-com-piwik-gnu-r-i">&laquo;&nbsp;Análisis web com Piwik y GNU R (I)</a>
+        
+    </div>
+    <div class="col-sm-4 hidden-xs text-center">
+        <a class="btn btn-lg" href="https://sopadebits.com/">
+            <span class="fa fa-home"></span>
+        </a>
+    </div>
+    <div class="col-sm-4 text-right pull-right hidden-xs">
+        
+            <a class="badge btn btn-lg" href="/gestor-contenidos-gestor-publicaciones-i">Del gestor de contenidos al gestor de publicaciones (I)&nbsp;&raquo;</a>
+        
+    </div>
+
+    <div class="col-xs-6 visible-xs">
+        
+            <a class="badge" href="/analisis-web-com-piwik-gnu-r-i" alt="Análisis web com Piwik y GNU R (I)" title="Análisis web com Piwik y GNU R (I)">&laquo;&nbsp;Previous</a>
+        
+    </div>
+    <div class="col-xs-6 text-right pull-right visible-xs">
+        
+            <a class="badge" href="/gestor-contenidos-gestor-publicaciones-i">Previous&nbsp;&raquo;</a>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <header class="major">
+            <p class="alert alert-info text-center pull-right">
+                Sep 16<br/>
+                2008
+            </p>
+            <h2 class="post-title">Análisis web com Piwik y GNU R (II)</h2>
+            <p class="post-meta">
+                
+                    Mario Alberich
+                
+            </p>
+        </header>
+        <section>
+            <p></p>
+<h2>Consideraciones previas</h2><br />
+El tratamiento de datos viene precedido por una fase de trastienda que consiste en la limpieza de datos. Esta limpieza de datos no consiste en eliminar lo que no queramos saber: se trata de sólo escoger los datos que son necesarios para los objetivos que se plantea el análisis.</p>
+<p>Incluso en la colección de datos que nos interesa, es habitual encontrar datos defectuosos fruto de la recogida de información (el trabajo de campo) que también deben ser eliminados para conseguir una mayor fiabilidad de la información.</p>
+<p>En el siguiente ejemplo descarto datos de acuerdo con los objetivos que me planteo, pero no hago una limpieza posterior, con una doble intención: comprobar que es necesario, y ver que los datos erróneos también tienen unas características propias, que son detectables con métodos estadísticos básicos.</p>
+<h2>Objetivos</h2><br />
+El objetivo principal de la extracción de datos es analizar la afluencia de tráfico que se generan a partir de los enlaces que pongo en los posts, y verificar si hay variaciones substanciales entre enlaces.</p>
+<p>Este análisis podría dar paso a búsquedas posteriores para determinar si existe alguna relación entre tales enlaces y sus características propias (número de palabras del enlace, términos utilizados en el enlace) como ajenas (posición en el conjunto del texto, posición dentro del párrafo, posición en una frase). De todos modos este estudio más complejo que dejo al margen para otras ocasiones.</p>
+<h2>Extrayendo datos de Piwik</h2><br />
+Con una consola o cliente de MySQL se pueden recuperar los datos anteriores.&nbsp; Vale la pena (obviamente) realizar el análisis en una máquina diferente a la que almacena los datos, si es que la máquina está totalmente en funcionamiento.</p>
+<p>Por ahora vamos a extraer una serie de datos para tener una idea de la información que hay almacenada en la base de datos.</p>
+<p>Empezaremos por comprobar cuántas salidas genera el blog hacia otros sitios. Para ello, ejecuto la consulta:</p>
+<p>SELECT pla.name,count(*) salidas FROM `piwik_log_visit` plv inner join piwik_log_action pla on plv.visit_exit_idaction=pla.idaction WHERE pla.name like 'http%' and pla.name not like '%sopadebits.com%' group by visit_exit_idaction order by salidas desc</p>
+<p>La consulta selecciona los nombres de los sitios que han recibido visitas desde un enlace en mi blog.&nbsp; Para detectar los sitios externos, filtro los datos teniendo en cuenta que el campo name de la tabla piwik_log_action empiece por "http" [pla.name like 'http%'] y que no contengan el dominio del post [pla.name not like '%sopadebits.com%']. Ordeno el resultado según la cantidad de visitas (de más a menos):</p>
+<p>El resultado es parecido a:</p>
+<table width="596" border="1" cellpadding="0">
+<tbody>
+<tr>
+<td>idaction</td></p>
+<td>&nbsp;URL</td></p>
+<td>Visitas</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;6</td></p>
+<td>http://teethgrinder.co.uk/open-flash-chart</td></p>
+<td>&nbsp;27</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;24</td></p>
+<td>http://www.um.es/dp-lengua-espa/revista/vol7/relevancia.pdf</td></p>
+<td>&nbsp;6</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;31</td></p>
+<td>http://articles.techrepublic.com.com/5100-10877_11-6160661.html</td></p>
+<td>&nbsp;5</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;135</td></p>
+<td>http://jlibrary.sourceforge.net</td></p>
+<td>&nbsp;3</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;106</td></p>
+<td>http://www.vectorsite.net/tsawk_3.html</td></p>
+<td>&nbsp;3</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;11</td></p>
+<td>http://jlibrary.sourceforge.net/12/screencast3.html</td></p>
+<td>&nbsp;2</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;53</td></p>
+<td>http://espanol.answers.yahoo.com/question/index?qid=20070723132213AA3U5yy</td></p>
+<td>&nbsp;2</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;107</td></p>
+<td>&nbsp;http://www.deakialli.com/2007/09/13/bibliotecas-publicas-servicios-electronicos-de-informacion-y-web-social</td></p>
+<td>&nbsp;2</td><br />
+</tr></p>
+<tr>
+<td></td></p>
+<td>&nbsp;...</td></p>
+<td>&nbsp;...</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+Ahora quiero comprobar si alguno de los enlaces más solicitados está recibiendo una relación de salidas más alta que los otros. Es decir, quiero medir el&nbsp; <a title="Wikipedia English: click-through rate" href="http://en.wikipedia.org/wiki/Click-through_rate">ratio de click-through</a>. Para eso voy a hacer dos consultas: primero, averiguar qué páginas de mi blog dirigen hacia estos enlaces, y luego consultar el número de visualizaciones de estas páginas.</p>
+<p>Dividiendo el número de visualizaciones por el número de salidas, tendré el ratio de click-through. El primer paso se consigue con la consulta siguiente:</p>
+<p align="left"><em>select distinct pllva.idaction_ref,pllva.idaction from piwik_log_action pla inner join piwik_log_link_visit_action pllva on pla.idaction=pllva.idaction_ref where pllva.idaction in (6, 24, 31, 135, 106, 11, 53, 107)</em></p><br />
+Ahora tenemos que los enlaces anteriores salen de las siguientes páginas:</p>
+<table id="table_results" border="1">
+<thead>
+<tr>
+<th align="left">name</th></p>
+<th>idaction_ref</th></p>
+<th class="condition">idaction</th><br />
+</tr><br />
+</thead></p>
+<tbody>
+<tr class="odd">
+<td>content/view/open-flash-chart-graficos-estadisticos-open-source</td></p>
+<td class="nowrap" align="right">5</td></p>
+<td class="condition nowrap" align="right">6</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/jlibrary-gestor-documental-open-source</td></p>
+<td class="nowrap" align="right">10</td></p>
+<td class="condition nowrap" align="right">11</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/organizacion-de-la-informacion-personal-eliminando-archivos-duplicados</td></p>
+<td class="nowrap" align="right">30</td></p>
+<td class="condition nowrap" align="right">31</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/normalizacion-distancias-normalizadas</td></p>
+<td class="nowrap" align="right">7</td></p>
+<td class="condition nowrap" align="right">53</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/teoria-de-la-relevancia-en-linguistica</td></p>
+<td class="nowrap" align="right">8</td></p>
+<td class="condition nowrap" align="right">24</td><br />
+</tr></p>
+<tr class="even">
+<td>http://www.um.es/dp-lengua-espa/revista/vol7/relevancia.pdf</td></p>
+<td class="nowrap" align="right">24</td></p>
+<td class="condition nowrap" align="right">24</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/www.themedicieffect.com</td></p>
+<td class="nowrap" align="right">61</td></p>
+<td class="condition nowrap" align="right">107</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/efecto-medici-innovacion-interdisciplinar</td></p>
+<td class="nowrap" align="right">27</td></p>
+<td class="condition nowrap" align="right">107</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/trabajando-con-subversion-y-awk</td></p>
+<td class="nowrap" align="right">12</td></p>
+<td class="condition nowrap" align="right">106</td><br />
+</tr></p>
+<tr class="even">
+<td>http://www.vectorsite.net/tsawk_3.html</td></p>
+<td class="nowrap" align="right">106</td></p>
+<td class="condition nowrap" align="right">106</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/jlibrary-gestor-documental-open-source</td></p>
+<td class="nowrap" align="right">10</td></p>
+<td class="condition nowrap" align="right">135</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/descargas</td></p>
+<td class="nowrap" align="right">17</td></p>
+<td class="condition nowrap" align="right">6</td><br />
+</tr></p>
+<tr class="odd">
+<td>extranet/open-flash-chart-graficos-estadisticos-open-source</td></p>
+<td class="nowrap" align="right">144</td></p>
+<td class="condition nowrap" align="right">6</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+En esta tabla, <em>idaction_ref</em> es el id de la página de origen, e i<em>daction</em> se corresponde con los enlaces externos.&nbsp; Por lo tanto, tenemos que las páginas del blog que enlazan a los recursos anteriores tienen los id de acción [5,10,30,7,8,24,61,27,12,106,10,17,144].</p>
+<p>De todos modos, en estos datos nos encontramos con dos temas:</p>
+<ul>
+<li>vemos que las acciones 5 y 144 son equivalentes.</li>
+<li>Vemos que las acciones 24 y 106 vuelven a ellas mismas, lo que sin duda es un error (quizá debido a un doble click del usuario mientras se procesa la consulta o algo por el estilo).</li><br />
+</ul><br />
+Las acciones 5 y 144 se tratarán pues como una sola entrada, mientras que&nbsp; las acciones&nbsp; 24 y 106 deben eliminarse de la lista. Esto indica que un proceso de limpieza debería eliminar los datos cuyos valores de <em>idaction</em> e <em>idaction</em>_ref coinciden.</p>
+<p>Nos quedamos entonces con los ítems&nbsp; [5,10,30,7,8,61,27,12,10,17,144].&nbsp; Ahora queda ejecutar la consulta para las páginas vistas de cada ítem:</p>
+<p align="left"><em>select pla.idaction,pla.name,count(*) paginas_vistas from piwik_log_link_visit_action pllva inner join piwik_log_action pla on pllva.idaction=pla.idaction where pla.idaction in (5,10,30,7,8,61,27,12,10,17,144) group by pla.name order by paginas_vistas desc </em></p><br />
+La consulta devuelve un resultado como el siguiente (agrupando las acciones 5 y 144):</p>
+<table id="table_results" border="1">
+<tbody>
+<tr>
+<td><strong>&nbsp;idaction</strong></td></p>
+<td><strong>name</strong></td></p>
+<td><strong>&nbsp;paginas_vistas</strong></td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;5+144</td></p>
+<td>content/view/open-flash-chart-graficos-estadistico...</td></p>
+<td class="nowrap" align="right">354</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;7</td></p>
+<td>content/view/normalizacion-distancias-normalizadas</td></p>
+<td class="nowrap" align="right">158</td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;30</td></p>
+<td>content/view/organizacion-de-la-informacion-person...</td></p>
+<td class="nowrap" align="right">149</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;8</td></p>
+<td>content/view/teoria-de-la-relevancia-en-linguistic...</td></p>
+<td class="nowrap" align="right">97</td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;12</td></p>
+<td>content/view/trabajando-con-subversion-y-awk</td></p>
+<td class="nowrap" align="right">96</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;27</td></p>
+<td>content/view/efecto-medici-innovacion-interdiscipl...</td></p>
+<td class="nowrap" align="right">56</td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;10</td></p>
+<td>content/view/jlibrary-gestor-documental-open-sourc...</td></p>
+<td class="nowrap" align="right">44</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;17</td></p>
+<td>content/view/descargas</td></p>
+<td class="nowrap" align="right">42</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;61</td></p>
+<td>content/view/www.themedicieffect.com</td></p>
+<td class="nowrap" align="right">8</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+Combinando esta tabla y la de visitas por URL, tenemos un ratio de click-through entre páginas y enlaces:</p>
+<p><!--   @page { size: 21cm 29.7cm; margin: 2cm }   P { margin-bottom: 0.21cm }  --></p>
+<table width="606" border="1" cellspacing="0" cellpadding="2">
+<tbody>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;<strong>idaction</strong></p><br />
+</td></p>
+<td width="324">
+<p align="left"><strong>name</strong></p><br />
+</td></p>
+<td width="95">
+<p align="left">&nbsp;<strong>pag_vistas</strong></p><br />
+</td></p>
+<td width="117">
+<p align="left"><strong>enlaces_salientes</strong></p><br />
+</td></p>
+<td width="82">
+<p align="left"><strong>%CTR</strong></p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;5</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/open-flash-chart-graficos-estadistico...</p><br />
+</td></p>
+<td width="95">
+<p align="right">354</p><br />
+</td></p>
+<td width="117">
+<p align="right">29</p><br />
+</td></p>
+<td width="82">
+<p align="right">8,19%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;7</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/normalizacion-distancias-normalizadas</p><br />
+</td></p>
+<td width="95">
+<p align="right">158</p><br />
+</td></p>
+<td width="117">
+<p align="right">3</p><br />
+</td></p>
+<td width="82">
+<p align="right">1,90%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;30</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/organizacion-de-la-informacion-person...</p><br />
+</td></p>
+<td width="95">
+<p align="right">149</p><br />
+</td></p>
+<td width="117">
+<p align="right">5</p><br />
+</td></p>
+<td width="82">
+<p align="right">3,36%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;8</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/teoria-de-la-relevancia-en-linguistic...</p><br />
+</td></p>
+<td width="95">
+<p align="right">97</p><br />
+</td></p>
+<td width="117">
+<p align="right">6</p><br />
+</td></p>
+<td width="82">
+<p align="right">6,19%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;12</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/trabajando-con-subversion-y-awk</p><br />
+</td></p>
+<td width="95">
+<p align="right">96</p><br />
+</td></p>
+<td width="117">
+<p align="right">3</p><br />
+</td></p>
+<td width="82">
+<p align="right">3,13%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;27</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/efecto-medici-innovacion-interdiscipl...</p><br />
+</td></p>
+<td width="95">
+<p align="right">56</p><br />
+</td></p>
+<td width="117">
+<p align="right">2</p><br />
+</td></p>
+<td width="82">
+<p align="right">3,57%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;10</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/jlibrary-gestor-documental-open-sourc...</p><br />
+</td></p>
+<td width="95">
+<p align="right">44</p><br />
+</td></p>
+<td width="117">
+<p align="right">6</p><br />
+</td></p>
+<td width="82">
+<p align="right">13,64%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;17</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/descargas</p><br />
+</td></p>
+<td width="95">
+<p align="right">42</p><br />
+</td></p>
+<td width="117">
+<p align="right">0</p><br />
+</td></p>
+<td width="82">
+<p align="right">0,00%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;61</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/www.themedicieffect.com</p><br />
+</td></p>
+<td width="95">
+<p align="right">8</p><br />
+</td></p>
+<td width="117">
+<p align="right">2</p><br />
+</td></p>
+<td width="82">
+<p align="right">25,00%</p><br />
+</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+De lo anterior hay que sacar muchas conclusiones, pero especialmente una: antes de tratar con datos estadísticos es necesario hacer una purga que sólo nos deje con los datos necesarios de acuerdo con unos objetivos.</p>
+<p>Por ejemplo, el enlace 61 es claramente un error, probablemente debido a un error en la introducción del enlace.&nbsp; El click-through que presenta puede ser debido a que el usuario trata de accede r repetidas veces al enlace. Es probable que se pudiera unificar con la acción 27 (el post sobre el efecto Medici), y que los dos clicks fueran porque el usuario vuelve a intentar el enlace.</p>
+<p>El cálculo aporta información interesante, aunque no significativa.&nbsp; De lo anterior sólo&nbsp; los tres primeros enlaces tienen datos suficientes como para sacar alguna conclusión. Entre ellos cabe destacar en positivo el enlace de open-flash-chart y en negativo el de las distancias normalizadas.</p>
+<p>Sobre el resto, precisamente el enlace del Medici Effect aporta información interesante...&nbsp; pero <strong>para corregir errores</strong>. Esto en sí mismo es interesante porque el detectar que el ratio&nbsp; varía bastante (aunque es poco significativo por los pocos datos). éste es un caso determinado nos induce a pensar que algo sucede. Pero no era el objetivo de estas consultas.</p>
+<p>También cabe comentar que todo este proceso podría haberse realizado con una sola consulta, máximo dos.&nbsp; En cualquier caso estas consultas no serían eficientes en un servidor a pleno rendimiento.</p>
+<p>El siguiente paso (en otro artículo) será extraer datos globales de las relaciones entre enlaces para realizar un análisis basado en cadenas de Markov. Para eso utilizaremos el paquete estadístico GNU R. </p>
+
+        </section>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <a name="tags"></a>
+<h3>Tags</h3>
+
+<div class="row">
+	<div class="col-12">
+		
+			
+				<a href="/tag/gestion-documental/">gestión documental <span class="badge">10</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/recuperacion-informacion/">Recuperación información <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/linux/">Linux <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/usabilidad/">Usabilidad <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/open-source/">open source <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/tagging/">Tagging <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/logica-borrosa/">lógica borrosa <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/fuentes-de-informacion/">fuentes de información <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/google/">Google <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/off-topic/">off-topic <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/spam/">spam <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grafos/">grafos <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/web-social/">Web social <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/modelizacion/">modelización <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/productividad/">Productividad <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/buscadores/">buscadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/utilidades/">utilidades <span class="badge">17</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/profesionales/">Profesionales <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seo/">SEO <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/estandares/">estándares <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/veracidad/">veracidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/relevancia/">relevancia <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ling-uuml-istica/">ling&uuml;ística <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/pln/">PLN <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/lenguajes-documentales/">lenguajes documentales <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/apis-mashups/">apis-mashups <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/rese-ntilde-as/">rese&ntilde;as <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/flash/">Flash <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/graficos-estadisticos/">Gráficos estadísticos <span class="badge">13</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/publicidad/">Publicidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/innovacion/">Innovación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/muestreo-estadistico/">muestreo estadístico <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/php/">PHP <span class="badge">14</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/internet/">internet <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/testeo/">testeo <span class="badge">12</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/desarrollo/">desarrollo <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/visualizacion/">visualizacion <span class="badge">36</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/javascript/">javascript <span class="badge">16</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/datos-abiertos/">datos abiertos <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/elecciones/">elecciones <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/simulacion/">simulación <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/html5/">html5 <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/phing/">phing <span class="badge">9</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/ssh/">ssh <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/seguridad/">seguridad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/indicadores/">indicadores <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/demografia/">demografía <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/media/">media <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/algoritmos/">algoritmos <span class="badge">7</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/shell/">shell <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/mysql/">mysql <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/backup/">backup <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/big-data/">big data <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/twitter/">twitter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/d3js/">d3js <span class="badge">11</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/revealjs/">revealjs <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/metodologia/">metodología <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/data-journalism/">data-journalism <span class="badge">6</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/smartcities/">smartcities <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/nyt/">NYT <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/privacidad/">privacidad <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/benchmarking/">benchmarking <span class="badge">4</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/recopilaciones/">recopilaciones <span class="badge">21</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/magento/">magento <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/formacion/">formacion <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/github/">github <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/hhvm/">HHVM <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/psicologia/">psicología <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/angularjs/">angularjs <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+				<a href="/tag/grep/">grep <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/nodejs/">nodejs <span class="badge">5</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/promises/">promises <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/mapreduce/">mapreduce <span class="badge">3</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+				<a href="/tag/crossfilter/">crossfilter <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/exploracion-de-datos/">exploración de datos <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<a href="/tag/machine-learning/">machine learning <span class="badge">2</span></a> &nbsp;&nbsp;&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3459440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
