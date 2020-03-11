@@ -1,0 +1,88 @@
+---
+layout: post
+status: publish
+published: true
+title: "Trabajando con subversion y awk"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: '<p>Andábamos esta ma&ntilde;ana <a href="http://www.enchufado.com/"
+  title="Enchufado: Blog">enchufados</a> al servidor de trabajo y nos ha dado por
+  realizar un peque&ntilde;o script para exportar peque&ntilde;as actualizaciones
+  de algún proyecto sin tener que realizar un svn export del repositorio de
+  <a href="http://tigris.subversion.com/" title="Subversion">subversion</a>.</p><!--more--><p>La
+  solución ha pasado por las siguientes siglas: grep, awk, sort, uniq,... y
+  svn por supuesto.</p><p>Te apetece ver cómo? </p><p>&nbsp;</p>'
+wordpress_id: 26750
+date: '2007-05-31 00:00:00 +0200'
+date_gmt: '2007-05-31 00:00:00 +0200'
+categories:
+- Informática
+tags:
+- Linux
+- utilidades
+comments: []
+---
+<p><br />
+<h2>Para los impacientes: resultado final</h2>
+<p>Empezando por el final, las instrucciones a realizar son:</p>
+<p><strong>$ svn log -v -r 400:`svn info | grep Revisión | awk &#39;{print $1}&#39;` | grep dirprj  | awk &#39;{print $1}&#39; | sort | uniq | awk &#39;{print "."$0}&#39; > dirprj-`svn info | grep Revisión | awk &#39;{print $1}&#39;`.txt</strong> </p>
+<p>y luego....</p>
+<p><strong>$ tar -zcvf dirprj-`svn info | grep Revisión | awk &#39;{print $1}&#39;`.tar.gz -T -`svn info | grep Revisión | awk &#39;{print $1}&#39;`.txt</strong></p>
+<p>Traducido al verbo humano, el proceso es como sigue:</p>
+<ul>
+<li>Selección de los archivos<br /></li>
+<ul>
+<li>Lístame los cambios del repositorio desde la revisión 400 hasta la última versión.</li></ul>
+<ul>
+<li>Del resultado, selecciona sólo lo que incluya la cadena dirprj. [grep dirprj]<br /></li></ul>
+<ul>
+<li>De los datos seleccionados, selecciona la segunda palabra de cada línea. [awk print $1]</li></ul>
+<ul>
+<li>Ordena alfabéticamente los datos resultantes (sort).</li></ul>
+<ul>
+<li>Elimina los datos repetidos [uniq]</li></ul>
+<ul>
+<li>A las rutas recuperadas les pones un punto delante y los guardas en el archivo con nombre "dirprj-[ultimarevision].txt"</li></ul>
+<li>Segunda parte: Compresión</li>
+<ul>
+<li>Comprime en formato tar y gzip los archivos que aparecen listados en el archivo dirprj-[ultimaversion].txt. y lo guardas en el archivo llamado dirprj-[ultimaversion].tar.gz </li></ul></ul><br />
+<h2>Ahora, por partes </h2>
+<p>Así, a palo seco, la instrucción de consola es un poco bestia. Voy desglosando instrucciones para sacar conclusiones:</p><br />
+<h3>svn log</h3>
+<p>svn log es una llamada que se realiza sobre subversion para saber la actividad que ha tenido el repositorio.  Al aplicar la opción <em>-v</em>, lo que conseguimos es que nos muestre los archivos alterados para cada actualización.</p>
+<p>Si sacáramos todo el log quizá nos pasamos 10 minutos viendo pasar listas de archivos modificados, con lo que lo mejor es establecer un margen de revisiones. Para especificar un número de revisiones se utiliza la opción <em>-r</em>, que tiene la forma:</p>
+<p>-r a:b, donde a es la revisión más antigua y b la más actual. En nuestro caso, nos interesa que <strong>b</strong> sea la última revisión realizada.  Para no tener que estar cambiando continuamente el valor, ejecutamos la instrucción:</p>
+<p>svn info | grep Revisión | awk &#39;{print $1}&#39;</p>
+<p>Para ir más rápido, utilizo directamente las salidas `entrecomillando las instrucciones`. Eso sustituye el la instrucción entrecomillada por el valor devuelto.</p><br />
+<h3>Seleccionando los archivos que nos interesan</h3>
+<p>La instrucción grep que se muestra a continuación es una cuestión de estilo. El caso sirve para los repositorios que almacenan más de un proyecto, como es mi caso.  Eso permite que los subdirectorios identifiquen los proyectos relacionados.  Este punto es el más adaptable a cada caso, como expone el propio manual de subversion en cuanto a estilos de gestión de repositorios se refiere.  Para el caso, la instrucción:</p>
+<p>grep  nos devuelve sólo los archivos que tienen en su <em>path</em> el nombre indicado. La desambig&uuml;ación no está de más para estos casos.</p><br />
+<h3>Eliminando ruido e información innecesaria</h3>
+<p>Los listados de log del subversion  están bastante, <em>maquetados</em>, por decirlo de algún modo.  Al menos la versión por defecto encuadra los resultados con guiones u otros caracteres. Además, para cada archivo indica qué tipo de modificación se ha realizado. Eso aclara la visualización pero entorpece el proceso de ca&ntilde;erías. </p>
+<p>Para eliminar ese ruido, ejecuto awk:</p>
+<p>$ ... | awk &#39;{print $1}&#39; | ...</p>
+<p>Esto hace que de todos los resultados retornados por grep, me coja "la segunda palabra", es decir, la secuencia de caracteres posterior al primer conjunto de espacios.  Esto lo que devuelve en definitiva es la ruta del archivo.</p>
+<p>Dado que es probable que hayan habido varias alteraciones de un mismo archivo, decido ordenar los resultados (<strong>sort</strong>) y luego eliminar de la lista ordenada los valores repetidos. Cambiar el orden de estas dos instrucciones no da buenos resultados, porque <strong>uniq</strong> sólo mira si la fila actual es igual que la anterior.</p><br />
+<h3>Relativizando rutas y guardando datos<br /></h3>
+<p>Dado que el repositorio no tendrá un path completo, la última instrucción le a&ntilde;ade un punto (.) al principio de toda la cadena, para dar a entender que se refiere a un path relativo al path actual (en awk, el valor de $0 equivale a toda la cadena).</p>
+<p>&iquest;Por qué?</p>
+<p>Pues porque svn me devuelve "paths absolutos" respecto la raíz del repositorio, pero cuando trabajo directamente sobre la raíz de mi sistema operativo, esas rutas no son correctas. Es importante tener claro en cada momento el contexto de ejecución, y especialmente cuando trabajamos con <em>pipes</em>. </p>
+<p>Almacenamos la lista de rutas limpitas y preparadas para la exportación en un archivo de texto, que para el caso hemos denominado combinando el nombre del directorio del proyecto y el número de revisión, así no hay que estar pendientes de grandes fiascos...</p><br />
+<h3>Golpe de gracia: compresión con Tar</h3>
+<p>Para acabar, llamaremos al programa tar,  utilizando la opción -T, que nos permite seleccionar de un archivo la lista de recursos a empaquetar. Así pues, ejecutamos la instrucción comentada antes:</p>
+<p>$ tar -zcvf dirprj-`svn info | grep Revisión | awk &#39;{print $1}&#39;`.tar.gz -T -`svn info | grep Revisión | awk &#39;{print $1}&#39;`.txt </p>
+<p>Como antes, el entrecomillado de svn info nos devuelve un valor. Por eso, es importante entender que lo que acaba recibiendo el ordenador (suponiendo que dirprj=proyecto1 y que la última revisión sea 425) es algo así como:</p>
+<p>$ tar -zcvf proyecto1-425.tar.gz -T proyecto1-425.txt</p><br />
+<h2>Mejoras, temas pendientes y <em>Further research</em><br /></h2>
+<p>Por lo menos detecto las siguientes mejoras posibles:</p>
+<ul>
+<li>Subversion indica el tipo de modificación que se ha realizado sobre un archivo.  Actualmente no se ha realizado el control sobre lo que pasa con el archivo en cuestión, por lo que quizá estemos tratando de empaquetar un archivo que ya no existe. No obstante, ese no era el problema principal, y por eso lo dejo como caso a desarrollar.</li>
+<li>el "grep Revisión" es ciertamente mejorable, por ejemplo comprobando si se puede hacer con un <strong>tail -n1 -c5 | awk &#39;{print $1}&#39;</strong>, que nos daría el mismo resultado.  Sólo que la versión de subversion fuera en inglés, ya no valdría lo anterior, aunque es fácilmente adaptable.</li>
+<li>El ejemplo anterior se podría desarrollar en un archivo bash para hacerlo más sencillo, y parametrizable.</li></ul>
+<p><strong>Si quieres saber más...</strong> </p>
+<p>Puedes seguir investigando sobre los anteriores comandos en los enlaces comentados anteriormente. Te recomiendo <a href="http://www.gnu.org/software/gawk/manual/gawk.html" title="gnu.org: Awk">awk</a> (puedes empezar por <a href="http://www.vectorsite.net/tsawk_3.html" title="Awk: Examples">algunos ejemplos de awk</a>), ese gran olvidado que yo conocí a fondo estudiando procesamiento del lenguaje natural, cuando para procesar un corpus y categorizar los términos utilizamos esta herramienta. Ahora ya forma parte de mi vida laboral :-D. </p></p>

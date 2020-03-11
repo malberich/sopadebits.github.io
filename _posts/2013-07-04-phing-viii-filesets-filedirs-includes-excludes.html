@@ -1,0 +1,42 @@
+---
+layout: post
+status: publish
+published: true
+title: Phing (VIII) filesets, filedirs, includes, excludes
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27155
+wordpress_url: http://www.sopadebits.com/?p=27155
+date: '2013-07-04 18:00:59 +0200'
+date_gmt: '2013-07-04 16:00:59 +0200'
+categories:
+- Informática
+tags:
+- PHP
+- phing
+comments: []
+---
+<p>Otra de las potentes características de Phing es la posibilidad de procesar en bloque un conjunto de archivos que coincida con un determinado patrón de nombre, ruta, o una combinación de ellas. Por ejemplo, la siguiente instrucción:</p><!--more-->
+<pre class="brush: xml; gutter: true"><fileset dir="/etc" ><br />
+  <include name="httpd/**" /><br />
+  <include name="php.ini" /><br />
+</fileset></pre><br />
+Permite recoger todos los archivos dentro de /etc/httpd/ (incluyendo subdirectorios), y también el archivo php.ini.</p>
+<pre class="brush: xml; gutter: true"><fileset dir="/ruta/a/mi/proyecto/php" ></p>
+<patternset>
+    <include name="**/*.php"/><br />
+    <exclude name="**/*Test*"/><br />
+  </patternset><br />
+</fileset></pre></p>
+<p class="brush: xml; gutter: true">En este segundo caso &nbsp;recoge todos los archivos .php que existieran en cualquier directorio dentro de "/ruta/a/mi/proyecto/php", y excluye todos los archivos que contengan en su nombre la palabra "Test" (los archivos con pruebas unitarias)</p></p>
+<p class="brush: xml; gutter: true">En ambos casos, el asterisco simple sirve para lo mismo que en la consola: como <em>comodín</em>. Sin embargo, el doble asterisco es una opción muy potente para buscar recursivamente en los subdirectorios y también dentro de los nombres. Así, la expresión:</p></p>
+<p class="brush: xml; gutter: true">
+<pre class="brush: xml; gutter: true">...<br />
+  <include name="test**.xml"/><br />
+...</pre><br />
+Puede encontrar tanto un archivo denominado &nbsp;test_nuevo.xml as well as to test/test_viejo.xml, por ejemplo. Es decir, el doble asterisco ** "supera la barrera" de los directorios y sirve como comodín en cualquier parte del path del archivo.</p></p>

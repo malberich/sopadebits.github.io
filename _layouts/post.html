@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-sm-4 hidden-xs">
+        {% if page.previous %}
+            <a class="badge btn btn-lg" href="{{ page.previous.url }}">&laquo;&nbsp;{{ page.previous.title }}</a>
+        {% endif %}
+    </div>
+    <div class="col-sm-4 hidden-xs text-center">
+        <a class="btn btn-lg" href="{{ site.url }}{{site.baseurl}}">
+            <span class="fa fa-home"></span>
+        </a>
+    </div>
+    <div class="col-sm-4 text-right pull-right hidden-xs">
+        {% if page.next %}
+            <a class="badge btn btn-lg" href="{{ page.next.url }}">{{ page.next.title }}&nbsp;&raquo;</a>
+        {% endif %}
+    </div>
+
+    <div class="col-xs-6 visible-xs">
+        {% if page.previous %}
+            <a class="badge" href="{{ page.previous.url }}" alt="{{ page.previous.title }}" title="{{ page.previous.title }}">&laquo;&nbsp;Previous</a>
+        {% endif %}
+    </div>
+    <div class="col-xs-6 text-right pull-right visible-xs">
+        {% if page.next %}
+            <a class="badge" href="{{ page.next.url }}">Previous&nbsp;&raquo;</a>
+        {% endif %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <header class="major">
+            <p class="alert alert-info text-center pull-right">
+                {{ page.date | date: "%b %d" }}<br/>
+                {{ page.date | date: "%Y" }}
+            </p>
+            <h2 class="post-title">{{ page.title }}</h2>
+            <p class="post-meta">
+                {% if page.author %}
+                    {{ page.author.display_name }}
+                {% endif %}
+            </p>
+        </header>
+        <section>
+            {{ content }}
+        </section>
+    </div>
+</div>

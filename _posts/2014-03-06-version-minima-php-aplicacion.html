@@ -1,0 +1,49 @@
+---
+layout: post
+status: publish
+published: true
+title: 'PHP: Cuál es la versión mínima de  para mi aplicación'
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27737
+wordpress_url: http://www.sopadebits.com/?p=27737
+date: '2014-03-06 09:40:04 +0100'
+date_gmt: '2014-03-06 08:40:04 +0100'
+categories:
+- Informática
+tags:
+- PHP
+- compatibilidad
+- codesniffer
+comments: []
+---
+<p>En el desarrollo y evolución de aplicaciones es muy habitual que se mezclen funcionalidades de las últimas versiones del lenguaje con otras más antiguas o incluso&nbsp;<em>arcaicas</em>. Es entonces cuando llega el momento en el que alguien (el cliente, el administrador de sistemas o la oferta de hosting) que nos plantea la duda: &iquest;Cuál es la versión mínima de PHP que necesita mi aplicación?</p><!--more-->
+<p>En ese momento puedes empezar a repasar todo tu código y experimentar un sudor frío... o quizá puedes pensar que alguien ha pasado por esto y comprobar si ha hecho algo para resolverlo.</p>
+<h2>PHP Compatibility</h2><br />
+El proyecto <a title="PHP Compatibility on GitHub" href="https://github.com/wimg/PHPCompatibility" target="_blank">PHP Compatibility (disponible en GitHub)</a>, que se ejecuta como estándar&nbsp;<a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank">PHP CodeSniffer</a>, aunque en el momento de escribir esto es necesario hacerlo desde la rama <em>master&nbsp;</em>del repositorio de GitHub, ya que la ejecución de la compatibilidad exige utilizar un parámetro de CodeSniffer aún no disponible en la versión estable.</p>
+<p>Para llevar a cabo la prueba, puedes empezar por clonar el repositorio de PHP_CodeSniffer:</p>
+<pre class="brush: bash; gutter: true">git clone https://github.com/squizlabs/PHP_CodeSniffer.git</pre><br />
+Después, accede al directorio de CodeSniffer, hasta el directorio CodeSniffer/Standards:</p>
+<pre class="brush: bash; gutter: true">cd PHP_Codesniffer/CodeSniffer/Standards</pre><br />
+Allí podrás encontrar algunos de los estándares que ya vienen instalados con CodeSniffer. Para a&ntilde;adir PHPCompatibility, puedes clonar el repositorio en esta carpeta:</p>
+<pre class="brush: bash; gutter: true">git clone https://github.com/wimg/PHPCompatibility.git</pre><br />
+Ahora ya tienes el estándar instalado. Para comprovar que CodeSniffer lo detecta, dirígete al directorio&nbsp;<em>scripts</em>...</p>
+<pre class="brush: actionscript3; gutter: true">cd ../../scripts</pre><br />
+Y lista los estándares disponibles:</p>
+<pre class="brush: actionscript3; gutter: true">./phpcs -i</pre><br />
+Tras lo cual debería aparecerte PHPCompatibility en la lista:</p>
+<pre class="brush: bash; gutter: true">The installed coding standards are PSR2, PHPCompatibility, Zend, Squiz, PEAR, PHPCS, MySource and PSR1</pre><br />
+Ahora ya está todo a punto para ejecutar PHPCompatiblity. Para ejecutarlo utilizaremos el siguiente comando:</p>
+<pre class="brush: actionscript3; gutter: true">./phpcs --standard=PHPCompatibility --runtime-set testVersion 5.2 /ruta/a/codigo/php/que/quiero/analizar</pre><br />
+Con esto puedo comprobar si mi código fuente funcionará con la versión 5.2.</p>
+<p>Sólo me queda a&ntilde;adir dos comentarios antes de acabar:</p>
+<ul>
+<li>Como en otros procesos relacionados con CodeSniffer, el análisis de compatibilidad se toma su tiempo. Por eso vale la pena que este tipo de procesos se realicen en background de forma automática (mediante <a title="Phing - Sopa de bits" href="http://sopadebits.com/tag/phing" target="_blank">phing</a> o similares), para por ejemplo tener un control a cada commit/push realizado.</li>
+<li>Todo el proceso anterior se puede simplificar en el momento en que CodeSniffer acepte el argumento <em>--runtime-set</em>, que actualmente no acepta. Si estás leyendo este artículo, no estaría de más comprovar que la versión de PEAR incorpora ya este parámetro.</li><br />
+</ul></p>
+<h3></h3></p>

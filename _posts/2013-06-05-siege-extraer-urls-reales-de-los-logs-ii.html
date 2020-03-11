@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Siege: extraer URLs reales de los logs (II)'
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27064
+wordpress_url: http://www.sopadebits.com/?p=27064
+date: '2013-06-05 09:30:06 +0200'
+date_gmt: '2013-06-05 07:30:06 +0200'
+categories:
+- Informática
+tags:
+- Linux
+- testeo
+comments: []
+---
+<p>Con el proceso anterior, ya teníamos las URIs, y nos faltaba a&ntilde;adir el host y el protocolo para tener una URL completa. &nbsp;Esto se puede conseguir echando mano del comando sed:</p><!--more-->
+<pre>~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039;</pre><br />
+Qué hace esto exactamente? Busca el inicio de la cadena (el carácter "^" es una expresión regular que indica eso) y le a&ntilde;ade el dominio (en mi caso, el de este blog sin el ".com"). Es necesario&nbsp;<em>escapar</em> las barras (\/), como ya es habitual en las expresiones regulares.</p>
+<p>Con lo anterior, nos sale una lista de URLs completas. Cambiando lo anterior, a punto para ser usadas con siege. Sólo falta guardarlas en un archivo de texto. Así que el proceso completo sería:</p>
+<pre>~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039; > urls.txt</pre></p>
+<h2>Ejecutar Siege con una lista de URLs</h2><br />
+Con lo anterior, sólo queda indicar a Siege que queremos utilizar ese archivo "urls.txt" para que realice las pruebas. Esto es tan sencillo como:</p>
+<pre>~$ siege -c {concurrencia} -f ./urls.txt</pre><br />
+&iexcl;Ahí tienes la ejecución! Dependiendo del número de URLs y usuarios concurrentes, el test tardará más o menos en ejecutarse y mostrará los resultados al final.</p>
+<h2>Filtrar/eliminar algunas URLs del listado</h2><br />
+Si por ejemplo queremos limpiar las URLs que cargan CSS, o archivos JS o imágenes PNG, podemos utilizar la herramienta grep:</p>
+<pre>~$ grep -vE "\.(js|css|gif|png|kml)"</pre><br />
+Integrándola en el conjunto de pipes anteriores, el resultado quedaría así:</p>
+<pre>~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; <strong>| grep -vE "\.(js|css|gif|png)"</strong> | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039; &amp;gt; urls.txt</pre><br />
+La opción "-v" de grep permite seleccionar las líneas que NO contengan la expresión indicada, y la opción "E" permite indicar una expresión regular. Con eso ya tenemos la lista de URLs limpias y podemos volver a ejecutar la prueba.</p>

@@ -1,0 +1,51 @@
+---
+layout: post
+status: publish
+published: true
+title: "IBSN reloaded: propuestas para la gestión del IBSN"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: "<p>Hace ya tiempo que hice mi post en los foros de Jarfil.  Era una tarea
+  en mi lista el aportar ideas y por lo menos abordar las posibles vías de
+  crecimiento de esta iniciativa.</p><!--more--><p>He podido dedicar un rato a resumir lo que
+  en todo este tiempo ha ido surgiendo y pasando por mi vista, y que pudiera ser aplicable
+  al IBSN.  Pongo aquí el post tal como lo he indicado allí (lo siento
+  san google: hoy toca contenidos duplicados).  </p><p>&nbsp;</p>"
+wordpress_id: 26776
+date: '2007-08-28 00:00:00 +0200'
+date_gmt: '2007-08-28 00:00:00 +0200'
+categories:
+- Documentación
+tags:
+- gestión documental
+- estándares
+comments: []
+---
+<p><br />
+<h2>Réplicas al post de Jarfil<br /></h2>
+<p>En referencia a lo que comentaste en su momento, creo que la libertad que proporciona la edición electrónica de contenidos no está relacionada directamente con la difuminación de la identidad, sino más bien como una nueva forma de abordarla: escogemos un nombre de blog como escogeríamos un login o un significado sobre el que proyectamos de algún modo la imagen que queremos dar. Aunque esa imagen sea diferente a nuestros rasgos físicos, también forma parte de la identidad.</p>
+<p>En ese aspecto puede ayudar el IBSN: el hecho de definir un criterio no coarta la libertad para seguir editando, sino que aporta significado a la codificación.  Por ejemplo, la posibilidad de identificarlo por un país y/o idioma es interesante, porque proporciona valor a nivel de geotagging, semántica, e incluso de propiedad intelectual para quien le interese. Si luego se utiliza o no, ya se verá. Pero disponer de esta poca información abre puerta a gran cantidad de posibilidades.</p>
+<p>El modelo centralizado lo es en una fase inicial debido a que sólo hay un servidor que reparte números (el que tú mantienes).  En caso que existiera un criterio que evitara las colisiones (por ejemplo un código que sirviera de prefijo), se podría generar de forma semi-independiente codificaciones para blogs. Eso permitiría a otras organizaciones generar y gestionar bloques de códigos, como sucede con las direcciones IP o con los números de teléfono móvil.  Esa entidad generadora sería responsable de ofrecer una serie de servicios (gratuitos y/o de pago) a los blogs asociados. Las entidades generadoras podrían tener la forma de asociaciones (por ejemplo), mientras que la gestión de la entidad general del IBSN sería una asociación de asociaciones.</p>
+<p>Personalmente creo que es preferible utilizar sólo números en las codificaciones. Eso evita problemas con mayúsculas-minúsculas de los caracteres, en casos como la funcionalidad de las redirecciones que introdujiste. Aunque las codificaciones numéricas pueden ser largas, pueden proporcionar información a quien le interese.<br /><br />Por poner un caso yo no voy al supermercado tratando de interpretar el significado de los miles de códigos de barras que existen, pero el interesado puede extraer información. Eso mismo sucede con la <a href="http://www.mcu.es/comun/bases/isbn/ISBN.html" title="base de datos de la agencia espa&ntilde;ola del ISBN">base de datos de la agencia espa&ntilde;ola del ISBN</a>: puedes acceder y encontrar un documento por su ISBN. Dado que estamos hablando del entorno electrónico, por largo que sea siempre se puede copiar-pegar.</p><br />
+<h2>Funcionalidades<br /></h2>
+<p>Yendo al capítulo de funcionalidades, creo que existen una serie de funcionalidades interesantes:</p>
+<ul>
+<li>Blogstamp: esto ya se comentó y sigo pensando que es interesante. Lo interesante sería combinar el código de base del IBSN, que se referiría a la fuente generadora (el blog) con el código único de aportación. Por ejemplo:<br /><br />http://[codigo-ibsn-blog].ibsn.org/blogstamp/...<br /><br />ó<br /><br />http://[codigo-ibsn-blog].ibsn.org/permalink/...<br /><br />por utilizar dos posibilidades complementarias.<br /></li></ul>
+<ul>
+<li>Herramienta de citaciones bibliográficas: Quien más quien menos ha redactado un documento en el que cita fuentes externas, y cada vez es más habitual que esas citas sean de medios electrónicos, entre ellos los blogs.  Si dispusiéramos de información básica disponible a través del RSS del blog (por ejemplo), sería relativamente fácil implantar un modelo de citación bibliográfica estándar, como la indicada en la ISO-690 para documentos electrónicos, que puedes ver bastante bien expuesto en este artículo sobre <a href="http://www.ub.es/biblio/citae-e.htm" title="citación de documentos electrónicos">citación de documentos electrónicos</a>.</li></ul>
+<ul>
+<li>Trackback: Asociado a las dos anteriores, la posibilidad de saber quién cita a quién es una dato interesante.  La funcionalidad de trackback se implantó para "charlar con el blog vecino desde la ventana de mi blog", aunque como idea esencial ya lo podemos encontrar en las propias citas bibliográficas y el pagerank.</li>
+<li>Archivo de posts: A pesar de (o quizá debido a) la volatilidad de los contenidos de la web, todos hemos tenido que cambiar de servidor, aplicación de blogs... una entidad gestora del IBSN podría servir com herramienta de archivo de posts para importar-exportar los contenidos. La el uso de formatos como RDF, RSS, etc., que permitiera ese proceso permitiría a los usuarios ser lo máximo de independientes de plataforma. No estoy muy al día pero es probable que exista algún que otros plugin en las herramientas habituales de blogging para desarrollar estas tareas.</li>
+<li>Ofrecer un servicio de estadísticas sobre los accesos basados en redirecciones IBSN también sería interesante. La posibilidad de las redirecciones que implantaste abre la puerta a un servicio de estadísticas, que puede ser de consulta pública para que pueda ser consultado. Registrar el origen y destino de los enlaces es algo que se puede analizar a través del HTML, pero... Cuántas veces se sigue ese enlace? Es lo mismo que medir la justificación de una carretera por los coches que pasan por ella: es más importante que la carretera misma.<br /></li></ul>
+<p>Mientras escribo esto soy consciente que existen servicios que proporcionan estas funcionalidades. Probablemente sea Technorati el que más se acerque a la visión global que trato de especificar.  Sin embargo, creo que nuestro papel es otro, aunque parte de las funcionalidades coincidan. Mientras que Technorati se centra en la indexación y la recuperación de la información, el valor del servicio del IBSN es de carácter más bibliográfico.</p><br />
+<h2>Financiación<br /></h2>
+<p>En cuanto a la posibilidad de gestionar las codificaciones, existen varias entidades que funcionan en base a la venta de codificaciones, como por ejemplo AECOC en el caso del EAN, y probablemente en la gestión de dominios también suceda. La posibilidad obtener ingresos en base a la aceptación de entidades generadoras de códigos es algo remoto. Otras opciones (las habituales) son la implantación de un modelo de donaciones o publicidad.</p>
+<p>Sin embargo, creo que disponer de un modelo de actividad (o de negocio, como prefieras) que dé garantías de continuidad al modelo como asociación sin ánimo de lucro creo que sería merecedor de interés.</p>
+<p>La búsqueda de subvenciones y demás opciones sería una posibilidad para acciones concretas pero no como estrategia de funcionamiento general.  Por ejemplo, podríamos encontrar una peque&ntilde;a subvención para el desarrollo técnico del servicio, o por tareas de internacionalización (traducción, vaya).</p>
+<p>Es por eso que creo que la mayoría de servicios deben ser muy automáticos, para disponer de una estructura de costes mínima. Otros servicios que implicaran la intervención humana podrían ser razón para ingresos.  Por ejemplo, la creación de informes periódicos a un precio simbólico, etc.</p>
+<p>Bueno, creo que ya he comentado mucho. Espero que los comentarios sean de vuestro agrado. </p></p>

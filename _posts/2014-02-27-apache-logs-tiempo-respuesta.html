@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Apache: A&ntilde;adir el tiempo de respuesta en los logs'
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27699
+wordpress_url: http://www.sopadebits.com/?p=27699
+date: '2014-02-27 10:23:49 +0100'
+date_gmt: '2014-02-27 09:23:49 +0100'
+categories:
+- Informática
+tags:
+- apache
+- logs
+comments: []
+---
+<p>Apache es una de esas herramientas tan complejas para las que todos utilizamos un porcentaje ínfimo de las opciones que incorpora (y tampoco necesitamos más). Esa complejidad probablemente será una de las razones por las que otros proyectos hayan apostado por alternativas más ligeras como nginx. Pero bueno, eso es otro tema. Aquí vamos a sacarle partido de esa complejidad.</p><!--more-->
+<p>Los logs de Apache tienen un formato predefinido en la configuración por defecto. &nbsp;En el caso de Apache 2 en Ubuntu (y derivados de Debian), puedes encontrar una lista de los formatos de log dentro del archivo /etc/apache2/apache2.conf, con la directiva <a title="mod_log_config - LogFormat - Apache documentation" href="http://httpd.apache.org/docs/2.2/mod/mod_log_config.html#logformat">LogFormat</a>:</p>
+<pre class="brush: bash; gutter: true">LogFormat "%v:%p %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined<br />
+LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined<br />
+LogFormat "%h %l %u %t \"%r\" %>s %O" common<br />
+LogFormat "%{Referer}i -> %U" referer<br />
+LogFormat "%{User-agent}i" agent</pre></p>
+<p class="brush: bash; gutter: false">Con lo anterior (en concreto con el formato <em>combined</em>) es perfectamente posible salir a la calle muy dignamente en la mayoría de casos. Eso ya nos aporta información sobre fechas, accesos, navegadores (incluyendo buscadores), respuestas y tama&ntilde;os en bytes.</p></p>
+<h2 class="brush: bash; gutter: false">Crear un formato propio de log de Apache</h2><br />
+Como puedes comprobar en los ejemplos por defecto, todas las variables vienen indicadas con un signo % y una lectra, o bien un %{nombre-entre-llaves} y una letra al final (para las variables de entorno la letra es la <em>e</em>, para las cabeceras de la petición es una&nbsp;<em>i</em>, etc.)</p>
+<p>Para a&ntilde;adir un nuevo formato puedes partir de alguno de los casos anteriores (combined por ejemplo) y a&ntilde;adir tu variable:</p>
+<pre class="brush: bash; gutter: true">LogFormat "%h %l %u %t \"%r\" %&amp;gt;s %O \"%{Referer}i\" \"%{User-Agent}i\" <strong>%I</strong>" sopadebits_combined</pre><br />
+Puedes ver que hemos a&ntilde;adido el parámetro %I (número de bytes recibidos). Las dobles comillas puede que pasen desapercibidas pero son importantes: el formato de log va indicado dentro de comillas dobles, y si quieres a&ntilde;adir esas comillas dobles al log, es necesario escaparlas (\").</p>
+<p>Con el log anterior, podemos acceder a nuestra configuración de host y modificar el formato del log que queremos:</p>
+<pre class="brush: bash; gutter: false">CustomLog /var/log/apache2/localhost.log sopadebits_common</pre></p>
+<h2>A&ntilde;adir el tiempo de respuesta al log de Apache</h2><br />
+Ahora sí, ya estamos a punto. Vamos a a&ntilde;adir el tiempo. Pues vaya, resulta que tenemos dos variables:</p>
+<ul>
+<li>%T proporciona el tiempo en segundos.</li>
+<li>%D lo proporciona en microsegundos</li><br />
+</ul><br />
+Pues ya puestos podríamos incluir las dos variables &iquest;verdad? Las a&ntilde;adiremos al final, después de user agent:</p>
+<pre class="brush: bash; gutter: true">LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\" %T %D" time_combined</pre><br />
+Y como hemos hecho anteriormente, ya sólo debemos modificar la directiva CustomLog del virtualhost que queremos configurar con ese formato. Después de esto sólo queda utilizar un sistema para rastrear la información de los logs y detectar las peticiones más lentas. Pero eso queda para otra ocasión.</p>
+<p>Otros casos podrían ser, por ejemplo, incluir el contenido de una cabecera de HTTP (por ejemplo generada por la propia aplicación) por ejemplo para llevar un control de las operaciones internas.</p>

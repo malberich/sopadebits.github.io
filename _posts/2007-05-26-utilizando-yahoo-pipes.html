@@ -1,0 +1,61 @@
+---
+layout: post
+status: publish
+published: true
+title: "Utilizando Yahoo! Pipes"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: '<p>He recuperado mi antigua cuenta de Yahoo! para poder experimentar un
+  poco con <a href="http://pipes.yahoo.com/" title="Yahoo! Pipes">Yahoo! Pipes</a>,
+  Ya hacía tiempo que quería echarle un vistazo, tanto en lo referente
+  a funcionalidades como a entorno de trabajo. Excelente en lo primero, muy notable
+  en lo segundo.</p><!--more--><p>Creo que tiene lo que le pueden faltar a algunos agregadores
+  de RSS: capacidad de filtro, organización, definición de la relevancia...
+  </p><p>Muestro un ejemplo basado en los Feeds que más utilizo, aplicando
+  una serie de filtros y otros criterios. No es un tutorial en toda regla pero espero
+  que sirva para el que tenga dudas...  </p><p>&nbsp;</p>'
+wordpress_id: 26740
+date: '2007-05-26 00:00:00 +0200'
+date_gmt: '2007-05-26 00:00:00 +0200'
+categories:
+- Informática
+- Documentación
+tags:
+- utilidades
+- fuentes de información
+- yahoo pipes
+comments: []
+---
+<p>
+<p>Lo primero que gusta del espacio reservado es que el entorno de dise&ntilde;o es muy parecido a un entorno visual de trabajo en entorno escritorio, aunque la velocidad se nota. Esta es quizá la única característica que no me ha gustado, aunque eso no es una cuestión de desarrollo del entorno, sino sobre el debate de si la proxima generación de aplicaciones en red se desarrollarán en el navegador con lenguajes de script o fuera de éste.</p>
+<p>Volviendo al tema, empiezo a trastear en las opciones que aparecen en la columna izquierda del entorno de dise&ntilde;o.  Para empezar, decido seleccionar la mayoría de mis feeds.</p>
+<p>Dentro de mis fuentes decido hacer tres grandes diferenciaciones según el comportamiento de tales recursos:</p>
+<ul>
+<li>Fuentes que tienen poca producción de contenidos pero que acostumbran a ser de gran calidad.</li>
+<li>Fuentes que no tienen un control directo de nadie y que tienen una producción relativamente baja, con algún riesgo de spam. Estas fuentes son principalmente Archivos de sindicación de tags de del.icio.us </li>
+<li>Fuentes que tienen un alto volumen de producción y que presentan problemas de ruido, especialmente porque incluyen contenidos de muchas áreas.</li></ul>
+<p>El principal interés de la tercera tipología (que básicamente viene representada por digg.com y meneame.net) es que acostumbran a ser sitios en los que las nuevas noticias suben muy rápidamente. </p>
+<p>Empezando por el final, éste es un pantallazo de lo que ha acabado siendo mi <em>tubería</em>:</p>
+<p><a href="/extranet/wp-content/uploads/2011/03/4490-caja-categorias.png" target="_blank"><img src="/extranet/wp-content/uploads/2011/03/4489-yahoo-pipes-01-thumbnail.png" border="0" alt="Muestra de Yahoo! Pipes" title="Muestra de Yahoo! Pipes" width="400" height="267" /></a> </p>
+<p>El proceso ha pasado por:</p>
+<ul>
+<li>Poner cada una de las tres categorías de feed en un widget <em>Fetch Feed</em>. Eso se puede hacer facilmente clicando sobre el botón con signo "+" que hay en la parte superior izquierda del widget.</li>
+<li>Para los casos de digg.com y meneame.net, cada uno va en un elemento <em>Fetch Feed</em>.  <br /></li>
+<li>Para el caso de digg.com he dirigido las noticias a un filtro para que me elimine todas las entradas que coincidan con al menos una de las siguientes condiciones (el objetivo es descartar noticias sobre consolas y juegos):</li>
+<ul>
+<li>Se ajuste a la expresión regular "game.*" (Es decir, todo lo relacionado con juegos).</li>
+<li>Se ajuste a la expresión regular "Wii|PS3|PS2|Xbox".</li></ul>
+<li>Para el caso de meneame.net, el caso es un poco diferente. Será por proximidad pero lo cierto es que el efecto ruido de su feed es bastante más moderado. En cambio, las noticias sobre política y especialmente en relación a noticias del periódico "El mundo" (no me refiero a las noticas que lleve el diario, sino a las noticas que hablan <em>Sobre el diario</em>) me agobian (no las leo). En este sentido, pongo los siguientes criterios de bloqueo:</li>
+<ul>
+<li> Eliminar toda noticia que incluya los términos PP, PSOE, Aznar, Zapatero o Rajoy</li>
+<li>Eliminar la noticia que incluya la expresión "el mundo".</li></ul></ul>
+<p>Soy consciente que lo último es crítico, pero cabe pensar que si se está hablando del mundo en cuanto globo terráqueo y no del diario, aparecerá algo en Digg o en otras partes. Eso es una especulación pero de momento lo dejo ahí.</p>
+<p>Una vez definido el proceso de filtro he filtrado para que elimine las noticias repetidas, y también que me lo ordene por fecha. Esto último me parece interesante para poder ver con calma la evolución de las noticias: dado que se recogen todos en un mismo momento, queda claro dónde ha aparecido en primera instancia la novedad.</p>
+<p>Como resultado final, comentar que el archivo RSS devuelve más de 400 resultados.  Para ser un primer intento no está mal, porque de hecho se está recogiendo información de más de 30 fuentes, dos de las cuales muy intensivas.</p>
+<p>Como mejora, comentar que mi agregador recibe los feeds en formato HTML mostrando el código fuente y no el contenido formateado.  Probablemente esto se deba a algún error de procesamiento de las entidades HTML.</p>
+<p>En fin, una experiencia recomendable. Me ha recordado al establecimiento de categorías en base a estrategias de búsqueda, sólo que algo más desarrollado. Desde luego he echado en falta la posibilidad de desarrollar un filtro más avanzado con operadores booleanos y demás. Quizá sea yo que no he llegado al fondo de la cuestión. </p></p>

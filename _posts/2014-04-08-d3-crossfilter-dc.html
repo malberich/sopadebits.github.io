@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: D3 + Crossfilter = DC
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27802
+wordpress_url: http://www.sopadebits.com/?p=27802
+date: '2014-04-08 08:30:14 +0200'
+date_gmt: '2014-04-08 06:30:14 +0200'
+categories:
+- Matemática
+- Informática
+tags:
+- visualizacion
+- javascript
+- d3js
+- crossfilter
+- dcjs
+comments: []
+---
+<p>En un artículo anterior ya comentaba las <a title="Crossfilter, múltiples vistas sincronizadas de datos" href="http://www.sopadebits.com/crossfilter-vistas-sincronizadas-datos">posibilidades de Crossfilter</a>, una herramienta especialmente aplicable a datasets de un tama&ntilde;o mayor que el habitual para un navegador web. Con esta biblioteca tenemos una parte muy importante de la tarea de la&nbsp;<em>sala de máquinas</em>, cargando y filtrando los datos según nos convenga.</p><!--more-->
+<p>Muy bien, podemos filtrar y procesar los datos más rápidamente, &iquest;y ahora qué?</p>
+<h2>DC.js = Dimensional Charting Javascript Library</h2><br />
+Pues nos falta la representación visual de los datos. Especialmente en combinación con una herramienta de representación visual como <a title="Sopadebits - D3" href="http://sopadebits.com/tag/d3js">D3.js</a>, Crossfilter se convierte en una herramienta muy potente. Y es así como surge la biblioteca <a title="DC javascript library" href="http://nickqizhu.github.io/dc.js/">DC</a>.</p>
+<p>Así que sacamos lo mejor de dos bibliotecas muy complementarias:</p>
+<ul>
+<li>Filtrado y manipulación de los datos con Crossfilter.</li>
+<li>Representación visual con D3.</li><br />
+</ul><br />
+&iquest;A nivel de código fuente, cómo se combinan ambas bibliotecas? Puedes encontrar un punto de partida muy interesante en este <a href="http://nickqizhu.github.io/dc.js/docs/stock.html">ejemplo de código comentado para DC.js</a>. Desde luego puedes ir a ver el paso a paso de ese código.</p>
+<p>La inicialización de los gráficos se realiza mediante DC, y no directamente sobre D3. DC actúa como envoltorio de D3, simplificando así la generación de la tipología de gráficos disponibles por defecto. &nbsp;La carga de los datos se realiza mediante la carga de un archivo CSV disponible vía HTTP, tras lo cual se transfieren los datos a crossfilter y se empieza a generar los datos de las dimensiones y agrupaciones de datos.</p>
+<p>Se asignan las dimensiones y criterios de agrupación a cada uno de los gráficos según corresponda. Esta asignación es lo que en realidad acaba vinculando todos los gráficos. &nbsp;También es posible generar una tabla (datatable)&nbsp;con los datos&nbsp;que se están están utilizando para generar las vistas actuales de los gráficos.</p>
+<p>El resto de instrucciones son a grandes rasgos muy habituales en la generación de los gráficos mediante D3. Aunque como comentaba antes, las instrucciones se ejecutan a través de DC, podemos identificar fácilmente los parámetros de tama&ntilde;o, colores, animaciones.</p>
+<p>Se siguen viendo muchos ejemplos de maridajes entre D3 y cualquier otra biblioteca que complemente, simplifique o mejore sus funcionalidades. Espero poder seguir hablando de ello por aquí en breve :-).</p>

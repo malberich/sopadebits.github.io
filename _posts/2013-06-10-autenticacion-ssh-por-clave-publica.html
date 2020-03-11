@@ -1,0 +1,64 @@
+---
+layout: post
+status: publish
+published: true
+title: Autenticación SSH por clave pública
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27095
+wordpress_url: http://www.sopadebits.com/?p=27095
+date: '2013-06-10 11:00:44 +0200'
+date_gmt: '2013-06-10 09:00:44 +0200'
+categories:
+- Informática
+tags:
+- utilidades
+- ssh
+- seguridad
+comments: []
+---
+<p>Las operaciones de carga de contenidos y de gestión de servidores por SSH es imprescindible. La operativa implica el conocimiento de las claves de acceso, y cuando se llega a un determinado número de servidores distintos, cada uno con sus propias claves, la memoria empieza a fallar, se empiezan a apuntar las contrase&ntilde;as en sitios no siempre seguros (al menos no tanto como nuestra memoria), y ni siquiera así las recordamos todas.</p><!--more-->
+<p>Así que, quizá, podríamos disponer de una sola clave para todas estas autenticaciones. O quizá ninguna clave, sólo un elemento que nos identifique en el servidor.</p>
+<h2>Una clave para todos los accesos</h2><br />
+Afortunadamente SSH permite generar claves públicas. Una clave pública no es más que un peque&ntilde;o archivo con un código derivado de nuestra clave SSH privada, y que permite que un servidor, mediante operaciones criptográficas, pueda confirmar que nosotros somos los creadores de ese archivo.</p>
+<h2>Pero entonces, contrase&ntilde;a, &iquest;Sí o no?</h2><br />
+Pues no es necesario, pero sí <strong>muy</strong> recomendable. &nbsp;Piensa que si alguien tiene acceso a tu equipo de trabajo (o al pendrive, o cualquier soporte donde estén esas claves), la contrase&ntilde;a es la única barrera entre éste y el acceso a ese servidor.</p>
+<p>Lo cierto es que con la clave pública puedes utilizar unas pocas contrase&ntilde;as (o una sola, eso depende de ti) para todas las claves públicas de acceso, y por ello ya no deberás que recordarlas. Pero entre eso y prescindir completamente de contrase&ntilde;as, mejor usa unas pocas con criterio.</p>
+<p>Bueno y ahora, basta de cháchara, vamos al grano.</p>
+<h2>Crear clave pública</h2></p>
+<pre class="brush: bash; gutter: true">~$ ssh-keygen -t rsa<br />
+Generating public/private rsa key pair.<br />
+Enter file in which to save the key (/home/mario/.ssh/id_dsa): <strong>mynewpubkey</strong><br />
+Enter passphrase (empty for no passphrase):&nbsp;<br />
+Enter same passphrase again:&nbsp;<br />
+Your identification has been saved in <strong>mynewpubkey</strong>.<br />
+Your public key has been saved in <strong>mynewpubkey.pub</strong>.<br />
+The key fingerprint is: 60:d6:96:ba:40:11:72:78:f0:c4:xx:xx:xx:xx:xx:xx user@host<br />
+The key&#039;s randomart image is:<br />
++--[ RSA 1024]----+<br />
+| &nbsp;o+=o . &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp;.=o.+. . &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; .oo+++ &nbsp; &nbsp; &nbsp; &nbsp;|<br />
+| &nbsp; .+oE+ &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; &nbsp;.=. S &nbsp; &nbsp; &nbsp; &nbsp;|<br />
+| &nbsp; &nbsp;.... &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; &nbsp; .. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br />
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |<br />
++-----------------+</pre><br />
+Así que ahora podemos encontrar los archivos mypubkey y mypubkey.pub. El primer archivo es la clave privada. Debemos copiarlo al directorio .ssh de nuestro usuario local, y cargar la clave pública al servidor al cual queremos acceder. Puedes tener varios archivos de claves en ese mismo directorio.</p>
+<h2>Autenticación indicando la clave</h2><br />
+Es necesario cargar ese archivo de clave pública al servidor SSH al que queremos autenticarnos con clave pública. Para ello hay que acceder al directorio del usuario con el que nos identificaremos (supongamos que sea "myuser") y crear/modificar el archivo de claves aceptadas:</p>
+<pre class="brush: bash; gutter: true">~$ cd /home/myuser/.ssh<br />
+# si ya existe, no es necesario crear el archivo&nbsp;<br />
+~$ touch authorized_keys<br />
+~$ cat mypubkey.pub >> &nbsp;authorized_keys</pre><br />
+Lo anterior supone &nbsp;que hemos cargado vía SCP el archivo mypubkey.pub al servidor que queremos conectar, y que lo hemos dejado en /home/myuser/.ssh/mypubkey.pub.</p>
+<p>Después de cargar la clave, podemos conectarnos vía SSH. La contrase&ntilde;a que se nos pedirá es la de la clave SSH y no la del servidor, si es que hemos indicado contrase&ntilde;a de la clave.</p>
+<p>Finalmente estamos dentro, y ya tenemos una contrase&ntilde;a menos que recordar ;-).</p>
+<p></p>

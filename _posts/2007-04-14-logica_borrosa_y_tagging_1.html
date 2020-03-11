@@ -1,0 +1,59 @@
+---
+layout: post
+status: publish
+published: true
+title: "Lógica borrosa y tagging (I)"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: '<p>La lógica difusa (o borrosa) es una disciplina más conocida
+  entre la ingeniería que entre las matemáticas.  Su base conceptual
+  hay que buscarla en la teoría de los &quot;fuzzy sets&quot; o conjuntos difusos,
+  propuestos en 1965 por <a href="http://www.cs.berkeley.edu/~zadeh/scv.html" title="Lofti
+  A. Zadeh: showt curriculum vitae">Lofti A. Zadeh</a>, que en 1973 completó
+  esta teoría de conjuntos con una lógica que aportó funcionalidades
+  operativas. </p><!--more--><p>Ya lejanos de ese a&ntilde;o, me atrae la idea de que quizá
+  se pueda encontrar su aplicación al tagging, especialmente en la fase de
+  la recuperación de la información. Este artículo es el primero
+  de una serie que está en proceso de redacción... </p>'
+wordpress_id: 26735
+date: '2007-04-14 00:00:00 +0200'
+date_gmt: '2007-04-14 00:00:00 +0200'
+categories:
+- Documentación
+tags:
+- Tagging
+- Recuperación información
+- lógica borrosa
+comments: []
+---
+<p><br />
+<h2>Características del tagging o etiquetado </h2>
+<p>A diferencia de los lenguajes documentales controlados y precoordinados, el tagging se basa en el etiquetado mediante términos arbitrariamente escogidos, sin ningún tipo de control como el que encontramos en los encabezamientos de materias, descriptores, o en estructuras como los tesauros.  Tampoco se combinan estos términos con carácter medianamente sintáctico, como sucede por ejemplo con las facetas. Y esta diferencia es su poder y su debilidad.</p>
+<p>Tenemos una serie de herramientas que pueden simplificar la variedad de etiquetados que existen (prácticamente uno por usuario). Sería de esperar que en base a la <a href="http://en.wikipedia.org/wiki/Zipfs_law" title="Wikipedia: Zipf&#39;s law">ley de Zipf</a>, el crecimiento del número de tags fuera reduciéndose a medida que aumenta el número de recursos indexados, pero el uso de un vocabulario no controlado puede ralentizar esa expectativa.  </p>
+<p>Por ejemplo, tenemos las herramientas desarrolladas inicialmente para el<a href="http://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales" title="Wikipedia: Procesalimento de lenguajes naturales"> procesamiento del lengaje natural</a>, que permitirían un<a href="http://es.wikipedia.org/wiki/Morfolog%C3%ADa_ling%C3%BC%C3%ADstica" title="Wikipedia: Morfología ling&uuml;ística"> análisis morfologico </a>de los tags, para unificar términos derivados, singulares/plurales, etc.</p>
+<p>También tenemos herramientas de traducción automática o diccionarios, ante los cuales hay que percibir una cierta cautela, dado que la fuerte dependencia del contexto que presentan los sistemas de desambiguación los hace especialmente susceptibles de malinterpretación de las etiquetas. Esta hipotética debilidad podría ser corregida procesando el recurso indexado (es decir, obtener términos que permitan determinar con mayor fiabilidad el contexto).</p><br />
+<h2>El uso de etiquetas en la recuperación de la información<br /></h2>
+<p>Después de exponer las diferencias entre el sistema de etiquetado y los lenguajes documentales controlados, podemos entrar en detalle sobre las problemáticas de cualquier sistema de recuperación de la información, independientemente del sistema de indexación.  </p>
+<p>Estas problemáticas, desde el punto de vista del usuario, se concreta con dos efectos: <strong>silencio</strong> y <strong>ruido</strong>. Estos dos conceptos no son exclusivos de la documentación, ya que tienen su base en la <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_Informaci%C3%B3n" title="Wikipedia: Teoría de la información">teoría de la información</a>, aunque la diferencia sustancial es que la teoría de la información no tiene directamente en cuenta el valor semántico de la información, sino que va a un nivel más atómico.</p>
+<p>En la biblioteconomía y documentación esto se estudia especialmente dentro del área de <a href="http://es.wikipedia.org/wiki/Recuperaci%C3%B3n_de_la_informaci%C3%B3n" title="Wikipedia: recuperación de la información">recuperación de la información</a>.</p><br />
+<h2>Silencio, ruido y recuperación de la información  </h2>
+<p>El silencio se produce cuando existe un documento que podría ser relevante para el usuario y en cambio no es recuperado mediante una búsqueda, mientras que el ruido se presenta cuando se retorna un gran número de documentos que no responden a las necesidades de información del usuario. En resumen, el silencio y el ruido explican la relación entre el sistema de recuperación y el usuario. Por decirlo de otro modo más metafórico: el silencio y el ruido son las medidas de la Torre de Babel de la información. </p>
+<p>Desde luego, el segundo efecto es mucho más acusado actualmente: dada la enorme colección de documentos indexados por los grandes buscadores, y unas estrategias de búsqueda bastante limitadas (un gran porcentaje de búsquedas no supera los <br />dos términos de longitud), los documentos retornados son principalmente <em>ruidosos</em>.</p>
+<p>La <em>ruidosidad</em> no es ajena al tagging.  A pesar de utilizar términos seleccionados por los propios usuarios, es muy probable que una peque&ntilde;a cantidad de éstos apliquen el principio de la <em>entrada directa</em> (por describirlo de algún modo, ante una pregunta del tipo "sobre qué trata este documento?", la respuesta "trata sobre X" se entiende como la entrada directa). </p>
+<p>En cambio, el peso de todas las etiquetas es equivalente: da igual el orden ni el tipo de término utilizado, porque todos pesan igual.</p>
+<p>Ante el proceso de indexación, que es el que más se ha abaratado por la introducción de las tecnologías de indexación automática y semi-automática (con resultados más dispares), el peso de los términos sigue siendo el mismo: simplemente se escogen los más significativos y se les da el mismo peso en el momento de recuperar. La deducción lógica es que si se quiere indexar un documento por el conjunto de su contenido, ya disponemos la búsqueda <em>full-text</em>, y con ella, Google.</p>
+<p>Aún así, la búsqueda full-text equivale a atacar un sistema por la fuerza bruta: igual lo consigues pero también podrías pasarte a&ntilde;os. Lo que pasa es que, ante la simplicidad de los motores de búsqueda, iniciativas más complejas (por ejemplo <a href="http://www.powerset.com/" title="Powerset">Powerset</a>, que sigue sin dar se&ntilde;ales de actividad) pueden no tener éxito. Es una cuestión de comodidad.</p>
+<p>Por lo tanto, ante las soluciones actuales, el ruido y el silencio siguen siendo algo con lo que convivir. En realidad lo será siempre, pero conseguir que se reduzcan implica el aumento de la satisfacción del usuario, y con ello el nivel de uso de un servicio (por lo tanto mayor potencial de ventas, mayor valor de intermediación, y así empieza la espiral). </p><br />
+<h2>&iquest;Lenguajes no controlados dan usuarios controlados?<br /></h2>
+<p>Allá por los a&ntilde;os 1996-1997, <a href="http://www.scils.rutgers.edu/~tefko/index.htm" title="Tefko Saracevic">Tefko Saracevic</a> presentó y amplió el <a href="http://www.scils.rutgers.edu/~tefko/ProcASIS1997.doc" title="Tefko Saracevic: The stratified model of information retrieval interaction: Extension and applications">modelo estratificado de relevancia (documento en formato MS Word)</a>. Este modelo plantea varios niveles dentro de la relevancia, de los cuales, sólo uno <em>pertenece</em> al dominio del sistema de recuperación, mientras que el resto se refieren a las necesidades de búsqueda del usuario: actitudes, circunstancias, estado emocional,...</p>
+<p>Para más información sobre este modelo se puede ver la <a href="http://www.scils.rutgers.edu/~tefko/articles.htm" title="Tefko Saracevic: selected articles">lista de artículos seleccionados del sitio personal de Saracevic</a>. Para lo que nos ocupa, el interés se centra en poder estudiar si los tags presentan esas características. Algunos tags probablemente pondrían los pelos de punta a un buen indexador: contextuales, dependientes del tiempo, ambiguos... Pero la cuestión es que los tags pueden aportar información sobre el peso de cada uno de los estratos de Saracevic. </p>
+<p>Ya sabes: <a href="/cuando_etiquetas_un_recurso">cuando etiquetas un recurso, tú eres el etiquetado</a>.</p><br />
+<h2>Estratos borrosos</h2>
+<p>La lógica difusa incluye un aspecto interesante: la gradualidad.  La lógica difusa se basa en el principio de contradicción, y por lo tanto, permite que exista una relación <strong>en cierto grado</strong>.</p>
+<p>También es eso aplicable sobre los estratos de Saracevic.  Desde luego, Saracevic ideó el concepto de los estratos sobre la recuperación de la información porque hace diez a&ntilde;os no se podía hablar de la web social.</p>
+<p>En cambio, ahora el modelo estratificado podría aplicarse sobre la indexación y la recuperación: un tag es situacional en cierto grado, y emocional con otro grado. &iquest;Quién puede decidir eso? El <em>indexador</em> y el <em>recuperador</em>.  Ahí aparece esa máxima tan etérea: la interacción es diálogo. </p></p>

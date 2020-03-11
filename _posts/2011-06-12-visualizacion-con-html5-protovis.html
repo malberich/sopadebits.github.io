@@ -1,0 +1,76 @@
+---
+layout: post
+status: publish
+published: true
+title: Visualización con HTML5 - Protovis
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 26933
+wordpress_url: http://www.sopadebits.com/?p=26933
+date: '2011-06-12 14:30:22 +0200'
+date_gmt: '2011-06-12 12:30:22 +0200'
+categories:
+- Matemática
+- Informática
+tags:
+- visualizacion
+- javascript
+- html5
+comments:
+- id: 312
+  author: Despertar de lo complejo | RedZine
+  author_email: ''
+  author_url: http://manglerojo.org/redzine/archives/129
+  date: '2011-07-13 04:51:58 +0200'
+  date_gmt: '2011-07-13 02:51:58 +0200'
+  content: "[...] vía Visualización con HTML5 &ndash; Protovis | Sopa
+    de bits. [...]"
+- id: 25273
+  author: Muy recomendable tutorial de D3 -Sopa de bits
+  author_email: ''
+  author_url: http://www.sopadebits.com/recomendable-tutorial-de-d3
+  date: '2016-02-23 12:17:45 +0100'
+  date_gmt: '2016-02-23 11:17:45 +0100'
+  content: "[&#8230;] tiempo que tengo ganas de comentar (&iexcl;y usar!) la biblioteca
+    D3.js. &nbsp;En realidad, poco después de hablar de protovis, Mike Bostock
+    comentó que discontinuaba protovis y que empezaba con [&#8230;]"
+---
+<p>Desde la última vez que comenté herramientas para <a title="Open Flash Chart 2 &ndash; Mejorando los gráficos estadísticos" href="http://www.sopadebits.com/open-flash-chart-2-mejorando-graficos-estadisticos">mostrar gráficos estadísticos en la web</a> (entonces en Flash), han cambiado infinidad de cosas.</p><!--more-->
+<p>HTML5, aunque en vías de implantación (probablemente durante meses o algunos a&ntilde;os), representa todo lo que no se hizo durante los últimos 5 a&ntilde;os porque se disponía de Flash y ya era suficiente. &nbsp;Probablemente también porque el <a title="Visualizando: Estadísticas de navegadores (III)" href="http://www.sopadebits.com/visualizando-estadisticas-navegadores-iii">mercado de navegadores</a> estaba dominado por Internet Explorer.</p>
+<p>Con la nueva versión de HTML aparecen dos elementos clave para representar gráficamente datos en la web: el <a title="Canvas Element - Wikipedia" href="http://en.wikipedia.org/wiki/Canvas_element">Canvas</a> y <a title="Blog Learning webGL" href="http://learningwebgl.com/blog/">WebGL</a>. &nbsp;El canvas está pensado para mostrar gráficos en 2D, mientras que webGL está pensado para visualizaciones 3D que aprovechen la unidad gráfica de proceso (o <a title="Wikipedia - Unidad de procesamiento gráfica" href="http://es.wikipedia.org/wiki/Unidad_de_procesamiento_gr%C3%A1fico">GPU</a>) de nuestra tarjeta gráfica. &nbsp;En el segundo caso hay un objetivo claro: <a title="Google: Quake 2 port" href="http://code.google.com/p/quake2-gwt-port/">utilizar juegos con altas exigencias gráficas en el navegador</a>.</p>
+<h2>Del Flash al HTML5</h2><br />
+La primera diferencia que uno siente al trabajar con gráficos basados en HTML5 els la sensación de continuidad: no precisar el cambio de contexto ni de lenguaje de programación para realizar gráficos.</p>
+<p>Sin embargo el gran motivo de cambio hacia el HTML5 son los móviles, con los que Flash provoca problemas de rendimiento, si es que lo tienen integrado en los navegadores.</p>
+<h2>Diferencias claves de Protovis</h2><br />
+Existiendo bibliotecas gráficas para HTML5 como raphaeljs, o el <em>port </em>de processing, o Google Charts, entre otras que he visto, me planteo sus factores diferenciales. &nbsp;Estos factores diferenciales me permiten valorar si el tiempo de aprendizaje me compensa por:</p>
+<ul>
+<li>Su flexibilidad o su especificidad de acuerdo a nuestros objetivos.</li>
+<li>Su velocidad.</li>
+<li>Usabilidad.</li>
+<li>Tipo de licencia</li>
+<li>Facilidad de desarrollo (la usabilidad para el programador).</li>
+<li>Mantenimiento, comunidad y en general, garantías de continuidad.</li><br />
+</ul><br />
+Los puntos más a favor de esta biblioteca para mis potenciales usos son:</p>
+<ul>
+<li>Se basa (o al menos se inspira) en el framework de la <a title="La gramática de los gráficos" href="http://www.sopadebits.com/la-gramatica-de-los-graficos">gramática de los gráficos</a>, por lo que tiene una versatilidad prácticamente ilimitada.</li>
+<li>El método de configuración de un gráfico es relativamente sencillo, ya que se basa en el <a title="Protovis - Property chaining" href="http://vis.stanford.edu/protovis/docs/chaining.html">método de encadenamiento</a>.</li>
+<li>Al funcionar por capas conceptuales de la gramática, permite componer gráficos y subgráficos, aparte de facilitar la creación de nuevos elementos en cada nivel de definición del gráfico.</li>
+<li>Aunque está muy enfocada a los gráficos estadísticos, su método de desarrollo permite pensar en su uso para visualizaciones más bien estructuradas y basadas en los datos.</li>
+<li>Incorpora algunas funciones estadísticas como preparación de los datos, aunque no es su objetivo principal.</li>
+<li>Licencia BSD (similar a la MIT), prácticamente la que proporciona más libertad para su uso (tanto si el desarrollo final es también libre o propietario).</li><br />
+</ul><br />
+También surgieron algunos contras al respecto:</p>
+<ul>
+<li>Es una biblioteca <em>pesada</em>, más bien pensada para Intranets o conexiones rápidas, aunque con un buen uso del caché de navegador y los <em><a title="Wikipedia - Entity Tag (ETag)" href="http://en.wikipedia.org/wiki/HTTP_ETag">ETags</a></em> sólo se notará en la primera carga.</li>
+<li>Su potencial es el uso específico, personalizado. &nbsp;Si el objetivo son gráficos sencillos, existen otras bibliotecas más adecuadas.</li><br />
+</ul></p>
+<h2>Trabajando con Protovis</h2><br />
+En el sitio de protovis se hallan <a title="Protovis - Examples" href="http://vis.stanford.edu/protovis/ex/">ejemplos bastante representativos</a> de las posibilidades generales de protovis, y opciones de personalización interesantes. &nbsp;La mayoría de gráficos estándares pueden basarse en tales ejemplos de código</p>
+<p>Como colofón, se puede encontrar la <a title="Gráfico de Minard (Tropas de Napoleón) usando Protovis" href="http://vis.stanford.edu/protovis/ex/napoleon.html">muestra del gráfico de Minard realizada con Protovis</a> que Tufte considera el mejor gráfico de la historia. &nbsp;Este gráfico también aparece en&nbsp;el libro de<em> la gramática de los gráficos</em>, como muestra de los factores componentes de esta visualización.</p>
+<p>Por otro lado, también es posible incrustar gráficos de Protovis en Wordpress, utilizando el <a title="Protovis Loader - Wordpress Plugins" href="http://wordpress.org/extend/plugins/protovis-loader/">plugin de carga de Protovis</a>.</p>

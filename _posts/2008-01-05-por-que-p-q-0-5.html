@@ -1,0 +1,79 @@
+---
+layout: post
+status: publish
+published: true
+title: "Por qué P = Q = 0,5?"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: "<p>Nada más refrescante en la víspera de Reyes que un poco
+  de estadística, &iquest;verdad? Pues ya me imagino que no, pero me apetecía
+  comentar esta especie de axioma que aparece en la inmensa mayoría de encuestas
+  de opinión, y que todo el mundo cree o simplemente ignora, mientras que unos
+  pocos entienden a fondo.</p><!--more--><p>Si te interesa, continúa, y sino, ya nos vemos
+  en otro momento...</p>"
+wordpress_id: 26789
+date: '2008-01-05 00:00:00 +0100'
+date_gmt: '2008-01-05 00:00:00 +0100'
+categories:
+- Matemática
+tags:
+- muestreo estadístico
+comments: []
+---
+<p><br />
+<h2>El significado de P y Q</h2><br />
+Cuando se realizan encuestas, y en general recogida de información, se da muy a menudo un tipo de preguntas que sólo pueden obtener como respuesta un Sí o un No (con el permiso del NS/NC, que ahora dejaremos de lado). Estas preguntas son las más sencillas de clasificar, ya que en el resto se pueden utilizar escalas diferentes como la del 0 al 10, escalas de Likert, gráficos, u otras.</p>
+<p>Para estas preguntas, una proporción de los encuestados puede responder que sí, y otra que no (perogrullada al canto), lo que matemáticamente puede representarse como un 1 y un 0, respectivamente. En el caso de haber planteado un muestreo adecuado, la proporción entre ceros y unos debería ser representativa de la población general.</p>
+<p>Sumando la cantidad de respuestas 1 y dividiéndolo por el número de encuestados, tenemos una proporción.  Así por ejemplo, si se ha hecho la pregunta a 100 personas y 35 han contestado que sí, tenemos que la proporción de síes suma en total:</p>
+<p>P(X = sí) = 35/100 = 0,35</p>
+<p>Lo que equivaldría a un 35% en términos porcentuales.</p>
+<p>Sabiendo que sólo hay dos casos posibles sabemos que la proporción de noes ha sido:</p>
+<p>P(X = no) = (100-35)/100 = 65/100 = 0,65</p>
+<p>Es decir, un 65% de noes.</p>
+<p>De lo anterior se deduce que sabiendo la proporción de respuestas afirmativas, deducimos la proporción de respuestas negativas.  Por lo tanto:</p>
+<p>P(X=no) = 1 - P(X=sí) = 1 - 0,35.</p>
+<p>Para simplificar la nomenclatura, normalmente se indica como P (aunque normalmente en minúsculas) a P(X=sí), mientras que P(X = no) se indica como (1-P), aunque por cuestiones de simplicidad se indica como Q.</p>
+<p>En resumen:</p>
+<p>P = P(X = Sí)<br />
+Q = P(X = No) = 1 - P</p>
+<p>&iquest;Hasta aquí se entiende? Bueno pues, sigamos.</p>
+<h2>En el peor de los casos</h2><br />
+Dejando de lado las imperfecciones del trabajo de campo (que darían para mucho), supongamos que tenemos los medios necesarios para garantizar la representatividad de la muestra sólo teniendo en cuenta el tama&ntilde;o (número de encuestados).</p>
+<p>Lo que sucede antes de empezar a calcular la muestra es que no conocemos la proporción de individuos que contestarán sí o no a una determinada respuesta.  Por eso es necesario suponer el peor de los casos.</p>
+<p>Retornando al título del post, ya sabrás cuál es el peor de los casos, e intuitivamente incluso te puedes imaginar el por qué. Efectivamente, el peor de los casos ocurre cuando hay la misma proporción de individuos que contestan afirmativamente y negativamente.</p>
+<p>Te puedes imaginar la situación: tu vas a suponer en cada momento qué va a contestar al siguiente. Si P = Q = 0,5, tienes un 50% de probabilidades de acertar. Y eso es lo mínimo que cabría esperar si puedes elegir entre sí y no, y no hay más respuestas posibles.</p>
+<p>Estadísticamente, el proceso de disponer de dos valores posibles para una pregunta se puede modelizar sobre un <a title="Wikipedia: Bernoulli process" href="http://en.wikipedia.org/wiki/Bernoulli_process">proceso de Bernouilli</a>.  Este modelo estadístico indica que la varianza de una muestra de una población que sigue este modelo es p&middot;q.</p>
+<p>Es decir, que la variabilidad de las respuestas se obtiene multiplicando las proporciones de cada una. Ojo, multiplicando, no sumando.</p>
+<p>Si sabemos que tanto p como q pueden tomar valores entre 0 y 1, y que la suma de ambas siempre da 1, tenemos los ingredientes necesarios para hacer un análisis de la función de la varianza. Representando el valor de los productos de p y q (considerando incrementos de 0,01). Es decir, vamos a representar:</p>
+<p>f(p) = p&middot;q = p &middot; (1-p) = p - p^2</p>
+<p>tras lo cual tenemos un gráfico como el siguiente:</p>
+<p><img title="Parabola p-(p x p)" src="/extranet/wp-content/uploads/2011/03/4478-parabola-p.q.0.5.png" alt="Parabola p-(p x p)" width="640" height="407" /></p>
+<p>Se puede observar que en la mitad del gráfico está el pico máximo. Teniendo en cuenta que es un gráfico entre 0 y 1, se puede intuir el valor intermedio. Para deducir el punto exacto, en el análisis de funciones se utilizan las derivadas.  No explicaré lo que son las derivadas, simplemente comentaré que para este caso son formas de detectar la "velocidad" y "aceleración" de la curva.</p>
+<p>Esto es un salto sin red para quien no entienda del tema, pero seguro que podrá encontrar amplia literatura al respecto. Teniendo la función anterior:</p>
+<p>F(p) = p - p<sup>2<br />
+</sup></p>
+<p>Su primera derivada (que indicará la "velocidad") es:</p>
+<p>F'(p) = 1 - 2p</p>
+<p>Mientras que la segunda derivada es:</p>
+<p>F'(p) = -2</p>
+<p>De lo anterior se deduce:</p>
+<ul>
+<li>Dado que la segunda derivada es una constante negativa, la recta siempre está desacelerando.  podemos comprobar que la recta ya "venía subiendo" pero cada vez un poco menos rápido, hasta que empieza a bajar, y luego cada vez va más rápido.  Es decir lleva una aceleración negativa.  Aunque llevara una inercia, la ha ido perdiendo. Por el hecho que la segunda derivada es una constante también se deduce que la curva es una parábola.</li>
+<li>Dado que sabemos que siempre desacelera, sabemos que la curva es convexa (es decir, tiene la concavidad hacia abajo), por lo que si en algún momento la velocidad es nula (el objeto se ha frenado), podemos deducir que se ha llegado al máximo.</li><br />
+</ul><br />
+Trato de explicar este segundo punto en palabras más llanas: si estás desacelerando, llega un momento que te paras, y desaceleras más, vas en velocidad negativa. Es decir, que vuelves "hacia atrás" (o hacia abajo) por lo que se deduce que habías llegado al máximo de lejos que podías.</p>
+<p>Bien, dicho lo anterior, lo que hay que encontrar es un valor para el que se cumpla:</p>
+<p>1 - 2p = 0</p>
+<p>La resolución es fácil:</p>
+<p>1 - 2p = 0 => 1 = 2p => 1/2 = p ==> p = 1/2 = 0,5</p>
+<p>voil&agrave;. Tenemos la demostración matemática que la máxima varianza se tiene con p = 0,5!</p>
+<h2>Este cálculo da garantías al conjunto de la encuesta?</h2><br />
+Por lo general, este modo de cálculo es una forma de definir un tama&ntilde;o de muestra.  Las encuestas acostumbran a ser mucho más complejas, pero lo cierto es que los casos en los que las respuestas son de sí/no son los más habituales en encuestas sociales. En otros casos se utilizan otros criterios (por ejemplo cuando lo que se busca no es un estudio de proporciones sino de medias o totales).</p>
+<p>Lo que sí vale la pena comentar es que el tama&ntilde;o de muestra obtenido utilizando este criterio proporciona un margen de error <strong>para cada pregunta estudiada de una en una</strong>.</p>
+<p>De lo anterior hay que deducir que cuando se cruzan dos preguntas, las variabilidades en las respuestas de cada cual se combinan, y por ello el grado de error aumenta. Eso no implica directamente que las encuestas sean más falsas, sino que estos datos se pueden utilizar con finalidad descriptiva y no inferencial (para extraer conclusiones), ya que eso provocaría decisiones erróneas por asumir un riesgo mayor del supuesto.</p>
+<p>Otras cuestiones que van más allá de este post son la información previa que tenemos sobre una determinada población, ya que ello nos permitiría reducir el margen de error. Esta reducción podría aplicarse en la fase de muestreo, utilizando uno de varios dise&ntilde;os muestrales existentes.</p>

@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: "Buscando en el escritorio con Linux"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: "<p>De vez en cuando uno descubre nuevas herramientas en Linux que le ayudan
+  a hacer más fácil las tareas de búsqueda y recuperación
+  de datos cuando no sabe por dónde empezar.  Es así como me encontré
+  com Beagle y Recoll, dos herramientas de búsqueda de escritorio disponibles
+  en Linux. Cada herramienta utiliza su tecnología... </p><!--more--><p>&nbsp;</p>"
+wordpress_id: 26744
+date: '2007-05-21 00:00:00 +0200'
+date_gmt: '2007-05-21 00:00:00 +0200'
+categories:
+- Informática
+tags:
+- Linux
+- Productividad
+- buscadores
+comments: []
+---
+<p>
+<p>La principal diferencia, como digo, es la tecnología. Mientras que Beagle utiliza la biblioteca Mono (el .NET para Linux), Recoll utiliza Xapian, una herramienta que probablemente más adelante comentaré por su posibilidad de ser utilizada desde PHP y otros lenguajes.</p>
+<p>La gran fortaleza de Kerry es su facilidad de configuración y su integración con las herramientas de escritorio: En dos minutos estaba indexando documentos, correos electrónicos, posts del agregador de RSS, documentos PDF, Word, ODT,... una maravilla.   A falta de darle un uso intensivo, un artículo comenta la <a href="http://www.linux.com/article.pl?sid=07/04/16/1831255" title="Linux.com: Recoll: A search engine for the Linux desktop">posible sobrecarga de Beagle por el uso de .NET</a>, que desde KDE se utiliza con el frontal Kerry.</p>
+<p>Después de testear un poco (simple pero eficiente), instalé <a href="http://www.lesbonscomptes.com/recoll/" title="Recoll: Home">Recoll</a> para compararlo.   </p>
+<p>Tuve dos peque&ntilde;os contratiempos: Debian no tiene el paquete de Recoll en la rama <em>testing</em>, con lo que tuve que descargar el paquete desde la página de los desarrolladores.  Aparte de eso, tuve que instalar la biblioteca del <a href="http://www.xapian.org/" title="The Xapian project">motor de búsqueda Xapian</a> (libxapian13), del cual probablemente ya comentaré algo más en otro momento.</p>
+<p>Aparte de esto, Recoll debe ser configurado <em>a mano</em>, entrando en el directorio creado en el path del usuario, y editando el archivo recoll.conf según explican en la web de los desarrolladores.  No es que sea complicado, pero hay quien tiene miedo a la edición de archivos de configuración.</p>
+<p>Una vez iniciado esto, el proceso de rastreo e indexación son equivalentes en uno y en otro. El tiempo de espera no es significativo. Después de indexar los aproximadamente 6000 documentos (en ambos casos se indexan múltiples formatos de documentos: desde HTML hasta PDF pasando por Word y OpenOffice), realicé unas cuantas búsquedas con un número de resultados más o menos amplios. </p>
+<p>No lo cronometré pero los resultados sean bastante parecidos.</p>
+<p>A escoger entre los dos motores, lo cierto es que me quedaría con Xapian, pero no por cuestiones tecnológicas, sino porque también hay disponible una <a href="http://es.php.net/muscat" title="PHP: Muscat functions">extensión para PHP</a>  que utiliza la <a href="http://www.xapian.org/docs/apidoc/html/annotated.html" title="Xapian: API">API de Xapian</a> (aunque en la documentación de PHP la extensión se llama Muscat, por cuestiones de propiedad de la marca que no vienen al caso). Para el caso de Debian, existen los paquetes <a href="http://packages.debian.org/testing/web/php4-xapian" title="Debian packages: php4-xapian">php4-xapian</a> y <a href="http://packages.debian.org/testing/web/php5-xapian" title="Debian packages: php5-xapian">php5-xapian</a>.</p>
+<p>&nbsp;</p></p>

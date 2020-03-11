@@ -1,0 +1,84 @@
+---
+layout: post
+status: publish
+published: true
+title: "Analizando del.icio.us y sus tags"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: '<p>Después de desarrollar la peque&ntilde;a ara&ntilde;a mediante
+  una clase PHP, he desarrollado una peque&ntilde;a adaptación para rastrear
+  del.icio.us sin tener que utilizar la API (que por lo demás, parece resultar
+  inútil si quieres rastrear a otros usuarios o enlaces). </p><!--more--><p>La idea es
+  sencilla: utilizar el rastreo empezando por una p&agrave;gina cualquiera (en mi
+  caso he empezado por <a href="http://del.icio.us/tag/" title="del.icio.us: tag cloud">la
+  nube principal de tags</a>) y detectar cómo iban afluyendo los usuarios,
+  las URL y, desde luego, los tags.</p><p>Dado que el sistema aún precisa de
+  retoques y otras historias, sólo puedo entrar a valorar con un poco de criterio
+  los datos relacionados con los tags... </p><p>&nbsp;</p>'
+wordpress_id: 26742
+date: '2007-05-05 00:00:00 +0200'
+date_gmt: '2007-05-05 00:00:00 +0200'
+categories:
+- Documentación
+tags:
+- Tagging
+- del.icio.us
+comments: []
+---
+<p><br />
+<h2>Metodología</h2><br />
+El procedimiento de rastreo se ha iniciado, como comentaba, rastreando la nube de tags principal.  Rastrear esta página significa varias cosas:</p>
+<ul>
+<li> Recuperar el contenido devuelto por la URL.</li>
+<li>Determinar los tags de enlaces con referencias (tags HTML "a" que tengan el atributo href con una URL correcta) que existen en esa p&agrave;gina.</li>
+<li>Analizar esos enlaces para determinar si se trata de enlaces a páginas de usuarios, a páginas de tags, p&agrave;ginas de URLs o a enlaces externos a del.icio.us.</li>
+<li>Una vez determinado el tipo de URL, se incluye en la cola de URLs a rastrear y se inserta en una base de datos el nuevo dato recopilado del análisis anterior (se inserta un tag, login de usuario o URL en la BD).</li>
+<li>El proceso finaliza en un número de iteraciones (rastreo, recopilación de enlaces, tipificación, registro en BD).</li><br />
+</ul><br />
+Para el caso que nos ocupa, he hecho <strong>40 fases</strong> de <strong>10 iteraciones</strong>, lo que implica que he rastreado 400 p&agrave;ginas en total (una miseria, según como lo miremos, pero ya tendré tiempo para entrar más a fondo).</p>
+<h2>Datos generales del rastreo</h2><br />
+Del resultado del proceso anterior, saltan los siguientes datos descriptivos, que dan una idea del volumen de datos que genera este tipo de operaciones:</p>
+<ul>
+<li>26.618 referencias (URL) recopiladas en la cola.  Las primeras 400 han sido las utilizadas para el análisis actual.</li>
+<li>2.951 etiquetas únicas.</li>
+<li>990 usuarios.</li>
+<li>Del proceso de las 400 p&agrave;ginas se han recopilado 4411 URLs externas (p&agrave;ginas introducidas por los usuarios en del.icio.us que teóricamente apuntan hacia fuera).</li><br />
+</ul><br />
+A partir del proceso de los datos anteriores, se han extraído los siguientes datos adicionales:</p>
+<ul>
+<li>Se han a&ntilde;adido una media de 62 etiquetas por fase de rastreo, aunque las fases más activas han sido hasta el rastreo de la p&agrave;gina 150 aproximadamente.  Esto se debe a que los primeros rastreos se han realizado sobre las p&agrave;ginas iniciales de tags que aparecen en la nube (son tags muy utilizados que probablemente se relacionan con otros tags).</li>
+<li>El 60% de los tags son utilizados una sola vez (y por lo tanto, por una sola persona). Este porcentaje se va acercando cada vez más al 50% a medida que aumenta el número de páginas rastreadas.</li>
+<li>Con un ritmo pr&agrave;cticamente  idéntico,  la cola de la distribución se va alargando, exponiendo los tags más utilizados (que en la muestra 400 supera las 350 ocasiones para el <a href="http://del.icio.us/tag/design">tag <em>design</em></a>).</li>
+<li>El <em>top ten</em> de los tags más repetidos en la muestra son (entre paréntesis la frecuencia):
+<ul>
+<li>design (361).</li>
+<li>programming (264)</li>
+<li>web (248)</li>
+<li>ajax (235)</li>
+<li>advertising (219)</li>
+<li>business (213)</li>
+<li>blog (209)</li>
+<li>development (201)</li>
+<li>software (186)</li>
+<li>tools (172)</li><br />
+</ul><br />
+</li><br />
+</ul><br />
+En base a lo comentado, un par de gráficos, que siempre pueden alegrar un poco el post (esto del grafismo lo tengo ciertamente olvidado, vale decirlo...).</p>
+<h3>Incorporación de nuevos tags</h3><br />
+En el siguiente gráfico se puede ver el número de tags nuevos que se van incorporando para cada nueva fase de muestreo.</p>
+<p><img title="Incorporaciones de nuevos tags por muestra" src="/extranet/wp-content/uploads/2011/03/4488-incorporacio_nous_tags.jpg" alt="Incorporaciones de nuevos tags por muestra" width="1074" height="300" /></p>
+<p>Como se puede apreciar, el cambio sustancial se encuentra en la iteración 150.  Por lo demás, los picos que existen más adelante se deben casi siempre a lo mismo: dentro de las 10 p&agrave;ginas a rastrear, existen algunas que son referidas a tags (ni usuarios ni nada por el estilo). Parece ser que en esos casos, aumenta el número de tags nuevos.</p>
+<p>En cualquiera de los dos gráficos, sacar concluciones es algo muy preliminar, simplemente se debe coger la información como datos descriptivos.</p>
+<p>La segunda figura ya es un poco más esotérica pero creo que tampoco costará mucho de descifrar. Se trata del diagrama del grado de repetición de los tags según la muestra tomada:</p>
+<p><img title="Occurencias de tags en muestras de 10 a 400" src="/extranet/wp-content/uploads/2011/03/4487-frequencies_tags.jpg" alt="Occurencias de tags en muestras de 10 a 400" width="836" height="488" /></p>
+<p>Como se puede ver, a medida que se va hacia la parte mas <em>profunda</em> del gráfico, aumenta el tama&ntilde;o de la muestra tomada. Es decir, hay más tags, más URLs, etc. Sin embargo, a partir de la muestra 100 aproximadamente, la forma del gráfico se estabiliza bastante.</p>
+<p>En lo referente a la forma, cabe comentar que el valor del "0" que yo he marcado como 0 es algo muy relativo.</p>
+<p>En el fondo, no es observable la frecuencia de "tag que aparece 0 veces". Pero... &iquest;no es observable porque sucede infinitas veces, o porque no sucede ninguna? En fin, no he entrado en dilemas conceptuales porque aún no es el momento, pero probablemente me inclinaría por tags "nunca utilizados", que implicarían un número "infinito" de etiquetas utilizadas 0 veces. Esto llevaría el gráfico a una forma parecida a una distribución exponencial, o bien a una Poisson. Lo dicho: ya llegará el momento de los contrastes.</p>
+<p>Pues de momento eso es todo: creo que con estos dos gráficos ya se puede abrir boca, y dentro de nada habrá algunas comparativas entre tags.  En relación al post de tagging y lógica borrosa, haré un peque&ntilde;o algoritmo que calcule la distancia de lehvenstein (el grado de parecido del orden de teclas) entre tags, puro divertimento.</p>
+<p>Posteriormente habrá comparativas URLs-usuarios-tags, aunque será necesario recopilar mucha más información.</p>

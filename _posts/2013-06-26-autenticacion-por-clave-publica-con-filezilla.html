@@ -1,0 +1,56 @@
+---
+layout: post
+status: publish
+published: true
+title: Autenticación por clave pública con FileZilla
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27151
+wordpress_url: http://www.sopadebits.com/?p=27151
+date: '2013-06-26 23:45:53 +0200'
+date_gmt: '2013-06-26 21:45:53 +0200'
+categories:
+- Informática
+tags:
+- utilidades
+- ssh
+- filezilla
+comments:
+- id: 22317
+  author: Timmy
+  author_email: valverdeagustn@gmail.com
+  author_url: ''
+  date: '2015-07-17 19:09:28 +0200'
+  date_gmt: '2015-07-17 17:09:28 +0200'
+  content: donde se debe de alojar la cave publica en filezillaserver
+- id: 23652
+  author: Mario Alberich
+  author_email: malberich@gmail.com
+  author_url: ''
+  date: '2015-10-16 22:59:58 +0200'
+  date_gmt: '2015-10-16 20:59:58 +0200'
+  content: La verdad, no he usado nunca filezilla server. Para el caso de SSH, hay
+    un archivo (~/.ssh/authorized_keys) en el que se copia la clave pública
+    del usuario con el que quieres conectar. Imagino que FileZilla tendrá un
+    funcionamiento similar.
+---
+<p>Aunque con el artículo de autenticación por clave pública ya se puede operar con normalidad desde la línea de comandos, muchos usuarios prefieren utilizar aplicaciones de escritorios con interfaces visuales.</p><!--more-->
+<p>En el caso de las aplicaciones SFTP, el caso paradigmático es FileZilla. Aunque existe infinidad de aplicaciones para cargar FTP (algunas de ellas también cargan por SFTP), FileZilla es la aplicación de cabecera. Al menos eso es lo que yo he comprobado.</p>
+<p>Entonces, con las claves generadas &iquest;Cómo configuramos FileZilla para utilizar la clave que hemos generado anteriormente?</p>
+<h2>Cargar la clave en FileZilla</h2></p>
+<ul>
+<li>Ejecuta FileZilla y selecciona el menú Edición > Preferencias.</li>
+<li>En ese apartado encontrarás el apartado SFTP (dentro de <em>Conexión > FTP</em>).</li>
+<li>Clica en el botón "A&ntilde;adir un archivo de claves".</li><br />
+</ul><br />
+En ese momento hay un detalle importante: FileZilla por ahora no puede gestionar claves privadas con contrase&ntilde;a. &nbsp;Es por ello que, si has generado la clave privada con contrase&ntilde;a, primero va a solicitar que la desbloquees, luego generará una clave privada sin contrase&ntilde;a (que pedirá que guardes en algún directorio) y finalmente deberás importar esa clave.</p>
+<h2>Acceder al servidor</h2><br />
+Con la clave cargada en FileZilla, sólo falta configurar la conexión al servidor. En este punto, si ya tienes experiencia en el uso de FileZilla (en caso contrario, puedes echar un vistazo a este <a title="Tutorial de uso de Filezilla" href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(es)" target="_blank">tutorial de uso de FileZilla</a>), sólo deberás tener en cuenta que el método de autenticación sea <strong>interactivo</strong>, indicar el nombre de usuario, y <strong>dejar en blanco la contrase&ntilde;a</strong>.</p>
+<p>Con esto el sistema va a localizar la clave privada e intentará comprobar si es la generadora de alguna de las claves públicas que incluya.</p>
+<p>En caso que no consigas conectar, procura verificar que la clave privada aparece en el apartado anterior, y que la clave pública está en el sitio correcto en el servidor. Tan simple como esto, la causa acostumbra a ser que las cosas no estaban en su sitio.</p>
+<p>&iexcl;Que tengas una feliz conexión segura! ;-)</p>

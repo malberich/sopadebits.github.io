@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Magento: métodos factoría para modelos'
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+wordpress_id: 27503
+wordpress_url: http://www.sopadebits.com/?p=27503
+date: '2013-11-27 09:30:23 +0100'
+date_gmt: '2013-11-27 08:30:23 +0100'
+categories:
+- Informática
+tags:
+- magento
+comments: []
+---
+<p>Magento incluye la clase <em>final</em> Mage (definida en app/Mage.php) que actúa como factoría para recuperar e instanciar clases de diversos tipos, acceder al registro de singletons, entre otras muchas funciones básicas. El patrón factory centraliza la implementación de esta lógica en los métodos de una sola clase, por lo que simplifica una serie de tareas</p><!--more-->
+<p>Para el caso de los modelos, tenemos los siguientes métodos:</p>
+<h2>Mage::getModel</h2></p>
+<pre class="brush: php; gutter: true">Mage::getModel($modelClass, $arguments = array());</pre></p>
+<h2>Mage::getSingleton</h2></p>
+<pre class="brush: php; gutter: true">Mage::getSingleton($className);</pre><br />
+Este método instancia una clase y la guarda en el registro interno, o bien recupera el objeto almacenado anteriormente. Esta clase se instancia en Magento y se almacena internamente en el registro (<em>Mage::registry)</em>.</p>
+<p>Así, el método getSingleton hace las mismas funciones que un getModel, pero sobre un objeto almacenado internamente.&nbsp;El patrón Registry es digno de mención aparte, ya que permite almacenar variables sobre claves únicas, simulando el funcionamento de las variables globales pero sin sus inconvenientes. Entonces, utilizando este patrón:</p>
+<ul>
+<li>Es posible recuperar el objeto con Mage::registry($className),</li>
+<li>Almacenar instancias de cada clase con Mage::register($className)</li>
+<li>Eliminarlas del registro con Mage::unregister($className).</li><br />
+</ul><br />
+Por otro lado, Mage::getResourceSingleton($className) proporciona el singleton de un recurso del modelo.</p>
+<h2>Models y Resources</h2><br />
+Los métodos getResource* &nbsp;y get*Instance son una capa más dentro de la arquitectura de Magento. Aunque a nivel práctico (usar Magento con lo que viene de serie) estas diferencias deberían pasar desapercibidas en tu día a día, ya que principalmente usarás el metodo Mage::getModel y sus análogos para helpers y controladores.</p>
+<p>En cualquier caso, puedes leer <a href="http://stackoverflow.com/questions/2111988/difference-between-model-and-model-resource">diferencias entre Model y ResourceModel en la respuesta a esta pregunta de stackoverflow</a>.</p>
+<p>Los <em>ResourceModels</em> se utilizan para poder integrar el acceso a datos que no siempre están en el mismo sistema de almacenamiento. Esto permite <a href="http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-7-advanced-orm-entity-attribute-value">definir y utilizar los modelos EAV</a>, o bien definir&nbsp;tablas de la base de datos utilizando modelos a alto nivel, pero diferentes ResourceModels por debajo de ellos.</p>

@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: "Visualizando: Estadísticas de navegadores (II)"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: "<p>En el <a href=\"/visualizando:-estadisticas-navegadores-(i)\">anterior
+  artículo de la serie</a> comentaba los pasos para la obtención de
+  los datos, la unificación de las fuentes, y finalmente el cálculo
+  de los parámetros del gráfico.&nbsp; Para dar el siguiente paso hay
+  que modificar el código del ejemplo.&nbsp; En concreto, hay que modificar
+  sólo dos archivos:</p><!--more-->\r\n<ul>\r\n<li>browser_stats.xml, es el archivo que
+  contiene los datos.</li>\r\n<li>BrowserMarketShare.mxml, que es el que contiene
+  el código ActionScript de Flash y MXML de Flex para modificar los datos.</li>\r\n</ul>"
+wordpress_id: 26830
+date: '2010-01-11 00:00:00 +0100'
+date_gmt: '2010-01-11 00:00:00 +0100'
+categories:
+- Matemática
+- Informática
+tags:
+- Flash
+- Gráficos estadísticos
+- visualizacion
+- testeo
+comments: []
+---
+<p>La primera parte es relativamente sencilla, teniendo el archivo XML generado en la hoja de cálculo.&nbsp; Sólo hay que tener en cuenta de no olvidarse de los tags ... que engloban todo el contenido.&nbsp; Pasamos al segundo paso.</p>
+<h2>Modificación del código</h2><br />
+Para adaptar los anillos hay que ir a las líneas 148-149, donde se definen las variables <em>innerRadius</em> y <em>outerRadius</em>.&nbsp; Aquí se define el valor del límite interno y externo de cada anillo.</p>
+<p>En la versión original estos radios son constantes.&nbsp; Pero ahora lo que hay que hacer es utilizar los atributos innerRadius y outerRadius generados en el archivo XML.&nbsp; Los valores aquí ya tienen que ser absolutos, por lo que hemos de multiplicar los radios normalizados a 1 por el radio total del gráfico. Las líneas deben contener lo siguiente:</p>
+<p><em>innerRadius="{radialLayout.currentDatum.innerRadius*radialLayout.height/2}"</em><br />
+<em>outerRadius="{radialLayout.currentDatum.outerRadius*radialLayout.height/2}"</em></p>
+<p>Describo brevemente los parámetros de las fórmulas:</p>
+<ul>
+<li>Estamos recogiendo el valor de innerRadius (u outerRadius en la segunda) y los estamos multiplicando por la mitad de la altura de la caja donde se mostrará el gráfico.&nbsp; <strong>Dado que el gráfico está centrado, dividimos la altura entre dos para conseguir el mayor radio posible</strong>. La altura total es el diámetro, por lo que su mitad es el radio.</li>
+<li>Luego, dado que innerRadius y outerRadius en el XML son valores entre 0 y 1 (el innerRadius del anillo más interior es 0 y el outerRadius del anillo más exterior es 1) y son contiguos, <strong>los anillos toman su máxima medida posible para la caja del gráfico (radialLayout)</strong>.</li><br />
+</ul><br />
+<!-- comentario -->Aparte de estos cambios, he comentado las líneas 178-180 (etiqueta "January 2002" que aparecía en la parte central) y las líneas 121 a 123 (la etiqueta "August 2009", que aparecía en la parte exterior). Hay que tener en cuenta que el modo de comentario es XML, no ActionScript.</p>
+<h2>Compilación</h2><br />
+Ya sólo queda generar el archivo SWF. Para ello es necesario que descargar Flex SDK (gratuito, precisa Java), instalarlo (se descomprime en un directorio, sin más) y compilar.&nbsp; Abriendo una consola y situándote en el directorio "src" del ejemplo, pues compilar (en Linux) así:</p>
+<p><em>/ruta/hasta/flex/bin/mxmlc BrowserMarketShare.mxml -include-libraries ../libs/DegrafaLibrary.swc ../libs/AxiisLibrary.swc</em></p>
+<p>Compilando en <strong>Windows</strong>, el programa es <strong>mxmlc.exe</strong>, y las rutas a los directorios se indican con contrabarra (\).</p>
+<p>Aparecerán algunos avisos pero todo funciona correctamente.&nbsp; La última línea del proceso será algo así como:</p>
+<p><em>/home/_usuario_/..../axiis examples/src/BrowserMarketShare.swf (568757 bytes)</em></p>
+<p>Puedes abrir el archivo SWF en tu navegador y verás algo parecido a la siguiente imagen:</p>
+<p><a title="Browser Statistics con anillos proporcionales (Flash)" href="//wp-content/uploads/2011/03/4514-BrowserMarketShare.swf" target="_blank"><img title="Axiis Browser Statistics: Anillos proporcionales al crecimiento" src="..//wp-content/uploads/2011/03/4515-browser-statistics.png" alt="Axiis Browser Statistics: Anillos proporcionales al crecimiento" width="550" height="332" /></a></p>
+<p>&iquest;Todo bien? &iquest;Algo no ha funcionado? Si dejas algún comentario quizá lo aclaremos.&nbsp; Clicando con el botón derecho en la versión de pantalla completa puedes ver el código del archivo MXML.</p>
+<p>Queda un último apartado para comentar los resultados del gráfico, compararlo con el original, analizar qué podemos extraer de él, y valorar las ventajas e inconvenientes por los criterios que he seguido.</p>

@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: "Facetas: las matemáticas en la semántica"
+author:
+  display_name: Mario Alberich
+  login: admin
+  email: malberich@gmail.com
+  url: ''
+author_login: admin
+author_email: malberich@gmail.com
+excerpt: '<p>Ahora que ya baja el ritmo de trabajo, retomaré los <a href="/epoca-de-examenes"
+  title="Sopa de bits: época de exámenes">temas pendientes que dejé
+  apuntados</a>.</p><!--more--><p>He publicado algunos posts (relacionados con mi <em>hacer codos</em>
+  en PLN), y ya tengo ganas de marcar un ritmo de producción (tanto de posts
+  como de mejoras en el blog) que espero poder definir a lo largo de este mes de Julio.</p><p>Para
+  empezar, una de facetas.  Es uno de los conocimientos que más me ha gustado
+  aprender. Quizá el hecho que fuera un matemático quien lo enunciara
+  (<a href="http://en.wikipedia.org/wiki/S._R._Ranganathan" title="Wikipedia: Shiyali
+  Ramamrita Ranganathan">Shiyali Ramamrita Ranganathan</a>) es un motivo de debilidad.
+  Su base conceptual aporta un esquema formal para organizar el conocimiento...</p>'
+wordpress_id: 26761
+date: '2007-06-26 00:00:00 +0200'
+date_gmt: '2007-06-26 00:00:00 +0200'
+categories:
+- Informática
+- Documentación
+tags:
+- modelización
+- lenguajes documentales
+comments: []
+---
+<p>
+<p>Las facetas se basan su estructura en el método analítico-sintético: primero es necesario desglosar los factores que identifican la mayoría de elementos a clasificar, luego identificar los posibles <em>valores</em> (o categorías) que incluyan esos factores, y acabar sintetizando estos factores, combinándolos en cada elemento a clasificar. Eso requiere una tarea <em>a priori</em> que no siempre es fácil: dar con los factores principales.</p><br />
+<h2>Facetas y espacios vectoriales </h2>
+<p>Según Taylor, las facetas son:</p><br />
+<blockquote>Propiedades, características o aspectos claramente definidos, mutuamente exclusivos y colectivamente exhaustivos.</blockquote>
+<p>Lo que a nivel matemático se puede desprender de esta afirmación, es que algebraicamente, las facetas pueden considerarse <strong>vectores</strong> (<em>aspectos</em> claramente definidos), <strong>linealmente independientes</strong> (mutuamente exclusivos y colectivamente exhaustivos).</p>
+<p>En realidad, el <a href="http://mathworld.wolfram.com/Facet.html" title="Mathworld: Facet">concepto matemático de faceta</a> se refiere a un vector que tiene n-1 dimensiones. Por ejemplo, en un espacio bidimensional, una faceta sería una recta. En un espacio tridimensional, la faceta sería un plano, y así <em>ad infinitum</em>. En cualquier caso, no se habla de ortogonalidad o de independencia lineal. En esencia, las facetas tal como las define Taylor son un caso concreto del principio matemático aplicado. </p>
+<p>Cuando se considera un conjunto de vectores ortogonales (es decir, linealmente independientes entre sí), suficientes (el conjunto de vectores genera un espacio vectorial V), y exhaustivos (cualquier otro elemento-vector puede ser representado como una combinación lineal de los vectores originales), podemos tratar las clasificaciones facetadas como <a href="http://es.wikipedia.org/wiki/Base_%28%C3%A1lgebra%29" title="Wikipedia: Bases (álgebra)">bases</a> de <a href="http://es.wikipedia.org/wiki/Espacio_vectorial" title="Wikipedia: Espacio vectorial">espacios vectoriales</a>. </p>
+<p>Disponer de una base de un espacio vectorial nos permitiría describir cualquier elemento dentro de ese espacio, utilizando una determinada combinación de sus componentes. Por ejemplo, disponiendo de dos facetas con 25 elementos en cada caso, se podría disponer de 625 combinaciones posibles. </p>
+<p>Desde luego las facetas en la documentación tienen un aspecto nada matemático: que las distancias entre los elementos que hay dentro de una faceta pueden ser de carácter no cuantificable. De todos modos, la cuantificación no es un aspecto irrenunciable: importa más la representatividad.</p>
+<p>Hasta aquí no he traspasado aún la barrera teórica de las matemáticas. En realidad nunca se traspasa si se quieren utilizar sus herramientas. Es por eso que son las propias facetas las que se aproximan a las matemáticas. </p>
+<p>Al representar las facetas como forma de representación del espacio vectorial, es posible utilizar  métodos de cálculo del álgebra matricial, previa definición del criterio de uso. Poner a disposición de los sistemas de clasificación estas herramientas significa proporcionar la capacidad de continua <strong>readaptación</strong> (que Ranganathan estableció en sus <a href="http://bitacoradeunbibliotecario.blogspot.com/2005/02/las-leyes-de-ranganathan.html" title="Diario de un bibliotecario: Las leyes de Ranganathan">leyes para bibliotecas</a> y que son tan aplicables en el entorno web actual) utilizando  indicadores y medidas cuantitativas como soporte, simplificando el reajuste ante la entrada continua de nuevos documentos. </p>
+<p>La aplicación de métodos de análisis de facetas permitirían detectar el grado de relación o de agrupación entre combinaciones de valores de las facetas.</p>
+<p>Volviendo a la realidad, las facetas se acostumbran a utilizar en combinación con el resto de sistemas de clasificación.  El objetivo es minimizar el número de términos y factores de organización, a la vez que se maximiza la relevancia en la recuperación de la información. </p><br />
+<h2>Relaciones semánticas, relaciones sintácticas</h2>
+<p>Es casual que hace poco comentara ciertos aspectos del procesamiento del lenguaje natural y ahora trate de las relaciones sintácticas entre términos. En realidad es casual por cuestiones cronológicas, pero existe una relación conceptual clara.</p>
+<p>Las relaciones entre términos de un lenguaje controlado pueden diferenciarse entre semánticas y sintácticas. En el primer caso encontramos las relaciones de <strong>equivalencias</strong> (sinonimia, traducciones de otros términos, etc.), <strong>jerarquía</strong> (géneros-especies, parte-todo) y <strong>asociativas</strong> (relaciones de coordinación, causa-efecto, secuencia espacio-tiempo). </p>
+<p>En el caso de la relación sintáctica, encontramos combinaciones de términos que aportan información adicional desde una óptica (léase <em>faceta</em>) diferente.</p>
+<p>Para este caso, recojo otro significado del término faceta: son las superficies planas que se encuentran en un poliedro. Por ejemplo, en una piedra preciosa. </p>
+<p>Creo que la relación sintáctica tiene ese carácter de <em>tallado</em> sobre un concepto. A diferencia de la primera visión de las facetas basada en un esquema <em>top-down</em>, este segundo enfoque permite definir un concepto con una frase: es decir, centrarse en el objeto, y <em>tallarlo</em> para darle <strong>forma de frase</strong>.</p>
+<p>Al poder representar una combinación de facetas en forma de frase, la gestión y la organización de los contenidos es más intuitiva, más fácil de comunicar y más fácil de aprender para el usuario, si estas facetas son fácilmente asimilables por el usuario.</p>
+<p>Para cada uno de los enfoques expuestos existen aplicaciones muy interesantes, tanto en relación con la estadística, como en la informática. Esto lo dejo para un momento post-erior ;-). </p></p>
