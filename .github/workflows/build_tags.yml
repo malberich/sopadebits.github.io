@@ -43,6 +43,5 @@ jobs:
           # git rm ./_category/placeholder
           git add ./_tag/*
           git add ./_category/*
-          git commit -m "Updated tags and categories" ./_tag/* ./_category/*
-          git commit -m "Updated the data list" ./_data/*
+          git diff-index --quiet HEAD || git commit -am "Updated tags and categories"
           git push github HEAD:${GITHUB_REF}
