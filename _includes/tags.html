@@ -4,8 +4,8 @@
 <div class="row">
 	<div class="col-xs-12">
 		{% for tag in site.data.tags %}
-			{% if  tag['posts'].size >= include.mincount %}
-				<a href="/tag/{{tag['slug']}}/">{{tag['name']}} <span class="badge">{{tag['posts'].size}}</span></a> &nbsp;&nbsp;&nbsp;
+			{% if  tag.posts.size >= include.mincount %}
+				<a href="/tag/{{ tag.slug }}/">{{ tag.name }} <span class="badge">{{ tag.posts..size }}</span></a> &nbsp;&nbsp;&nbsp;
 			{% endif %}
 		{% endfor %}
 	</div>

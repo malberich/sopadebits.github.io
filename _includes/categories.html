@@ -4,10 +4,10 @@
 <div class="row">
 	{% for category in site.data.categories %}
 		<div class="col-xs-2">
-			<span class="badge">{{category['posts'].size}}</span>
+			<span class="badge">{{ category.posts.size }}</span>
 		</div>
 		<div class="col-xs-10">
-			<a href="/category/{{category['slug']}}/">{{category['name']}} </a>
+			<a href="/category/{{ category.slug }}/">{{ category.name }} </a>
 		</div>
 	{% endfor %}
 </div>
