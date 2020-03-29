@@ -3,7 +3,7 @@ name: Generate tag pages
 on: [push]
 
 jobs:
-  build:
+  tagging:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -18,16 +18,16 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-          if [ -d "_tag" ];then
-            git rm ./_tag/*
+          if [ -d "tag" ];then
+            git rm ./tag/*
           fi
-          if [ -d "_category" ]; then
-            git rm ./_category/*
+          if [ -d "category" ]; then
+            git rm ./category/*
           fi
-          # touch ./_tag/placeholder
-          # touch ./_category/placeholder
-          # git add ./_tag/placeholder
-          # git add ./_category/placeholder
+          # touch ./tag/placeholder
+          # touch ./category/placeholder
+          # git add ./tag/placeholder
+          # git add ./category/placeholder
           git diff-index --quiet HEAD || git commit -am "Removed old categories" && git push github HEAD:${GITHUB_REF}
       - name: Install dependencies
         run: |
@@ -39,9 +39,9 @@ jobs:
 
           python3 scripts/regenerate_tags.py
 
-          # git rm ./_tag/placeholder
-          # git rm ./_category/placeholder
-          git add ./_tag/*
-          git add ./_category/*
+          # git rm ./tag/placeholder
+          # git rm ./category/placeholder
+          git add ./tag/*
+          git add ./category/*
           git diff-index --quiet HEAD || git commit -am "Updated tags and categories"
           git push github HEAD:${GITHUB_REF}

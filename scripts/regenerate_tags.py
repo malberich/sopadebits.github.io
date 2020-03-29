@@ -17,11 +17,11 @@ if __name__ == '__main__':
     if not os.path.isdir(os.path.expanduser("./_data")):
         os.mkdir(os.path.expanduser("./_data"))
 
-    if not os.path.isdir(os.path.expanduser("./_tag")):
-        os.mkdir(os.path.expanduser("./_tag"))
+    if not os.path.isdir(os.path.expanduser("./tag")):
+        os.mkdir(os.path.expanduser("./tag"))
 
-    if not os.path.isdir(os.path.expanduser("./_category")):
-        os.mkdir(os.path.expanduser("./_category"))
+    if not os.path.isdir(os.path.expanduser("./category")):
+        os.mkdir(os.path.expanduser("./category"))
 
     for file in post_list:
         print(file)
@@ -88,7 +88,7 @@ if __name__ == '__main__':
         os.remove(file)
 
     for (tag_slug, tag) in tags.items():
-        with open(os.path.expanduser("./_tag/{}.md".format(tag_slug)), "w+") as f:
+        with open(os.path.expanduser("./tag/{}.md".format(tag_slug)), "w+") as f:
             f.write(
                 "---\nlayout: tagpage\ntitle: \"Tag: {tagname}\"\ntag: {tag_slug}\n---".format(
                     tagname=tag['name'],
@@ -105,7 +105,7 @@ if __name__ == '__main__':
         os.remove(file)
 
     for (slug_cat, cat) in categories.items():
-        with open(os.path.expanduser("./_category/{}.md".format(slug_cat)), "w+") as f:
+        with open(os.path.expanduser("./category/{}.md".format(slug_cat)), "w+") as f:
             f.write(
                 "---\nlayout: tagpage\ntitle: \"Category: {catname}\"\ntag: {slug_cat}\n---".format(
                     catname=cat['name'],
