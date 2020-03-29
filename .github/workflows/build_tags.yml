@@ -18,14 +18,14 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-          # git rm ./_tag/*
-          # git rm ./_category/*
-          # touch ./_tag/placeholder
-          # touch ./_category/placeholder
-          # git add ./_tag/placeholder
-          # git add ./_category/placeholder
-          # git commit -m "Removed old categories" ./_tag/placeholder ./_category/placeholder
-          # git push github HEAD:${GITHUB_REF}
+          git rm ./_tag/*
+          git rm ./_category/*
+          touch ./_tag/placeholder
+          touch ./_category/placeholder
+          git add ./_tag/placeholder
+          git add ./_category/placeholder
+          git commit -m "Removed old categories" ./_tag/placeholder ./_category/placeholder
+          git push github HEAD:${GITHUB_REF}
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
