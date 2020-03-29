@@ -17,6 +17,12 @@ if __name__ == '__main__':
     if not os.path.isdir(os.path.expanduser("./_data")):
         os.mkdir(os.path.expanduser("./_data"))
 
+    if not os.path.isdir(os.path.expanduser("./_tag")):
+        os.mkdir(os.path.expanduser("./_tag"))
+
+    if not os.path.isdir(os.path.expanduser("./_category")):
+        os.mkdir(os.path.expanduser("./_category"))
+
     for file in post_list:
         print(file)
         filename = os.path.basename(
