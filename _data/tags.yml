@@ -1,0 +1,1189 @@
+alberto-cairo:
+  name: alberto cairo
+  posts:
+  - 2013-10-07-albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz.html
+  slug: alberto-cairo
+algoritmos:
+  name: algoritmos
+  posts:
+  - 2013-09-29-sonido-en-algoritmos-y-wikipedia.html
+  - 2013-09-10-primero-los-datos-datos-reales.html
+  - 2013-09-05-simular-un-valor-poisson.html
+  - 2013-08-26-simular-un-valor-exponencial-y-gamma.html
+  - 2013-08-14-transparencia-claridad-y-big-data.html
+  - 2013-07-11-calcular-la-variancia-sin-recorrer-dos-veces-los-datos.html
+  - 2013-06-28-calculo-de-la-media-con-datos-en-flujo.html
+  slug: algoritmos
+alimentos:
+  name: alimentos
+  posts:
+  - 2013-10-13-the-flavor-connection-dataviz-interactivo-entre-conexiones-de-alimentos.html
+  slug: alimentos
+analisis-de-datos:
+  name: "an\xE1lisis de datos"
+  posts:
+  - 2014-04-22-visualizar-datos-explorar.html
+  slug: analisis-de-datos
+analytics:
+  name: analytics
+  posts:
+  - 2014-03-20-analytics-platform-principles-google.html
+  slug: analytics
+angularjs:
+  name: angularjs
+  posts:
+  - 2014-08-03-enlaces-de-interes-2014-31.html
+  - 2014-07-27-enlaces-de-interes-2014-30.html
+  - 2014-02-16-enlaces-de-interes-2014-7.html
+  slug: angularjs
+aniversario:
+  name: aniversario
+  posts:
+  - 2014-04-02-siete.html
+  slug: aniversario
+apache:
+  name: apache
+  posts:
+  - 2014-02-27-apache-logs-tiempo-respuesta.html
+  slug: apache
+apis-mashups:
+  name: apis-mashups
+  posts:
+  - 2009-01-27-gestor-contenidos-gestor-publicaciones-ii.html
+  - 2008-09-06-nuevo-diseno-sopa-bits.html
+  - 2007-07-03-google-mashups-el-contraataque-a-yahoo-pipes.html
+  slug: apis-mashups
+backup:
+  name: backup
+  posts:
+  - 2014-02-06-mysqldump-backup-pv.html
+  - 2013-08-12-mysqldump-backup-comprimido-con-gzip.html
+  slug: backup
+banco-mundial:
+  name: banco mundial
+  posts:
+  - 2013-09-13-siete-cosas-que-quiza-no-sepas-sobre-el-agua.html
+  slug: banco-mundial
+barcelona:
+  name: barcelona
+  posts:
+  - 2014-03-16-enlaces-de-interes-2014-11.html
+  slug: barcelona
+bayesianos:
+  name: bayesianos
+  posts:
+  - 2014-07-15-frecuentistas-y-bayesianos.html
+  slug: bayesianos
+benchmarking:
+  name: benchmarking
+  posts:
+  - 2014-06-26-php-rapido.html
+  - 2013-12-30-si-desarrollas-en-php-y-tienes-un-rato-prueba-hhvm.html
+  - 2013-12-11-magento-iteracion-con-muchos-modelos.html
+  - 2013-11-12-web-frameworks-benchmark.html
+  slug: benchmarking
+bernouilli:
+  name: bernouilli
+  posts:
+  - 2013-07-15-simular-un-valor-binomial.html
+  slug: bernouilli
+big-data:
+  name: big data
+  posts:
+  - 2014-09-04-big-data-machine-learning.html
+  - 2014-08-31-27909.html
+  - 2014-05-22-big-data-desigualdad-y-desarrollo.html
+  - 2014-03-02-enlaces-de-interes-2014-9.html
+  - 2013-08-14-transparencia-claridad-y-big-data.html
+  slug: big-data
+bigquery:
+  name: bigquery
+  posts:
+  - 2014-09-04-big-data-machine-learning.html
+  slug: bigquery
+binomial:
+  name: binomial
+  posts:
+  - 2013-07-15-simular-un-valor-binomial.html
+  slug: binomial
+bitcoin:
+  name: bitcoin
+  posts:
+  - 2014-07-27-enlaces-de-interes-2014-30.html
+  slug: bitcoin
+capellades:
+  name: capellades
+  posts:
+  - 2013-11-07-museo-moli-paperer-de-capellades-mmp_capellades.html
+  slug: capellades
+certificaciones:
+  name: certificaciones
+  posts:
+  - 2014-03-20-analytics-platform-principles-google.html
+  slug: certificaciones
+cine:
+  name: cine
+  posts:
+  - 2014-03-13-una-recomendacion.html
+  slug: cine
+civic-engagement:
+  name: civic-engagement
+  posts:
+  - 2014-01-30-participacion-hackaton-civic-engagement.html
+  slug: civic-engagement
+cloud-computing:
+  name: cloud computing
+  posts:
+  - 2018-04-24-proyecto-gdelt.md
+  slug: cloud-computing
+cloud-dataflow:
+  name: cloud dataflow
+  posts:
+  - 2014-09-04-big-data-machine-learning.html
+  slug: cloud-dataflow
+clustering:
+  name: clustering
+  posts:
+  - 2008-03-03-clustering-recursos-corporativos-generalistas.html
+  slug: clustering
+codesniffer:
+  name: codesniffer
+  posts:
+  - 2014-03-06-version-minima-php-aplicacion.html
+  slug: codesniffer
+color:
+  name: color
+  posts:
+  - 2013-10-04-sutilezas-del-color-en-visualizacion-observatorio-de-la-tierra-de-la-nasa.html
+  slug: color
+compatibilidad:
+  name: compatibilidad
+  posts:
+  - 2014-03-06-version-minima-php-aplicacion.html
+  slug: compatibilidad
+confidencialidad:
+  name: confidencialidad
+  posts:
+  - 2013-11-05-muchos-y-muchas-jovenes-no-saben-usar-ordenadores-y-eso-deberia-preocuparte.html
+  slug: confidencialidad
+content-curators:
+  name: content curators
+  posts:
+  - 2013-11-19-diabetes-informacional-leer-noticias-perjudica-tu-mente.html
+  slug: content-curators
+crossfilter:
+  name: crossfilter
+  posts:
+  - 2014-04-08-d3-crossfilter-dc.html
+  - 2014-03-31-crossfilter-vistas-sincronizadas-datos.html
+  slug: crossfilter
+d3js:
+  name: d3js
+  posts:
+  - 2014-08-10-enlaces-de-interes-2014-32.html
+  - 2014-08-03-enlaces-de-interes-2014-31.html
+  - 2014-07-27-enlaces-de-interes-2014-30.html
+  - 2014-04-08-d3-crossfilter-dc.html
+  - 2014-02-16-enlaces-de-interes-2014-7.html
+  - 2013-09-30-chartbuilder-abre-su-codigo-basado-en-d3-js.html
+  - 2013-09-29-sonido-en-algoritmos-y-wikipedia.html
+  - 2013-09-12-utilidades-basadas-en-d3-js.html
+  - 2013-09-05-simular-un-valor-poisson.html
+  - 2013-08-28-recomendable-tutorial-de-d3.html
+  - 2013-08-26-simular-un-valor-exponencial-y-gamma.html
+  slug: d3js
+data-engineering:
+  name: data engineering
+  posts:
+  - 2018-04-24-proyecto-gdelt.md
+  - 2018-04-14-python-luigi-posterior.md
+  slug: data-engineering
+data-journalism:
+  name: data-journalism
+  posts:
+  - 2014-02-18-veracidad-informacion-verification-handbook.html
+  - 2014-02-02-enlaces-de-interes-2014-5.html
+  - 2013-12-05-unspeak-y-los-neologismos-que-venden.html
+  - 2013-10-07-albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz.html
+  - 2013-10-06-periodismo-en-la-era-de-los-datos-ddj-dataviz.html
+  - 2013-09-15-historia-de-los-graficos-y-visualizaciones-de-the-economist.html
+  slug: data-journalism
+data-pipelines:
+  name: data pipelines
+  posts:
+  - 2018-04-14-python-luigi-posterior.md
+  slug: data-pipelines
+datos-abiertos:
+  name: datos abiertos
+  posts:
+  - 2014-02-02-enlaces-de-interes-2014-5.html
+  - 2013-12-23-github-ya-es-mas-que-un-servicio-para-programadores.html
+  - 2013-10-16-opencorporates-y-la-nueva-utilidad.html
+  - 2013-09-30-chartbuilder-abre-su-codigo-basado-en-d3-js.html
+  - 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
+  - 2013-09-19-datos-cultura-cuantitativa-y-calidad-democratica.html
+  - 2013-09-13-siete-cosas-que-quiza-no-sepas-sobre-el-agua.html
+  - 2011-03-31-los-datos-abiertos-y-los-anuarios-estadisticos.html
+  - 2011-03-28-los-datos-abiertos-son-el-micelio-de-la-transparencia.html
+  slug: datos-abiertos
+dcjs:
+  name: dcjs
+  posts:
+  - 2014-04-08-d3-crossfilter-dc.html
+  slug: dcjs
+demografia:
+  name: "demograf\xEDa"
+  posts:
+  - 2013-12-15-enlaces-de-interes-2013-50.html
+  - 2013-11-04-movimientos-de-refugiados-desde-1960-segun-datos-de-la-onu-refugees.html
+  slug: demografia
+desarrollo:
+  name: desarrollo
+  posts:
+  - 2011-04-07-el-testeo-para-la-mejora-de-la-experiencia-de-usuario.html
+  - 2009-02-23-variables-aleatorias-semilla-estadistica.html
+  - 2009-02-19-muestreo-estadistico.html
+  slug: desarrollo
+diff:
+  name: diff
+  posts:
+  - 2014-02-13-mostrar-la-vista-lateral-en-diff.html
+  slug: diff
+elecciones:
+  name: elecciones
+  posts:
+  - 2011-06-09-politicos-accidentales-%c2%bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria.html
+  - 2011-05-20-y-la-gente-se-esta-informando.html
+  slug: elecciones
+emberjs:
+  name: emberjs
+  posts:
+  - 2014-02-23-enlaces-de-interes-2014-8.html
+  slug: emberjs
+empatia:
+  name: "empat\xEDa"
+  posts:
+  - 2014-02-11-aprendizajes-de-las-habilidades-sociales.html
+  slug: empatia
+energia:
+  name: "energ\xEDa"
+  posts:
+  - 2014-01-21-electricidad-subhasta-mercado-espanol-electricidad.html
+  slug: energia
+escalabilidad:
+  name: escalabilidad
+  posts:
+  - 2014-03-04-nodejs-java-paypal-y-groupon.html
+  slug: escalabilidad
+estadisticas-publicas:
+  name: "estad\xEDsticas p\xFAblicas"
+  posts:
+  - 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
+  slug: estadisticas-publicas
+exploracion-de-datos:
+  name: "exploraci\xF3n de datos"
+  posts:
+  - 2014-05-01-anscombe.html
+  - 2014-04-22-visualizar-datos-explorar.html
+  slug: exploracion-de-datos
+exponencial:
+  name: exponencial
+  posts:
+  - 2013-08-26-simular-un-valor-exponencial-y-gamma.html
+  slug: exponencial
+expresiones-regulares:
+  name: expresiones regulares
+  posts:
+  - 2007-04-26-expresiones-regulares-interpretar-urls.html
+  slug: expresiones-regulares
+flash:
+  name: Flash
+  posts:
+  - 2010-01-12-visualizando-estadisticas-navegadores-iii.html
+  - 2010-01-11-visualizando-estadisticas-navegadores-ii.html
+  - 2010-01-09-visualizando-estadisticas-navegadores-i.html
+  - 2009-03-11-open-flash-chart-2-mejorando-graficos-estadisticos.html
+  - 2007-09-24-sistema-hondt.html
+  - 2007-09-24-demo-ley-hondt.html
+  slug: flash
+flow:
+  name: flow
+  posts:
+  - 2014-02-04-flujo-no-te-relajes.html
+  slug: flow
+formacion:
+  name: formacion
+  posts:
+  - 2014-03-25-data-sense-con-fusion-tables.html
+  - 2013-12-19-aprender-y-ensenar-visualizacion-de-la-informacion.html
+  slug: formacion
+fractales:
+  name: fractales
+  posts:
+  - 2007-08-16-lecturas-veraniegas-chaos-order-capital-markets.html
+  slug: fractales
+frameworks:
+  name: frameworks
+  posts:
+  - 2013-11-12-web-frameworks-benchmark.html
+  slug: frameworks
+fuentes-de-informacion:
+  name: "fuentes de informaci\xF3n"
+  posts:
+  - 2014-02-18-veracidad-informacion-verification-handbook.html
+  - 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
+  - 2011-03-31-los-datos-abiertos-y-los-anuarios-estadisticos.html
+  - 2011-03-28-los-datos-abiertos-son-el-micelio-de-la-transparencia.html
+  - 2011-03-17-the-net-delusion-evgeny-morozov.html
+  - 2009-01-27-gestor-contenidos-gestor-publicaciones-ii.html
+  - 2009-01-27-gestor-contenidos-gestor-publicaciones-i.html
+  - 2008-09-16-analisis-web-com-piwik-gnu-r-ii.html
+  - 2008-09-15-analisis-web-com-piwik-gnu-r-i.html
+  - 2007-07-03-veracidad-informacion-internet-debate.html
+  - 2007-05-26-utilizando-yahoo-pipes.html
+  slug: fuentes-de-informacion
+gastronomia:
+  name: "gastronom\xEDa"
+  posts:
+  - 2013-10-13-the-flavor-connection-dataviz-interactivo-entre-conexiones-de-alimentos.html
+  slug: gastronomia
+genealogia:
+  name: "genealog\xEDa"
+  posts:
+  - 2013-11-20-kindred-sangre-de-su-sangre.html
+  slug: genealogia
+gephi:
+  name: gephi
+  posts:
+  - 2013-10-02-visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi.html
+  slug: gephi
+gestion-documental:
+  name: "gesti\xF3n documental"
+  posts:
+  - 2007-09-24-emprender-profesionales-informacion.html
+  - 2007-08-03-organizacion-informacion-personal-estructuracion-directorios.html
+  - 2007-07-21-organizacion-informacion-personal-gestion-documental-archivistica.html
+  - 2007-07-11-organizacion-de-la-informacion-personal-eliminando-archivos-duplicados.html
+  - 2007-07-05-cadena-trofica-fagocitar-rumiar-digerir-informacion.html
+  - 2007-04-02-un_primer_post.html
+  slug: gestion-documental
+github:
+  name: github
+  posts:
+  - 2014-08-10-enlaces-de-interes-2014-32.html
+  - 2013-12-23-github-ya-es-mas-que-un-servicio-para-programadores.html
+  slug: github
+google:
+  name: google
+  posts:
+  - 2018-04-24-proyecto-gdelt.md
+  - 2014-03-25-data-sense-con-fusion-tables.html
+  - 2014-03-20-analytics-platform-principles-google.html
+  - 2007-07-03-google-mashups-el-contraataque-a-yahoo-pipes.html
+  slug: google
+graficos-estadisticos:
+  name: "Gr\xE1ficos estad\xEDsticos"
+  posts:
+  - 2013-11-18-que-grafico-escoger-algunas-ideas.html
+  - 2013-10-04-sutilezas-del-color-en-visualizacion-observatorio-de-la-tierra-de-la-nasa.html
+  - 2013-09-15-historia-de-los-graficos-y-visualizaciones-de-the-economist.html
+  - 2013-08-28-recomendable-tutorial-de-d3.html
+  - 2011-04-14-la-gramatica-de-los-graficos.html
+  - 2010-01-12-visualizando-estadisticas-navegadores-iii.html
+  - 2010-01-11-visualizando-estadisticas-navegadores-ii.html
+  - 2010-01-09-visualizando-estadisticas-navegadores-i.html
+  - 2009-03-11-open-flash-chart-2-mejorando-graficos-estadisticos.html
+  - 2007-09-24-sistema-hondt.html
+  - 2007-09-24-demo-ley-hondt.html
+  slug: graficos-estadisticos
+grafos:
+  name: grafos
+  posts:
+  - 2014-01-23-grafos-html5-paperscape-sigmajs.html
+  - 2013-10-16-opencorporates-y-la-nueva-utilidad.html
+  - 2013-10-13-the-flavor-connection-dataviz-interactivo-entre-conexiones-de-alimentos.html
+  - 2013-10-02-visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi.html
+  - 2007-05-21-Long-tail-diversidad-y-factores-productivos.html
+  slug: grafos
+graspjs:
+  name: graspjs
+  posts:
+  - 2014-03-11-javascript-busqueda-sintaxis.html
+  slug: graspjs
+grep:
+  name: grep
+  posts:
+  - 2014-03-11-javascript-busqueda-sintaxis.html
+  - 2014-02-20-grep-contexto-resultado-coincidencias.html
+  slug: grep
+hackatons:
+  name: hackatons
+  posts:
+  - 2014-01-30-participacion-hackaton-civic-engagement.html
+  slug: hackatons
+hhvm:
+  name: HHVM
+  posts:
+  - 2014-06-26-php-rapido.html
+  - 2014-01-02-hhvm-magento-symfony.html
+  - 2013-12-30-si-desarrollas-en-php-y-tienes-un-rato-prueba-hhvm.html
+  slug: hhvm
+hondt:
+  name: hondt
+  posts:
+  - 2011-05-20-y-la-gente-se-esta-informando.html
+  slug: hondt
+html5:
+  name: html5
+  posts:
+  - 2014-08-10-enlaces-de-interes-2014-32.html
+  - 2014-01-23-grafos-html5-paperscape-sigmajs.html
+  - 2013-09-04-reveal-js-presentaciones-con-html5-y-estilo.html
+  - 2011-06-16-visualizacion-con-html5-javascript-infovis-toolkit.html
+  - 2011-06-12-visualizacion-con-html5-protovis.html
+  slug: html5
+indicadores:
+  name: indicadores
+  posts:
+  - 2013-09-16-los-datos-no-crecen-en-las-hojas-de-calculo-mira-en-la-basura.html
+  slug: indicadores
+infoxicacion:
+  name: "infoxicaci\xF3n"
+  posts:
+  - 2013-11-19-diabetes-informacional-leer-noticias-perjudica-tu-mente.html
+  slug: infoxicacion
+inglaterra:
+  name: inglaterra
+  posts:
+  - 2013-11-20-kindred-sangre-de-su-sangre.html
+  slug: inglaterra
+innovacion:
+  name: "Innovaci\xF3n"
+  posts:
+  - 2014-08-24-enlaces-de-interes-2014-34.html
+  - 2013-12-23-github-ya-es-mas-que-un-servicio-para-programadores.html
+  - 2009-03-08-quinta-disciplina.html
+  - 2009-02-26-eyetracking-movimiento-informacion-neuronal.html
+  - 2007-09-21-efecto-medici-innovacion-interdisciplinar.html
+  slug: innovacion
+internet:
+  name: internet
+  posts:
+  - 2008-09-08-mejoras-agradecimientos.html
+  - 2008-09-06-nuevo-diseno-sopa-bits.html
+  slug: internet
+javascript:
+  name: javascript
+  posts:
+  - 2014-08-31-27909.html
+  - 2014-08-24-enlaces-de-interes-2014-34.html
+  - 2014-04-08-d3-crossfilter-dc.html
+  - 2014-03-31-crossfilter-vistas-sincronizadas-datos.html
+  - 2014-03-18-nodejs-y-el-funcionamiento-de-require.html
+  - 2014-03-16-enlaces-de-interes-2014-11.html
+  - 2014-03-11-javascript-busqueda-sintaxis.html
+  - 2014-03-04-nodejs-java-paypal-y-groupon.html
+  - 2014-02-25-javascript-promise-callback-events.html
+  - 2013-09-04-reveal-js-presentaciones-con-html5-y-estilo.html
+  - 2011-06-16-visualizacion-con-html5-javascript-infovis-toolkit.html
+  - 2011-06-12-visualizacion-con-html5-protovis.html
+  slug: javascript
+jekyll:
+  name: jekyll
+  posts:
+  - 2016-09-10-volver-cambios-prisa.md
+  slug: jekyll
+jquery:
+  name: jquery
+  posts:
+  - 2014-02-25-javascript-promise-callback-events.html
+  slug: jquery
+kickstarter:
+  name: kickstarter
+  posts:
+  - 2014-02-23-enlaces-de-interes-2014-8.html
+  slug: kickstarter
+kramdown:
+  name: kramdown
+  posts:
+  - 2016-09-10-volver-cambios-prisa.md
+  slug: kramdown
+lenguajes-documentales:
+  name: lenguajes documentales
+  posts:
+  - 2007-06-29-facetas-aplicaciones-en-informatica.html
+  - 2007-06-26-facetas-las-matematicas-en-la-semantica.html
+  slug: lenguajes-documentales
+liderazgo:
+  name: liderazgo
+  posts:
+  - 2014-01-28-liderazgo-el-perdon-de-alan-turing-es-la-historia-de-un-fracaso.html
+  slug: liderazgo
+lingu-istica:
+  name: "ling&uuml;\xEDstica"
+  posts:
+  - 2009-05-04-programacion-neurolinguistica-hipnosis-buscadores.html
+  - 2007-06-20-teoria-de-la-relevancia-en-linguistica.html
+  slug: lingu-istica
+linux:
+  name: Linux
+  posts:
+  - 2014-04-29-mapreduce-linux-hadoop.html
+  - 2013-06-05-siege-extraer-urls-reales-de-los-logs-ii.html
+  - 2013-06-03-siege-extraer-urls-reales-de-los-logs-i.html
+  - 2007-05-31-trabajando-con-subversion-y-awk.html
+  - 2007-04-04-partida-ajedrez-windows-linux.html
+  slug: linux
+logs:
+  name: logs
+  posts:
+  - 2014-02-27-apache-logs-tiempo-respuesta.html
+  slug: logs
+luigi:
+  name: luigi
+  posts:
+  - 2018-04-14-python-luigi-posterior.md
+  slug: luigi
+machine-learning:
+  name: machine learning
+  posts:
+  - 2014-07-27-enlaces-de-interes-2014-30.html
+  - 2014-07-15-frecuentistas-y-bayesianos.html
+  slug: machine-learning
+magento:
+  name: magento
+  posts:
+  - 2014-01-13-magento-la-clase-mage.html
+  - 2014-01-02-hhvm-magento-symfony.html
+  - 2013-12-11-magento-iteracion-con-muchos-modelos.html
+  slug: magento
+mapreduce:
+  name: mapreduce
+  posts:
+  - 2014-09-04-big-data-machine-learning.html
+  - 2014-04-29-mapreduce-linux-hadoop.html
+  - 2014-03-31-crossfilter-vistas-sincronizadas-datos.html
+  slug: mapreduce
+markdown:
+  name: markdown
+  posts:
+  - 2016-09-10-volver-cambios-prisa.md
+  slug: markdown
+media:
+  name: media
+  posts:
+  - 2013-07-11-calcular-la-variancia-sin-recorrer-dos-veces-los-datos.html
+  - 2013-06-28-calculo-de-la-media-con-datos-en-flujo.html
+  slug: media
+mercado-de-trabajo:
+  name: mercado de trabajo
+  posts:
+  - 2013-11-11-el-proceso-de-un-grafico-que-simplificar-la-comprension-un-ejemplo-en-thewhyaxis.html
+  slug: mercado-de-trabajo
+metodologia:
+  name: "metodolog\xEDa"
+  posts:
+  - 2013-12-19-aprender-y-ensenar-visualizacion-de-la-informacion.html
+  - 2013-11-22-ventanas-rotas-y-seguridad-ciudadana.html
+  - 2013-11-18-que-grafico-escoger-algunas-ideas.html
+  - 2013-11-14-the-times-lamenta-el-error-de-un-programador.html
+  - 2013-11-11-el-proceso-de-un-grafico-que-simplificar-la-comprension-un-ejemplo-en-thewhyaxis.html
+  - 2013-09-10-primero-los-datos-datos-reales.html
+  slug: metodologia
+modelizacion:
+  name: "modelizaci\xF3n"
+  posts:
+  - 2013-12-12-predecir-disturbios-con-modelos-matematicos.html
+  - 2011-04-14-la-gramatica-de-los-graficos.html
+  - 2008-02-21-tareas-motivacion.html
+  - 2007-10-03-normalizacion-distancias-normalizadas.html
+  - 2007-08-16-lecturas-veraniegas-chaos-order-capital-markets.html
+  - 2007-06-29-facetas-aplicaciones-en-informatica.html
+  - 2007-06-26-facetas-las-matematicas-en-la-semantica.html
+  - 2007-06-23-apuntes-procesamiento-del-lenguaje-natural.html
+  - 2007-06-21-indicadores-el-ajo-dorado.html
+  - 2007-05-21-Long-tail-diversidad-y-factores-productivos.html
+  slug: modelizacion
+moviles:
+  name: "m\xF3viles"
+  posts:
+  - 2013-08-08-ripple-emulador-para-moviles.html
+  slug: moviles
+mozilla:
+  name: mozilla
+  posts:
+  - 2013-11-14-the-times-lamenta-el-error-de-un-programador.html
+  slug: mozilla
+muestreo-estadistico:
+  name: "muestreo estad\xEDstico"
+  posts:
+  - 2014-05-01-anscombe.html
+  - 2014-04-22-visualizar-datos-explorar.html
+  - 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
+  - 2013-09-16-los-datos-no-crecen-en-las-hojas-de-calculo-mira-en-la-basura.html
+  - 2011-06-09-politicos-accidentales-%c2%bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria.html
+  - 2011-03-28-los-datos-abiertos-son-el-micelio-de-la-transparencia.html
+  - 2009-02-19-muestreo-estadistico.html
+  - 2008-01-05-por-que-p-q-0-5.html
+  slug: muestreo-estadistico
+museos:
+  name: museos
+  posts:
+  - 2013-11-07-museo-moli-paperer-de-capellades-mmp_capellades.html
+  slug: museos
+mysql:
+  name: mysql
+  posts:
+  - 2014-02-06-mysqldump-backup-pv.html
+  - 2013-08-12-mysqldump-backup-comprimido-con-gzip.html
+  slug: mysql
+naciones-unidas:
+  name: naciones unidas
+  posts:
+  - 2013-11-04-movimientos-de-refugiados-desde-1960-segun-datos-de-la-onu-refugees.html
+  slug: naciones-unidas
+nativos-digitales:
+  name: nativos digitales
+  posts:
+  - 2013-11-05-muchos-y-muchas-jovenes-no-saben-usar-ordenadores-y-eso-deberia-preocuparte.html
+  slug: nativos-digitales
+neurologia:
+  name: "neurolog\xEDa"
+  posts:
+  - 2013-11-25-la-saturacion-visual-donde-esta-wally.html
+  slug: neurologia
+node:
+  name: node
+  posts:
+  - 2014-05-04-enlaces-de-interes-2014-18.html
+  slug: node
+nodejs:
+  name: nodejs
+  posts:
+  - 2014-03-18-nodejs-y-el-funcionamiento-de-require.html
+  - 2014-03-11-javascript-busqueda-sintaxis.html
+  - 2014-03-04-nodejs-java-paypal-y-groupon.html
+  - 2014-03-02-enlaces-de-interes-2014-9.html
+  - 2014-02-23-enlaces-de-interes-2014-8.html
+  slug: nodejs
+npm:
+  name: npm
+  posts:
+  - 2014-02-02-enlaces-de-interes-2014-5.html
+  slug: npm
+nyt:
+  name: NYT
+  posts:
+  - 2013-11-14-the-times-lamenta-el-error-de-un-programador.html
+  - 2013-09-23-big-data-big-insights-plantear-preguntas.html
+  slug: nyt
+off-topic:
+  name: off-topic
+  posts:
+  - 2008-04-01-un-anyito.html
+  - 2007-12-25-cosas-reaprendidas-mes-medio.html
+  - 2007-10-06-seis-meses-blog.html
+  - 2007-08-15-lecturas-veraniegas-arte-red.html
+  - 2007-06-08-epoca-de-examenes.html
+  slug: off-topic
+open:
+  name: open
+  posts:
+  - 2014-08-24-enlaces-de-interes-2014-34.html
+  slug: open
+open-source:
+  name: open source
+  posts:
+  - 2007-04-04-partida-ajedrez-windows-linux.html
+  slug: open-source
+opencorporates:
+  name: opencorporates
+  posts:
+  - 2013-10-16-opencorporates-y-la-nueva-utilidad.html
+  slug: opencorporates
+opengov:
+  name: opengov
+  posts:
+  - 2013-12-23-github-ya-es-mas-que-un-servicio-para-programadores.html
+  slug: opengov
+papel:
+  name: papel
+  posts:
+  - 2013-11-07-museo-moli-paperer-de-capellades-mmp_capellades.html
+  slug: papel
+paperscape:
+  name: paperscape
+  posts:
+  - 2014-01-23-grafos-html5-paperscape-sigmajs.html
+  slug: paperscape
+participacion:
+  name: "participaci\xF3n"
+  posts:
+  - 2014-01-30-participacion-hackaton-civic-engagement.html
+  slug: participacion
+paypal:
+  name: paypal
+  posts:
+  - 2014-03-04-nodejs-java-paypal-y-groupon.html
+  slug: paypal
+periodismo:
+  name: periodismo
+  posts:
+  - 2014-02-18-veracidad-informacion-verification-handbook.html
+  slug: periodismo
+phing:
+  name: phing
+  posts:
+  - 2013-07-20-phing-ix-filterchains.html
+  - 2013-07-04-phing-viii-filesets-filedirs-includes-excludes.html
+  - 2013-07-01-phing-vii-operaciones-con-control-de-versiones.html
+  - 2013-06-18-phing-vi-llamadas-entre-tareas.html
+  - 2013-06-12-phing-operaciones-sistema-archivos.html
+  - 2013-06-07-phing-condiciones-operadores-comparacion.html
+  - 2013-05-31-phing-iii-crear-variables-y-ejecutar-comandos-shell.html
+  - 2013-05-29-automatizar-con-phing-ii-builds-y-targets.html
+  - 2013-05-27-automatizar-con-phing-i-objetivos-e-instalacion.html
+  slug: phing
+php:
+  name: PHP
+  posts:
+  - 2014-06-26-php-rapido.html
+  - 2014-03-06-version-minima-php-aplicacion.html
+  - 2013-12-30-si-desarrollas-en-php-y-tienes-un-rato-prueba-hhvm.html
+  - 2013-12-11-magento-iteracion-con-muchos-modelos.html
+  - 2013-07-20-phing-ix-filterchains.html
+  - 2013-07-04-phing-viii-filesets-filedirs-includes-excludes.html
+  - 2013-07-01-phing-vii-operaciones-con-control-de-versiones.html
+  - 2013-06-18-phing-vi-llamadas-entre-tareas.html
+  - 2013-06-12-phing-operaciones-sistema-archivos.html
+  - 2013-06-07-phing-condiciones-operadores-comparacion.html
+  - 2013-05-31-phing-iii-crear-variables-y-ejecutar-comandos-shell.html
+  - 2013-05-29-automatizar-con-phing-ii-builds-y-targets.html
+  - 2013-05-27-automatizar-con-phing-i-objetivos-e-instalacion.html
+  - 2008-09-06-nuevo-diseno-sopa-bits.html
+  slug: php
+pipes:
+  name: pipes
+  posts:
+  - 2014-04-29-mapreduce-linux-hadoop.html
+  slug: pipes
+pln:
+  name: PLN
+  posts:
+  - 2007-06-30-introduccion-al-procesamiento-del-lenguaje-natural.html
+  - 2007-06-23-apuntes-procesamiento-del-lenguaje-natural.html
+  slug: pln
+poisson:
+  name: poisson
+  posts:
+  - 2013-09-05-simular-un-valor-poisson.html
+  slug: poisson
+politicas-publicas:
+  name: "pol\xEDticas p\xFAblicas"
+  posts:
+  - 2013-11-22-ventanas-rotas-y-seguridad-ciudadana.html
+  slug: politicas-publicas
+privacidad:
+  name: privacidad
+  posts:
+  - 2014-02-16-enlaces-de-interes-2014-7.html
+  - 2013-11-05-muchos-y-muchas-jovenes-no-saben-usar-ordenadores-y-eso-deberia-preocuparte.html
+  - 2013-10-10-nada-que-ocultar-pero-quiero-poder-ocultarlo.html
+  slug: privacidad
+probabilidad:
+  name: probabilidad
+  posts:
+  - 2014-03-09-enlaces-de-interes-2014-10.html
+  slug: probabilidad
+productividad:
+  name: Productividad
+  posts:
+  - 2009-02-04-tecnico-proximidad.html
+  - 2008-02-21-tareas-motivacion.html
+  - 2008-02-19-reutilizar-intercambiar-intereses-tagging.html
+  - 2007-10-11-propuestas-sistema-tagging-2.html
+  - 2007-10-11-propuestas-sistema-tagging-1.html
+  - 2007-09-24-emprender-profesionales-informacion.html
+  - 2007-09-21-efecto-medici-innovacion-interdisciplinar.html
+  - 2007-08-03-organizacion-informacion-personal-estructuracion-directorios.html
+  - 2007-07-05-cadena-trofica-fagocitar-rumiar-digerir-informacion.html
+  slug: productividad
+profesionales:
+  name: Profesionales
+  posts:
+  - 2013-09-24-donde-pone-estadistico-lea-usted-data-scientist.html
+  - 2009-03-08-quinta-disciplina.html
+  - 2009-02-04-tecnico-proximidad.html
+  - 2009-01-27-gestor-contenidos-gestor-publicaciones-ii.html
+  - 2008-09-08-mejoras-agradecimientos.html
+  - 2008-01-13-madame-briet.html
+  - 2007-09-24-emprender-profesionales-informacion.html
+  - 2007-09-21-efecto-medici-innovacion-interdisciplinar.html
+  - 2007-05-30-web-2-0-y-profesionales-de-la-informacion-i-software-social.html
+  slug: profesionales
+promises:
+  name: promises
+  posts:
+  - 2014-03-16-enlaces-de-interes-2014-11.html
+  - 2014-02-25-javascript-promise-callback-events.html
+  slug: promises
+psicologia:
+  name: "psicolog\xEDa"
+  posts:
+  - 2014-02-11-aprendizajes-de-las-habilidades-sociales.html
+  - 2014-02-04-flujo-no-te-relajes.html
+  slug: psicologia
+publicidad:
+  name: Publicidad
+  posts:
+  - 2007-09-05-seo-software-social-imagen-personal.html
+  slug: publicidad
+pv:
+  name: pv
+  posts:
+  - 2014-02-06-mysqldump-backup-pv.html
+  slug: pv
+python:
+  name: python
+  posts:
+  - 2018-04-14-python-luigi-posterior.md
+  slug: python
+recopilaciones:
+  name: recopilaciones
+  posts:
+  - 2014-10-12-enlaces-de-interes-2014-41.html
+  - 2014-10-05-enlaces-de-interes-2014-40.html
+  - 2014-09-28-enlaces-de-interes-2014-39.html
+  - 2014-09-21-enlaces-de-interes-2014-38.html
+  - 2014-08-17-enlaces-de-interes-2014-33.html
+  - 2014-07-27-enlaces-de-interes-2014-30.html
+  - 2014-07-06-enlaces-de-interes-2014-27.html
+  - 2014-06-22-enlaces-de-interes-2014-25.html
+  - 2014-04-13-enlaces-de-interes-2014-15.html
+  - 2014-03-30-enlaces-de-interes-2014-13.html
+  - 2014-03-24-enlaces-de-interes-2014-12.html
+  - 2014-03-09-enlaces-de-interes-2014-10.html
+  - 2014-02-16-enlaces-de-interes-2014-7.html
+  - 2014-02-02-enlaces-de-interes-2014-5.html
+  - 2014-01-26-enlaces-de-interes-2014-4.html
+  - 2014-01-19-enlaces-de-interes-2014-3.html
+  - 2013-12-29-enlaces-de-interes-2013-52.html
+  - 2013-12-15-enlaces-de-interes-2013-50.html
+  - 2013-12-08-enlaces-interesantes.html
+  - 2013-12-01-enlaces-interesantes-sobre-dataviz.html
+  - 2013-11-17-enlaces-de-interes.html
+  slug: recopilaciones
+recuperacion-informacion:
+  name: "Recuperaci\xF3n informaci\xF3n"
+  posts:
+  - 2009-05-04-programacion-neurolinguistica-hipnosis-buscadores.html
+  - 2009-02-26-eyetracking-movimiento-informacion-neuronal.html
+  - 2008-03-03-clustering-recursos-corporativos-generalistas.html
+  - 2007-08-03-organizacion-informacion-personal-estructuracion-directorios.html
+  - 2007-07-05-cadena-trofica-fagocitar-rumiar-digerir-informacion.html
+  - 2007-06-23-apuntes-procesamiento-del-lenguaje-natural.html
+  - 2007-06-20-teoria-de-la-relevancia-en-linguistica.html
+  - 2007-05-21-sitios-sociales-y-spam-buscando-referencias.html
+  - 2007-04-02-un_primer_post.html
+  slug: recuperacion-informacion
+recursos-naturales:
+  name: recursos naturales
+  posts:
+  - 2013-09-13-siete-cosas-que-quiza-no-sepas-sobre-el-agua.html
+  slug: recursos-naturales
+refugiados:
+  name: refugiados
+  posts:
+  - 2013-11-04-movimientos-de-refugiados-desde-1960-segun-datos-de-la-onu-refugees.html
+  slug: refugiados
+relevancia:
+  name: relevancia
+  posts:
+  - 2013-12-05-unspeak-y-los-neologismos-que-venden.html
+  - 2007-06-20-teoria-de-la-relevancia-en-linguistica.html
+  slug: relevancia
+resen-as:
+  name: rese&ntilde;as
+  posts:
+  - 2014-04-14-richard-sennett-la-corrosion-del-caracter.html
+  - 2014-03-13-una-recomendacion.html
+  - 2013-07-08-lecturas-veraniegas-james-gleick-la-informacion.html
+  - 2011-03-17-the-net-delusion-evgeny-morozov.html
+  - 2009-03-08-quinta-disciplina.html
+  - 2007-08-16-lecturas-veraniegas-chaos-order-capital-markets.html
+  - 2007-08-15-lecturas-veraniegas-arte-red.html
+  slug: resen-as
+revealjs:
+  name: revealjs
+  posts:
+  - 2013-09-04-reveal-js-presentaciones-con-html5-y-estilo.html
+  slug: revealjs
+richard-sennet:
+  name: richard sennet
+  posts:
+  - 2014-04-14-richard-sennett-la-corrosion-del-caracter.html
+  slug: richard-sennet
+school-of-data:
+  name: school of data
+  posts:
+  - 2013-09-30-chartbuilder-abre-su-codigo-basado-en-d3-js.html
+  slug: school-of-data
+seguridad:
+  name: seguridad
+  posts:
+  - 2013-11-22-ventanas-rotas-y-seguridad-ciudadana.html
+  - 2013-10-10-nada-que-ocultar-pero-quiero-poder-ocultarlo.html
+  - 2013-06-10-autenticacion-ssh-por-clave-publica.html
+  slug: seguridad
+semantica:
+  name: "sem\xE1ntica"
+  posts:
+  - 2013-12-05-unspeak-y-los-neologismos-que-venden.html
+  slug: semantica
+sentiment-analysis:
+  name: sentiment analysis
+  posts:
+  - 2018-04-24-proyecto-gdelt.md
+  - 2014-02-23-enlaces-de-interes-2014-8.html
+  slug: sentiment-analysis
+seo:
+  name: SEO
+  posts:
+  - 2008-09-16-analisis-web-com-piwik-gnu-r-ii.html
+  - 2007-09-05-seo-software-social-imagen-personal.html
+  slug: seo
+shell:
+  name: shell
+  posts:
+  - 2014-02-20-grep-contexto-resultado-coincidencias.html
+  - 2014-02-13-mostrar-la-vista-lateral-en-diff.html
+  - 2014-02-06-mysqldump-backup-pv.html
+  - 2013-08-12-mysqldump-backup-comprimido-con-gzip.html
+  slug: shell
+sigmajs:
+  name: sigmajs
+  posts:
+  - 2014-01-23-grafos-html5-paperscape-sigmajs.html
+  slug: sigmajs
+simulacion:
+  name: "simulaci\xF3n"
+  posts:
+  - 2014-08-24-enlaces-de-interes-2014-34.html
+  - 2013-09-05-simular-un-valor-poisson.html
+  - 2013-08-26-simular-un-valor-exponencial-y-gamma.html
+  - 2013-07-15-simular-un-valor-binomial.html
+  - 2011-06-09-politicos-accidentales-%c2%bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria.html
+  slug: simulacion
+sistemas-complejos:
+  name: sistemas complejos
+  posts:
+  - 2013-12-12-predecir-disturbios-con-modelos-matematicos.html
+  slug: sistemas-complejos
+slideshow:
+  name: slideshow
+  posts:
+  - 2013-09-04-reveal-js-presentaciones-con-html5-y-estilo.html
+  slug: slideshow
+smartcities:
+  name: smartcities
+  posts:
+  - 2014-08-24-enlaces-de-interes-2014-34.html
+  - 2013-09-18-visualizar-ciudades.html
+  slug: smartcities
+spam:
+  name: spam
+  posts:
+  - 2007-09-05-seo-software-social-imagen-personal.html
+  slug: spam
+spark:
+  name: spark
+  posts:
+  - 2014-09-04-big-data-machine-learning.html
+  slug: spark
+sparklines:
+  name: sparklines
+  posts:
+  - 2014-08-10-enlaces-de-interes-2014-32.html
+  slug: sparklines
+ssh:
+  name: ssh
+  posts:
+  - 2013-06-10-autenticacion-ssh-por-clave-publica.html
+  slug: ssh
+stanford:
+  name: stanford
+  posts:
+  - 2013-10-06-periodismo-en-la-era-de-los-datos-ddj-dataviz.html
+  slug: stanford
+subhastas:
+  name: subhastas
+  posts:
+  - 2014-01-21-electricidad-subhasta-mercado-espanol-electricidad.html
+  slug: subhastas
+symfony:
+  name: symfony
+  posts:
+  - 2014-01-02-hhvm-magento-symfony.html
+  slug: symfony
+tagging:
+  name: Tagging
+  posts:
+  - 2008-03-05-navegacion-social-utilizando-tagging-3.html
+  - 2008-03-04-navegacion-social-utilizando-tagging-2.html
+  - 2008-03-03-navegacion-social-utilizando-tagging-1.html
+  - 2008-03-03-clustering-recursos-corporativos-generalistas.html
+  - 2008-02-19-reutilizar-intercambiar-intereses-tagging.html
+  - 2007-12-22-sistema-tagging-nube-etiquetas.html
+  - 2007-10-11-propuestas-sistema-tagging-2.html
+  - 2007-10-11-propuestas-sistema-tagging-1.html
+  slug: tagging
+ted:
+  name: TED
+  posts:
+  - 2014-08-03-enlaces-de-interes-2014-31.html
+  slug: ted
+testeo:
+  name: testeo
+  posts:
+  - 2013-08-08-ripple-emulador-para-moviles.html
+  - 2013-06-05-siege-extraer-urls-reales-de-los-logs-ii.html
+  - 2013-06-03-siege-extraer-urls-reales-de-los-logs-i.html
+  - 2011-04-07-el-testeo-para-la-mejora-de-la-experiencia-de-usuario.html
+  - 2010-01-12-visualizando-estadisticas-navegadores-iii.html
+  - 2010-01-11-visualizando-estadisticas-navegadores-ii.html
+  - 2010-01-09-visualizando-estadisticas-navegadores-i.html
+  - 2009-06-05-elecciones-europeas-decision-voto.html
+  - 2008-09-16-analisis-web-com-piwik-gnu-r-ii.html
+  - 2008-09-15-analisis-web-com-piwik-gnu-r-i.html
+  slug: testeo
+transparencia:
+  name: transparencia
+  posts:
+  - 2013-09-19-datos-cultura-cuantitativa-y-calidad-democratica.html
+  slug: transparencia
+turing:
+  name: turing
+  posts:
+  - 2014-01-28-liderazgo-el-perdon-de-alan-turing-es-la-historia-de-un-fracaso.html
+  slug: turing
+twitter:
+  name: twitter
+  posts:
+  - 2014-08-31-27909.html
+  slug: twitter
+usabilidad:
+  name: Usabilidad
+  posts:
+  - 2008-09-06-nuevo-diseno-sopa-bits.html
+  - 2007-12-22-sistema-tagging-nube-etiquetas.html
+  - 2007-04-04-partida-ajedrez-windows-linux.html
+  slug: usabilidad
+utilidades:
+  name: utilidades
+  posts:
+  - 2013-10-16-opencorporates-y-la-nueva-utilidad.html
+  - 2013-09-12-utilidades-basadas-en-d3-js.html
+  - 2013-06-10-autenticacion-ssh-por-clave-publica.html
+  - 2009-03-04-blog-podcast-sintesis-voz.html
+  - 2009-02-26-eyetracking-movimiento-informacion-neuronal.html
+  - 2008-09-15-analisis-web-com-piwik-gnu-r-i.html
+  - 2007-09-24-sistema-hondt.html
+  - 2007-09-24-demo-ley-hondt.html
+  - 2007-07-11-organizacion-de-la-informacion-personal-eliminando-archivos-duplicados.html
+  - 2007-06-30-introduccion-al-procesamiento-del-lenguaje-natural.html
+  - 2007-05-31-trabajando-con-subversion-y-awk.html
+  - 2007-05-26-utilizando-yahoo-pipes.html
+  slug: utilidades
+varianza:
+  name: varianza
+  posts:
+  - 2013-07-11-calcular-la-variancia-sin-recorrer-dos-veces-los-datos.html
+  slug: varianza
+veracidad:
+  name: veracidad
+  posts:
+  - 2007-09-05-seo-software-social-imagen-personal.html
+  - 2007-07-03-veracidad-informacion-internet-debate.html
+  slug: veracidad
+vigilancia:
+  name: vigilancia
+  posts:
+  - 2013-10-10-nada-que-ocultar-pero-quiero-poder-ocultarlo.html
+  slug: vigilancia
+visualizacion:
+  name: visualizacion
+  posts:
+  - 2014-05-01-anscombe.html
+  - 2014-04-08-d3-crossfilter-dc.html
+  - 2014-03-31-crossfilter-vistas-sincronizadas-datos.html
+  - 2014-03-25-data-sense-con-fusion-tables.html
+  - 2014-02-23-enlaces-de-interes-2014-8.html
+  - 2014-02-16-enlaces-de-interes-2014-7.html
+  - 2014-02-02-enlaces-de-interes-2014-5.html
+  - 2014-01-23-grafos-html5-paperscape-sigmajs.html
+  - 2013-12-19-aprender-y-ensenar-visualizacion-de-la-informacion.html
+  - 2013-12-15-enlaces-de-interes-2013-50.html
+  - 2013-12-05-unspeak-y-los-neologismos-que-venden.html
+  - 2013-12-01-enlaces-interesantes-sobre-dataviz.html
+  - 2013-11-25-la-saturacion-visual-donde-esta-wally.html
+  - 2013-11-20-kindred-sangre-de-su-sangre.html
+  - 2013-11-18-que-grafico-escoger-algunas-ideas.html
+  - 2013-11-11-el-proceso-de-un-grafico-que-simplificar-la-comprension-un-ejemplo-en-thewhyaxis.html
+  - 2013-10-13-the-flavor-connection-dataviz-interactivo-entre-conexiones-de-alimentos.html
+  - 2013-10-07-albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz.html
+  - 2013-10-06-periodismo-en-la-era-de-los-datos-ddj-dataviz.html
+  - 2013-10-02-visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi.html
+  - 2013-09-29-sonido-en-algoritmos-y-wikipedia.html
+  - 2013-09-23-big-data-big-insights-plantear-preguntas.html
+  - 2013-09-18-visualizar-ciudades.html
+  - 2013-09-15-historia-de-los-graficos-y-visualizaciones-de-the-economist.html
+  - 2013-09-12-utilidades-basadas-en-d3-js.html
+  - 2013-09-10-primero-los-datos-datos-reales.html
+  - 2013-08-28-recomendable-tutorial-de-d3.html
+  - 2013-07-17-complejidad-visual.html
+  - 2011-06-16-visualizacion-con-html5-javascript-infovis-toolkit.html
+  - 2011-06-12-visualizacion-con-html5-protovis.html
+  - 2011-04-14-la-gramatica-de-los-graficos.html
+  - 2010-01-12-visualizando-estadisticas-navegadores-iii.html
+  - 2010-01-11-visualizando-estadisticas-navegadores-ii.html
+  - 2010-01-09-visualizando-estadisticas-navegadores-i.html
+  - 2009-10-17-visualizacion-datos-aproximacion-ingenua.html
+  slug: visualizacion
+web-social:
+  name: Web social
+  posts:
+  - 2008-03-05-navegacion-social-utilizando-tagging-3.html
+  - 2008-03-04-navegacion-social-utilizando-tagging-2.html
+  - 2008-03-03-navegacion-social-utilizando-tagging-1.html
+  - 2007-08-26-lecturas-veraniegas-web-2-0-fundacion-orange.html
+  - 2007-08-15-lecturas-veraniegas-arte-red.html
+  - 2007-06-04-web-social-y-aspectos-sociales.html
+  - 2007-05-30-web-2-0-y-profesionales-de-la-informacion-i-software-social.html
+  - 2007-05-21-sitios-sociales-y-spam-buscando-referencias.html
+  - 2007-05-21-Long-tail-diversidad-y-factores-productivos.html
+  slug: web-social
+webrtc:
+  name: webrtc
+  posts:
+  - 2014-03-09-enlaces-de-interes-2014-10.html
+  slug: webrtc
+wikipedia:
+  name: wikipedia
+  posts:
+  - 2013-09-29-sonido-en-algoritmos-y-wikipedia.html
+  slug: wikipedia
+wordpress:
+  name: wordpress
+  posts:
+  - 2016-09-10-volver-cambios-prisa.md
+  slug: wordpress
+wysiwyg:
+  name: wysiwyg
+  posts:
+  - 2013-10-09-editores-online-wysiwyg-markdown-y-otras-opciones.html
+  slug: wysiwyg
+yahoo-pipes:
+  name: yahoo pipes
+  posts:
+  - 2007-05-26-utilizando-yahoo-pipes.html
+  slug: yahoo-pipes
