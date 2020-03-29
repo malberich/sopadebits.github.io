@@ -28,8 +28,7 @@ jobs:
           # touch ./_category/placeholder
           # git add ./_tag/placeholder
           # git add ./_category/placeholder
-          git commit -am "Removed old categories"
-          git push github HEAD:${GITHUB_REF}
+          git diff-index --quiet HEAD || git commit -am "Removed old categories" && git push github HEAD:${GITHUB_REF}
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
