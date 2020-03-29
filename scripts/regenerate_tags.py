@@ -29,6 +29,19 @@ if __name__ == '__main__':
             os.path.realpath(file)
         )
         post = frontmatter.Frontmatter.read_file(os.path.expanduser(file))
+        post_slug = slugify(
+            post['attributes']['title'].lower(),
+            separator='-',
+            replacements=[
+                ['á', 'a'],
+                ['é', 'e'],
+                ['í', 'i'],
+                ['ó', 'o'],
+                ['ú', 'u'],
+                ['ñ', 'n'],
+                ['ç', 's']
+            ]
+        )
         print(list(post.keys()))
         for tag in post['attributes']['tags']:
             slug_tag = slugify(
@@ -50,7 +63,13 @@ if __name__ == '__main__':
                 tags[slug_tag]['slug'] = slug_tag
                 tags[slug_tag]['posts'] = list()
 
-            tags[slug_tag]['posts'].append(filename)
+            tags[slug_tag]['posts'].append({
+                'filename': filename,
+                'title': post['attributes']['title'],
+                'url': post_slug,
+                'date': post['attributes']['date'],
+                "description": post['attributes'].get('description', '')
+            })
 
         for category in post['attributes']['categories']:
             slug_cat = slugify(
@@ -72,7 +91,13 @@ if __name__ == '__main__':
                 categories[slug_cat]['slug'] = slug_cat
                 categories[slug_cat]['posts'] = list()
 
-            categories[slug_cat]['posts'].append(filename)
+            categories[slug_cat]['posts'].append({
+                'filename': filename,
+                'title': post['attributes']['title'],
+                'url': post_slug,
+                'date': post['attributes']['date'],
+                "description": post['attributes'].get('description', '')
+            })
 
     with open(os.path.expanduser("./_data/tags.yml"), "w+") as f_tags:
         yaml.dump(tags, f_tags)
