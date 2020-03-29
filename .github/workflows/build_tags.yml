@@ -24,7 +24,7 @@ jobs:
           # touch ./_category/placeholder
           # git add ./_tag/placeholder
           # git add ./_category/placeholder
-          git commit -m "Removed old categories" ./_tag/placeholder ./_category/placeholder
+          git commit -am "Removed old categories"
           git push github HEAD:${GITHUB_REF}
       - name: Install dependencies
         run: |
