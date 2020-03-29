@@ -28,13 +28,13 @@ jobs:
           # git push github HEAD:${GITHUB_REF}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install python-frontmatter==3.0.6 python-slugify==4.0.0 PyYAML==5.1
+          python3 -m pip install --upgrade pip
+          pip3 install python-frontmatter==3.0.6 python-slugify==4.0.0 PyYAML==5.1
       - name: Regenerate tag files
         run: |
           git pull github ${GITHUB_REF} --ff-only
 
-          python scripts/regenerate_tags.py
+          python3 scripts/regenerate_tags.py
 
           git rm ./_tag/placeholder
           git rm ./_category/placeholder
