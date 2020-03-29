@@ -36,8 +36,8 @@ jobs:
 
           python3 scripts/regenerate_tags.py
 
-          git rm ./_tag/placeholder
-          git rm ./_category/placeholder
+          # git rm ./_tag/placeholder
+          # git rm ./_category/placeholder
           git add ./_tag/*
           git add ./_category/*
           git commit -m "Updated tags and categories" ./_tag/* ./_category/*
