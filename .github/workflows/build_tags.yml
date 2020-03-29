@@ -20,8 +20,8 @@ jobs:
         git config --global user.name ${GITHUB_ACTOR}
         git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
         git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-        # git rm _tag/*
-        # git rm _category/*
+        git rm ./_tag/*
+        git rm ./_category/*
         touch ./_tag/placeholder
         touch ./_category/placeholder
         git add ./_tag/placeholder
