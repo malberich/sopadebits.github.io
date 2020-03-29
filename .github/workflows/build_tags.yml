@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          pip3 install frontmatter==0.5.0 python-slugify==4.0.0 PyYAML==5.1
+          pip3 install frontmatter==3.0.6 python-slugify==4.0.0 PyYAML==5.1
       - name: Regenerate tag files
         run: |
           git pull github ${GITHUB_REF} --ff-only
