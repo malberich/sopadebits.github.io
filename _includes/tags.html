@@ -2,10 +2,10 @@
 <h3>Tags</h3>
 
 <div class="row">
-	<div class="col-12">
-		{% for tag in site.tags %}
-			{% if  tag[1].size >= include.mincount %}
-				<a href="/tag/{{tag[0] | slugify | replace: 'á', 'a' | replace: 'é', 'e' | replace: 'í', 'i' | replace: 'ó', 'o' | replace: 'ú', 'u' | replace: 'ñ', 'n' | replace: 'ç', 's' }}/">{{tag[0]}} <span class="badge">{{tag[1].size}}</span></a> &nbsp;&nbsp;&nbsp;
+	<div class="col-xs-12">
+		{% for tag in site.data.tags %}
+			{% if  tag['posts'].size >= include.mincount %}
+				<a href="/tag/{{tag['slug']}}/">{{tag['name']}} <span class="badge">{{tag['posts'].size}}</span></a> &nbsp;&nbsp;&nbsp;
 			{% endif %}
 		{% endfor %}
 	</div>

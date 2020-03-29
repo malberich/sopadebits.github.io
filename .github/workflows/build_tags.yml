@@ -1,0 +1,46 @@
+name: Generate tag pages
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: "Remove old categories and tags"
+      run: |
+        git config --global user.name ${GITHUB_ACTOR}
+        git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
+        git rm _tag/*
+        git rm _category/*
+        touch _tag/placeholder
+        touch _category/placeholder
+        git add _tag/placeholder
+        git add _category/placeholder
+        git commit -m "Removed old categories"
+        git push github HEAD:${GITHUB_REF}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install python-frontmatter python-slugify
+    - name: Regenerate tag files
+      run: |
+        git config --global user.name ${GITHUB_ACTOR}
+        git config --global user.email ${GITHUB_ACTOR}@sopadebits.io
+        git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+        git pull github ${GITHUB_REF} --ff-only
+        python scripts/regenerate_tags.py
+        git rm _tag/placeholder
+        git rm _category/placeholder
+        git add _tag/*
+        git add _category/*
+        git commit -m "Removed old categories"
+        git push github HEAD:${GITHUB_REF}

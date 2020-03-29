@@ -1,12 +1,13 @@
-<a name="tags"></a>
+<a name="categories"></a>
 <h3>Categories</h3>
+
 <div class="row">
-	{% for category in site.categories %}
+	{% for category in site.data.categories %}
 		<div class="col-xs-2">
-			<span class="badge">{{category[1].size}}</span>
+			<span class="badge">{{category['posts'].size}}</span>
 		</div>
 		<div class="col-xs-10">
-			<a href="/category/{{category[0] | slugify | replace: 'á', 'a' | replace: 'é', 'e' | replace: 'í', 'i' | replace: 'ó', 'o' | replace: 'ú', 'u' | replace: 'ñ', 'n' | replace: 'ç', 's' }}/">{{category[0]}} </a>
+			<a href="/category/{{category['slug']}}/">{{category['slug']}} </a>
 		</div>
 	{% endfor %}
 </div>

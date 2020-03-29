@@ -24,7 +24,7 @@ port: 4000
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 title: Sopa de bits
-logo: images/avatar.jpg
+logo: /images/avatar.jpg
 introduction: A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a>
 description: A blog about data, information and IT, by Mario Alberich
 keywords: >
