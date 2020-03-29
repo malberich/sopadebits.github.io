@@ -17,8 +17,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: "Remove old categories and tags"
       run: |
-        REPO_NAME=$(basename "$GITHUB_REPOSITORY")
-        cd `pwd`/$REPO_NAME/$REPO_NAME
         git config --global user.name ${GITHUB_ACTOR}
         git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
         git rm _tag/*
@@ -35,8 +33,6 @@ jobs:
         pip install python-frontmatter python-slugify
     - name: Regenerate tag files
       run: |
-        REPO_NAME=$(basename "$GITHUB_REPOSITORY")
-        cd `pwd`/$REPO_NAME/$REPO_NAME
         git config --global user.name ${GITHUB_ACTOR}
         git config --global user.email ${GITHUB_ACTOR}@sopadebits.io
         git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
