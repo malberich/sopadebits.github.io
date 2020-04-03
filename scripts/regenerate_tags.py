@@ -67,8 +67,7 @@ if __name__ == '__main__':
                 'filename': filename,
                 'title': post['attributes']['title'],
                 'url': post_slug,
-                'date': post['attributes']['date'],
-                "description": post['attributes'].get('description', '')
+                'date': post['attributes']['date']
             })
 
         for category in post['attributes']['categories']:
@@ -95,8 +94,7 @@ if __name__ == '__main__':
                 'filename': filename,
                 'title': post['attributes']['title'],
                 'url': post_slug,
-                'date': post['attributes']['date'],
-                "description": post['attributes'].get('description', '')
+                'date': post['attributes']['date']
             })
 
     with open(os.path.expanduser("./_data/tags.yml"), "w+") as f_tags:
@@ -115,7 +113,7 @@ if __name__ == '__main__':
     for (tag_slug, tag) in tags.items():
         with open(os.path.expanduser("./tag/{}.md".format(tag_slug)), "w+") as f:
             f.write(
-                "---\nlayout: tagpage\ntitle: \"Tag: {tagname}\"\ntag: {tag_slug}\n---".format(
+                "---\nlayout: tagpage\ngroup_type: tag\ntitle: \"Tag: {tagname}\"\ntag: {tag_slug}\n---".format(
                     tagname=tag['name'],
                     tag_slug=tag_slug
                 )
@@ -124,7 +122,7 @@ if __name__ == '__main__':
 
     for file in glob.glob(
         os.path.expanduser(
-            "./_category/*"
+            "./category/*"
         )
     ):
         os.remove(file)
@@ -132,7 +130,7 @@ if __name__ == '__main__':
     for (slug_cat, cat) in categories.items():
         with open(os.path.expanduser("./category/{}.md".format(slug_cat)), "w+") as f:
             f.write(
-                "---\nlayout: tagpage\ntitle: \"Category: {catname}\"\ntag: {slug_cat}\n---".format(
+                "---\nlayout: tagpage\ngroup_type: category\ntitle: \"Category: {catname}\"\ntag: {slug_cat}\n---".format(
                     catname=cat['name'],
                     slug_cat=slug_cat
                 )
