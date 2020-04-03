@@ -1,7 +1,5 @@
 _site/*
 venv/*
 Gemfile.lock
-tag/*
-category/*
-data/tags.yml
-data/categories.yml
+_data/tags.yml
+_data/categories.yml
