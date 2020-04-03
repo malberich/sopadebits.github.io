@@ -1,11 +1,13 @@
-<div class="col-lg-3 col-md-4 col-xs-12 card alert alert-warning m1-3" style="margin-right: 5%">
-    <div class="card-body">
-        <div class="alert alert-info text-center pull-right">
+<div class="col-xs-12">
+    <header>
+        <p class="alert alert-info text-center pull-right">
             {{ post.date | date: "%b %d" }}<br/>
             {{ post.date | date: "%Y" }}
-        </div>
-        <p class="card-title">
-            <a href="{{ post.url }}.html">{{ post.title }}</a>
         </p>
-    </div>
+        <h3><a href="{{ post.url }}.html">{{ post.title }}</a></h3>
+    </header>
+    <section>
+        {{ post.excerpt }}
+        <a href="{{post.url}}.html">Read more &raquo;</a>
+    </section>
 </div>

@@ -4,7 +4,7 @@
 	<div class="col-xs-12">
 		{% for tag in site.data.tags %}
 			{% if tag[1].posts.size >= include.mincount %}
-				<a href="/tag/{{ tag[1].slug }}.html">{{ tag[1].name }} <span class="badge">{{ tag[1].posts | size }}</span></a> &nbsp;&nbsp;&nbsp;
+				<a href="/tag/{{ tag[1].name | slugify 'latin'}}/">{{ tag[1].name }} <span class="badge">{{ tag[1].posts | size }}</span></a> &nbsp;&nbsp;&nbsp;
 			{% endif %}
 		{% endfor %}
 	</div>

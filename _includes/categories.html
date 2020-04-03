@@ -6,7 +6,7 @@
     <span class="badge">{{ category[1].posts | size }}</span>
   </div>
   <div class="col-xs-10">
-    <a href="/category/{{category[1].slug}}.html">{{category[1].name}}</a>
+    <a href="/category/{{category[1].name | slugify}}/">{{category[1].name}}</a>
   </div>
 {% endfor %}
 </div>
