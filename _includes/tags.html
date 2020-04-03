@@ -1,11 +1,10 @@
 <a name="tags"></a>
 <h3>Tags</h3>
-
 <div class="row">
 	<div class="col-xs-12">
 		{% for tag in site.data.tags %}
-			{% if  tag.posts.size >= include.mincount %}
-				<a href="/tag/{{ tag.slug }}/">{{ tag.name }} <span class="badge">{{ tag.posts..size }}</span></a> &nbsp;&nbsp;&nbsp;
+			{% if tag[1].posts.size >= include.mincount %}
+				<a href="/tag/{{ tag[1].slug }}.html">{{ tag[1].name }} <span class="badge">{{ tag[1].posts | size }}</span></a> &nbsp;&nbsp;&nbsp;
 			{% endif %}
 		{% endfor %}
 	</div>

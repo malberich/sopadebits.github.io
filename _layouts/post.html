@@ -4,20 +4,19 @@ layout: default
 <div class="row">
     <div class="col-sm-4 hidden-xs">
         {% if page.previous %}
-            <a class="badge btn btn-lg" href="{{ page.previous.url }}">&laquo;&nbsp;{{ page.previous.title }}</a>
+            <a class="badge btn btn-lg" href="{{ page.previous.url }}.html">&laquo;&nbsp;{{ page.previous.title }}</a>
         {% endif %}
     </div>
     <div class="col-sm-4 hidden-xs text-center">
-        <a class="btn btn-lg" href="{{ site.url }}{{site.baseurl}}">
+        <a class="btn btn-lg" href="{{site.baseurl}}">
             <span class="fa fa-home"></span>
         </a>
     </div>
     <div class="col-sm-4 text-right pull-right hidden-xs">
         {% if page.next %}
-            <a class="badge btn btn-lg" href="{{ page.next.url }}">{{ page.next.title }}&nbsp;&raquo;</a>
+            <a class="badge btn btn-lg" href="{{ page.next.url }}.html">{{ page.next.title }}&nbsp;&raquo;</a>
         {% endif %}
     </div>
-
     <div class="col-xs-6 visible-xs">
         {% if page.previous %}
             <a class="badge" href="{{ page.previous.url }}" alt="{{ page.previous.title }}" title="{{ page.previous.title }}">&laquo;&nbsp;Previous</a>

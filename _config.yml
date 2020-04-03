@@ -13,18 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-gems:
-#  - octopress-paginate
-  - jekyll-paginate
-  - jekyll-lunr-js-search
-  - classifier-reborn
-
 url: "https://sopadebits.com" # the base hostname & protocol for your site
 port: 4000
 baseurl: "/" # the subpath of your site, e.g. /blog
 
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
 title: Sopa de bits
 logo: /images/avatar.jpg
+avatar: /images/avatar.jpg
 introduction: A blog about data, information and IT, by <a href="https://marioalberich.com" target="_blank">Mario Alberich</a>
 description: A blog about data, information and IT, by Mario Alberich
 keywords: >
@@ -52,12 +52,21 @@ google_analytics:
 # Build settings
 markdown: kramdown
 profile: true
-# lsi: true
 show_drafts: false
 permalink: /:title
-# theme: minima
 
 
 # Configuration for the pagination page
 paginate: 10
 paginate_path: "/page:num"
+
+feed:
+  path: feed.xml
+
+exclude:
+  - venv
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - CNAME
+  - .gitignore

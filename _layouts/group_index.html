@@ -15,10 +15,12 @@ layout: default
 	{% include post_row.html %}
 {% endfor %}
 
+{{page.group_type}}
+
 {% if page.grouptype == 'tag' %}
-	{% capture paging_root %}/tag/{{page.tag | slugify}}/{% endcapture %}
+	{% capture paging_root %}/tag/{{page.tag}}/{% endcapture %}
 {% elsif page.grouptype == 'category' %}
-	{% capture paging_root %}/category/{{page.category | slugify}}/{% endcapture %}
+	{% capture paging_root %}/category/{{page.tag}}/{% endcapture %}
 {% else %}
 	{% capture paging_root %}/{% endcapture %}
 {% endif %}
