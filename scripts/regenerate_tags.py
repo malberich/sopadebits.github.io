@@ -103,36 +103,36 @@ if __name__ == '__main__':
     with open(os.path.expanduser("./_data/categories.yml"), "w+") as f_cats:
         yaml.dump(categories, f_cats)
 
-    for file in glob.glob(
-        os.path.expanduser(
-            "./_tag/*"
-        )
-    ):
-        os.remove(file)
+    # for file in glob.glob(
+    #     os.path.expanduser(
+    #         "./_tag/*"
+    #     )
+    # ):
+    #     os.remove(file)
 
-    for (tag_slug, tag) in tags.items():
-        with open(os.path.expanduser("./tag/{}.md".format(tag_slug)), "w+") as f:
-            f.write(
-                "---\nlayout: tagpage\ngroup_type: tag\ntitle: \"Tag: {tagname}\"\ntag: {tag_slug}\n---".format(
-                    tagname=tag['name'],
-                    tag_slug=tag_slug
-                )
-            )
-            f.close()
+    # for (tag_slug, tag) in tags.items():
+    #     with open(os.path.expanduser("./tag/{}.md".format(tag_slug)), "w+") as f:
+    #         f.write(
+    #             "---\nlayout: tagpage\ngroup_type: tag\ntitle: \"Tag: {tagname}\"\ntag: {tag_slug}\n---".format(
+    #                 tagname=tag['name'],
+    #                 tag_slug=tag_slug
+    #             )
+    #         )
+    #         f.close()
 
-    for file in glob.glob(
-        os.path.expanduser(
-            "./category/*"
-        )
-    ):
-        os.remove(file)
+    # for file in glob.glob(
+    #     os.path.expanduser(
+    #         "./category/*"
+    #     )
+    # ):
+    #     os.remove(file)
 
-    for (slug_cat, cat) in categories.items():
-        with open(os.path.expanduser("./category/{}.md".format(slug_cat)), "w+") as f:
-            f.write(
-                "---\nlayout: tagpage\ngroup_type: category\ntitle: \"Category: {catname}\"\ntag: {slug_cat}\n---".format(
-                    catname=cat['name'],
-                    slug_cat=slug_cat
-                )
-            )
-            f.close()
+    # for (slug_cat, cat) in categories.items():
+    #     with open(os.path.expanduser("./category/{}.md".format(slug_cat)), "w+") as f:
+    #         f.write(
+    #             "---\nlayout: tagpage\ngroup_type: category\ntitle: \"Category: {catname}\"\ntag: {slug_cat}\n---".format(
+    #                 catname=cat['name'],
+    #                 slug_cat=slug_cat
+    #             )
+    #         )
+    #         f.close()
