@@ -39,9 +39,5 @@ jobs:
 
           python3 scripts/regenerate_tags.py
 
-          # git rm ./tag/placeholder
-          # git rm ./category/placeholder
-          git add ./tag/*
-          git add ./category/*
           git diff-index --quiet HEAD || git commit -am "Updated tags and categories"
           git push github HEAD:${GITHUB_REF}
