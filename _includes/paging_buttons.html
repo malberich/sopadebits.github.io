@@ -4,9 +4,9 @@
             <br/>
             <p>
                 {% if paginator.page == 1 %}
-                    <a class="btn btn-primary" href="{{paginator.next_page}}">
+                    <a class="btn btn-primary" href="page{{paginator.next_page}}">
                 {% else %}
-                    <a class="btn btn-primary" href="../{{paginator.next_page}}">
+                    <a class="btn btn-primary" href="../page{{paginator.next_page}}">
                 {% endif %}
                 &laquo; Past</a>
             </p>
@@ -17,7 +17,7 @@
             <br/>
             <p>
                 {% if paginator.page > 2 %}
-                    <a class="btn btn-primary" href="../{{paginator.previous_page}}">
+                    <a class="btn btn-primary" href="../page{{paginator.previous_page}}">
                 {% else %}
                     <a class="btn btn-primary" href="../">
                 {% endif %}
