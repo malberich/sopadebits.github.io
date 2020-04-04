@@ -18,7 +18,7 @@ port: 4000
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 plugins:
-  - jekyll-paginate
+  # - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
 
@@ -55,6 +55,11 @@ profile: true
 show_drafts: false
 permalink: /:title
 
+collections:
+  tag:
+    output: true
+  category:
+    output: true
 
 # Configuration for the pagination page
 paginate: 10

@@ -24,10 +24,7 @@ jobs:
           if [ -d "category" ]; then
             git rm ./category/*
           fi
-          # touch ./tag/placeholder
-          # touch ./category/placeholder
-          # git add ./tag/placeholder
-          # git add ./category/placeholder
+
           git diff-index --quiet HEAD || git commit -am "Removed old categories" && git push github HEAD:${GITHUB_REF}
       - name: Install dependencies
         run: |
