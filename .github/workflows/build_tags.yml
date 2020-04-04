@@ -38,6 +38,5 @@ jobs:
           git pull github ${GITHUB_REF} --ff-only
 
           python3 scripts/regenerate_tags.py
-
           git diff-index --quiet HEAD || git commit -am "Updated tags and categories"
           git push github HEAD:${GITHUB_REF}
