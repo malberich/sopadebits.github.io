@@ -4,7 +4,7 @@ documentacion:
   - date: 2018-04-24 09:15:06 +0200
     filename: 2018-04-24-proyecto-gdelt.md
     title: El proyecto GDELT
-    url: el-proyecto-gdelt
+    url: proyecto-gdelt
   - date: 2014-09-21 09:00:39 +0200
     filename: 2014-09-21-enlaces-de-interes-2014-38.html
     title: "Enlaces de inter\xE9s 2014-38"
@@ -16,7 +16,7 @@ documentacion:
   - date: 2014-02-18 08:25:25 +0100
     filename: 2014-02-18-veracidad-informacion-verification-handbook.html
     title: "Veracidad de la informaci\xF3n: Verification handbook"
-    url: veracidad-de-la-informacion-verification-handbook
+    url: veracidad-informacion-verification-handbook
   - date: 2014-02-16 10:34:23 +0100
     filename: 2014-02-16-enlaces-de-interes-2014-7.html
     title: "Enlaces de inter\xE9s 2014-7"
@@ -36,11 +36,11 @@ documentacion:
   - date: 2013-11-07 15:30:45 +0100
     filename: 2013-11-07-museo-moli-paperer-de-capellades-mmp_capellades.html
     title: "Museo mol\xED paperer de #Capellades @mmp_capellades"
-    url: museo-moli-paperer-de-capellades-mmp-capellades
+    url: museo-moli-paperer-de-capellades-mmp_capellades
   - date: 2013-09-26 09:45:37 +0200
     filename: 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
     title: "Espa&ntilde;a en llamas: la dificultad de obtener la informaci\xF3n"
-    url: espan-a-en-llamas-la-dificultad-de-obtener-la-informacion
+    url: espana-en-llamas-la-dificultad-de-obtener-la-informacion
   - date: 2013-07-08 15:22:55 +0200
     filename: 2013-07-08-lecturas-veraniegas-james-gleick-la-informacion.html
     title: 'Lecturas veraniegas: James Gleick - La Informacion'
@@ -52,39 +52,39 @@ documentacion:
   - date: 2009-05-04 00:00:00 +0200
     filename: 2009-05-04-programacion-neurolinguistica-hipnosis-buscadores.html
     title: "Programaci\xF3n Neuroling&uuml;\xEDstica, hipnosis y buscadores"
-    url: programacion-neurolingu-istica-hipnosis-y-buscadores
+    url: programacion-neurolinguistica-hipnosis-buscadores
   - date: 2009-01-27 00:00:00 +0100
     filename: 2009-01-27-gestor-contenidos-gestor-publicaciones-ii.html
     title: Del gestor de contenidos al gestor de publicaciones (II)
-    url: del-gestor-de-contenidos-al-gestor-de-publicaciones-ii
+    url: gestor-contenidos-gestor-publicaciones-ii
   - date: 2009-01-27 00:00:00 +0100
     filename: 2009-01-27-gestor-contenidos-gestor-publicaciones-i.html
     title: Del gestor de contenidos al gestor de publicaciones (I)
-    url: del-gestor-de-contenidos-al-gestor-de-publicaciones-i
+    url: gestor-contenidos-gestor-publicaciones-i
   - date: 2008-09-06 00:00:00 +0200
     filename: 2008-09-06-nuevo-diseno-sopa-bits.html
     title: Nuevo dise&ntilde;o en sopa de bits
-    url: nuevo-disen-o-en-sopa-de-bits
+    url: nuevo-diseno-sopa-bits
   - date: 2008-03-05 00:00:00 +0100
     filename: 2008-03-05-navegacion-social-utilizando-tagging-3.html
     title: "Navegaci\xF3n social utilizando el tagging - 3"
-    url: navegacion-social-utilizando-el-tagging-3
+    url: navegacion-social-utilizando-tagging-3
   - date: 2008-03-04 00:00:00 +0100
     filename: 2008-03-04-navegacion-social-utilizando-tagging-2.html
     title: "Navegaci\xF3n social utilizando el tagging - 2"
-    url: navegacion-social-utilizando-el-tagging-2
+    url: navegacion-social-utilizando-tagging-2
   - date: 2008-03-03 00:00:00 +0100
     filename: 2008-03-03-navegacion-social-utilizando-tagging-1.html
     title: "Navegaci\xF3n social utilizando el tagging - 1"
-    url: navegacion-social-utilizando-el-tagging-1
+    url: navegacion-social-utilizando-tagging-1
   - date: 2008-03-03 00:00:00 +0100
     filename: 2008-03-03-clustering-recursos-corporativos-generalistas.html
     title: Clustering en recursos corporativos y generalistas
-    url: clustering-en-recursos-corporativos-y-generalistas
+    url: clustering-recursos-corporativos-generalistas
   - date: 2008-02-19 00:00:00 +0100
     filename: 2008-02-19-reutilizar-intercambiar-intereses-tagging.html
     title: Reutilizar e intercambiar intereses con el tagging
-    url: reutilizar-e-intercambiar-intereses-con-el-tagging
+    url: reutilizar-intercambiar-intereses-tagging
   - date: 2008-01-13 00:00:00 +0100
     filename: 2008-01-13-madame-briet.html
     title: Madame Briet
@@ -92,58 +92,58 @@ documentacion:
   - date: 2007-12-22 00:00:00 +0100
     filename: 2007-12-22-sistema-tagging-nube-etiquetas.html
     title: Sistema de tagging - la nube de etiquetas
-    url: sistema-de-tagging-la-nube-de-etiquetas
+    url: sistema-tagging-nube-etiquetas
   - date: 2007-10-11 00:00:00 +0200
     filename: 2007-10-11-propuestas-sistema-tagging-2.html
     title: Propuestas para un sistema de tagging - 2
-    url: propuestas-para-un-sistema-de-tagging-2
+    url: propuestas-sistema-tagging-2
   - date: 2007-10-11 00:00:00 +0200
     filename: 2007-10-11-propuestas-sistema-tagging-1.html
     title: Propuestas para un sistema de tagging - 1
-    url: propuestas-para-un-sistema-de-tagging-1
+    url: propuestas-sistema-tagging-1
   - date: 2007-10-06 00:00:00 +0200
     filename: 2007-10-06-seis-meses-blog.html
     title: Seis meses y un blog
-    url: seis-meses-y-un-blog
+    url: seis-meses-blog
   - date: 2007-09-24 00:00:00 +0200
     filename: 2007-09-24-emprender-profesionales-informacion.html
     title: "Emprender y los profesionales de la informaci\xF3n"
-    url: emprender-y-los-profesionales-de-la-informacion
+    url: emprender-profesionales-informacion
   - date: 2007-09-05 00:00:00 +0200
     filename: 2007-09-05-seo-software-social-imagen-personal.html
     title: SEO, software social e imagen personal
-    url: seo-software-social-e-imagen-personal
+    url: seo-software-social-imagen-personal
   - date: 2007-08-15 00:00:00 +0200
     filename: 2007-08-15-lecturas-veraniegas-arte-red.html
     title: 'Lecturas veraniegas: arte en la red'
-    url: lecturas-veraniegas-arte-en-la-red
+    url: lecturas-veraniegas-arte-red
   - date: 2007-08-03 00:00:00 +0200
     filename: 2007-08-03-organizacion-informacion-personal-estructuracion-directorios.html
     title: "Organizaci\xF3n de la informaci\xF3n personal III - estructuraci\xF3n\
       \ de los directorios"
-    url: organizacion-de-la-informacion-personal-iii-estructuracion-de-los-directorios
+    url: organizacion-informacion-personal-estructuracion-directorios
   - date: 2007-07-21 00:00:00 +0200
     filename: 2007-07-21-organizacion-informacion-personal-gestion-documental-archivistica.html
     title: "Organizaci\xF3n de la informaci\xF3n personal II: Gesti\xF3n documental\
       \ vs archiv\xEDstica"
-    url: organizacion-de-la-informacion-personal-ii-gestion-documental-vs-archivistica
+    url: organizacion-informacion-personal-gestion-documental-archivistica
   - date: 2007-07-11 00:00:00 +0200
     filename: 2007-07-11-organizacion-de-la-informacion-personal-eliminando-archivos-duplicados.html
     title: "Organizaci\xF3n de la informaci\xF3n personal - I: eliminando archivos\
       \ duplicados"
-    url: organizacion-de-la-informacion-personal-i-eliminando-archivos-duplicados
+    url: organizacion-de-la-informacion-personal-eliminando-archivos-duplicados
   - date: 2007-07-05 00:00:00 +0200
     filename: 2007-07-05-cadena-trofica-fagocitar-rumiar-digerir-informacion.html
     title: "Cadena tr\xF3fica: Fagocitar, rumiar y digerir informaci\xF3n"
-    url: cadena-trofica-fagocitar-rumiar-y-digerir-informacion
+    url: cadena-trofica-fagocitar-rumiar-digerir-informacion
   - date: 2007-07-03 00:00:00 +0200
     filename: 2007-07-03-veracidad-informacion-internet-debate.html
     title: "La veracidad de la informaci\xF3n en Internet, a debate"
-    url: la-veracidad-de-la-informacion-en-internet-a-debate
+    url: veracidad-informacion-internet-debate
   - date: 2007-06-30 00:00:00 +0200
     filename: 2007-06-30-introduccion-al-procesamiento-del-lenguaje-natural.html
     title: "Descarga: introducci\xF3n al procesamiento del lenguaje natural"
-    url: descarga-introduccion-al-procesamiento-del-lenguaje-natural
+    url: introduccion-al-procesamiento-del-lenguaje-natural
   - date: 2007-06-29 00:00:00 +0200
     filename: 2007-06-29-facetas-aplicaciones-en-informatica.html
     title: "Facetas: aplicaciones en inform\xE1tica"
@@ -155,11 +155,11 @@ documentacion:
   - date: 2007-06-23 00:00:00 +0200
     filename: 2007-06-23-apuntes-procesamiento-del-lenguaje-natural.html
     title: Apuntes sobre Procesamiento del lenguaje natural
-    url: apuntes-sobre-procesamiento-del-lenguaje-natural
+    url: apuntes-procesamiento-del-lenguaje-natural
   - date: 2007-06-20 00:00:00 +0200
     filename: 2007-06-20-teoria-de-la-relevancia-en-linguistica.html
     title: "La teor\xEDa de la relevancia en ling&uuml;\xEDstica"
-    url: la-teoria-de-la-relevancia-en-lingu-istica
+    url: teoria-de-la-relevancia-en-linguistica
   - date: 2007-06-08 00:00:00 +0200
     filename: 2007-06-08-epoca-de-examenes.html
     title: "\xE9poca de ex\xE1menes"
@@ -183,7 +183,7 @@ documentacion:
   - date: 2007-04-02 00:00:00 +0200
     filename: 2007-04-02-un_primer_post.html
     title: Un primer post
-    url: un-primer-post
+    url: un_primer_post
   slug: documentacion
 economia:
   name: "Econom\xEDa"
@@ -251,7 +251,7 @@ economia:
   - date: 2014-01-21 12:30:55 +0100
     filename: 2014-01-21-electricidad-subhasta-mercado-espanol-electricidad.html
     title: 'Electricidad: intentando entender la subhasta del mercado espa&ntilde;ol'
-    url: electricidad-intentando-entender-la-subhasta-del-mercado-espan-ol
+    url: electricidad-subhasta-mercado-espanol-electricidad
   - date: 2013-12-29 09:00:38 +0100
     filename: 2013-12-29-enlaces-de-interes-2013-52.html
     title: "Enlaces de inter\xE9s 2013-52"
@@ -293,7 +293,7 @@ economia:
   - date: 2013-09-26 09:45:37 +0200
     filename: 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
     title: "Espa&ntilde;a en llamas: la dificultad de obtener la informaci\xF3n"
-    url: espan-a-en-llamas-la-dificultad-de-obtener-la-informacion
+    url: espana-en-llamas-la-dificultad-de-obtener-la-informacion
   - date: 2013-09-24 16:30:11 +0200
     filename: 2013-09-24-donde-pone-estadistico-lea-usted-data-scientist.html
     title: "Donde pone estad\xEDstico, lea usted Data Scientist"
@@ -321,19 +321,19 @@ economia:
   - date: 2009-06-05 00:00:00 +0200
     filename: 2009-06-05-elecciones-europeas-decision-voto.html
     title: "Sobre las Elecciones Europeas y la decisi\xF3n de voto"
-    url: sobre-las-elecciones-europeas-y-la-decision-de-voto
+    url: elecciones-europeas-decision-voto
   - date: 2009-03-08 00:00:00 +0100
     filename: 2009-03-08-quinta-disciplina.html
     title: La quinta disciplina
-    url: la-quinta-disciplina
+    url: quinta-disciplina
   - date: 2007-09-24 00:00:00 +0200
     filename: 2007-09-24-demo-ley-hondt.html
     title: Demo Ley de Hondt
-    url: demo-ley-de-hondt
+    url: demo-ley-hondt
   - date: 2007-09-21 00:00:00 +0200
     filename: 2007-09-21-efecto-medici-innovacion-interdisciplinar.html
     title: "El efecto Medici: Innovaci\xF3n interdisciplinar"
-    url: el-efecto-medici-innovacion-interdisciplinar
+    url: efecto-medici-innovacion-interdisciplinar
   - date: 2007-08-26 00:00:00 +0200
     filename: 2007-08-26-lecturas-veraniegas-web-2-0-fundacion-orange.html
     title: "Lecturas veraniegas: Web 2.0 (Fundaci\xF3n Orange)"
@@ -341,7 +341,7 @@ economia:
   - date: 2007-08-16 00:00:00 +0200
     filename: 2007-08-16-lecturas-veraniegas-chaos-order-capital-markets.html
     title: 'Lecturas veraniegas: Chaos and order in the capital markets'
-    url: lecturas-veraniegas-chaos-and-order-in-the-capital-markets
+    url: lecturas-veraniegas-chaos-order-capital-markets
   - date: 2007-06-04 00:00:00 +0200
     filename: 2007-06-04-web-social-y-aspectos-sociales.html
     title: Web social y aspectos sociales
@@ -349,7 +349,7 @@ economia:
   - date: 2007-04-04 00:00:00 +0200
     filename: 2007-04-04-partida-ajedrez-windows-linux.html
     title: Una partida de Ajedrez entre Windows y Linux
-    url: una-partida-de-ajedrez-entre-windows-y-linux
+    url: partida-ajedrez-windows-linux
   slug: economia
 informatica:
   name: "Inform\xE1tica"
@@ -357,7 +357,7 @@ informatica:
   - date: 2018-04-14 09:15:06 +0200
     filename: 2018-04-14-python-luigi-posterior.md
     title: Luigi, a posteriori
-    url: luigi-a-posteriori
+    url: python-luigi-posterior
   - date: 2014-10-12 09:00:06 +0200
     filename: 2014-10-12-enlaces-de-interes-2014-41.html
     title: "Enlaces de inter\xE9s 2014-41"
@@ -385,11 +385,11 @@ informatica:
   - date: 2014-09-04 09:00:10 +0200
     filename: 2014-09-04-big-data-machine-learning.html
     title: Big data y machine learning, del batch al procesado por eventos
-    url: big-data-y-machine-learning-del-batch-al-procesado-por-eventos
+    url: big-data-machine-learning
   - date: 2014-08-31 09:00:55 +0200
     filename: 2014-08-31-27909.html
     title: "Enlaces de inter\xE9s 2014-35"
-    url: enlaces-de-interes-2014-35
+    url: '27909'
   - date: 2014-08-24 09:00:20 +0200
     filename: 2014-08-24-enlaces-de-interes-2014-34.html
     title: "Enlaces de inter\xE9s 2014-34"
@@ -421,7 +421,7 @@ informatica:
   - date: 2014-06-26 14:35:57 +0200
     filename: 2014-06-26-php-rapido.html
     title: "PHP es lo suficientemente r\xE1pido"
-    url: php-es-lo-suficientemente-rapido
+    url: php-rapido
   - date: 2014-06-22 09:00:13 +0200
     filename: 2014-06-22-enlaces-de-interes-2014-25.html
     title: "Enlaces de inter\xE9s 2014-25"
@@ -441,7 +441,7 @@ informatica:
   - date: 2014-04-29 10:30:33 +0200
     filename: 2014-04-29-mapreduce-linux-hadoop.html
     title: '#MapReduce: probar en #linux antes de ejecutar en #Hadoop'
-    url: mapreduce-probar-en-linux-antes-de-ejecutar-en-hadoop
+    url: mapreduce-linux-hadoop
   - date: 2014-04-27 10:00:19 +0200
     filename: 2014-04-27-enlaces-de-interes-2014-17.html
     title: "Enlaces de inter\xE9s 2014-17"
@@ -461,7 +461,7 @@ informatica:
   - date: 2014-03-31 09:30:00 +0200
     filename: 2014-03-31-crossfilter-vistas-sincronizadas-datos.html
     title: "Crossfilter, m\xFAltiples vistas sincronizadas de datos"
-    url: crossfilter-multiples-vistas-sincronizadas-de-datos
+    url: crossfilter-vistas-sincronizadas-datos
   - date: 2014-03-30 09:00:00 +0200
     filename: 2014-03-30-enlaces-de-interes-2014-13.html
     title: "Enlaces de inter\xE9s 2014-13"
@@ -473,11 +473,11 @@ informatica:
   - date: 2014-03-20 10:00:32 +0100
     filename: 2014-03-20-analytics-platform-principles-google.html
     title: Google Analytics Platform Principles, para entender mejor analytics
-    url: google-analytics-platform-principles-para-entender-mejor-analytics
+    url: analytics-platform-principles-google
   - date: 2014-03-18 09:30:31 +0100
     filename: 2014-03-18-nodejs-y-el-funcionamiento-de-require.html
     title: "NodeJS y el tipo de valores retornados por la funci\xF3n require"
-    url: nodejs-y-el-tipo-de-valores-retornados-por-la-funcion-require
+    url: nodejs-y-el-funcionamiento-de-require
   - date: 2014-03-16 09:15:49 +0100
     filename: 2014-03-16-enlaces-de-interes-2014-11.html
     title: "Enlaces de inter\xE9s 2014-11"
@@ -485,11 +485,11 @@ informatica:
   - date: 2014-03-13 09:15:10 +0100
     filename: 2014-03-13-una-recomendacion.html
     title: "Una recomendaci\xF3n: Her"
-    url: una-recomendacion-her
+    url: una-recomendacion
   - date: 2014-03-11 10:00:50 +0100
     filename: 2014-03-11-javascript-busqueda-sintaxis.html
     title: Javascript - Refactorizar y buscar estructuras de sintaxis
-    url: javascript-refactorizar-y-buscar-estructuras-de-sintaxis
+    url: javascript-busqueda-sintaxis
   - date: 2014-03-09 09:30:14 +0100
     filename: 2014-03-09-enlaces-de-interes-2014-10.html
     title: "Enlaces de inter\xE9s 2014-10"
@@ -497,11 +497,11 @@ informatica:
   - date: 2014-03-06 09:40:04 +0100
     filename: 2014-03-06-version-minima-php-aplicacion.html
     title: "PHP: Cu\xE1l es la versi\xF3n m\xEDnima de  para mi aplicaci\xF3n"
-    url: php-cual-es-la-version-minima-de-para-mi-aplicacion
+    url: version-minima-php-aplicacion
   - date: 2014-03-04 08:40:47 +0100
     filename: 2014-03-04-nodejs-java-paypal-y-groupon.html
     title: '#java, #nodejs, #paypal y la escalabilidad de la web'
-    url: java-nodejs-paypal-y-la-escalabilidad-de-la-web
+    url: nodejs-java-paypal-y-groupon
   - date: 2014-03-02 09:00:21 +0100
     filename: 2014-03-02-enlaces-de-interes-2014-9.html
     title: "Enlaces de inter\xE9s 2014-9"
@@ -509,11 +509,11 @@ informatica:
   - date: 2014-02-27 10:23:49 +0100
     filename: 2014-02-27-apache-logs-tiempo-respuesta.html
     title: 'Apache: A&ntilde;adir el tiempo de respuesta en los logs'
-    url: apache-an-adir-el-tiempo-de-respuesta-en-los-logs
+    url: apache-logs-tiempo-respuesta
   - date: 2014-02-25 08:20:57 +0100
     filename: 2014-02-25-javascript-promise-callback-events.html
     title: 'Javascript: Promises y eventos'
-    url: javascript-promises-y-eventos
+    url: javascript-promise-callback-events
   - date: 2014-02-23 09:30:33 +0100
     filename: 2014-02-23-enlaces-de-interes-2014-8.html
     title: "Enlaces de inter\xE9s 2014-8"
@@ -521,7 +521,7 @@ informatica:
   - date: 2014-02-20 10:19:32 +0100
     filename: 2014-02-20-grep-contexto-resultado-coincidencias.html
     title: "grep: contexto de resultado y cantidad de \xEDtems"
-    url: grep-contexto-de-resultado-y-cantidad-de-items
+    url: grep-contexto-resultado-coincidencias
   - date: 2014-02-16 10:34:23 +0100
     filename: 2014-02-16-enlaces-de-interes-2014-7.html
     title: "Enlaces de inter\xE9s 2014-7"
@@ -529,7 +529,7 @@ informatica:
   - date: 2014-02-13 09:15:46 +0100
     filename: 2014-02-13-mostrar-la-vista-lateral-en-diff.html
     title: diff con resultados side by side
-    url: diff-con-resultados-side-by-side
+    url: mostrar-la-vista-lateral-en-diff
   - date: 2014-02-09 09:00:54 +0100
     filename: 2014-02-09-enlaces-de-interes-2014-6.html
     title: "Enlaces de inter\xE9s 2014-6"
@@ -537,7 +537,7 @@ informatica:
   - date: 2014-02-06 09:00:19 +0100
     filename: 2014-02-06-mysqldump-backup-pv.html
     title: mysqldump y gzip mostrando progreso
-    url: mysqldump-y-gzip-mostrando-progreso
+    url: mysqldump-backup-pv
   - date: 2014-02-02 09:30:18 +0100
     filename: 2014-02-02-enlaces-de-interes-2014-5.html
     title: "Enlaces de inter\xE9s 2014-5"
@@ -553,7 +553,7 @@ informatica:
   - date: 2014-01-23 09:45:40 +0100
     filename: 2014-01-23-grafos-html5-paperscape-sigmajs.html
     title: Grafos en HTML5 con paperscape y sigma js
-    url: grafos-en-html5-con-paperscape-y-sigma-js
+    url: grafos-html5-paperscape-sigmajs
   - date: 2014-01-19 09:00:03 +0100
     filename: 2014-01-19-enlaces-de-interes-2014-3.html
     title: "Enlaces de inter\xE9s 2014-3"
@@ -561,11 +561,11 @@ informatica:
   - date: 2014-01-13 11:24:10 +0100
     filename: 2014-01-13-magento-la-clase-mage.html
     title: "Magento: la clase Mage - Mage::app, Mage::run y otros m\xE9todos"
-    url: magento-la-clase-mage-mage-app-mage-run-y-otros-metodos
+    url: magento-la-clase-mage
   - date: 2014-01-02 11:30:09 +0100
     filename: 2014-01-02-hhvm-magento-symfony.html
     title: '#hhvm en #magento y #symfony'
-    url: hhvm-en-magento-y-symfony
+    url: hhvm-magento-symfony
   - date: 2013-12-30 12:30:25 +0100
     filename: 2013-12-30-si-desarrollas-en-php-y-tienes-un-rato-prueba-hhvm.html
     title: 'Si desarrollas en #PHP y tienes un rato, prueba #HHVM'
@@ -585,7 +585,7 @@ informatica:
   - date: 2013-12-19 10:45:08 +0100
     filename: 2013-12-19-aprender-y-ensenar-visualizacion-de-la-informacion.html
     title: "Aprender y ense&ntilde;ar visualizaci\xF3n de la informaci\xF3n"
-    url: aprender-y-ensen-ar-visualizacion-de-la-informacion
+    url: aprender-y-ensenar-visualizacion-de-la-informacion
   - date: 2013-12-15 15:56:18 +0100
     filename: 2013-12-15-enlaces-de-interes-2013-50.html
     title: "Enlaces de inter\xE9s 2013-50"
@@ -594,7 +594,7 @@ informatica:
     filename: 2013-12-11-magento-iteracion-con-muchos-modelos.html
     title: "Magento: c\xF3mo iterar m\xE1s agilmente sobre una colecci\xF3n extensa\
       \ de modelos"
-    url: magento-como-iterar-mas-agilmente-sobre-una-coleccion-extensa-de-modelos
+    url: magento-iteracion-con-muchos-modelos
   - date: 2013-12-08 09:30:57 +0100
     filename: 2013-12-08-enlaces-interesantes.html
     title: Enlaces interesantes
@@ -606,7 +606,7 @@ informatica:
   - date: 2013-12-01 10:00:11 +0100
     filename: 2013-12-01-enlaces-interesantes-sobre-dataviz.html
     title: 'Enlaces interesantes 2013-49 #dataviz'
-    url: enlaces-interesantes-2013-49-dataviz
+    url: enlaces-interesantes-sobre-dataviz
   - date: 2013-11-25 09:59:14 +0100
     filename: 2013-11-25-la-saturacion-visual-donde-esta-wally.html
     title: "La saturaci\xF3n visual - &iquest;d\xF3nde est\xE1 Wally?"
@@ -614,7 +614,7 @@ informatica:
   - date: 2013-11-18 08:34:00 +0100
     filename: 2013-11-18-que-grafico-escoger-algunas-ideas.html
     title: "Qu\xE9 gr\xE1fico escojo para mostrar mis datos: algunas ideas"
-    url: que-grafico-escojo-para-mostrar-mis-datos-algunas-ideas
+    url: que-grafico-escoger-algunas-ideas
   - date: 2013-11-17 09:30:46 +0100
     filename: 2013-11-17-enlaces-de-interes.html
     title: "Enlaces de inter\xE9s"
@@ -652,16 +652,16 @@ informatica:
     filename: 2013-10-07-albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz.html
     title: "@albertocairo sobre estudios de #ddj, carga emocional y (anti)h\xE9roes\
       \ de la #dataviz"
-    url: albertocairo-sobre-estudios-de-ddj-carga-emocional-y-anti-heroes-de-la-dataviz
+    url: albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz
   - date: 2013-10-04 08:00:51 +0200
     filename: 2013-10-04-sutilezas-del-color-en-visualizacion-observatorio-de-la-tierra-de-la-nasa.html
     title: 'Sutilezas del color en #dataviz (observatorio de la tierra de la #NASA)'
-    url: sutilezas-del-color-en-dataviz-observatorio-de-la-tierra-de-la-nasa
+    url: sutilezas-del-color-en-visualizacion-observatorio-de-la-tierra-de-la-nasa
   - date: 2013-10-02 10:32:25 +0200
     filename: 2013-10-02-visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi.html
     title: 'Visualizar din&agrave;micamente el proceso de crawling de #googlebot con
       #gephi'
-    url: visualizar-dina-micamente-el-proceso-de-crawling-de-googlebot-con-gephi
+    url: visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi
   - date: 2013-09-30 08:13:19 +0200
     filename: 2013-09-30-chartbuilder-abre-su-codigo-basado-en-d3-js.html
     title: "Chartbuilder abre su c\xF3digo - Basado en d3.js"
@@ -673,7 +673,7 @@ informatica:
   - date: 2013-09-23 20:02:02 +0200
     filename: 2013-09-23-big-data-big-insights-plantear-preguntas.html
     title: Big data, Big insights, y plantear bien las preguntas
-    url: big-data-big-insights-y-plantear-bien-las-preguntas
+    url: big-data-big-insights-plantear-preguntas
   - date: 2013-09-18 19:45:10 +0200
     filename: 2013-09-18-visualizar-ciudades.html
     title: Visualizar ciudades
@@ -693,11 +693,11 @@ informatica:
   - date: 2013-08-28 11:08:11 +0200
     filename: 2013-08-28-recomendable-tutorial-de-d3.html
     title: Muy recomendable tutorial de D3
-    url: muy-recomendable-tutorial-de-d3
+    url: recomendable-tutorial-de-d3
   - date: 2013-08-26 09:50:58 +0200
     filename: 2013-08-26-simular-un-valor-exponencial-y-gamma.html
     title: Simular un valor exponencial
-    url: simular-un-valor-exponencial
+    url: simular-un-valor-exponencial-y-gamma
   - date: 2013-08-14 09:26:57 +0200
     filename: 2013-08-14-transparencia-claridad-y-big-data.html
     title: Transparencia, claridad y Big Data
@@ -737,7 +737,7 @@ informatica:
   - date: 2013-06-12 23:25:25 +0200
     filename: 2013-06-12-phing-operaciones-sistema-archivos.html
     title: Phing (V) - Operaciones con el sistema de archivos
-    url: phing-v-operaciones-con-el-sistema-de-archivos
+    url: phing-operaciones-sistema-archivos
   - date: 2013-06-10 11:00:44 +0200
     filename: 2013-06-10-autenticacion-ssh-por-clave-publica.html
     title: "Autenticaci\xF3n SSH por clave p\xFAblica"
@@ -749,7 +749,7 @@ informatica:
   - date: 2013-06-07 08:21:18 +0200
     filename: 2013-06-07-phing-condiciones-operadores-comparacion.html
     title: "Ping (IV) - Condiciones y operadores de comparaci\xF3n"
-    url: ping-iv-condiciones-y-operadores-de-comparacion
+    url: phing-condiciones-operadores-comparacion
   - date: 2013-06-05 09:30:06 +0200
     filename: 2013-06-05-siege-extraer-urls-reales-de-los-logs-ii.html
     title: 'Siege: extraer URLs reales de los logs (II)'
@@ -765,7 +765,7 @@ informatica:
   - date: 2013-05-29 09:30:21 +0200
     filename: 2013-05-29-automatizar-con-phing-ii-builds-y-targets.html
     title: Automatizar con Phing (II) - projects y targets
-    url: automatizar-con-phing-ii-projects-y-targets
+    url: automatizar-con-phing-ii-builds-y-targets
   - date: 2013-05-27 10:00:45 +0200
     filename: 2013-05-27-automatizar-con-phing-i-objetivos-e-instalacion.html
     title: "Automatizar con Phing (I) Objetivos e instalaci\xF3n"
@@ -773,7 +773,7 @@ informatica:
   - date: 2011-09-22 09:35:15 +0200
     filename: 2011-09-22-alone-together-tecnologia-soledad.html
     title: "Alone together - la tecnolog\xEDa de la soledad"
-    url: alone-together-la-tecnologia-de-la-soledad
+    url: alone-together-tecnologia-soledad
   - date: 2011-06-16 14:42:06 +0200
     filename: 2011-06-16-visualizacion-con-html5-javascript-infovis-toolkit.html
     title: "Visualizaci\xF3n con HTML5 - Javascript Infovis Toolkit"
@@ -797,35 +797,35 @@ informatica:
   - date: 2010-01-12 00:00:00 +0100
     filename: 2010-01-12-visualizando-estadisticas-navegadores-iii.html
     title: "Visualizando: Estad\xEDsticas de navegadores (III)"
-    url: visualizando-estadisticas-de-navegadores-iii
+    url: visualizando-estadisticas-navegadores-iii
   - date: 2010-01-11 00:00:00 +0100
     filename: 2010-01-11-visualizando-estadisticas-navegadores-ii.html
     title: "Visualizando: Estad\xEDsticas de navegadores (II)"
-    url: visualizando-estadisticas-de-navegadores-ii
+    url: visualizando-estadisticas-navegadores-ii
   - date: 2010-01-09 00:00:00 +0100
     filename: 2010-01-09-visualizando-estadisticas-navegadores-i.html
     title: "Visualizando: Estad\xEDsticas de navegadores (I)"
-    url: visualizando-estadisticas-de-navegadores-i
+    url: visualizando-estadisticas-navegadores-i
   - date: 2009-10-17 00:00:00 +0200
     filename: 2009-10-17-visualizacion-datos-aproximacion-ingenua.html
     title: "Visualizaci\xF3n de datos: Una aproximaci\xF3n ing\xE9nua"
-    url: visualizacion-de-datos-una-aproximacion-ingenua
+    url: visualizacion-datos-aproximacion-ingenua
   - date: 2009-06-05 00:00:00 +0200
     filename: 2009-06-05-elecciones-europeas-decision-voto.html
     title: "Sobre las Elecciones Europeas y la decisi\xF3n de voto"
-    url: sobre-las-elecciones-europeas-y-la-decision-de-voto
+    url: elecciones-europeas-decision-voto
   - date: 2009-03-11 00:00:00 +0100
     filename: 2009-03-11-open-flash-chart-2-mejorando-graficos-estadisticos.html
     title: "Open Flash Chart 2 - Mejorando los gr\xE1ficos estad\xEDsticos"
-    url: open-flash-chart-2-mejorando-los-graficos-estadisticos
+    url: open-flash-chart-2-mejorando-graficos-estadisticos
   - date: 2009-03-04 00:00:00 +0100
     filename: 2009-03-04-blog-podcast-sintesis-voz.html
     title: "Del blog al podcast con s\xEDntesis de voz"
-    url: del-blog-al-podcast-con-sintesis-de-voz
+    url: blog-podcast-sintesis-voz
   - date: 2009-02-26 00:00:00 +0100
     filename: 2009-02-26-eyetracking-movimiento-informacion-neuronal.html
     title: "Eyetracking, movimiento e informaci\xF3n neuronal"
-    url: eyetracking-movimiento-e-informacion-neuronal
+    url: eyetracking-movimiento-informacion-neuronal
   - date: 2009-02-19 00:00:00 +0100
     filename: 2009-02-19-muestreo-estadistico.html
     title: "Muestreo estad\xEDstico"
@@ -833,43 +833,43 @@ informatica:
   - date: 2009-02-04 00:00:00 +0100
     filename: 2009-02-04-tecnico-proximidad.html
     title: "El t\xE9cnico de proximidad"
-    url: el-tecnico-de-proximidad
+    url: tecnico-proximidad
   - date: 2009-01-27 00:00:00 +0100
     filename: 2009-01-27-gestor-contenidos-gestor-publicaciones-ii.html
     title: Del gestor de contenidos al gestor de publicaciones (II)
-    url: del-gestor-de-contenidos-al-gestor-de-publicaciones-ii
+    url: gestor-contenidos-gestor-publicaciones-ii
   - date: 2008-09-16 00:00:00 +0200
     filename: 2008-09-16-analisis-web-com-piwik-gnu-r-ii.html
     title: "An\xE1lisis web com Piwik y GNU R (II)"
-    url: analisis-web-com-piwik-y-gnu-r-ii
+    url: analisis-web-com-piwik-gnu-r-ii
   - date: 2008-09-15 00:00:00 +0200
     filename: 2008-09-15-analisis-web-com-piwik-gnu-r-i.html
     title: "An\xE1lisis web com Piwik y GNU R (I)"
-    url: analisis-web-com-piwik-y-gnu-r-i
+    url: analisis-web-com-piwik-gnu-r-i
   - date: 2008-09-06 00:00:00 +0200
     filename: 2008-09-06-nuevo-diseno-sopa-bits.html
     title: Nuevo dise&ntilde;o en sopa de bits
-    url: nuevo-disen-o-en-sopa-de-bits
+    url: nuevo-diseno-sopa-bits
   - date: 2008-03-05 00:00:00 +0100
     filename: 2008-03-05-navegacion-social-utilizando-tagging-3.html
     title: "Navegaci\xF3n social utilizando el tagging - 3"
-    url: navegacion-social-utilizando-el-tagging-3
+    url: navegacion-social-utilizando-tagging-3
   - date: 2008-03-04 00:00:00 +0100
     filename: 2008-03-04-navegacion-social-utilizando-tagging-2.html
     title: "Navegaci\xF3n social utilizando el tagging - 2"
-    url: navegacion-social-utilizando-el-tagging-2
+    url: navegacion-social-utilizando-tagging-2
   - date: 2008-03-03 00:00:00 +0100
     filename: 2008-03-03-navegacion-social-utilizando-tagging-1.html
     title: "Navegaci\xF3n social utilizando el tagging - 1"
-    url: navegacion-social-utilizando-el-tagging-1
+    url: navegacion-social-utilizando-tagging-1
   - date: 2007-10-11 00:00:00 +0200
     filename: 2007-10-11-propuestas-sistema-tagging-2.html
     title: Propuestas para un sistema de tagging - 2
-    url: propuestas-para-un-sistema-de-tagging-2
+    url: propuestas-sistema-tagging-2
   - date: 2007-10-11 00:00:00 +0200
     filename: 2007-10-11-propuestas-sistema-tagging-1.html
     title: Propuestas para un sistema de tagging - 1
-    url: propuestas-para-un-sistema-de-tagging-1
+    url: propuestas-sistema-tagging-1
   - date: 2007-08-26 00:00:00 +0200
     filename: 2007-08-26-lecturas-veraniegas-web-2-0-fundacion-orange.html
     title: "Lecturas veraniegas: Web 2.0 (Fundaci\xF3n Orange)"
@@ -889,7 +889,7 @@ informatica:
   - date: 2007-06-23 00:00:00 +0200
     filename: 2007-06-23-apuntes-procesamiento-del-lenguaje-natural.html
     title: Apuntes sobre Procesamiento del lenguaje natural
-    url: apuntes-sobre-procesamiento-del-lenguaje-natural
+    url: apuntes-procesamiento-del-lenguaje-natural
   - date: 2007-05-31 00:00:00 +0200
     filename: 2007-05-31-trabajando-con-subversion-y-awk.html
     title: Trabajando con subversion y awk
@@ -905,15 +905,15 @@ informatica:
   - date: 2007-04-26 00:00:00 +0200
     filename: 2007-04-26-expresiones-regulares-interpretar-urls.html
     title: Expresiones regulares para interpretar URLs
-    url: expresiones-regulares-para-interpretar-urls
+    url: expresiones-regulares-interpretar-urls
   - date: 2007-04-04 00:00:00 +0200
     filename: 2007-04-04-partida-ajedrez-windows-linux.html
     title: Una partida de Ajedrez entre Windows y Linux
-    url: una-partida-de-ajedrez-entre-windows-y-linux
+    url: partida-ajedrez-windows-linux
   - date: 2007-04-02 00:00:00 +0200
     filename: 2007-04-02-un_primer_post.html
     title: Un primer post
-    url: un-primer-post
+    url: un_primer_post
   slug: informatica
 matematica:
   name: "Matem\xE1tica"
@@ -937,11 +937,11 @@ matematica:
   - date: 2014-09-04 09:00:10 +0200
     filename: 2014-09-04-big-data-machine-learning.html
     title: Big data y machine learning, del batch al procesado por eventos
-    url: big-data-y-machine-learning-del-batch-al-procesado-por-eventos
+    url: big-data-machine-learning
   - date: 2014-08-31 09:00:55 +0200
     filename: 2014-08-31-27909.html
     title: "Enlaces de inter\xE9s 2014-35"
-    url: enlaces-de-interes-2014-35
+    url: '27909'
   - date: 2014-08-24 09:00:20 +0200
     filename: 2014-08-24-enlaces-de-interes-2014-34.html
     title: "Enlaces de inter\xE9s 2014-34"
@@ -981,15 +981,15 @@ matematica:
   - date: 2014-05-01 09:30:05 +0200
     filename: 2014-05-01-anscombe.html
     title: El cuarteto de Anscombe, cuando la forma importa
-    url: el-cuarteto-de-anscombe-cuando-la-forma-importa
+    url: anscombe
   - date: 2014-04-29 10:30:33 +0200
     filename: 2014-04-29-mapreduce-linux-hadoop.html
     title: '#MapReduce: probar en #linux antes de ejecutar en #Hadoop'
-    url: mapreduce-probar-en-linux-antes-de-ejecutar-en-hadoop
+    url: mapreduce-linux-hadoop
   - date: 2014-04-22 10:15:21 +0200
     filename: 2014-04-22-visualizar-datos-explorar.html
     title: Visualizar para inducir, analizar para deducir
-    url: visualizar-para-inducir-analizar-para-deducir
+    url: visualizar-datos-explorar
   - date: 2014-04-20 10:00:54 +0200
     filename: 2014-04-20-enlaces-de-interes-2014-16.html
     title: "Enlaces de inter\xE9s 2014-16"
@@ -1005,7 +1005,7 @@ matematica:
   - date: 2014-03-31 09:30:00 +0200
     filename: 2014-03-31-crossfilter-vistas-sincronizadas-datos.html
     title: "Crossfilter, m\xFAltiples vistas sincronizadas de datos"
-    url: crossfilter-multiples-vistas-sincronizadas-de-datos
+    url: crossfilter-vistas-sincronizadas-datos
   - date: 2014-03-30 09:00:00 +0200
     filename: 2014-03-30-enlaces-de-interes-2014-13.html
     title: "Enlaces de inter\xE9s 2014-13"
@@ -1021,7 +1021,7 @@ matematica:
   - date: 2014-03-20 10:00:32 +0100
     filename: 2014-03-20-analytics-platform-principles-google.html
     title: Google Analytics Platform Principles, para entender mejor analytics
-    url: google-analytics-platform-principles-para-entender-mejor-analytics
+    url: analytics-platform-principles-google
   - date: 2014-03-09 09:30:14 +0100
     filename: 2014-03-09-enlaces-de-interes-2014-10.html
     title: "Enlaces de inter\xE9s 2014-10"
@@ -1045,7 +1045,7 @@ matematica:
   - date: 2014-01-23 09:45:40 +0100
     filename: 2014-01-23-grafos-html5-paperscape-sigmajs.html
     title: Grafos en HTML5 con paperscape y sigma js
-    url: grafos-en-html5-con-paperscape-y-sigma-js
+    url: grafos-html5-paperscape-sigmajs
   - date: 2014-01-19 09:00:03 +0100
     filename: 2014-01-19-enlaces-de-interes-2014-3.html
     title: "Enlaces de inter\xE9s 2014-3"
@@ -1061,7 +1061,7 @@ matematica:
   - date: 2013-12-19 10:45:08 +0100
     filename: 2013-12-19-aprender-y-ensenar-visualizacion-de-la-informacion.html
     title: "Aprender y ense&ntilde;ar visualizaci\xF3n de la informaci\xF3n"
-    url: aprender-y-ensen-ar-visualizacion-de-la-informacion
+    url: aprender-y-ensenar-visualizacion-de-la-informacion
   - date: 2013-12-15 15:56:18 +0100
     filename: 2013-12-15-enlaces-de-interes-2013-50.html
     title: "Enlaces de inter\xE9s 2013-50"
@@ -1085,7 +1085,7 @@ matematica:
   - date: 2013-11-18 08:34:00 +0100
     filename: 2013-11-18-que-grafico-escoger-algunas-ideas.html
     title: "Qu\xE9 gr\xE1fico escojo para mostrar mis datos: algunas ideas"
-    url: que-grafico-escojo-para-mostrar-mis-datos-algunas-ideas
+    url: que-grafico-escoger-algunas-ideas
   - date: 2013-11-04 08:45:59 +0100
     filename: 2013-11-04-movimientos-de-refugiados-desde-1960-segun-datos-de-la-onu-refugees.html
     title: "Movimientos de refugiados desde 1960  seg\xFAn datos de la ONU (@Refugees)"
@@ -1102,7 +1102,7 @@ matematica:
     filename: 2013-10-07-albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz.html
     title: "@albertocairo sobre estudios de #ddj, carga emocional y (anti)h\xE9roes\
       \ de la #dataviz"
-    url: albertocairo-sobre-estudios-de-ddj-carga-emocional-y-anti-heroes-de-la-dataviz
+    url: albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz
   - date: 2013-10-06 08:00:57 +0200
     filename: 2013-10-06-periodismo-en-la-era-de-los-datos-ddj-dataviz.html
     title: 'Periodismo en la era de los datos (#ddj #dataviz)'
@@ -1111,7 +1111,7 @@ matematica:
     filename: 2013-10-02-visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi.html
     title: 'Visualizar din&agrave;micamente el proceso de crawling de #googlebot con
       #gephi'
-    url: visualizar-dina-micamente-el-proceso-de-crawling-de-googlebot-con-gephi
+    url: visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi
   - date: 2013-09-30 08:13:19 +0200
     filename: 2013-09-30-chartbuilder-abre-su-codigo-basado-en-d3-js.html
     title: "Chartbuilder abre su c\xF3digo - Basado en d3.js"
@@ -1123,7 +1123,7 @@ matematica:
   - date: 2013-09-26 09:45:37 +0200
     filename: 2013-09-26-espana-en-llamas-la-dificultad-de-obtener-la-informacion.html
     title: "Espa&ntilde;a en llamas: la dificultad de obtener la informaci\xF3n"
-    url: espan-a-en-llamas-la-dificultad-de-obtener-la-informacion
+    url: espana-en-llamas-la-dificultad-de-obtener-la-informacion
   - date: 2013-09-24 16:30:11 +0200
     filename: 2013-09-24-donde-pone-estadistico-lea-usted-data-scientist.html
     title: "Donde pone estad\xEDstico, lea usted Data Scientist"
@@ -1131,7 +1131,7 @@ matematica:
   - date: 2013-09-23 20:02:02 +0200
     filename: 2013-09-23-big-data-big-insights-plantear-preguntas.html
     title: Big data, Big insights, y plantear bien las preguntas
-    url: big-data-big-insights-y-plantear-bien-las-preguntas
+    url: big-data-big-insights-plantear-preguntas
   - date: 2013-09-18 19:45:10 +0200
     filename: 2013-09-18-visualizar-ciudades.html
     title: Visualizar ciudades
@@ -1155,11 +1155,11 @@ matematica:
   - date: 2013-08-28 11:08:11 +0200
     filename: 2013-08-28-recomendable-tutorial-de-d3.html
     title: Muy recomendable tutorial de D3
-    url: muy-recomendable-tutorial-de-d3
+    url: recomendable-tutorial-de-d3
   - date: 2013-08-26 09:50:58 +0200
     filename: 2013-08-26-simular-un-valor-exponencial-y-gamma.html
     title: Simular un valor exponencial
-    url: simular-un-valor-exponencial
+    url: simular-un-valor-exponencial-y-gamma
   - date: 2013-08-14 09:26:57 +0200
     filename: 2013-08-14-transparencia-claridad-y-big-data.html
     title: Transparencia, claridad y Big Data
@@ -1196,7 +1196,7 @@ matematica:
     filename: 2011-06-09-politicos-accidentales-%c2%bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria.html
     title: "Pol\xEDticos accidentales: &iquest;Seleccionar legisladores aleatorios\
       \ mejora la eficiencia parlamentaria?"
-    url: politicos-accidentales-seleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria
+    url: politicos-accidentales-%c2%bfseleccionar-legisladores-aleatorios-mejora-la-eficiencia-parlamentaria
   - date: 2011-05-20 22:00:36 +0200
     filename: 2011-05-20-y-la-gente-se-esta-informando.html
     title: "...y la gente se est\xE1 informando..."
@@ -1216,31 +1216,31 @@ matematica:
   - date: 2010-01-12 00:00:00 +0100
     filename: 2010-01-12-visualizando-estadisticas-navegadores-iii.html
     title: "Visualizando: Estad\xEDsticas de navegadores (III)"
-    url: visualizando-estadisticas-de-navegadores-iii
+    url: visualizando-estadisticas-navegadores-iii
   - date: 2010-01-11 00:00:00 +0100
     filename: 2010-01-11-visualizando-estadisticas-navegadores-ii.html
     title: "Visualizando: Estad\xEDsticas de navegadores (II)"
-    url: visualizando-estadisticas-de-navegadores-ii
+    url: visualizando-estadisticas-navegadores-ii
   - date: 2010-01-09 00:00:00 +0100
     filename: 2010-01-09-visualizando-estadisticas-navegadores-i.html
     title: "Visualizando: Estad\xEDsticas de navegadores (I)"
-    url: visualizando-estadisticas-de-navegadores-i
+    url: visualizando-estadisticas-navegadores-i
   - date: 2009-10-17 00:00:00 +0200
     filename: 2009-10-17-visualizacion-datos-aproximacion-ingenua.html
     title: "Visualizaci\xF3n de datos: Una aproximaci\xF3n ing\xE9nua"
-    url: visualizacion-de-datos-una-aproximacion-ingenua
+    url: visualizacion-datos-aproximacion-ingenua
   - date: 2009-06-05 00:00:00 +0200
     filename: 2009-06-05-elecciones-europeas-decision-voto.html
     title: "Sobre las Elecciones Europeas y la decisi\xF3n de voto"
-    url: sobre-las-elecciones-europeas-y-la-decision-de-voto
+    url: elecciones-europeas-decision-voto
   - date: 2009-03-11 00:00:00 +0100
     filename: 2009-03-11-open-flash-chart-2-mejorando-graficos-estadisticos.html
     title: "Open Flash Chart 2 - Mejorando los gr\xE1ficos estad\xEDsticos"
-    url: open-flash-chart-2-mejorando-los-graficos-estadisticos
+    url: open-flash-chart-2-mejorando-graficos-estadisticos
   - date: 2009-02-23 00:00:00 +0100
     filename: 2009-02-23-variables-aleatorias-semilla-estadistica.html
     title: "Variables aleatorias, la semilla estad\xEDstica"
-    url: variables-aleatorias-la-semilla-estadistica
+    url: variables-aleatorias-semilla-estadistica
   - date: 2009-02-19 00:00:00 +0100
     filename: 2009-02-19-muestreo-estadistico.html
     title: "Muestreo estad\xEDstico"
@@ -1248,7 +1248,7 @@ matematica:
   - date: 2008-01-05 00:00:00 +0100
     filename: 2008-01-05-por-que-p-q-0-5.html
     title: "Por qu\xE9 P = Q = 0,5?"
-    url: por-que-p-q-05
+    url: por-que-p-q-0-5
   slug: matematica
 miscelanea:
   name: "Miscel\xE1nea"
@@ -1256,7 +1256,7 @@ miscelanea:
   - date: 2016-09-10 10:35:06 +0200
     filename: 2016-09-10-volver-cambios-prisa.md
     title: Volver, con cambios y sin prisa
-    url: volver-con-cambios-y-sin-prisa
+    url: volver-cambios-prisa
   slug: miscelanea
 ocio:
   name: Ocio
@@ -1264,15 +1264,15 @@ ocio:
   - date: 2014-04-02 09:00:01 +0200
     filename: 2014-04-02-siete.html
     title: Siete a&ntilde;os
-    url: siete-an-os
+    url: siete
   - date: 2014-03-13 09:15:10 +0100
     filename: 2014-03-13-una-recomendacion.html
     title: "Una recomendaci\xF3n: Her"
-    url: una-recomendacion-her
+    url: una-recomendacion
   - date: 2013-11-07 15:30:45 +0100
     filename: 2013-11-07-museo-moli-paperer-de-capellades-mmp_capellades.html
     title: "Museo mol\xED paperer de #Capellades @mmp_capellades"
-    url: museo-moli-paperer-de-capellades-mmp-capellades
+    url: museo-moli-paperer-de-capellades-mmp_capellades
   - date: 2013-09-16 06:37:00 +0200
     filename: 2013-09-16-los-datos-no-crecen-en-las-hojas-de-calculo-mira-en-la-basura.html
     title: "Los datos no crecen en las hojas de c\xE1lculo (mira en la basura)"
@@ -1288,11 +1288,11 @@ ocio:
   - date: 2008-09-06 00:00:00 +0200
     filename: 2008-09-06-nuevo-diseno-sopa-bits.html
     title: Nuevo dise&ntilde;o en sopa de bits
-    url: nuevo-disen-o-en-sopa-de-bits
+    url: nuevo-diseno-sopa-bits
   - date: 2007-08-15 00:00:00 +0200
     filename: 2007-08-15-lecturas-veraniegas-arte-red.html
     title: 'Lecturas veraniegas: arte en la red'
-    url: lecturas-veraniegas-arte-en-la-red
+    url: lecturas-veraniegas-arte-red
   slug: ocio
 personas:
   name: Personas
@@ -1300,15 +1300,15 @@ personas:
   - date: 2014-02-11 08:30:07 +0100
     filename: 2014-02-11-aprendizajes-de-las-habilidades-sociales.html
     title: Cuatro aprendizajes de las habilidades sociales
-    url: cuatro-aprendizajes-de-las-habilidades-sociales
+    url: aprendizajes-de-las-habilidades-sociales
   - date: 2014-02-04 09:45:01 +0100
     filename: 2014-02-04-flujo-no-te-relajes.html
     title: En estado de flujo, no te relajes
-    url: en-estado-de-flujo-no-te-relajes
+    url: flujo-no-te-relajes
   - date: 2014-01-30 10:15:22 +0100
     filename: 2014-01-30-participacion-hackaton-civic-engagement.html
     title: "Participaci\xF3n, hackaton y \"civic engagement\""
-    url: participacion-hackaton-y-civic-engagement
+    url: participacion-hackaton-civic-engagement
   - date: 2013-11-20 09:46:11 +0100
     filename: 2013-11-20-kindred-sangre-de-su-sangre.html
     title: 'Kindred: sangre de su sangre'
@@ -1320,19 +1320,19 @@ personas:
   - date: 2011-09-22 09:35:15 +0200
     filename: 2011-09-22-alone-together-tecnologia-soledad.html
     title: "Alone together - la tecnolog\xEDa de la soledad"
-    url: alone-together-la-tecnologia-de-la-soledad
+    url: alone-together-tecnologia-soledad
   - date: 2009-04-06 00:00:00 +0200
     filename: 2009-04-06-ya-van-dos-anos.html
     title: Y ya van dos a&ntilde;os
-    url: y-ya-van-dos-an-os
+    url: ya-van-dos-anos
   - date: 2008-09-08 00:00:00 +0200
     filename: 2008-09-08-mejoras-agradecimientos.html
     title: Mejoras y agradecimientos
-    url: mejoras-y-agradecimientos
+    url: mejoras-agradecimientos
   - date: 2008-04-01 00:00:00 +0200
     filename: 2008-04-01-un-anyito.html
     title: Un a&ntilde;ito
-    url: un-an-ito
+    url: un-anyito
   - date: 2008-01-13 00:00:00 +0100
     filename: 2008-01-13-madame-briet.html
     title: Madame Briet
@@ -1340,7 +1340,7 @@ personas:
   - date: 2007-12-25 00:00:00 +0100
     filename: 2007-12-25-cosas-reaprendidas-mes-medio.html
     title: Cosas reaprendidas en un mes y medio
-    url: cosas-reaprendidas-en-un-mes-y-medio
+    url: cosas-reaprendidas-mes-medio
   slug: personas
 sin-categorizar:
   name: Sin categorizar
@@ -1372,5 +1372,5 @@ sin-categorizar:
   - date: 2007-09-24 00:00:00 +0200
     filename: 2007-09-24-sistema-hondt.html
     title: El sistema d'Hondt
-    url: el-sistema-d-hondt
+    url: sistema-hondt
   slug: sin-categorizar
