@@ -1,35 +1,32 @@
-{% if site.author.linkedin_username %}
-  <a target="_new" href="https://linkedin.com/in/{{ site.author.linkedin_username }}">
-    <span class="btn-lg icon fa fa-2x fa-linkedin"></span>
-  </a>
-{% endif %}
-{% if site.author.twitter_username %}
-  <a target="_new" href="https://twitter.com/{{ site.author.twitter_username }}">
-    <span class="btn-lg icon fa fa-2x fa-twitter"></span>
-  </a>
-{% endif %}
-{% if site.author.feed %}
-  <a target="_new" href="{{ site.baseurl }}{{ site.author.feed }}">
-    <span class="btn-lg icon fa fa-2x fa-rss-square"></span>
-  </a>
-{% endif %}
-{% if site.author.github_username %}
-  <a target="_new" href="https://github.com/{{ site.author.github_username }}">
-    <span class="btn-lg icon fa fa-2x fa-github"></span>
-  </a>
-{% endif %}
-{% if site.author.google_plus_username %}
-  <a target="_new" href="https://plus.google.com/{{ site.author.google_plus_username }}">
-    <span class="btn-lg icon fa fa-2x fa-google-plus"></span>
-  </a>
-{% endif %}
-{% if site.author.facebook_username %}
-  <a target="_new" href="https://www.facebook.com/{{ site.author.facebook_username }}">
-    <span class="btn-lg icon fa fa-2x fa-facebook">Facebook</span>
-  </a>
-{% endif %}
-{% if site.author.email %}
-  <a target="_new" href="mailto:{{ site.author.email }}">
-    <span class="btn-lg icon fa fa-2x fa-envelope-o"></span>
-  </a>
-{% endif %}
+{% macro render_badges() %}
+  {% if bag('badges').get('linkedin_username', None) %}
+    <a target="_new" href="https://linkedin.com/in/{{ bag('badges').get('linkedin_username') }}" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  {% endif %}
+  {% if bag('badges').get('twitter_username', None) %}
+    <a target="_new" href="https://twitter.com/{{ bag('badges').get('twitter_username') }}" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  {% endif %}
+  {% if bag('badges').get('feed', None) %}
+    <a target="_new" href="{{ site.baseurl }}{{ bag('badges').get('feed') }}" alt="Feed" title="Feed">
+      <span class="icon fa fa-2x fa-rss-square"></span>
+    </a>&nbsp;&nbsp;
+  {% endif %}
+  {% if bag('badges').get('github_username', None) %}
+    <a target="_new" href="https://github.com/{{ bag('badges').get('github_username') }}" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  {% endif %}
+  {% if bag('badges').get('facebook_username', None) %}
+    <a target="_new" href="https://www.facebook.com/{{ bag('badges').get('facebook_username') }}" alt="Facebook" title="Facebook">
+      <span class="icon fa fa-2x fa-facebook">Facebook</span>
+    </a>&nbsp;&nbsp;
+  {% endif %}
+  {% if bag('badges').get('portfolio', None) %}
+    <a target="_new" href="{{ bag('badges').get('portfolio') }}" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  {% endif %}
+{% endmacro %}

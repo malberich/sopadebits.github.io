@@ -1,0 +1,13 @@
+{% macro render_site_categories() %}
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    {% for cat in site.query('/categories').filter(F._model == 'category') %}
+      <div class="col-xs-2">
+        <span class="badge">{{ cat.children.count() }}</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="{{cat.path }}/">{{cat.title}}</a>
+      </div>{% endfor %}
+  </div>
+{% endmacro %}
