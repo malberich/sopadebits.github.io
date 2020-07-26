@@ -14,12 +14,12 @@ tags: javascript,big-data,twitter
 body:
 
 <ul>
-<li><a title="Math Fights" href="http://mathfights.com">Math Fights</a>, un juego de "lucha matemática".</li>
-<li><a href="http://www.nytimes.com/2014/04/07/opinion/eight-no-nine-problems-with-big-data.html">Ocho o nueve problemas con el Big Data</a>.</li>
-<li><a href="http://papelesdeinteligencia.com/como-usar-el-buscador-de-twitter">Cómo usar el buscador de Twitter</a>.</li>
-<li><a href="http://elboenuestrodecadadia.com/2014/04/09/las-subvenciones-a-partidos-por-escano-y-voto-en-las-elecciones-europeas-ya-son-el-doble-que-las-de-1989/">Subvenciones a partidos por esca&ntilde;o y voto en las elecciones europeas</a>, en <a href="http://elboenuestrodecadadia.com/">El BOE nuestro de cada día</a>.</li>
-<li><a title="StrongLoop | Managing Node.js Callback Hell with Promises, Generators and Other Approaches" href="http://strongloop.com/strongblog/node-js-callback-hell-promises-generators/">Gestionar el&nbsp;<em>callback hell</em> de Javascript con Promises y otras opciones</a>.</li><br />
-</ul><br />
-Y el video, Javascript asíncrono en Netflix:</p><!--more-->
-<p><iframe src="//www.youtube.com/embed/XE692Clb5LU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    <li><a title="Math Fights" href="http://mathfights.com">Math Fights</a>, un juego de "lucha matemática".</li>
+    <li><a href="http://www.nytimes.com/2014/04/07/opinion/eight-no-nine-problems-with-big-data.html">Ocho o nueve problemas con el Big Data</a>.</li>
+    <li><a href="http://papelesdeinteligencia.com/como-usar-el-buscador-de-twitter">Cómo usar el buscador de Twitter</a>.</li>
+    <li><a href="http://elboenuestrodecadadia.com/2014/04/09/las-subvenciones-a-partidos-por-escano-y-voto-en-las-elecciones-europeas-ya-son-el-doble-que-las-de-1989/">Subvenciones a partidos por esca&ntilde;o y voto en las elecciones europeas</a>, en <a href="http://elboenuestrodecadadia.com/">El BOE nuestro de cada día</a>.</li>
+    <li><a title="StrongLoop | Managing Node.js Callback Hell with Promises, Generators and Other Approaches" href="http://strongloop.com/strongblog/node-js-callback-hell-promises-generators/">Gestionar el&nbsp;<em>callback hell</em> de Javascript con Promises y otras opciones</a>.</li>
+</ul>
+<p>Y el video, Javascript asíncrono en Netflix:</p>
+<iframe src="//www.youtube.com/embed/XE692Clb5LU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 ---

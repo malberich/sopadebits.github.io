@@ -2,10 +2,11 @@
 title = Sopa de bits
 name = Sopa de bits
 model = blog
+locale = es
+description = A blog about data, information and Tech by Mario Alberich
+keywords = Statistics, Data, Experimentation, Technology, Data visualization
 url = https://sopadebits.com
-
-; [packages]
-; lektor-google-analytics = 0.1
+avatar = /static/images/avatar.jpg
 
 [alternatives.es]
 primary = yes
@@ -19,10 +20,11 @@ locale = en_US
 url_prefix = /en/
 
 [packages]
+lektor-google-analytics = 0.1
 lektor-markdown-excerpt = 0.1
 
-[servers.github]
-name = GitHub
-target = ghpages://malberich/sopadebits.github.io
-enabled = yes
-default = yes
+; [servers.github]
+; name = GitHub
+; target = ghpages://malberich/sopadebits.github.io
+; enabled = yes
+; default = yes
