@@ -15,7 +15,7 @@ body:
 
 Durante los dos últimos años mi actividad se ha ido centrando progresivamente en tareas relacionadas con el tratamiento de datos, y más especialmente con tareas de data engineering. Este cambio también ha supuesto un cambio en mi lenguaje de programación, que ahora es Python la mayor parte del tiempo.
 
-Y entre las utilidades y herramientas que he usado, [Luigi][luigi]{:target="_blank"} ha sido un agradable descubrimiento.
+Y entre las utilidades y herramientas que he usado, [Luigi][luigi] ha sido un agradable descubrimiento.
 <!--more-->
 ### ¿Para qué una data pipeline
 En resumen, para poder ejecutar operaciones sobre datos que pueden tener una o varias de estas características:

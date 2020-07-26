@@ -1,14 +1,15 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/post_box.html" import render_post_box %}
 {% from "macros/pagination.html" import render_pagination %}
-{% from "macros/site_tags.html" import render_site_tags %}
 {% block title %}<title>{% if this.title %}{{this.title}} - {% endif %}{{ config.PROJECT.name }}</title>{% endblock %}
 {% block body %}
   <!-- blog layout -->
   {{ render_pagination(this.pagination) }}
+
   {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=True) }}
+    {{ render_post_box(child, from_index=True  ) }}
   {% endfor %}
+
   {{ render_pagination(this.pagination) }}
 {% endblock %}
 {% block tags %}{% endblock %}
