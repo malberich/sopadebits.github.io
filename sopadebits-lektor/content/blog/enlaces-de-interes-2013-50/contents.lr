@@ -1,0 +1,41 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2013-50
+---
+date: 2013-12-15 15:56:18 +0100
+---
+author: Mario Alberich
+---
+categories: matematica,informatica,economia
+---
+tags: visualizacion,demografia,recopilaciones
+---
+body:
+
+<ul>
+<li>Acceso a un PDF sobre <a href="http://kar.kent.ac.uk/21931/1/display_models-ways_roberts.pdf">Sistemas de clasificación de gráficos</a>, parcialmente basado en la semiología de los gráficos de Bertin.</li>
+<li>En un plano más técnico, <a href="http://do.minik.us/blog/oecd-bli-tech">técnicas para desarrollar gráficos con animaciones rápidas en HTML5</a> en el blog de Dominikus Baur.</li>
+<li>Un análisis interesante sobre <a href="https://blog.twitter.com/2013/new-tweets-per-second-record-and-how">el proceso de Twitter para adaptar su arquitectura a su crecimiento</a>.</li>
+<li><a title="38 Tools For Beautiful Data Visualisations | Elisa DBI" href="http://www.elisa-dbi.co.uk/blog/38-tools-for-beautiful-data-visualisations/">38 herramientas para visualización de datos</a>.</li>
+<li>Sobre países y su actividad:
+<ul>
+<li>&iquest;<a href="http://atlas.media.mit.edu/explore/tree_map/net_import/usa/all/show/2010/">Qué exporta Estados Unidos</a>?</li>
+<li>Y en Estados Unidos, <a href="http://www.beehivemedia.com/dataviz/hospitalpricing/">&iquest;cuánto pagarías por una intervención, dependiendo del centro médico?</a></li>
+<li>En Australia, &iquest;<a href="http://www.theguardian.com/news/datablog/interactive/2013/aug/28/australian-migration-refugees-map?view=desktop">De dónde vienen los trabajadores con capacitación</a>?</li>
+<li><a href="http://www.census.gov/dataviz/visualizations/055/">Un siglo de pirámides poblacionales en América</a>.</li><br />
+</ul><br />
+</li></p><!--more-->
+<li><a href="http://datascience101.wordpress.com/2013/08/26/7-important-data-science-papers/">7 Papers importantes</a> en&nbsp;<a title="Donde pone estadístico, lea usted Data Scientist" href="http://www.sopadebits.com/donde-pone-estadistico-lea-usted-data-scientist"><em>Data Science</em></a>.</li><br />
+</ul><br />
+Y la imagen, que <a href="http://www.spiegel.de/politik/deutschland/bundestagswahl-2013-wahlergebnis-grafik-bundestag-wahlkreis-a-923496.html#startTab=1">publicó Der Spiegel</a> después de las elecciones alemanas de este pasado Septiembre: Alemania aún sigue [ideológicamente] dividida. &nbsp;Un <a title="Indicadores: El ajo dorado" href="http://www.sopadebits.com/indicadores-el-ajo-dorado">indicador</a>: los votos que recibió Die Linke por cada municipio. A la izquierda se puede ver en rojo la parte de Alemania oriental (fuente: <a href="http://en.wikipedia.org/wiki/File:Soviet_Sector_Germany.png">Wikipedia</a>). A la derecha, los votos obtenidos por Die Linke (el partido Comunista) en las elecciones de este a&ntilde;o.</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/12/nHNNIvW.png"><img class="wp-image-27529 alignleft" alt="Votos de Die Linke" src="http://www.sopadebits.com/wp-content/uploads/2013/12/nHNNIvW-781x1024.png" width="351" height="460" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/12/Soviet_Sector_Germany.png"><img alt="Soviet_Sector_Germany" src="http://www.sopadebits.com/wp-content/uploads/2013/12/Soviet_Sector_Germany.png" width="411" height="333" /></a></p>
+
+---

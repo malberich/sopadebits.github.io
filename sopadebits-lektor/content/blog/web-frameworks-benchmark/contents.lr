@@ -1,0 +1,22 @@
+---
+_model: blog-post
+---
+title: Web frameworks benchmark
+---
+date: 2013-11-12 12:52:43 +0100
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: frameworks,benchmarking
+---
+body:
+
+<p>Si el rendimiento es algo que te preocupa para una nueva aplicación o servicio que quieres crear, quizá te interese echar un vistazo a la <a title="Framework Bencharmks - Techempower" href="http://www.techempower.com/benchmarks/">séptima ronda del Framework Benchmark</a> de Techempower. &nbsp;Como explican en la <a href="http://www.techempower.com/blog/2013/10/31/framework-benchmarks-round-7/">entrada del &nbsp;blog de Techempower</a>, la prueba ya incluye 84 frameworks y unas 200 permutaciones (combinaciones de tecnología de la pila, como por ejemplo PHP-MySQL-Apache, PHP-MongoDB-Apache, PHP-MySQL-Nginx,...).</p><!--more-->
+<p style="text-align: center;"><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_023.png"><img class="aligncenter  wp-image-27461" alt="Selecció_023" src="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_023.png" width="579" height="463" /></a></p><br />
+Como explican en el apartado de terminología, el término <a href="http://www.techempower.com/benchmarks/#section=motivation&amp;hw=i7&amp;test=json">framework se utiliza aquí de una forma muy laxa</a>, pero no creo que esto sea un problema: al contrario, creo que ayuda a establecer una <em>baseline</em>&nbsp;del rendimiento proporcionado por algunas capas del framework. Además es posible filtrar los resultados según la tecnología utilizada, por lo que se puede evitar cualquier interferencia:</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_024.png"><img class="aligncenter size-medium wp-image-27462" alt="Selecció_024" src="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_024-300x297.png" width="300" height="297" /></a></p>
+<p>Como en otros casos, puedes encontrar el <a href="https://github.com/TechEmpower/FrameworkBenchmarks">código fuente utilizado para los benchmarks en GitHub</a> , por lo que puedes ejecutar las pruebas en un hardware específico, ampliarlas o enviarlos como <em>pull requests</em>.</p>
+
+---

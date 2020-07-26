@@ -1,0 +1,35 @@
+---
+_model: blog-post
+---
+title: El cuarteto de Anscombe, cuando la forma importa
+---
+date: 2014-05-01 09:30:05 +0200
+---
+author: Mario Alberich
+---
+categories: matematica
+---
+tags: muestreo-estadistico,visualizacion,exploracion-de-datos
+---
+body:
+
+<p>Tómate un minutillo para hacer unos cálculos sobre estas dos muestras de datos:</p><!--more-->
+<ul>
+<li>1, 2, 3, 4, 5</li>
+<li>1, 2, 3, 4, 100</li><br />
+</ul><br />
+&iquest;Cuál es la media? &iquest;Y la mediana?</p>
+<!--more-->
+<p>Si lo has calculado, habrás comprobado que la media se adapta al valor extremo (100), por lo que cambia de 3 a 22, pero que en cambio la mediana se mantiene impasible ante el cambio.</p>
+<p>Lo primero que pasa por la mente de mucha gente es que han cometido un error al calcular. La segunda fase es que la fórmula o el sistema de cálculo está equivocado: &iquest;Para qué quiero que la mediana se mantenga inmóvil después de un cambio tan extremo? Y aquí es cuando llegamos al meollo del asunto: la media y la mediana se crearon para fines muy distintos.</p>
+<h2>Hormas, zapatos, árboles y bosques</h2><br />
+Los métodos numéricos se comportan perfectamente para extraer porciones de información de cada individuo y luego ponerlas en común para toda la muestra, aplicando algún tipo de agregación. Sin embargo la potencia de estos procesos parece reducirse cuando entra nuestra capacidad humana de interpretar los datos mediante métodos menos lineales, como la forma de los datos en cuanto los representamos.</p>
+<p>Porque eso es lo que sucede cuando representamos los datos en al menos dos dimensiones: lo que nuestro razonamiento sudará para encontrar, nuestro ojo lo procesa en décimas de segundo.</p>
+<h2>El cuarteto de anscombe: cuando las cifras no lo explican todo</h2><br />
+[caption id="attachment_27850" align="alignleft" width="300"]<a href="http://www.sopadebits.com/wp-content/uploads/2014/04/anscombe_quartet.png"><img class="size-medium wp-image-27850" alt="anscombe quartet" src="http://www.sopadebits.com/wp-content/uploads/2014/04/anscombe_quartet-300x218.png" width="300" height="218" /></a> anscombe quartet[/caption]</p>
+<p>La imagen lateral son cuatro gráficos, conocidos como el <a title="Wikipedia - Anscombe's quartet" href="http://en.wikipedia.org/wiki/Anscombe's_quartet">cuarteto de Anscombe</a>, y son un ejemplo clave para entender <a title="Visualizar para inducir, analizar para deducir" href="http://www.sopadebits.com/visualizar-datos-explorar">la diferencia entre nuestra capacidad para procesar números y para identificar los gráficos</a>.</p>
+<p>En los cuatro gráficos, los valores para los principales indicadores estadísticos (media y varianza de x e y, correlación) y la recta de regresión, son idénticos (hasta el tercer decimal). Si tapáramos los gráficos anteriores y sólo mostráramos los indicadores anteriores, sería muy difícil deducir las grandes diferencias entre ellos.</p>
+<p>Es en estas situaciones, especialmente cuando en un proceso de análisis pueden aparecer gráficos tan dispares (lo cierto es que no siempre es así), en el que el análisis exploratorio de datos y la representación gráfica nos ayuda a tener una idea de lo que los datos nos deparan.</p>
+<p>Al fin y al cabo, el análisis y la representación gráfica pueden cooperar.</p>
+
+---

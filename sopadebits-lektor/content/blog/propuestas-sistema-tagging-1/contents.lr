@@ -1,0 +1,43 @@
+---
+_model: blog-post
+---
+title: Propuestas para un sistema de tagging - 1
+---
+date: 2007-10-11 00:00:00 +0200
+---
+author: Mario Alberich
+---
+categories: informatica,documentacion
+---
+tags: productividad,tagging
+---
+body:
+
+<p><br />
+<h2>Morfología del tag</h2>
+<p>Uno de los aspectos clave que para mí debe ofrecer un sistema de organización de tags es la capacidad para indicar al sistema que el tag en sí no es un término a secas, sino que se trata de un conjunto interpretable morfológicamente.</p>
+<p>La morfología de un tag puede venir por una estructura de este estilo:</p>
+<p>[prefijo][contexto][concepto][sufijo] </p>
+<p>Por ejemplo:</p>
+<p>**geo:country=spain(?)</p>
+<p>El análisis morfológico para el sistema indicaría lo siguiente:</p>
+<ul>
+<li>**: Es un prefijo que podría indicar la importancia (dos estrellas) de esa etiqueta en el conjunto, aunque podría indicar otras cosas.  </li>
+<li>geo: Se nos está indicando una información de tipo geográfico.</li>
+<li>country: En esencia es lo equivalente a un campo de formulario. Aunque a nivel documental, <a href="/facetas-aplicaciones-en-informatica" title="Sopadebits: Facetas - aplicaciones en informática">podemos considerarlo una faceta</a>. </li>
+<li>(?): Indicaría las garantías de veracidad de la información, aunque también podría indicar otro tipo de modificadores.</li></ul>
+<p>Esto no es especialmente novedoso: se denominan <a href="http://www.limalimon.com.es/2007/02/01/tagging-avanzado-machine-tags/" title="lima-limón: tagging avanzado, machine tags">machine tags</a>, concepto que ya disponde de un <a href="http://machinetags.org/" title="Machine Tags">site propio</a>,  aunque otros lo llaman <a href="http://geobloggers.com/archives/2006/01/11/advanced-tagging-and-tripletags/" title="geobloggers - triple tags">triple tags</a>.</p>
+<p>El concepto no nada es innovador, aunque es valiente que sitios como Flickr hayan activado estas funcionalidades (por lo que se ve en geobloggers, hace casi dos a&ntilde;os).</p>
+<p>Documentalistas e informáticos están habituados (de un modo u otro) a este tipo de gestión de la información.  Los primeros por el constante trabajo con los metadatos, aunque con una sintaxis diferente.  Los segundos, porque en el momento de compilar programas (especialmente en entornos Unix) aparecen las <em>flags</em>, que son opciones de configuración, algunas de las cuales incluyen parámetros y valores.</p><br />
+<h2>Aplicabilidad de los tags  </h2>
+<p>También existen trabajos como el del <a href="http://eprints.rclis.org/archive/00010445/" title="@toread and Cool : Tagging for Time, Task and Emotion">análisis de tags emocionales y operativos realizado por Margaret E. Kipp</a>, que nos indica que el etiquetado no sólo es un lenguaje no controlado, sino también algo más íntimo y/o operativo. No queda claro cuál es la causa y cuál el efecto: es incontrolado porque es personal, o se hace personal por hacerse incontrolado.</p>
+<p>Lo que aflora a la vista de las posibilidades indicadas por Kipp es que la falta de control no significa que exista una falta de criterio, sino que simplemente los criterios no están consensuados, ni objetivados.</p>
+<p>Cuando es un servicio ajeno a nuestro entorno local de trabajo (un servicio web como del.icio.us) el que ofrece esas funcionalidades, es comprensible que los sistemas de etiquetado y anotaciones (como las que ofrece <a href="http://www.diigo.com/" title="Diigo">diigo</a>) sirven para contentar y satisfacer gran cantidad de necesidades.</p><br />
+<h2>Vivo en la red, trabajo en mi ordenador </h2>
+<p>Sin embargo, hay que dar un paso más: aunque los servicios hayan nacido en la web social, cada vez existe un mayor interés en poder disponer de los datos off-line, en el propio disco duro o en el teléfono móvil, y sincronizarlos cuando sea preciso. </p>
+<p>Ante este paso adelante, el tagging no sólo sirve para el etiquetado de los recursos ajenos, sino también los personales: la lista de tareas pendientes, la agenda, los contactos, los correos electrónicos, los documentos propios, los favoritos (o en un sentido más amplio, las referencias), la colección de música, fotografías,...</p>
+<p>Este etiquetado universal, dejando de lado por un momento los tags compuestos, podría ofrecer funcionalidades del tipo: &laquo;puedes buscar el tag "pepito" y te recupera todos los documentos, temas pendientes...&raquo;. Esta recuperación se basa en el principio que el texto buscado informa <em>sobre</em> el contenido.  Este planteamiento de considerar los tags como simples portadores de lo que en inglés denominan <em>aboutness</em> es una visión reduccionista que en un entorno social de etiquetado, lo <a href="http://www.veaseademas.com/archivos/2006/07/exhaustividad_y.html" title="Véase además: Exhaustividad y Precisión en los SRIs basados en tags">único que consigue es provocar ruido</a>. En cierto modo sólo es una evolución más de la búsqueda full-text.</p>
+<p>Al introducir funcionalidades basadas en tags compuestos, permitimos el tratamiento de metadatos, la inclusión de facetas, y muchas posibilidades (por ejemplo, indexar utilizando la CDU: *cdu=...).</p>
+<p>(Continuaré comentando este tema en otro post).</p></p>
+
+---

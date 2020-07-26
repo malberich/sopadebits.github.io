@@ -1,0 +1,29 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2014-10
+---
+date: 2014-03-09 09:30:14 +0100
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: recopilaciones,webrtc,probabilidad
+---
+body:
+
+<ul>
+<li><a href="http://techcrunch.com/2014/02/13/please-dont-tell-me-you-want-to-be-the-next-red-hat/">No intentes crear un nuevo Red Hat</a>, en <a href="http://techcrunch.com/">Techcrunch</a>.</li>
+<li><a href="http://setosa.io/conditional/">Visualizar la probabilidad condicional</a>.</li>
+<li><a href="http://www.html5rocks.com/en/tutorials/webrtc/datachannels/">Tutorial sobre WebRTC</a>, una tecnología HTML5 que creo será familiar en un futuro próximo.</li>
+<li>Por si no te has enterado, Twitter da acceso a sus datos para investigadores, con las <a href="https://blog.twitter.com/2014/introducing-twitter-data-grants">Twitter Data Grants</a>.</li>
+<li><a href="https://github.com/kogmbh/WebODF">WebODF, javascript para mostrar y editar documentos ODF online</a>.</li>
+<li><a href="http://stratajs.org/">StrataJS</a>, un <em>streaming HTTP server</em> para <a href="http://nodejs,org/">nodeJS</a>.</li>
+<li><a href="http://prez.nkb.fr/intro-ddj-bari">Data Driven Journalism, el qué el cómo y el dinero para hacerlo</a>.</li><br />
+</ul><br />
+Y un video sobre el uso de streams en NodeJS, acompa&ntilde;ado de un artículo en el blog del autor explicando el <a title="Full Streams Ahead" href="http://dry.ly/full-streams-ahead">uso de los streams en Node</a>:</p><!--more-->
+<p><iframe src="//player.vimeo.com/video/75838237" height="281" width="500" allowfullscreen="" frameborder="0"></iframe></p>
+<p><a href="http://vimeo.com/75838237">Full Streams Ahead</a> from <a href="http://vimeo.com/jsla">JSLA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+---

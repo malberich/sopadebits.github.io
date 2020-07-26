@@ -1,0 +1,46 @@
+---
+_model: blog-post
+---
+title: Clustering en recursos corporativos y generalistas
+---
+date: 2008-03-03 00:00:00 +0100
+---
+author: Mario Alberich
+---
+categories: documentacion
+---
+tags: tagging,clustering,recuperacion-informacion
+---
+body:
+
+<p><br />
+<h2>Colecciones y algoritmos</h2>
+<p>la colección corporativa generada por unos pocos usuarios (denominado Labbies), y una selección de recursos etiquetados en del.icio.us, que se tomará como muestra de colección externa.</p>
+<p>Se quiere analizar dos algoritmos que en último término deberían permitir la selección de etiquetas para facilitar la navegación por los recursos.</p>
+<p>Los dos algoritmos utilizados se denominan tag <em>co-ocurrence divisive clustering</em> y <em>betweenness centrality clustering</em>.</p>
+<p>En el primer caso se puede entender la co-ocurrencia como una correlación que hay entre dos tags (cuanto más coinciden en el etiquetado de recursos, más correlacionados están).  Este algoritmo tiene efectos sobre entornos temáticamente relacionados, y no entra a fondo en la estructura general de la colección.</p>
+<p>Al aplicar el algoritmo de la coocurrencia, las correlaciones inferiores a un determinado umbral (un valor mínimo) quedan descartadas por ser muy débiles.  Tras este proceso de selección de relaciones, ya se puede visualizar la relación entre etiquetas, e identificar los subgrupos (clusters).</p>
+<p>En el segundo caso se aplica un algoritmo que analiza el conjunto de <strong>caminos entre nodos</strong>.  Dentro de estos caminos se seleccionan los arcos que forman parte de un mayor número de <strong>rutas más cortas</strong>, lo que implícitamente supone que son los más bien vinculados del conjunto.  Computacionalmente, este segundo algoritmo es mucho más costoso, aunque existen métodos para la reducción de esta complejidad. A diferencia del algoritmo de coocurrencia, en este caso se prima más la <strong>visión de conjunto</strong>.</p>
+<p>Seleccionando un tema de interés (en este caso, el uso del tag <em>dspace</em>) se recogen los datos de ambas fuentes.  En el caso de del.icio.us se crea un subconjunto de datos fruto de un proceso de limpieza que consiste en tareas de homonimia/sinonimia y la eliminación de tags inherentemente ruidosos</p><br />
+<h2>Resultados para Labbies</h2>
+<p>Aplicando el algoritmo de co-ocurrencia se comprueba que el algoritmo prioriza la detección de tags relacionados o similares.  Por lo tanto la "similitud" es el factor clave.</p>
+<p>Por otro lado se identifica un conjunto de tags no afiliados completamente a un cluster, sino que más bien están a medio camino entre dos clusters diferentes.  Estos tags normalmente se identifican con términos genéricos o ambiguos.</p>
+<p>En el caso del algoritmo betweenness centrality se verifica que hay un grado menor de disgregación (menos clusters) pero también mayor homogeneidad de tama&ntilde;o entre ellos.</p>
+<p>No se puede determinar si hay uno de los dos algoritmos que sea más potente que el otro de cara a aumentar la recuperación de información en este entorno corporativo.</p><br />
+<h2>Resultados con del.icio.us</h2>
+<p>Al disponer de un número mayor de datos, el proceso de cálculo y visualización de los clusters de del.icio.us fue más largo y complejo.</p>
+<p>Además de eso, se produce una generalización en la temática de cada cluster, incluyendo relaciones que semánticamente están alejadas.</p><br />
+<h3>Coocurrencia en del.icio.us</h3>
+<p>El resultado de aplicar este algoritmo es que se generan grandes clusters, que además presentan relaciones débiles.  Esto viene dado por un efecto de "coche escoba": los ítems raros se acaban afiliando a una gran masa que acaba formando un cluster principal.</p>
+<p>Para evitar este efecto, y con la ayuda de técnicas de visualización se aplica un umbral de co-ocurrencia de 0,142, que genera una agrupación mejorada, aunque conlleva el sacrificio de una gran cantidad de tags.</p>
+<p>Este coeficiente demostró ser diferente para cada conjunto de datos (Labbies, del.icio.us y del.icio.us limpiado), lo que implica una mayor generalización.</p><br />
+<h3>Betweenness centrality en del.icio.us</h3>
+<p>En el caso de este algoritmo se generó un gran cluster que no se pudo desmembrar ni siquiera con técnicas de filtrado.</p>
+<p>La principal consecuencia es que es mucho más complejo producir cluster de un tama&ntilde;o adecuado para ser visualizables y favorecer a la navegación por tags como medio para la recuperación de información. Por lo tanto el algoritmo de betweenness centrality no es la mejor opción para <em>descuartizar</em> colecciones de etiquetas.</p><br />
+<h2>Enfoque futuro</h2>
+<p>El principal problema de la aplicación de algoritmos de clustering es que se generan grandes subgrupos.  Esto representa un problema para la navegación del usuario.  Por lo tanto, es interesante profundizar en las técnicas de división de estos macro-clusters. Conseguirlo permitiría una navegación más sencilla y una interficie menos cargada de información. </p>
+<p>No lo apuntan los autores, pero quizá exista la posibilidad de aplicar iterativamente ambos algoritmos: betweenness a alto nivel y coocurrencia en clusters grandes).  Quizá con una mínima heurística se podría llegar más al fondo de la cuestión. </p>
+<p>Otro aspecto interesante al que se apunta es a la definición de <strong>jerarquías de clusters</strong>, lo que permitiría un primer nivel de macro-navegación (en forma de áreas temáticas generales), y luego profundizar en clusters temáticamente más delimitados.</p>
+<p>Más allá del contenido del artículo, lo más interesante de este tipo de estudios es comprobar hasta qué punto afecta la selección de uno u otro algoritmo para la organización de la información (y en este caso a su recuperación). Como ejemplo aplicado a las colecciones de recursos, creo que es muy pedagógico.</p></p>
+
+---

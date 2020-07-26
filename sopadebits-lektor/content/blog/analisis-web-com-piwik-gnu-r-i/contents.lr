@@ -1,0 +1,37 @@
+---
+_model: blog-post
+---
+title: Análisis web com Piwik y GNU R (I)
+---
+date: 2008-09-15 00:00:00 +0200
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: utilidades,fuentes-de-informacion,testeo
+---
+body:
+
+<p>
+<p>La principal debilidad en el lado del cliente es que la recogida de estos datos funciona con javascript, por lo que si el navegador lo tiene desactivado, estos datos no se recogen. (Ref. a diferencias entre log servidor y cliente).</p>
+<p>Para organizar esta información, normalmente se estructura en base a usuarios, visitas, y páginas vistas.&nbsp; Hay <a href="http://www.webanalyticsassociation.org/attachments/committees/5/WAA-Standards-Analytics-Definitions-Volume-I-20070816.pdf" title="Web Analytics Association - Definitions">un documento con definiciones muy bien planteadas (PDF)</a>&nbsp; para esta información básica en el <a href="http://www.webanalyticsassociation.org/" title="Web Analytics Association">sitio de la Web Analytics Association</a>.&nbsp; Para estructurar esta información se utiliza como elemento base el código de sesión. Este código es un valor único que el navegador del usuario almacena en su <a href="http://es.wikipedia.org/wiki/Cookie" title="Wikipedia en Espa&ntilde;ol: cookie">cookie</a> .</p>
+<p>Normalmente el servidor elimina los datos de sesión al cabo de un tiempo después del a última petición del usuario (pocos minutos por lo general), mientras que el navegador puede borrar la cookie cuando caduque o cuando el usuario lo solicite.&nbsp; La diferencia entre la información a nivel cliente y servidor es el quebradero de cabeza para desglosar usuarios y visitas.&nbsp; Sabemos con bastante fiabilidad cuándo se inicia o se acaba una visita, pero no podemos tener claro si una nueva visita se corresponde con un usuario anterior si la cookie se ha borrado.</p>
+<p>En cambio, si la cookie existe, volverá a enviar el código de la última visita.&nbsp; El gestor de analíticas habrá almacenado este código para poder identificar a ese usuario, y aunque le asigne un código nuevo, ya dispondrá de una relación entre dos visitas.</p>
+<p>A este embrollo hay que a&ntilde;adir que un equipo no se corresponde con un usuario.&nbsp; Los cibercafés, los PCs en centros académicos y el ordenador "de la familia" son ejemplos claros de este hecho.&nbsp; Por lo tanto, la fiabilidad de los usuarios únicos es relativa, mientras que las páginas vistas y las visitas son datos mucho más fiables.</p>
+<p>Con estos tres niveles de datos se pueden extraer informaciones interesantes.&nbsp; Algunas de ellas son indicadores de sobra conocidos, como las páginas por visita, tiempo entre dos visitas de un usuario, páginas más vistas, etc.<br /> <br /> Hasta aquí la teoría básica de las analíticas web.&nbsp; Hay muchos recursos al respecto, el problema es filtrar qué recursos son más interesantes.</p><br />
+<h2>Uso de Piwik</h2>
+<p> El siguiente paso es tener acceso a estos datos.&nbsp; Hay variedad de formas, aunque los más conocidos son el análisis de logs del servidor (análisis transaccional). Dado que puede interesar disponer de más información que la que proporciona el servidor, yo voy a utilizar los datos que proporciona la aplicación Piwik, una herramienta de código abierto desarrollada con PHP y con licencia GPL que permite acceder a esta información ya estructurada en una base de datos MySQL.</p>
+<p>Visto lo anterior, escojo <a href="http://piwik.org/" title="Piwik">Piwik</a>  como herramienta de analítica web porque me permite acceder de forma estructurada a los datos, pero hay otras que también permiten esas funcionalidades. Está por ejemplo <a href="http://www.phpmyvisites.us/" title="PHPMyVisites">PHPMyVisits</a> , que incluye además una funcionalidad para obtener el <em>heatmap</em> de clics de los usuarios (integrando <a href="http://www.labsmedia.com/clickheat/index.html" title="Labsmedia: Clickheat">ClickHeat</a>  desarrollado por <a href="http://www.labsmedia.com/" title="LabsMedia">labsmedia</a> ).</p>
+<p>Volviendo a Piwik, su web proporciona una imagen sencilla de su _esquema de la base de datos_ que almacena la información de la aplicación.&nbsp; En este esquema, hay que destacar tres tablas, que son las que almacenan los datos de navegación como tales:<br /></p>
+<ul>
+<li><strong>piwik_log_visit</strong>: Almacena los datos relativos a una visita.&nbsp; Dado que se espera que cada visita mantenga los parámetros de equipo y navegador, no es necesario generar redundancia a cada clic del usuario.&nbsp; Esta tabla incluye datos sobre cookie, localización, página de origen (<a href="http://en.wikipedia.org/wiki/Referer" title="Wikipedia en inglés: HTTP Referer">referer</a> ), opciones del navegador y del equipo, etc.</li>
+<li><strong>piwik_log_link_visit_action</strong>: Almacena los datos de la página vista.&nbsp; Esto incluye un código único de URL actual (lo comento en la siguiente tabla), código de URL de origen, y el tiempo de estancia en esta página.&nbsp; Esta tabla será importante en el momento de realizar un análisis de la navegación.&nbsp; <br /></li>
+<li><strong>piwik_log_action</strong>: Es una tabla auxiliar donde se almacenan las URL solicitadas, un registro por URL.<br /></li></ul>
+<p>A todo esto hay que decir que Piwik genera tablas-resumen mensuales de los datos.&nbsp; Estas tablas se tienen el formato <em>piwik_archive_numeric_A&Ntilde;O_MES</em> y <em>piwik_archive_blob_A&Ntilde;O_MES</em>. Estas tablas ayudan a mantener un tama&ntilde;o reducido de las tablas anteriores, y siguen permitiendo el acceso a los datos básicos de fechas (tablas ..._numeric_...) o a los datos completos (tablas ..._blob_...).</p>
+<p>Con todo esto, sólo queda a&ntilde;adir que el prefijo piwik de todas las tablas viene por defecto pero es posible cambiarlo en la fase de instalación de la aplicación.</p>
+<p>La razón de existencia de la última tabla es que evita la redundancia de p<em>iwik_log_link_visit_action</em>. Teniendo en cuenta que esta es la tabla que almacenará más datos, esto es importante para la agilización en la inserción de datos.</p>
+<p>Analizando más a fondo la tabla <em>piwik_log_visit</em>, podemos ver que existen los campos <em>visitor_idcookie</em> y <em>visitor_returning</em>.&nbsp; Estos datos nos permiten relacionar visitas para identificar a los "usuarios únicos", siempre teniendo en cuenta las consideraciones que comentaba antes.<br /> <br /> Con estas tres tablas tenemos la estructura usuario-visita-página, necesaria para empezar a extraer información de forma estructurada.</p>
+<p>En el próximo post empiezo a comentar las consultas SQL para extraer datos, los objetivos del análisis y su aplicación en GNU R.</p></p>
+
+---

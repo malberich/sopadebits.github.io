@@ -1,0 +1,24 @@
+---
+_model: blog-post
+---
+title: Chartbuilder abre su código - Basado en d3.js
+---
+date: 2013-09-30 08:13:19 +0200
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: datos-abiertos,d3js,school-of-data
+---
+body:
+
+<div>No he tenido la ocasión de probar esta herramienta, aunque probablemente se puede sumar a la<a title="Utilidades basadas en D3.js" href="http://sopadebits.com/utilidades-basadas-en-d3-js"> lista de utilidades que proponía School of Data para simplificar el uso de D3</a>.</div></p><!--more-->
+<div></div></p>
+<div>En este caso se trata de&nbsp;<a href="https://github.com/Quartz/Chartbuilder/" target="_blank" shape="rect">Chartbuilder, disponible en Github</a>, bajo&nbsp;<a href="https://github.com/Quartz/Chartbuilder/blob/master/LICENSE" target="_blank" shape="rect">licencia MIT</a>, liberado hace apenas dos meses.</div></p>
+<div></div></p>
+<div>Leí la&nbsp;<a href="http://www.niemanlab.org/2013/07/how-to-turn-everyone-in-your-newsroom-into-a-graphics-editor/" target="_blank" shape="rect">noticia a través del blog de Nieman Journalism Lab</a>. Cada vez se demuestra más importante la habilidad para trabajar con gráficos que simplifiquen la presentación de datos. No es un problema nuevo. Como en el mismo artículo comentan,&nbsp;<a href="http://krugman.blogs.nytimes.com/2009/06/17/making-charts-for-curious-readers/?_r=0" target="_blank" shape="rect">Paul Krugman se lamentaba de ello en el 2009</a>. Y probablemente muchos otros antes.</div></p>
+<div></div></p>
+<div>Seguirán apareciendo herramientas de este estilo. No sé cuánto tardaremos en ver niveles de interactividad y versatilidad similares a herramientas comerciales como&nbsp;<a href="http://www.tableausoftware.com/" target="_blank" shape="rect">Tableau</a>, pero es cuestión de tiempo.</div></p>
+
+---

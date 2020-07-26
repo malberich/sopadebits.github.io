@@ -1,0 +1,63 @@
+---
+_model: blog-post
+---
+title: Open Flash Chart 2 - Mejorando los gráficos estadísticos
+---
+date: 2009-03-11 00:00:00 +0100
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: flash,graficos-estadisticos
+---
+body:
+
+<p><br />
+<h2>El Cambio a JSON</h2><br />
+En la <a title="Open Flash Chart 1" href="http://teethgrinder.co.uk/open-flash-chart/">versión 1 de OFC</a>, el formato para transferir los datos era el "nativo" de Flash.&nbsp; Esto implicaba que los datos estaban incluidos <em>&amp;entre ampersands&amp;</em>.&nbsp; Ante las pocas posibilidades del formato, uno puede esperar cualquier problema derivado de entidades HTML, etiquetas con un simple signo &amp; o cualquier otra cosa.</p>
+<p>Con el cambio, los datos se transfieren con una estructura equivalente a la que podría incluir una matriz de datos, para luego ser capturados e interpretados por el archivo SWF en el navegador.</p>
+<h2>Implantación</h2><br />
+Como efecto secundario positivo, es más fácil implantar una solución con esta versión.&nbsp; Esto incluye el desarrollo de funcionalidades (si no satisfacen las bibliotecas en entorno servidor disponibles en el sitio), su integración, depuración y testeo. Por no hablar del soporte <a title="UTF8" href="http://www.utf-8.com/">UTF8</a> de Flash y JSON, algo teóricamente básico pero a veces dramático (es de esperar que PHP6 solucione esto de una vez). Todo esto parece simplificarnos la vida en el desarrollo.</p>
+<p>La opción de crear una biblioteca alternativa a las ya existentes puede tener sentido por cuestiones de simplificación.&nbsp; Por ejemplo, en la versión PHP5 de la biblioteca las funcionalidades se encuentran disgregadas en varias clases y archivos.&nbsp; Quizá esta estructura tenga sentido en el futuro para albergar gran cantidad de configuraciones, pero actualmente parece excesiva. Por otro lado, las aplicaciones potenciales de la biblioteca en un caso concreto pueden ser muy concretas, con lo que simplificar el código del servidor puede reducir levemente el tiempo de carga (esto se puede notar en sitios con altas tasas de tráfico, no en el resto).</p>
+<p>Actualmente casi todos los tipos de gráficos comparten una gran cantidad de las caracter&Atilde;&shy;sticas de configuración, mientras que sólo en algunos casos concretos se utilizan atributos o estructuras de valores diferentes.&nbsp; Esto dice mucho en favor de la parte cliente (el archivo SWF Flash que se inserta en la página para mostrar el gráfico) de OFC, pero poco en favor de la parte servidor (la biblioteca PHP5 al menos). De todos modos esta crí&shy;tica es muy relativa: creo que se trata de una visión de futuro por parte del creador del proyecto, que se verá en versiones posteriores. Hay que tener algo de paciencia.</p>
+<h2>Modelo de datos</h2><br />
+Para entender las posibilidades que ofrece OFC2, hay que ir un poco más al fondo en la estructura de la configuración de un gráfico.&nbsp; Resumiendo las caracterí&shy;sticas principales del modelo de datos, se puede diferenciar entre la configuración del gráfico como elemento genérico y la representación de cada serie de datos.&nbsp; En la primera parte se puede configurar el gráfico a nivel de cabecera, y luego pasar a configurar cada grupo de datos (serie).</p>
+<h3>Cabecera del gráfico</h3><br />
+En el caso de la cabecera podemos encontrar los siguientes elementos de configuración:</p>
+<ul>
+<li><strong>title</strong>: Texto y estilo (en formato tipo CSS) del tí&shy;tulo principal del gráfico.</li>
+<li><strong>y_legend</strong>: Texto y estilo del eje vertical.&nbsp; Esto no es aplicable en gráficos como el diagrama de sectores.</li>
+<li><strong>x_axis</strong>: Caracterí&shy;sticas de configuración del eje horizontal del gráfico.&nbsp; Estas caracterí&shy;sticas incluyen el grueso y color del eje, sus etiquetas, y otros detalles.</li>
+<li><strong>y_axis</strong>: Prácticamente idéntico al caso de x_axis, salvo en detalles, como definir los valores del límite inferior y superior del gráfico.</li><br />
+</ul><br />
+Todos estos elementos son opcionales, por lo que se pueden dejar de lado al iniciar los testeos iniciales y entrar a fondo cuando sea cuestión de dejarlo bonito. En los casos de gráficos que no tienen ejes de coordenadas X-Y (como los gráficos de sectores), las configuraciones de coordenadas pueden ser directamente inútiles porque los gráficos no lo necesitan.</p>
+<h3>Elementos del gráfico</h3><br />
+Cada representación gráfica de datos se denomina Element en la biblioteca OFC2, y se encuentra incluido en el apartado "elements" de la configuración.&nbsp; Para crear un diagrama de barras, de sectores o cualquier otro se define un elemento con su configuración concreta.&nbsp; Esta configuración debe adaptarse a la configuración de cabecera, básicamente en lo relativo a escala y etiquetas.</p>
+<p>Muchos de los atributos de configuración de cada gráfico son comunes, entre los cuales podemos encontrar los siguientes:</p>
+<ul>
+<li><strong>type</strong>: Es el que define el tipo de gráfico.&nbsp; Los tipos disponibles por ahora son: pie, bar, bar_glass, bar_3d, hbar, line, scatter, scatter_line, line_dot, line_hollow, y area_hollow (en este caso es posible crear gráficos de tipo radar).</li>
+<li><strong>alpha</strong>: Transparencia del gráfico.&nbsp; Cuanto menor es el valor, más transparencia.</li>
+<li><strong>colour</strong>: Color de la serie de datos, en formato hexadecimal.</li>
+<li><strong>text</strong>: Texto de la leyenda que etiqueta la serie.</li>
+<li><strong>font-size</strong>: Tama&Atilde;&plusmn;o de la fuente de las etiquetas de datos (no de la leyenda).</li>
+<li><strong>values</strong>: Listado de valores de la serie.&nbsp; En este campo hay peque&ntilde;as variaciones (en algunos casos hay que indicar dos valores), y en el gráfico de sectores hay que indicar el par valor/etiqueta).</li><br />
+</ul><br />
+Otras configuraciones (en principio específicas) que podemos encontrar son:</p>
+<ul>
+<li><strong>animate</strong>: Crea una agradable animación del gráfico para desplegar los datos.&nbsp; en algunos casos (por ejemplo del gráfico de sectores, "pie") el grafico se inicia plegado y se abre en abanico hasta cerrar el c&Atilde;&shy;rculo. Puede ser que no funcione en todos los casos.</li>
+<li><strong>stroke</strong>: Tama&ntilde;o de la línea delimitadora del gráfico.</li>
+<li><strong>dot-size</strong>: Tama&ntilde;o del punto en el gráfico de lí&shy;neas con puntos (line_dot), entre otros.</li><br />
+</ul></p>
+<h2>Algunos ejemplos</h2><br />
+He generado algunos ejemplos con datos estáticos para mostrar algunos ejemplos.&nbsp; En el apartado de tutoriales del sitio podéis encontrar muestras de gráficos con enlaces a sus archivos de configuración, con lo que es suficiente para profundizar en el modelo de datos.</p>
+<p>&nbsp;</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="250" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" /><param name="quality" value="high" /><param name="flashvars" value="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4502-ofc2-grafic1.txt" /><embed type="application/x-shockwave-flash" width="500" height="250" src="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4502-ofc2-grafic1.txt" align="middle"></embed></object></p>
+<p>&nbsp;</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="250" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" /><param name="quality" value="high" /><param name="flashvars" value="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4503-ofc2-grafic2.txt" /><embed type="application/x-shockwave-flash" width="500" height="250" src="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4503-ofc2-grafic2.txt" align="middle"></embed></object></p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="250" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" /><param name="quality" value="high" /><param name="flashvars" value="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4506-ofc2_grafic3.txt" /><embed type="application/x-shockwave-flash" width="500" height="250" src="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4506-ofc2_grafic3.txt" align="middle"></embed></object></p>
+<h2>Comentarios</h2><br />
+Desde el punto de vista de la implantación, la versión 2 de OFC es mucho más simple, aunque su configuración queda reservada a desarrolladores y no como utilidad (widget) para usuarios finales. Eso es una cuestión a mejorar en cualquiera de estos tipos de bibliotecas, algo que facilitaría su popularización. Me gustarí&shy;a publicar un peque&ntilde;o asistente de creación de gráficos <em>standalone</em> (introducir la configuración y los datos, y obtener el código para incrustarlo): queda apuntado en la lista de tareas pendientes.</p>
+<p>Por otro lado, OFC2 sigue siendo una biblioteca sencilla en cuanto a la variedad de gráficos que se pueden utilizar, aunque han mejorado.&nbsp; También hay que decir que con esta nueva versión parecen sentarse buenas bases para el desarrollo de una herramienta completa y potente. Por lo tanto, habrá que esperar a nuevas versiones para ver más tipos de gráficos.</p>
+
+---

@@ -1,0 +1,27 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2014-9
+---
+date: 2014-03-02 09:00:21 +0100
+---
+author: Mario Alberich
+---
+categories: informatica,economia
+---
+tags: big-data,nodejs
+---
+body:
+
+<ul>
+<li>Datos sobre el <a href="http://www.kurzweilai.net/are-bots-taking-over-wikipedia">uso de bots para mantener los contenidos de wikipedia</a>, vía <a href="http://thegovlab.org/are-bots-taking-over-wikipedia/">The GovLab</a>.</li>
+<li><a href="https://medium.com/tech-talk/e7c0b0e5ce3c">Siete trucos para los programadores de NodeJS</a>.</li>
+<li><a href="http://anvoz.github.io/world-js/">worldJS</a>, una simulación (sencilla) de la historia.</li>
+<li><a href="http://www.informationweek.com/big-data/big-data-analytics/16-top-big-data-analytics-platforms/d/d-id/1113609 ">Las mayores empresas dedicadas al Big data</a>, con Hadoop y compa&ntilde;ia como grandes protagonistas.</li>
+<li>Una selección de <a href="http://thegovlab.org/govlab-selected-readings-on-open-data/">lecturas recomendadas sobre Open Data</a>&nbsp;en GovLab.</li><br />
+</ul><br />
+&nbsp;</p><!--more-->
+<p>Y para acabar, un video sobre la refactorización (semi)automática de código Javascript:</p>
+<p><iframe src="//www.youtube.com/embed/eS51T1hT9Z0" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+
+---

@@ -1,0 +1,24 @@
+---
+_model: blog-post
+---
+title: Big data, Big insights, y plantear bien las preguntas
+---
+date: 2013-09-23 20:02:02 +0200
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: visualizacion,nyt
+---
+body:
+
+<p>Sinan Aral ha presentado en HBR una muestra de <a href="http://blogs.hbr.org/cs/2013/08/visualizing_how_online_word-of.html">lo que están trabajando en el departamento de I+D del New York Times</a>. En el artículo "<a href="http://blogs.hbr.org/cs/2013/08/visualizing_how_online_word-of.html">To Go from Big Data to Big Insight, Start with a Visual</a>", lo explican con detalle y fantásticas visualizaciones.</p><!--more-->
+<p>&iquest;Por qué lo hacen?</p>
+<blockquote><p>&nbsp;More importantly we are interested in how the word-of-mouth conversation drives <strong>readership</strong>, <strong>subscriptions</strong>, and <strong>ad revenue</strong>; how the&nbsp;Times&nbsp;can <strong>improve their own participation</strong> in the conversation to drive engagement; how we can identify <strong>truly influential readers</strong> who themselves drive engagement; and how the&nbsp;Times&nbsp;can then engage these influential users in a way that complements the users' own needs and interests.</blockquote><br />
+Estas son las preguntas que tratan de responder al empezar los análisis. Y a partir de ahí, tienen claro que:</p>
+<blockquote><p>What these visuals do help with is getting us to know where to look and what <strong>questions to ask of the data</strong>. That is, <strong>we can't build the more complex models until we know </strong>the most suitable places for building them. These visuals give us some of that insight.</blockquote><br />
+... hay que seguir preguntando, hasta que los datos confiesen.</p>
+<p>Una fantástica muestra del enfoque en el análisis, para obtener resultados prácticos, y sobretodo rentables.</p>
+
+---

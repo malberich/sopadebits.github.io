@@ -1,0 +1,40 @@
+---
+_model: blog-post
+---
+title: Nada que ocultar (pero quiero poder ocultarlo)
+---
+date: 2013-10-10 12:59:53 +0200
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: seguridad,privacidad,vigilancia
+---
+body:
+
+<p>Con esta frase se acostumbra a replicar cuando alguien saca el tema de la vigilancia y la invasión de la privacidad empieza un artículo escrito hace dos a&ntilde;os y medio. Me ha gustado su lectura porque no tiene la contaminación provocada por el caso Snowden, y en cambio apunta a temas de gran actualidad. Así que, &iquest;No tienes nada que ocultar? Y por eso, &iquest;Crees que la invasión de la privacidad ya no importa?</p><!--more-->
+<p>Daniel J. Solove no está de acuerdo. este profesor de derecho de la Universidad George Washington considera que la <a title="Why Privacy Matters Even if You Have 'Nothing to Hide'" href="http://chronicle.com/article/Why-Privacy-Matters-Even-if/127461/">privacidad sigue siendo importante a pesar de que no tengas nada que ocultar</a>. Y &iquest;por qué? En su artículo (y supongo que en <a href="http://docs.law.gwu.edu/facweb/dsolove/Nothing-to-Hide/index.html">su libro</a>, que no he leído ni necesariamente recomiendo) pone algunas preguntas adicionales. Porque si no tienes nada que ocultar...</p>
+<ul>
+<li>&iquest;Acaso no tienes cortinas?</li>
+<li>&iquest;Te molesta que vea los movimientos que has hecho con tu tarjeta de crédito a lo largo del último a&ntilde;o?</li>
+<li>En general, &iquest;te da igual que alguien meta las narices en algún aspecto de tu vida que no es de su incumbencia?</li>
+<li>&iquest;Se podría deducir que puedo hacer una foto de alguien en desnudo integral, disponer de todos los derechos, y compartirla con quien quiera?</li><br />
+</ul><br />
+Pero en definitiva, el argumento de fondo es que&nbsp;<strong>si no tienes nada que ocultar, no tienes vida</strong>.</p>
+<p>Pero claro, puedes seguir pensando que esto no va contigo. Que si un organismo de seguridad accede a tus fotos íntimas, tus movimientos bancarios y demás, no pasa nada. Sin embargo, según el autor, a menudo se considera que la privacidad es algo simple y condensable en una esencia.</p>
+<p>Basándose en las metáforas del <a href="http://es.wikipedia.org/wiki/1984_(novela)">1984 de Orwell</a> (la vigilancia y control de la comunicación) ni <a href="http://es.wikipedia.org/wiki/El_proceso">El Proceso de Kafka</a> (más centrado en el procesamiento y análisis de datos, y las relaciones de poder entre las instituciones y las personas), llega al punto central que aclara el motivo del artículo, y que es más propio del la segunda novela que de la primera:</p>
+<blockquote><p>Legal and policy solutions focus too much on the problems under the Orwellian metaphor&mdash;those of surveillance&mdash;and aren't adequately addressing the Kafkaesque problems&mdash;those of information processing. The difficulty is that commentators are trying to conceive of the problems caused by databases in terms of surveillance when, in fact, those problems are different.</p>
+<p>Commentators often attempt to refute the nothing-to-hide argument by pointing to things people want to hide. But <strong>the problem with the nothing-to-hide argument is the underlying assumption that privacy is about hiding bad things</strong>. By accepting this assumption, we concede far too much ground and invite an unproductive discussion about information that people would very likely want to hide.</blockquote><br />
+Es decir, que los partidarios del&nbsp;<em>nada que ocultar</em> confunden la privacidad con el secretismo. Pero el caso es que no necesariamente es así. Privacidad es también ocultar cosas no necesariamente malas, sino simplemente cosas que no deseas que sean conocidas por los demás. Los motivos, siempre que estén dentro de la ética y la convivencia más elementales, no importan: para eso tienes tu esfera privada.</p>
+<p>Una vez se puerde esa esfera de privacidad, el problema principal está en dos puntos clave:</p>
+<ul>
+<li>La agregación de informaciones (Alguien compra un libro sobre cáncer y una peluca. &iquest;Qué deducción sacaríamos?)</li>
+<li>Su uso secundario, es decir, utilizar esa información para unos fines diferentes a los que provocaron su recolección.</li><br />
+</ul><br />
+Entonces, tú tienes una vida normal y,... &iquest;Qué sucede si erróneamente se diagnostica que tus patrones de comportamiento presentan indicios de actos delictivos? &iquest;Qué sucede si entonces se te denegara la posibilidad de viajar fuera de tu país? &iquest;Y si congelan tus cuentas bancarias?</p>
+<p>Aunque siempre quedará la duda de si no pasa nada porque <a href="https://www.aclu.org/blog/technology-and-liberty-national-security/my-life-circles-why-metadata-incredibly-intimate">nos espíen los metadatos</a>:</p>
+<blockquote><p>A tool developed by MIT Media Lab proves how intrusive the collection and analysis of metadata is over time, especially for those who are overly reliant on email as their main method of communication. Dubbed "<span style="text-decoration: underline;"><a href="https://immersion.media.mit.edu/">Immersion</a></span>," the tool analyzes the metadata--From, To, Cc and Timestamp fields-- from a volunteer's Gmail account and visualizes it.</blockquote><br />
+Espero que al menos ahora lo veas diferente. Iremos sumándonos al club.</p>
+
+---

@@ -1,0 +1,412 @@
+---
+_model: blog-post
+---
+title: Análisis web com Piwik y GNU R (II)
+---
+date: 2008-09-16 00:00:00 +0200
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: seo,fuentes-de-informacion,testeo
+---
+body:
+
+<p></p>
+<h2>Consideraciones previas</h2><br />
+El tratamiento de datos viene precedido por una fase de trastienda que consiste en la limpieza de datos. Esta limpieza de datos no consiste en eliminar lo que no queramos saber: se trata de sólo escoger los datos que son necesarios para los objetivos que se plantea el análisis.</p>
+<p>Incluso en la colección de datos que nos interesa, es habitual encontrar datos defectuosos fruto de la recogida de información (el trabajo de campo) que también deben ser eliminados para conseguir una mayor fiabilidad de la información.</p>
+<p>En el siguiente ejemplo descarto datos de acuerdo con los objetivos que me planteo, pero no hago una limpieza posterior, con una doble intención: comprobar que es necesario, y ver que los datos erróneos también tienen unas características propias, que son detectables con métodos estadísticos básicos.</p>
+<h2>Objetivos</h2><br />
+El objetivo principal de la extracción de datos es analizar la afluencia de tráfico que se generan a partir de los enlaces que pongo en los posts, y verificar si hay variaciones substanciales entre enlaces.</p>
+<p>Este análisis podría dar paso a búsquedas posteriores para determinar si existe alguna relación entre tales enlaces y sus características propias (número de palabras del enlace, términos utilizados en el enlace) como ajenas (posición en el conjunto del texto, posición dentro del párrafo, posición en una frase). De todos modos este estudio más complejo que dejo al margen para otras ocasiones.</p>
+<h2>Extrayendo datos de Piwik</h2><br />
+Con una consola o cliente de MySQL se pueden recuperar los datos anteriores.&nbsp; Vale la pena (obviamente) realizar el análisis en una máquina diferente a la que almacena los datos, si es que la máquina está totalmente en funcionamiento.</p>
+<p>Por ahora vamos a extraer una serie de datos para tener una idea de la información que hay almacenada en la base de datos.</p>
+<p>Empezaremos por comprobar cuántas salidas genera el blog hacia otros sitios. Para ello, ejecuto la consulta:</p>
+<p>SELECT pla.name,count(*) salidas FROM `piwik_log_visit` plv inner join piwik_log_action pla on plv.visit_exit_idaction=pla.idaction WHERE pla.name like 'http%' and pla.name not like '%sopadebits.com%' group by visit_exit_idaction order by salidas desc</p>
+<p>La consulta selecciona los nombres de los sitios que han recibido visitas desde un enlace en mi blog.&nbsp; Para detectar los sitios externos, filtro los datos teniendo en cuenta que el campo name de la tabla piwik_log_action empiece por "http" [pla.name like 'http%'] y que no contengan el dominio del post [pla.name not like '%sopadebits.com%']. Ordeno el resultado según la cantidad de visitas (de más a menos):</p>
+<p>El resultado es parecido a:</p>
+<table width="596" border="1" cellpadding="0">
+<tbody>
+<tr>
+<td>idaction</td></p>
+<td>&nbsp;URL</td></p>
+<td>Visitas</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;6</td></p>
+<td>http://teethgrinder.co.uk/open-flash-chart</td></p>
+<td>&nbsp;27</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;24</td></p>
+<td>http://www.um.es/dp-lengua-espa/revista/vol7/relevancia.pdf</td></p>
+<td>&nbsp;6</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;31</td></p>
+<td>http://articles.techrepublic.com.com/5100-10877_11-6160661.html</td></p>
+<td>&nbsp;5</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;135</td></p>
+<td>http://jlibrary.sourceforge.net</td></p>
+<td>&nbsp;3</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;106</td></p>
+<td>http://www.vectorsite.net/tsawk_3.html</td></p>
+<td>&nbsp;3</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;11</td></p>
+<td>http://jlibrary.sourceforge.net/12/screencast3.html</td></p>
+<td>&nbsp;2</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;53</td></p>
+<td>http://espanol.answers.yahoo.com/question/index?qid=20070723132213AA3U5yy</td></p>
+<td>&nbsp;2</td><br />
+</tr></p>
+<tr>
+<td>&nbsp;107</td></p>
+<td>&nbsp;http://www.deakialli.com/2007/09/13/bibliotecas-publicas-servicios-electronicos-de-informacion-y-web-social</td></p>
+<td>&nbsp;2</td><br />
+</tr></p>
+<tr>
+<td></td></p>
+<td>&nbsp;...</td></p>
+<td>&nbsp;...</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+Ahora quiero comprobar si alguno de los enlaces más solicitados está recibiendo una relación de salidas más alta que los otros. Es decir, quiero medir el&nbsp; <a title="Wikipedia English: click-through rate" href="http://en.wikipedia.org/wiki/Click-through_rate">ratio de click-through</a>. Para eso voy a hacer dos consultas: primero, averiguar qué páginas de mi blog dirigen hacia estos enlaces, y luego consultar el número de visualizaciones de estas páginas.</p>
+<p>Dividiendo el número de visualizaciones por el número de salidas, tendré el ratio de click-through. El primer paso se consigue con la consulta siguiente:</p>
+<p align="left"><em>select distinct pllva.idaction_ref,pllva.idaction from piwik_log_action pla inner join piwik_log_link_visit_action pllva on pla.idaction=pllva.idaction_ref where pllva.idaction in (6, 24, 31, 135, 106, 11, 53, 107)</em></p><br />
+Ahora tenemos que los enlaces anteriores salen de las siguientes páginas:</p>
+<table id="table_results" border="1">
+<thead>
+<tr>
+<th align="left">name</th></p>
+<th>idaction_ref</th></p>
+<th class="condition">idaction</th><br />
+</tr><br />
+</thead></p>
+<tbody>
+<tr class="odd">
+<td>content/view/open-flash-chart-graficos-estadisticos-open-source</td></p>
+<td class="nowrap" align="right">5</td></p>
+<td class="condition nowrap" align="right">6</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/jlibrary-gestor-documental-open-source</td></p>
+<td class="nowrap" align="right">10</td></p>
+<td class="condition nowrap" align="right">11</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/organizacion-de-la-informacion-personal-eliminando-archivos-duplicados</td></p>
+<td class="nowrap" align="right">30</td></p>
+<td class="condition nowrap" align="right">31</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/normalizacion-distancias-normalizadas</td></p>
+<td class="nowrap" align="right">7</td></p>
+<td class="condition nowrap" align="right">53</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/teoria-de-la-relevancia-en-linguistica</td></p>
+<td class="nowrap" align="right">8</td></p>
+<td class="condition nowrap" align="right">24</td><br />
+</tr></p>
+<tr class="even">
+<td>http://www.um.es/dp-lengua-espa/revista/vol7/relevancia.pdf</td></p>
+<td class="nowrap" align="right">24</td></p>
+<td class="condition nowrap" align="right">24</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/www.themedicieffect.com</td></p>
+<td class="nowrap" align="right">61</td></p>
+<td class="condition nowrap" align="right">107</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/efecto-medici-innovacion-interdisciplinar</td></p>
+<td class="nowrap" align="right">27</td></p>
+<td class="condition nowrap" align="right">107</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/trabajando-con-subversion-y-awk</td></p>
+<td class="nowrap" align="right">12</td></p>
+<td class="condition nowrap" align="right">106</td><br />
+</tr></p>
+<tr class="even">
+<td>http://www.vectorsite.net/tsawk_3.html</td></p>
+<td class="nowrap" align="right">106</td></p>
+<td class="condition nowrap" align="right">106</td><br />
+</tr></p>
+<tr class="odd">
+<td>content/view/jlibrary-gestor-documental-open-source</td></p>
+<td class="nowrap" align="right">10</td></p>
+<td class="condition nowrap" align="right">135</td><br />
+</tr></p>
+<tr class="even">
+<td>content/view/descargas</td></p>
+<td class="nowrap" align="right">17</td></p>
+<td class="condition nowrap" align="right">6</td><br />
+</tr></p>
+<tr class="odd">
+<td>extranet/open-flash-chart-graficos-estadisticos-open-source</td></p>
+<td class="nowrap" align="right">144</td></p>
+<td class="condition nowrap" align="right">6</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+En esta tabla, <em>idaction_ref</em> es el id de la página de origen, e i<em>daction</em> se corresponde con los enlaces externos.&nbsp; Por lo tanto, tenemos que las páginas del blog que enlazan a los recursos anteriores tienen los id de acción [5,10,30,7,8,24,61,27,12,106,10,17,144].</p>
+<p>De todos modos, en estos datos nos encontramos con dos temas:</p>
+<ul>
+<li>vemos que las acciones 5 y 144 son equivalentes.</li>
+<li>Vemos que las acciones 24 y 106 vuelven a ellas mismas, lo que sin duda es un error (quizá debido a un doble click del usuario mientras se procesa la consulta o algo por el estilo).</li><br />
+</ul><br />
+Las acciones 5 y 144 se tratarán pues como una sola entrada, mientras que&nbsp; las acciones&nbsp; 24 y 106 deben eliminarse de la lista. Esto indica que un proceso de limpieza debería eliminar los datos cuyos valores de <em>idaction</em> e <em>idaction</em>_ref coinciden.</p>
+<p>Nos quedamos entonces con los ítems&nbsp; [5,10,30,7,8,61,27,12,10,17,144].&nbsp; Ahora queda ejecutar la consulta para las páginas vistas de cada ítem:</p>
+<p align="left"><em>select pla.idaction,pla.name,count(*) paginas_vistas from piwik_log_link_visit_action pllva inner join piwik_log_action pla on pllva.idaction=pla.idaction where pla.idaction in (5,10,30,7,8,61,27,12,10,17,144) group by pla.name order by paginas_vistas desc </em></p><br />
+La consulta devuelve un resultado como el siguiente (agrupando las acciones 5 y 144):</p>
+<table id="table_results" border="1">
+<tbody>
+<tr>
+<td><strong>&nbsp;idaction</strong></td></p>
+<td><strong>name</strong></td></p>
+<td><strong>&nbsp;paginas_vistas</strong></td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;5+144</td></p>
+<td>content/view/open-flash-chart-graficos-estadistico...</td></p>
+<td class="nowrap" align="right">354</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;7</td></p>
+<td>content/view/normalizacion-distancias-normalizadas</td></p>
+<td class="nowrap" align="right">158</td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;30</td></p>
+<td>content/view/organizacion-de-la-informacion-person...</td></p>
+<td class="nowrap" align="right">149</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;8</td></p>
+<td>content/view/teoria-de-la-relevancia-en-linguistic...</td></p>
+<td class="nowrap" align="right">97</td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;12</td></p>
+<td>content/view/trabajando-con-subversion-y-awk</td></p>
+<td class="nowrap" align="right">96</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;27</td></p>
+<td>content/view/efecto-medici-innovacion-interdiscipl...</td></p>
+<td class="nowrap" align="right">56</td><br />
+</tr></p>
+<tr class="odd">
+<td>&nbsp;10</td></p>
+<td>content/view/jlibrary-gestor-documental-open-sourc...</td></p>
+<td class="nowrap" align="right">44</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;17</td></p>
+<td>content/view/descargas</td></p>
+<td class="nowrap" align="right">42</td><br />
+</tr></p>
+<tr class="even">
+<td>&nbsp;61</td></p>
+<td>content/view/www.themedicieffect.com</td></p>
+<td class="nowrap" align="right">8</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+Combinando esta tabla y la de visitas por URL, tenemos un ratio de click-through entre páginas y enlaces:</p>
+<p><!--   @page { size: 21cm 29.7cm; margin: 2cm }   P { margin-bottom: 0.21cm }  --></p>
+<table width="606" border="1" cellspacing="0" cellpadding="2">
+<tbody>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;<strong>idaction</strong></p><br />
+</td></p>
+<td width="324">
+<p align="left"><strong>name</strong></p><br />
+</td></p>
+<td width="95">
+<p align="left">&nbsp;<strong>pag_vistas</strong></p><br />
+</td></p>
+<td width="117">
+<p align="left"><strong>enlaces_salientes</strong></p><br />
+</td></p>
+<td width="82">
+<p align="left"><strong>%CTR</strong></p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;5</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/open-flash-chart-graficos-estadistico...</p><br />
+</td></p>
+<td width="95">
+<p align="right">354</p><br />
+</td></p>
+<td width="117">
+<p align="right">29</p><br />
+</td></p>
+<td width="82">
+<p align="right">8,19%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;7</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/normalizacion-distancias-normalizadas</p><br />
+</td></p>
+<td width="95">
+<p align="right">158</p><br />
+</td></p>
+<td width="117">
+<p align="right">3</p><br />
+</td></p>
+<td width="82">
+<p align="right">1,90%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;30</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/organizacion-de-la-informacion-person...</p><br />
+</td></p>
+<td width="95">
+<p align="right">149</p><br />
+</td></p>
+<td width="117">
+<p align="right">5</p><br />
+</td></p>
+<td width="82">
+<p align="right">3,36%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;8</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/teoria-de-la-relevancia-en-linguistic...</p><br />
+</td></p>
+<td width="95">
+<p align="right">97</p><br />
+</td></p>
+<td width="117">
+<p align="right">6</p><br />
+</td></p>
+<td width="82">
+<p align="right">6,19%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;12</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/trabajando-con-subversion-y-awk</p><br />
+</td></p>
+<td width="95">
+<p align="right">96</p><br />
+</td></p>
+<td width="117">
+<p align="right">3</p><br />
+</td></p>
+<td width="82">
+<p align="right">3,13%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;27</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/efecto-medici-innovacion-interdiscipl...</p><br />
+</td></p>
+<td width="95">
+<p align="right">56</p><br />
+</td></p>
+<td width="117">
+<p align="right">2</p><br />
+</td></p>
+<td width="82">
+<p align="right">3,57%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;10</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/jlibrary-gestor-documental-open-sourc...</p><br />
+</td></p>
+<td width="95">
+<p align="right">44</p><br />
+</td></p>
+<td width="117">
+<p align="right">6</p><br />
+</td></p>
+<td width="82">
+<p align="right">13,64%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;17</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/descargas</p><br />
+</td></p>
+<td width="95">
+<p align="right">42</p><br />
+</td></p>
+<td width="117">
+<p align="right">0</p><br />
+</td></p>
+<td width="82">
+<p align="right">0,00%</p><br />
+</td><br />
+</tr></p>
+<tr valign="bottom">
+<td width="82" height="13">
+<p align="left">&nbsp;61</p><br />
+</td></p>
+<td width="324">
+<p align="left">content/view/www.themedicieffect.com</p><br />
+</td></p>
+<td width="95">
+<p align="right">8</p><br />
+</td></p>
+<td width="117">
+<p align="right">2</p><br />
+</td></p>
+<td width="82">
+<p align="right">25,00%</p><br />
+</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+De lo anterior hay que sacar muchas conclusiones, pero especialmente una: antes de tratar con datos estadísticos es necesario hacer una purga que sólo nos deje con los datos necesarios de acuerdo con unos objetivos.</p>
+<p>Por ejemplo, el enlace 61 es claramente un error, probablemente debido a un error en la introducción del enlace.&nbsp; El click-through que presenta puede ser debido a que el usuario trata de accede r repetidas veces al enlace. Es probable que se pudiera unificar con la acción 27 (el post sobre el efecto Medici), y que los dos clicks fueran porque el usuario vuelve a intentar el enlace.</p>
+<p>El cálculo aporta información interesante, aunque no significativa.&nbsp; De lo anterior sólo&nbsp; los tres primeros enlaces tienen datos suficientes como para sacar alguna conclusión. Entre ellos cabe destacar en positivo el enlace de open-flash-chart y en negativo el de las distancias normalizadas.</p>
+<p>Sobre el resto, precisamente el enlace del Medici Effect aporta información interesante...&nbsp; pero <strong>para corregir errores</strong>. Esto en sí mismo es interesante porque el detectar que el ratio&nbsp; varía bastante (aunque es poco significativo por los pocos datos). éste es un caso determinado nos induce a pensar que algo sucede. Pero no era el objetivo de estas consultas.</p>
+<p>También cabe comentar que todo este proceso podría haberse realizado con una sola consulta, máximo dos.&nbsp; En cualquier caso estas consultas no serían eficientes en un servidor a pleno rendimiento.</p>
+<p>El siguiente paso (en otro artículo) será extraer datos globales de las relaciones entre enlaces para realizar un análisis basado en cadenas de Markov. Para eso utilizaremos el paquete estadístico GNU R. </p>
+
+---

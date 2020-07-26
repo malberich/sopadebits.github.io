@@ -1,0 +1,24 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2014-20
+---
+date: 2014-05-18 10:00:35 +0200
+---
+author: Mario Alberich
+---
+categories: sin-categorizar
+---
+tags: 
+---
+body:
+
+<ul>
+<li>Comprendiendo en&nbsp;<a href="http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/"><em>event loop</em> de NodeJS.</a></li>
+<li>El <a href="http://nicolefenton.com/power-and-responsibility/">equilibrio entre el poder y la responsabilidad</a>, en una historia muy humana.</li>
+<li>La <a href="http://www.excelcharts.com/blog/redraw-troops-vs-cost-time-magazine/">relación entre el presupuesto y las bajas militares</a>, en un cambio de representación gráfica que muestra mejor la información y la historia que hay detrás.</li>
+<li><a href="http://storiesthroughdata.blogs.lincoln.ac.uk/2013/04/12/visualising-data-can-you-see-stories/"><em>Stories through data</em></a>, que intenta aglutinar ejemplos de historias explicadas a través de la representación de datos.</li>
+<li>Las <a href="http://engineering.spanishdict.com/blog/2013/12/20/the-4-keys-to-100-uptime-with-nodejs">cuatro claves para el 100% de uptime con NodeJS</a>.</li><br />
+</ul></p><!--more-->
+
+---

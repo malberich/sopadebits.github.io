@@ -1,0 +1,49 @@
+---
+_model: blog-post
+---
+title: Navegación social utilizando el tagging - 1
+---
+date: 2008-03-03 00:00:00 +0100
+---
+author: Mario Alberich
+---
+categories: informatica,documentacion
+---
+tags: web-social,tagging
+---
+body:
+
+<p><br />
+<h2>Aspectos remarcados y descartados</h2>
+<p>Dada la longitud del documento, mi intención ha sido extraer los aspectos esenciales y dividirlos en unos pocos posts.  Por lo tanto no pretendo realizar un resumen completo ni tampoco entrar en detalle con conceptos conocidos tanto en el mundo de la informática como en el de la documentación y la recuperación de la información.</p>
+<p>Si después de leer los siguientes posts hay interés por saber más, creo que el salto lógico es al menos hojear el documento, porque realmente su autor se lo merece.</p><br />
+<h2>Enfoque del proyecto</h2>
+<p>Aunque el punto de partida es el uso de los metadatos generados por los usuarios, el objetivo se centra en analizar los métodos por los que los usuarios con <strong>intereses, opiniones y actividades parecidas</strong> puedan identificarse y localizarse.</p>
+<p>En un segundo nivel está el interés por identificar los puntos de conexión entre <strong>grupos temáticamente distantes</strong> pero susceptibles de intercambiar información.</p><br />
+<blockquote>Se debe entender el contexto como un tipo de información que caracteriza el entorno individual y social, y que puede emerger de la actividad propia de la interacción persona-entorno.</blockquote>
+<p>Estos dos niveles permiten concentrar contextos individuales para conformar grupos de interés.</p>
+<p>Por ello el estudio considera que contenido y contexto es inseparable, de modo que se adopta una perspectiva fenomenológica de la información.  Esto determina el enfoque del resto del estudio, y lo distancia de la ortodoxia de los lenguajes documentales, donde contexto y contenido se disocian.</p><br />
+<h2>Semiótica, psicología u sociología</h2><br />
+<h3>Semiótica: sintaxis, semántica y pragmática</h3>
+<p>La interpretación de un signo se da a tres niveles distintos: <strong>sintaxis, semántica y pragmática</strong> (esta última ya comentada en relación a la teoría de la relevancia).  La primera establece la relación entre signos; la segunda entre signos y objetos; y la tercera entre signos, objetos y el individuo.</p>
+<p>El contexto individual es pues aplicable al ámbito de la pragmática, que es el nivel que describe la visión personal.</p>
+<p>También se crea un contexto compratido al mismo nivel de la pragmática (jerga), tras lo cual se da un salto desde la folksonomía (centrado en los signos y la sintaxis) hacia la etnoclasificación (los signos distintivos de una "tribu").</p><br />
+<h3>Psicología: Memorias transactivas</h3>
+<p>Según Wegner (1987), la interacción social es la base de creación  de una <strong>memoria colectiva</strong>.  Esta memoria compartida tiene lugar preferentemente en grupos cohesionados que generan "etiquetas" (o jergas) que sirven como denominador común del grupo.</p>
+<p>Un aspecto clave en las memorias transactivas es que es necesario saber quién es experto en qué para que la información fluya y se convierta en parte cohesionadora del grupo.</p><br />
+<h3>Sociología</h3>
+<p>La aportación en este campo viene dada por Harper (1999). Este autor analizó el acceso, evaluación y proceso de información según la motivación y la relevancia.</p>
+<p>Por ejemplo, es importante valorar cómo afecta la autoridad del responsable de la información, si hay una revision del contenido, y la actividad del revisor.</p>
+<p>Al conocer el contexto social (motivación y actividad de autores e intermediarios) en el que se ha desarrollado la información, el receptor asigna un valor a ésta, no directamente por su contenido.</p><br />
+<h2>Redes sociales</h2><br />
+<h3>Características de las redes sociales</h3>
+<p>Después de analizar los conceptos teóricos anteriores, el autor describe los elementos y procesos que describen las redes sociales. </p>
+<p><strong>Atributos</strong>: densidad, centralidad, estructura, y puentes/transitividad.</p>
+<p>De lo anterior vale la pena describir brevemente la <strong>transitividad</strong>, ya que interesa su aplicación en sistemas de reputación social.  Se debe entender la transitividad como la máxima "los amigos de mis amigos son mis amigos".  Desde luego esta máxima no siempre tiene lugar, ya que depende de relaciones entre nodos que previamente son muy densas (muchas relaciones entre nodos).</p><br />
+<h3>Teorías en redes sociales</h3><br />
+<blockquote>Según Wellman (1990) describe tres características para definir la fortaleza de una relación: intimidad (amistad), voluntariedad de la interacción (interacción) y participación en contextos sociales comunes (multiplexidad).</blockquote>
+<p>&nbsp;</p>
+<p>Al analizar el conjunto de las relaciones entre miembros de la red, podemos llegar a la identificación de focos de interés.  Estos focos pueden venir determinados por cuestiones psicológicas, sociales, legales o actividades comunes.  La probabilidad de relación de dos personas con temas en común es mucho mayor.  Interesa identificar estos grupos para generar un mayor grado de recomendación y facilitar el intercambio de conocimiento basado en las relaciones (memorias transactivas).</p>
+<p>El análisis de estos focos diferencia entre relaciones intrafocales (micro-integración) e interfocales (macro-integración).  Mientras que las relaciones intrafocales fortalecen los grupos temáticos, las relaciones interfocales favorecen la interdisciplinariedad y limitan el riesgo de isolación de nodos. </p></p>
+
+---

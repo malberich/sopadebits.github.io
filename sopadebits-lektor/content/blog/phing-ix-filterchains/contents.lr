@@ -1,0 +1,42 @@
+---
+_model: blog-post
+---
+title: Phing (IX) filterchains
+---
+date: 2013-07-20 23:20:36 +0200
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: php,phing
+---
+body:
+
+<p>Existen algunas tareas que se pueden encadenar unas tras otras, y cuyos resultados intermedios no son de nuestro interés. &nbsp;En Unix estas operaciones se realizan normalmente con <em>pipes</em>. Pues bien, en Phing tenemos las <em>filterchains</em>, un conjunto de aplicaciones de filtros sobre una serie de contenidos que se pueden encadenar para generar un resultado final, y que el <em>input</em> de un proceso es el <em>output</em> del proceso anterior.</p><!--more-->
+<h2>Incluir la cabecera de información legal</h2><br />
+Supongamos que queremos que todo archivo de nuestro código fuente incluya la habitual cabecera de código, pero sólo lo queremos en el momento de empaquetar y publicar nuestro proyecto.</p>
+<p>En ese caso, podemos seleccionar los archivos a modificar (con un fileset), y utilizar entonces <em>filterchain</em> para ejecutar la operación <em>ReplaceTokensWithFile</em>:</p>
+<pre class="brush: actionscript3; gutter: true">...<br />
+  <fileset refid="myProjectFiles" /><br />
+  <filterchain><br />
+    <replacetokenswithfile begintoken="#!" endtoken="!#" dir="plantillas/" postfix=".php"/><br />
+  </filterchain><br />
+...</pre></p>
+<pre class="brush: xml; gutter: true"><span style="font-family: Georgia, &#039;Times New Roman&#039;, &#039;Bitstream Charter&#039;, Times, serif; font-size: 13px; line-height: 19px;">Vale sí, pero &iquest;esto qué hace?&nbsp;Pues te permite poner un texto en tu código equivalente a:</span></pre></p>
+<pre class="brush: xml; gutter: true"><span style="font-family: Georgia, &#039;Times New Roman&#039;, &#039;Bitstream Charter&#039;, Times, serif; font-size: 13px; line-height: 19px;">#!copyright!#</span></pre></p>
+<pre class="brush: xml; gutter: true"><span style="font-family: Georgia, &#039;Times New Roman&#039;, &#039;Bitstream Charter&#039;, Times, serif; font-size: 13px; line-height: 19px;">Y que, en caso que exista el archivo plantillas/copyright.php, el contenido de éste quedará automáticamente insertado en el lugar donde ha encontrado la cadena anterior.</span></pre></p>
+<h2>Limpieza básica del código</h2><br />
+Supón, por ejemplo, que te ha llegado un código fuente (o un CSV, o cualquier otro contenido textual) plagado de saltos de línea del tipo Windows (\n\r) y quieres convertirlos a saltos de línea tipo Unix (\n). Podrías hacer lo siguiente:</p>
+<pre class="brush: xml; gutter: true">
+<php expression="chr(10)" returnProperty="LF"/>
+...<br />
+<fileset ... /><br />
+<filterchain><br />
+  <replaceregexp><br />
+    <regexp pattern="\n\r" replace="${LF}"/><br />
+  </replaceregexp><br />
+</filterchain></pre><br />
+En el fondo podrías eliminar directamente "\r" (dejando replace vacío), pero de este modo te aseguras que no hay sorpresas ni cambios.</p>
+
+---

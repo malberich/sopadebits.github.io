@@ -1,0 +1,47 @@
+---
+_model: blog-post
+---
+title: Aprender y ense&ntilde;ar visualización de la información
+---
+date: 2013-12-19 10:45:08 +0100
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: visualizacion,formacion,metodologia
+---
+body:
+
+<p>A pesar de ser una especie cuyo valor diferencial está en su capacidad para transmitir información verbalmente, a menudo da la sensación que las metodologías de aprendizaje aún distan de ser eficientes. &nbsp;Sin bajar a la realidad de las políticas educativas, las técnicas pedagógicas se enfrentan a un reto importante: cómo transmitir los conceptos, procesos y criterios a un público heterogéneo.</p><!--more-->
+<p>Este punto es especialmente importante cuando tratamos áreas de conocimiento relativamente nuevas, como es el caso de la visualización de la información. Claro que sus ingredientes principales no son nuevos, pero la forma como se combinan sí lo son, y aún es pronto para saber las&nbsp;<em>recetas</em> que facilitan una visualización adecuada.</p>
+<p>Y entonces, &iquest;Cómo podemos aprender y/o ense&ntilde;ar a visualizar datos? Hay varios recursos al respecto:</p>
+<ul>
+<li>En <a href="http://fellinlovewithdata.com/reflections/teach-visualization">Fell in love with Data comentan la mejor manera de ense&ntilde;ar</a>.</li>
+<li>En <a title="Visualising data - Response to: &lsquo;What&rsquo;s the best way to teach visualization?&rsquo;" href="http://www.visualisingdata.com/index.php/2013/07/response-to-whats-the-best-way-to-teach-visualization/">Visualising data dan una respuesta a la pregunta</a>.</li>
+<li><a href="http://www.thefunctionalart.com/p/instructors-guide.html">Alberto Cairo proporciona una guía</a> sobre los materiales que utiliza para la formación.</li><br />
+</ul><br />
+Hago un resumen de los puntos que me han parecido más interesantes.</p>
+<h2>Aprender visualización después de haber aprendido visualización</h2><br />
+Resumiendo lo comentado</p>
+<ul>
+<li><strong>Trabajar con los datos</strong>: Como en cualquier actividad fuertemente basada en la técnica (que no tecnología), la experiencia con los datos se basa en trabajar con ellos. Puedes buscar repositorios sobre datos que te interesen, para a&ntilde;adir aliciente a tus análisis. Parte de ese proceso implica aprender y reforzar las técnicas, y a la vez las tecnologías asociadas. La otra opción</li>
+<li><strong>Buscar opiniones de terceros</strong>: Como contrapunto, después del esfuerzo por mejorar personalmente, es importante mostrar nuestros resultados a otros ojos. Las opiniones de los demás, salvo excepciones, aportan información sobre la dirección en la que mejorar.</li>
+<li><strong>Leer más</strong>: Después del proceso anterior, vale la pena (re)leer y buscar respuestas que otros han dado a las preguntas que te planteas.</li><br />
+</ul></p>
+<h2>Después de aprender, &iquest;Cómo ense&ntilde;ar?</h2><br />
+Aunque en este punto se está enfocando a ense&ntilde;ar a profesionales, algunos de los aspectos son válidos para&nbsp;fines didácticos hacia el público en general.</p>
+<ul>
+<li><strong>Iteraciones en el desarrollo de materiales</strong>: Como en cualquier disciplina inmadura, ense&ntilde;ar visualización de la información tiene menos paradigmas, y por ello requiere más adaptación al público, tema y objetivos. Es por ello que los materiales didácticos variarán en más grado.</li>
+<li><strong>Linearidad en la exposición</strong>: Como oposición a lo anterior, la exposición debe ser linear para evitar las máximas dudas, ineficiencias. A pesar de ello debe acomodar la incertidumbre, creatividad y experimentación.</li>
+<li><strong>Craft vs. instructional</strong>: Buscar el balance entre los principios y reglas, y lo hecho a medida.</li>
+<li><strong>Convicciones</strong>: De lo anterior se deduce algo importante: para afrontar las novedades, los alumnos deben desarrollar sus propias convicciones, más allá de lo que gusta o no. Se trata de que identifiquen los atributos que les conducen a esa opinión.</li>
+<li><strong>Elecciones</strong>: Provocar que los alumnos tomen decisiones como actitud natural, y con sentido.</li>
+<li><strong>Variedad</strong>: El público objetivo al que se dirige esa formación contará con una gran variedad de perfiles, desde tecnológicos hasta artísticos. Ningún estándar encaja en esta variedad, hay que ajustar y personalizar.</li>
+<li><strong>Herramientas y tecnología</strong>: Las herramientas evolucionan, por lo que importa es que sus usuarios tengan la habilidad para sacarles partido.</li><br />
+</ul></p>
+<h2>Lo que sabemos y lo que nos queda por descubrir</h2><br />
+No existe la <a title="Eager eyes - Perfect visualization" href="http://eagereyes.org/blog/2013/perfect-visualization">visualización perfecta</a>&nbsp;y por ello se trata de adecuar las técnicas que conocemos al caso que se nos presenta. Ese grado de adecuación puede ser automatizado hasta un cierto grado, para convertirse en parte de una metodología, o más aún de un algoritmo.</p>
+<p>Pero en cuanto el número de dimensiones de los datos aumenta, las posibilidades también lo hacen, y es cuando más importante resulta mantener el foco en lo que estamos intentando comunicar, sintetizar, responder.</p>
+
+---

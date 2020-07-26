@@ -1,0 +1,30 @@
+---
+_model: blog-post
+---
+title: Una partida de Ajedrez entre Windows y Linux
+---
+date: 2007-04-04 00:00:00 +0200
+---
+author: Mario Alberich
+---
+categories: informatica,economia
+---
+tags: linux,usabilidad,open-source
+---
+body:
+
+<p>Hablo de una situación que viví hace más de diez a&ntilde;os, con lo que no voy a entrar en detalles.  En un campeonato abierto de ajedrez, cuando las partidas de la jornada ya estaban terminándose, surgió una conversación entre dos ajedrecistas de buen nivel (uno de ellos era <a href="http://es.wikipedia.org/wiki/Maestro_Internacional">Maestro Internacional</a>).</p>
+<p>Cuando me acerqué, oí que estaban comentando sobre cómo variaba la valoración de un jugador para una determinada posición, según si se realizaban las mismas jugadas con blancas o negras. Es decir, al empezar una partida, empiezan las negras, que juegan las mismas jugadas que harían las blancas en situación normal.</p>
+<p>El principal impacto que se percibe es el cambio de situación. Las aperturas parecen diferentes, la misma posición que con blancas podía parecer equilibrada (sin ventajas para los oponentes)  era ahora muy mala para las negras. Una situación buena para las blancas, era simplemente de equilibrio para las negras. &iquest;Por qué? Del sinfín de razones que se me ocurren, apunto las siguientes:</p>
+<ul>
+<li>La primera, y obvia, es por la costumbre de ver las cosas desde un lado.</li>
+<li>La segunda, porque al ver las cosas desde el lado opuesto, es fácil darse cuenta lo importante que es disponer de la iniciativa, pero que no es suficiente.</li>
+<li>La tercera, corolario de la anterior, porque a veces el cambio de mentalidad comporta olvidarse de lo aprendido cuando se ocupaba otra postura. </li></ul>
+<p>En el fondo, da igual si hablamos de ajedrez o del entorno empresarial: la iniciativa (o lo que por analogía se llama <em>the first mover&#39;s advantage</em>) es importante, pero los errores en la iniciativa traen dos tipos de consecuencias: las propias del error, y la posibilidad de perder esa misma iniciativa.</p>
+<p>Traspasando esto a la partida Windows-Linux, &iquest;os imagináis por un momento si se cambiaran los colores? Es decir, en el mercado estaba Linux con posición dominante, y aparece Windows... Con errores, vulnerabilidades, inestabilidad...</p>
+<p>En esa situación... &iquest;Qué cuota de mercado creéis que absorbería Windows?</p>
+<p>También estoy pensando qué pasaría si el conjunto de distribuciones de Linux llegaran a tener mayor cuota de mercado que Windows (personalmente creo que aún queda).  Es decir, si Linux <em>jugara con blancas</em> y llega Windows... &iquest;Qu&egrave; estaría ofreciendo mejor que la comunidad Linux? Sea lo que sea, eso es lo que tiene pendiente Linux para <em>mejorar su juego</em> y obtener en algún momento <a href="http://es.wikipedia.org/wiki/T%C3%A9rminos_relacionados_con_el_ajedrez" title="Wikipedia: términos relacionados con Ajedrez">ventaja por calidad</a>. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+---

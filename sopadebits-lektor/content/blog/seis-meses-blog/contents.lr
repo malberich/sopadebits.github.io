@@ -1,0 +1,39 @@
+---
+_model: blog-post
+---
+title: Seis meses y un blog
+---
+date: 2007-10-06 00:00:00 +0200
+---
+author: Mario Alberich
+---
+categories: documentacion
+---
+tags: off-topic
+---
+body:
+
+<p>
+<p>Alrededor de esto están las primeras sensaciones de gestionar un blog, realizar un seguimiento y análisis de lo que pasa detrás, y realizar ajustes.</p>
+<p>Lo que más me está gustando es superar (mejor o peor, eso va al gusto de cada cual) el reto de plasmar lo que pienso, con la esperanza que al menos lo entendáis.  Aún llevando a&ntilde;os escribiendo y recopilando ideas, artículos y demás; aún así, concretarlo en algo más que unos apuntes en el papel. Ponerlo luego a libre disposición pesa por el miedo al error, pero me gusta.</p><br />
+<h2>Los temas pendientes</h2>
+<p>Lo que llevo hecho hasta ahora me lleva a lo que tengo pendiente.  A nivel de contenidos hay algunos temas que he abierto y no he cerrado (me quedan al menos dos puntos en la serie de gestión de la información, por ejemplo), y aún quedan cosillas pendientes de la lista de tareas del verano, pero ya irán viniendo.</p>
+<p>Estoy convencido que mis posts tienen bastantes errores e imprecisiones. Entre la lista de temas a mejorar está (por razones profesionales) el mejorar mis citas y referencias a las fuentes, que a veces son poco claras. </p>
+<p>Además de los contenidos, lo que me interesa trabajar como prioridad son las funcionalidades del entorno.</p>
+<p>Es algo triste que en este blog, donde he hablado de tagging y la web 2.0, no existan tags, y no estén implantados funcionalidades como el trackback, el permalink, los links de menéame, del.icio.us y demás funcionalidades similares.</p>
+<p>Lo que más novedades traerá son los tags, ya que tengo unas cuantas ideas en mente que darán cuerda para experimentar. </p>
+<p>En la vertiente técnica, y exceptuando el adsense (que por otro lado no interfiere en la navegación), el sitio cumple con las especificaciones WAI-A, CSS-2.0, y XHTML-1.0 (Transitional, pero por poco). Eso forma parte de la experiencia de tener mi blog: no he utilizado una herramienta de blog ni un CMS para la ocasión.</p>
+<p>Todo esto repercute en una apariencia que puede calificarse de simplona (o cutre), aunque con las nuevas funcionalidades se a&ntilde;adirá más posibilidades a la navegación, y además, espero poder inaugurar dentro de poco un nuevo dise&ntilde;o.</p>
+<p>En otros aspectos como la promoción y la socialización, voy a tratar de dar un empujón al blog introduciendo herramientas semiautomáticas de publicación en herramientas como del.icio.us, technorati (aunque por lo que sé, va a la baja) y otros servicios parecidos. Es probable que con todo esto también incluya experimentos de publicidad para poder explicar cómo se podrían aplicar estrategias de promoción. Esta es la última parte a tratar.</p><br />
+<h2>Las estadísticas</h2>
+<p>Desde luego el servidor no va a caerse por tráfico, aunque estoy bastante satisfecho con la evolución del blog y la actividad que recibe.  Por favor, ahogad las risas que estoy la mar de ilusionado con estos datos que presento a continuación:</p>
+<ul>
+<li>Este mes de Septiembre se cerró con 289 visitas y 463 páginas vistas.  El incremento <em>porcentual</em> desde Abril ha sido bastante lineal, y sólo quedó interrumpido por el bajo nivel de visitas de Agosto.</li>
+<li>En Septiembre llegaron 247 usuarios únicos absolutos. Los usuarios que visitan mi web "van al grano" o no encuentran lo que buscan, ya que se quedan para ver una media de 1,6 páginas/visita durante una media de 1:36 minutos. Quizá cabe mencionar que en algunas búsquedas, la palabra "sopa" despista a los usuarios, aunque creo que es un efecto minoritario.</li>
+<li>Los posts más visitados a lo largo de estos 6 meses han sido (de menos a más) el de <a href="/utilizando-yahoo-pipes" title="Sopa de bits: Utilizando Yahoo! Pipes">Yahoo! Pipes</a>, el <a href="/mi_nuevo_ibsn" title="Sopa de bits: Mi nuevo IBSN">primer post sobre IBSN</a> y el de <a href="/open-flash-chart-graficos-estadisticos-open-source" title="Sopa de Bits: Open Flash Chart">Open Flash Chart</a>.</li>
+<li>Google es la fuente principal de visitas, aunque lentamente van llegando entradas desde technorati, Yahoo!, acceso directo, del.icio.us, etc. foros.jarfil.net también envía visitas con más o menos regularidad. Pero las cosas claras: el 60% de accesos desde búsquedas en Google deja claro el peso de esta fuente de tráfico. Como ya comentaba antes, la promoción y el SEO serán dos temas que trataré en el próximo semestre. </li></ul>
+<p>Ya está. Por ahora hay poquita cosa. Me queda por a&ntilde;adir que otro tema pendiente es introducir un gestor de estadísticas propio, ya que Google Analytics no me convence del todo, no me permite seguir vuestras lecturas por RSS, y a veces me plantea dudas sobre la total veracidad de la información. Eso no quiere decir que esté mal... Como herramienta cumple con una parte importante de objetivos de análisis.<br /> </p>
+<p>Lo que sucede es que creo que la clave para sacar el jugo a los sistemas de estadísticas es poder personalizar y analizar mejor la navegación y la interacción según la temática concreta de cada contenido. Poder poner dentro del análisis la densidad de términos los textos de los enlaces, etc., creo que será imprescindible para entender la interacción y extraer mayor valor económico. </p>
+<p>Con estos datos y las buenas intenciones anteriores, lo dejo por hoy. </p></p>
+
+---

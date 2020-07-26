@@ -1,0 +1,30 @@
+---
+_model: blog-post
+---
+title: Ventanas rotas y seguridad ciudadana
+---
+date: 2013-11-22 10:14:31 +0100
+---
+author: Mario Alberich
+---
+categories: matematica,economia
+---
+tags: seguridad,metodologia,politicas-publicas
+---
+body:
+
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/20130724110102-0.jpg"><img class="size-large wp-image-27482 alignleft" style="border: 0px; margin: 10px;" alt="20130724110102-0" src="http://www.sopadebits.com/wp-content/uploads/2013/11/20130724110102-0-808x1024.jpg" width="580" height="735" /></a></p><!--more-->
+<p>La <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_las_ventanas_rotas">teoría de las ventanas rotas</a>&nbsp;fue propuesta a principios de los 80 como un buen <a title="Indicadores: El ajo dorado" href="http://www.sopadebits.com/indicadores-el-ajo-dorado" target="_blank">indicador</a> del nivel de violencia de un barrio. Explicado en pocas palabras: la cantidad de ventanas rotas o de otros signos de dejadez promovía el crimen. Esta teoría tuvo una gran aceptación, pero actualmente ha sido sometida a críticas considerables, entre otras razones porque es complejo cuantificar algo tan subjetivo como el desorden visible.</p>
+<p>Esta situación es habitual en muchos procesos de análisis científicos: falta un eslabón que permita aplicar un método objetivo (cuantificar el desorden visual) para llegar a la afirmación anterior (hay más o menos desorden visual). Para conseguir superar esa subjetividad, unos <a href="http://web.mit.edu/newsoffice/2013/quantifying-urban-perceptions-0724.html" target="_blank">investigadores del MIT han publicado un paper para cuantificar esos elementos subjetivos</a>.</p>
+<h2>Google Street View</h2><br />
+Para conseguirlo se han recopilado una serie de imágenes de Google Street View, y se han presentado ante una serie de voluntarios. Las imágenes se presentan por parejas, y se solicita a los voluntarios que decidan cuál de las dos imágenes ejemplifica mejor un atributo cualitativo ("clase alta", por ejemplo).</p>
+<p>Con ese proceso de selección los investigadores pudieron establecer valoraciones generales de las áreas seleccionadas para el estudio, cuyos resultados concretos para el área de Nueva York se pueden ver en la imagen lateral.</p>
+<h2>&iquest;Se puede afirmar que la teoría de las ventanas rotas funciona?</h2><br />
+En los resultados obtenidos se detectó que algunas ciudades presentaban una experiencia de estar a salvo muy dispar; polarizada. Eso puede implicar que el propio status del voluntario puede condicionar su votación introduciendo un sesgo.</p>
+<p>Por ejemplo, los coches aparcados en esa calle denotan parcialmente el status de quienes viven ahí: una persona que identifique modelos de gamas más altas o más bajas que en su barrio tenderá a acentuar su valoración hacia el extremo.</p>
+<h2>&iquest;Está todo perdido?</h2><br />
+No. Si se consigue obtener una lista de características de los voluntarios que pudieran introducir sesgos en la valoración, probablemente el modelo se enriquecerá. Por lo tanto es posible mejorar la fiabilidad de los resultados.</p>
+<p>El valor de obtener un modelo así es el de tener una herramienta que permita establecer políticas económicas en áreas especialmente deprimidas para invertir en mejoras (sería deseable que no sólo para maquillar el entorno). También &nbsp;podrían servir como herramienta de detección precoz de la degradación del entorno.</p>
+<p>&nbsp;</p>
+
+---

@@ -1,0 +1,92 @@
+---
+_model: blog-post
+---
+title: Sistema de tagging - la nube de etiquetas
+---
+date: 2007-12-22 00:00:00 +0100
+---
+author: Mario Alberich
+---
+categories: documentacion
+---
+tags: tagging,usabilidad
+---
+body:
+
+<p><br />
+<h2>Características y elementos de las nubes de tags</h2>
+<p><br />Por lo que respecta a la <a href="http://en.wikipedia.org/wiki/Tag_cloud" title="Wikipedia: Tag cloud">definición de una nube de tags</a>, creo que una imagen vale más que mil palabras. Por lo tanto, puedes ver <a href="http://del.icio.us/tag/" title="del.icio.us: tag-cloud">La nube de tags de del.icio.us</a> o bien <a href="http://www.flickr.com/photos/tags/" title="Flickr: tag cloud">las de flickr</a>.<br /><br />La principal utilidad de las nubes de etiquetas es la de presentar información agregada, y en el mejor de los casos, sintetizada (que no resumida). Visualizar una nube de tags de un portal equivale a disponer de un cuadro resumen de conceptos que identifican los contenidos. Cuanto más grandes se presentan los términos en una nube de tags, más frecuente es el uso de ese término. Concretaré este "cuanto más" un poco más abajo.<br /><br />Después de una primera fase de uso de las nubes de etiquetas, han aparecido algunas variantes en los sistemas de visualización. Algunas de las características introducidas han sido:</p>
+<ul>
+<li> Ordenación:</li>
+<ul>
+<li>Alfabética: Los términos se ordenan alfabéticamente.</li>
+<li>Por frecuencia: Los términos se muestran por frecuencia de uso.</li></ul>
+<li>Agrupación:</li>
+<ul>
+<li>Alfabética: Los términos se separan por letra inicial.</li>
+<li>Semántica: Los términos se agrupan por co-ocurrencia (<a href="http://www.nosolousabilidad.com/hassan/improving_tagclouds.pdf" title="Improvint tag clouds as visual information retrieval interfaces">Hassan, Herrero-Solana; 2006</a>).</li></ul>
+<li>Sobre el uso del espacio donde se muestra la nube (<a href="http://arxiv.org/abs/cs.DS/0703109" title="Tag-Cloud Drawing: Algorithms for Cloud Visualization">Owen, Lemire; 2007</a>):</li>
+<ul>
+<li>El espaciado e interlineado entre tags son gestionados por el navegador.</li>
+<li>Se aplican técnicas de CSS y HTML para aprovechar mejor el espacio.<br /></li></ul></ul>
+<p>Los criterios de ordenación y la agrupación son combinables, por lo que se pueden crear varios niveles de ordenación-agrupación que dieran como resultado una mejor visualización de contenidos.<br /><br />Uno de los temas que son más de interés para mi ha sido encontrar un algoritmo de determinación del tama&ntilde;o de las etiquetas. He encontrado información, pero no me ha parecido satisfactoria. Por ejemplo, encontré el artículo de Owen y Lemire anterior un algoritmo para la determinación de los tama&ntilde;os de etiquetas.</p>
+<p>Otro <a href="http://www.echochamberproject.com/node/247" title="Tag Cloud Font Distribution Algorithm">artículo en echochamber</a> me pareció interesante por lo visual de su explicación, aunque conceptualmente creo que es erróneo. El sistema que utilizan es interesante, y en parte muy en la línea de lo que estaba pensando yo, pero no me acabó de convencer. Creo que es un error centrarse en la densidad, y no en la distribución. Es decir, calcular los tama&ntilde;os de las etiquetas en base a las frecuencias simples, y no a las acumuladas.<br /> </p>
+<p>Aunque ya es <em>vox populi</em> que la distribución de las etiquetas sigue una distribución con la característica <a href="http://en.wikipedia.org/wiki/The_Long_Tail" title="Wikipedia: long tail">cola larga</a>, esa cola presenta diferentes pesos, el conjunto de la distribución puede tener varias formas, y por lo tanto la determinación de los tama&ntilde;os puede no ser el adecuado utilizando fórmulas como las indicadas en el artículo anterior.</p><br />
+<h2>Abandonarse a las estadísticas<br /></h2>
+<p>No sólo me apetece: creo que en este caso es lo mejor. Supongamos que las etiquetas siguen una distribución de frecuencias parecidas a la distribución Zipf: cola larga, pocos ítems con mucha frecuencia, muchos ítems con poca frecuencia, y los ítems del rango medio.<br /><br />Si siguiéramos los criterios de sistemas de indexación <em>full-text</em>, los términos más utilizados se considerarían palabras vacías por ser muy frecuentes, con lo que se descartarían. La principal razón es que un término muy utilizado es un mal criterio discriminante. Por lo general, las etiquetas más utilizadas son las que aparecen en la nube, porque son cuantitativamente más importantes. Esto a nivel semántico no parece lo mejor. Esto también queda para más adelante. </p>
+<p>Sin embargo, no descartamos los términos más habituales. La lista de tags ordenados de más a menos frecuente recuerda un <a href="http://en.wikipedia.org/wiki/Pareto_chart" title="Wikipedia: Pareto Chart">gráfico de Pareto</a>.</p>
+<p>Echando un vistazo al gráfico de Pareto, podemos ver dos elementos: las barras, que representan la función de densidad (frecuencia en un punto), y la línea, que representa la función de distribución (frecuencia acumulada). </p>
+<p>Podemos ver que tanto un esquema como el otro siguen una forma que se puede trazar con una línea curva: sin alteraciones. Esta forma de distribución de los datos, tiene lugar cuando existe una gran cantidad de elementos (recursos etiquetados). La variabilidad se estabiliza y es difícil crear grandes alteraciones sin introducir mucha información </p>
+<p>Bajando del tren teórico y volviendo a la realidad: una organización está iniciando la introducción de datos etiquetados. Ese etiquetado ya empieza a presentar una larga cola, debido a que hay términos que sólo se han utilizado una vez. Sin embargo, no existe aún la <em>cabeza de la cola</em>. O quizá lo que está sucediendo es que los "tags medios" aún no se han formado, por lo que hay un hueco entre tags muy frecuentes y los poco frecuentes.</p>
+<p>Esta circunstancia puede repetirse cuando se agrupa o se disgregan los tags según alguno de los criterios indicados anteriormente. </p>
+<p>De hecho, dentro de un mismo recurso también se da el proceso que tiene lugar en el conjunto: a medida que los usuarios de un sistema de bookmarking social etiquetan un mismo contenido, la distribución se va estabilizando, formando también una distribución con cola larga.<br /><br />Antes de llegar a la estabilidad, el tama&ntilde;o de los tags es importante para tener una buena representación. Mostrar todos los tags muy grandes o muy peque&ntilde;os puede alterar la calidad de la visualización de la nube, y por ello su objetivo. Esto tiene consecuencias a varios niveles: desde la recuperación de la información, hasta el dise&ntilde;o de interficie.<br /><br />En esta situación, existen varias aproximaciones de base estadística al problema. Aún sabiendo que no seré exhaustivo, destaco tres:</p>
+<ul>
+<li>Análisis en base a la "forma" o ley que sigue la distribución de frecuencias. Es decir, análisis paramétrico. Por lo general la mayoría de herramientas del análisis paramétrico se centran en la distribución normal. </li>
+<li>Análisis no paramétrico: al no establecer a priori la distribución (ni su forma), se aplican técnicas no basadas en (los parámetros de) esa distribución.</li>
+<li>Estadística robusta: Estadística basada en la ordenación de los datos y la obtención de valores estadísticos menos sensibles a variaciones.<br /></li></ul>
+<p>De las tres, yo escojo la tercera. Para empezar, es la más sencilla de abordar, ya que las técnicas son sencillas de aplicar. Al no basarse en la distribución, se adaptan mejor a los varios casos posibles de distribuciones. Además, computacionalmente son más abordables (exceptuando por la ordenación). </p>
+<p>Aunque esto está por ver, los efectos de utilizar la estadística robusta son intuitivamente más comprensibles por un usuario (administrador de un sitio) que quisiera configurar el comportamiento de la nube de tags, por lo que también se da pie a sencillas interficies de configuración.</p>
+<p>La única excepción está en la ya comentada velocidad de computación por el hecho de ordenar la muestra, aunque al tratar con un conjunto ya agregado (antes de ordenar ya se han escogido un grupo reducido de etiquetas), ese aspecto no debería ser preocupante.</p><br />
+<h2>Nubes de etiquetas con estadística robusta</h2>
+<p>Para empezar a abordar las circunstancias comentadas antes, podemos ver un gráfico de lo que sería una distribución acumulada de tags:<br /><br /><img src="/extranet/wp-content/uploads/2011/03/4485-pareto-tags.png" alt="Frecuencia de tags" title="Frecuencia de tags" width="640" height="416" /><br /><br />La distribución acumulada viene a decir: si miras el porcentaje en el punto X, el valor acumulado te indica qué porcentaje de elementos (en nuestro caso tags) de la muestra estan por debajo de esa cantidad. Es decir, si en 35 tienes un 70%, quiere decir que el 70% de los tags tienen 35 o menos usos.<br /><br />En cambio, la información que proporcionan los gráficos de densidad son que en el punto X hay una proporción determinada. En resumen, no dan una visión de conjunto.</p>
+<p>Si ordenamos los valores del gráfico de densidad de menor a mayor, tenemos una "función de densidad" siempre creciente, con una forma inversa a la que habitualmente presenta un gráfico de Pareto.<br /><br />Utilizando percentiles, lo que hacemos es dividir esta lista por partes. Supongamos que seleccionamos 100 tags para la nube. Si queremos una distribución equivalente de cinco tama&ntilde;os de fuente, podemos seleccionar los percentiles 20,40,60 y 80. Con esto tendremos que:</p>
+<ul>
+<li>Entre 0 y 20 tiene tama&ntilde;o 1 (el más peque&ntilde;o).</li>
+<li>Entre >20 y 40 tiene tama&ntilde;o 2.</li>
+<li>Entre >40 y 60 tiene tama&ntilde;o 3.</li>
+<li>Entre >60 y 80 tiene tama&ntilde;o 4.</li>
+<li>Entre >80 y 100 tiene tama&ntilde;o 5 (el más grande).<br /></li></ul>
+<p>El cálculo de los percentiles con la muestra ordenada es muy sencilla. Para el caso (ideal) que planteo, sólo es necesario escoger los valores que hay en las posciones 20, 40, 60 y 80. Con estos valores, sólo hemos de ir comparando la frecuencia de uso en cada tag y asignar el tama&ntilde;o del intervalo.<br /><br />Hagámoslo sencillo: un ejemplo de 10 tags:<br /><br />tag1  = 1<br />tag2  = 2<br />tag3  = 3<br />tag4  = 5<br />tag5  = 8<br />tag6  = 9<br />tag7  = 14<br />tag8  = 20<br />tag9  = 100<br />tag10 = 150<br /><br />Con los percentiles anteriores, tenemos que los valores a seleccionar serían 2,5,9,20. A efectos prácticos esto significa que el tag1 y tag2 tienen tama&ntilde;o 1, .... y el tag9 y tag10 tienen tama&ntilde;o 5.<br /><br />Para este cálculo hemos ordenado los tags *por frecuencia*. Lo que sucede a menudo es que al mostrarse en la web, se ordenan alfabéticamente. Por lo tanto, el cálculo de tama&ntilde;os y el proceso de mostrarse en pantalla se hacen por separado.</p><br />
+<h2>Consecuencias del uso de percentiles<br /></h2>
+<p>Una de las consecuencias del uso de percentiles es que no siempre se consigue un efecto deseable. Por ejemplo, alteraremos la muestra anterior:<br /><br />tag1  = 1<br />tag2  = 1<br />tag3  = 1<br />tag4  = 5<br />tag5  = 5<br />tag6  = 9<br />tag7  = 22<br />tag8  = 150<br />tag9  = 180<br />tag10 = 2000<br /><br />En este caso aparecen dos cuestiones importantes:</p>
+<ul>
+<li>El percentil 20 sigue siendo 1, pero al generar la nube de etiquetas, el tag3 también se mostrará con tama&ntilde;o 1. Este efecto es habitual en peque&ntilde;as colecciones o en muestras que tienen tendencia a mostrar el comportamiento de larga cola.</li>
+<li>El segundo efecto importante es el de tag10: su frecuencia de uso es mayor que la suma del resto, pero a nivel de tama&ntilde;o se muestra igual que el tag9, cuando en realidad tag9 está más cercano a tag8.<br />   </li></ul>
+<p><br />Un consuelo sirve para las dos: en el momento de agrupar y categorizar, siempre existen estas imperfecciones. De los dos, el más preocupante es el segundo, ya que el principal interés al agrupar datos es que se mantenga la representatividad de la información: si un tag utilizado 2000 veces se representa como igual de importante que otro utilizado sólo 180 veces, algo falla.<br /><br />Por suerte, la estadística robusta ya considera la presencia de los datos extremos (outliers). Estos datos extremos se dan tanto por máximos como por mínimos. Por lo general, su cálculo se realiza mediante cuartiles y el rango intercuart&igrave;lico: el rango intercuartílico indica la distancia entre el cuartil 1 y el cuartil 3, lo que equivale a la distancia entre los percentiles 25 y 75. Esta distancia se utiliza como regla de medida para determinar lo máximo esperado para valores no extremos.<br /><br />Así, si un dato está más allá de N rangos intercuartílicos respecto la mediana, se considera un <em>outlier</em> (valor extremo). En los casos como el <a href="http://en.wikipedia.org/wiki/Box_plot" title="Wikipedia: Box plot">gráfico box-plot</a>, lo que se hace es dejar al outlier fuera del gráfico general, aunque marcando su posición. Para el caso que nos ocupa, la cuestión sería utilizar un criterio distinto para cada extremo: </p>
+<ul>
+<li>Si se trata de un extremo por mínimo, debería eliminarse: si la nube de tags se utiliza como indicador agregado de contenidos, un mínimo excesivamente bajo no es representativo, ya que probablemente es parte de la "cola".</li>
+<li>Para el caso de los máximos, debería existir un tama&ntilde;o de fuente aplicable sólo a este tipo de datos, ya que de este modo se resaltaría esta propiedad. Es decir, una clase CSS asignada a un tag outlier.<br />   </li></ul>
+<p><br />En ambos casos, a medida que aumenta la muestra es muy probable que desaparezcan. Sin embargo, es probable que sigan teniendo presencia en nubes de tags más filtradas.<br /><br />Una vez saciadas las exigencias de representatividad, ya tenemos un criterio bastante básico, que se puede concretar en el siguiente pseudocódigo.</p>
+<ul>
+<li>A = los tags más utilizados y sus frecuencias.</li>
+<li>B = Ordenar A de menor a mayor frecuencia.</li>
+<li>C = Matriz con los percentiles 20, 40, 60 y 80. (escoger valores en posiciones correspondientes)</li>
+<li>Para cada A[i] en A:</li>
+<ul>
+<li>Para cada C[j] en C:</li>
+<ul>
+<li>Si frecuencia de A[i] <=  C[j]:</li>
+<ul>
+<li>Imprimir el tag A[i] con tama&ntilde;o "j"</li>
+<li>break (pasar al siguiente tag)</li></ul>
+<li>Fin Si</li></ul>
+<li>Fin bucle C[j]</li></ul>
+<li>Fin bucle A[i]<br />   </li></ul><br />
+<h2>Conclusiones<br /> </h2>
+<p>Si la web tiene una gran cantidad de contenidos, la nube de tags se convierte en un equivalente nada sintáctico de un resumen. Sin embargo, los formatos de las nubes de tags quizá evolucionen hacia modelos más basados en análisis de co-ocurrencia.</p>
+<p>El hecho que se dé una buena representatividad en esta nube reflejará mejor los contenidos, por lo que ayudará a que el usuario pueda decidir si se queda o se va. La distorsión de la nube de tags (con o sin intención) es infructuoso, ya que tarde o temprano el usuario se dará cuenta que la nube no refleja el conjunto.</p>
+<p>A nivel técnico, el algoritmo que se deriva del pseudocódigo anterior es rápido. Este tipo de consultas agregadas son sencillas, y el único factor que pudiera jugar en su contra es la memoria que puede utilizar la consulta a la base de datos.</p>
+<p>Por delante me quedan varios temas. Uno de ellos es crear un algoritmo de creación de nube de tags que permita varios esquemas de visualización, considerando criterios de ordenación y agrupación combinados.</p>
+<p>El segundo, de carácter más técnico, es realizar pruebas de rendimiento sobre varios esquemas de bases de datos enfocados a almacenar sistemas de tagging. Es una pregunta habitual, que también permitirá profundizar en sistemas de optimización de bases de datos.</p></p>
+
+---

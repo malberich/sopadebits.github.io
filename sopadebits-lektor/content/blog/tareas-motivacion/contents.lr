@@ -1,0 +1,35 @@
+---
+_model: blog-post
+---
+title: Las tareas y la motivación
+---
+date: 2008-02-21 00:00:00 +0100
+---
+author: Mario Alberich
+---
+categories: 
+---
+tags: productividad,modelizacion
+---
+body:
+
+<p><br />
+<h2>Fundamentos teóricos </h2>
+<p>Tradicionamente, el proceso de resolución de tareas se ha modelizado utilizando la denominada <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Poisson" title="Wikipedia: Distribución de Poisson">Ley de Poisson</a>, y que consiste en suponer que el número de eventos que suceden dentro de una unidad temporal (llamadas a un teléfono por hora, clientes por minuto en el cajero del supermercado), con un intervalo de tiempo entre eventos que sigue una <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_exponencial" title="Wikipedia: Distribución Exponencial">Ley Exponencial</a>.</p>
+<p>A nivel de análisis del proceso, la resolución de tareas se modeliza aplicando la <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_colas" title="Wikipedia: Teoría de colas">teoría de colas</a>. Lo que plantea esta teoría es que hay uno o más individuos (servidores) que procesa peticiones (clientes) uno tras el otro. Hay diferentes variantes en base al establecimiento de prioridades, si dos servidores colaboran o son independientes, etc. Aunque en general, si no se comenta lo contrario, el proceso de las peticiones se realiza según el método <a href="http://es.wikipedia.org/wiki/FIFO" title="Wikipedia: FIFO">FIFO</a>.</p><br />
+<h2>De la gestión de tareas a la gestión de la motivación</h2>
+<p>El proceso explicado hasta aquí es todo lo matemático que se puede esperar. Sin embargo hay una característica de la distribución exponencial que la hace <em>demasiado racional</em>: Se considera que la distribución exponencial <strong>no tiene memoria</strong>, es decir, que su probabilidad condicionada (el lapso de espera hasta el próximo evento sabiendo el tiempo del anterior lapso) es igual a su probabilidad incondicionada.</p>
+<p>Utilizando términos más llanos: un proceso o una persona que se modeliza utilizando la ley exponencial no se cansaría, ni se aburriría, ni se motivaría.  Simplemente resolvería según la <em>dificultad racional</em> de la tarea.  Esta premisa quizá sea aplicable a entornos de trabajo con alta mecanización de tareas, pero en entornos informacionalmente intensivos, el criterio no está tan claro.</p>
+<p>Ante este escenario, el Artículo <a href="http://arxiv.org/abs/0711.0741" title="Arxiv: Human Dynamics with adaptive interest">Human Dynamics with Adaptive Interest</a> propone un cambio de paradigma para encontrar soluciones más ajustadas a la realidad, escogiendo el modelo basado en el interés (<em>interest-based model</em>) enfrente al orientado a tareas (<em>task based</em>). </p><br />
+<h2>Análisis y metodología<br /></h2>
+<p> La metodología seguida en el estudio es el de la simulación estadística del proceso, introduciendo el factor de motivación como una variable más, y extrayendo de los resultados el nuevo modelo estadístico de periodicidad en la resolución de tareas.</p>
+<p>Este cambio de modelo matemático trata de analizar el cambio del concepto <em>habilidad de resolución</em> enfrente a <em>motivación de la resolución</em> de las tareas encomendadas. Sin ánimo de grandilocuencia, se podría decir que este cambio equivale al paso de la inteligencia racional a la inteligencia emocional. </p>
+<p>El resultado de la simulación demuestra que las fases más activas se concentran mucho más y las inactivas se dilatan dando lugar a fases frenéticas (con niveles intensos de interacción) seguidas de fases más largas de inactividad (poca motivación). Se entiende que son <em>más largas</em> <strong>en relación a</strong> lo que cabría esperar aplicando los modelos Poisson-Exponencial.</p><br />
+<h2>Conclusiones</h2>
+<p>El estudio afirma que el modelo matemático que se ajusta a esta nueva circunstancia es una <a href="http://es.wikipedia.org/wiki/Ley_potencial" title="Wikipedia: Ley potencial">ley potencial</a> con exponente -1 para modelizar el tiempo entre eventos.</p>
+<p>Esta conclusión puede ser de interés para analizar los patrones de fenómenos tan dispares como la navegación web, el zapping, y en general cualquier tarea que implique motivación.  Dos áreas de aplicación que pueden ser interesantes son el análisis del tiempo en estudios de interacción persona-ordenador (para identificar el grado de usabilidad del sistema cuando existe motivación por el usuario), y a un nivel más concreto, los estudios de búsqueda y recuperación de la información, para obtener una métrica de motivación en el tiempo entre eventos.</p>
+<p>A pesar de lo interesante del modelo, los autores apuntan algunas limitaciones de éste, ya que existen muchos ingredientes que intervienen en la motivación humana, varios de los cuales ni siquiera se han estudiado a fondo a nivel psicológico. Es un estudio que llevará tiempo, para el que las conclusiones del estudio (que además son simulaciones y no un trabajo de campo)  pueden servir de base para otros análisis.</p>
+<p>Volviendo a la pregunta inicial, el ordenador no tiene toda la información necesaria para poder extraer conclusiones. Por ejemplo, el ordenador no tiene información sobre si estás hablando por teléfono o alguien te interrumpe a mitad de una tarea. Pero podría empezar a disponer de indicadores objetivos (matemáticos) que le indicaran que te está bajando la moral.</p>
+<p>Y... &iquest;Quién lo sabe? Quizá se está creando un nicho de mercado para salvapantallas motivadores ;-).  </p></p>
+
+---

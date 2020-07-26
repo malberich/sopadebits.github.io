@@ -1,0 +1,80 @@
+---
+_model: blog-post
+---
+title: Políticos accidentales: &iquest;Seleccionar legisladores aleatorios mejora la eficiencia parlamentaria?
+---
+date: 2011-06-09 07:30:08 +0200
+---
+author: Mario Alberich
+---
+categories: matematica
+---
+tags: muestreo-estadistico,elecciones,simulacion
+---
+body:
+
+<p>Curioso artículo el que he encontrado hoy en <a title="arrxiv.org" href="http://arxiv.org/">arxiv.org</a>, sobre una simulación que propone la hipótesis con la que titulo esta entrada (salvo los interrogantes, que los he a&ntilde;adido yo). &nbsp;El <em>preprint</em> en cuestión está en inglés y se titula&nbsp;<em><a title="Accidental Politicians: How Randomly Selected Legislators Can Improve Parliament Efficiency" href="http://arxiv.org/abs/1103.1224" target="_blank">Accidental Politicians: How Randomly Selected Legislators Can Improve Parliament Efficiency</a> (puedes descargar directamente la&nbsp;<a href="http://arxiv.org/pdf/1103.1224v2" target="_blank">versión PDF del artículo</a>).</em></p><!--more-->
+<p>El resumen (traducido y con resaltado mío) es el que sigue:</p>
+<p style="padding-left: 30px;"><em>Estudiamos un modelo prototípico de un Parlamento con dos Partidos o dos Coaliciones políticas, y mostramos cómo <strong>la introducción de un porcentaje variable de legisladores independientes seleccionados aleatorioamente pueden aumentar la eficiencia global de una legislatura</strong>, tanto en términos del número de leyes aprobadas y de la media de bienestar social obtenido. &nbsp;También encontramos analíticamente un "<a title="Wikipedia: Número áureo" href="http://es.wikipedia.org/wiki/N%C3%BAmero_%C3%A1ureo">número áureo</a> de la eficiencia" que permite establecer el número óptimo de legisladores que deben ser seleccionados aleatoriamente después de que las elecciones regulares hayan establecido la proporción relativa de los dos Partidos o Coaliciones. &nbsp;Estos resultados están alineados tanto con el antiguo sistema democrático Griego como con el descubrimiento de que la adopción de las estrategias aleatorias pueden mejorar la eficiencia de las organizaciones jerárquicas.</em><br />
+<em> </em></p><br />
+El artículo utiliza la metodología de la simulación, por lo que no es un ejemplo real con datos basados en experiencias humanas. &nbsp;Es por ello que el artículo se basa en una abstracción matemática que puede restar interés para quien no se quiera adentrar en los números. &nbsp;Trataré de allanar un poco el camino.</p>
+<h2>Una explicación menos matemática</h2><br />
+Para establecer un modelo de simulación como el del artículo es necesario establecer unas <em>reglas de actuación</em> y unos individuos (los <em>agentes</em>), que actuan con una lógica independiente sobre la cual toman decisiones individuales. &nbsp;La <em>suma</em> de decisiones conforma un escenario que es el objeto del análisis.</p>
+<p>En este caso, los agentes se encuentran en un espacio planteado por <a title="Wikipedia: Carlo Maria Cipolla" href="http://es.wikipedia.org/wiki/Carlo_Maria_Cipolla">Carlo M. Cipolla</a>, donde se plantean dos factores:</p>
+<ul>
+<li>Acciones del individuo que resultan beneficiosas/perjudiciales <strong>para sí mismo</strong>.</li>
+<li>Acciones del individuo que resultan beneficiosas/perjudiciales <strong>para los otros</strong>.</li><br />
+</ul><br />
+En el modelo, estos dos factores se transforman en:</p>
+<ul>
+<li>Beneficio personal.</li>
+<li>Beneficio social</li><br />
+</ul><br />
+Cada uno de estos factores puede tomar valores entre -1 (muy perjudicial) y +1 (muy beneficioso). &nbsp;Los cuatro tipos extremos, con valores asignados según lo anterior, son:</p>
+<ul>
+<li>Los <em>Inteligentes</em> se benefician a ellos y a los demás (+1, +1).</li>
+<li>Los <em>Incautos</em> benefician a los demás pero no a ellos mismos (-1, +1)</li>
+<li>Los <em>Malvados</em> se benefician a ellos y perjudican a los demás (+1, -1)</li>
+<li>Los <em>Estúpidos</em> se perjudican a ellos y a los demás (-1, -1)</li><br />
+</ul><br />
+Lo anterior son valores extremos y no los casos típicos. &nbsp;Los he utilizado para clarificar la conversión de&nbsp;<em>palabras</em> a&nbsp;<em>números</em>. &nbsp;En la simulación se podrá encontrar agentes con coordenada (0.25, -0.1 -> algo egoísta, ligeramente malvado), por poner un caso.</p>
+<p>La razón para escoger el intervalo entre +1 y -1, está en parte explicada en el artículo sobre <a title="Normalización y distancias normalizadas" href="http://www.sopadebits.com/normalizacion-distancias-normalizadas">normalización y distancias normalizadas</a>. &nbsp;En una palabra: <strong>simplicidad y facilidad de cálculo</strong>, aparte de ser muy intuitiva. &nbsp;Se podría escoger +100 y -100, pero esto sólo aumenta la complejidad de los cálculos: a nivel de simulación no aportan valor alguno.</p>
+<p>Los agentes pueden realizar dos acciones: presentar una ley, o bien votarla (a favor o en contra).</p>
+<p>En el momento de la decisión, los agentes parten de su centro de gravedad, pero están de acuerdo con cualquier ley que tenga valores más positivos que su centro de gravedad. &nbsp;Gráficamente: que se encuentren más a la derecha y por encima de su centro de gravedad personal.</p>
+<p>Por otro lado, cuando los agentes son miembros de un partido, aceptan sus directrices. &nbsp;Estas directrices se representan gráficamente por el <em>círculo de tolerancia</em> del partido. &nbsp;Este círculo muestra las leyes que el partido en conjunto está dispuesto a votar.</p>
+<p>En suma, el agente depende de su adscripción política (<em>círculo de tolerancia</em>) y de su postura personal (<em>ventana de aceptación</em>). &nbsp;Esta dependencia impone las siguientes reglas en el juego:</p>
+<ul>
+<li>El <em>círculo de tolerancia</em> de un agente miembro de un partido muestra en sus decisiones&nbsp;<strong>es el mismo que el del propio partido</strong> (lo que conocemos com <em>disciplina de voto</em>).</li>
+<li>El agente miembro de un partido&nbsp;<strong>siempre vota a favor de las leyes que presenta alguien de su partido</strong>.</li>
+<li>El círculo de tolerancia del partido es más o menos peque&ntilde;o, dependiendo de si se trata de <strong>partidos más o menos autoritarios</strong> (o rígidos, si se prefiere).</li>
+<li>Los parlamentarios elegidos aleatoriamente <strong>no podrán repetir en sucesivas elecciones</strong>, para evitar ser <em>abducidos</em> por los partidos mayoritarios.</li><br />
+</ul><br />
+Y ahí es donde esta la clave de la simulación, en combinación con la disciplina de partido. &nbsp;Por resumirlo en una frase: Al seleccionar un grupo aleatorio de individuos se cubren las distancias entre los marcos de tolerancia de los partidos.</p>
+<p>Gráficamente se puede imaginar dos grandes círculos (los partidos), con&nbsp;todo su entorno<em> salpicado</em> por los individuos seleccionados aleatoriamente. &nbsp;Estos individuos pueden servir como soporte para leyes que quiera presentar el miembro de un partido, cuando estas leyes estén en el límite.</p>
+<h2>&iquest;Cuántos diputados escoger aleatoriamente?</h2><br />
+La fórmula para el cálculo de los diputados escogidos aleatoriamente (per la página 13 de la versión PDF del artículo) es aparentemente compleja, pero se basa en dos factores básicos:</p>
+<ul>
+<li>El número de diputados del congreso en cuestión.</li>
+<li>La proporción de diputados del partido mayoritario.</li><br />
+</ul><br />
+El gráfico de la página 14 del documento muestra el comportamiento de la función que calcula los diputados independientes.</p>
+<p>Considerando el caso del bipartidismo, los votos del partido más votado pueden oscilar desde el 50% hacia arriba. &nbsp;En el eje vertical vemos el número de diputados en el caso que el congreso tuviera 500 esca&ntilde;os (el caso de la simulación).</p>
+<p>Como se puede ver, si el resultado es equilibrado (50-55% para el partido ganador: casi un empate técnico) el número de votantes independientes es peque&ntilde;o porque es fácil desequilibrar la balanza. &nbsp;Cuanto más grande es la mayoría, más independientes.</p>
+<p>Quizá sea posible esperar nuevas simulaciones con multipartidismo, para así poder analizar casos más complejos.</p>
+<p>Aunque la conclusión se basa en un análisis de los resultados de la simulación, la causa, según la explicación de los autores, es relativamente intuitiva: &nbsp;Si la selección de <em>independientes</em> es realmente&nbsp;aleatoria, su soporte será mayoritario para el partido ganador. &nbsp;Sin embargo, al evitar la disciplina de voto pueden favorecer a más acuerdos.</p>
+<p>En palabras de los autores: No se pierde nada del sistema de partidos (efectividad en los sistemas de votación) y se gana todo por la aparición de diputados independientes (la calidad de sus propuestas).</p>
+<h2>Dudas</h2></p>
+<ul>
+<li>&iquest;Cómo afecta la inclusión de otros partidos a la cantidad de independientes?</li>
+<li>&iquest;Por qué la ventana de aceptación de un individuo se establece con un mínimo y aceptar lo que sea siempre más positivo (sobretodo a nivel social)? &iquest;Se podrían plantear márgenes más cerrados?</li>
+<li>A nivel de las interacciones: &iquest;Cómo afectaría al círculo de tolerancia de los partidos la aparición de los independientes?</li><br />
+</ul></p>
+<h2>Conclusiones y aplicaciones:</h2></p>
+<ul>
+<li>Tratándose de una simulación, el resultado no parece aplicable directamente.</li>
+<li>El planteamiento del <em>paper</em> es por sí mismo muy creativo y sugerente. &nbsp;Y eso no le resta en absoluto <a title="Partido Sorteo político" href="http://www.sorteopolitico.com/documentos" target="_blank">vínculos con la realidad</a>.</li>
+<li>&iquest;Quizá lo aplicable por fórmula del partido más votado se podría aplicar en base a la <strong>abstención</strong>? &iquest;Y sobre los <strong>votos en blanco</strong>?</li><br />
+</ul><br />
+Un apunte final: En relación a la selección aleatoria de individuos, encontré hace tiempo un artículo de (casi) los mismos autores relacionado con la <a title="The Peter Principle Revisited: A Computational Study" href="http://arxiv.org/abs/0907.0455" target="_blank">Promoción aleatoria de personas en las empresas</a> para evitar el <a title="Wikipedia: Principio de Peter" href="http://es.wikipedia.org/wiki/Principio_de_Peter" target="_blank">principio de Peter</a>.</p>
+
+---

@@ -1,0 +1,27 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés, 2014-27
+---
+date: 2014-07-06 09:00:52 +0200
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: recopilaciones
+---
+body:
+
+<ul>
+<li><a href="http://www.theguardian.com/news/datablog/interactive/2014/jan/14/parking-fines-england-map-local-council">&iquest;Cuánto ingresan los municipios ingleses por poner multas de aparcamiento?</a></li>
+<li><a href="http://www.bigdata-startups.com/BigData-startup/kayak-big-data-predict-day-book-travel-journey/">El modelo matemático de Kayak para predecir el mejor momento del viaje</a>.</li>
+<li>Nueva York ha abierto los datos sobre el<a href="http://www.citibikenyc.com/system-data"> uso del servicio de biking</a>, y hay varios <a href="https://bikesharingdata.hackpad.com/New-York-City-data-experiences-P0o8ks56dhk">proyectos que están estudiando los datos</a>.</li>
+<li>Y por si prefieres las cuatro ruedas, también tienes las <a title="Exploring New York City taxi trails and sharing our way to a more sustainable urban future" href="http://hubcab.org/">rutas de taxis... de Nueva York</a>, claro.</li>
+<li>&iquest;<a href="http://infowetrust.com/2014/03/26/creative-routines/">Cómo organizaban su tiempo sus rutinas creativas</a>? Ojo, que los paseos son algo habituales.</li>
+<li><a title="Pi approximation using Monte Carlo method" href="https://curiosity-driven.org/pi-approximation">Una aproximación de Pi utilizando el método de Monte Carlo</a>. Es algo impreciso, pero es un experimento interesante.</li><br />
+</ul><br />
+Una presentación de Seth Lloyd sobre Quantum Machine Learning, que viene a ser una implementación de algoritmos de Machine Learning sobre ordenadores cuánticos (computación cuántica). Algo que por lo que parece, no tardará mucho en llegar.</p><!--more-->
+<p><iframe src="//www.youtube.com/embed/wkBPp9UovVU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+---

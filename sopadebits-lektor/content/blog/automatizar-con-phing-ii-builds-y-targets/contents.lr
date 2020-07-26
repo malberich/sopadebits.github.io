@@ -1,0 +1,66 @@
+---
+_model: blog-post
+---
+title: Automatizar con Phing (II) - projects y targets
+---
+date: 2013-05-29 09:30:21 +0200
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: php,phing
+---
+body:
+
+<p></p><!--more-->
+<p class="brush: xml; gutter: true">En un artículo anterior, Phing quedó instalado y listo para probar. Así que ahora toca ponerlo en marcha, manos a la obra. Crearemos un directorio llamado "phingtest", donde crearemos un archivo llamado build.xml. &nbsp;Introduciremos el siguiente contenido en el XML:</p></p>
+<pre class="brush: xml; gutter: true"><?xml version="1.0" encoding="UTF-8" ?></p>
+<project name="proyecto1" default="liked">
+  <target name="liked"><br />
+    <echo>Esto es un primer comentario</echo><br />
+    <input propertyName="like">&iquest;Te ha gustado?</input><br />
+    <echo>Tu respuesta es &#039;${like}&#039;</echo><br />
+  </target><br />
+</project></pre><br />
+Ahora, guardando y abriendo un terminal, podemos dirigirnos a la carpeta phingtest y teclear:</p>
+<pre class="brush: bash; gutter: true">~$ phing</pre></p>
+<p class="brush: bash; gutter: true">Cuyo resultado es:</p></p>
+<pre class="brush: bash; gutter: true">[echo] Esto es un primer comentario<br />
+[input] &iquest;Te ha gustado? Sí<br />
+[echo] Tu respuesta es &#039;Sí&#039;</pre></p>
+<h2 class="brush: bash; gutter: true">Builds y <em>targets</em></h2><br />
+En el archivo XML (que en Phing se denomina <em>buildfile</em>) podemos ver que el tag raíz es
+<project>. &nbsp;Todas las operaciones disponibles para un archivo de build estarán dentro de este tag.</p>
+<p>El tag project contiene dos atributos:</p>
+<ul>
+<li>name: Identifica el proyecto de forma única.</li>
+<li>default: Es el <em>target</em> que se ejecutar&agrave; por defecto.</li><br />
+</ul><br />
+Pero &iquest;Qué es un target? Pues son las <em>tareas programadas que se pueden realizar</em>. A excepción que indiquemos lo contrario, todas los targets se pueden ejecutar directamente, y se pueden entender como peque&ntilde;os procesos <em>batch</em> (o interactivos si a&ntilde;adimos inputs). &nbsp;En otros contextos serían comandos complejos, macros o scripts, formados por tareas (tasks en la documentación de Phing).</p>
+<p>Pero el caso es que, y esto es lo importante, las tareas son clases PHP, y lo que hace Phing es ahorrarnos la programación a medida para situaciones que no requieren de tal complejidad.</p>
+<p>Eso siempre con el permiso de la sintaxis XML. Pero es relativamente fácil acostumbrarse, para el esfuerzo que te ahorras ;-).</p>
+<h2 class="brush: bash; gutter: true">Ejemplo: introducción de datos</h2></p>
+<p class="brush: bash; gutter: true">En el ejemplo inicial todo es muy simple: dos <em>echos</em> y la entrada de texto. Pero vamos a mejorarlo un poco. Vamos a establecer un valor por defecto al input. Abrimos el archivo y lo editamos para que quede así:</p></p>
+<pre class="brush: xml; gutter: true"><?xml version="1.0" encoding="UTF-8" ?></p>
+<project name="proyecto1" default="liked">
+  <target name="liked"><br />
+    <echo>Esto es un primer comentario&amp;lt;/echo><br />
+    <input propertyName="like" defaultValue="Sí">&iquest;Te ha gustado?</input><br />
+    <echo>Tu respuesta es &#039;${like}&#039;</echo><br />
+  </target><br />
+</project></pre></p>
+<p class="brush: bash; gutter: true">Así que ya tenemos un valor por defecto. Si lo ejecutas, verás que aparece entre corchetes el texto que hemos indicado. &nbsp;Pero en realidad queremos que el usuario sólo pueda escoger entre dos opciones: Sí o No. &iquest;Podemos? Sí, y resulta bastante fácil. Sólo hay que a&ntilde;adir lo siguiente:</p></p>
+<pre class="brush: xml; gutter: true"><?xml version="1.0" encoding="UTF-8" ?></p>
+<project name="proyecto1" default="liked">
+  <target name="liked"><br />
+    <echo>Esto es un primer comentario&amp;lt;/echo><br />
+    <input propertyName="like" defaultValue="Sí" validArgs="Sí,No">&iquest;Te ha gustado?</input><br />
+    <echo>Tu respuesta es &#039;${like}&#039;</echo><br />
+  </target><br />
+</project></pre></p>
+<p class="brush: bash; gutter: true">Si el usuario ahora intenta introducir un valor distinto a los dos indicados, no podrá seguir. Si deja el valor vacío, se asumirá el valor por defecto (Sí).</p></p>
+<p class="brush: bash; gutter: true">Es probable que con estas dos opciones ya empieces a ver cómo se simplifican ciertas tareas. En este caso es la validación de la introducción de datos. Pero hay más, en ejemplos posteriores lo iremos viendo.</p><br />
+</p>
+
+---

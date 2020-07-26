@@ -1,0 +1,26 @@
+---
+_model: blog-post
+---
+title: Enlaces interesantes 2013-49 #dataviz
+---
+date: 2013-12-01 10:00:11 +0100
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: visualizacion,recopilaciones
+---
+body:
+
+<p>Lecturas, ejemplos, tutoriales y proyectos interesantes, por si te pueden dar ideas.</p><!--more-->
+<ul>
+<li><a href="https://www.mapbox.com/blog/visualizing-3-billion-tweets/">Visualizar 3000 millones de tweets</a>, con <a href="https://www.mapbox.com/blog/">MapBox</a>.</li>
+<li>Una lista interesante de <a href="http://exploreyourdata.wordpress.com/2013/07/29/gephi-curated-list-of-tutorials/">tutoriales sobre Gephi</a>.</li>
+<li><a href="https://github.com/kapadia/ruse.js">ruse.js</a>, una biblioteca javascript para visualizaciones de datos utilizando WebGL para gráficos 2D.</li>
+<li>Luces y sombras en algunos ejemplos de visualización, y la <a href="http://source.opennews.org/en-US/learning/visual-literacy-age-data/">necesidad de crear un lenguaje visual</a>, en el <a href="http://source.opennews.org/en-US/">blog Source de Open News</a>.</li>
+<li>Los <a href="http://uxmag.com/articles/five-steps-to-storytelling-with-data">cinco pasos para narrar historias con los datos</a>, según <a href="http://uxmag.com/">UX Magazine</a>.</li><br />
+</ul><br />
+&nbsp;</p>
+
+---

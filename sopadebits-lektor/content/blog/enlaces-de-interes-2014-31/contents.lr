@@ -1,0 +1,27 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2014-31
+---
+date: 2014-08-03 09:00:38 +0200
+---
+author: Mario Alberich
+---
+categories: matematica,informatica,economia
+---
+tags: d3js,angularjs,ted
+---
+body:
+
+<ul>
+<li><a title="Notas rápidas sobre TED" href="http://politikon.es/2014/01/23/notas-rapidas-sobre-ted/">Notas rápidas sobre TED</a>, en politikon.</li>
+<li><a href="http://bl.ocks.org/mbostock/5872848">Despachado de eventos con D3</a>, en el <a title="Dispatching Events" href="http://bl.ocks.org/mbostock">blog de Mike Bostock</a>.</li>
+<li><a href="http://ocw.uoc.edu/informatica-tecnologia-y-multimedia/introduccion-a-la-interaccion-persona-ordenador/materiales/">Curso de Interacción persona-ordenador</a> en la <a href="http://ocw.uoc.edu/">UOC open courseware</a>.</li>
+<li><a title="Mejorar la productividad provoca menos empleo y más desigualdad" href="http://blog.consultorartesano.com/2014/01/mejorar-la-productividad-provoca-menos-empleo-y-mas-desigualdad.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ConsultoraArtesanaEnLaRed+%28Consultor%C3%ADa+artesana+en+la+red%29">Mejorar la productividad provoca menos empleo y más desigualdad</a>, en <a href="http://blog.consultorartesano.com/">Consultor Artesano</a>.</li>
+<li><a title="How a New Science of Cities Is Emerging from Mobile Phone Data Analysis" href="http://thegovlab.org/how-a-new-science-of-cities-is-emerging-from-mobile-phone-data-analysis/">El análisis de los datos móviles y la ciencia de las ciudades</a>.</li>
+<li></li><br />
+</ul><br />
+Y el vídeo, trata sobre la innovación de la soledad (aka las redes sociales):</p><!--more-->
+<p><iframe src="//www.youtube.com/embed/G_urS9tRAEM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+---

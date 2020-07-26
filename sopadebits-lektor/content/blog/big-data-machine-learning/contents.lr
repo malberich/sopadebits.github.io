@@ -1,0 +1,24 @@
+---
+_model: blog-post
+---
+title: Big data y machine learning, del batch al procesado por eventos
+---
+date: 2014-09-04 09:00:10 +0200
+---
+author: Mario Alberich
+---
+categories: matematica,informatica
+---
+tags: big-data,mapreduce,spark,bigquery,cloud-dataflow
+---
+body:
+
+<p>Que MapReduce no es lo último en algoritmos de procesado de datos, es algo conocido por todos. Pero cuando <a href="http://research.google.com/archive/mapreduce.html">la empresa que inventó MapReduce</a> confirmara que <a href="http://www.datacenterknowledge.com/archives/2014/06/25/google-dumps-mapreduce-favor-new-hyper-scale-analytics-system/">no lo usa desde hace tiempo</a>, siempre es una se&ntilde;al que algo sucede.</p>
+<p>Probablemente ha sido una estrategia para levantar un poco de revuelo por el lanzamiento de un nuevo producto. En el auge de las soluciones&nbsp;comerciales basadas en Hadoop, Google ha lanzado el servicio Cloud Dataflow, que viene a ser la competencia del servicio de cloud de Amazon, pero que&nbsp;en su caso se orienta aún más hacia el análisis de datos.</p>
+<p>&iquest;Quiere decir eso que Hadoop se va a la cuneta? Probablemente no, pero <a href="http://www.informationweek.com/big-data/big-data-analytics/will-spark-google-dataflow-steal-hadoops-thunder/a/d-id/1278959">hay una serie de operaciones de alto valor a&ntilde;adido</a> que no encajan en el proceso por lotes. Ahí es donde entran <a title="Apache Spark" href="https://spark.apache.org/">Spark</a> y Cloud Dataflow.</p>
+<h2>Machine learning, la máquina que tira del tren</h2><br />
+Si hay ahora mismo un área que esté empujando en esa dirección, se trata del <a title="Wikipedia - Machine Learning" href="http://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a> (véase también <a title="Wikipedia - Deep Learning" href="http://en.wikipedia.org/wiki/Deep_learning">Deep Learning</a>). &nbsp;El conjunto de algoritmos y métodos, mezcla de estadística e inteligencia artificial, se está introduciendo cada vez con más fuerza en áreas como la detección de fraude, mecanismos de personalización y gran cantidad de operaciones que requieren un tiempo de respuesta menor. En otras palabras, para las que no sirve el proceso&nbsp;<em>batch</em> no iterativo.</p>
+<p>Aunque el Machine Learning no es por&nbsp;sí mismo un marco operativo que requiera de interacción ni procesado por eventos, sus aplicaciones comerciales sí lo están siendo. Y por su propia naturaleza, encaja mucho mejor en entornos que requieren de algoritmos adaptables a&nbsp;multitud de variables... y a multitud de perfiles de usuarios. En resumen, el machine learning es ideal para ara&ntilde;ar más porcentaje de conversión en el&nbsp;<a href="http://en.wikipedia.org/wiki/Purchase_funnel">embudo de venta</a>.</p>
+<p>Pero al margen del Machine Learning, muy probablemente convivan en el campo del análisis de datos ambos enfoques (procesado por lotes y versiones interactivas), junto con muchas más propuestas, como por ejemplo <a href="https://developers.google.com/bigquery/">BigQuery</a> y similares. &nbsp;Es desde luego un momento de cierta locura por las nuevas siglas y conceptos que, a través de cierto grado de especialización, intentan sustituir al ya erosionado término "Big Data". Iremos viendo.</p>
+
+---

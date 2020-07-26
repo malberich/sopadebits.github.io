@@ -1,0 +1,35 @@
+---
+_model: blog-post
+---
+title: Visualizar para inducir, analizar para deducir
+---
+date: 2014-04-22 10:15:21 +0200
+---
+author: Mario Alberich
+---
+categories: matematica
+---
+tags: muestreo-estadistico,exploracion-de-datos,analisis-de-datos
+---
+body:
+
+<p>Quieres comerte una naranja y la pelas, porque la corteza de naranja es amarga y no te gusta, &iquest;cierto? Pero claro, luego viene tu madre, o tu abuela, y te dice que no tires la pela. Y con eso ellas te cocinan una especie de almíbar que luego a&ntilde;adirán al bizcocho que vas a disfrutar de lo lindo. Y así te das cuenta que te has estado perdiendo algo, tirando a la basura todas las pelas de naranjas anteriores.</p><!--more-->
+<p>Acéptalo: en el mismo momento en que empiezas a <a href="http://sopadebits.com/tag/muestreo-estadistico">muestrear</a> y analizar, descartas una información para centrarte en otra. Eso es la estadística y en general el método científico: tratar de separar y aislar (analizar significa etimológicamente <em>separar</em>) el grano de la paja, la información del ruido.</p>
+<p>Pero esa separación requiere un conocimiento previo, que minimice el sesgo (desviaciones de la media) y el ruido (incremento de la varianza). Se trata de evitar que la muestra de datos quede envenenada, extirpando lo mejor posible el ruido, como si cocináramos un <a href="http://es.wikipedia.org/wiki/Fugu">pez Fugu</a>.</p>
+<h2>&iquest;Visualizar datos o analizarlos?</h2><br />
+Nuestros sentidos se han adaptado al mundo en el que nuestros antepasados sobrevivieron. Un mundo en tres dimensiones, y en los que sólo nos fue necesario oír un rango de colores y sonidos para detectar a nuestras presas y evitar amenazas.&nbsp;Ese cerebro que <a title="Porque nuestro cerebro, cuando aprende hace estadísticas" href="http://www.sopadebits.com/porque-nuestro-cerebro-cuando-aprende-hace-estadisticas">busca patrones sensoriales desde que nacemos</a> es a veces muy limitado para otras tareas más abstractas.</p>
+<p>Por ejemplo,&nbsp;<em>sólo</em> es capaz de ver en tres dimensiones. En realidad puede ver cuatro, si una de ellas puede ser representada en un eje temporal, y unas cuantas más si utilizamos colores y tama&ntilde;os. Pero en lo relativo a la representación puramente espacial, tenemos esa limitación, por lo que los modelos con más variables no son representables gráficamente.</p>
+<p>Esa es la limitación de la geometría, y el motivo de la importancia del álgebra.&nbsp;Ante esas situaciones, el álgebra y otros métodos de análisis entran en juego. El cálculo matricial, los sistemas de cambios de coordenadas y cambios de base en general, nos permiten reorganizar los datos según <em>convenga</em> (en el sentido más científico posible) para según nuestros objetivos.</p>
+<p>Sin embargo todos estos métodos tienen más bien un carácter poco&nbsp;visual. Es difícil <i>intuir (en el <a href="http://es.wikipedia.org/wiki/Intuici%C3%B3n">mirar hacia dentro en un sentido etimológico</a>)</i>&nbsp;analizando los datos a base de cálculos puros. Es más, en cuanto se pierde el contacto con la intuición, la maquinaria de los métodos numéricos nos puede conducir a errores por seguir a ciegas una metodología. Creo que este es el punto en el que muchos estudiantes de asignaturas de estadística se quedan <em>colgados</em> y empiezan a odiar la estadística, pero eso es un tema para otro post.</p>
+<p>Entonces, veamos: &iquest;y si sacamos lo mejor de ambos mundos? &iquest;Qué tal analizar para simplicar y reducir las dimensiones, y luego representar visualmente esos datos para ver si nuestras operaciones tienen sentido?</p>
+<h2>Analizar para Visualizar</h2><br />
+Este enfoque permite que ambas aproximaciones cooperen en nuestra búsqueda de conclusiones:</p>
+<ul>
+<li>Representaciones en dos dimensiones, especialmente mediante gráficos de dispersión o&nbsp;<a href="http://en.wikipedia.org/wiki/Scatter_plot"><em>scatter plots</em></a>, que permiten identificar fácilmente relaciones de causa y efecto.</li>
+<li>En ciertos casos se acostumbra a presentar una matriz de gráficos de dispersión, para representar el <a href="http://hci.stanford.edu/jheer/files/zoo/ex/stats/splom.html">cruce de más de dos variables</a>.</li>
+<li>Generar modelos lineales y no lineales, para agregar varios factores en un solo modelo, y así poderlo representar en un solo gráfico. Lo que se aplica en este caso es un cambio de base: la recta de regresión se puede convertir en un eje.</li>
+<li>Gráficos que representen los indicadores estadísticos más básicos. Por ejemplo gráficos <a title="Wikipedia - Box Plot" href="http://en.wikipedia.org/wiki/Box_plot">blox-plot</a> y similares.</li><br />
+</ul><br />
+Existe una gran cantidad de métodos para representar visualmente los datos, muchos de los cuales son específicos de la metodología de análisis o del tipo de datos que se están analizando. Sin embargo, ante el debate sobre cuál de los dos es mejor, la respuesta es sencilla: combinar ambos en el punto adecuado es mucho mejor.</p>
+
+---

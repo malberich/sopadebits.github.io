@@ -1,0 +1,23 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2014-39
+---
+date: 2014-09-28 09:00:55 +0200
+---
+author: Mario Alberich
+---
+categories: matematica,informatica,economia
+---
+tags: recopilaciones
+---
+body:
+
+<ul>
+<li>&iquest;<a href="http://www.bostonglobe.com/metro/2014/03/29/the-inside-story-mit-and-aaron-swartz/YvJZ5P6VHaPJusReuaN7SI/story.html?s_campaign=sm_tw">Cómo gestionó el MIT todo lo relacionado con la detención de Aaron Schwartz</a>?</li>
+<li>Una <a href="http://playground.k11i.biz/bandit-simulator/">simulación y visualización de datos con D3, sobre el rendimiento de algoritmos de two-arm bandits</a> (lo que traducido significa <a href="http://en.wikipedia.org/wiki/Multi-armed_bandit"><em>máquinas tragaperras con dos palancas</em></a>).</li>
+<li>El uso y <a href="http://www.fastcolabs.com/3028381/how-the-rise-of-the-r-computer-language-is-bringing-open-source-to-science">ascenso del lenguaje R como lenguaje estándar de facto para la estadística</a>&nbsp;y lo que ello implica para el open source. &iquest;Implica eso que aparecerán <a href="http://venturebeat.com/2014/04/01/data-scientists-need-their-own-github-here-are-four-of-the-best/">mejores herramientas de control de versiones para los datos</a>?</li>
+<li>El uso de la <a href="http://modernweb.com/2014/03/31/creating-sound-with-the-web-audio-api-and-oscillators/">Web Audio API para crear osciladores</a>.</li>
+<li>Un <a href="http://www.redbooks.ibm.com/abstracts/sg248165.html?Open">libro rojo de IBM divulgativo sobre principios y prácticas del gobierno de datos</a>.</li><br />
+</ul>
+---

@@ -1,0 +1,26 @@
+---
+_model: blog-post
+---
+title: Enlaces de interés 2014-19
+---
+date: 2014-05-11 10:00:32 +0200
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: 
+---
+body:
+
+<ul>
+<li>Demostración del <a href="http://mimno.infosci.cornell.edu/community/">Algoritmo Poisson para la detección de comunidades</a>, visualizado con <a href="http://sopadebits.com/tag/d3js">D3</a>.</li>
+<li>Una lista de <a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">recomendaciones para quienes se introduzcan en el campo de la visualización de datos por la vía del freelancing</a>.</li>
+<li>Una página con una utilidad para <a href="http://nodestreams.com/">practicar con los&nbsp;<em>streams</em> de NodeJS</a>. Poder entender a fondo la funcionalidad de los streams en NodeJS es clave para sacar ventaja en aspectos como el tiempo de respuesta (<a href="http://en.wikipedia.org/wiki/Time_To_First_Byte">tiempo hasta el primer byte</a>).</li>
+<li><a href="http://www.schillmania.com/projects/soundmanager2/">Sound Manager 2</a>, reproductor audio open source (BSD) para javascript y los navegadores, con fallback a Flash si fuera necesario.</li>
+<li>El reto de crear una <a href="https://medium.com/tech-talk/28df31f1be98">API en NodeJS que responda en 5ms</a>. Aunque se centra en aspectos concretos de la optimización, incluye comentarios interesantes.</li>
+<li><a href="http://blogs.scientificamerican.com/guest-blog/2013/07/11/artists-and-scientists-more-alike-than-different/">Artistas y científicos, más parecidos de lo que se cree</a>, según este artículo en Scientific American.</li>
+<li>Trucos para <a href="http://inchoo.net/ecommerce/magento/magento-tip-get-a-small-sized-version-of-a-large-production-database/">obtener una versión simplificada de una base de datos de Magento</a>, y poder trasladarla a nuestro entorno de desarrollo.</li><br />
+</ul></p><!--more-->
+
+---

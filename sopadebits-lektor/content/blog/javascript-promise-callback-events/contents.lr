@@ -1,0 +1,28 @@
+---
+_model: blog-post
+---
+title: Javascript: Promises y eventos
+---
+date: 2014-02-25 08:20:57 +0100
+---
+author: Mario Alberich
+---
+categories: informatica
+---
+tags: javascript,promises,jquery
+---
+body:
+
+<p>Si has desarrollado una buena temporada con <a href="http://sopadebits.com/tag/javascript">Javascript</a> y has requerido de la gestión intensiva de eventos y <em>callbacks</em>, sabrás que es fácil que el flujo de ejecución de la aplicación sea muy difícil de seguir, incluso utilizando profusamente la consola de javascript del navegador y el debugging: salta de un lado a otro y no sabes de dónde viene.</p><!--more-->
+<p>Bienvenido al&nbsp;<em>callback</em>&nbsp;<em>hell</em>. &nbsp;éste es el escenario en el que una caracerística a priori ventajosa del lenguaje de programación (programación asíncrona de javascript) se vuelve en contra. &iquest;Y ahora qué?</p>
+<h2>Javascript y las promesas</h2><br />
+Para intentar&nbsp;<em>sincronizar</em> las operaciones asíncronas, se introdujo el concepto de <em>promises</em><i>. &nbsp;En palabras llanas es una forma de evitar que la finalización impredecible de los eventos interfiera en el flujo general de la aplicación, consiguiendo un cierto nivel de&nbsp;</i><em>sincronización</em>&nbsp;que se pierde con los eventos y callbacks. Esto salva la aplicación del&nbsp;<em>callback hell</em>. Vittorio Zaccaria presentó un ejemplo visual para <a title="Vittorio Zaccaria - Dumb easy visual model for promises" href="http://www.vittoriozaccaria.net/blog/2013/09/23/a-dumb-easy-model-for-promises.html">entender las promises de javascript utilizando las redes de Petri</a>.</p>
+<p>Pero hay más: aparte de la simplificación que supone la agregación de callbacks en un solo promise, existe un <a title="You're missing the point about promises" href="http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/">motivo más profundo que no hay que perder de vista</a>: al utilizar las promesas, podemos lanzar excepciones desde las funciones llamadas y esperar que la promesa los capture. Y eso sí marca la diferencia, porque permite recuperar el control sobre los errores. Al recuperar ese control, podemos testear y depurar las aplicaciones con más facilidad.</p>
+<p>En el fondo las promesas permiten combinar lo mejor de ambos mundos:</p>
+<ul>
+<li>Comportamiento asíncrono para aprovechar al máximo la CPU y evitar el bloqueo de operaciones I/O.</li>
+<li>Comportamiento síncrono sobre el control general del flujo de ejecución, y posibilidad de captura de excepciones.</li><br />
+</ul><br />
+Como nota al margen: parece ser que jQuery implementó las promesas con un criterio <a title="Promises/A CommonJS" href="http://wiki.commonjs.org/wiki/Promises/A">diferente al de CommonJS</a>, y <a title="jQuery promises discussion" href="http://esdiscuss.org/topic/a-challenge-problem-for-promise-designers-was-re-futures#content-43">no se plantea modificarlo</a>. Bajo su criterio serán sustituidos por los <a title="Explaining Futures" href="http://www.xanthir.com/b4PY0">DOM Futures que son aparentemente mejores</a> (yo no sabría valorarlo ahora mismo), y por ello prefieren mantener la compatibilidad de versiones anteriores. Por ello, si usas las promesas de jQuery, es importante que sepas que su funcionamiento es diferente.</p>
+
+---
