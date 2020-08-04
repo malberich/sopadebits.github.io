@@ -47,7 +47,6 @@ jobs:
           cp ../CNAME ../build/
           git add ../build/
           git commit -m "Page build ${GITHUB_RUN_ID}" ../build/*
-      - name: Deploy to gh-pages
-        run: |
+          git push github master
           git pull github master
           git subtree push --prefix build origin gh-pages
