@@ -3,7 +3,7 @@ name: Build lektor
 on: [push]
 
 jobs:
-  tagging:
+  lektor:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -36,13 +36,15 @@ jobs:
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
           if [ -d "build" ];then
-            git rm -Rf ./build/
+            git rm -rf ./build/
           fi
+          git commit -m "Removed old build" ./build/
           mkdir ./build
           git pull github ${GITHUB_REF} --ff-only
-          cd sopadebits.github.io/sopadebits-lektor
+          cd sopadebits-lektor
           python3 -m lektor build --output-path ../build
           cp ../CNAME ../build/
+          git add ../build/
           git commit -m "Page build ${GITHUB_RUN_ID}" ../build/*
       - name: Deploy to gh-pages
         run: |
