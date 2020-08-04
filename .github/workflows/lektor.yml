@@ -49,4 +49,5 @@ jobs:
           git commit -m "Page build ${GITHUB_RUN_ID}" build/*
           git push github master
           git pull --ff-only github master
-          git subtree push --prefix build github gh-pages
+          git push origin `git subtree split --prefix build github master`:gh-pages --force
+          # git subtree push --prefix build github gh-pages
