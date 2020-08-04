@@ -48,5 +48,5 @@ jobs:
           git add build/
           git commit -m "Page build ${GITHUB_RUN_ID}" build/*
           git push github master
-          git pull github master
-          git subtree push --prefix build origin gh-pages
+          git pull --ff-only github master
+          git subtree push --prefix build github gh-pages
