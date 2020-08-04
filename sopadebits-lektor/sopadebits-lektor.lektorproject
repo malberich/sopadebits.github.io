@@ -20,7 +20,7 @@ locale = en_US
 url_prefix = /en/
 
 [packages]
-lektor-google-analytics = 0.1
+; lektor-google-analytics = 0.1
 lektor-markdown-excerpt = 0.1
 
 ; [servers.github]
