@@ -48,5 +48,4 @@ jobs:
           git commit -m "Page build ${GITHUB_RUN_ID}" ../build/*
       - name: Deploy to gh-pages
         run: |
-          cd ..
           git subtree push --prefix build origin gh-pages
