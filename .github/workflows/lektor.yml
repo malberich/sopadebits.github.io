@@ -3,7 +3,7 @@ name: Build lektor
 on: [push]
 
 jobs:
-  tagging:
+  lektor:
     runs-on: ubuntu-latest
     strategy:
       matrix:
