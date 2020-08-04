@@ -32,7 +32,6 @@ jobs:
             Werkzeug==1.0.1
       - name: "Build"
         run: |
-          pwd
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
@@ -45,8 +44,9 @@ jobs:
           cd sopadebits-lektor
           python3 -m lektor build --output-path ../build
           cp ../CNAME ../build/
-          git add ../build/
-          git commit -m "Page build ${GITHUB_RUN_ID}" ../build/*
+          cd ..
+          git add build/
+          git commit -m "Page build ${GITHUB_RUN_ID}" build/*
           git push github master
           git pull github master
           git subtree push --prefix build origin gh-pages
