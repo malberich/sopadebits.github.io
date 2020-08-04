@@ -36,7 +36,7 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-          # git pull github master
+          git pull github master
           if [ -d "build" ];then
             git rm -rf ./build/
           fi
