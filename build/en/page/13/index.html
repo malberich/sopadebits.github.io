@@ -1,0 +1,650 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../en/page/14/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">13</a>
+        
+        
+          <a class="btn btn-primary" href="../../../en/page/12/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Aug 12<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/mysqldump-backup-comprimido-con-gzip/">mysqldump, backup comprimido con gzip</a></h3>
+        </header>
+        <section>
+            
+                <p>En algunas ocasiones el espacio disponible para almacenar copias de seguridad de la base de datos es escaso, por lo que quizá no disponemos del espacio para realizar un volcado completo de la base de datos, y en segunda fase comprimir ese resultado. También puede ser que queramos acortar el proceso evitando la escritura en disco (que puede ser lento), y al disponer de un cierto margen de CPU, podemos comprimir <em>al vuelo</em>.</p><!--more-->
+<h2>Pipes</h2><br />
+Suponiendo que el comando básico de mysqldump sea como sigue:</p>
+<pre class="brush: shell; gutter: true">mysqldump --opt -u [usuario] -p[clave] [base_de_datos] > [copiaseguridad.sql]</pre><br />
+Sabemos que mysqldump devuelve por <em>stdout</em> todo el texto de las sentencias SQL que conforman la base de datos. Eso se guarda en el archivo <em>copiaseguridad.sql</em>. &nbsp;Lo que se puede hacer es a&ntilde;adir un <em>pipe</em> hacia gzip, y que éste programa sea el que realmente genera el archivo de backup:</p>
+<pre class="brush: shell; gutter: true">mysqldump -u [usuario] -p[clave] [base_de_datos] | gzip > [copiaseguridad.sql.gz]</pre><br />
+En este caso, gzip capturará todo el contenido que antes enviábamos a copiaseguridad.sql y lo comprimirá. Una vez hecho esto, ahora sí, lo guardamos en un archivo. Por convención se le a&ntilde;ade el sufijo ".sql.gz", ya que de este modo queda claro que está comprimido y del contenido. &nbsp;Además, al descomprimir desaparece el ".gz", por lo que nos queda la extensión ".sql".</p>
+<h2>Importar el archivo comprimido</h2><br />
+Llega el fatídico día que requiere recuperar la base de datos. &nbsp;&iquest;Cómo procedemos? Vamos a incorporar a gunzip, la utilidad de descompresión. &nbsp;Como en el caso anterior, podríamos ejecutar gunzip y luego mysql. Pero la idea es economizar la escritura en disco, así que seguiremos usando pipes:</p>
+<pre class="brush: shell; gutter: true">gunzip < [copiaseguridad.sql.gz] | mysql -u [usuario] -p[clave] [base_de_datos]</pre><br />
+Simplemente:</p>
+<ul>
+<li>Enviamos a gunzip el contenido del archivo gz.</li>
+<li>gunzip envía el resultado por <em>stdout</em>.</li>
+<li>Este resultado es recogido por la <em>pipe</em> de mysql, que lo importa a <em>base_de_datos.</em></li><br />
+</ul></p>
+<h2>Ratios de compresión</h2><br />
+Los archivos SQL son ni más ni menos que archivos de texto. En estos casos los ratios de compresión (tama&ntilde;o del archivo comprimido en comparación al archivo normal) son bastante notables, y pueden variar según el nivel de compresión. La contrapartida es que a mayor nivel de compresión, más uso de CPU (y más lento).</p>
+<p>Sin embargo, si lo tuyo es una necesidad apremiante de espacio en disco, puedes a&ntilde;adir el nivel de compresión (entre 1 y 9, siendo 6 el valor por defecto) al ejecutar gzip:</p>
+<pre class="brush: shell; gutter: true">mysqldump -u [usuario] -p[clave] [base_de_datos] | gzip -9 > [copiaseguridad.sql.gz]</pre><br />
+Puedes hacer pruebas para revisar los ratios de compresión. La decisión final depende de todos los factores (CPU disponible, espacio/velocidad de disco, etc.).</p>
+<p>En último término, también puedes usar <a title="Wikipedia: bzip2" href="http://en.wikipedia.org/wiki/Bzip2" target="_blank">bzip2</a>, aunque la <a title="A Quick Benchmark: Gzip vs. Bzip2 vs. LZMA" href="http://tukaani.org/lzma/benchmarks.html" target="_blank">relación entre velocidad y compresión respecto a gzip</a> puede desmotivarte.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Aug 8<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/ripple-emulador-para-moviles/">Ripple - Emulador para móviles</a></h3>
+        </header>
+        <section>
+            
+                <p>A estas alturas ya no resulta difícil disponer de un dispositivo móvil con prestaciones de <em>smartphone</em> para revisar o testear una página web. Para echar un vistazo rápido, es más que suficiente.</p><!--more-->
+<p>Sin embargo, salvo que tu tarea sea dedicarte al desarrollo de aplicaciones móviles, no dispondrás de varias BlackBerry, los dos o tres últimos modelos de iPhone o iPad, y varios modelos de Android, con sus variaciones en tama&ntilde;os de pantalla, versiones de sistema operativo, etc. Y si el trabajo a entregar requiere una revisión más o menos exhaustiva con dispositivos móviles, la tarea es compleja.</p>
+<h2>Revisar con Ripple en Chrome</h2><br />
+A partir del proyecto Ripple que actualmente está en la <a title="Ripple - Apache incubator" href="http://ripple.incubator.apache.org/">incubadora de Apache</a> (código bajo Licencia Apache), se ha desarrollado una extensión para Google Chrome, <a title="Ripple Emulator in Chrome Web Store" href="https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc" target="_blank">disponible gratuitamente en la Chrome Web Store</a>.</p>
+<p>Al instalar la aplicación, aparecerá un botón con la imagen del logo de Ripple. Al navegar por una página (funciona con páginas http://, pero no con accesos locales vía file://, por lo que hay que poner las páginas tras un servidor http), se puede clicar sobre el botón y seleccionar la opción <em>enable</em>.</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/08/Selecció_007.png"><img class="alignnone size-medium wp-image-27205" title="Ripple dialog" src="http://www.sopadebits.com/wp-content/uploads/2013/08/Selecció_007-300x225.png" alt="" width="300" height="225" /></a></p>
+<p>En la primera carga de una determinada URL se solicitará qué plataforma se quiere utilizar para hacer la simulación. Esto se puede modificar en cualquier momento desde el entorno de emulación.</p>
+<p>En ese momento aparecerá un interfaz en la que se identifican claramente tres apartados:</p>
+<ul>
+<li>En la parte izquierda, la configuración del dispositivo y de algunas de sus características, además de la orientación y la opción de "shaking". También se puede cambiar la plataforma.</li>
+<li>En la parte central, una interfaz emulada del dispositivo escogido a la izquierda. La página que estabas visualizando debería mostrarse dentro.</li>
+<li>A la derecha, algunas características de la conexión del dispositivo, así como la posibilidad de simular geoposicionamiento.</li><br />
+</ul><br />
+<a href="http://www.sopadebits.com/wp-content/uploads/2013/08/Selecció_0081.png"><img class="alignnone size-large wp-image-27207" title="Vista de sopadebits en Ripple" src="http://www.sopadebits.com/wp-content/uploads/2013/08/Selecció_0081-1024x408.png" alt="" width="580" height="231" /></a></p>
+<p>Con la variedad de opciones, se puede jugar un rato largo y ver, por ejemplo, la interacción para realizar scroll en la página, o el ajuste en ancho y alto del dispositivo, entre otras opciones.</p>
+<h2>&iquest;Es la solución definitiva?</h2><br />
+Está claro que no. El proyecto aún está en fase Beta, y eso se nota cuando se comparan ciertos detalles. Aunque en el aspecto de renderizado los resultados son bastante similares (aunque se nota un poco la diferencia de densidades de pantallas), la interacción y la navegación presentan diferencias de comportamiento. Es decir, que por ahora no está de más (léase <em>es necesario</em>) revisar el resultado final con un dispositivo de al menos cada sistema operativo.</p>
+<p>Sin embargo, en lo relativo a revisar el <em>responsive design</em>, los efectos en el cambio de orientación del dispositivo, ya ayuda bastante. Y para el resto de funcionalidades (simular GPS y otros detalles) no lo he probado, pero seguro que simplifica las pruebas más rutinarias.</p>
+<p>En fin, ahí queda, por si a alguien le interesa.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 20<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-ix-filterchains/">Phing (IX) filterchains</a></h3>
+        </header>
+        <section>
+            
+                <p>Existen algunas tareas que se pueden encadenar unas tras otras, y cuyos resultados intermedios no son de nuestro interés. &nbsp;En Unix estas operaciones se realizan normalmente con <em>pipes</em>. Pues bien, en Phing tenemos las <em>filterchains</em>, un conjunto de aplicaciones de filtros sobre una serie de contenidos que se pueden encadenar para generar un resultado final, y que el <em>input</em> de un proceso es el <em>output</em> del proceso anterior.</p><!--more-->
+<h2>Incluir la cabecera de información legal</h2><br />
+Supongamos que queremos que todo archivo de nuestro código fuente incluya la habitual cabecera de código, pero sólo lo queremos en el momento de empaquetar y publicar nuestro proyecto.</p>
+<p>En ese caso, podemos seleccionar los archivos a modificar (con un fileset), y utilizar entonces <em>filterchain</em> para ejecutar la operación <em>ReplaceTokensWithFile</em>:</p>
+<pre class="brush: actionscript3; gutter: true">...<br />
+  <fileset refid="myProjectFiles" /><br />
+  <filterchain><br />
+    <replacetokenswithfile begintoken="#!" endtoken="!#" dir="plantillas/" postfix=".php"/><br />
+  </filterchain><br />
+...</pre></p>
+<pre class="brush: xml; gutter: true"><span style="font-family: Georgia, &#039;Times New Roman&#039;, &#039;Bitstream Charter&#039;, Times, serif; font-size: 13px; line-height: 19px;">Vale sí, pero &iquest;esto qué hace?&nbsp;Pues te permite poner un texto en tu código equivalente a:</span></pre></p>
+<pre class="brush: xml; gutter: true"><span style="font-family: Georgia, &#039;Times New Roman&#039;, &#039;Bitstream Charter&#039;, Times, serif; font-size: 13px; line-height: 19px;">#!copyright!#</span></pre></p>
+<pre class="brush: xml; gutter: true"><span style="font-family: Georgia, &#039;Times New Roman&#039;, &#039;Bitstream Charter&#039;, Times, serif; font-size: 13px; line-height: 19px;">Y que, en caso que exista el archivo plantillas/copyright.php, el contenido de éste quedará automáticamente insertado en el lugar donde ha encontrado la cadena anterior.</span></pre></p>
+<h2>Limpieza básica del código</h2><br />
+Supón, por ejemplo, que te ha llegado un código fuente (o un CSV, o cualquier otro contenido textual) plagado de saltos de línea del tipo Windows (\n\r) y quieres convertirlos a saltos de línea tipo Unix (\n). Podrías hacer lo siguiente:</p>
+<pre class="brush: xml; gutter: true">
+<php expression="chr(10)" returnProperty="LF"/>
+...<br />
+<fileset ... /><br />
+<filterchain><br />
+  <replaceregexp><br />
+    <regexp pattern="\n\r" replace="${LF}"/><br />
+  </replaceregexp><br />
+</filterchain></pre><br />
+En el fondo podrías eliminar directamente "\r" (dejando replace vacío), pero de este modo te aseguras que no hay sorpresas ni cambios.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 17<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/complejidad-visual/">Complejidad visual</a></h3>
+        </header>
+        <section>
+            
+                <p>Leí hace ya un tiempo un artículo (no tengo la referencia) sobre el dise&ntilde;o gráfico de escenarios en videojuegos. La lectura fue casual, algo que leer mientras se espera algo o a alguien. En sí nada importante.</p><!--more-->
+<p>El caso es que en esa lectura recuerdo un detalle interesante que vuelve a mí constantemente: la variedad de formas y colores del escenario debe tener un grado de complejidad equilibrado, dependiendo del ambiente que se quiera crear. Poco complejo aburrirá al usuario, que inconscientemente lo tachará de falso, y demasiado complejo puede distraer al usuario, a quien le puede diferenciar los elementos activos del simple decorado.</p>
+<p>En el fondo, creo yo, aún nos llama el instinto por buscar algún tipo de alimento en esos colores. Quizá en la naturaleza, la complejidad visual es un indicio de que existe algún tipo de vida; una vida que no permite (por interés propio) que ese entorno se degrade y se erosione hasta ser desierto. Y eso, para nosotros como depredadores, puede equivaler a alimento.</p>
+<p>Aquí, reflexionando, mientras recuerdo momentos pasados revisando documentos intragables. You know...</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 15<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/simular-un-valor-binomial/">Simular un valor binomial</a></h3>
+        </header>
+        <section>
+            
+                <p>Un proceso binomial es aquel que sólo puede tomar dos valores: uno o cero, sí o no, blanco o negro... En estadística, el proceso básico es denominado <em>experimento de Bernouilli</em> en honor al matemático (que por cierto, <a title="Familia Bernouilli" href="http://es.wikipedia.org/wiki/Bernouilli">vaya familia</a>). El experimento se refiere a <em>cualquier</em> experimento que tenga esta característica.</p><!--more-->
+<p>Este proceso otorga una probabilidad <em>p</em> a que tenga lugar un suceso (por ejemplo, que alguien responda "Sí" a una pregunta), y por contraposición otorga la probabilidad <em>q</em> al suceso contrario (alguien responde "No"). Lo importante es que <strong>siempre</strong> p + q = 1. Esto quizá te sonará del <a title="Por qué P = Q = 0,5?" href="http://www.sopadebits.com/por-que-p-q-0-5">post de p = q = 0,5</a>.</p>
+<p>Los procesos de simulación estadística parten siempre de los recursos que proporciona la informática. &nbsp;Para el caso, se utilizan los generadores de valores aleatorios (en concreto, los <a title="Wikipedia: Generadores pseudoaleatorios" href="http://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_pseudoaleatorios">generadores pseudoaleatorios</a>). Estos generadores devuelven un valor entre 0 y 1, pero es un valor continuo.</p>
+<h2>Conversión de continuo a discreto</h2><br />
+Entonces, cómo convertimos ese valor a un valor 0 ó 1? Este caso es sencillo, pero se puede extrapolar a otros casos más complejos. El algoritmo es:</p>
+<ul>
+<li>Iniciamos un experimento de Bernouilli para determinar el valor de X</li>
+<li>Se genera un valor aleatorio U entre 0 y 1</li>
+<li>Si U es menor que p, X valdr&agrave; 1. En caso contrario, valdrá 0.</li><br />
+</ul><br />
+Si lo que queremos es simular una distribución binomial con <em>n</em> repeticiones, lo que debemos hacer es ejecutar el proceso anterior <em>n </em>veces y sumar los valores de X. Este proceso, ejecutado un número de veces lo suficientemente grande, y representado gráficamente, nos mostrará un diagrama cercano a la distribución teórica del modelo Binomial.</p>
+<p>Pero eso ya queda para otros momentos.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 11<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/calcular-la-variancia-sin-recorrer-dos-veces-los-datos/">Calcular la variancia sin recorrer dos veces los datos</a></h3>
+        </header>
+        <section>
+            
+                <p>El cálculo de la variancia (o <a title="Wikipedia: Varianza" href="http://es.wikipedia.org/wiki/Varianza">varianza</a>, según la literatura) implica a la media. &nbsp;Dado que para calcular la media necesitamos todos los datos (bueno no siempre, pero en este caso sí), el algoritmo más básico nos obligaría a recorrer dos veces la muestra de datos:</p><!--more-->
+<ul>
+<li>Recorremos la primera vez sumando los valores, y acabamos calculando la media.</li>
+<li>Recorremos una segunda vez la muestra, y para cada valor calculamos el cuadrado de su distancia respecto a la media.</li>
+<li>Finalizamos dividiendo el segundo resultado entre el número de datos de la muestra.</li><br />
+</ul><br />
+Este proceso es harto costoso en términos de tiempo. Recorremos dos veces una muestra (que pueden ser miles de datos) y eso ya es motivo para pensar si podemos reducirlo.</p>
+<p>Por suerte, la varianza se puede exponer, en términos de esperanza matemática, de otra forma. Extraído directamente de Wikipedia:</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/06/73df93c27146427f9d900b578eed3141.png"><img class="alignleft size-full wp-image-27179" title="Desglose de la varianza en términos de esperanza matemática" src="http://www.sopadebits.com/wp-content/uploads/2013/06/73df93c27146427f9d900b578eed3141.png" alt="Desglose de la varianza en términos de esperanza matemática" width="282" height="138" /></a>Lo que está indicando esta fórmula es que podemos separar el cálculo de la media del de sus valores al cuadrado.</p>
+<p>&iquest;Esto mejora lo anterior? Sí, porque al poderlo diferenciar, lo podemos <strong>paralelizar</strong>, y por lo que podemos utilizar un solo recorrido por los datos para calcular la varianza.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Algoritmo de cálculo</h2></p>
+<ul>
+<li>Recorremos los datos, generando dos variables: X y M.</li>
+<li>Para cada valor de los datos
+<ul>
+<li>sumamos el valor a M.</li>
+<li>Elevamos el valor al cuadrado y lo sumamos a X.</li><br />
+</ul><br />
+</li></p>
+<li>Al finalizar el cálculo dividimos ambos valores por el número de datos de la muestra.</li>
+<li>restamos X-M, y tenemos la varianza.</li><br />
+</ul></p>
+<h2>Calcular la varianza como flujo</h2><br />
+Relacionado con el post sobre el algoritmo de cálculo de la media, y viendo la optimización anterior, &iquest;Crees que es posible calcular la varianza al vuelo?</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 8<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/lecturas-veraniegas-james-gleick-la-informacion/">Lecturas veraniegas: James Gleick - La Informacion</a></h3>
+        </header>
+        <section>
+            
+                <p>Ya he publicado algunas rese&ntilde;as de libros en el blog, y aunque me encanta hacerlo como ejercicio de resumen y de anclaje de ideas, es una tarea que consume el tiempo de una manera bárbara. Eso al final lleva a no escribir nada, y al final, pues... todos perdemos un poquito.</p><!--more-->
+<p>Es por eso que hoy me decido a hacer un peque&ntilde;o comentario sobre el libro "La información" de James Gleick. &nbsp;Ya lo han comentado <a title="BoingBoing - Gleick's Masterpiece" href="http://boingboing.net/2012/03/06/gleicks-masterpiece-the.html">Cory Doctorow</a>, y hay una rese&ntilde;a en <a title="El País - Ahogados en información" href="http://cultura.elpais.com/cultura/2012/02/21/actualidad/1329847821_636612.html">El País</a>, La primera edición apareció en Febrero del 2012, por lo que es un libro nuevecito.</p>
+<p>Leí buenas críticas de él, pero quise comprobarlo en primera persona. &nbsp;Lo pude leer entre Septiembre y Noviembre del a&ntilde;o pasado, y no puedo menos que recomendarlo. Pocas veces he tenido la sensación de leer un libro tan fundamentado, con tantas referencias, y a la vez tan sugerente...</p>
+<p>... Porque esa es la palabra: es un libro sugerente e inspirador. Obliga a parar un momento y a pensar, tratar de relacionar ideas, relacionar temas comentados en capítulos anteriores, especular... Quizá, por comparar, la sensación que tuve durante la lectura es similar a la que me apareción leyendo "No Logo" de Naomi Klein. Una lectura que te agarra. No es ligera, pero no te aburres porque te parece estar aprendiendo por momentos.</p>
+<p>&iexcl;No me dirás que no es un libro ideal para las vacaciones! Con ese rato de la siesta que no acaba de pasar, mientras afuera hace calor...</p>
+<p>El libro no es lectura ligera. Pero ese <em>peso</em>, lo veo totalmente justificado.</p>
+<p>Feliz lectura.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 4<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-viii-filesets-filedirs-includes-excludes/">Phing (VIII) filesets, filedirs, includes, excludes</a></h3>
+        </header>
+        <section>
+            
+                <p>Otra de las potentes características de Phing es la posibilidad de procesar en bloque un conjunto de archivos que coincida con un determinado patrón de nombre, ruta, o una combinación de ellas. Por ejemplo, la siguiente instrucción:</p><!--more-->
+<pre class="brush: xml; gutter: true"><fileset dir="/etc" ><br />
+  <include name="httpd/**" /><br />
+  <include name="php.ini" /><br />
+</fileset></pre><br />
+Permite recoger todos los archivos dentro de /etc/httpd/ (incluyendo subdirectorios), y también el archivo php.ini.</p>
+<pre class="brush: xml; gutter: true"><fileset dir="/ruta/a/mi/proyecto/php" ></p>
+<patternset>
+    <include name="**/*.php"/><br />
+    <exclude name="**/*Test*"/><br />
+  </patternset><br />
+</fileset></pre></p>
+<p class="brush: xml; gutter: true">En este segundo caso &nbsp;recoge todos los archivos .php que existieran en cualquier directorio dentro de "/ruta/a/mi/proyecto/php", y excluye todos los archivos que contengan en su nombre la palabra "Test" (los archivos con pruebas unitarias)</p></p>
+<p class="brush: xml; gutter: true">En ambos casos, el asterisco simple sirve para lo mismo que en la consola: como <em>comodín</em>. Sin embargo, el doble asterisco es una opción muy potente para buscar recursivamente en los subdirectorios y también dentro de los nombres. Así, la expresión:</p></p>
+<p class="brush: xml; gutter: true">
+<pre class="brush: xml; gutter: true">...<br />
+  <include name="test**.xml"/><br />
+...</pre><br />
+Puede encontrar tanto un archivo denominado &nbsp;test_nuevo.xml as well as to test/test_viejo.xml, por ejemplo. Es decir, el doble asterisco ** "supera la barrera" de los directorios y sirve como comodín en cualquier parte del path del archivo.</p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 1<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-vii-operaciones-con-control-de-versiones/">Phing (VII) - Operaciones con control de versiones</a></h3>
+        </header>
+        <section>
+            
+                <p>Si la automatización de tareas es uno de los grandes objetivos de Phing, la gestión del control de versiones es un objetivo importante. Las tareas de despliegues sistemáticos, principalmente para el testeo y la integración continua se pueden agilizar utilizando Phing.</p><!--more-->
+<p>Para el caso, veremos las tareas disponibles para las dos herramientas más populares de control de versiones: <a title="Git" href="http://git-scm.com/">Git</a> y <a title="Subversion" href="http://subversion.tigris.org/">Subversion</a>. Salvo excepciones notables, las tareas de ambos casos permiten más o menos los mismos objetivos, pero dado que los dos sistemas tienen algunas diferencias estructurales y de nomenclatura, las tareas varían ligeramente.</p>
+<p>Los siguientes apartados asumen que ya tienes unas nociones mínimas del concepto de control de versiones, así como de los comandos más habituales. Si no fuera así, visita la <a title="Git documentation" href="http://git-scm.com/documentation">documentación de Git</a> o el <a title="Subversion book" href="http://svnbook.red-bean.com/">libro de Subversion</a>.</p>
+<h2>Inicialización de repositorio</h2><br />
+En el caso de git, tenemos GitInit:</p>
+<pre class="brush: xml; gutter: false"><gitinit bare="true" repository="./ruta/hasta/nuevo/repositorio" /></pre><br />
+Lo anterior inicializa un repositorio. La opción <em>bare</em> permite inicializarlo sin mostrar la estructura de directorios. Esto es especialmente apropiado al instalarlo en servidores que alojarán estos repositorios (al estilo Github o similares).</p>
+<p>Subversion en este caso no tiene una rutina de inicialización de repositorios.</p>
+<h2>Registro de actividad (log)</h2><br />
+En el caso de Git:</p>
+<pre class="brush: xml; gutter: true"><gitlog<br />
+    since="Sun Jan 23 23:55:42 2013 +0300"<br />
+    until="Mon Jan 24 09:59:33 2013 +0300"<br />
+    outputProperty="logs"<br />
+    repository="/ruta/al/repositorio" /></pre><br />
+Y en el caso de subversion:</p>
+<pre class="brush: xml; gutter: true"><svnlog<br />
+    svnpath="/usr/bin/svn"<br />
+    workingcopy="/home/user/svnwc"<br />
+    propertyname="svn.log"/></pre><br />
+En ambos casos tienen otras varias opciones, aunque hay que reconocer que Git ofrece más posibilidades de filtro y formatos de salida.</p>
+<h2>Obtener copias de repositorios ajenos</h2><br />
+En git, esta función se cumple con <em>git clone</em>:</p>
+<pre class="brush: xml; gutter: false"><gitclone<br />
+    repository="git://github.com/path/to/repo/repo.git"<br />
+    targetPath="/ruta/al/repositorio"/></pre><br />
+En el caso de subversion, la operación es la de <em>checkout</em>:</p>
+<pre class="brush: xml; gutter: true"><svncheckout<br />
+   svnpath="/usr/bin/svn"<br />
+   repositoryurl="svn://localhost/project/trunk/"<br />
+   todir="/ruta/a/copia/de/trabajo"/></pre></p>
+<h2>Trabajo con ramas (branching y merging)</h2><br />
+En el caso de Git, las operaciones son el GitBranch, GitMerge y GitCheckout:</p>
+<pre class="brush: xml; gutter: true"><gitbranch<br />
+    repository="/ruta/a/repo"<br />
+    branchname="nombre-rama" /></pre></p>
+<pre class="brush: xml; gutter: true"><gitmerge<br />
+    repository="/ruta/a/repo"<br />
+    remote="nombre-rama-1 nombre-rama-2"<br />
+    message="merging repos" commit="true" /></pre></p>
+<pre class="brush: xml; gutter: true"><gitcheckout<br />
+    repository="/ruta/al/repositorio"<br />
+    branchname="mi-rama" quiet="true" create="true" /></pre><br />
+En el caso de subversion, utilizamos SvnCopy y SvnSwitch:</p>
+<pre class="brush: xml; gutter: true"><svncopy<br />
+   svnpath="/usr/bin/svn"<br />
+   username="anony"<br />
+   password="anony"<br />
+   nocache="true"<br />
+   repositoryurl="svn://localhost/project/trunk/"<br />
+   todir="svn://localhost/project/tags/0.1"/></pre></p>
+<pre class="brush: xml; gutter: true"><svnswitch<br />
+   svnpath="/usr/bin/svn"<br />
+   repositoryurl="http://localhost/project/tags/2.4.2"<br />
+   todir="/ruta/a/copia/trabajo"/></pre><br />
+No existe tarea de Subversion para el proceso de <em>merge</em>.</p>
+<h2>Sincronización de repositorios</h2><br />
+Git dispone de las tareas GitPush, GitPull, y GitFetch:</p>
+<pre class="brush: xml; gutter: true"><gitpush<br />
+    repository="/ruta/al/repositorio"<br />
+    refspec="master:foobranch" tags="true" /></pre></p>
+<pre class="brush: xml; gutter: true"><gitpull<br />
+    repository="/ruta/al/repo" all="true" /></pre></p>
+<pre class="brush: xml; gutter: true"><gitfetch<br />
+    repository="/ruta/al/repo" all="true" /></pre><br />
+Subversion dispone de las tareas SvnCommit, y SvnUpdate,</p>
+<pre class="brush: actionscript3; gutter: true"><svncommit<br />
+    workingcopy="/ruta/a/copia/local"<br />
+    message="Comentario del commit" /></pre></p>
+<pre class="brush: xml; gutter: true"><svnupdate<br />
+   svnpath="/usr/bin/svn"<br />
+   todir="/ruta/a/copia/local"/></pre><br />
+&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 28<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/calculo-de-la-media-con-datos-en-flujo/">Cálculo de la media con datos en flujo</a></h3>
+        </header>
+        <section>
+            
+                <p>En muchos casos disponemos de todo el conjunto de datos para poder calcular la media. En esas situaciones, la suma de todos los elementos divididos por el número de éstos, ya nos proporciona la media.</p><!--more-->
+<h2>Datos en bloque y datos en flujo</h2><br />
+Pero &iquest;qué sucede cuando los datos van surgiendo aleatoriamente, y además no sabemos ni la cantidad, ni el momento en el que dejarán de aparecer? Necesitamos un cálculo dinámico de la media. Y para más detalle, queremos mantener el mínimo volumen de datos.</p>
+<h2>Calcular la media cada vez</h2><br />
+Dado que la media es la suma de los elementos divididos por la cantidad, podemos tener un valor que contenga la suma de todos los elementos anteriores, y otra variable con el número de elementos que han llegado.</p>
+<p>Cada vez que llegara un nuevo valor, sólo sería necesario sumarlo a la primera variable, incrementar en uno el valor de la segunda, y luego dividir la primera por la segunda. Tendríamos así la nueva media.</p>
+<p>De esta forma guardamos tres valores: el total, el número de ítems y la media.</p>
+<h2>Optimizando los recursos</h2><br />
+Aunque en este caso parezca absurdo, pueden existir situaciones en el que el ahorro pueda ser significativo. Así que, &iquest;cómo podemos reducir el número de variables a guardar?</p>
+<p>Para esas situaciones la fórmula clásica no sirve. Tenemos que echar mano de una versión generalizada, la <a title="Wikipedia: Media ponderada" href="http://es.wikipedia.org/wiki/Media_ponderada">media ponderada</a>. En realidad, una media tal como la conocemos es un caso concreto de la media ponderada: es cuando todos los valores que queremos promediar tienen la misma importancia (el mismo peso, la misma ponderación).</p>
+<p>Para el caso que nos ocupa, tendremos dos valores: el número de ítems y la media actual. Es decir, nos ahorramos la suma del total. &iquest;Cuál es el procedimiento?</p>
+<ul>
+<li>Llega el primer valor. La media es éste mismo valor.</li>
+<li>A partir del segundo valor, ponderamos la media existente por el número de elementos que han llegado, y el nuevo valor por uno.</li><br />
+</ul><br />
+A medida que se va incrementando el número de valores, el peso de la media es tan alto, que los nuevos valores deben ser muy altos para alterar la media.</p>
+<p>Este proceso es algo más intensivo en recursos, pero más ligero en recursos que el anterior.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../en/page/14/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">13</a>
+        
+        
+          <a class="btn btn-primary" href="../../../en/page/12/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

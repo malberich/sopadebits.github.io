@@ -1,0 +1,582 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/4/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">3</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/2/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                jun. 26<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/php-rapido/">PHP es lo suficientemente rápido</a></h3>
+        </header>
+        <section>
+            
+                <p>Desde hace aproximadamente unos dos a&ntilde;os he estado <em>flirteando</em> con alternativas a PHP, en especial NodeJS.&nbsp; El motivo principal ha sido conocer otras soluciones con una aproximación diferente a los problemas que plantea el entorno web en general, y la potencial mejora que supone compartir el mismo lenguaje de programación en el entorno cliente y el servidor. Python también está en la lista de <em>flirteos</em>, aunque debo decir que a cierta distancia.</p>
+<p>El atractivo por NodeJS es (y en parte seguirá siendo) un enfoque diferente para la operativa en los cuellos de botella de las aplicaciones web. Al poder tratar las operaciones I/O de una forma asíncrona (eventos y callbacks), es un valor a&ntilde;adido en ciertos casos.&nbsp; El enfoque asíncrono de NodeJS permite una ejecución más fluida, que a su vez permite combinar consultas exigentes con el trabajo paralelo mientras se espera a la finalización de estas tareas.&nbsp; Además, una orientación a eventos, soluciones PubSub y otras características derivadas hacen pensar en NodeJS como una opción más que interesante para ciertas soluciones del entorno cloud.</p>
+<h2>Velocidad del código, velocidad del desarrollo</h2><br />
+Pero quizá el enfoque que más aporta NodeJS, y por el cual también llegué a introducirme en el mundo del PHP fue la velocidad a la hora de desarrollar, y la agilidad para realizar cambios.&nbsp; Hace unos meses leí el artículo&nbsp;<a title="PHP PPHP Performance: "fast enough" and improvingerformance: "fast enough" and improving" href="https://www.acquia.com/blog/php-performance-fast-enough-and-improving-jonathan-klein">PHP Performance: "fast enough" and improving</a>, que pone énfasis en ese punto.</p>
+<p>PHP tiene y tendrá infinidad de defectos, pero por alguna razón es <a href="http://w3techs.com/technologies/overview/programming_language/all">el lenguaje más utilizado para aplicaciones web</a>.&nbsp; La razón es sencilla: es fácil empezar el desarrollo con PHP, no requiere una curva de aprendizaje como Java. En una palabra, funciona.</p>
+<p>Pero la propia evolución de PHP no ha sido nada sencilla. El paso de la versión 4 a la 5 supuso un salto bastante difícil de seguir, y la introducción gradual de los Frameworks primero (empujado probablemente por actores como Ruby on Rails),&nbsp; y en especial de los <a href="http://www.php-fig.org/psr/">PSR</a>, parece haber dividido una comunidad que debate entre la necesidad de estructurar y madurar el lenguaje, o mantenerlo en ese nivel de libertad que ha tenido desde sus inicios. Probablemente la aparición de lenguajes como Ruby (y RoR) como Python ha dado más empuje a la primera alternativa. Sinceramente lo desconozco.</p>
+<p>Por último, la aparición de HipHop primero, y de <a title="#hhvm en #magento y #symfony" href="http://www.sopadebits.com/hhvm-magento-symfony">HHVM</a> después, han dado un empuje a la velocidad de carga de las aplicaciones PHP, con una integración completa (o casi) en <a href="http://hhvm.com/frameworks/">muchas aplicaciones</a> del ecosistema PHP,entre las cuales destacaría algunos casos clave, como Drupal, MediaWiki y Magento 2.</p>
+<p>Es posible que las próximas versiones de PHP incorporen más mejoras en el rendimiento. &iquest;El mismo que Java? Probablemente no, pero seguro que a la par con NodeJS y mejor que otros lenguajes interpretados. Dependerá del uso que se le dé. En realidad, se puede descartar a PHP por varios motivos, pero en pocos casos ése será el de su rendimiento.</p>
+<h2>Los nuevos entornos</h2><br />
+Es innegable que PHP no está pensado para ciertos otros entornos, como son las aplicaciones móviles (aunque sí <a href="http://venturebeat.com/2012/10/23/huge-news-php-developers-can-now-design-build-and-publish-mobile-apps-right-in-zend-studio/">parece teóricamente posible</a>). Ahí es donde en parte entra un lenguaje como Javascript (vía <a href="http://angularjs.org/">AngularJS</a>, <a title="Ionic Framework" href="http://ionicframework.com/">Ionic Framework</a> y/o similares).</p>
+<p>No pienso en Javascript como algo que deba convertirse en un lenguaje de programación para todos los usos, <strong>pero sí para cualquiera</strong>. Si un lenguaje permite moverme en varios entornos a la vez (navegador, servidor, aplicación móvil o <a href="https://github.com/rogerwang/node-webkit">de escritorio con node-webkit</a>), eso es algo de valorar si por un lado se quiere prototipar y producir un resultado sin detenerse en los detalles del tipado de datos, o en un requerimiento de un extremo rendimiento o de extrema fiabilidad en algunos procesos.</p>
+<p>Cada proyecto es diferente, pero PHP, como afirma el artículo comentado más arriba, es lo suficientemente rápido y maduro para ser un gran candidato.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                jun. 22<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-25/">Enlaces de interés 2014-25</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>Dos&nbsp;bibliotecas de código para convertir a HTML las fórmulas de LaTeX,&nbsp;<a title="Author interactive math equations and diagrams online using LATEX and PSTricks" href="http://latex2html5.com/">ya sea con latex2html5</a>, o con <a title="A LaTeX Compiler for Javascript" href="http://manuels.github.io/texlive.js/">texlive</a>.</li></p>
+<p><li>Un artículo interesante sobre la <a title="Handling Errors in Node.js" href="http://massalabs.com/dev/2013/10/17/handling-errors-in-nodejs.html">gestión de errores en NodeJS</a>.</li></p>
+<p><li><a title="Unit Testing Best Practices in AngularJS" href="http://blog.codeship.io/2013/10/31/unit-testing-best-practices-in-angularjs.html">Testeo unitario en AngularJS</a>.</li></p>
+<p><li>Octane, la propuesta de Google para el&nbsp;<a title="Octane" href="https://developers.google.com/octane/">benchmarking de motores Javascript</a>.</li></p>
+<p><li>Una bastante completa <a title="An In-Depth Introduction To Ember.js" href="http://www.smashingmagazine.com/2013/11/07/an-in-depth-introduction-to-ember-js/">introducción&nbsp;a EmberJS</a>.</li></p>
+<p><li><a title="TableclothJS" href="http://tableclothjs.com/">TableclothJS</a>, un plugin de jQuery para tablas.</li></p>
+<p><li>Un <a title="Extracting Data from PDFs using Tabula" href="http://schoolofdata.org/handbook/recipes/extracting-data-from-pdf-with-tabula/">tutorial de School of Data</a> para <a title="Tabula is a tool for liberating data tables locked inside PDF files." href="http://jazzido.github.io/tabula/">Tabula</a>, la herramienta que permite extraer tablas de datos de los&nbsp;archivos PDF.</li><br />
+&lt;/ul&gt;<br />
+Un video de Code For America, en concreto de Catherine Bracy, hablando del por qué los buenos hackers (que no son piratas) hace buenos ciudadanos:&lt;/p&gt;<!--more--></p>
+<p>[ted id=1933]</p>
+<p>Feliz verbena!</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                jun. 1<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-22/">Enlaces de interés, 2014-22</a></h3>
+        </header>
+        <section>
+            
+                <p>&nbsp;</p><!--more-->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<br />
+El humilde border-radius y lo que podemos dar de sí. Una presentación de de Lea Verou en la Fluent Conf 2014:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/JSaMl2OKjfQ?list=PL055Epbe6d5bab7rZ3i83OtMmD-d9uq2K" frameborder="0" allowfullscreen></iframe></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 25<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-21/">Enlaces de interés 2014-21</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li><a href="http://www.slideshare.net/dbtsai/m-llib-sf-machine-learning ">Apache Spark para Machine Learning</a>.</li></p>
+<p><li><a href="http://blog.consultorartesano.com/2014/05/del-cybercrafting-a-la-industria-4-0-2005-2014.html">Del Cybercrafting a la Industria 4.0, 2005-2014</a>, en Consultor Artesano.</li></p>
+<p><li>Un proyecto para aprender a programar dise&ntilde;ando juegos: <a href="http://inventwithpython.com/">Invent with Python</a>.</li></p>
+<p><li>Una galería de <a href="http://visualizing.org/galleries/interesting-ui">ejemplos de visualizaciones, bastante diferente y sofisticada</a>.</li></p>
+<p><li><a href="http://elboenuestrodecadadia.com/2014/05/12/las-cuentas-de-los-partidos-politicos-en-ocho-puntos/">Las cuentas de los partidos en ocho puntos</a>, ahora que se acercan otra vez las <a title="Sobre las Elecciones Europeas y la decisión de voto" href="http://www.sopadebits.com/elecciones-europeas-decision-voto">Elecciones Europeas y la decisión del tipo de voto</a>.</li></p>
+<p><li><a href="http://tecnologia.elpais.com/tecnologia/2014/05/07/actualidad/1399476525_191785.html">Un artículo en El País</a> sobre los Games for Change.</li></p>
+<p><li><a href="http://www.technologyreview.com/view/428399/pagerank-algorithm-reveals-soccer-teams-strategies/">Aplicar PageRank a los pases entre jugadores de un equipo de fútbol para entender sus estrategias</a>. Ale, qué tranquilo me he quedado :-).</li><br />
+&lt;/ul&gt;<br />
+El video de hoy trata sobre la aplicación de Javascript para controlar "cacharritos" como Arduino, o para programar un drone:&lt;/p&gt;<!--more--></p>
+<p><iframe src="//www.youtube.com/embed/7b_epE3XG34" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 22<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/big-data-desigualdad-y-desarrollo/">Big data, desigualdad y desarrollo</a></h3>
+        </header>
+        <section>
+            
+                <p>Admito que de primeras este título puede parecer&nbsp;<a title="Mezclar churras con Merinas (ovejas)" href="http://blogs.20minutos.es/yaestaellistoquetodolosabe/cual-es-el-origen-de-la-expresion-no-hay-que-mezclar-churras-con-merinas/" target="_blank">mezclar churras con merinas</a>, pero no lo es en absoluto. &nbsp;El análisis de datos en el ámbito de los negocios se centra en la optimización de los beneficios. Esa optimización a su vez hace rentable la recopilación de los datos dentro de un proceso, un flujo de actividad de sus clientes potenciales: si recopilando unos datos la empresa gana dinero, los seguirá recopilando.</p>
+<p>Así pues, es posible que tu rango de actividades esté fuera de ese&nbsp;<em>flujo de datos</em> de interés para las empresas. Y en ese caso, corres el riesgo de ser excluído. Así lo comentaba Jonas Lerman en su artículo <a title="Big Data and Its Exclusions" href="http://www.stanfordlawreview.org/online/privacy-and-big-data/big-data-and-its-exclusions" target="_blank">Big Data and Its Exclusions del Stanford Law Review</a> del Septiembre de 2013 (el destacado es mío):</p>
+<blockquote><p>big data has the potential to solidify existing inequalities and stratifications and to create new ones. It could restructure societies so that the only people who matter&mdash;quite literally the only ones who count&mdash;are <strong>those who regularly contribute to the right data flows</strong>.</blockquote><br />
+Es complicado reaccionar con una insubordinación a esta tendencia, comenta este autor, si no es que se traslada a los Estados mediante un cuerpo legal consistente, y también al sector privado. Que la capacidad para tratar esos datos, no lleve a la exclusión a todos aquellos que se mantienen ajenos a la corriente principal.</p>
+<p>Pero las exclusiones también pueden suceder <em>dentro</em> del flujo de datos. Es lo que&nbsp;expone el artículo <a title="Big Data&rsquo;s Dangerous New Era of Discrimination" href="http://blogs.hbr.org/2014/01/big-datas-dangerous-new-era-of-discrimination/" target="_blank">Big Data&rsquo;s Dangerous New Era of Discrimination</a>, en el que comenta:</p>
+<blockquote><p>But the main source of concern <strong>won&rsquo;t be privacy, per se</strong> &mdash; it will be whether and how companies and organizations like your own use Big Data analytics to justify their segmentation/personalization/discrimination strategies.</p>
+<p>The more effective Big Data analytics are in profitably segmenting and serving customers, the more likely those algorithms will be audited by regulators or litigators.</blockquote><br />
+Regulación de algoritmos, entonces. Bueno, quizás sí, aunque no tengo muy claro cómo se evitará que esos datos se procesen con ese algoritmo. Incluso se puede&nbsp;<em>desglosar</em> el algoritmo en sus diversas operaciones matemáticas para poder dar un rodeo a las restricciones.</p>
+<h2>Big Data para el desarrollo</h2><br />
+He aquí la otra cara de la moneda: enfocar el Big Data no para optimizar los ingresos, sino para optimizar el número de beneficiarios de sus algoritmos. &iquest;Cómo se podría aplicar esta tecnología para el desarrollo? Un informe de las Naciones Unidas titulado <a title=""Big Data for Development: Opportunities &amp; Challenges" - White Paper" href="http://www.unglobalpulse.org/projects/BigDataforDevelopment" target="_blank">Big Data for Development</a> (2012, incluye un enlace a PDF en la página) trata de tipificar y reenfocar la terminología habitual de este tema.</p>
+<p>El documento adolece de su relativa antig&uuml;edad y deja abiertos muchos puntos que quizá ahora se podrían concretar. Pero en todo caso, presenta una serie de posibilidades para la aplicación del Big Data a este contexto:</p>
+<ul>
+<li>Disponibilidad de dispositivos de bajo coste y fácil mantenimiento para recopilar datos.</li>
+<li>Crowdsourcing como modelo operativo en la recolección.</li>
+<li>Estándares de privacidad para los datos personales.</li><br />
+</ul><br />
+Y sus aplicaciones:</p>
+<ul>
+<li>Mejora de la capacidad de seguimiento y respuesta de sucesos inesperados (Outbreak).</li>
+<li>Mejora de la comprensión del cambio de comportamiento en las crisis.</li>
+<li>Mapeo más concreto de las necesidades de los servicios.</li>
+<li>Habilidad para predecir los cambios en la la oferta y la demanda.</li><br />
+</ul><br />
+Todo ello depende de la participación, tanto en el crowdsourcing como en una actitud de cooperación que acoja este proceso de recopilación de datos. &nbsp;Al fin y al cabo, el objetivo final es poder crear una base de evidencias que permitan afrontar el desarrollo, con unos recursos siempre escasos.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 18<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-20/">Enlaces de interés 2014-20</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>Comprendiendo en&nbsp;<a href="http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/"><em>event loop</em> de NodeJS.</a></li></p>
+<p><li>El <a href="http://nicolefenton.com/power-and-responsibility/">equilibrio entre el poder y la responsabilidad</a>, en una historia muy humana.</li></p>
+<p><li>La <a href="http://www.excelcharts.com/blog/redraw-troops-vs-cost-time-magazine/">relación entre el presupuesto y las bajas militares</a>, en un cambio de representación gráfica que muestra mejor la información y la historia que hay detrás.</li></p>
+<p><li><a href="http://storiesthroughdata.blogs.lincoln.ac.uk/2013/04/12/visualising-data-can-you-see-stories/"><em>Stories through data</em></a>, que intenta aglutinar ejemplos de historias explicadas a través de la representación de datos.</li></p>
+<p><li>Las <a href="http://engineering.spanishdict.com/blog/2013/12/20/the-4-keys-to-100-uptime-with-nodejs">cuatro claves para el 100% de uptime con NodeJS</a>.</li><br />
+&lt;/ul&gt;&lt;/p&gt;<!--more--></p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 11<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-19/">Enlaces de interés 2014-19</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>Demostración del <a href="http://mimno.infosci.cornell.edu/community/">Algoritmo Poisson para la detección de comunidades</a>, visualizado con <a href="http://sopadebits.com/tag/d3js">D3</a>.</li></p>
+<p><li>Una lista de <a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">recomendaciones para quienes se introduzcan en el campo de la visualización de datos por la vía del freelancing</a>.</li></p>
+<p><li>Una página con una utilidad para <a href="http://nodestreams.com/">practicar con los&nbsp;<em>streams</em> de NodeJS</a>. Poder entender a fondo la funcionalidad de los streams en NodeJS es clave para sacar ventaja en aspectos como el tiempo de respuesta (<a href="http://en.wikipedia.org/wiki/Time_To_First_Byte">tiempo hasta el primer byte</a>).</li></p>
+<p><li><a href="http://www.schillmania.com/projects/soundmanager2/">Sound Manager 2</a>, reproductor audio open source (BSD) para javascript y los navegadores, con fallback a Flash si fuera necesario.</li></p>
+<p><li>El reto de crear una <a href="https://medium.com/tech-talk/28df31f1be98">API en NodeJS que responda en 5ms</a>. Aunque se centra en aspectos concretos de la optimización, incluye comentarios interesantes.</li></p>
+<p><li><a href="http://blogs.scientificamerican.com/guest-blog/2013/07/11/artists-and-scientists-more-alike-than-different/">Artistas y científicos, más parecidos de lo que se cree</a>, según este artículo en Scientific American.</li></p>
+<p><li>Trucos para <a href="http://inchoo.net/ecommerce/magento/magento-tip-get-a-small-sized-version-of-a-large-production-database/">obtener una versión simplificada de una base de datos de Magento</a>, y poder trasladarla a nuestro entorno de desarrollo.</li><br />
+&lt;/ul&gt;&lt;/p&gt;<!--more--></p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 4<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-18/">Enlaces de interés 2014-18</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>Un documento interesante, <a href="https://docs.google.com/document/d/16tDVNb8VPAZlcm1ObRtsHxPSesN3YYUOwALtZRro6io/edit?pli=1#heading=h.qh4vqcqj7d53">Open Data Resource Kit</a>.</li></p>
+<p><li><a href="http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html">WebRTC black magic</a>, para entender algo más sobre esta especificación.</li></p>
+<p><li><a href="http://github.hubspot.com/offline/docs/welcome/">OfflineJS</a>, una biblioteca para gestionar el momento en el que los usuarios de nuestra aplicación se quedan sin conexión.</li></p>
+<p><li><a href="http://www.mozilla.org/en-US/lightbeam/">Mozilla Lightbeam</a>, una herramienta para tomar conciencia de la propia privacidad, y ver (con Firefox) quién sigue tu navegación web.</li></p>
+<p><li><a href="http://codecombat.com/">Code Combat</a>, para aprender a desarrollar javascript mientras jugamos.</li></p>
+<p><li>&iquest;Qué operadores de comparación en javascript utilizarías para verificar si dos valores valen cero? Una pregunta fácil, hasta que le echas un vistazo a esta <a href="http://zero.milosz.ca/">tabla comparativa de operadores</a>.</li></p>
+<p><li>Last but not least, las <a href="http://digitalpublishing.ons.gov.uk/2013/10/29/the-infographic-superhighway/">directrices para la realización de infografías</a>, PDF de la <a href="http://www.ons.gov.uk/">Office for National Statistics</a> británica, en un enlace al final del artículo. Muy pero que muy interesante.</li><br />
+&lt;/ul&gt;<br />
+Y el vídeo, para conectar <a href="http://sopadebits.com/tag/nodejs">NodeJS</a> con Arduino, mediante el framework <a href="https://github.com/rwaldron/johnny-five" target="_blank">JonnyFive</a>:&lt;/p&gt;<!--more--></p>
+<p><iframe src="//www.youtube.com/embed/8s2--hfsJDY" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 1<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/anscombe/">El cuarteto de Anscombe, cuando la forma importa</a></h3>
+        </header>
+        <section>
+            
+                <p>Tómate un minutillo para hacer unos cálculos sobre estas dos muestras de datos:</p><!--more-->
+<ul>
+<li>1, 2, 3, 4, 5</li>
+<li>1, 2, 3, 4, 100</li><br />
+</ul><br />
+&iquest;Cuál es la media? &iquest;Y la mediana?</p>
+<!--more-->
+<p>Si lo has calculado, habrás comprobado que la media se adapta al valor extremo (100), por lo que cambia de 3 a 22, pero que en cambio la mediana se mantiene impasible ante el cambio.</p>
+<p>Lo primero que pasa por la mente de mucha gente es que han cometido un error al calcular. La segunda fase es que la fórmula o el sistema de cálculo está equivocado: &iquest;Para qué quiero que la mediana se mantenga inmóvil después de un cambio tan extremo? Y aquí es cuando llegamos al meollo del asunto: la media y la mediana se crearon para fines muy distintos.</p>
+<h2>Hormas, zapatos, árboles y bosques</h2><br />
+Los métodos numéricos se comportan perfectamente para extraer porciones de información de cada individuo y luego ponerlas en común para toda la muestra, aplicando algún tipo de agregación. Sin embargo la potencia de estos procesos parece reducirse cuando entra nuestra capacidad humana de interpretar los datos mediante métodos menos lineales, como la forma de los datos en cuanto los representamos.</p>
+<p>Porque eso es lo que sucede cuando representamos los datos en al menos dos dimensiones: lo que nuestro razonamiento sudará para encontrar, nuestro ojo lo procesa en décimas de segundo.</p>
+<h2>El cuarteto de anscombe: cuando las cifras no lo explican todo</h2><br />
+[caption id="attachment_27850" align="alignleft" width="300"]<a href="http://www.sopadebits.com/wp-content/uploads/2014/04/anscombe_quartet.png"><img class="size-medium wp-image-27850" alt="anscombe quartet" src="http://www.sopadebits.com/wp-content/uploads/2014/04/anscombe_quartet-300x218.png" width="300" height="218" /></a> anscombe quartet[/caption]</p>
+<p>La imagen lateral son cuatro gráficos, conocidos como el <a title="Wikipedia - Anscombe's quartet" href="http://en.wikipedia.org/wiki/Anscombe's_quartet">cuarteto de Anscombe</a>, y son un ejemplo clave para entender <a title="Visualizar para inducir, analizar para deducir" href="http://www.sopadebits.com/visualizar-datos-explorar">la diferencia entre nuestra capacidad para procesar números y para identificar los gráficos</a>.</p>
+<p>En los cuatro gráficos, los valores para los principales indicadores estadísticos (media y varianza de x e y, correlación) y la recta de regresión, son idénticos (hasta el tercer decimal). Si tapáramos los gráficos anteriores y sólo mostráramos los indicadores anteriores, sería muy difícil deducir las grandes diferencias entre ellos.</p>
+<p>Es en estas situaciones, especialmente cuando en un proceso de análisis pueden aparecer gráficos tan dispares (lo cierto es que no siempre es así), en el que el análisis exploratorio de datos y la representación gráfica nos ayuda a tener una idea de lo que los datos nos deparan.</p>
+<p>Al fin y al cabo, el análisis y la representación gráfica pueden cooperar.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 29<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/mapreduce-linux-hadoop/">#MapReduce: probar en #linux antes de ejecutar en #Hadoop</a></h3>
+        </header>
+        <section>
+            
+                <p><h2>Diez a&ntilde;os de MapReduce</h2><br />
+En Diciembre se cumplirán diez a&ntilde;os desde que <a href="http://research.google.com/archive/mapreduce.html">Google publicó el&nbsp;<em>paper</em> sobre MapReduce</a>. El objetivo de ese artículo era exponer un algoritmo para procesar paralelamente grandes cantidades de datos utilizando una infraestructura basada en equipos informáticos modestos, y que por ello fuera más fácilmente escalable.&lt;/p&gt;<!--more-->
+<!--more--></p>
+<p>Diez a&ntilde;os más tarde MapReduce se encuentra en el núcleo del BigData, especialmente a través de Hadoop. &nbsp;Todas o casi <a title="16 Top Big Data Analytics Platforms" href="http://www.informationweek.com/big-data/big-data-analytics/16-top-big-data-analytics-platforms/d/d-id/1113609">todas las grandes compa&ntilde;ías que ofertan bigdata</a> ofrecen algún tipo de implementación de Hadoop a sus clientes.</p>
+<p>Pero Hadoop es una implementación que no sólo incluye un algoritmo, sino también un sistema de archivos (Hadoop Filesystem, HDFS, basado a su vez en el Google File System, GFS) y todos los mecanismos de control necesario para llevar a cabo el tratamiento de datos a gran escala.</p>
+<p>Entonces, si lo que queremos es entender el cambio de paradigma que supone MapReduce para tratar datos, &iquest;Necesitamos instalar Hadoop o un similar para entender el funcionamiento de MapReduce? Si lo que quieres probar son tus scripts con un peque&ntilde;o conjunto de datos, no.</p>
+<h2>Consola y pipes</h2><br />
+MapReduce tiene como base de funcionamiento el traspaso de información entre los procesos mediante&nbsp;<em>pipes</em>,&nbsp;lo que permite evitar el almacenamiento de datos en la memoria del proceso. Por ello, los scripts deben basarse en capturar la información del STDIN, y retornar la información a través del STDOUT. Si por ejemplo los datos están en un archivo CSV, podemos volcar el contenido con el comando&nbsp;<em>cat</em> (o <em>head</em>, o&nbsp;<em>tail</em> para sólo enviar un subconjunto de datos), enviándolo con un pipe a nuestro script de mapeo:</p>
+<pre class="brush: bash; gutter: true">cat archivo.csv | ./mapper.php</pre><br />
+Entonces, el script mapper.php debería <em>abrir</em>&nbsp;el flujo de datos recibidos a través de STDIN para empezar a procesarlo:</p>
+<pre class="brush: php; gutter: true">#!/usr/bin/php<br />
+<?php<br />
+$stdin = fopen( &#039;php://stdin&#039;, &#039;r&#039; );</p>
+<p>while( $line = fgetcsv( $stdin, 10000) ) {<br />
+// Procesar/mapear los datos y ejecutar un echo sprintf:<br />
+  echo sprintf("%s\n", $line[0]);<br />
+}<br />
+?></pre><br />
+No a&ntilde;ado ningún tipo de control en el script anterior, para ponerlo lo más simple posible. El script anterior imprime el contenido de la primera columna del archivo CSV.</p>
+<p>En el caso del script de reducer (reducer.php), lo que haremos es contar cuántas veces aparece cada cadena en el listado (es decir que ignoraremos el valor numérico). &nbsp;El script es bastante similar al del mapper, pero ahora mantendremos un contador de las veces que aparece la clave, y cuando ésta cambie, la imprimiremos:</p>
+<pre class="brush: actionscript3; gutter: true">#!/usr/bin/php<br />
+<?php<br />
+$stdin = fopen( &#039;php://stdin&#039;, &#039;r&#039; );<br />
+$currentKey   = null;<br />
+$currentCount = 0;<br />
+while( $line = fgets( $stdin ) ) {<br />
+// Generas el proceso de &#039;reducción&#039;<br />
+  if ($line !== $currentKey) {<br />
+    echo sprintf("%s\t%s\n", $currentKey, $currentCount);<br />
+    $currentKey = $fields[0];<br />
+    $currentCount = 0;<br />
+  }<br />
+  $currentCount++;<br />
+}<br />
+if ($currentKey !== null) {<br />
+ echo sprintf("%s\t%s", $currentKey, $currentCount);<br />
+}<br />
+?></pre><br />
+Vale, entonces ya tienes mapper.php y reducer.php. Para simplificar mucho, sólo queda un paso intermedio entre el mapper y el reducer: la ordenación de los registros recibidos (la parte <em>Sort</em> de&nbsp;lo que se denomina el <a href="https://www.inkling.com/read/hadoop-definitive-guide-tom-white-3rd/chapter-6/shuffle-and-sort"><em>Shuffle and Sort</em></a> del algoritmo). Para que el reducer pueda calcular las veces que aparece cada clave, debe recibir los datos ordenados según esta clave. Para el caso que nos ocupa, lo podemos conseguir con el comando&nbsp;<em>sort</em> de Linux, no hace falta que nos compliquemos más.</p>
+<h2>Ejecutando el proceso conjunto</h2><br />
+Un paso más antes de probar: para poder ejecutar los dos scripts php desde la línea de comandos es necesario marcarlos como ejecutables:</p>
+<pre class="brush: bash; gutter: true">chmod +x mapper.php reducer.php</pre><br />
+Todo a punto. &nbsp;Poniéndolo todo en orden, tenemos que el comando sería:</p>
+<pre class="brush: actionscript3; gutter: true">cat archivo.csv | ./mapper.php | sort | ./reducer.php</pre><br />
+Y, reducer.php debería generar una salida con los datos procesados (en este caso, un contador de la frecuencia de cada clave). Así que a grandes rasgos, esto es lo que plantea MapReduce: un algoritmo que pueda recibir una entrada de datos y que pueda procesarla, de forma independiente al resto del dataset.</p>
+<p>El resto de la implementación de MapReduce (replicación de datos, gestión de recursos, partición del dataset, etc.) es imprescindible para operar con un gran conjunto de datos, pero no para entender el concepto de base: procesar datos de forma paralela.</p>
+<p><strong>Nota final</strong>: Aunque Hadoop requiere el uso de Java para desarrollar trabajos MapReduce, incorpora también una funcionalidad llamada&nbsp;<a title="Apache - Hadoop Streaming" href="http://hadoop.apache.org/docs/r1.2.1/streaming.html"><em>Hadoop Streaming</em></a> que permite la ejecución de scripts MapReduce en prácticamente cualquier lenguaje de programación. La contrapartida es un mayor uso de recursos y mayor lentitud, pero desde luego ayuda a realizar pruebas sencillas con scripts de PHP, python o similares.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/4/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">3</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/2/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
