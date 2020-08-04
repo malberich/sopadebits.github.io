@@ -1,0 +1,539 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/5/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">4</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/3/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 27<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-17/">Enlaces de interés 2014-17</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li><a href="http://blog.safaribooksonline.com/2013/10/02/decoupling-backbone-applications-with-pubsub/">Desvincular las partes de la aplicación Bacfkbone implementando el Pub/Sub</a>, entrada antigua pero digna de ser leída.</li></p>
+<p><li><a href="https://leanpub.com/javascript-allonge/read">Javascript Allongé</a>, en <a href="https://leanpub.com/">leanpub</a>.</li></p>
+<p><li>Una muestra de los modelos de <a href="http://blog.vctr.me/experiments/transition-tweens.html">transiciones de animación con D3</a>.</li></p>
+<p><li><a title="TogetherJS - Mozilla Foundation" href="https://togetherjs.com/">TogetherJS</a>, uno de los varios sistemas que aprovechan WebRTC para la colaboración en tiempo real.</li></p>
+<p><li><a href="http://sonar.bottlenose.com/">Sonar Solo</a>, un servicio interesante que muestra hashtags de twitter, el nivel de relación con otros hashtags (con visualización en hiperárbol), y los recursos aparentemente más relevantes.</li></p>
+<p><li><a href="http://diytoolkit.org/about/">Development Impact and You Toolkit</a>, herramientas interesantes para canalizar los procesos en de innovación.</li><br />
+&lt;/ul&gt;<br />
+&nbsp;&lt;/p&gt;<!--more--></p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 22<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/visualizar-datos-explorar/">Visualizar para inducir, analizar para deducir</a></h3>
+        </header>
+        <section>
+            
+                <p>Quieres comerte una naranja y la pelas, porque la corteza de naranja es amarga y no te gusta, &iquest;cierto? Pero claro, luego viene tu madre, o tu abuela, y te dice que no tires la pela. Y con eso ellas te cocinan una especie de almíbar que luego a&ntilde;adirán al bizcocho que vas a disfrutar de lo lindo. Y así te das cuenta que te has estado perdiendo algo, tirando a la basura todas las pelas de naranjas anteriores.</p><!--more-->
+<p>Acéptalo: en el mismo momento en que empiezas a <a href="http://sopadebits.com/tag/muestreo-estadistico">muestrear</a> y analizar, descartas una información para centrarte en otra. Eso es la estadística y en general el método científico: tratar de separar y aislar (analizar significa etimológicamente <em>separar</em>) el grano de la paja, la información del ruido.</p>
+<p>Pero esa separación requiere un conocimiento previo, que minimice el sesgo (desviaciones de la media) y el ruido (incremento de la varianza). Se trata de evitar que la muestra de datos quede envenenada, extirpando lo mejor posible el ruido, como si cocináramos un <a href="http://es.wikipedia.org/wiki/Fugu">pez Fugu</a>.</p>
+<h2>&iquest;Visualizar datos o analizarlos?</h2><br />
+Nuestros sentidos se han adaptado al mundo en el que nuestros antepasados sobrevivieron. Un mundo en tres dimensiones, y en los que sólo nos fue necesario oír un rango de colores y sonidos para detectar a nuestras presas y evitar amenazas.&nbsp;Ese cerebro que <a title="Porque nuestro cerebro, cuando aprende hace estadísticas" href="http://www.sopadebits.com/porque-nuestro-cerebro-cuando-aprende-hace-estadisticas">busca patrones sensoriales desde que nacemos</a> es a veces muy limitado para otras tareas más abstractas.</p>
+<p>Por ejemplo,&nbsp;<em>sólo</em> es capaz de ver en tres dimensiones. En realidad puede ver cuatro, si una de ellas puede ser representada en un eje temporal, y unas cuantas más si utilizamos colores y tama&ntilde;os. Pero en lo relativo a la representación puramente espacial, tenemos esa limitación, por lo que los modelos con más variables no son representables gráficamente.</p>
+<p>Esa es la limitación de la geometría, y el motivo de la importancia del álgebra.&nbsp;Ante esas situaciones, el álgebra y otros métodos de análisis entran en juego. El cálculo matricial, los sistemas de cambios de coordenadas y cambios de base en general, nos permiten reorganizar los datos según <em>convenga</em> (en el sentido más científico posible) para según nuestros objetivos.</p>
+<p>Sin embargo todos estos métodos tienen más bien un carácter poco&nbsp;visual. Es difícil <i>intuir (en el <a href="http://es.wikipedia.org/wiki/Intuici%C3%B3n">mirar hacia dentro en un sentido etimológico</a>)</i>&nbsp;analizando los datos a base de cálculos puros. Es más, en cuanto se pierde el contacto con la intuición, la maquinaria de los métodos numéricos nos puede conducir a errores por seguir a ciegas una metodología. Creo que este es el punto en el que muchos estudiantes de asignaturas de estadística se quedan <em>colgados</em> y empiezan a odiar la estadística, pero eso es un tema para otro post.</p>
+<p>Entonces, veamos: &iquest;y si sacamos lo mejor de ambos mundos? &iquest;Qué tal analizar para simplicar y reducir las dimensiones, y luego representar visualmente esos datos para ver si nuestras operaciones tienen sentido?</p>
+<h2>Analizar para Visualizar</h2><br />
+Este enfoque permite que ambas aproximaciones cooperen en nuestra búsqueda de conclusiones:</p>
+<ul>
+<li>Representaciones en dos dimensiones, especialmente mediante gráficos de dispersión o&nbsp;<a href="http://en.wikipedia.org/wiki/Scatter_plot"><em>scatter plots</em></a>, que permiten identificar fácilmente relaciones de causa y efecto.</li>
+<li>En ciertos casos se acostumbra a presentar una matriz de gráficos de dispersión, para representar el <a href="http://hci.stanford.edu/jheer/files/zoo/ex/stats/splom.html">cruce de más de dos variables</a>.</li>
+<li>Generar modelos lineales y no lineales, para agregar varios factores en un solo modelo, y así poderlo representar en un solo gráfico. Lo que se aplica en este caso es un cambio de base: la recta de regresión se puede convertir en un eje.</li>
+<li>Gráficos que representen los indicadores estadísticos más básicos. Por ejemplo gráficos <a title="Wikipedia - Box Plot" href="http://en.wikipedia.org/wiki/Box_plot">blox-plot</a> y similares.</li><br />
+</ul><br />
+Existe una gran cantidad de métodos para representar visualmente los datos, muchos de los cuales son específicos de la metodología de análisis o del tipo de datos que se están analizando. Sin embargo, ante el debate sobre cuál de los dos es mejor, la respuesta es sencilla: combinar ambos en el punto adecuado es mucho mejor.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 20<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-16/">Enlaces de interés 2014-16</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>El <a href="http://www.stanfordlawreview.org/online/privacy-and-big-data/big-data-and-its-exclusions">big data y sus exclusiones</a>, según <a title="Stanford Law Review" href="http://www.stanfordlawreview.org/">Stanford Law Review</a>. Espero tener un rato para escribir sobre esto.</li></p>
+<p><li>Como crear un <a href="http://noisehack.com/how-to-build-supersaw-synth-web-audio-api/">sintetizador de audio en el navegador</a>.</li></p>
+<p><li>La biblioteca <a href="http://retinajs.com/">RetinaJS</a>, para mostrar gráficos con calidad retina en la web.</li></p>
+<p><li>Motor de simulación física <a href="http://wellcaffeinated.net/PhysicsJS/">PhysicsJS</a>.</li></p>
+<p><li><a href="http://svonava.com/post/62186512058/datasets-released-by-google">Datasets liberados por Google</a>, en <a href="http://svonava.com/">Daily learnings</a>.</li></p>
+<p><li>Esteganografía mediante javascript, con <a href="http://www.peter-eigenschink.at/projects/steganographyjs/">SteganographyJS</a>.</li><br />
+&lt;/ul&gt;&lt;/p&gt;<!--more--></p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 14<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/richard-sennett-la-corrosion-del-caracter/">Richard Sennett: La corrosión del carácter</a></h3>
+        </header>
+        <section>
+            
+                <p>He acabado de leer hace apenas unos días este libro y no quiero dejar pasar la oportunidad de hacer una peque&ntilde;a rese&ntilde;a. A pesar de que libro fue publicado en 1998 (la edición espa&ntilde;ola fue en el a&ntilde;o 2000), el planteamiento de base del libro es sin duda vigente, más aún si cabe.</p><!--more-->
+<h2>Flexibilidad, liquidez</h2><br />
+La flexibilidad que expone Richard Sennett en el libro recuerda bastante al concepto de liquidez de Baumann, sólo que esta vez aplicado especialmente al mercado laboral. &nbsp;Flexibilidad para cambiar de tarea, de horarios, de lugar de trabajo (algo más acentuado en EE.UU. que en Europa). Flexibilidad que lleva a la deriva a sus protagonistas.</p>
+<p>Esa deriva viene causada en primer lugar por el hecho de perder unos hábitos que dan una seguridad y se encauzan en una rutina. Las ya míticas 10.000 horas de práctica que son necesarias para llegar a dominar una disciplina, son inasumibles si nuestro día a día se ve alterado continuamente. Ese proceso de mejorar en el día a día hasta conseguir el conocimiento personal, desaparece, y deja paso a lo que el autor llama la <em>especialización flexible</em>.</p>
+<h2>Teorías, ética y modelos</h2><br />
+Sennett hace un repaso por las diversas teorías del trabajo, empezando desde la ilustración hasta nuestros días. &nbsp;Ese repaso se centra en un aspecto clave: cómo la flexibilidad (del mismo modo que en su momento el trabajo repetitivo) afecta a las personas. En ese modelo aparece la confrontación entre dos modelos organizativos: la jerarquía burocrática y las redes. &iquest;Cuál de las dos es más eficiente?</p>
+<p>Estos dos modelos organizativos tienen sus bases en dos modelos culturales distintos (según Michel Albert): el modelo renano (Países Bajos, Alemania y Francia) y el angloamericano, respectivamente. Ambos modelos presentan diferencias notables en cuanto a la respuesta al cambio, desigualdades salariales, etc.</p>
+<p>También hace un interesante repaso por la ética del trabajo protestante y sobre su promesa de recompensa. &nbsp;También incluye reflexiones en la religión cristiana, con menciones a Pico della Mirandola, San Agustín, que contrastan con la ética protestante. Cada cual sabrá extraer sus conclusiones.</p>
+<h2>Autoconocimiento, autocrítica, iniciativa, apego</h2><br />
+En el proceso de flexibilización al que se ve sometida la persona, tienen lugar una serie de sucesos interesantes:</p>
+<ul>
+<li>Deja de tener un conocimiento propio sobre sus capacidades y limitaciones a la hora de hacer algo. Simplemente intenta hacerlo lo mejor posible, hasta que cambie de tarea.</li>
+<li>Su capacidad de autocrítica para entender los factores clave de su actividad desciende, ya que no es posible establecer una idea progreso en sus habilidades debido al cambio constante.</li>
+<li>Fruto de lo anterior, la iniciativa desciende bruscamente ante una situación imprevista. La persona desconoce la forma de resolver situaciones fuera de lo común en su lugar de trabajo.</li>
+<li>Como reacción a todo lo anterior, desciende el apego, tanto hacia su actividad como hacia la empresa. La flexibilidad impide identificar un conjunto de valores a los que aferrarse.</li><br />
+</ul></p>
+<h2>Reflexiones finales sobre el libro de&nbsp;Richard Sennet</h2><br />
+El libro da mucho más de sí. Lo que de hecho está descrito aquí son varios (no todos) elementos clave que para el autor ayudan a entender la situación actual y a analizar las vías para reenfocar las circunstancias en las que las personas pierden el norte en la flexibilidad.</p>
+<p>Quizá para mí la reflexión final más importante es el papel de las <a title="Cuatro aprendizajes de las habilidades sociales" href="http://www.sopadebits.com/aprendizajes-de-las-habilidades-sociales">habilidades sociales, la gestión de los conflictos</a> y la comprensión de las necesidades de los demás para saber encontrar un espacio más social y menos superficial en el lugar de trabajo. Pero como siempre en estos casos, seguro que cada cual podrá extraer sus conclusiones.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 13<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-15/">Enlaces de interés 2014-15</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li><a href="http://alistapart.com/column/your-side-project-as-insurance-policy">Tener un&nbsp;<em>side project&nbsp;</em>como seguro contra accidentes</a>, en A List Apart.</li></p>
+<p><li>El <a href="http://michaelbabwahsingh.com/2013/11/29/the-real-meaning-of-information-design/">significado real de la visualización de información</a>.</li></p>
+<p><li>Porque hay que repetirlo sin tregua: <a href="http://gaussianos.com/hay-que-decirlo-mas-correlacion-implica-causalidad/">Correlación no implica causalidad</a>, en Gaussianos.</li></p>
+<p><li>Una <a title="Understanding Statistical Power and Significance Testing" href="http://rpsychologist.com/d3/NHST/">visualización para representar la potencia de test, y los errores tipo 1 y 2</a>, en rpsychologist.</li></p>
+<p><li><a href="http://yahoo.github.io/samoa/">SAMOA</a>, un proyecto de Yahoo! para ejecutar Machine Learning sobre flujos de datos (<a href="https://mahout.apache.org/">Mahout</a>&nbsp;pero sin Hadoop).</li></p>
+<p><li>Simplificando la tarea de generar <a href="http://tech.pro/tutorial/1649/very-easy-changelogs-with-git">changelogs correctamente formateados con git</a>.</li></p>
+<p><li>Para los aficionados al tracking y los GPS, <a href="http://blog.thematicmapping.org/2013/11/showing-gps-tracks-in-3d-with-threejs.html">mostrar tracks en 3D con three.js</a>.</li></p>
+<p><li>Balanceo de carga con NodeJS, <a href="https://mazira.com/blog/introduction-load-balancing-nodejs/">parte 1</a> y <a href="https://mazira.com/blog/introduction-load-balancing-nodejs-2">2</a>.</li><br />
+&lt;/ul&gt;<br />
+El video de hoy: Santiago Ortiz (<a href="http://twitter.com/moebio">@moebio</a>) en <a title="Visualized 2014" href="http://visualized.com/2014/">Visualized 2014</a>, expone <a href="http://visualized.com/2014/presents/santiago-ortiz/">ejemplos no lineales de visualizaciones de datos</a>. Interesante y divertida a la vez.<br /></p>
+<p><iframe src="//player.vimeo.com/video/88326173" height="281" width="500" allowfullscreen=""></iframe>&lt;/p&gt;<!--more--></p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 8<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/d3-crossfilter-dc/">D3 + Crossfilter = DC</a></h3>
+        </header>
+        <section>
+            
+                <p>En un artículo anterior ya comentaba las <a title="Crossfilter, múltiples vistas sincronizadas de datos" href="http://www.sopadebits.com/crossfilter-vistas-sincronizadas-datos">posibilidades de Crossfilter</a>, una herramienta especialmente aplicable a datasets de un tama&ntilde;o mayor que el habitual para un navegador web. Con esta biblioteca tenemos una parte muy importante de la tarea de la&nbsp;<em>sala de máquinas</em>, cargando y filtrando los datos según nos convenga.</p><!--more-->
+<p>Muy bien, podemos filtrar y procesar los datos más rápidamente, &iquest;y ahora qué?</p>
+<h2>DC.js = Dimensional Charting Javascript Library</h2><br />
+Pues nos falta la representación visual de los datos. Especialmente en combinación con una herramienta de representación visual como <a title="Sopadebits - D3" href="http://sopadebits.com/tag/d3js">D3.js</a>, Crossfilter se convierte en una herramienta muy potente. Y es así como surge la biblioteca <a title="DC javascript library" href="http://nickqizhu.github.io/dc.js/">DC</a>.</p>
+<p>Así que sacamos lo mejor de dos bibliotecas muy complementarias:</p>
+<ul>
+<li>Filtrado y manipulación de los datos con Crossfilter.</li>
+<li>Representación visual con D3.</li><br />
+</ul><br />
+&iquest;A nivel de código fuente, cómo se combinan ambas bibliotecas? Puedes encontrar un punto de partida muy interesante en este <a href="http://nickqizhu.github.io/dc.js/docs/stock.html">ejemplo de código comentado para DC.js</a>. Desde luego puedes ir a ver el paso a paso de ese código.</p>
+<p>La inicialización de los gráficos se realiza mediante DC, y no directamente sobre D3. DC actúa como envoltorio de D3, simplificando así la generación de la tipología de gráficos disponibles por defecto. &nbsp;La carga de los datos se realiza mediante la carga de un archivo CSV disponible vía HTTP, tras lo cual se transfieren los datos a crossfilter y se empieza a generar los datos de las dimensiones y agrupaciones de datos.</p>
+<p>Se asignan las dimensiones y criterios de agrupación a cada uno de los gráficos según corresponda. Esta asignación es lo que en realidad acaba vinculando todos los gráficos. &nbsp;También es posible generar una tabla (datatable)&nbsp;con los datos&nbsp;que se están están utilizando para generar las vistas actuales de los gráficos.</p>
+<p>El resto de instrucciones son a grandes rasgos muy habituales en la generación de los gráficos mediante D3. Aunque como comentaba antes, las instrucciones se ejecutan a través de DC, podemos identificar fácilmente los parámetros de tama&ntilde;o, colores, animaciones.</p>
+<p>Se siguen viendo muchos ejemplos de maridajes entre D3 y cualquier otra biblioteca que complemente, simplifique o mejore sus funcionalidades. Espero poder seguir hablando de ello por aquí en breve :-).</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 6<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-14/">Enlaces de interés 2014-14</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li><a href="http://www.psfk.com/2013/01/quantified-employee-future-of-work.html#!A3Zs3">Big data y el trabajo cuantificado</a>.</li></p>
+<p><li>Una <a href="http://blogs.elpais.com/ayuda-al-estudiante/2014/02/el-juego-es-el-disfraz-del-aprendizaje.html">entrevista a Francisco Mora</a> y algunos conceptos interesantes sobre el aprendizaje.</li></p>
+<p><li><a href="http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript">Inyección de dependencias en Javascript</a>.</li></p>
+<p><li>&iquest;Redefinir el éxito en términos del valor del tiempo y no del dinero? <a href="http://www.fastcoexist.com/3025055/how-freelancers-are-redefining-success-to-be-about-value-not-wealth">Algunos freelances lo están enfocando así</a>.</li></p>
+<p><li><a href="http://blog.close.io/startup-negotiation-101-how-to-respond-to-discount-inquiries">&iquest;Te piden descuentos por tu trabajo freelance? &iquest;Qué puedes responder?</a></li></p>
+<p><li>Estos matemáticos...&nbsp;<a href="http://www.wired.com/wiredscience/2014/01/how-to-hack-okcupid/">hackeando la base de datos de un servicio de dating... para encontrar a su media naranja</a>.</li><br />
+&lt;/ul&gt;<br />
+El video es <em>Life After Pi</em>, un documental sobre las dificultades de los estudios de efectos especiales visuales especiales (VFX) de las películas de Hollywood para subsistir, a pesar de ser omnipresentes. Me ha resultado fácil encontrar paralelismos con otros sectores de actividad. &iquest;Y a ti?:&lt;/p&gt;<!--more--></p>
+<p><iframe src="//www.youtube.com/embed/9lcB9u-9mVE" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 2<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/siete/">Siete a&amp;ntilde;os</a></h3>
+        </header>
+        <section>
+            
+                <p>Hoy, día de aniversario, siete a&ntilde;itos desde <a title="Un primer post" href="http://www.sopadebits.com/un_primer_post">el primer post</a>.</p><!--more-->
+<p>Han sido, para qué negarlo, siete a&ntilde;os irregulares. Durante un a&ntilde;o y medio, de Septiembre del 2011 a Mayo del 2013, lo mantuve inactivo. Obviamente las estadísticas de visitas se han resentido de esta inactividad, pero eso no es lo importante. Lo importante es seguir disfrutando al escribir artículos y tratar de aclarar conceptos mientras, de paso, me los aclaro a mí mismo ;-).</p>
+<p>En el futuro cercano, como ya ha ido sucediendo en los últimos meses, el foco oscilará entre diversos aspectos de la programación (cliente y servidor), con <a href="http://sopadebits.com/tag/javascript">javascript</a> como protagonista; y por otro lado la visualización y tratamientos de datos. Pero la serendipia da paso a las más dispersas disertaciones, y a los más <a title="El efecto Medici: Innovación interdisciplinar" href="http://www.sopadebits.com/efecto-medici-innovacion-interdisciplinar">variopintos mestizajes interdisciplinares</a>.</p>
+<p>Así que... Muchas gracias por seguirme y leerme.&nbsp;<em>No se vayan todavía, que aún hay más</em> :-P.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                mar. 31<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/crossfilter-vistas-sincronizadas-datos/">Crossfilter, múltiples vistas sincronizadas de datos</a></h3>
+        </header>
+        <section>
+            
+                <p>El análisis exploratorio que tiene lugar durante la primera toma de contacto con un conjunto de datos tiene un objetivo muy concreto: familiarizarnos con su estructura. Por un lado la distribución de algunas variables clave, por el otro los valores extremos, y también las relaciones entre pares de variables. Esta familiarización permite aplicar el sentido común y la intuición a la verificación del análisis. &nbsp;No es un momento para las conclusiones, sino para la toma de contacto.</p><!--more-->
+<h2>Vistas coordinadas</h2><br />
+Al representar gráficamente la distribución de valores en gráficos, podemos identificar patrones. Ahora bien, &iquest;cómo cambian esos patrones si cambiamos la selección de los datos? &iquest;De qué forma se altera el gráfico de barras y el gráfico de dispersión si elimino los valores más altos de una variable?&nbsp;Interacciones del tipo <a href="http://www.infovis-wiki.net/index.php?title=Linking_and_Brushing">Linking and brushing</a>&nbsp;en las <a href="http://www.infovis-wiki.net/index.php?title=Multiple_Views">vistas múltiples coordinadas</a>&nbsp;permite a un usuario/analista disponer de detalles más reveladores sobre el comportamiento de los datos.</p>
+<p>Este proceso no está falto de complejidad. Para que la interacción tenga sentido, es necesario que el sistema responda rápidamente. Necesitamos que un dataset de varios miles de registros tenga una representación y filtrado ágil. Y si eso lo queremos implementar vía javascript en el navegador web, el reto es aún mayor.</p>
+<h2>Crossfilter</h2><br />
+La biblioteca <a title="Crossfilter" href="http://square.github.io/crossfilter/">Crossfilter</a> permite gestionar esta carga inicial de datos para luego aplicar filtros y agrupaciones de datos (utilizando MapReduce) de una forma ágil. &nbsp;Según los autores de la biblioteca, las interacciones pueden ejecutarse en tiempos inferiores a 30 milisegundos, incluso con datasets de más de un millón de registros.</p>
+<p>Es posible consultar la <a href="https://github.com/square/crossfilter/wiki/API-Reference">referencia de la API</a> para más detalles. También podéis ver el siguiente video explicativo de las ideas y soluciones que puede proporcionar crossfilter:</p>
+<p><iframe src="//www.youtube.com/embed/E9D9W3Hd_80" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Es posible imaginarse un matrimonio muy bien avenido entre Crossfilter y <a href="http://sopadebits.com/tag/d3js">D3</a>, aunque eso lo podemos dejar para otro artículo.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                mar. 30<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-13/">Enlaces de interés 2014-13</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>Previsión nada halag&uuml;e&ntilde;a de <a href="http://www.businessinsider.com/the-future-of-jobs-the-onrushing-wave-2014-1">Business Insider sobre el futuro del trabajo</a>.</li></p>
+<p><li>Curso <a href="http://try.github.io/">interactivo de github</a>, practica con git y el sistema de control de versiones.</li></p>
+<p><li>El <a href="http://blogs.sas.com/content/datamanagement/2014/03/06/netflix-and-the-human-element-of-data/">factor humano en Netflix y su sistema de análisis de datos</a>&nbsp;en el blog de SAS.</li></p>
+<p><li><a href="http://politikon.es/2014/03/05/regulando-el-crowdfunding/">Regulando el crowdfunding</a>, en <a href="http://politikon.es/">Politikon</a>.</li><br />
+&lt;/ul&gt;<br />
+El video de esta semana es sobre la modularidad con nodejs y su gestor de paquetes npm. Vale la pena contrastarlo con el artículo sobre los <a title="NodeJS y el tipo de valores retornados por la función require" href="http://www.sopadebits.com/nodejs-y-el-funcionamiento-de-require">valores retornados por nuestros módulos</a>.&lt;/p&gt;<!--more--></p>
+<p><iframe src="//player.vimeo.com/video/89258863" height="241" width="500" allowfullscreen="" frameborder="0"></iframe></p>
+<p><a href="http://vimeo.com/89258863">Eric Elliott - Modular JavaScript With npm and Node Modules</a> from <a href="http://vimeo.com/ericelliott">Eric Elliott</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/5/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">4</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/3/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
