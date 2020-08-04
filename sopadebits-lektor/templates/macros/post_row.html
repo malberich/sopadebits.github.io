@@ -2,14 +2,18 @@
     <div class="col-xs-12">
         <header>
             <p class="alert alert-info text-center pull-right">
-                {{ post.date | date: "%b %d" }}<br/>
-                {{ post.date | date: "%Y" }}
+                {{ post.date | dateformat('MMM d') }}<br/>
+                {{ post.date | dateformat('Y') }}
             </p>
-            <h3><a href="{{ post.slug }}.html">{{ post.title }}</a></h3>
+            <h3><a href="{{post|url}}">{{ post.title }}</a></h3>
         </header>
         <section>
-            {{ post.excerpt }}
-            <a href="{{post.slug}}.html">Read more &raquo;</a>
+            {% if from_index == True %}
+                {{ post.body|excerpt }}
+                <a href="{{post.slug}}.html">Read more &raquo;</a>
+            {% else %}
+                {{ post.body }}
+            {% endif %}
         </section>
     </div>
 {% endmacro %}

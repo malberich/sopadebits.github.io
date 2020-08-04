@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
+{% from "macros/post_row.html" import render_post_row %}
 {% block body %}
   {{ render_blog_post(this, from_index=False) }}
 {% endblock %}

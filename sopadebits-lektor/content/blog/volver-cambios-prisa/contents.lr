@@ -30,11 +30,11 @@ Los motivos son varios, pero siempre para mi caso:
 Hay otra razón derivada de lo anterior, y es que la simplificación hace al blog muy rápido. Realizando una prueba con [pingdom tools][pingdom-tools] con la instalación no definitiva de Jekyll, y la diferencia es notable.
 Con wordpress:
 
-![pingdom-wp](/images/pingdom-tools-sdb-wp.png)
+![pingdom-wp](/static/images/pingdom-tools-sdb-wp.png)
 
 Y con Jekyll:
 
-![pingdom-wp](/images/pingdom-tools-sdb-jekyll.png)
+![pingdom-wp](/static/images/pingdom-tools-sdb-jekyll.png)
 
 La valoración en Jekyll no llega a 100 porque un solo archivo hace saltar la alarma porque no tiene un caché largo. Y resulta que ese archivo es el de google analytics, con lo que en realidad la valoración es de 100 para todo lo que puedo controlar.
 
