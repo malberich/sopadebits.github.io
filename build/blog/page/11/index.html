@@ -1,0 +1,539 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/12/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">11</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/10/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 6<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/periodismo-en-la-era-de-los-datos-ddj-dataviz/">Periodismo en la era de los datos (#ddj #dataviz)</a></h3>
+        </header>
+        <section>
+            
+                <p>Aunque las infografías y la presentación de datos ya tienen <a title="Historia de los gráficos y visualizaciones de &ldquo;The Economist&rdquo;" href="http://www.sopadebits.com/historia-de-los-graficos-y-visualizaciones-de-the-economist">precedentes desde muchos a&ntilde;os atrás</a>, la introducción masiva de los conjuntos de datos, su mayor accesibilidad, y la cada vez mayor disponibilidad de herramientas para tratarlos está cambiando el enfoque de la profesión periodística. Creo que ésta puede ser una de las profesiones con más potencial de aprovechamiento.</p><!--more-->
+<p>Pero, &iquest;Por dónde empezar a aprovechar? &iquest;Qué criterios y fuentes están disponibles? Y sobretodo &iquest;Cómo presentarlos de una forma atractiva y <strong>significativa</strong>?</p>
+<p>Desde Stanford desarrollaron hace unos cuatro a&ntilde;os este vídeo, que ayuda a aclarar la situación actual, y las preguntas a las que se quiere responder:</p>
+<p><iframe src="//player.vimeo.com/video/14777910" height="281" width="500" allowfullscreen="" frameborder="0"></iframe></p>
+<p><a href="http://vimeo.com/14777910">Journalism in the Age of Data</a> from <a href="http://vimeo.com/geoffmcghee">Geoff McGhee</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>Por desgracia no parece estar disponible con subtítulos, por lo que escucharlo en inglés parece la única opción posible.</p>
+<p>Aunque he incrustado el vídeo en este mismo artículo, recomiendo verlo (al menos parcialmente) en la&nbsp;<a title="Journalism in the Age of Data" href="http://datajournalism.stanford.edu/">página del proyecto</a>, ya que la reproducción del vídeo viene acompa&ntilde;ada por la presentación sincronizada de información adicional.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 4<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/sutilezas-del-color-en-visualizacion-observatorio-de-la-tierra-de-la-nasa/">Sutilezas del color en #dataviz (observatorio de la tierra de la #NASA)</a></h3>
+        </header>
+        <section>
+            
+                <p>Si en el origen de la representación gráfica encontramos el vinculo en la geografía y la creación de mapas, parece que esa tradición se mantiene e incluso está en auge.</p><!--more-->
+<p>No es que sea exactamente desde el portal de la NASA, sino desde su blog, desde el cual se ha publicado una serie de artículos exponiendo las bases conceptuales del color y sus aplicaciones.</p>
+<p>Aquí la lista de artículos de la serie:</p>
+<ul>
+<li><a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/">Parte 1 - Introducción</a></li>
+<li><a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/19/subtleties-of-color-connecting-color-to-meaning/">Parte 2 - La paleta "perfecta"</a></li>
+<li><a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/08/12/subtleties-of-color-part-3-of-6/">Parte 3 - Datos diferentes, colores diferentes</a></li>
+<li><a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/19/subtleties-of-color-connecting-color-to-meaning/">Parte 4 - Conectar el color y el significado</a></li>
+<li><a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/28/subtleties-of-color-part-5-of-6/">Parte 5 - Herramientas y técnicas</a></li>
+<li><a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/09/10/subtleties-of-color-part-6-of-6/">Parte 6 - Referencias y recursos para profesionales de la visualización</a></li><br />
+</ul><br />
+El color es uno de los elementos que intuitivamente (preatentive) nos ayudan a detectar patrones. Usarlo a nuestro favor evitará ruido en nuestros gráficos.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 2<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/visualizar-dinamicamente-el-proceso-de-crawling-de-googlebot-con-gephi/">Visualizar din&amp;agrave;micamente el proceso de crawling de #googlebot con #gephi</a></h3>
+        </header>
+        <section>
+            
+                <p>Más allá de los simples gráficos, en cuanto a complejidad se refiere, encontramos los grafos. Y en este caso hay una herramienta especialmente interesante: <a title="Gephi" href="https://gephi.org/">Gephi</a>.</p><!--more-->
+<div>Como ejemplo interesante de uso, podemos generar un proceso de <a href="http://www.htitipi.com/blog/log-dataviz.html">visualización sobre cómo Googlebot captura nuestros contenidos de nuestra web</a>, partiendo del análisis de los logs de Apache.</div></p>
+<div></div></p>
+<div>Pero tiene más aplicaciones, algunas de ellas muy relevantes para la exploración de datos:</div></p>
+<div></div></p>
+<div><iframe src="//www.youtube.com/embed/8bFmvMLohcU" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></div></p>
+<div></div></p>
+<div>Con los datos necesarios, es posible <a href="http://inmaps.linkedinlabs.com/">realizar mapas como los de linkedIn</a>, y empezar a analizar a fondo las características de los nodos.</div></p>
+<div></div></p>
+<div>Más allá del ejemplo particular, hay dos enlaces interesantes para seguir aprendiendo con Gephi:</div></p>
+<div>
+<ul>
+<li><a href="https://gephi.org/users/" target="_blank">Tutoriales y ayuda en la propia web de Gephi</a></li>
+<li><a href="http://exploreyourdata.wordpress.com/2013/07/29/gephi-curated-list-of-tutorials/" target="_blank">Un lista de tutoriales seleccionados por el autor de exploreyourdata.wordpress.com</a>.</li><br />
+</ul><br />
+Feliz&nbsp;<em>grafiteo</em>.</p>
+<p></div></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 30<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/chartbuilder-abre-su-codigo-basado-en-d3-js/">Chartbuilder abre su código - Basado en d3.js</a></h3>
+        </header>
+        <section>
+            
+                <p><div>No he tenido la ocasión de probar esta herramienta, aunque probablemente se puede sumar a la<a title="Utilidades basadas en D3.js" href="http://sopadebits.com/utilidades-basadas-en-d3-js"> lista de utilidades que proponía School of Data para simplificar el uso de D3</a>.</div>&lt;/p&gt;<!--more--></p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>En este caso se trata de&nbsp;<a href="https://github.com/Quartz/Chartbuilder/" target="_blank" shape="rect">Chartbuilder, disponible en Github</a>, bajo&nbsp;<a href="https://github.com/Quartz/Chartbuilder/blob/master/LICENSE" target="_blank" shape="rect">licencia MIT</a>, liberado hace apenas dos meses.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Leí la&nbsp;<a href="http://www.niemanlab.org/2013/07/how-to-turn-everyone-in-your-newsroom-into-a-graphics-editor/" target="_blank" shape="rect">noticia a través del blog de Nieman Journalism Lab</a>. Cada vez se demuestra más importante la habilidad para trabajar con gráficos que simplifiquen la presentación de datos. No es un problema nuevo. Como en el mismo artículo comentan,&nbsp;<a href="http://krugman.blogs.nytimes.com/2009/06/17/making-charts-for-curious-readers/?_r=0" target="_blank" shape="rect">Paul Krugman se lamentaba de ello en el 2009</a>. Y probablemente muchos otros antes.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Seguirán apareciendo herramientas de este estilo. No sé cuánto tardaremos en ver niveles de interactividad y versatilidad similares a herramientas comerciales como&nbsp;<a href="http://www.tableausoftware.com/" target="_blank" shape="rect">Tableau</a>, pero es cuestión de tiempo.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 29<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/sonido-en-algoritmos-y-wikipedia/">Sonido en algoritmos y Wikipedia</a></h3>
+        </header>
+        <section>
+            
+                <p>No todo el mundo entiende el funcioamiento de los algoritmos paso por paso. Hay ciertos perfiles que requieren partir del ejemplo, e incluso tener la ayuda de otros sentidos, como la vista o el oído. Para ellos, estos dos recursos.</p><!--more-->
+<h2>Escuchar el sonido de la ordenación</h2><br />
+Por un lado, los patrones sonoros y visuales que provocan 15 algoritmos de ordenación de datos. Estos algoritmos son, por razones obvias, muy importantes para el procesado de datos, y tanto el uso de memoria como la velocidad final son críticos. &iquest;Y cuál es el mejor? Observa el vídeo y notarás las diferencias. En la parte superior izquierda aparecen el nombre del algoritmo y el número de operaciones que realiza:</p>
+<p><iframe src="//www.youtube.com/embed/kPRA0W1kECg" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<h2>Edición sonora de Wikipedia</h2><br />
+<a href="http://listen.hatnote.com/#nowelcomes,en"><img class="size-large wp-image-27383 alignleft" alt="Selecció_014" src="http://www.sopadebits.com/wp-content/uploads/2013/09/Selecció_014-1024x718.png" width="580" height="406" /></a></p>
+<p>Puedes caer en un profundo sue&ntilde;o mientras escuchas los sonidos generados por esta <a title="Listen to wikipedia" href="http://listen.hatnote.com/#nowelcomes,en">animación sonora, sobre la edición de artículos de Wikipedia</a>. La información se captura a través del feed de cambios recientes. Las campanas indican los a&ntilde;adidos y los sonidos de cuerda indican las eliminaciones de texto.</p>
+<p>Los cambios en el tono son proporcionales al tama&ntilde;o de la edición: cuanto más larga es la edición, más grave es la nota. &nbsp;Los círculos verdes se refieren a los <a href="http://en.wikipedia.org/wiki/Wikipedia:User_access_levels#Unregistered_users">contribuidores no registrados</a>, y los círculos violeta marcan las ediciones realizadas por <a href="http://en.wikipedia.org/wiki/Wikipedia:Bots">sistemas automáticos (bots)</a>. Puedes ver las notificaciones de nuevos usuarios a medida que se unen al sitio de la visualización con el sonido de un conjunto de notas de cuerdas. &nbsp;Puedes "saludarles" clicando en el banner azul y a&ntilde;adiendo una nota en su página.</p>
+<p>El proyecto ha sido creado por&nbsp;<a href="http://github.com/slaporte">Stephen LaPorte</a>&nbsp;y&nbsp;<a href="http://github.com/mahmoud">Mahmoud Hashemi</a>&nbsp;utilizando&nbsp;<a href="http://d3js.org/">D3</a>&nbsp;y&nbsp;<a href="https://github.com/goldfire/howler.js">HowlerJS</a>. Se ha basado en el proyecto <a href="http://www.listentobitcoin.com/">Listen to Bitcoin</a>&nbsp;de&nbsp;<a href="https://github.com/MaxLaumeister">Maximillian Laumeister</a>.</p>
+<p>El código del proyecto está&nbsp;<a href="https://github.com/hatnote/listen-to-wikipedia">disponible en GitHub</a>, donde puedes encontrar más información al respecto.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 26<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/espana-en-llamas-la-dificultad-de-obtener-la-informacion/">Espa&amp;ntilde;a en llamas: la dificultad de obtener la información</a></h3>
+        </header>
+        <section>
+            
+                <p><div>El proyecto&nbsp;<a href="http://www.espanaenllamas.es/gasto-publico-contra-incendios-forestales-sin-transparencia/" target="_blank" shape="rect">Espa&ntilde;a en llamas</a>&nbsp;se promocionó&nbsp;<a href="http://www.civio.es/proyectos/espana-en-llamas/" target="_blank" shape="rect">desde la fundación Civio</a>&nbsp;para recopilar la información sobre los incendios forestales en Espa&ntilde;a a lo largo de los a&ntilde;os. Posteriormente&nbsp;<a href="http://goteo.org/project/espana-en-llamas" target="_blank" shape="rect">obtuvo la financiación necesaria vía goteo.org</a>, y echó a andar.</div>&lt;/p&gt;<!--more--></p>
+<p><div></p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Este proyecto es un caso especialmente representativo del "trabajo embarrado" que supone crear estadísticas económicas y sociales donde no estaban planteadas. Ante la búsqueda de datos sobre una estadística económica y social "estándar", un ciudadano puede empezar a realizar su búsqueda en el INE, Eurostat o simliares.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Pero &iquest;Qué sucede cuando los datos en sí se encuentran&nbsp;<a href="http://www.espanaenllamas.es/datos-sepultados-bajo-la-ceniza-metodologia/" target="_blank" shape="rect">recopilados en fuentes dispersas y no están sistematizadas</a>? La operativa empieza a topar con obstáculos debidos a una burocracia que no tiene ese objetivo. Esa complejidad que sólo se centra en recopilar los datos pasa por:</div><br />
+&lt;/div&gt;&lt;/p&gt;</p>
+<p><div></p>
+<p><ul></p>
+<p><li>Identificar las instituciones responsables.</li></p>
+<p><li>Solicitar y/o obtener los datos (este proceso puede implicar transcripciones, fotocopias, personas que buscan y extraen informaciones de contenidos textuales, etc.).</li></p>
+<p><li>Intentar organizar de forma sistemática toda esa información, tratando de coordinar los datos en base a elementos comunes (por lo general, fechas y ubicaciones).</li><br />
+&lt;/ul&gt;<br />
+&lt;/div&gt;&lt;/p&gt;</p>
+<p><div>Tratar de entender lo pesado que puede ser extraer y sistematizar toda esta información sólo se puede conseguir de una manera: probándolo. No es por contar&nbsp;<em>batallitas</em>, En mis a&ntilde;os mozos tuve mis días y semanas de recopilar datos para trabajos universitarios, a menudo en base a fotocopias y posterior transcripción a hoja de cálculo. No es la tarea más agradecida. Un bravo por ese trabajo, y espero que sigan adelante.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>El resultado es el que se puede ver en su&nbsp;<a href="http://www.espanaenllamas.es/explora-los-incendios/" target="_blank" shape="rect">mapa interactivo de incendios</a>, que muestra datos de incendios hasta el 2011.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 24<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/donde-pone-estadistico-lea-usted-data-scientist/">Donde pone estadístico, lea usted Data Scientist</a></h3>
+        </header>
+        <section>
+            
+                <p>No es nada que ya haya sucedido en otras profesiones, como fue el caso de la <a href="http://www.javierleiva.info/es-adecuado-el-termino-curador-de-contenidos/">introducción del término content curator</a>.</p><!--more-->
+<p>Se supone que debería empezar a hacer una tarea de <em>buscar y remplazar</em> en algún currículum, porque parece que la profesión de&nbsp;<a href="http://www.analyticbridge.com/profiles/blogs/the-death-of-the-statistician">Estadístico ya no se busca</a>. Pero cada vez más se busca el <em>Data Scientist</em>&nbsp;(científico de datos)&nbsp;Según el autor, la gente ya no busca la profesión de estadístico:</p>
+<p>&nbsp;</p>
+<p>Y aunque es cierto que parecería ser cierto, me parece discutible la fiabilidad del criterio en el que se basa la afirmación. Dado que&nbsp;<em>Data Scientist</em> es un término nuevo, &iquest;no tiene sentido que la gente busque ese nuevo término para entender lo que significa?</p>
+<p>La razón por la que aparece un nuevo término para una disciplina anterior puede responder a dos motivos principales:</p>
+<ul>
+<li>Acu&ntilde;ar un nuevo término puede mejorar las perspectivas comerciales. Es decir,&nbsp;<em>Estadístico</em> no vende, pero&nbsp;<em>Data Scientist</em> puede que sí.</li>
+<li>Integrar a esa disciplina un conjunto de metodologías nuevas, junto con un contexto de aplicación que modifica substancialmente las atribuciones. A pesar del big data, a mí no me lo parece.</li><br />
+</ul><br />
+Lo que sí creo que no deja lugar a dudas, es que la tarea de analizar datos crece en demanda a un ritmo (aparentemente) superior a la oferta. Eso sí, se diría que esto sucede más bien al otro lado del charco (exceptuando UK), donde no sólo Estados Unidos y Canadá, sino también latinoamérica se está activando, progresivamente, en la liberación de datos. No es que sea una relación directa, pero en este último caso es de esperar que exista una relación entre ese proceso y la conciencia de la utilidad de los datos.</p>
+<p>Así que, por favor, donde sea que lea usted la palabra <em>Estadístico</em> en este blog, interprete usted&nbsp;<em>Data Scientist</em>.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 23<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/big-data-big-insights-plantear-preguntas/">Big data, Big insights, y plantear bien las preguntas</a></h3>
+        </header>
+        <section>
+            
+                <p>Sinan Aral ha presentado en HBR una muestra de <a href="http://blogs.hbr.org/cs/2013/08/visualizing_how_online_word-of.html">lo que están trabajando en el departamento de I+D del New York Times</a>. En el artículo "<a href="http://blogs.hbr.org/cs/2013/08/visualizing_how_online_word-of.html">To Go from Big Data to Big Insight, Start with a Visual</a>", lo explican con detalle y fantásticas visualizaciones.</p><!--more-->
+<p>&iquest;Por qué lo hacen?</p>
+<blockquote><p>&nbsp;More importantly we are interested in how the word-of-mouth conversation drives <strong>readership</strong>, <strong>subscriptions</strong>, and <strong>ad revenue</strong>; how the&nbsp;Times&nbsp;can <strong>improve their own participation</strong> in the conversation to drive engagement; how we can identify <strong>truly influential readers</strong> who themselves drive engagement; and how the&nbsp;Times&nbsp;can then engage these influential users in a way that complements the users' own needs and interests.</blockquote><br />
+Estas son las preguntas que tratan de responder al empezar los análisis. Y a partir de ahí, tienen claro que:</p>
+<blockquote><p>What these visuals do help with is getting us to know where to look and what <strong>questions to ask of the data</strong>. That is, <strong>we can't build the more complex models until we know </strong>the most suitable places for building them. These visuals give us some of that insight.</blockquote><br />
+... hay que seguir preguntando, hasta que los datos confiesen.</p>
+<p>Una fantástica muestra del enfoque en el análisis, para obtener resultados prácticos, y sobretodo rentables.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 19<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/datos-cultura-cuantitativa-y-calidad-democratica/">Datos, cultura cuantitativa y calidad democrática</a></h3>
+        </header>
+        <section>
+            
+                <p><div>Excelente artículo &nbsp;<a href="http://sociedadinformacion.fundacion.telefonica.com/DYC/TELOS/REVISTA/Dossier/DetalleArtculoTELOS_95TELOS_DOSSIER4/seccion=1266&amp;idioma=es_ES&amp;id=2013070309540001&amp;activo=6.do" target="_blank" shape="rect">Datos, cultura cuantitativa y calidad democrática</a>.</div>&lt;/p&gt;<!--more--></p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>&iquest;Todo el mundo debe tener una opinión sobre todo?</div>&lt;/p&gt;</p>
+<p><div>&iquest;Todos podemos analizar lo que sucede en cualquier ámbito?</div>&lt;/p&gt;</p>
+<p><div>&iquest;Cómo podemos introducir un papel facilitador para mejorar nuestra opinión?</div>&lt;/p&gt;</p>
+<p><div>&iquest;Cómo puede ayudar esto a mejorar la transparencia y la gobernabilidad?</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Esas son algunas de las preguntas que (a mi entender) trata de analizar el artículo de David Cabo (<a href="http://civio.es" target="_blank" shape="rect">civio</a>) y&nbsp;<a href="https://twitter.com/raulmagallon" target="_blank" shape="rect">Raúl Magallón</a>&nbsp;(<a href="http://raulmagallon.wordpress.com/" target="_blank" shape="rect">blog</a>).</div>&lt;/p&gt;</p>
+<p><div></p>
+<p><div></div><br />
+Me quedo con el siguiente fragmento, aunque desde luego este artículo con numerosas referencias a otros autores da para mucho, muchísimo más:&lt;/div&gt;&lt;/p&gt;</p>
+<p><blockquote></p>
+<p><div>La principal conclusión de la misma era que en la medida en que obtenemos una información sobre una problemática concreta (que se convierte en conocimiento), <strong>el grado de implicación</strong> -así como de actitud de diálogo- <strong>aumenta</strong>; de la misma forma que se moderan y se matizan las opiniones, se proponen alternativas y aumenta la percepción de eficacia en las campa&ntilde;as educativas.</div>&lt;/blockquote&gt;&lt;/p&gt;</p>
+<p><div>Lo dicho, este fragmento es una pizca ínfima de lo que da de sí el artículo.&nbsp;Bajo mi punto de vista, documento de obligada lectura.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                sept. 18<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/visualizar-ciudades/">Visualizar ciudades</a></h3>
+        </header>
+        <section>
+            
+                <p>últimamente se han puesto de moda las visualizaciones de ciudades. En realidad no es tan extra&ntilde;o: su representación gráfica es más simple porque tiene medidas objetivas, éstas empiezan a estar disponibles en fuentes abiertas, y es un contexto en el que se genera un gran volumen de estímulos (que luego se conviertan en datos o no, ya depende de los sensores disponibles).</p><!--more-->
+<p>Pero volviendo al tema: aquí recopilo unas cuantas que me han encantado:</p>
+<ul>
+<li>Londres:&nbsp;<a href="http://brunoimbrizi.com/experiments/#/07">el metro, en tiempo real (y 3D)</a>, o la luminosidad de <a title="Luminocity map - London" href="http://luminocitymap.org/">Luminosidad de Inglaterra</a>.</li>
+<li>Barcelona: <a href="http://bcnbeats.outliers.es/">BCN beats</a>, una visualización en tiempo real de lo que sucede en Barcelona, descubierta a raíz de un <a href="http://vimeo.com/71084828">video</a>.</li>
+<li>Nueva York, tanto en el <a href="http://necsi.edu/research/social/newyork/">análisis de sentimientos</a> como en la <a href="http://www.chriswhong.com/nycopendata/">agregación de todas sus fuentes de datos</a>.</li>
+<li>Toronto, con un mapa que muestra <a href="http://www.thestar.com/news/gta/municipal-licensing-standards-2013.html">información disponible en abierto sobre la ciudad</a>.</li><br />
+</ul><br />
+Pero la que para mí se lleva la palma es la de <a title="Senseable city - Singapore" href="http://senseable.mit.edu/livesingapore/visualizations.html">Singapur</a>, aunque más que una visualización, es un proyecto de conjunto:</p>
+<p><iframe src="http://www.youtube.com/embed/2aEPkyOBtRo" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/12/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">11</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/10/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

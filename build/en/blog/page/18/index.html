@@ -1,0 +1,660 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../../en/blog/page/19/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">18</a>
+        
+        
+          <a class="btn btn-primary" href="../../../../en/blog/page/17/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Sep 8<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/mejoras-agradecimientos/">Mejoras y agradecimientos</a></h3>
+        </header>
+        <section>
+            
+                
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Sep 6<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/nuevo-diseno-sopa-bits/">Nuevo dise&amp;ntilde;o en sopa de bits</a></h3>
+        </header>
+        <section>
+            
+                
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Apr 1<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/un-anyito/">Un a&amp;ntilde;ito</a></h3>
+        </header>
+        <section>
+            
+                
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Mar 5<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/navegacion-social-utilizando-tagging-3/">Navegación social utilizando el tagging - 3</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Construcción del marco de trabajo</h2>
+<p>El sistema trata de actuar en las siguientes fases:</p>
+<ul>
+<li>Estructuración de recursos individuales en base al etiquetado de recursos.</li>
+<li>Mapeado de intereses y focos individuales.</li>
+<li>Proposición de red social en base a las similitudes detectadas.</li>
+<li>Canalizar las recomendaciones y el feed-back.<br /></li></ul>
+<p>Uno de los temas de interés de este apartado es el proceso de clustering. Para ello se analiza el grado de similitud entre dos recursos A y B, que se simboliza como S<sub>AB</sub>. Se propone la siguiente fórmula para el cálculo de la similitud:<br />S<sub>AB</sub> = CT<sub>AB</sub> / (OT<sub>AB</sub> - CT<sub>AB</sub>)<br />Donde:</p>
+<ul>
+<li>CT<sub>AB</sub> = Tags que hay tanto en A como en B (interesección intersección) </li>
+<li>OT<sub>AB</sub> = Todos los tags, coincidentes o no (unión de conjuntos)  </li></ul>
+<p>Analizando superficialmente la fórmula podemos detectar que puede tomar valores entre 0 y <strong>&infin;</strong>, y que el valor es mayor cuanta mayor proporción de tags coinciden.</p>
+<p>Las similitudes entre cada par de recursos se puede representar una matriz NxN que permite analizar distancias y representaciones de distancias entre recursos. Esta matriz de similitudes puede poner de relieve las diferencias de criterios de etiquetado para un mismo recurso, lo que <a href="/reutilizar-intercambiar-intereses-tagging" title="Sopa de bits: Reutilizar e intercambiar intereses mediante el tagging">pone en riesgo la capacidad de intercambio y reutilización</a>.  En el momento que se comprueba que un recurso aislado se etiqueta de forma muy diferente, un sistema de recomendación puede <strong>proponer tags que cohesionen al usuario etiquetador  </strong>dentro de un grupo de interés.  De este modo se aisla el <em>loosely tagging</em> que provocado por el etiquetado poco consistente de recursos.  Si el sistema proporciona estas funcionalidades y se combinan con herramientas de manipulación de recursos (reetiquetado, por ejemplo), es posible pensar en llegar a un mayor grado de homogeneinización (con la motivación de los usuarios).</p>
+<p>Otro caso es el de las etiquetas como "to_read" o "cool", que son genéricas y ajenas a un foco temático, por lo que deben tratarse en base a <a href="/propuestas-sistema-tagging-2" title="Sopa de bits: Propuestas para un sistema de tagging - 2">criterios operativos y no conceptuales</a>.</p>
+<p>Otra aproximación puede ser el análisis de la calidad de los clusters en base a las referencias cruzadas entre usuarios.  Aunque el estudio no se plantea como objetivo la revisión "manual" de clusters, sí considera factible marcarlos para su revisión.</p><br />
+<h2>Creación de focos</h2>
+<p>La creación de focos se basa en la identificación de tags más utilizados (por término medio) en un subconjunto de datos.  Esta mayor conccentración determina el foco.  La similitud entre elementos de un cluster viene determinada por la similitud de rangos entre tags (Esto es una nota al margen: <a href="http://en.wikipedia.org/wiki/Mann-Whitney_U" title="Test U de Mann-Whitney">Test U de Mann-Whitney</a> y <a href="http://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test" title="Test de Wilcoxon">Test de Wilcoxon</a>, por si tienen alguna aplicación válida).</p>
+<p>Para establecer una métrica de similitud entre clusters se considera analizar los tags comunes según su rango dentro del conjunto y se propone la siguiente fórmula:</p>
+<p>&nbsp;</p>
+<p>S<sub>tag</sub> = [R1 / (R1-R2)] / F</p>
+<p>Donde:</p>
+<ul>
+<li>S<sub>tag</sub> = Similitud entre tags.</li>
+<li>R1, R2 = Rango del tag en los clusters 1 y 2.</li>
+<li>F: equivale a una medida de "amistad" entre ambos clusters [se refiere a recursos o a miembros?]<br /></li></ul>
+<p>Con el cálculo del conjunto de distancias se puede obtener una medida de distancia entre clusters:</p>
+<p>D = distancia entre clusters = OS/OT - OD/OT = (OS-OD)/OT<br /><br />Donde:</p>
+<ul>
+<li>OT = Total de tags principales de ambos clusters (unión de tags principales).</li>
+<li>OS = Tags principales que coinciden en ambos clusters (intersección de tags principales).</li>
+<li>OD = Tags principales que no coinciden entre ambos clusters (no-intersección de tags principales).<br /></li></ul>
+<p>El valor de D puede tomar valores en el intervalo [-1,1].  Este valor se <a href="/normalizacion-distancias-normalizadas" title="Sopa de bits: Normalización y distancias normalizadas">normaliza</a> para que tome valores en el rango [0,1].</p>
+<p>Se espera que un foco estable tenga un modelo de distribución de tags ajustable a una ley potencial [power law]. Además de ello se propone el análisis de sus atributos:</p>
+<ul>
+<li>Tama&ntilde;o: Número de miembros.</li>
+<li>Amplitud (breadth): Cantidad de sub-temas (pocos tags principales conllevan un tag estrecho).</li>
+<li>Altura (height): Ratio recursos/tags. Muchos tags/recursos conllevan un foco "bajo", mientras que un ratio de pocos tags por recurso conllevan un foco "alto".</li>
+<li>Actividad: Número de recursos nuevos por día [podría ser generalizable a recursos por unidad temporal según el entorno y el número de usuarios.</li>
+<li>Madurez: Relación de todo lo anterior con la antig&uuml;edad del foco.<br /></li></ul>
+<p>También es importante identificar qué tiempo consume cada foco para un usuario concreto, ya que esto también determina su importancia.</p><br />
+<h2>Proposición de red social</h2>
+<p>Se propone la creación de una red social basada inicialmente en la interacción indirecta, identificando intereses comunes según el etiquetado.</p>
+<p>A través de este análisis se estudian las relaciones entre miembros de un foco (relaciones within o intrafocales) y entre focos (relaciones between o interfocales).  Las relaciones intrafocales se consideran analizando la fortaleza de los "arcos" [tie strength], que se define con la siguiente fórmula:<br /><br />TS<sub>AB</sub> = I<sub>AB</sub> &middot; 0,5 + K<sub>AB</sub> = Fortaleza de la relación entre los individuos A y B.</p>
+<p>Donde:</p>
+<ul>
+<li>K<sub>AB</sub> = F &middot; 0,25 + M &middot; 0,25</li>
+<li>I<sub>AB</sub> = Intensidad de la interacción entre A y B.</li>
+<li>F = Nivel de "amistad".</li>
+<li>M = Multiplexidad (número de focos comunes de los individuos A y B).</li></ul>
+<p>La interacción indirecta servirá de base pero deberá dejar paso a la interacción directa, ya que proporciona información de más valor al sistema.</p>
+<p>La matriz NxN de relaciones entre individuos es asimétrica, ya que las relaciones entre individuos no necesariamente son igual de intensas de A a B que de B a A (como caso extremo encontramos el fenómeno "fan").</p>
+<p>El análisis del cluster de esta matriz proporciona información sobre la persona más "central" en el grupo (betweenness centraliy), de modo que se identifica al núcleo de usuarios de referencia, que pueden servir de base (o ponderación) para los mecanismos de recomendación.</p><br />
+<h3>Relaciones entre focos<br /></h3>
+<p>También se quiere evaluar la posibilidad de establecer puentes entre focos, ya que esto puede facilitar la evolución de las redes sociales.</p>
+<p>Una posibilidad es crear puentes aleatorios.  Este proceso aleatorio requiere de un feed-back del usuario que recibe la recomendación.  En caso que no exista este feed-back, la recomendación aleatoria desaparece.</p><br />
+<h3>Sistemas de recomendación</h3>
+<p>Los sistemas de recomendación funcionan de forma similar a la comparación de individuos en base a tags.  Este criterio de comparación proporciona un valor entre 0 y 1.</p>
+<p>En cualquier caso, si se quiere potenciar la existencia de focos entre los puentes interfocales, los sistemas de recomendación deberán ponderar la "proximidad"  (valorar más las recomendaciones intrafocales). Sin embargo hay que tener en cuenta que las recomendaciones interfocales pueden ser favorables para que los focos con poco volumen o riesgo de isolación reciban "aire fresco".  Esta dinámica normalmente se establece de focos grandes hacia peque&ntilde;os, por lo que a medio-largo plazo puede llevar a procesos de fusión/absorción.</p><br />
+<h3>Feed-back</h3>
+<p>El feed-back, como la navegación social, puede entenderse en dos vías: implícito y explícito.  A nivel de un entorno como el que plantea el documento, el feedback implícito se gestiona a través del sistema, mientras que el explícito lo es por el usuario.</p><br />
+<blockquote>Además, el feed-back directo refleja las relaciones sociales, mientras que el indirecto explicita las relaciones de interés.</blockquote>
+<p>Una cuestión que surge en los mecanismos de feed-back es determinar quién debe recibir el feed-back. El sistema almacenará la respuesta del destinatario de la recomendación, pero quien realiza la recomendación recibe también feed-back? Lo hace el primer miembro de la cadena de recomendación? </p>
+<p>El sistema de gestión del feed-back considera tres acciones indicativas: lectura, archivado y valoración [reading, archiving and rating].  Para el caso de la lectura, puede ser interesantes no sólo por el número de lecturas sino por el tiempo de estas lecturas.</p><br />
+<h3>Conciencia social [social awareness]</h3>
+<ul>
+<li>&iquest;Cómo puedo utilizar los componentes de la aplicación para actuar socialmente?</li>
+<li>&iquest;Cómo puedo hacer que la gente sea consciente que actúa socialmente?</li></ul>
+<p>Deben existir incentivos para utilizar las capacidades de la navegación social y los mecanismos de feed-back.  La comunicación entre miembros de un foco es clave porque activa la memoria transactiva, lo que conlleva a una mayor cohesión del grupo.</p><br />
+<h2>Conclusiones</h2>
+<p>El documento continúa entrando en detalles sobre la implantación del framework para gestionar todos estos recursos.  Lo que viene después de lo comentado ya son detalles técnicos que no vienen al caso si no se desea implementar.  Lo que reflejan los detalles de la implantación son la traducción a lenguaje técnico de todo lo explicado.</p>
+<p>En la fuente original hay una gran cantidad de gráficos y esquemas que ayudan a asimilar algunos conceptos importantes en la operativa, los cálculos y las características de la red.  Sus referencias bibliográficas también aportarán de buen seguro detalles sobre todo lo comentado.  También es probable que existan estudios que citen a este documento, por lo que probablemente existirán mejoras para introducir o ampliar.</p>
+<p>Leer documentos como este es un verdadero lujo. </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Mar 4<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/navegacion-social-utilizando-tagging-2/">Navegación social utilizando el tagging - 2</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Navegación social</h2>
+<p>La navegación social puede entenderse como el proceso de <strong>acceder a objetos de información en base a lo que los individuos cercanos han hecho</strong>.</p>
+<p>Disponer de <em>vecinos temáticos</em> ayuda a reducir al máximo la distancia entre individuos para generar este proceso de intercambio de la forma más fluida posible. Además, permite obtener información sobre las novedades más ráp&igrave;damente. </p><br />
+<h3>Navegación directa e indirecta</h3>
+<p>En este aspecto, los entornos de tagging social inicialmente son entornos de navegación social indirecta, ya que sólo permiten navegar utilizando los resultados de la actividad de otros usuarios, más que en una relación directa entre individuos. En pocas palabras: los usuarios navegan al relacionarse con la información generada por otros <strong>pero no</strong> en la relación con los otros usuarios. </p>
+<p>Estos dos tipos de navegación son perfectamente compatibles, y además complementarios.  Por un lado la navegación indirecta no precisa de una relación entre individuos, lo que favorece a iniciar una relación con la información sin necesidad de conocer a terceros.  La proximidad de intereses y el intercambio de información relevante es una posible vía para establecer relaciones con otros individuos.  En esta segunda parte entra en juego la navegación directa.</p><br />
+<blockquote>Dieberger (2000) y H&ouml;&ouml;k (2003a) proponen cuatro efectos de la navegación social: filtrado, calidad, predisposición social [social affordance] y la evolución de la estructura y la funcionalidad a través del uso que se hace de ésta.</blockquote>
+<p>El filtrado y la calidad obtienen un <strong>valor por el uso</strong>, no sólo del individuo, sino del grupo.  El hecho de seleccionar el ítem y guardarlo en "mis favoritos" ya constituye una <strong>recomendación implícita</strong>, de lo que se deriva un efecto de filtrado (positivo porque se recomienda) y una valoración de calidad.</p>
+<p>La evolución en los <strong>patrones</strong> de navegación social provocan la <strong>evolución de la funcionalidad</strong>.  Por ejemplo, el etiquetado puede ir dirigido a personas concretas, por lo que este etiquetado refleja el cambio de funcionalidad del etiquetado mismo.</p><br />
+<h3>Sistemas transparentes</h3>
+<p>Según Ericksom (2003), los sistemas que quieran proporcionar medios transparentes para la navegación social deben proporcionar:</p>
+<ul>
+<li>Visibilidad (Ver a otros).</li>
+<li>Presencia (Ser visto por otros)</li>
+<li>Contabilidad [Accountability]: Derivada de las dos anteriores que sirve para valorar y penalizar.<br /></li></ul><br />
+<h2>Recomendación</h2>
+<p>El proceso de filtrado colaborativo puede entenderse como la obtención de beneficios por el consenso entre usuarios.  Este proceso de filtrado colaborativo se inició de forma manual (según Kostan 2002 puede llamarse <strong>pull-active</strong>) y actualmente se ha convertido en un proceso más o menos automatizado basado en mecanismos de reputación que permiten generalizar el modelo en comunidades más numerosas.</p>
+<p>Al introducir el proceso de filtrado automático, <strong>el sistema es el que se convierte en pull-active y el usuario pasa a a ser push-active</strong>.  Por lo general se aplican estrategias mixtas para que el usuario pueda ser pull-active en un sistema push-active (que le simplifique la faena).</p>
+<p>El proceso de filtrado colaborativo trata de conectar las valoraciones de otros usuarios con el usuario receptor.  Esta valoración se pondera en base a la red social del individuo, ya sea por relaciones entre usuarios o bien por la similitud de valoraciones entre individuos.  Un ejemplo de algoritmo para el primer caso es el del <em>nearest-neighbor</em> (aplica criterios de memoria) mientras que en el segundo caso podemos hablar de <a href="http://en.wikipedia.org/wiki/Data_clustering" title="Wikipedia: Data clustering">técnicas de clustering</a>.</p>
+<p>Estas medidas topan con dos aspectos complementarios de las grandes redes: escala y dispersión.  Por un lado es complejo ponderar y analizar grandes conjuntos de datos.  Por otro, es conocido que estos entornos se dan niveles altos de dispersión, por lo que el intercambio efectivo de información se da en un núcleo muy denso, y no trasciende a los nodos más externos.</p>
+<p>Para evitar el segundo aspecto, se plantea la posibilidad de incorporar mecanismos como "filter bots" que generen recomendaciones automáticas para evitar el aislamiento y el "inicio en frío" [cold start]. Por poner un ejemplo mundano, los <em>filter bots</em> hacen de anfitriones al nuevo miembro, para integrarlo en la red de intereses. Si el miembro <em>entabla relación</em> con otros miembros, entra a formar parte de algún foco.</p>
+<p>Sin embargo los mecanismos de recomendación conlleva <strong>indicadores implícitos</strong>, y no tanto a los <strong>explícitos</strong>. Para poner un ejemplo de ambos tipos de indicadores, se puede ver el caso de <a href="http://www.last.fm/" title="last.fm">last.fm</a>: el indicador implícito es el tiempo que el usuario escucha la canción, mientras que un indicador explícito es la decisión del usuario de "penalizar" la canción para no volverla a escuchar.</p>
+<p>En términos generales es mucho más deseable una valoración explícita, pero no es de esperar que un usuario sea proclive a realizar gran cantidad de valoraciones.  En cambio, si se pueden extraer valoraciones fiables en base a la actividad del usuario, el sistema dispondrá de mucha más información para recomendar mejor.</p>
+<p>A otro nivel también se puede afirmar que las <strong>circunstancias</strong>, como la actividad y el estado de ánimo <strong>afectan a la valoración</strong>, por lo que los sistemas de recomendación deben tener en cuenta que existen aspectos circunstanciales que no son tan generalizables como opiniones más objetivas (es muy diferente un "no me gusta" que un "ahora no me apetece" o "no estoy de humor").</p>
+<p>Para que el usuario pueda analizar el valor de la recomendación, es necesario que el sistema proporcione información tal como:</p>
+<ul>
+<li>Fecha/hora.</li>
+<li>Usuarios con intereses similares.</li>
+<li>Proximidad (grado de acuerdo) con tales miembros a lo largo del tiempo.</li>
+<li>Valoraciones de "los vecinos".</li>
+<li>Consistencia/Acuerdo en las valoraciones entre vecinos a lo largo del tiempo.</li></ul></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Mar 3<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/clustering-recursos-corporativos-generalistas/">Clustering en recursos corporativos y generalistas</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Colecciones y algoritmos</h2>
+<p>la colección corporativa generada por unos pocos usuarios (denominado Labbies), y una selección de recursos etiquetados en del.icio.us, que se tomará como muestra de colección externa.</p>
+<p>Se quiere analizar dos algoritmos que en último término deberían permitir la selección de etiquetas para facilitar la navegación por los recursos.</p>
+<p>Los dos algoritmos utilizados se denominan tag <em>co-ocurrence divisive clustering</em> y <em>betweenness centrality clustering</em>.</p>
+<p>En el primer caso se puede entender la co-ocurrencia como una correlación que hay entre dos tags (cuanto más coinciden en el etiquetado de recursos, más correlacionados están).  Este algoritmo tiene efectos sobre entornos temáticamente relacionados, y no entra a fondo en la estructura general de la colección.</p>
+<p>Al aplicar el algoritmo de la coocurrencia, las correlaciones inferiores a un determinado umbral (un valor mínimo) quedan descartadas por ser muy débiles.  Tras este proceso de selección de relaciones, ya se puede visualizar la relación entre etiquetas, e identificar los subgrupos (clusters).</p>
+<p>En el segundo caso se aplica un algoritmo que analiza el conjunto de <strong>caminos entre nodos</strong>.  Dentro de estos caminos se seleccionan los arcos que forman parte de un mayor número de <strong>rutas más cortas</strong>, lo que implícitamente supone que son los más bien vinculados del conjunto.  Computacionalmente, este segundo algoritmo es mucho más costoso, aunque existen métodos para la reducción de esta complejidad. A diferencia del algoritmo de coocurrencia, en este caso se prima más la <strong>visión de conjunto</strong>.</p>
+<p>Seleccionando un tema de interés (en este caso, el uso del tag <em>dspace</em>) se recogen los datos de ambas fuentes.  En el caso de del.icio.us se crea un subconjunto de datos fruto de un proceso de limpieza que consiste en tareas de homonimia/sinonimia y la eliminación de tags inherentemente ruidosos</p><br />
+<h2>Resultados para Labbies</h2>
+<p>Aplicando el algoritmo de co-ocurrencia se comprueba que el algoritmo prioriza la detección de tags relacionados o similares.  Por lo tanto la "similitud" es el factor clave.</p>
+<p>Por otro lado se identifica un conjunto de tags no afiliados completamente a un cluster, sino que más bien están a medio camino entre dos clusters diferentes.  Estos tags normalmente se identifican con términos genéricos o ambiguos.</p>
+<p>En el caso del algoritmo betweenness centrality se verifica que hay un grado menor de disgregación (menos clusters) pero también mayor homogeneidad de tama&ntilde;o entre ellos.</p>
+<p>No se puede determinar si hay uno de los dos algoritmos que sea más potente que el otro de cara a aumentar la recuperación de información en este entorno corporativo.</p><br />
+<h2>Resultados con del.icio.us</h2>
+<p>Al disponer de un número mayor de datos, el proceso de cálculo y visualización de los clusters de del.icio.us fue más largo y complejo.</p>
+<p>Además de eso, se produce una generalización en la temática de cada cluster, incluyendo relaciones que semánticamente están alejadas.</p><br />
+<h3>Coocurrencia en del.icio.us</h3>
+<p>El resultado de aplicar este algoritmo es que se generan grandes clusters, que además presentan relaciones débiles.  Esto viene dado por un efecto de "coche escoba": los ítems raros se acaban afiliando a una gran masa que acaba formando un cluster principal.</p>
+<p>Para evitar este efecto, y con la ayuda de técnicas de visualización se aplica un umbral de co-ocurrencia de 0,142, que genera una agrupación mejorada, aunque conlleva el sacrificio de una gran cantidad de tags.</p>
+<p>Este coeficiente demostró ser diferente para cada conjunto de datos (Labbies, del.icio.us y del.icio.us limpiado), lo que implica una mayor generalización.</p><br />
+<h3>Betweenness centrality en del.icio.us</h3>
+<p>En el caso de este algoritmo se generó un gran cluster que no se pudo desmembrar ni siquiera con técnicas de filtrado.</p>
+<p>La principal consecuencia es que es mucho más complejo producir cluster de un tama&ntilde;o adecuado para ser visualizables y favorecer a la navegación por tags como medio para la recuperación de información. Por lo tanto el algoritmo de betweenness centrality no es la mejor opción para <em>descuartizar</em> colecciones de etiquetas.</p><br />
+<h2>Enfoque futuro</h2>
+<p>El principal problema de la aplicación de algoritmos de clustering es que se generan grandes subgrupos.  Esto representa un problema para la navegación del usuario.  Por lo tanto, es interesante profundizar en las técnicas de división de estos macro-clusters. Conseguirlo permitiría una navegación más sencilla y una interficie menos cargada de información. </p>
+<p>No lo apuntan los autores, pero quizá exista la posibilidad de aplicar iterativamente ambos algoritmos: betweenness a alto nivel y coocurrencia en clusters grandes).  Quizá con una mínima heurística se podría llegar más al fondo de la cuestión. </p>
+<p>Otro aspecto interesante al que se apunta es a la definición de <strong>jerarquías de clusters</strong>, lo que permitiría un primer nivel de macro-navegación (en forma de áreas temáticas generales), y luego profundizar en clusters temáticamente más delimitados.</p>
+<p>Más allá del contenido del artículo, lo más interesante de este tipo de estudios es comprobar hasta qué punto afecta la selección de uno u otro algoritmo para la organización de la información (y en este caso a su recuperación). Como ejemplo aplicado a las colecciones de recursos, creo que es muy pedagógico.</p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Mar 3<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/navegacion-social-utilizando-tagging-1/">Navegación social utilizando el tagging - 1</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Aspectos remarcados y descartados</h2>
+<p>Dada la longitud del documento, mi intención ha sido extraer los aspectos esenciales y dividirlos en unos pocos posts.  Por lo tanto no pretendo realizar un resumen completo ni tampoco entrar en detalle con conceptos conocidos tanto en el mundo de la informática como en el de la documentación y la recuperación de la información.</p>
+<p>Si después de leer los siguientes posts hay interés por saber más, creo que el salto lógico es al menos hojear el documento, porque realmente su autor se lo merece.</p><br />
+<h2>Enfoque del proyecto</h2>
+<p>Aunque el punto de partida es el uso de los metadatos generados por los usuarios, el objetivo se centra en analizar los métodos por los que los usuarios con <strong>intereses, opiniones y actividades parecidas</strong> puedan identificarse y localizarse.</p>
+<p>En un segundo nivel está el interés por identificar los puntos de conexión entre <strong>grupos temáticamente distantes</strong> pero susceptibles de intercambiar información.</p><br />
+<blockquote>Se debe entender el contexto como un tipo de información que caracteriza el entorno individual y social, y que puede emerger de la actividad propia de la interacción persona-entorno.</blockquote>
+<p>Estos dos niveles permiten concentrar contextos individuales para conformar grupos de interés.</p>
+<p>Por ello el estudio considera que contenido y contexto es inseparable, de modo que se adopta una perspectiva fenomenológica de la información.  Esto determina el enfoque del resto del estudio, y lo distancia de la ortodoxia de los lenguajes documentales, donde contexto y contenido se disocian.</p><br />
+<h2>Semiótica, psicología u sociología</h2><br />
+<h3>Semiótica: sintaxis, semántica y pragmática</h3>
+<p>La interpretación de un signo se da a tres niveles distintos: <strong>sintaxis, semántica y pragmática</strong> (esta última ya comentada en relación a la teoría de la relevancia).  La primera establece la relación entre signos; la segunda entre signos y objetos; y la tercera entre signos, objetos y el individuo.</p>
+<p>El contexto individual es pues aplicable al ámbito de la pragmática, que es el nivel que describe la visión personal.</p>
+<p>También se crea un contexto compratido al mismo nivel de la pragmática (jerga), tras lo cual se da un salto desde la folksonomía (centrado en los signos y la sintaxis) hacia la etnoclasificación (los signos distintivos de una "tribu").</p><br />
+<h3>Psicología: Memorias transactivas</h3>
+<p>Según Wegner (1987), la interacción social es la base de creación  de una <strong>memoria colectiva</strong>.  Esta memoria compartida tiene lugar preferentemente en grupos cohesionados que generan "etiquetas" (o jergas) que sirven como denominador común del grupo.</p>
+<p>Un aspecto clave en las memorias transactivas es que es necesario saber quién es experto en qué para que la información fluya y se convierta en parte cohesionadora del grupo.</p><br />
+<h3>Sociología</h3>
+<p>La aportación en este campo viene dada por Harper (1999). Este autor analizó el acceso, evaluación y proceso de información según la motivación y la relevancia.</p>
+<p>Por ejemplo, es importante valorar cómo afecta la autoridad del responsable de la información, si hay una revision del contenido, y la actividad del revisor.</p>
+<p>Al conocer el contexto social (motivación y actividad de autores e intermediarios) en el que se ha desarrollado la información, el receptor asigna un valor a ésta, no directamente por su contenido.</p><br />
+<h2>Redes sociales</h2><br />
+<h3>Características de las redes sociales</h3>
+<p>Después de analizar los conceptos teóricos anteriores, el autor describe los elementos y procesos que describen las redes sociales. </p>
+<p><strong>Atributos</strong>: densidad, centralidad, estructura, y puentes/transitividad.</p>
+<p>De lo anterior vale la pena describir brevemente la <strong>transitividad</strong>, ya que interesa su aplicación en sistemas de reputación social.  Se debe entender la transitividad como la máxima "los amigos de mis amigos son mis amigos".  Desde luego esta máxima no siempre tiene lugar, ya que depende de relaciones entre nodos que previamente son muy densas (muchas relaciones entre nodos).</p><br />
+<h3>Teorías en redes sociales</h3><br />
+<blockquote>Según Wellman (1990) describe tres características para definir la fortaleza de una relación: intimidad (amistad), voluntariedad de la interacción (interacción) y participación en contextos sociales comunes (multiplexidad).</blockquote>
+<p>&nbsp;</p>
+<p>Al analizar el conjunto de las relaciones entre miembros de la red, podemos llegar a la identificación de focos de interés.  Estos focos pueden venir determinados por cuestiones psicológicas, sociales, legales o actividades comunes.  La probabilidad de relación de dos personas con temas en común es mucho mayor.  Interesa identificar estos grupos para generar un mayor grado de recomendación y facilitar el intercambio de conocimiento basado en las relaciones (memorias transactivas).</p>
+<p>El análisis de estos focos diferencia entre relaciones intrafocales (micro-integración) e interfocales (macro-integración).  Mientras que las relaciones intrafocales fortalecen los grupos temáticos, las relaciones interfocales favorecen la interdisciplinariedad y limitan el riesgo de isolación de nodos. </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Feb 21<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/tareas-motivacion/">Las tareas y la motivación</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Fundamentos teóricos </h2>
+<p>Tradicionamente, el proceso de resolución de tareas se ha modelizado utilizando la denominada <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Poisson" title="Wikipedia: Distribución de Poisson">Ley de Poisson</a>, y que consiste en suponer que el número de eventos que suceden dentro de una unidad temporal (llamadas a un teléfono por hora, clientes por minuto en el cajero del supermercado), con un intervalo de tiempo entre eventos que sigue una <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_exponencial" title="Wikipedia: Distribución Exponencial">Ley Exponencial</a>.</p>
+<p>A nivel de análisis del proceso, la resolución de tareas se modeliza aplicando la <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_colas" title="Wikipedia: Teoría de colas">teoría de colas</a>. Lo que plantea esta teoría es que hay uno o más individuos (servidores) que procesa peticiones (clientes) uno tras el otro. Hay diferentes variantes en base al establecimiento de prioridades, si dos servidores colaboran o son independientes, etc. Aunque en general, si no se comenta lo contrario, el proceso de las peticiones se realiza según el método <a href="http://es.wikipedia.org/wiki/FIFO" title="Wikipedia: FIFO">FIFO</a>.</p><br />
+<h2>De la gestión de tareas a la gestión de la motivación</h2>
+<p>El proceso explicado hasta aquí es todo lo matemático que se puede esperar. Sin embargo hay una característica de la distribución exponencial que la hace <em>demasiado racional</em>: Se considera que la distribución exponencial <strong>no tiene memoria</strong>, es decir, que su probabilidad condicionada (el lapso de espera hasta el próximo evento sabiendo el tiempo del anterior lapso) es igual a su probabilidad incondicionada.</p>
+<p>Utilizando términos más llanos: un proceso o una persona que se modeliza utilizando la ley exponencial no se cansaría, ni se aburriría, ni se motivaría.  Simplemente resolvería según la <em>dificultad racional</em> de la tarea.  Esta premisa quizá sea aplicable a entornos de trabajo con alta mecanización de tareas, pero en entornos informacionalmente intensivos, el criterio no está tan claro.</p>
+<p>Ante este escenario, el Artículo <a href="http://arxiv.org/abs/0711.0741" title="Arxiv: Human Dynamics with adaptive interest">Human Dynamics with Adaptive Interest</a> propone un cambio de paradigma para encontrar soluciones más ajustadas a la realidad, escogiendo el modelo basado en el interés (<em>interest-based model</em>) enfrente al orientado a tareas (<em>task based</em>). </p><br />
+<h2>Análisis y metodología<br /></h2>
+<p> La metodología seguida en el estudio es el de la simulación estadística del proceso, introduciendo el factor de motivación como una variable más, y extrayendo de los resultados el nuevo modelo estadístico de periodicidad en la resolución de tareas.</p>
+<p>Este cambio de modelo matemático trata de analizar el cambio del concepto <em>habilidad de resolución</em> enfrente a <em>motivación de la resolución</em> de las tareas encomendadas. Sin ánimo de grandilocuencia, se podría decir que este cambio equivale al paso de la inteligencia racional a la inteligencia emocional. </p>
+<p>El resultado de la simulación demuestra que las fases más activas se concentran mucho más y las inactivas se dilatan dando lugar a fases frenéticas (con niveles intensos de interacción) seguidas de fases más largas de inactividad (poca motivación). Se entiende que son <em>más largas</em> <strong>en relación a</strong> lo que cabría esperar aplicando los modelos Poisson-Exponencial.</p><br />
+<h2>Conclusiones</h2>
+<p>El estudio afirma que el modelo matemático que se ajusta a esta nueva circunstancia es una <a href="http://es.wikipedia.org/wiki/Ley_potencial" title="Wikipedia: Ley potencial">ley potencial</a> con exponente -1 para modelizar el tiempo entre eventos.</p>
+<p>Esta conclusión puede ser de interés para analizar los patrones de fenómenos tan dispares como la navegación web, el zapping, y en general cualquier tarea que implique motivación.  Dos áreas de aplicación que pueden ser interesantes son el análisis del tiempo en estudios de interacción persona-ordenador (para identificar el grado de usabilidad del sistema cuando existe motivación por el usuario), y a un nivel más concreto, los estudios de búsqueda y recuperación de la información, para obtener una métrica de motivación en el tiempo entre eventos.</p>
+<p>A pesar de lo interesante del modelo, los autores apuntan algunas limitaciones de éste, ya que existen muchos ingredientes que intervienen en la motivación humana, varios de los cuales ni siquiera se han estudiado a fondo a nivel psicológico. Es un estudio que llevará tiempo, para el que las conclusiones del estudio (que además son simulaciones y no un trabajo de campo)  pueden servir de base para otros análisis.</p>
+<p>Volviendo a la pregunta inicial, el ordenador no tiene toda la información necesaria para poder extraer conclusiones. Por ejemplo, el ordenador no tiene información sobre si estás hablando por teléfono o alguien te interrumpe a mitad de una tarea. Pero podría empezar a disponer de indicadores objetivos (matemáticos) que le indicaran que te está bajando la moral.</p>
+<p>Y... &iquest;Quién lo sabe? Quizá se está creando un nicho de mercado para salvapantallas motivadores ;-).  </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Feb 19<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/reutilizar-intercambiar-intereses-tagging/">Reutilizar e intercambiar intereses con el tagging</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Motivación y fuentes de datos </h2>
+<p>El artículo <a href="http://arxiv.org/abs/0711.4142" title="Content Reuse and Interest Sharing in Tagging Communities">Content Reuse and Interest Sharing in Tagging Communities</a> recoge datos obtenidos a partir de los sitios <a href="http://www.citeulike.org/" title="CiteULike">CiteULike</a> y <a href="http://www.connotea.org/" title="Connotea">Connotea</a>.  Ambos parecen servicios más orientados a ambientes académicos y científicos. Al menos lo parecen más que del.icio.us.</p>
+<p>El estudio se centra en estudiar el grado de colaboración, y analiza el nivel de reutilización de los contenidos, y la compartición de intereses.</p>
+<p>En el estudio se cita a (Wu et al., 2006) en referencia a los mecanismos que debe incluir una comunidad de etiquetado social para convertirse en una buena herramienta de gestión del conocimiento: identificación de la comunidad, recomentación de usuarios/documentos, y generación de ontología.  También se cita el grado de colaboración como una herramienta eficiente que permitiría complementar algoritmos como el <a href="http://es.wikipedia.org/wiki/PageRank" title="Wikipedia: Pagerank">PageRank</a> para la recuperación de resultados.</p>
+<p>Las citas se hacen argumentando que el éxito de implantación de estas tres herramientas depende del grado de colaboración de la comunidad, por lo que el análisis posterior viene a deducir la viabilidad de implantación de tales servicios. </p><br />
+<h2>Análisis</h2>
+<p>Se extraen datos de los dos sitios indicados antes y se analizan dos métricas: Reutilización de contenido (en base a la repetición de tags y conjuntos de tags). Una vez analizada la reutilización de etiquetas, es posible analizar el grado en que dos usuarios diferentes comparten intereses.</p>
+<p>Para realizar el análisis se utilizan dos fórmulas:</p>
+<ul>
+<li>Relación entre usuarios y recursos (User-Item): Dados dos usuarios distintos, se obtiene un cociente entre el número de recursos que ambos han etiquetado (intersección) y la suma de los recursos diferentes etiquetados por cada uno (unión).</li>
+<li>Relación entre usuarios y etiquetas (User-tag): Análogamente al anterior ratio, se divide el número de etiquetas en las que ambos usuarios coinciden (intersección), por el total de etiquetas diferentes de ambos usuarios (Unión).</li></ul>
+<p>Las conclusiones que se extraen utilizando ambos indicadores es que hay pocos usuarios que compartan recursos y aún menos que compartan etiquetas.</p>
+<p>En referencia a compartir recursos, el estudio apunta a que es posible que los usuarios empiecen a compartir, pero que no hay acuerdo en los tags utilizados para describir un ítem. No se apuntan causas para entender el por qué de la diferencia. </p><br />
+<h2>La estructura de los intereses compartidos</h2>
+<p>El estudio diferencia tres niveles de intercambio, que recuerdan mucho a los estudios que analizan poblaciones con estructuras relacionadas con la Power law. En general los tres niveles se establecen en base a los dos ratios anteriores, pero por lo comentado antes, es más significativo el ratio de compartición de contenidos que el de etiquetas compartidas:</p>
+<ul>
+<li>Una mayoría de usuarios (53% de los nodos) aislados, sin relación con otros, o al menos con preferencias muy distanciadas del conjunto. </li>
+<li> Una cantidad considerable (15% de los nodos) de subcomunidades prácticamente disjuntas entre ellas. Estas comunidades se agrupan principalmente en base a los recursos etiquetados, y una ínfima minoría por las etiquetas compartidas. </li>
+<li>Un núcleo denso en el que se comparte establece un ratio medio de 0,66 para los recursos compartidos y un 0,17 para los tags compartidos.</li></ul>
+<p>El estudio avisa que estas conclusiones están limitadas por el hecho de haber analizado sólo dos de las comunidades de este tipo, aunque a&ntilde;aden que la representatividad de la muestra es suficiente para un análisis previo como este.</p>
+<p>La principal conclusión es que <strong>debido a estos bajos niveles de colaboración, está teniendo lugar un bajo nivel de aprovechamiento de la inteligencia colectiva [social knowledge] que se produce</strong>.</p>
+<p>Finalmente, se a&ntilde;aden algunos comentarios y mejoras para las comunidades de etiquetado:</p>
+<ul>
+<li>La colaboración no surge de forma natural, y el efecto en estas comunidades es que los usuarios de estos servicios perciben más utilidad en su gestión personal que en la capacidad de agregación de conocimiento.</li>
+<li>Los sistemas de recomendación se basan en la similitud de intereses entre usuarios, pero dado que hay poco nivel de similitud en el uso de las etiquetas y (a menor nivel) de recursos, el potencial de los sistemas de recomendación en las comunidades analizadas es bajo. En cambio el grado de éxito de los sistemas de recomendación llegan al 90% cuando se restringe las predicciones a ítems reutilizados. </li>
+<li>Se comentan los sistemas de reputación, que también se ven afectados debido a que la dispersión comentada favorece a la infiltración de contenido pernicioso, que son difícilmente detectables debido a la poca densidad de relaciones de este entorno social (se asemeja al feudalismo informacional). Por otro lado, no es posible establecer una reputación para los usuarios que no tienen un mínimo nivel de reutilización de recursos.</li></ul><br />
+<h2>Tagging disperso para profesionales de la información</h2>
+<p>Es interesante comprobar que las circunstancias de aislamiento se pueden producir en un entorno clásico de organización de la información y en una red social de etiquetado.  A pesar que <a href="http://www.terremoto.net/tipologias-y-estlos-en-el-etiquetado-social/" title="Tipologías y estilos en el etiquetado social">hay una gran variedad de estilos de etiquetado</a>, hay un espacio en la oferta de servicios para usuarios que quieren aprovechar el esfuerzo de otros e integrarse sin la necesidad de ser pioneros. Incluso es importante entender que muchos usuarios ni siquiera se dan cuenta del potencial de compartir y analizar lo que otros indexan.<br /> </p>
+<p>En ese gran espacio entre el núcleo, las subcomunidades y los usuarios usuarios aislados, es posible que el profesional de la información pueda encontrar muchos espacios-nicho en los cuales analizar los usuarios con intereses cercanos a su nicho, agregarlos, seleccionar los recursos y reetiquetarlos para hacerlos llegar a otros usuarios.</p>
+<p>El profesional se puede convertir en un catalizador de la comunidad (estoy seguro que la expresión no es nueva). Sus etiquetas pueden tener una estructura más estándar. Esta estandarización puede servir de puente para conectar las etiquetas de las fuentes y los destinatarios, explicitando aún más el grado de reutilización.</p>
+<p>El valor a&ntilde;adido es alto: </p>
+<ul>
+<li>Sólo buscas la mitad del tiempo, y parte de la otra mitad se dedica a evaluar los contenidos recibidos.</li>
+<li>Si los recursos encontrados no convencen, es probable que aporten ideas sobre qué buscar y qué no. </li>
+<li>El profesional puede actuar como referencista para dirigir al usuario hacia otros miembros de la comunidad que tengan intereses o recursos cercanos al que busca.</li></ul></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jan 13<br/>
+                2008
+            </p>
+            <h3><a href="../../../../blog/madame-briet/">Madame Briet</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Artículo traducido </h2><br />
+<h3>Suzanne Briet: Madame documentación y bibliotecaria extraodinaria<br /></h3>
+<p>Este post va por todos aquellos biblitecarios y estudiantes de la escuela de ciencias de la información que leen este blog.<br /><br />Una de las mejores cosas que tiene estar en la escuela de ciencias de la información es que consigues aprender todo tipo de cosas sobre gente que amó la información mucho antes que esta hubiera una economía para ésta.  Uno de los profesores de mi facultad -<a href="http://people.ischool.berkeley.edu/~buckland/" title="Michael Buckland">Michael Buckland</a>- siempre me asombra con historias sobre los grandes dioses y diosas de la información, muchos de los cuales nunca recibieron ningún crédito por su trabajo.  Su último libro <a href="http://www.amazon.com/exec/obidos/ASIN/0313313326/apophenia-20" title="Emmanuel Goldberg and his knowledge machine">Emmanuel Goldberg and his knowledge machine</a> sigue la historia de un inventor judío que escapó de Alemania sólo para ver cómo los americanos robaban varios de sus inventos.  Crees que Vannevar Bush inventó el Memex? <a href="http://people.ischool.berkeley.edu/~buckland/goldbush.html" title="Emanuel Goldberg, Electronic Document Retrieval, And Vannevar Bush&#39;s Memex">Piénsalo de nuevo</a>.<br /><br />Buckland llamó mi atención con otra historia de una bibliotecaria brillante que fue ignorada y olvidada: <a href="http://people.ischool.berkeley.edu/~buckland/briet.html" title="Suzanne Briet">Suzanne Briet</a>.  Feminista, ensalzadora de multitudes e historiadora, Briet fue una de las primeras detrás del movimiento documentalista durante el periodo interino [interim period].</p><br />
+<blockquote>"Briet decía que los documentalistas deberían estar integrados [embedded] en los contextos culturales de los usuarios a los que sirven.  Desde esta visión estratégica los documentalistas no deben sólo dedicarse a recuperar documentos, sino realizar prospecciones informacionales sobre las que aún no han sido preguntados, traducir información de otros idiomas, resumir e indexar documentos, y en general, trabajar proactivamente en una dinámica de avanzada del conocimiento en una disciplina (<a href="http://www.asis.org/Bulletin/Dec-06/day.html">Day</a>)"</blockquote>
+<p>Suena un poco a Google, &iquest;verdad? </p><br />
+<blockquote>"Los escritos de Briet se centraron en la importancia de las formas culturales y las situaciones sociales y las redes al crear y responder a las necesidades de información, más que tratar las necesidades de información como circunstancias como procesos psicológicos internos" (<a href="http://www.asis.org/Bulletin/Dec-06/day.html">Day</a>)</blockquote>
+<p>Sus escritos continúan anticipándose a la teoría del actor-red [<a href="http://en.wikipedia.org/wiki/Actor-network_theory" title="Actor - Network theory">actor-network theory</a>] (un enfoque habitual en las escuelas de ciencias de la información). Desafió a las nociones cuantitativas y positivistas de la "información", atribuyendo un origen y función cultural a la documentación y los signos documentales (<a href="http://www.scarecrowpress.com/Catalog/SingleBook.shtml?command=Search&amp;db=^DB/CATALOG.db&amp;eqSKUdata=0810851091">"What is documentation?"</a>).</p>
+<p>A pesar de su brillantez, fue ignorada y olvidada.  Sólo un bibliotecario fue a su funeral.  La mayoría de sus escritos fueron ignorados y nunca se traducieron.  Incluso hoy en día, pocos profesores de ciencias de la información tienen conocimientos sobre ella, y pocos ense&ntilde;an sus aportaciones.  Ni siquiera tiene una <a href="http://en.wikipedia.org/wiki/Suzanne_Briet">entrada en Wikipedia!</a></p>
+<p>En un intento por hacer más accesible su trabajo, Ronald Day, Laurent Martinet y Hermina Anghelescu han traducido su trabajo <a href="http://www.scarecrowpress.com/Catalog/SingleBook.shtml?command=Search&amp;db=^DB/CATALOG.db&amp;eqSKUdata=0810851091" title="What is documentation?">"What is documentation?"</a> al inglés y lo han <a href="http://ella.slis.indiana.edu/%7Eroday/what%20is%20documentation.pdf" title="what is documentation">convertido a archivo en formato PDF descargable</a>. Conjuntamente con Buckland, <a href="http://ella.slis.indiana.edu/~roday/briet.htm" title="Briet website">le han dedicado un sitio web</a>.  Su esperanza es que exista más información sobre ella para que los alumnos puedan entender el contexto histórico de la cultura de la documentación.  Personalmente estoy fascinada por aprender algo sobre una feminista erudita que tuvo tanta visión y fuera tan olvidada.</p>
+<p>Queridos biblioteconomistas y comunidad de estudiantes de ciencias de la información, Michael Buckland, el rescatador de los bibliotecarios olvidados, sobre qué será necesario para que verdaderamente se resucite su memoria? Vivimos en un mundo de registros e información, aunque a menudo olvidamos los exploradores y fundadores (especialmente si son mujeres, personas de color, gays, o que no no sean cristianos). Cómo revivimos las historias de aquellos cuyas contribuciones fueron ignoradas?</p><br />
+<h2>Comentarios finales</h2>
+<p>Para empezar, existe un tono crítico  en el post de Danah que debería ser verdaderamente contrastado.  Entendiendo que las minorías que comenta han sufrido discriminaciones a lo largo de la historia, sería importante determinar hasta qué punto eso es cierto en el caso que comenta. Es de justicia decir que no he investigado más a fondo buscando en fuentes originales, aunque espero facilitar la tarea para aquellos que deseen hacerlo y no tengan facilidad con el inglés (tampoco es mi caso, seguro que más de uno se habrá dado cuenta).</p>
+<p>Lo que más me ha llamado la atención del artículo son dos conceptos: integración y proactividad.  Quizá sea por esas dos palabras por la que haya hecho un esfuerzo en traducirlo.  Porque estas dos palabras son el abracadabra para que los profesionales de la información pasen de ser desconocidos a apreciados y respetados. </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../../en/blog/page/19/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">18</a>
+        
+        
+          <a class="btn btn-primary" href="../../../../en/blog/page/17/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
