@@ -1,0 +1,924 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../en/page/21/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">20</a>
+        
+        
+          <a class="btn btn-primary" href="../../../en/page/19/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Sep 21<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/efecto-medici-innovacion-interdisciplinar/">El efecto Medici: Innovación interdisciplinar</a></h3>
+        </header>
+        <section>
+            
+                <p><a title="El efecto Médici: página oficial" href="http://www.themedicieffect.com">El efecto Medici</a> (Deusto, 2005) trata sobre innovación.  A pesar de los que no piensan así, la innovación es clave, y es crítica. Lo es a muchos niveles, y en todas las áreas. Por ejemplo, en el entorno bibliotecario esta es una época de ebullición por <a title="servicios electrónicos de información y web social" href="http://www.deakialli.com/2007/09/13/bibliotecas-publicas-servicios-electronicos-de-informacion-y-web-social/">la llamada biblioteca 2.0</a>. Probablemente en la informática y las matemáticas en general eso esté más asumido, aunque en la informática, como área técnica con enfoque práctico, <a title="10 problemas abiertos en informática práctica" href="http://www.versioncero.com/articulo/563/10-problemas-abiertos-en-informatica-practica">hay muchos problemas operativos por resolver</a>. No es lo único, ni me voy a dedicar a enumerar todos los casos.</p>
+<p>Lo primero es exponer la razón que lleva al título: Frans Johansson expone el poder que tiene la interdisciplinariedad, o como él lo llama, <em>la intersección</em>. Define el efecto Medici como la consecuencia que tuvo que los Medici pudieran reunir a un grupo tan grande de genios en un espacio tan concreto, y los intercambios que generó entre ellos para abrir las puertas del Renacimiento. No sé si abrió las puertas, pero desde luego fue un momento clave...</p>
+<p>El libro se estructura en tres partes, desde mi punto de vista muy acertadas: qué es la intersección, cómo tiene lugar, y como se pueden crear las condiciones idóneas para innovar.</p>
+<h2>La intersección: una torre de Babel bien entendida</h2><br />
+El libro se inicia con dos o tres historias personales que permiten introducir los aspectos clave: la innovación se da en mentes abiertas, capaces de romper esquemas (o de vivir sin ellos) y de compartir con otras personas de formación y trayectoria diferente.</p>
+<p>Esa diferencia provoca que a lo largo de una conversación puedan surgir sorpresas, algo sencillo pero hasta ese momento imperceptible. Algo híbrido y nuevo.</p>
+<p>Esa hibridez surge del intercambio, una fusión o mestizaje entre conocimientos que no se habían combinado nunca hasta el momento. Ese mestizaje puede surgir en la evolución personal de alguien que vive en circunstancias diferentes, o bien entre personas que se encuentran y comparten ideas.</p>
+<p>Es en esas ideas donde el autor introduce el ya conocido concepto de Meme.  Y expone que la innovación puede entenderse como la evolución trasladada a la vertiente intelectual y cultural de los seres humanos. Por lo tanto, la diversidad cultural, y las mutaciones de la información son claves.</p>
+<p>En el libro se nombran casos de éxito tan dispares como la capacidad dramática de los personajes en los dibujos 3D de Pixar, la capacidad de innovación en la cocina, o la teoría de la evolución de Darwin. Cada caso presenta circunstancias de eclosión de ideas en la intersección.</p>
+<p>La primera parte del libro, en sí misma es una puesta en escena.  Es por eso que proporciona poca substancia, así que paso a comentar la segunda y, especialmente, la tercera parte.</p>
+<h2>Cómo tuvo lugar la intersección</h2><br />
+Esta parte del libro expone lo que yo denominaría como los "aspectos tácticos" de la innovación. Se siguen exponiendo casos (es una tónica de todo el libro, mayoritariamente con acierto) en los que se viene a exponer una serie de conceptos clave:</p>
+<ul>
+<li>Al trabajar en un espacio de interesección el conjunto de posibilidades equivale a las combinaciones de ideas que vienen de ambas disciplinas.</li>
+<li>Es probable que se dominen unas disciplinas más que otras, y por ello dar con la innovación tiene características aleatorias.</li>
+<li>Dado ese carácter de aleatoriedad, los éxitos vienen después de muchos fracasos, así que lo importante es ser positivo, quitarse el miedo al error y ser perseverante. En pocas palabras, se innova porque se produce.</li>
+<li>Es importante tratar de dar la vuelta a las suposiciones, o lo que el autor llama "barreras asociativas". Como decía Hume, No hay leyes universales, sino creencias universales. Pues eso, practica lo empírico. Baja a la calle y camina.</li>
+<li>Otras posibilidades son tratar de cambiar de perspectiva, aprender las cosas de una forma diferente (en cierto modo, ser autodidacta), o asimilar cualquier tipo de mezcla cultural.</li><br />
+</ul><br />
+En ese maremágnum de mezclas e intercambios, el autor aboga por encontrar un equilibrio entre la visión transversal y la vertical (especializada). No se trata de ser "maestro de nada", ni especialista en girar una ruedecita a medio radián por segundo.</p>
+<h2>Cómo prepararse para innovar</h2><br />
+Entre el final de la segunda parte y toda la tercera es donde creo que hay gran parte de la substancia de este libro.</p>
+<p>La primera de las claves, que ya he leído en otras partes, es generar activamente muchas ideas. Dar rienda suelta a la verborrea mental. Para no provocar desajustes mentales a quienes nos rodean, el autor propone la clásica libretita. Actualmente la grabadora del móvil es una buena solución.</p>
+<p>Ante esa situación, cabe comentar unas conclusiones a las que han llegado diversos estudios sobre la lluvia de ideas: el mito de hacerlo en grupo funciona, pero acostumbra a ser peor que hacerlo individualmente.  La razón es que la gente se coarta, o que simplemente la memoria instantánea donde se guardan las ideas fugaces no está preparada para razonar ante el resto. Es por eso que el autor sugiere la combinación del <em>brainstorming</em> con el <em>brainwriting</em>.</p>
+<p>Después de la fase de euforia del brain-loquesea y de la habitual fermentación en el cajón, debe llegar el momento tranquilo de evaluar. Evaluar es un acto sosegado. No estará faltado de creatividad, pero para conseguir que las ideas tomen forma, es necesario dejar las prisas a un lado, e inspirarse.</p>
+<p>Esto viene al caso porque el autor también nombra ciertos estudios en los que se puso a prueba la relación entre creatividad y presión. Los resultados fueron claros: la presión no favorece a la innovación.  Si la persona que innova tiene presiones externas, dedicará más tiempo a controlar en "no pasarse" que en crear. Evitar la creación de estas barreras implica favorecer la innovación.</p>
+<p>A eso hay que a&ntilde;adir una dura posibilidad: si tu red de contactos te limita a la hora de innovar (porque no quieras fallarle o porque rechazan tus intenciones), la innovación implicará alejarte de ésta.  Cambiar de entorno.  Quizá sea eso lo que necesites para innovar.  Puedes pensar en casos de personas que se van al extranjero, que cambian de empresa, se alejan del entorno familiar... Es una posibilidad dura de aceptar, pero quizá pueda ser necesaria.</p>
+<p>Aparte de la adecuación de la red, para convertir las ideas en innovación es interesante crear el ambiente y las condiciones adecuadas.  De poco le serviría al músico la inspiración si está en un ambiente perturbador, y con pocos medios para plasmar su capacidad creativa.</p>
+<p>Uno de los aspectos claves que remarca el autor es la capacidad de asumir los errores como parte inherente a la innovación y el éxito: de lo equivocado se sacan conclusiones e ideas nuevas. Es por eso que las empresas implicadas en la innovación deben valorar positivamente tanto los fracasos como los aciertos: lo que debe ser penalizado es la falta de actividad.  Esa aceptación pasa por crear un ambiente libre de juicios de valor sobre los que se equivocan, porque hay diferencias substanciales entre el error y el fracaso.</p>
+<p>Esta capacidad de aceptar los errores lleva a otro aspecto clave: mantener la motivación.  Motivar un equipo que avanza soportando los bofetones de la innovación es algo realmente crítico.  Si alguien es capaz de ponerse en la piel de quien innova sabe que debe tener una voluntad de hierro y un nivel alto de fe en su actividad. Acabar el dia y no tener claro si se ha hecho (ni que decir acabado) algo de provecho es algo que desgasta.  Quizá ésta sea una razón más para buscar el provecho en el error.</p>
+<p>Otro de los aspectos interesantes que me han llamado la atención es que la tarea de innovar se traslada a la planificación económica: es necesario reservar fondos en un proyecto para intentarlo dos o más veces: es muy poco probable que te funcione a la primera, o a la segunda.  Pero eso no implica que estés en un mal camino: si encuentras la intersección y tratas de innovar mezclando, puedes encontrar el éxito. Lo que está claro es que en la mayoría de casos necesitarás medios económicos para conseguirlo.</p>
+<p>Para mí esta es la parte mejor conseguida de todo el libro. Sin lugar a dudas.  Tratándose de un libro donde lo que se trata es lo esencialmente diferente, me parece un gran mérito ser capaz de especificar una serie de principios básicos que permitan a cualquier persona o grupo innovar.</p>
+<h2>Comentarios finales</h2><br />
+La lectura de este libro me había sido eufóricamente recomendada, y a raíz de eso su lectura era arriesgada, por lo que provocan las expectativas (a partir de ahora, barreras asociativas).  En algunos momentos me ha recordado al pensamiento lateral de Edward de Bono, aunque el estilo de escritura es totalmente diferente (a mí me gusta más el de Johansson).</p>
+<p>La tercera parte del libro me parece excepcional, por lo fundamentada, sencilla y coherente que la ha presentado el autor.  Es por eso que recomendaría su lectura a quienes se quieren adentrar en el mundo de la innovación, ya sea a nivel profesional o personal.</p>
+<p>Ahora bien, para aquellos que se dedican a innovar a diario y utilizan sus propias técnicas creativas (pocos en Espa&ntilde;a por lo que dicen las estadísticas), el libro puede quedarse corto. Para esos perfiles, más creativos e incluso menos técnicos, el libro puede resultar una recopilación de casos de éxito, y poco más.</p>
+<p>He leído un <a title="Casi Seguro: El efecto Medici" href="http://www.casiseguro.com/2005/01/21/el-efecto-medici-la-interseccion-clave-de-la-innovacion/">resumen de la primera parte del libro en casiseguro</a>. Quizá os pueda aportar algo: ya podéis ir, no me pondré celoso :-D.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Sep 5<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/seo-software-social-imagen-personal/">SEO, software social e imagen personal</a></h3>
+        </header>
+        <section>
+            
+                <p>
+<p>En los pocos segundos que tarda en cargarse el artículo en la pantalla se da cuenta de cómo ha cambiado todo este mundillo. Se acuerda de cómo algunos de los posts de su blog, con una cantidad respetable de enlaces entrantes y visitas contribuyeron a que su empresa le aumentara el sueldo. Pero lo que también contribuyó a ello fue que comprobaran la veracidad de algunos de sus contactos estrella en su red social...</p>
+<p>Su red. Solicita al sistema que averig&uuml;e cuáles de sus contactos podrían ser más cercanos a la web que ha enlazado la noticia: esta noticia no pinta muy bien: tiene un lenguaje atractivo, es dinámica, parece infundada pero lo disimula de maravilla... Habrá que pensar en algo.</p>
+<p>El agente inteligente busca páginas similares, enlaces entrantes a la noticia y estadísticas públicas del sitio. &iquest;Es necesario preocuparse? En el histórico aparecen tres noticias con palabras clave parecidas durante los pasados seis meses. Puede que la imagen de los clientes de nuestro protagonista empiecen a debilitarse. Configura un sistema de alerta para realizar el seguimiento de los enlaces entrantes a la noticia. Si la <a href="http://es.wikipedia.org/wiki/Curva_log%C3%ADstica" title="Wikipedia: Curva logística">curva S</a> de inbounds se acelera antes de 48 horas, habrá que hacer algo...</p><br />
+<h2>No está tan lejos</h2>
+<p>Todo, o prácticamente todo lo comentado en la situación hipotética anterior, es perfectamente factible con las herramientas actuales. Será gratuito o tendrá un precio, pero es factible. Utilizar unas cuantas APIs, programar unos algoritmos de cálculo matemático y romperse los cuernos para dise&ntilde;ar una interficie ergonómica. Es cuestión de tiempo. </p>
+<p>Quizá dos a&ntilde;os. No más de cuatro o cinco. Acercar este tipo de soluciones puede resultar innecesario en nuestra vida privada. Sin embargo, en la vida profesional cada vez parece más claro que la presencia en Internet es la mejor tarjeta de visita. La promoción interna o la superación de procesos de selección pueden depender de un blog más o menos influyente; más o menos afín al puesto de trabajo. </p>
+<p>En todo este escenario, los conceptos clave son el SEO y el SEM. En este nuevo mundo en el que el conocimiento es poder, el SEO y el SEM son equiparables al índice Dow Jones y el PIB, respectivamente.</p><br />
+<h2>Del entorno corporativo a las redes sociales</h2>
+<p>Cada vez más, las empresas se están acercando al mundo de las estadísticas web, y también están aprendiendo a utilizarlas. No es que sea ahora mismo. Lo que pasa ahora es que está al alcance de muchos, y cada vez más es posible encontrar herramientas más adaptables a las necesidades de cada sitio.</p>
+<p>El cambio sustancial ha aparecido con el posicionamiento en buscadores, y esencialmente por el modelo de ingresos por publicidad, y la posibilidad de captar clientes del otro lado del mundo con medios mucho mejores que hace siete u ocho a&ntilde;os. </p>
+<p>A los internautas de a pie, exceptuando los bloggers más o menos activos, aún les falta tiempo para comprender que crear la propia imagen, a partir de cierto nivel profesional, ya no pasa tanto por un nudo de corbata bien hecho, sino por un micrositio personal, ya sea blog o algo más. Un sitio que sea coherente en sus contenidos, bien desarrollado en cuanto argumentos (a mí aún me falta...), y más o menos relacionado con el resto de la comunidad (aún me falta más). Esa es una buena imagen de marca de uno mismo. Ese sitio es tu primera conversación con cualquier desconocido que te busque en Google. Así que nada de palabrotas ;-).</p>
+<p>Con la llegada de la web social, el abaratamiento de costes de acceso y la disponibilidad de herramientas de interacción, el prosumidor ya tiene los medios suficientes como para crearse una imagen. Así que puedes <a href="http://www.latejedora.es/?p=793" title="La tejedora - Estás perdiendo mucho tiempo">cambiar esos ratos muertos de navegación insubstancial</a> por cuatro nociones básicas sobre edición electrónica. Desde luego, los medios son más que suficientes: tanto el coste de conexión como de alojamiento en servidores puede ser muy inferior al coste de imprimir tarjetas, comprar un teléfono móvil o abrir cualquier otro canal de contacto. Sin embargo, a falta de esta visión, falta integración. Es por eso que parece que las herramientas... quizá aún no estén lo suficientemente maduras.</p>
+<p>A pesar de ello, los usuarios se han ido acostumbrando a socializarse en la red, ya sea en Facebook, MySpace, LinkedIn/Neurona u otras herramientas por el estilo.  Este software ha venido para quedarse. Es el ágora de la polis digital. </p>
+<p>Si las redes sociales importan no es sólo por la publicidad, aunque sea el negocio más rentable. Su principal valor son el número de usuarios activos. No clican en la publicidad pero... &iquest;es eso realmente tan importante? Ahora lo es porque la viabilidad económica de estos sitios depende de eso. Pero por ejemplo, <a href="http://www.error500.net/publicidad-facebook-funcionar" title="Error500: La publicidad en facebook no funciona">la publicidad en Facebook no funciona muy bien</a>...  </p>
+<p>Sin embargo, creo que el destino está empezando a cambiar el rumbo de estas soluciones. Yo creo que Las redes sociales importan porque, sea cual sea el cambio que venga a continuación, la repercusión que tenga en estas redes será el indicador principal del éxito o el fracaso.</p>
+<p>Cada uno de los nodos de la red que representa un indiviuo podrán absorber o rechazar una nueva propuesta. La identidad del individuo en esa red, el número de contactos, etc., son una faceta más de su vida real.  Sentirse valorado en ese entorno significa también dar la propia opinión y posicionarse. Del mismo modo que un responsable de RR.HH. puede rechazar tu blog-currículum, tú puedes rechazar una marca o un proyecto.  Quizá tu posicionamiento te prohibe aceptarlo. </p><br />
+<h2>De la marca al individuo<br /></h2>
+<p>Web 2.0 parece haber implicado algunas cosas más que Wikipedias y el software social. A mi modo de ver ha creado la necesidad de disponer de una identidad en la red. No se trata del clásico pseudónimo en el chat de la esquina, sino de algo más. Cada vez tienen más medios para hacerlo interactuando de una forma más natural, olvidando la tecnología que hay debajo: ya no hay tantos baches en la carretera. Y por eso los usuarios buscan relacionarse con otros y compartir un significado al que asociarse. <br /> </p>
+<p>Ojo, significado no implica "etiquetas", aunque el uso de <a href="/cuando_etiquetas_un_recurso" title="Sopadebits: Cuando etiquetas un recurso">etiquetas acabe etiquetando</a>. Entiendo por significado un concepto o término que se asocia a un esquema de valores, a una disciplina, un estilo de vida. Es una combinación de elementos que define una visión personal.<br />  </p>
+<p>Si bien <a href="http://www.naomiklein.org/no-logo" title="Naomi Klein: No logo">el significado y los valores se asociaban a las marcas y sus logotipos</a>, esa característica ha dejado de ser patrimonio exclusivo del branding corporativo. En el momento que el consumidor tiene acceso a las mismas herramientas que las organizaciones, el branding personal a mayor escala es algo muy factible.</p>
+<p>Al fin y al cabo, las estrategias de comunicación y de imagen de las marcas son conjuntos de <a href="http://en.wikipedia.org/wiki/Meme" title="Wikipedia: Meme">memes</a> que tratan de conseguir la máxima difusión para atraer a un público fiel dentro de sus esquemas de valores. Sin el poder de convocatoria de estas corporaciones, pero con costes mucho más bajos y un poco de creatividad, crearnos una imagen es fácil. Si luego llega la fama, eso es harina de otro costal.</p><br />
+<h2>Mi gestor de imagen personal</h2>
+<p>Has apagado el móvil? Qué lástima! No podrás recibir mensajes de aviso.  Sin embargo, tampoco es necesario que te angusties. Precisamente para eso es necesario un sistema de gestión: para que no tengas que estar pendiente todo el día. </p>
+<p>Desde luego, si <a href="http://es.wikipedia.org/wiki/Vannevar_Bush" title="Wikipedia: Vannervar Bush">Vannevar Bush</a> levantara la cabeza... Estamos convirtiendo su <a href="http://es.wikipedia.org/wiki/Memex" title="Wikipedia: Memex">Memex</a> en un asesor de imagen...</p>
+<p>Si lo que aquí planteo tiene posibilidades, las redes sociales se encuentran ante unas posibilidades inmensas: imagina que en la zona privada de tu red social encuentras utilidades que te permiten seguir, en todas partes donde te has dado de alta, los comentarios en blogs, las conversaciones en foros y chats, las respuestas en los servicios de question answering... Y desde luego en tu propia página. ése conjunto de información eres tú. Esas afirmaciones forman parte de tu ADN cultural. </p>
+<p>Si el ser humano ha sustituido la variedad biológica por la cultural, los memes pueden ser el ADN que heredarán nuestros "hijos culturales". Sólo que ahora hijos y padres pueden tener edades dispares. Es cuestión de intercambiar ideas y no manzanas. </p><br />
+<h2>Yo SEO, Tú Seas, él Sea </h2>
+<p>En realidad no es tanto así, pero si somos lo que comunicamos, Internet bien tendrá algo que decir.</p>
+<p>Es por eso que es previsible que dentro de no mucho tiempo empiecen a aflorar servicios de posicionamiento personal.  Aunque un individuo no facture tanto, puede considerar que es una buena inversión aceptar los servicios de alguien que le ayude a encontrar un lugar en la red, dise&ntilde;e su currículum de acuerdo con sus aspiraciones, y que proponga modificaciones en los posts del blog para adecuarse a las palabras clave más interesantes. </p>
+<p>Paso a paso, las redes sociales pueden convertirse en plataformas para conseguir esa utilidad.  Pueden tener la competencia de los portales y buscadores verticales, aunque los primeros tienen algo que los otros no tienen: fidelidad del usuario en forma de tiempo de uso.</p>
+<p>Es por eso que las redes sociales están percibiendo ese poder, y podemos ver movimientos como los de <a href="http://developers.facebook.com/" title="Facebook Developers">Facebook, que han abierto una API</a> para que empresas externas puedan desarrollar sus aplicaciones. El movimiento es interesante porque permite fidelizar a los usuarios y abrir posibles modelos de negocio basados en la intermediación, ya sea por ofrecer estos servicios, o bien por incluir publicidad en ellos.</p>
+<p>Si estas plataformas sociales consiguen incluir herramientas eficientes para la gestión de la imagen personal en Internet, es probable que consigan un modelo interesante de ingresos. Desde luego, ahora es hablar por hablar, pura especulación. Pero no lo veo tan lejos. Probablemente las comunidades más profesionales sean las que puedan abordar esas posibilidades de convertir el significado en valor económico, más allá de la publicidad. </p><br />
+<h2>Microformatos: giro copernicano y el poder de la información</h2>
+<p>Te imaginas que para dar tu tarjeta de presentación tuvieras que estar en tu oficina? &iquest;O que sólo tuvieras los teléfonos de tus contactos en la agenda de tu despacho? Claro, es que te da palo copiarlas uno por uno a tu móvil. </p>
+<p>Fruto de ese miedo a las tareas tediosas, tu agenda te acompa&ntilde;a desde hace nada más y nada menos que siete a&ntilde;os. Arrugada, manchada por el café, tachada... Pero es tu agenda, y... qué se le va a hacer!</p>
+<p>Eso es lo que sucede con el software social y la inmensa mayoría de servicios cuyo modelo de negocio pasa por conseguir aumentar continuamente el número de usuarios registrados. En esos sitios, si quieres cambiar, vas a tener que hacer un copiar-pegar de todo lo que te dedicaste a introducir, porque <a href="http://www.error500.net/redes-sociales-abiertas-datos-usuarios" title="Error500: Redes sociales abiertas y datos de los usuarios">en la mayor parte de casos no existen herramientas de exportación</a>.</p>
+<p>Sin embargo, existe una serie de formatos con utilidades muy concretas que van a cambiar eso: los <a href="http://www.microformats.org" title="Microformats">microformatos</a>.  Como su nombre indica, son especificaciones muy concretas y delimitadas que tienen funciones del mismo carácter. Por ejemplo, podemos hablar del hCard, que es un formato desarrollado para poder intercambiar datos de contactos personales, a modo de tarjetas de visitas.  Está hCalendar, para intercambiar eventos de calendario. En fin, y así hasta un largo etcétera.</p>
+<p>A medida que pasa el tiempo, estos microformatos se han ido introduciendo en aplicaciones de uso personal y profesional, que a su vez generan datos y exportan en esos formatos.  Por ejemplo, ciertos programas de correo permiten incorporar una entrada hCalendar para que los destinatarios del mensaje puedan importarla a su agenda sin necesidad de teclear. Parándose a pensar, todo un lujo.</p>
+<p>Si toda esa información fuera importable y exportable de los sitios de software social, los usuarios serían libres de cambiar cuando quisieran, y las oscilaciones de usuarios sería mucho mayor. Sin embargo el cansancio del usuario es algo que acaba sucediendo. A veces, lo que pasa es que el entorno cercano cambia de tecnología y hay un efecto de arrastre.</p>
+<p>Pero lo importante es que el usuario quiere que las cosas funcionen bien, y que los cambios (aunque mínimos) sean poco traumáticos.</p>
+<p>Es por eso que no me parece muy lejano que la gestión de la información personal se realice dentro de poco del mismo modo que se pasó del webmail al correo POP3: trabajo en un entorno local y socialización en una plataforma. Datos en entorno privado y gestión personal de la información.</p>
+<p>A mi se me antoja que la mejor tecnología para esto son (si se solucionan los problemas de tama&ntilde;o) los teléfonos móviles. Los llevamos siempre encima y forman parte de nuestra comunicación y gestión de la información personal, agenda, e incluso del ocio (juegos, cámara de fotos). La integración Móvil-PDA ya es un hecho. La <a href="http://www.downloadsquad.com/2007/09/05/finally-a-real-social-net-for-mobiles/" title="Social software weblog: Finally, a real social net for mobiles">integración móvil-software social lo está siendo</a>. </p>
+<p>A diferencia de lo que ocurre en el entorno físico, el abaratamiento del espacio digital permite buscar algo más de intimidad, sin sentirse demasiado apabullado por la publicidad. Y quizá en un tiempo no muy lejano sea Google quien pague a usuarios para que les ceda la información de su actividad.</p>
+<p>Claro que <a href="http://business.timesonline.co.uk/tol/business/industry_sectors/technology/article2373811.ece" title="The Times: Wikipedia boss believes he has the knowledge to challenge Google">quizá eso sea insuficiente para superar a la Wikia Search, de Jimmy Wales</a>.</p>
+<p>Despierta, que ya he acabado. XD </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Aug 26<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/lecturas-veraniegas-web-2-0-fundacion-orange/">Lecturas veraniegas: Web 2.0 (Fundación Orange)</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Estructura y organización</h2><br />
+El documento tiene tres partes diferenciadas, aunque se puede clasificar en dos áreas concretas.  Una que describe las relaciones entre la tecnología y el entorno social, que a su vez se divide en dos partes: el contexto sociotécnico y la contextualización sociotécnica de la web 2.0.  En otro plano diferenciado se dedica una parte interesante del documento a los aspectos económicos y empresariales (los modelos de negocio).</p>
+<p>Esta estructuración puede parecer artificial (dividir en dos partes los aspectos socio-técnicos) y probablemente lo sea debido a las diferentes autorías de cada parte.  Sin embargo, creo que es apropiado porque hay una gran cantidad de aspectos relativos al entorno social y tecnología que no están estrictamente relacionados con la web 2.0, como es el caso de la alfabetización digital, el modelo de comunicación en red, u otros conceptos de evolución del pensamiento científico.</p>
+<p>En lo que se refiere a mis intereses, la lectura del documento de la fundación orange sigue un poco el hilo de la lectura del libro "<a title="Sopa de bits: Lecturas veraniegas - Arte en la red" href="/lecturas-veraniegas-arte-red">arte en la red</a>" que ya comenté. Mientras que el arte en la red tiene un carácter más filosófico, en este caso se habla de las circunstancias y momentos clave en la evolución de la web 2.0. Esta diferencia puede ayudar a decidir a quien tenga dudas por la lectura.</p>
+<p>El enfoque es por ello mucho más concreto, ya que se centra en un modo de uso de una tecnología en una época concreta. Sin embargo, eso implica aportar referencias sobre los orígenes de estas circunstancias, y también sobre sus tendencias futuras.</p>
+<p>Es por eso que la lectura en sí es interesante, ya que permite hacer un peque&ntilde;o "zoom" sobre temas concretos de la interacción en la web social.</p>
+<p>Un aspecto muy positivo es que en el documento se hace algo que no siempre se tiene en cuenta: se menciona la diferencia entre Internet y Web. Internet es un entorno general, mientras que Web se trata de una forma de uso de ese entorno. Eso es importante porque saber que existen otros modos de uso implica que existen otras posibilidades de expansión de las interacciones sociales en Internet. Es un comentario marginal dentro del conjunto de la lectura, pero es algo que a menudo genera confusión entre neófitos.</p>
+<h2>Integración y convergencia</h2><br />
+Continuando con el argumento de Carrillo que afirmaba que los individuos han empezado a asimilar su papel como miembros de la red, Antonio Fumero afirma que es el propio cerebro el que está evolucionando para adaptarse a la red, <span style="text-decoration: line-through;">acu&ntilde;ando el término</span> (gracias a <a title="Antonio Fumero: Antoine's blog" href="http://antoniofumero.blogspot.com/">Antonio</a> y Fernando por la rectificación) utilizando el término <a title="Antonio Fumero: Noomorfosis digital" href="http://antoniofumero.blogspot.com/2006/08/noomorfosis-digital.html">noomorfosis digital</a>, acu&ntilde;ado por Fernando Sáez Vacas.</p>
+<p>Este proceso de reticularización del pensamiento (no tanto por la estructura del cerebro sino por la estructura de los pensamientos) no sólo es un reflejo de la arquitectura misma de la red, sino también del proceso de convergencia de lo peque&ntilde;o (nanotecnología), lo vivo (biotecnología) y el conocimiento. El factor común que intenta integrar estas tres areas es la tecnología. Este fenómeno de convergencia es denominado <a title="Small times: NBIC" href="http://www.smalltimes.com/Articles/Article_Display.cfm?ARTICLE_ID=269329&amp;p=109">NBIC</a>. En este punto cabe recordar las cualidades que comentaba Carrillo sobre la digitalización, en cuanto que método para representar mediante un sistema único (el binario) cualquier contenido.</p>
+<p>Ante estas circunstancias, se habla de los "nativos", usuarios que han nacido en la época de la explosión de Internet, que se han familiarizado con los las interficies de interacción con ordenadores a tempranas edades, y que hoy en día viven ese medio de interacción con otras personas como algo natural.</p>
+<h2>Tecnología más social</h2><br />
+Después de un repaso de algunos términos tecnológicos clave para entender la situación actual y la evolución futura, Fumero se introduce en lo social de la web 2.0 considerando que el aspecto clave de lo social es lo conversacional, y de ahí el fenómeno blog y wiki como los principales exponentes de la web 2.0.</p>
+<p>El blog como herramienta básicamente individual de publicación, y la wiki como medio eminentemente colectivo, se introducen en entornos no sólo personales, sino también profesionales y educativos.  Su capacidad de interacción a nivel humano utilizando la tecnología internet (cada vez más barata) mediante herramientas cada vez más sencillas de utilizar, abren la puerta a gran cantidad de usuarios que se van sumando a la creación de contenidos colectivos.</p>
+<p>Esa creación colectiva tiene las dos formas de representación comentadas anteriormente: los blogs como medio individual que se enlaza con otros mediante trackbacks, comentarios y demás. Las wikis como herramientas de creación de documentos de referencia (wikipedia) y que por lo tanto descartan el individualismo (y a menudo el egocentrismo) del blog por el consenso de la colectividad. Ello también implica la introducción del control de versiones para evitar el ruido informacional de los que quieren pervertir tales proyectos.</p>
+<p>Desde luego, los ideales y objetivos de cada medio son diferentes.  Fumero enumera trece aspectos característicos de la cultura del blog, donde se encuentran conceptos como compartir, agilidad y reconocimiento.</p>
+<p>Los medios permiten la interacción, pero no la integración de forma sistemática de todas las soluciones técnicas en un mismo entorno, de modo que por ejemplo, no existe aún una administración 2.0 o un gobierno 2.0. La posibilidad de integrar estas tecnologías más sociales en los entornos de decisión y de poder permitirían mayor interacción y por lo tanto más adaptabilidad. Esto también acercaría a un usuario más implicado en realizar esa interacción.  A efectos prácticos, las votaciones y otros procesos relacionados serían mucho más habituales en el día a día.</p>
+<p>Fumero cita la educación como el aspecto clave que permitiría realizar el cambio hacia esta sociedad del conocimiento, ya que en el entorno educativo se podría simular este nuevo entorno social como un sistema más interactivo. A pesar de ello, la educación 2.0 (o universidad 2.0) aún es una asignatura pendiente.</p>
+<h2>La complejidad del contexto</h2><br />
+Lo complejo no se refiere a lo complicado, puntualiza Fumero.  Lo complejo se refiere a la teoría de la complejidad, la teoría del caos, y la teoría de sistemas.  Se refiere a la visión en conjunto que descarta la especialización en favor de la interdisciplinariedad.</p>
+<p>Con este propósito se utiliza el modelo OITP (Organización, Individuo, Tecnologías y Procesos ) definido por Sáez Vacas en 1990.  Este modelo (que puede ser ampliado con el factor del entorno, indican los autores) se utiliza como base para definir los parámetros de funcionamiento de la web 2.0.</p>
+<p>Para el caso de la web social, definen las redes sociales como los elementos de organización, los nativos como individuos, internet como la tecnología subyacente.</p>
+<p>En este modelo, se identifican según <a title="Stanford University: Bebo" href="http://www.stanford.edu/~bebo">Bebo</a> dos ramificaciones respecto al proyecto original.  El primero se refiere a la web semántica, que permitiría definir criterios para dotar de significado interpretable por sistemas basados en inteligencia artificial para extraer información.  La segunda ramificación emerge en el momento que un gran volumen de usuarios empieza a interactuar con la intención de generar contenidos a la vez que los consumen: los <a title="Wikipedia: Prosumer" href="http://en.wikipedia.org/wiki/Prosumer">prosumidores (prosumers en inglés)</a>. Esta segunda ramificación es la que hemos identificado como la web 2.0.</p>
+<p>Ante esta doble ramificación los autores proponen una fase futura en que se unificarán estas dos ramificaciones, para dar lugar a una inteligencia colectiva que a la vez podrá ser procesada por sistemas basados en inteligencia artificial.  En este horizonte es probable que tengan un papel predominante las folksonomías y los microformatos, ya que en sí mismos son elementos que proporcionan una gran síntesis de significado, algo parecido a "the wisdom of crowds" interpretable tanto por humanos como por máquinas.</p>
+<p>Para entender este proceso de convergencia de estos dos entornos, y especialmente para poder gestionar el cambio en los entornos empresariales, los autores enumeran (igual que Carrillo) una serie de veintiuna propiedades, que se dividen en cinco áreas:</p>
+<ul>
+<li>Captación y manejo de la información: Son los aspectos que permiten diferenciar el espacio virtual y el actual [utilizo la terminología de Carrillo y no la de los autores]. Las características de esta categoría son Digitalidad, potencialidad, omnipresencialidad, y análogodigitalidad.</li>
+<li>Transformaciones corporales, sensoriales, relacionales, en las fronteras de la acción personal e identidad: Se refieren al cambio de los modos de interacción y representación de los individuos, con toda la representación de la identidad personal mediante las nuevas tecnologías.  Aquí los autores enumeran como características claves la protesicidad, multisensorialidad, interactividad, rastreabilidad, representalidad, y virtualidad.</li>
+<li>Transformaciones funcionales de la infraestructura infotecnológica: Hace referencia a los elementos que se incorporan a la red (incluyendo el cerebro humano), enumerando neuralidad, e intelectividad.</li>
+<li>Transformaciones espacio-temporales: La disponibilidad de terminales y herramientas para interactuar en cualquier momento y en cualquier lugar con el resto de usuarios de la red presenta las características de distalidad, reticularidad, movilidad, instantaneidad, y ubicuidad.</li>
+<li>Barreras: Ante las limitaciones de unos canales, formatos y medios que aún están en pa&ntilde;ales, los autores definen cuatro cualidades que definen las barreras de la interacción en la red. Estas características son la intangibilidad, hermeticidad, discontinuidad y feudalidad.</li><br />
+</ul><br />
+El resto del primer apartado se centra en exponer el fenomeno blogosférico, el software social y la inteligencia colectiva. Dada la ingente cantidad de documentación al respecto, creo que lo mejor es optar entre no hablar del tema o realizar una síntesis, pero en cualquier caso no será en este post. Lo que sí remarcaría de este apartado es la referencia a los nativos digitales y el cuadro de lo que esperan este perfil de usuarios.</p>
+<h2>Aspectos sociotécnicos</h2><br />
+En este proceso de integración Sáez Vacas destaca en la tercera parte del informe que la tecnología debería ir acompa&ntilde;ada de una cultura madura de uso de la tecnología que diera valor a las herramientas desarrolladas.  &iquest;La sencillez de uso de Internet va acompa&ntilde;ada de unos criterios de uso y aprovechamiento?</p>
+<p>Sáez Vacas acu&ntilde;a dos términos para referirse al grado de integración de la tecnología en la vida cotidiana. Habla de infociudadanos que viven en la infociudad, en la medida que utilizan un DVD, GPS, reproductor de MP3,... Para esta última tecnología, el autor se refiere con mayor detalle al iPod como caso de éxito.</p>
+<p>Ante la evolución tecnológica, cabe esperar un aumento en la complejidad de las aplicaciones soportadas y en general de la complejidad del desarrollo.  Esta complejidad queda ocultada por el desarrollo de interficies cada vez más usables y sencillas, que en el fondo reducen la capacidad de interacción que permitiría el sistema a lo estrictamente demandado por el usuario (o por el analista del sistema). Ese efecto se multiplica por lo que se ha llamado la convergencia digital de medios, acumulando gran cantidad de funcionalidades en un mismo aparato.  Eso es especialmente constatable en el caso de los móviles.</p>
+<p>Para el autor, el enmascaramiento de la dificultad técnica mediante interficies amigables no es una solución, ya que la complejidad siempre está presente.  Esa complejidad no sólo se presenta por la estructura de las aplicaciones, sino por las interacciones hombre-máquina, hecho que puede dificultar la evolución de los individuos en su integración madura de la tecnología en su día a día. El autor utiliza el concepto <a title="Sáez Vacas: El lado oscuro de la tecnología" href="http://turing.gsi.dit.upm.es/~fsaez/educacion/pcweek021.html">el lado oscuro de la tecnología</a> para identificar esta circunstancia.</p>
+<p>Cito una frase que me ha parecido interesante:</p>
+<blockquote><p>La hipermultifuncionalidad instrumental potencialmente disponible acaba resultando superflua cuando es subexplotada por el usuario, tiende entonces a convertirse en hipofuncionalidad y queda inédita, invisible.</blockquote><br />
+Cito la frase porque creo que tiene una relación más o menos directa con algunas máximas habituales en el mundillo del desarrollo:</p>
+<ul>
+<li>No es un bug, sino una funcionalidad (enmascaramiento de la complejidad).</li>
+<li>Lee el maldito manual (RTFM: Read The Fu****g Manual). La responsabilidad de los usuarios: por favor, si alguien se ha esmerado en hacer el manual, sería un detalle echarle un vistazo.</li>
+<li>Manténlo simple estúpido (KISS: Keep It Simple, Stupid). La responsabilidad de los profesionales técnicos ante la implantación de la tecnología.</li><br />
+</ul><br />
+A veces eso queda en el entorno de trabajo, y es algo que afecta también al usuario.  La simplicidad es el principal objetivo del desarrollo de una aplicación.  El programador y el usuario final interactúan a distintos niveles y con distintos objetivos, pero eso no quita que al final siempre sucede lo mismo: cuanto más compleja es la interpretación del sistema, más complejas son las interacciones, tanto en fase de desarrollo como de mantenimiento.</p>
+<p>Este es un mensaje que lanza hacia los técnicos: no se puede desarrollar sin tener en cuenta el entorno sociotécnico de uso de una aplicación.  No me queda claro si con eso se refiere a desarrollar metáforas de uso de las aplicaciones, aunque menciona el concepto "programa biocultural" utilizado por Jáuregui. Al no existir esa asimilación de la tecnología, no hay contextualización.</p>
+<p>Eso es algo de lo que siempre aparecen quejas en el personal técnico: los usuarios no entienden las consecuencias de (por ejemplo) utilizar una stick memory sin antes revisarla en búsqueda de virus.  Sin embargo, &iquest;cómo lo van a entender si carecen de la cultura que los técnicos hemos asumido como parte de nuestra labor profesional? El uso de la tecnología es transversal y a menudo accesorio. Nuestros comentarios sobre su calidad de uso de la tecnología son equivalentes a los comentarios que podría hacernos un cheff sobre nuestra dieta: cada uno está acostumbrado a una calidad de uso, y quizá con algún truco pueda ayudar a los demás a mejorar.</p>
+<p>Sáez expone tres áreas que deberían exponer las explicaciones sobre nuevas aplicaciones tecnológicas: Para qué sirve, Cómo utilizarlas, y las consecuencias que tiene para el usuario. De las tres, identifica la tercera como generadora de la tecnocultura. Lo que interesa de la infotecnología a explicar es identificar el infoespacio que crea en la infociudad. Ese infoespacio es el que es importante exponer, para evitar el uso supérfluo y por ello minusvalorado del control de la tecnología en forma de interacción.</p>
+<p>Ante este riesgo, Sáez denuncia el uso poco capaz de los consumidores. Citando y resiguiendo el pensamiento de <a title="Vicente Verdú" href="http://blogs.elboomeran.com/vicente_verdu/">Vicente Verdú</a>, el autor habla de la cultura del consumo y de la aparición del <a title="Letras libres: Personismo" href="http://www.letraslibres.com/index.php?art=11027">Personismo</a> como formas de <em>carpe diem</em> moderno, que sólo permiten el triunfo de tecnologías que proporcionan un bienestar a corto plazo y sin esfuerzos. Eso provoca la muerte por inanición de las tecnologías que proporcionan beneficios a medio y largo plazo. La interactividad a gran ritmo (como la de los videojuegos) es el paradigma del ritmo de interacción y satisfacción actual.</p>
+<p>También entra dentro de la lista de aspectos negativos el hecho que se es poco creador de tecnología y muy consumidor, con niveles de inversión bajos en I+D+i, ali&ntilde;ado todo esto por el hecho que no se considere prioritario un cambio de orientación.</p>
+<p>En su última parte, relativa más en concreto a los blogs, pero aplicable a todo lo que se refiere a la integración de la tecnología en el entorno social, se habla sobre el riesgo de sustitución de un entorno (el físico) por otro (el virtual), provocando cambios en los circuitos neuronales.  También cita la noomorfosis digital como nueva forma de construcción mental de los nativos digitales, y se refiere a los cuatro tipos de tradiciones cognitivas que Marinoff enumera: oral, escrita, visual y digital.  Entre ellas, Marinoff afirma que los que han aprendido en la tradición escrita tienen gran capacidad para extraer todo el potencial de los medios digitales.</p>
+<h2>Las empresas ante la web 2.0</h2><br />
+El segundo apartado se presenta en un tono más utilitario que el primero, y en cierto modo denota lo que aún falta por recorrer en la aplicación de los modelos de negocio en la web 2.0.</p>
+<p>El objetivo de Genís Roca es exponer el contexto económico-empresarial, aunque como acostumbra a suceder en estos casos, esto se reduce a modelos de negocio, circunstancia algo frustrante cuando después se piensa en lo importante de los recursos humanos, como tema clave.</p>
+<p>Sin embargo, el apartado tiene una de cal y una de arena: aunque sólo se centra en los modelos de negocio, la clasificación de tales modelos es lo suficientemente original como para despertarme el interés. Roca establece un primer nivel en el que diferencia entre los intereses de las personas y de las organizaciones.  Dentro del primer nivel diferencia entre los modelos con o sin expectativa de negocio, y según si la expectativa de retorno se centra en la persona o en el proyecto.  Dentro de los intereses de las organizaciones, diferencia entre los modelos que se basan en la audiencia o las tecnología.</p>
+<p>El caso de los negocios sin expectativas de retorno es el más mayoritario.  Por a&ntilde;adir un concepto más, forman parte de la larga cola, y en definitiva son sitios con poca audiencia, intereses estrictamente personales y poca expectativa de crecimiento.  En general no son profesionales, aunque pueden formar parte de una gran cantidad de mashups.</p>
+<p>Cuando los sitios basados en el modelo anterior aumentan en audiencia (principalmente porque el autor empieza a ser reconocido por la comunidad mediante enlaces y referencias), es posible que se planteen alguna forma de retorno de la inversión.  El caso más habitual es el de la publicidad contextual, aunque pueden existir otro tipo de sistemas como bolsa de trabajo, etc., que permitan insertar contenidos ajenos que proporcionen contenidos.</p>
+<p>En este segundo nivel, Genís Roca proporciona una serie de perfiles de personas y sitios que consiguen entrar en este modelo de ingresos. El listado es interesante aunque las tipologías indicadas son las habituales de este tipo de listas.</p>
+<p>En el momento que no es el contenido del autor lo que interesa sino el proyecto que ha desarrollado, y que pone a disposición del público general para que lo utilice de forma gratuita, la forma de obtener ingresos de una forma ágil (ya sea para mantener el proyecto o con fines de lucro) normalmente pasa por la inserción de publicidad. Los modelos que tratan de profesionalizar el proyecto pasan normalmente por la creación de una sociedad o por la venta del proyecto a terceros.</p>
+<p>Finalmente, Genís Roca define tres posibles objetivos de las organizaciones para lanzar proyectos: servicio, dinero o sobrevivir.  Sin embargo, también se&ntilde;ala que las empresas no están tan centradas como parece en el rendimiento económico, por lo que la web 2.0 (probablemente debido a que los costes son inferiores y por ello los riesgos también) es un reflejo de estos intereses personales.</p>
+<p>Por lo que respecta a los modelos de negocio basados en la audiencia, Roca diferencia en el modelo de publicidad, las comisiones por ventas, las donaciones, el pay per view, y los estudios y análisis relacionados con la temática del sitio.</p>
+<p>En lo referente a los modelos de negocio basados en la tecnología, el autor diferencia entre el <em>pay for premium use</em> y el uso de la tecnología en entornos corporativos.</p>
+<p>Como punto final, Roca comenta los movimientos del capital relativos a la burbuja puntocom, y los aspectos que tienen en cuenta las sociedades de capital riesgo y el resto de tipos de inversores.</p>
+<h2>Comentarios y conclusiones</h2><br />
+En algún que otro párrafo del documento se comenta que debido a su necesidad de síntesis, es difícil profundizar en algunos aspectos clave de presente de la web 2.0.  A veces es cierto que se percibe que algunos temas se dejan en el tintero, e incluso en algún que otro momento se pierde el hilo argumental.  Eso lo he notado especialmente cuando he querido hacer este resumen.  Es por eso que en este resumen se mezclan las ideas expuestas en el libro y otras personales (muy pocas), para al menos tratar de dar una continuidad en los conceptos.</p>
+<p>Sin embargo, es muy loable la larga y significativa lista de referencias utilizadas.  En este documento aparecen citadas una gran cantidad de obras clave en el pensamiento y la ficción tecnológica, y además de forma nada supérflua, a mi modo de ver.</p>
+<p>A pesar que he echado en falta más profundidad en los aspectos empresariales, creo que los aspectos sociotécnicos han sido muy bien expuestos.  Si tienes conocimientos sobre el tema, quizá puedas leer directamente la tercera parte del libro.</p>
+<p>A raíz de lo comentado, creo que en un momento u otro tendré que decidirme a redactar una guía de lectura sobre los "clásicos" del género, y tener al menos un eje vertebrador de la lectura con intenciones de aprendizaje. A pesar que es un entorno en continua formación, seguir su dinámica quizá permita entender sus causas.</p>
+<p>Este verano he tenido suerte: todas las lecturas que han caído en mis manos me han aportado mucho.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Aug 16<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/lecturas-veraniegas-chaos-order-capital-markets/">Lecturas veraniegas: Chaos and order in the capital markets</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Fractales, economía y estadística<br /></h2>
+<p>Una de las tesis principales del libro es desmontar la hipótesis del mercado eficiente, que es el paradigma de análisis de los mercados financieros. La alternativa del autor es la hipótesis del mercado fractal.  El paradigma actual aplica las herramientas estadísticas para el análisis de tendencias, y la hipótesis de la normalidad del error para aplicar una impresionante batería de tests y fórmulas que se han desarrollado alrededor de la ley normal.</p>
+<p>Peters desglosa las razones por las que el mercado eficiente no lo es bajo estas premisas, contrastando la calidad de las estimaciones entre las series temporales generadas por los fractales y las generadas por las estimaciones estadísticas.</p>
+<p>Lo que Peters utiliza como fractales son ecuaciones en diferencias finitas, lo que permite hacer simulaciones y acercamientos bastante satisfactorios con la ayuda de una hoja de cálculo. </p>
+<p>Como siempre sucede, hay un capítulo o apartado con más interés personal.  En mi caso se trata del capítulo 7, "Fractal Statistics".  Allí podemos encontrar las versiones fractales de la ley de Pareto, y la ley logística.</p>
+<p>Como en la relación euclideana-fractal, las distribuciones fractales son leyes estadísticas cuyas condiciones se mantienen aunque varíen las condiciones de escala.  En el caso de la Pareto fractal, existe un parámetro, alfa, cuyo valor tiene características interesantes.  </p>
+<p>En concreto, los valores no enternos entre 1 y 2 se corresponden con <a href="http://es.wikipedia.org/wiki/Movimiento_browniano" title="Wikipedia: movimiento browniano">movimientos brownianos</a> con correlaciones a largo plazo y autocorrelación [statistical self-similarity]. Sólo por dar otra vuelta de tuerca, los movimientos brownianos fueron descubiertos por Einstein e inauguraron la física estadística.</p>
+<p>Peters también menciona el exponente de Hurst (que equivale a 1/alfa), cuyo nombre se debe a un hidrólogo que comprobó que los períodos de retorno de las cuencas hidrográficas no se ajustaban a un paseo aleatorio (random walk). El exponente de Hurst es el que permite identificar si las series temporales son aleatorias o no. El impacto del presente en el futuro utiliza el exponente de Hurst, por ejemplo. Hurst es un estadístico con características fractales, que Peters aplicará para exponer la naturaleza fractal de los mercados y el por qué existen ciclos de dependencias de varios a&ntilde;os que relacionan presente y futuro.</p>
+<p>Lo que exponen las correlaciones a largo plazo es que las condiciones iniciales alteran completamente los resultados finales.  Esto es totalmente diferente en los procesos estocásticos, en los que el largo plazo diluye las tendencias iniciales, convirtiéndolas en ruido.</p>
+<p>Al margen que Peters encontrara unos grados de ajuste muy aceptables en series temporales de hasta 60 a&ntilde;os aplicando los fractales, lo que en el fondo interesa de sus resultados es la conclusión que "lo rugoso no siempre es aleatorio". Sin embargo, la novedad conceptual de los fractales arroja dificultades sobre la interpretación de los resultados. Si se ajusta, perfecto, pero si no...</p><br />
+<h2>Caos y fractales</h2>
+<p>El paso siguiente de Peters es la introducción de la teoría del caos y su relación con los fractales. Dado que la teoría del caos es un intento de explicar el comportamiento impredecible en sistemas dinámicos.  Para Peters (y otros muchos) la economía puede interpretarse como un sistema dinámico.</p>
+<p>En esencia, lo que introduce la teoría del caos es que fenómenos imposibles de medir pueden causar alteraciones en un sistema, cuando la naturaleza de este sistema es realimentarse continuamente. La metáfora del aleteo de la mariposa es suficientemente conocida como para no repetirla.</p>
+<p>En la exposición de la teoría, se introduce el concepto de los <a href="http://es.wikipedia.org/wiki/Atractor" title="Wikipedia: atractor">atractores</a> como elementos que definen el movimiento tendencial del sistema (que no su trayectoria).</p>
+<p>En lo referente a la combinación de la teoría del caos y los fractales, se introduce el <a href="http://es.wikipedia.org/wiki/Exponente_Lyapunov" title="Wikipedia: Exponente de Lyapunov">exponente de Lyapunov</a>, otro elemento desarrollado por <a href="http://es.wikipedia.org/wiki/Claude_Shannon" title="Wikipedia: Claude Shannon">Shannon</a> en la <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n" title="Wikipedia: teoria de la informacion">teoría de la información</a>. Shannon lo utilizó para identificar el nivel de entropía.  Peters lo utiliza para identificar el grado de predictibilidad del sistema en base al grado de entropía de la información del sistema.  Este grado de entropía se refiere (por decirlo así) a los "aleteos de mariposa" del sistema. El exponente de Lyapunov más grande define la predictibilidad del sistema</p><br />
+<h2>Conclusiones y opiniones<br /></h2>
+<p>La razón principal por la que leí el libro de Peters es que trataba la economía (un área con mucha acción humana y gran cantidad de información numérica), y abordaba los fractales desde una perspectiva práctica.  Además, el libro me introducía también en la teoría del caos y en la dinámica no-lineal (nonlinear dynamics), combinándolos con los fractales.</p>
+<p>El libro no me ha convertido en un experto en fractales, aunque me ha dado herramientas y ejemplos para hacer mis pinitos en el uso de fractales.  Así que si es tu intención, adelante.</p>
+<p>Yo he leído el libro en inglés, y además la terminología es marcadamente técnica (por suerte para mí, poco en lo referente a economía).  Eso puede echar para atrás. Aún así, si te ves con ánimos con las fórmulas matemáticas y las representaciones gráficas, inténtalo.</p>
+<p>Aunque esto sonará a "barrer para casa", creo que la estadística y los fractales pueden complementarse en varios aspectos. Sucede a menudo que la definición del azar oscila entre "lo que no conocemos" y "lo que no controlamos". En la primera parte están los que creen que todo será determinable (y se centran en el desarrollo de modelos de predicción que tratan el azar como "error de predicción"). En la segunda están los que plantean que dicen que "Dios juega a los dados", y que el azar es algo inherente a la materia.  Yo me siento más cómodo en la segunda visión y eso es algo que me distancia en parte de la tesis de Peters. También me he encontrado con este tipo de debates en la lógica borrosa, donde se han acabado compartiendo herramientas aunque la base conceptual sea diferente.</p>
+<p>A nivel metodológico, las series temporales utilizadas para el análisis mediante fractales tienen algunas características diferentes según Peters.  En el caso de los muestreos estadísticos, al considerarse que el azar es la base de la oscilación, se considera que la continuidad es el aspecto primordial, con lo que para la estadística es casi mejor una serie de una semana que diera datos minuto a minuto. En cambio, en el estudio de los fractales, lo importante es que las series tengan un horizonte temporal amplio, aunque los datos tengan periodicidad mensual (como es el caso del libro).</p>
+<p>El libro me ha ayudado a aclarar y asimilar los aspectos teóricos básicos para entender los fractales. El siguiente paso es comprender cómo se pueden aplicar los fractales al tratamiento de la información. La mayoría de aplicaciones de los fractales que he encontrado (aparte de la compresión) se centran en elementos audiovisuales, pasando incluso por arte audiovisual. Pero... los fractales son aplicables a los datos individuales o conjuntos de información que no tengan un esquema de serie temporal? Un atículo científico puede ser entendido como una serie temporal?</p>
+<p>Lo que al fin y al cabo me interesa es la aplicación de los fractales a la gestión de la información textual, tanto en el proceso de indexación como en el de recuperación (e incluso interpretación). Para ello tengo en la lista de temas pendientes la lectura de "La geometría fractal de la naturaleza" de Mandelbrot. </p>
+<p>Para ir haciendo boca sobre la relación entre fractales y textos, he encontrado <a href="http://www.goertzel.org/books/complex/ch9.html" title="from complexity to creativity">el capítulo 9 de from complexity to creativity</a> en el que se habla sobre la relación entre fractales y producción de sentencias. También he encontrado un hilo en el <a href="http://forums.searchenginewatch.com/archive/index.php/t-4791.html" title="search engine watch: fractals and semantics">foro de search engine watch sobre semántica y fractales</a>.</p>
+<p>Por lo demás, aún tengo sobre la mesita de noche unas cuantas lecturas pendientes.  No creo que el verano dé para tanto, pero se intentará. </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Aug 15<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/lecturas-veraniegas-arte-red/">Lecturas veraniegas: arte en la red</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Una introducción a modo de conclusión  </h2>
+<p>Lo que más me ha gustado del libro (y lo digo sabiendo que no soy objetivo) es la introducción y la primera parte del libro donde se expone el concepto de la sociedad red y su relación con la cultura y el capitalismo.</p>
+<p>A lo largo de estos a&ntilde;os han caído en mis manos (y probablemente en las vuestras) cantidad de documentos de cualquier formato y sobre cualquier soporte, en los que se trata de exponer las razones del cambio que han introducido Internet. Quizá el que más me convenció fue el volumen 1 de "La era de la información" de Manuel Castells, aunque admito que en la época que lo leí me pareció excesivo en su extensión y además, me perdía constantemente (hace seis a&ntilde;os no se convivía con conceptos que ahora son habituales). Aparte de este caso, muchas <em>buzzwords</em> y poca aportación de novedades. </p>
+<p>En el caso de la obra de Jesús Carrillo, las cosas parecen diferentes. En las algo más de 140 páginas que conforman la primera parte del libro, consigue sintetizar conceptos, circunstancias y personas en una exposición de carácter filosófico (a diferencia de Manuel Castells que tiene más de tratado de sociología de Internet) que exponen unos cuantos conceptos clave. Entre ellos, el que más me ha impactado es que en la actualidad, la esencia de la cohesión social es la comunicación y que las propias personas somos lo que comunicamos: <strong>somos nuestro discurso</strong>.</p><br />
+<h3>La sociedad red y Lo virtual<br /></h3>
+<p>Carrillo comenta las razones económicas por las que al finalizar la segunda Guerra Mundial se inicia en Estados Unidos el proceso que evolucionaría hacia la globalización del modelo capitalista, y en la necesidad que tenían las grandes multinacionales por disponer de una herramienta que permitiera la integración entre dos puntos distantes para poder desarrollar su actividad con la ayuda de las tecnologías de la comunicación. Hasta aquí, nada nuevo bajo el sol, aunque ya se remarcan los puntos clave de la tesis del autor.</p>
+<p>Los aspectos que quiero resaltar se exponen en el capítulo 1: Mundos virtuales. Desarrolla el concepto de lo virtual y su relación con la sociedad informacional, donde cita a Deleuze y Derrida para exponer la afirmación que el <strong>lenguaje es transformación</strong>, idea a partir de la cual Carrillo afirma que la sociedad informacional es un entorno virtual en la medida que lo virtual es proyección: exposición de potencialidades y proyecciones, contrapuesta a lo actual según el autor.</p>
+<p>A nivel económico, se sustituye el <a href="http://es.wikipedia.org/wiki/Valor_de_cambio" title="Wikipedia: Valor de cambio">valor de cambio</a> por el valor de signo (a efectos prácticos, puede leerse como el valor de las marcas) y por lo tanto la introducción del <a href="http://es.wikipedia.org/wiki/Hiperrealidad" title="Wikipedia: Hiperrealismo">hiperrealismo</a> (término acu&ntilde;ado por Baudrillard), estableciendo una relación directa entre el capital y el lenguaje.</p>
+<p>En el momento que las tecnologías permiten la transmisión de grandes volúmenes de información y que los receptores (que siguen siendo humanos) siguen teniendo la misma capacidad de asimilación, se afianza el modelo de red como el modelo más eficiente, en el sentido que no se dependen de puntos centrales (aspecto clave en el dise&ntilde;o de la red Internet) tanto por un bloqueo temporal como por su colapso o destrucción.</p>
+<p>Con la entrada de las personas como nodos en ese modelo de red, se da un proceso de adaptación que entre otros aspectos  establece las identidades virtuales. Estas identidades (virtuales por hiperreales) proyectan más que describen, por lo que exponen lo que quieren ser (lo virtual) y no lo que son (lo actual). </p>
+<p>Esta identidad virtual no necesariamente rompe con la identidad real, sino que es una extensión más. De ahí que se introduzcan cambios que convierten al individuo en un miembro apto de esa red, como por ejemplo utilizando la ropa, el calzado, tatuaje o cualquier otro tipo de reclamo corpóreo como herramienta de comunicación. Eso invalida según el autor la tesis que define lo virtual como lo incorpóreo o como lo irreal, y reafirma la contraposición virtual-actual, y el lenguaje como motor de transmisión entre estos dos ejes. </p>
+<p>Eso también altera la noción del espacio virtual como espacio, ya que en el fondo ese espacio se configura como un conjunto de signos que permiten la interacción del usuario con otros miembros de la red. Es por eso que el autor indica que ese espacio virtual se define como un "no lugar" y en el que la iconografía y la interacción sustituyen la orientación espacio-temporal.</p><br />
+<h2>Digitalización y nuevos medios</h2>
+<p>Creo que vale la pena remarcar la postura que adopta el autor en el debate sobre los antiguos y nuevos medios. Para él, los medios que utilizan las tecnologías digitales e Internet como medio no son conceptual o ideológicamente diferentes a los "antiguos".</p>
+<p>Para Carrillo la tecnología es un detalle sin importancia, salvo por el hecho que proporciona las herramientas necesarias a los "nuevos medios" para conseguir todo lo que los antiguos no consiguieron: personalización, interactividad y capacidad para llegar a cualquier parte del mundo con costes muy asumibles.</p>
+<p>En el proceso comunicativo, se exponen varias características de los formatos digitales, entre los cuales quiero destacar uno por deformación tradicional: el proceso de sustitución del formato narrativo lineal por el basado en estructura de base de datos. La introducción de la interacción con el hipertexto no hacen más que confirmar la necesidad de introducir ese cambio para hacer más reutilizable (y por ello rentable) la información.</p><br />
+<h2> El arte en la red</h2>
+<p>Después de la lectura, flaco favor se haría si no mencionara el principal objeto del libro. El autor echa un vistazo a la evolución histórica de la relación del arte y los medios. Este vistazo incluye los siglos XIX y XX, y aborda la radio y la televisión (conectar dos escaparates de dos ciudades diferentes con cámaras para que unos vieran a los otros), pero también el teléfono y el correo. Personalmente se me escapa al racicionio que alguien se dedique a llamar a números de teléfonos escogidos al azar para hacer preguntas, o que envíe por carta obras de arte. Pero desde luego entiendo que esa sea una expresión artística.  Para el caso, el <em>mail art</em> tendría un gran éxito en los a&ntilde;os 60 y 70.</p>
+<p>En esta expresión artística pesaría la pérdida de la importancia del soporte material de la obra en pro de la comunicación que ofrece el propio soporte.  Como en el caso de las personas, esta importancia de la comunicación no inmaterializa la obra, aunque como destacó Antonio Negri, se produce la liberación del individuo por la posibilidad de producir y crear de forma inmaterial. </p>
+<p>También se introduce el concepto de Walter Benjamin del artista como productor (de lo cual se puede derivar el concepto de la publicidad como creatividad productiva) y de la tecnología como herramienta para la transformación social. Esto permite presenciar la aparición de movimientos artísticos, inicialmente movidos por ideales utópicos, y que posteriormente se integran con movimientos de carácter más social, como el <em>ciberfeminismo</em>, o el <em>artivismo</em> entre otros.</p>
+<p>Estos movimientos toman conciencia lentamente que lo importante no es que exista un objeto artístico, sino que se utilice el arte como forma de comunicación, y que se sacrifique la <em>ubicación</em> de la obra en pro de su difusión. Esa globalidad de la comunicación le quita una parte del valor burgués que tiene la obra de arte material. También toma importancia el aspectos interactivos de la creación, la posibilidad de la creación colectiva (mediante herramientas de <em>groupware</em>), con lo cual también se diluye el concepto de autoría individual en pro de la autoría en red.  </p><br />
+<h2>Comentarios finales</h2>
+<p>Esto es una rese&ntilde;a conscientemente parcial (en tanto que poco representativa del conjunto del libro). Es por eso que creo importante decir que el conjunto del libro tiene interés. La gran capacidad de síntesis se combina con una densidad conceptual notable en la primera parte del libro, lo que lo ha convertido en una lectura ideal para el verano (con ratos suficientemente largos y tranquilos que permitieran las relecturas). Lo expuesto aquí es meramente lo que yo destacaría, pero no una rese&ntilde;a, y ni mucho menos un resumen.</p>
+<p>El libre no sólo es recomendable a quien tenga entre manos temas relacionados con el arte digital, sino para quien quieran entender el proceso de creación de la <em>virtualidad</em>. los procesos comunicativos en Internet, y las redes sociales y comunidades virtuales. </p>
+<p>Yo estoy encantado de haberlo leído. He encontrado un <a href="http://dunadigital.com/sinapsis/?p=1102" title="Duna Digital: Arte en la red">comentario sobre el libro en Duna digital</a>. </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Aug 3<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/organizacion-informacion-personal-estructuracion-directorios/">Organización de la información personal III - estructuración de los directorios</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>El boceto: todo en uno</h2>
+<p>Después de comentar las dos visiones generales que determinan el enfoque de organización de los documentos, toca hacer deberes: una práctica que me ha servido mucho es la de coger papel y lápiz (tecnología <em>punta</em>) y definir un boceto de estructura.  </p>
+<p>Se trata de eso: un boceto, y debes dejarlo así en la medida de lo posible: es importante que mantengas el equilibrio y no trates de dejar áreas muy desarrolladas y otras muy resumidas. Romper el equilibrio de la simplicidad implica limitar  las futuras decisiones. Además va en contra de conseguir un estado mental relajado, que ayude a visualizar y no a vomitar sobre el papel por la presión de tenerlo todo en mente.</p>
+<p>Es probable que en el boceto ya empieces a encontrar patrones de organización, algunos de los cuales sean repetitivos.  Esos patrones bien pueden ser del tipo "clientes", "ayuntamientos", un tipo de trámite, o bien  por el contenido, enfoque, forma externa, etc.</p>
+<p>Es interesante que en este boceto se empiecen a diferenciar ya los dos tipos de documentos: los que guardas porque forman parte de tu actividad (operativa o administrativa) y que formarán parte de tu <em>archivo</em>; y los que guardas por su contenido, estén o no relacionados contigo. Los segundos formarán tu <em>biblioteca</em>.</p><br />
+<h2>Divide y organizarás </h2>
+<p>Es importante que diferencies las dos tipologías de documentos, ya que su tratamiento, ciclo de vida, contenido y organización acostumbran a ser diferentes.  Si en tu caso crees que no es necesario hacer dos estructuras absolutamente independientes, al menos vale la pena que diferencies cada tipología de documentos separándolos en subdirectorios.  </p>
+<p>Por ejemplo, puedes desear incluir en un gran directorio todos aquellos documentos sobre un proyecto (facturas, presupuestos, documentos de trabajo, actas de reuniones, bocetos y story-boards, código fuente...), aunque mi experiencia me dice que si haces un segundo proyecto con ese cliente (algo que a priori todos deseamos) la documentación que puedas necesitar del cliente sea parecida o idéntica a la que utilizaste en el primer caso, y que vale la pena hacer un directorio por proyecto, aunque sean con el mismo cliente. Aún en ese caso, si se mezclan documentos de las dos tipologías, vale la pena que lo pongas en directorios diferentes dentro del proyecto. </p><br />
+<blockquote>Desde luego, si solo trabajas tú con esa documentación, cualquier solución puede ser perfecta. Pero a medida que el número de usuarios de la documentación aumenta, vale la pena optimizar. </blockquote>
+<p>No está de más utilizar referentes. Aciertas al pensar que alguien antes que tú pasó por el calvario de organizar la información.</p><br />
+<h3>Jerarquía en documentos administrativos y de trabajo</h3>
+<p>Los documentos de trabajo y de carácter administrativo pueden definirse conociendo quién los creó, para qué, para quién, si el documento tiene una estructura formal o legalmente reconocida, y en qué contexto se generó. Para definir la estructura, puede ser que eches un vistazo a los posibles ejemplos de documentos de trabajo que utilizas habitualmente. Veamos... Documentos de proyecto, presupuestos, presentaciones a clientes, facturas,..., trabajos académicos, documentos oficiales, fotocopias compulsadas...</p>
+<p>Recopilando esta ristra de elementos, y respondiendo a las cuestiones anteriores va emergiendo una serie de respuestas habituales, y que en mi caso conformaron una lista de elementos generales:</p>
+<ul>
+<li>áreas generales de actividad: Profesional, académica y personal.</li>
+<li>Fuentes externas de información: en general, clientes, o bien amistades y miembros de la familia (aunque en mucho menor caso).</li>
+<li>Contextos de actuación: Asignaturas y proyectos.</li>
+<li>Tipos de documentos: en general, los que he indicado antes.</li></ul>
+<p>Las áreas, fuentes externas, los contextos y los tipos de documentos tienen dependencias: es decir, si encuentro datos de un cliente en mi carpeta personal es que no está correctamente organizado (oye, quizá en tu caso sí...). </p>
+<p>Con esta información y la identificación de las dependiencias entre los elementos anteriores, ya prácticamente tengo lo necesario para crear la estructura:</p>
+<ul>
+<li>Archivo</li>
+<ul>
+<li>Personal</li>
+<ul>
+<li>Amigos</li>
+<li>Familia</li>
+<li>Otros<br /></li></ul>
+<li>Académico</li>
+<ul>
+<li>Docencia</li>
+<ul>
+<li>Asignatura 1</li>
+<ul>
+<li>Apuntes</li>
+<li>Lecturas<br /></li>
+<li>Práctica</li></ul>
+<li>...<br /></li>
+<li>Asignatura N</li>
+<ul>
+<li>Apuntes</li>
+<li>Lecturas</li>
+<li>Prácticas</li></ul></ul>
+<li>Gestión</li>
+<ul>
+<li>Matriculación</li>
+<li>Expedientes</li></ul></ul>
+<li>Profesional</li>
+<ul>
+<li>Clientes</li>
+<ul>
+<li>Cliente 1</li>
+<ul>
+<li>Presupuestos</li>
+<li>Reuniones<br /></li>
+<li>Documentación cliente<br /></li>
+<li>Facturación<br /></li></ul>
+<li>...<br /></li>
+<li>Cliente N</li>
+<ul>
+<li>Presupuestos</li>
+<li>Reuniones<br /></li>
+<li>Documentación cliente</li>
+<li>Facturación</li></ul></ul>
+<li>Proyecto</li>
+<ul>
+<li>Proyecto 1</li>
+<ul>
+<li>Consultoría</li>
+<li>Desarrollo</li>
+<li>Implantación</li>
+<li>Testeo-Explotación</li>
+<li>Mantenimiento<br /></li></ul>
+<li>Proyecto N</li></ul>
+<li>Fiscal-Legal</li>
+<ul>
+<li>Hacienda</li>
+<li>Seguridad Social</li>
+<li>Contabilidad</li>
+<li>...</li></ul></ul></ul></ul>
+<p>Esta estructura no va a misa, desde luego.  La división indicada en cada proyecto puede variar, y además está muy enfocada a los proyectos de carácter informático o técnico.  Si por ejemplo se tratara de un estudio de mercado debería existir en algún lado la carpeta "trabajo de campo" o algo por el estilo. Lo pongo como ejemplo para quien le sirva.</p><br />
+<h3>Jerarquización de la biblioteca</h3>
+<p>La estructura resultante de la biblioteca no tendrá nada que ver con la del archivo. Tampoco tienen nada que ver los criterios para definirla, ni los recursos que tienes para consultar.  Por ejemplo, <a href="http://absysnet.com/recursos/referencia/tesauros.html" title="Absysnet: Documentos de referencia">absysnet recopila una serie de tesauros</a>  que quizá te ayuden a definir lo que debería ser la jerarquía de directorios (o carpetas) que organicen tu biblioteca.</p>
+<p>En este apartado, hay bastante más documentación escrita, pero si no te satisface, puedes hacer un autoexamen de las áreas de conocimiento que abarcas y las divisiones de estas áreas. Por ejemplo, en mi caso, el área de informática está muy desarrollada y en cambio el área legal se limita a temas relacionados con la propiedad intelectual, sin entrar en derecho constitucional, laboral, ni nada por el estilo. Esa estructura no le serviría a un abogado.</p>
+<p>El proceso de jerarquización es una tarea repetitiva (<em>recursiva</em> que se dice en informática) que se pregunta &iquest;Y dentro de este área, qué divisiones generales existen? Ante ese proceso de construcción de una taxonomía de tu conocimiento, lo importante es conseguir no crear muchos niveles de profundidad (te obligarán a hacer clics que retrasarán el acceso al documento) al mismo tiempo que se evita acumular gran cantidad de documentos en un directorio (un listado de más de 30 o 40 documentos puede ser pesado de revisar).</p>
+<p>Para mi caso, la organización fue más o menos así:</p>
+<ul>
+<li>Biblioteca</li>
+<ul>
+<li>Ciencias de la salud</li>
+<li>Documentación</li>
+<li>Derecho</li>
+<li>Economía-Empresa</li>
+<ul>
+<li>eBusiness</li>
+<li>Economía-Aplicada</li>
+<li>Economía-Política</li>
+<li>Management</li>
+<li>Marketing-Comercial</li>
+<li>Matemática Económica</li></ul>
+<li>Educación-Pedagogía</li>
+<ul>
+<li>eLearning</li>
+<li>Cursos</li>
+<li>Sociología Educación</li></ul>
+<li>Ciencias sociales</li>
+<ul>
+<li>...<br /></li></ul>
+<li>Filosofía</li>
+<ul>
+<li>...<br /></li></ul>
+<li>Historia</li>
+<ul>
+<li>...<br /></li></ul>
+<li>Informática</li>
+<ul>
+<li>Desarrollo</li>
+<li>Estándares-Formatos-Protocolos</li>
+<li>Estructuras-datos</li>
+<li>Generalidades-Recopilaciones</li>
+<li>Gestión-Metodologías</li>
+<li>Lógica-Algoritmia</li>
+<li>Hardware</li>
+<li>Software</li>
+<li>Seguridad</li>
+<li>Sistemas operativos</li>
+<li>Usabilidad</li>
+<li>Redes-Comunicaciones</li></ul>
+<li>Literatura</li>
+<li>Matemática</li>
+<ul>
+<li>Estadística</li>
+<li>Fractales</li>
+<li>Grafos</li>
+<li>Ondas</li>
+<li>Teoría-Sistemas<br /></li></ul>
+<li>Procesamiento-Lenguaje-Natural</li>
+<li>Psicología</li></ul></ul>
+<p>No entro más a fondo en el apartado de informática, pero en resumen llego hasta 4 o 5 niveles de directorio. Es el caso más espectacular, dado que contiene gran cantidad de información. En el resto no se superan los 2-3 niveles en la mayoría de casos.</p><br />
+<h2>Estructurar para llenar </h2>
+<p>Bueno, pues con esto ya tenemos la jerarquización de los documentos.  Ahora falta incorporarlos a la estructura.  En ese momento aparecerán dudas, especialmente cuando se trate de documentos muy generales, o que traten dos o más ámbitos de interés. </p>
+<p>Para esos casos recomiendo dejar los documentos en una de las dos ubicaciones que corresponda, y bastante más a la vista de lo que sería necesario. Es decir, se trata de evitar la duda y la navegación a la deriva por directorios click-arriba, click-abajo.</p>
+<p>Otro caso especial es la diferenciación según la forma del documento, algo que no he plasmado antes por cuestiones de simplicidad.  Por ejemplo, podríamos tener diccionarios u obras generales dentro de una disciplina (ej.: Diccionario de derecho). También podríamos estar hablando de imágenes o de música.  Estas dos áreas, sin embargo, las dejo para más adelante, si cabe. </p>
+<p>Por lo general, decidir es cuestión de definir (y seguir!) unos criterios que mantengan el equilibrio del conjunto.  Ante la duda, puedes recurrir al boceto y tratar de averiguar dónde debería estar dibujado el documento.</p>
+<p>Después de las tareas más bien áridas de planificación, organización y conceptualización, la organización de los documentos se asemeja a la hora de recreo: es un rato de movimiento y agitación (abre documento, cierra documento, renombra documento, corta-pega,...) que a veces aburre por estresante. </p>
+<p>Al finalizar esta tarea probablemente empezarás a ver la luz. Después de esto sólo queda instalar una herramienta de búsqueda y establecer una mínima política de copia de seguridad. Pero eso vendrá más adelante...  </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 21<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/organizacion-informacion-personal-gestion-documental-archivistica/">Organización de la información personal II: Gestión documental vs archivística</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Relevancia y Actividad</h2>
+<p>La gran diferencia entre centros de documentación (incluyo indistintamente bibliotecas aunque existan diferencias obvias)  y archivos es el cómo y el por qué se gestionan unos tipos de documentos, y los criterios por los que se seleccionan para ser almacenados, tratados o retirados/eliminados.</p>
+<p>Por un lado, los centros de documentación y las bibliotecas se centran en el criterio de relevancia: estos centros buscan satisfacer las necesidades de información que se presentan a sus usuarios, y por ello buscan documentos que cumplan esa función, con idependencia de la fuente (aunque se tiene en cuenta la fiabilidad).</p>
+<p>Los archivos en cambio tienen objetivos esencialmente operativos. En la visión tradicional de los archivos, lo que se mantiene son aquellos documentos que han sido generados por la propia institución o por otras instituciones, fruto de la actividad de la primera.  Es decir, los documentos del día a día.</p>
+<p>Aunque poner en un par de frases estas ideas es mucho resumir, vale la pena incidir en esta diferencia: en el primer caso, lo importante es la relación entre la curiosidad-documento, mientras que en la segunda está la relación actividad-documento. </p>
+<p>Ejemplos claros de documenos de uso personal que pueden entrar en cada tipo son:</p>
+<ul>
+<li>Documentos para centros de documentación o bibliotecas:</li>
+<ul>
+<li>Recortes de diarios sobre noticias de interés.</li>
+<li>Fotografías (personales, institucionales, etc.).</li>
+<li>Recetas de cocina (por hacer honor al nombre del blog...).</li>
+<li>Partituras musicales.</li>
+<li>Por lo general, documentos que no sean legales, contractuales, operativos (documentos de trabajo), y cuyo objetivo de guardar en nuestra colección sea estrictamente por el valor del contenido en sí y no por el contexto de uso.</li>
+<li>Directorios o listas de contactos.</li></ul>
+<li>Documentos para archivos:</li>
+<ul>
+<li>Recibos y Facturas <strong>vigentes</strong>.</li>
+<li>Contratos de servicios (esto incluiría, por poner un ejemplo, una matrícula universitaria).</li>
+<li>Documentos de contabilidad personal.</li>
+<li>Escrituras oficiales y otros documentos notariales.<br /> </li>
+<li>Documentación oficial en general.</li>
+<li>Nuestra agenda o una lista de tareas pendientes (esto puede ser relativamente discutible pero en mi caso lo he incluído aquí y ha sido coherente).<br /></li></ul></ul>
+<p>El entorno electrónico presenta gran cantidad de casos ambiguos o que al menos nos plantean dudas razonables. Por ejemplo:</p>
+<ul>
+<li>&iquest;este blog entraría en el apartado de gestión documental, o de archivo? Yo creo que las aportaciones individuales entran dentro de la gestión documental.</li>
+<li>&iquest;Y el correo electrónico? Tengo configurado mi programa de correo para que utilice reglas de filtrado, que por lo general me permiten organizar automáticamente los correos electrónicos en base al remitente.  Dados los criterios indicados anteriormente, esto introduce de lleno el correo electrónico en la gestión archivística. Define una relación entre mí y otros, y probablemente establece una relación entre el documento y mi actividad.  Sin embargo, yo diferenciaría claramente entre correos de trabajo y correos personales.  Los primeros tienen <em>carácter archivístico</em> y los segundos, <em>carácter de gestión documental</em>.</li></ul>
+<p>Para cada caso que se plantea, lo mejor es definir el objetivo por el que guardas el documento (como documento con contenido de interés, o como documento de archivo) y luego ya podrás concretar qué haces con él. </p><br />
+<h2>de lo útil y lo inútil<br /></h2>
+<p>Con lo dicho hasta ahora, lo que está claro es que mi tarea de selección de documentos ha ido muy dirigida a algo necesario en esta era digital: <strong>descartar lo inútil</strong>.</p><br />
+<blockquote>&iquest;Que tal si te tomas una pausa y echa un vistazo a la lista de tus correos electrónicos, documentos y demás... &iquest;A que quizá sobra algo?</blockquote>
+<p>Lo inútil llega a serlo por muchas razones, gran parte de las cuales están en tus manos definir.  Lo inútil para mí es lo que no es <em>relevante</em> ni <em>útil</em>. Pero en general, lo inútil lo relaciono con aquello que no tiene ningún tipo de valor (no sólo económico).</p><br />
+<blockquote>Rehaciendo el dicho lo inútil no nace, se hace. </blockquote>
+<p>Es inútil todo aquello que ha superado su <a href="http://www.getec.etsit.upm.es/docencia/gproyectos/planificacion/cvida.htm" title="Ciclo de vida">ciclo de vida</a> a nuestro lado, y es importante que nos demos cuenta de cuándo sucede. Ese documento no siempre fue inútil, y puede que sea útil a terceros. Pero ha llegado el momento de moverlo a la lista de inútiles. </p>
+<p>No hacerlo revierte en costes, que se convierten en pérdida de tiempo a nivel personal (con lo difícil que es a veces encontrar un rato para nosotros, y tener que pasarlo buscando entre documentos inútiles...) y de dinero a nivel profesional (se puede ver sumando el total de tiempo perdido, o viendo cómo se pierden clientes por no tener las cosas "a mano") </p>
+<p>Lo inútil (que en algunos casos también podemos denominar <em>obsoleto</em>) se puede equiparar a dos términos según las dos divisiones anteriores: lo <em>irrelevante</em> y lo <em>inactivo</em>. Lo irrelevante es todo aquel documento (sobre el cual aplicaríamos criterios de gestión documental) cuyo contenido no puede resolvernos dudas. Lo inactivo es todo aquel documento (sobre el cual aplicaríamos criterios archivísticos) cuyo contenido ha dejado de tener valor operativo.</p>
+<p>Como anécdota, es posible que un documento que ha dejado de ser inactivo pueda ser relevante. por poner un caso: has redactado la documentación de un proyecto y te gusta cómo ha quedado.  El proyecto acabó hace tiempo pero te gustó la estructura del documento y quieres reaprovecharlo: quizá sea relevante dejar el documento vacío del contenido original y mantener la estructura para posteriores tareas. Son casos aislados pero puede suceder.</p>
+<p>Lo importante de estas dos visiones es que en mi caso ha valido mucho la pena diferenciar las dos tipologías documentales.  Esto ha simplificado mucho la estructuración de los documentos en directorios, y además esta estructura ha sido más fácil de recordar y asimilar (con lo que luego es más fácil de utilizar para recuperar documentos). </p><br />
+<h2>Evaluación y selección: algunos criterios</h2>
+<p>Ahora que ya podemos ver la diferenciación entre los dos tipos principales de documentos, podemos entrar a valorar los criterios de selección y evaluación.  En esencia son criterios simples que yo he utilizado. Presentan diferencias entre documentos generales y documentos de trabajo, ya que el factor de la relevancia aplicable en el primer caso tiene elementosmuy subjetivos, mientras que los criterios archivísticos de fuente del documento, cronología y tipología de documento es más sencillo de aplicar (incluso por terceros).</p>
+<p>Lanzo aquí algunos factores clave que ya iré matizando en otros posts, si procede. Insisto en que son criterios propios y que, especialmente en los criterios de relevancia, vale la pena completar la lista indicada con criterios personales. </p>
+<ul>
+<li>Criterios para establecer documentos relevantes e irrelevantes:</li>
+<ul>
+<li>Irrelevante: El contenido ha dejado de ser un área de interés personal, o su nivel de complejidad ha sido superado.</li>
+<li>Irrelevante: El documento forma parte de un conjunto mayor del que se tiene disponibilidad (en esencia, esto es un caso oculto de <a href="/organizacion-de-la-informacion-personal-eliminando-archivos-duplicados">documento duplicado</a>).</li>
+<li>Irrelevante: El documento ha dejado de ser válido porque hay investigaciones o avances posteriores que lo desautorizan (en este caso incluyo documentos que tratan sobre versiones obsoletas de aplicaciones informáticas o lenguajes de programación).</li>
+<li>Irrelevante: El documento está ampliamente disponible en la red (y por ello más actualizado).</li>
+<li>Relevante: tiene un valor personal y sentimental que es implícito a su contenido (en este capítulo cabe poner las cartas de amor de relaciones presentes y pasadas, jeje...).</li>
+<li>Relevante: el contenido es actual y necesario en mayor o menor medida como documento de consulta. <br /> </li></ul>
+<li>Documentos activos e inactivos:</li>
+<ul>
+<li>El documento ha dejado de tener valor legal y se ha roto cualquier relación contractual con la entidad emisora del documento.</li>
+<li>La fuente emisora del documento ha desaparecido. Opcionalmente,  el documento ha sido sustituido por otro que se ajusta a la situación actual (la entidad ha cambiado de nombre, se ha fusionado con otra entidad, etc). </li>
+<li>El valor del documento es simplemente de <em>relevancia</em> (aplicar los criterios anteriores).</li>
+<li>Hemos abandonado la actividad a la que se refiere el documento.</li>
+<li>Hemos perdido el objeto al que se refiere la factura y no tenemos esperanza de recuperarlo.</li>
+<li>Concretamente en el caso de un contrato laboral, ha finalizado y ha quedado correctamente reflejado en los datos que envía el <a href="http://www.mtas.es/" title="Ministerio de Trabajo y Asuntos Sociales">MTAS</a>. </li></ul></ul>
+<p>Desde luego puedo a&ntilde;adir más elementos a esta lista. Es probable que los vaya a&ntilde;adiendo a medida que avance en mi tarea de organización.  Estaría bien saber si alguien que enlace esto tiene interés en poner su lista propia.  En el fondo, <a href="/teoria-de-la-relevancia-en-linguistica" title="Sopa de bits: Teoría de la relevancia en ling&uuml;ística">la relevancia es una cuestión personal</a>.</p>
+<p>Continuaré en breve con esta serie, que tengo cosas en el tintero... </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 11<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/organizacion-de-la-informacion-personal-eliminando-archivos-duplicados/">Organización de la información personal - I: eliminando archivos duplicados</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Consideraciones previas</h2>
+<p>Una de las primera cosas que debo decir antes de entrar en detalle, es que la detección de duplicados no debe conducir al borrado indiscriminado de las copias aparentemente inútiles. Por poner mi caso, el proceso de borrado se ha limitado a documentos, hojas de cálculo y demás archivos de trabajo. Por lo tanto, no he intentado eliminar programas, bibliotecas dinámicas (SO en linux, DLL en Windows) ni otras utilidades. Me he centrado en archivos pasivos, que no forman parte de procesos ni programas, cosa que recomiendo a todo aquel que no tenga claras las consecuencias de borrar lo que no debe borrarse. Para eso existen <a href="http://www.webmasterfree.com/RegCleaner_d7625.html" title="Regcleaner">otras herramientas</a> y probablemente <a href="http://www.dummies.com/WileyCDA/DummiesArticle/id-2635.html" title="dummies: cleaning windows XP">otros tutoriales</a>.</p>
+<p>En segundo término, es importante aclarar que aunque se traten de dos documentos idénticos, hay que tener en cuenta el por qué se borran unos u otros, y si es necesario. Al revés del refrán, vale más la pena tener cien documentos duplicados a mano que uno volando. Eso siempre que tengas claro qué es lo bueno y qué es lo malo. </p>
+<p>Una vez dicho eso, sólo quiero a&ntilde;adir que mi uso más intensivo se ha centrado a las utilidades de Linux, aunque he echado un vistazo y he testeado una utilidad en Windows sin incidencias remarcables.</p><br />
+<h2>Conceptos base para la detección de duplicados</h2><br />
+<h3>LA gestión de archivos: Unix y Windows<br />  </h3>
+<p>Existen varias utilidades posibles para la detección y eliminación de duplicados. Sólo hay que pensar que UNIX es un sistema operativo más pensado desde sus inicios para el uso en grandes servidores, con gran cantidad de datos y por lo tanto con más dificultades en la gestión y administración de sistemas. </p>
+<p>Dentro de esta gestión de sistemas se encuentran las utilidades de copia de seguridad, integridad del sistema de archivos y demás. La detección de archivos duplicados es una tarea accesoria que se puede realizar puntualmente, pero que desde luego toma su tiempo llevar a cabo sin las herramientas básicas.</p>
+<p>Windows, por su lado, ha ido mejorando la estructura de directorios para poder diferenciar las ubicaciones de los archivos de programas y los documentos de trabajo del usuario.  Sin que se haya conseguido concienciar más a una parte de usuarios que se obcecan en montar murales de documentos en su escritorio, lo cierto es que algo han conseguido.  Por otro lado, las utilidades de gestión del sistema se han ido introduciendo con el tiempo. Me reservo mi opinión, porque entre otras cosas, no me considero un experto en sistemas, y mucho menos de Windows.</p><br />
+<h3>Optimización del proceso de comparación<br /> </h3>
+<p>Comparar dos archivos byte a byte sería una verdadera locura.  Encontrar archivos duplicados en una lista de 10000 implicaría efectuar hasta (10000*9.999)/2=49.995.000 de revisiones en los archivos, lo que es computacionalmente muy ineficiente. </p>
+<p>También es cierto que cuando se identifica un duplicado nos ahorramos recorrer tantas veces los archivos, pero en el caso que no hubiera ni un solo archivo idéntico en todo el sistema, recorrerías todas esas veces los archivos.  Al final del proceso, además de tener claro que no tienes duplicados, quizá también debas plantearte un cambio de disco duro... Vamos, que no van por ahí los tiros.</p>
+<p>Para identificar la duplicidad de archivos, el método pasa por establecer algoritmos que de generen una clave única de tales archivos, y así pueda compararse archivo por archivo, si las claves coinciden.  Este es un procedimiento mucho más eficiente que el anterior, porque como máximo hay que recorrer 10000 veces los archivos (lo cual reduce en 9999 veces el volumen máximo de tareas a realizar).</p>
+<p>A pesar de esto, es probable que en la mayoría de casos con leer peque&ntilde;os bloques de unos cuantos bytes de un archivo ya se pueda descartar candidatos a duplicados, con lo que aún nos ahorramos el recorrer gran parte de los archivos (y eso es importante si los archivos son grandes). </p>
+<p>Como se ve, existen varios trucos basados en el <strong>muestreo</strong> que permiten agilizar el proceso sin perder coherencia en el proceso. Como siempre que se realiza un proceso de muestreo, lo importante es la representatividad y no el tama&ntilde;o de la muestra. Si con un byte tuviéramos suficiente, no sería necesario coger dos. </p><br />
+<h3>Algoritmos de generación de claves de resumen<br />  </h3>
+<p>Los métodos básicos para la detección de archivos duplicados es el cálculo de las claves de tipo resumen (o <em>digest</em>), como por ejemplo los algoritmos <a href="http://www.faqs.org/rfcs/rfc1321.html" title="MD5">MD5</a>, ó <a href="http://www.w3.org/PICS/DSig/SHA1_1_0.html" title="W3C: SHA1">SHA1</a>. Son casos concretos y hay bastantes más. El más utilizado es el MD5, especialmente debido a su popularidad y grado de implantación. Aunque ya no sirve como algoritmo criptográfico, es más que suficiente para la detección e indexación fiable de archivos.  </p>
+<p>Las claves de tipo <em>digest</em> asignan un valor de clave en base al contenido del archivo. Esta clave, a efectos prácticos, es única.  Digo que lo es a <em>efectos prácticos</em> porque aunque se han detectado coincidencias (lo que se llama comúnmente <em>colisiones</em>) en la generación de claves, es prácticamente imposible que dos archivos coincidan en su clave. Por ejemplo, la clave MD5 consta de 32 dígitos hexadecimales (valores 0..F): considerando que se trata de variaciones con repetición, nos da un total de 1.208925819614629175e+24 combinaciones posibles, si no me equivoco (no, no lo he hecho mentalmente...).</p>
+<p>Un ejemplo de clave md5 sería: 5a948ab8f80483be4e495c8c8fba39cd </p>
+<p>Si tuvieras 1 millón de archivos a comparar, existiría una probabilidad de 1 entre 10<sup>18</sup> de que dos de tus archivos tuvieran esta misma clave MD5, sin que fueran idénticos en contenido. La probabilidad es teórica (si el algoritmo fuera perfecto), pero en cualquier caso creo que quedan claras las proporciones, así que doy por hecho que entiendes que es difícil que dos archivos diferentes pasen por idénticos, a no ser que esa sea tu intención. </p>
+<p>&iquest;Y qué haces si te sucede? Bueno... pues dado lo poco probable del asunto, y que la máquina ya te reduce el trabajo, siempre puedes abrir los dos archivos y comparar.  Pero vamos, yo he hecho el tratamiento sobre más de 150.000 archivos y no ha habido errores de este tipo. </p><br />
+<h2>Herramientas de búsqueda de duplicados en Linux</h2>
+<p>En Linux he testeado dos: la primera, llamada <a href="http://www.pixelbeat.org/fslint/" title="Fslint">fslint</a>, es una utilidad a nivel de escritorio que además de detectar duplicados, permite identificar otros problemas del sistema de archivos (datos colgando, partes corruptas del disco, etc). </p>
+<p>Por mi familiaridad con la línea de comandos, descarté fslint en el momento de conocer de la existencia de <a href="http://en.wikipedia.org/wiki/Fdupes" title="Wikipedia: fdupes">fdupes</a>, aunque si tenéis más interés en utilizar fslint os recomiendo que lo utilicés para hacer revisiones de  volúmenes de datos no muy grandes: si se pasa mucho rato comparando, a veces se queda colgado.</p><br />
+<blockquote> :~# fdupes -r . > duplicados.txt <br />Progress [0/154304] 0% </blockquote>
+<p>El resultado de fdupes se guarda en el archivo duplicados.txt, que contiene una lista de resultados con un formato parecido al siguiente:</p><br />
+<blockquote> archivo1.txt<br /> archivo2.txt<br /> ...<br /> archivoN.txt<br /> [espacio]<br /> archivo1.dat<br /> archivo2.dat<br /> [espacio]<br /> </blockquote>
+<p>Cada grupo de archivos (los que no se separan por una línea en blanco) son archivos duplicados. Cuantos más archivos en cada bloque, más duplicaciones.  </p>
+<p>La tarea sucia está hecha y ahora nos queda a nosotros hacer una parte de tarea manual.  Para ello será necesario abrir el archivo duplicados.txt y dejar sólo los archivos que queremos eliminar.  Es decir, debemos borrar de la lista de archivo todas aquellas entradas que queremos conservar.</p>
+<p>Una vez hecho esto, sólo nos queda invocar a nuestro querido awk para que convierta cada entrada en una línea de comando del shell:</p><br />
+<blockquote># awk &#39;{gsub(/ |\(|\)/,"\\\&amp;");print "rm "$0}&#39; < duplicados.txt | sh </blockquote>
+<p>Es decir, para cada línea del archivo duplicados.txt (< duplicados.txt) creo una línea que empiece por <em>rm </em>e incluya todo el contenido de la línea (print "rm "$0), enviando el resultado a ejecutar al shell (... | sh).</p>
+<p>Con esto, se ejecuta línea por línea todos los archivos a eliminar.   El comando gsub "escapa" los caracteres especiales que el shell podría malinterpretar como parte del comando a ejecutar y no como parte del nombre del archivo.  Por ejemplo, los nombres que incluyen paréntesis o los que incluyan espacios, incluirán contrabarras para evitar ambig&uuml;edades al shell.</p>
+<p>Con este proceso, que en mi caso, con 150.000 archivos (muchos peque&ntilde;os) duró unas dos horas entre fdupes, procesado manual del archivo y limpieza final, hemos eliminado los archivos duplicados.</p><br />
+<h2>Duplicados en sistemas windows</h2>
+<p>Como ya he dicho antes, mi testeo en sistemas Windows ha sido muy limitado, por lo que os refiero al <a href="http://articles.techrepublic.com.com/5100-10877_11-6160661.html" title="Techrepublic: Remove clutter with Windows XP SP2 Dupfinder">artículo de Techrepublic sobre limpieza de duplicados</a> que habla sobre la instalación y ejecución del programa que he testeado: Dupfinder.  </p>
+<p>Esta aplicación funciona, cómo no, con interficie gráfica.  Eso lo hace mucho más amena para los usuarios no muy dados a la línea de comandos.  El funcionamiento es esencialmente el mismo, aunque es imposible decir si el criterio utilizado para detectar si dos archivos son duplicados es exactamente el mismo o no que en casos como fdupes.</p><br />
+<h2>Conclusiones </h2>
+<p>Hasta aquí la primera parte de mis tareas de reorganización de la información personal. Espero que te haya servido de ayuda toda esta información. En mi caso pude liberar un 10% de mi espacio en disco (es mucho, principalmente debido a copias de seguridad no comprimidas y archivos de gran tama&ntilde;o), aunque lo más importante es que esto me permite reducir tiempo para las tareas posteriores de reorganización de los archivos existentes. </p>
+<p>En mi opinión, lo importante es cargarse de paciencia e ir avanzando. Si no puedes cerrar la limpieza en un solo día, no pasa nada: continúa en otro momento.  Lo importante es que al acabar tengas los archivos necesarios, ni más ni menos. </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 5<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/cadena-trofica-fagocitar-rumiar-digerir-informacion/">Cadena trófica: Fagocitar, rumiar y digerir información</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Metáfora </h2>
+<p>Sucede pocas veces, eso de salir de un examen habiendo aprendido algo sobre la materia, &iquest;verdad? Mientras saboreo una cerveza para celebrar el fin de curso, recuerdo el concepto que he indicado de forma totalmente espontánea, casi por <a href="http://es.wikipedia.org/wiki/Serendipia" title="Wikipedia: Serendipia">serendipia</a>.</p>
+<p>Y es que la metáfora me ha parecido sugerente.  Recuerdo hace a&ntilde;os que alguien soltó la expresión "fagocitar apuntes". El acto de cacería que se da a final de trimestre en los pasillos de la facultad, buscando alumnos asistentes a clase con apuntes veraces y bien estructurados es un acto más bien con muchas prisas y poco criterio, una recuperación de información con tanta esperanza como poca evaluación de la relevancia. Se trata de engullir... el término fagocitar parece apropiado. Es sabido que existen verdaderos lobos depredadores que buscan <em>gacelas rumiadoras de apuntes</em>. Incluso hay ocasiones en las que el asalto es el propio día del examen... Uf! Que carnicería ;-).</p><br />
+<h2>Digerir y rumiar </h2>
+<p>Todo esto viene por lo que sugiere incorporar este concepto al tratamiento de la información. Digerir es un acto que no sólo sucede en el estómago, sino también en la cabeza. Extraer conocimiento de la información forma parte de ese proceso de <em>di-gestión</em>.</p>
+<p>Por utilizar una definición informal, el proceso adquisicion de conocimiento se basa en asimilar una serie de informaciones que, combinadas con los conocimientos que tiene el individuo, permite crear un nivel de conocimiento mayor sobre el objeto estudiado.  El tiempo que transcurre entre la <em>ingestión</em> de la información y su <em>digestión</em> final es un factor crítico. </p>
+<p>En el reino animal, ese tiempo de ingestión afecta a la disponibilidad del animal para volver a correr y defenderse en condiciones. Es por eso que muchos depredadores consumen poco y a menudo: necesitan mantener su forma física para correr más que sus presas. Eso les mantiene prácticamente activos toda la jornada, como adictos. Pero no se trata de eso, sino de mantener el tono.</p>
+<p>Las características <em>inmateriales</em> de la información son un factor diferencial a una cadena trófica tradicional, donde el consumo del nivel inferior coincide con la muerte de éste. Vamos que, casi que por definición, si el lobo se come el cordero, éste desaparece. En cambio, si el cordero toma apuntes y el lobo se los lee, pues aquí paz y después gloria, siempre que haya una fotocopiadora cerca.</p>
+<p>Eso sí, hay por lo menos dos aspectos que se pueden aplicar a una ecología de la información: los diferentes roles de consumo dentro de la cadena trófica, y las características de la digestión, que pueden ser consideradas como una base para la relevancia.</p>
+<p>Los diferentes roles que adoptan los participantes en la cadena trófica acaban desarrollando una cultura corporativa del consumo y producción de información en una organización, que es algo a tener en cuenta cuando se desarrolla una Intranet o un entorno de gestión documental.  A eso respondía en el examen: me preguntaban en definitiva si montar una red social corporativa no sería intoxicar a los usuarios, y mi respuesta, en definitiva, ha sido "que coman menos y mejor", seleccionando el quién y el dónde. </p>
+<p>Lo que pasa actualmente es que buscar información se ha convertido en algo fácil de iniciar pero difícil de finalizar, especialmente por la poca información sobre la fiabilidad las  fuentes. Pero en una red corporativa, eso es factible, debido a que el dominio es mucho más limitado e incluso es fácil que los usuarios se conozcan. </p>
+<p>No quiero profundizar más por ahora. Es un <em>post </em>cortito en relación a lo que acostumbro a publicar. Es intencionadamente abierto. Buscaba, más que otra cosa, sugerir ideas. </p>
+<p>Puedes  encontrar más cosas en <a href="http://www.google.com/search?q=%22ecolog%C3%ADa+de+la+informaci%C3%B3n%22" title="Google: Ecología de la información">Google sobre la ecología de la información</a>. Podrás encontrar entradas en el profesional de la información y otros sitios, con diferencias de significado respecto a lo que yo comento (esencialmente, la ecología en la producción de contenidos, o en su consumo). </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jul 3<br/>
+                2007
+            </p>
+            <h3><a href="../../../blog/google-mashups-el-contraataque-a-yahoo-pipes/">Google Mashups: El contraataque a Yahoo! Pipes</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Parecidos razonables, diferencias significativas</h2>
+<p><a href="http://editor.googlemashups.com" title="Google Mashups">Google Mashups</a> recoge mucha parte de la filosofía de su marca madre:  un entorno sencillo (y mucho más ligero que el entorno de Pipes), ágil, y con un enfoque que busca más la complicidad de los desarrolladores.  En esencia, no se trata de un editor visual que permite combinar y enlazar cajas como lo hace Yahoo!, sino de programar mediante el <a href="http://editor.googlemashups.com/docs/reference.html" title="Google Mashups Tag reference">lenguaje de marcado del propio del sistema</a>. </p>
+<p>Lo que es interesante, es que el lenguaje de marcado utiliza tags XHTML para el dise&ntilde;o de la interficie de uso, y la interacción y gestión de eventos propios de Javascript. En resumen, me recuerda muchísimo al <a href="http://www.mozilla.org/projects/xul/" title="XML User Interface Language (XUL) Project">XUL de Mozilla</a> o al <a href="http://en.wikipedia.org/wiki/MXML" title="Wikipedia: MXML">MXML de Flash-Flex</a>. No son los únicos lenguajes de marcado para interficies, aunque son los que conozco.</p><br />
+<blockquote>Por lo tanto, en lo referente a forma de uso, Google Mashups parece dirigirse a usuarios con más habilidad para la programación utilizando XML, Javascript y CSS, mientras que Yahoo! Pipes deja de lado todos los aspectos relacionados con el dise&ntilde;o de la interacción con el usuario, resumiendo la salida a un RSS.</blockquote>
+<p>En el capítulo de parecidos, las fuentes de datos son las que proporciona Internet: resultados de búsqueda, RSS y demás fuentes estructuradas.  Google ha hecho lo mismo que hizo Yahoo! pero con sus correspondientes servicios: ha integrado su calendario y sus tareas, y los mapas. Eso en esencia no es muy diferente de lo que proporciona Yahoo!, pero desde luego potencia mucho la integración para alguien que no quiera pelearse con las APIs: hay que pensar que el XML, a pesar de ser algo árido para quien no esté acostumbrado, es mucho más fácil de tratar que el código <em>a pelo</em>.  </p><br />
+<h2>Funcionamiento de Google Mashups: un ejemplo sencillo</h2>
+<p>Del mismo modo que ya hice con Yahoo! Pipes (o Y!P), voy a hacer un peque&ntilde;o ejemplo con Google Mashups. El ejemplo incluirá los RSS, que es lo que más me atrae, pero trataré de utilizar otros servicios.  Para empezar, accedemos al editor de Google Mashups. El entorno se puede ver en la siguiente imagen:</p>
+<p align="center"><img src="/extranet/wp-content/uploads/2011/03/4480" alt=" " width="640" height="372" /> </p>
+<p>Vemos tres pesta&ntilde;as, que presentan el editor del mashup, el editor de feeds y el entorno de ejecución de prueba (Sí, ya sé que es una forma de indicar que se trata de un entorno de pruebas seguro, pero anda que llamarse Sandbox tratándose de Google...).</p>
+<p>Empiezo echando un vistazo al <a href="http://code.google.com/gme/reference.html" title="Google Mashups Editor Tag reference">lenguaje de referencia de Google Mashups</a>,  y la primera impresión que recibo es que se han esforzado en integrar las propias herramientas, pero que han aportado pocos sistemas de tratamiento de los datos, como por ejemplo lo proporcionan las ca&ntilde;erías de la competencia.  Eso es un punto en contra para referencistas y documentalistas en general, aunque es un gui&ntilde;o a los programadores, que podrán echar mano de bibliotecas de Javascript  y otras historias para aplicar tratamientos sobre los datos.</p>
+<p>Como ejemplo, empiezo desarrollando un grupo de dos pesta&ntilde;as, que se desarrollan utilizando una combinación de las etiquetas gm:tabs (el grupo de pesta&ntilde;as), gm:container (una pesta&ntilde;a concreta) y el contenido que corresponda. Las pesta&ntilde;as tendrán el siguiente contenido:</p>
+<ul>
+<li>Pesta&ntilde;a 1: Un feed.</li>
+<li>Pesta&ntilde;a 2: Un calendario.</li></ul>
+<p>Para cuando empiezo con la pesta&ntilde;a de los feeds, ya echo en falta algo: la capacidad de agregación, filtro y ordenación que tenía Y!P. Lo que son las cosas, utilizo la <a href="http://pipes.yahoo.com/pipes/pipe.run?_id=OoNXAEke3BGulGevJphxuA&amp;_render=rss" title="Documentapipe">documentapipe</a> <a href="http://beukis.wordpress.com/2007/06/19/documentapipe/" title="beukis: documentapipe">que desarrolló Beukis</a> utilizando la herramienta de Yahoo!</p>
+<p>Esto permite poner la pipe dentro de un contenedor (que a su vez irá dentro de una gm:section y de un gm:tab, como veremos después).</p>
+<p>En la segunda pesta&ntilde;a, pongo un calendario, utilizando uno de los feeds de los <a href="http://www.google.com/calendar/feeds/2odmstb4hh1qcmg4ml8pj1uoo4%40group.calendar.google.com/public/full?orderby=starttime&amp;sortorder=ascending" title="Google Calendar demo para G-Mashups">calendarios de muestra</a> que encuentro en la beta cerrada.  Se puede ver en la URL que es posible indicar el orden de las entradas indicando los parámetros <em>orderby</em> y <em>sortorder</em>. Es de suponer que con estos recursos y otros que de momento no he encontrado, es posible aplicar algunos criterios más de organización de los datos.</p>
+<p>Con esta combinación, el código fuente final del mashup es:</p>
+<p><img src="/extranet/wp-content/uploads/2011/03/4481-google-mashups-02.png" alt="resultado del mashup" title="resultado del mashup" width="640" height="451" /></p>
+<p>y el resultado: </p>
+<p><img src="/extranet/wp-content/uploads/2011/03/4482-google-mashups-03.png" alt="Demo sandbox" title="Demo sandbox" width="613" height="292" /></p><br />
+<h2>Consideraciones finales</h2>
+<p>Con los dos servicios conseguiríamos un backend genial.  Por ejemplo, echo en falta que en Google Calendar no se puedan mostrar los datos de los feeds agrupados por fechas.  Eso permitiría conjugar, por ejemplo, los posts de este blog con los posts de otros blogs interesantes, para poder contextualizar mis informaciones. Si un feed lleva su fecha eso permitiría utilizarlo en un calendario, no?</p>
+<p>En el capítulo beta-testing, la herramienta es ligera... pero no guarda los proyectos, con lo que las capturas que he puesto aquí son lo único disponible a fecha de hoy.  Como en el caso de Y!P, los mashups pueden ser publicados, por lo que es de esperar que vayan surgiendo.  También pueden ser definido como gadgets, pero eso ya es otro cantar. </p>
+<p>La combinación de ambos servicios es interesante: </p>
+<ul>
+<li>Y!P se caracteriza por un buen <em>backend</em> de agregación de contenidos que da como salida un grupo estructuralmente homogéneo de datos, en formato RSS.  Cabe pensar que una combinación inteligente del lenguaje XML y el uso de enlaces nos proporciona un sistema muy ágil de interrelación de la información.</li>
+<li>GM proporciona una interficie de presentación de los datos.  La pena es que para ir más a fondo tenga uno que meterse a programar, que no deja de ser un cambio de mentalidad, y por lo tanto un enfoque de trabajo más planificado.  </li></ul>
+<p>No se hacen sombra la una a la otra. Lo que sí proporcionan es una visión de hacia dónde va cada servicio.  Es de esperar que ambas empresas continuen su progresiva evolución en el lanzamiento de servicios.</p>
+<p>Y para acabar, sólo un apunte más: <strong>RSS es el presente y el futuro</strong>. Eso y los <a href="http://microformats.org/" title="Microformats.org">microformatos</a> en general permitirán la progresiva dispersión de las redes sociales, que ya todo el mundo se empieza a oler, por aquello de "<a href="http://www.microsiervos.com/archivo/humor/definicion-web-20-dos-frases.html" title="Microsiervos: Definir web2.0 en dos frases">Tú haces todo el trabajo, ellos se quedan la pasta</a>".<br /> </p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../en/page/21/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">20</a>
+        
+        
+          <a class="btn btn-primary" href="../../../en/page/19/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
