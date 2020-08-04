@@ -35,12 +35,12 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+          git pull github ${GITHUB_REF} --ff-only
           if [ -d "build" ];then
             git rm -rf ./build/
           fi
           git commit -m "Removed old build" ./build/
           mkdir ./build
-          git pull github ${GITHUB_REF} --ff-only
           cd sopadebits-lektor
           python3 -m lektor build --output-path ../build
           cp ../CNAME ../build/
