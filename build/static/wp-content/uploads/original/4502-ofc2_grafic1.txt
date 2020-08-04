@@ -1,0 +1,44 @@
+{
+  "title":{
+    "text":"Grafico de barras y frecuencias tipo Pareto",
+    "style":"{font-size: 20px;}"
+  },
+
+  "y_legend":{
+    "text":"Demo OFC2",
+    "style":"{font-size: 14px; color:#736AFF;}"
+  },
+  "y_axis":
+  {
+    "max":   50,
+    "stroke":   1,
+    "tick-length": 5
+  },
+  "x_axis":
+  {
+    "steps": 1,
+    "tick-height": 10,
+    "tick-length": 10,
+    "labels": ["A","B","C","D","E","F","G"]
+  },
+  "elements":
+  [
+    {
+      "type":      "bar",
+      "colour":    "#9933CC",
+      "text":      "Valores de barra",
+      "width":     2,
+      "font-size": 10,
+      "dot-size":  6,
+      "values" :   [15,10,7,5,3,2,1]
+    },
+    {
+      "type":      "line_dot",
+      "colour":    "#80a033",
+      "text":      "Linea de Pareto",
+      "font-size": 10,
+      "dot-size":  5,
+      "values" :   [15,25,32,37,40,42,43]
+    }
+  ]
+}
