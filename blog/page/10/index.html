@@ -1,0 +1,560 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/11/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">10</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/9/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                nov. 12<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/web-frameworks-benchmark/">Web frameworks benchmark</a></h3>
+        </header>
+        <section>
+            
+                <p>Si el rendimiento es algo que te preocupa para una nueva aplicación o servicio que quieres crear, quizá te interese echar un vistazo a la <a title="Framework Bencharmks - Techempower" href="http://www.techempower.com/benchmarks/">séptima ronda del Framework Benchmark</a> de Techempower. &nbsp;Como explican en la <a href="http://www.techempower.com/blog/2013/10/31/framework-benchmarks-round-7/">entrada del &nbsp;blog de Techempower</a>, la prueba ya incluye 84 frameworks y unas 200 permutaciones (combinaciones de tecnología de la pila, como por ejemplo PHP-MySQL-Apache, PHP-MongoDB-Apache, PHP-MySQL-Nginx,...).</p><!--more-->
+<p style="text-align: center;"><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_023.png"><img class="aligncenter  wp-image-27461" alt="Selecció_023" src="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_023.png" width="579" height="463" /></a></p><br />
+Como explican en el apartado de terminología, el término <a href="http://www.techempower.com/benchmarks/#section=motivation&amp;hw=i7&amp;test=json">framework se utiliza aquí de una forma muy laxa</a>, pero no creo que esto sea un problema: al contrario, creo que ayuda a establecer una <em>baseline</em>&nbsp;del rendimiento proporcionado por algunas capas del framework. Además es posible filtrar los resultados según la tecnología utilizada, por lo que se puede evitar cualquier interferencia:</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_024.png"><img class="aligncenter size-medium wp-image-27462" alt="Selecció_024" src="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_024-300x297.png" width="300" height="297" /></a></p>
+<p>Como en otros casos, puedes encontrar el <a href="https://github.com/TechEmpower/FrameworkBenchmarks">código fuente utilizado para los benchmarks en GitHub</a> , por lo que puedes ejecutar las pruebas en un hardware específico, ampliarlas o enviarlos como <em>pull requests</em>.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                nov. 11<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/el-proceso-de-un-grafico-que-simplificar-la-comprension-un-ejemplo-en-thewhyaxis/">El proceso de un gráfico que simplificar la comprensión: un ejemplo en @thewhyaxis</a></h3>
+        </header>
+        <section>
+            
+                <p>Conseguir que los datos representados gráficamente sean comprensibles implica que quien los representa los habrá comprendido con anterioridad. Este proceso de introspección y revelación permite eliminar las tentaciones de introducir elementos redundantes y superfluos en las representaciones gráficas.</p><!--more-->
+<p>En el ejemplo presentado en<a href="http://thewhyaxis.info/"> The Why Axis</a> sobre el <a href="http://thewhyaxis.info/rasmussen/">gráfico para la elección de la carrera profesional</a>&nbsp;se puede comprobar el resultado de ese proceso:</p>
+<ul>
+<li>El uso del color para diferenciar las carreras con más crecimiento ayuda a focalizar la atención.</li>
+<li>La agrupación de los elementos por cuadrantes descritos ayudan al usuario para seleccionar los casos según su objetivo (mejor sueldo, vocacional). Los cuadrantes se marcan en base a la <strong>mediana</strong>&nbsp;(que no media) de los sueldos.</li>
+<li>También se introduce la posibilidad de comparar trabajos.</li>
+<li>y el a&ntilde;adido de interactividad y etiquetas permite al usuario introducirse rápidamente en el contexto para poder responder más ágilmente a las preguntas que el gráfico analiza.</li><br />
+</ul><br />
+El gráfico final se puede ver en el sitio del <a href="http://www.rasmussen.edu/resources/what-career-should-i-choose/">Rasmussen College</a>.</p>
+<p>Personalmente habría aplicado una escala logarítmica al eje de sueldos, lo que habría facilitado una representación más homogénea de los datos sin pérdida de validez. Pero el gráfico como ejemplo de aplicación y como resultado final creo que cumple más que bien su cometido.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                nov. 7<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/museo-moli-paperer-de-capellades-mmp_capellades/">Museo molí paperer de #Capellades @mmp_capellades</a></h3>
+        </header>
+        <section>
+            
+                <p>Quienes me conocen saben que no soy amante de los museos, quizá porque soy más de probar y trastear, y no siempre me atrae la idea de ver las cosas desde la distancia y la pura teoría. &nbsp;Eso es aplicable a museos que mantienen un sentido más clásico, o que muestran obras&nbsp;<em>intocables</em> por su valor o estado de conservación. &nbsp;Desde luego reconozco el valor de estos espacios para la preservación del patrimonio: sólo que <em>me suceden pocas cosas interiormente</em> cuando los visito, y por eso no me atraen.</p><!--more-->
+<p>Es por eso que cuando meses atrás tuve la oportunidad de visitar el <a title="Museu del Paper - Capellades" href="http://www.mmp-capellades.net/">Museu del Paper de Capellades</a>, la primera reacción fue de cierto rechazo. "Te va a gustar", me dijo una persona que me conoce bien. Acertó.</p>
+<p>No soy capaz de explicar todo lo que hay detrás del museo, pero hay algunos puntos que me gustaron:</p>
+<ul>
+<li>El edificio que aloja el museo era una antigua fábrica de papel. Así que algunos aspectos clave como el por qué de su ubicación y su organización interna se pueden comprobar mientras se visita el museo.</li>
+<li>Los más peque&ntilde;os pueden experimentar&nbsp;&nbsp;mientras se lo pasan bien. Y si ellos pueden, los mayores también podemos.</li>
+<li>Si solicitas la posibilidad de participar en un taller (hay un aforo mínimo), puedes salir con tu propio papel fabricado, hecho mediante técnicas que se explican en una visita guiada.</li>
+<li>Uno de los medios de financiación del &nbsp;museo es ...&nbsp;<em>fabricar</em>&nbsp;papel. Series de papel de alta calidad, bajo demanda.</li><br />
+</ul><br />
+Pero además:</p>
+<ul>
+<li>Más allá de la venta, siguen innovando, por ejemplo con el <a title="Papel Germinado" href="http://papelgerminadommp.wordpress.com/">papel germinado</a>.</li>
+<li>Están introduciendo el <a href="http://www.verkami.com/locale/ca/projects/4055-renovacio-de-la-roda-hidraulica-del-museu-moli-paperer-de-capellades">micromecenazgo para rehabilitar la rueda del molino</a>.</li><br />
+</ul><br />
+Una actividad que recomiendo para quien visite la zona del Anoia y quiera ver de cerca un proyecto (no sólo un espacio) que en mi opinión vale mucho la pena.</p>
+<p><a href="http://www.verkami.com/locale/ca/projects/4055-renovacio-de-la-roda-hidraulica-del-museu-moli-paperer-de-capellades">http://www.verkami.com/locale/ca/projects/4055-renovacio-de-la-roda-hidraulica-del-museu-moli-paperer-de-capellades</a></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                nov. 5<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/muchos-y-muchas-jovenes-no-saben-usar-ordenadores-y-eso-deberia-preocuparte/">Muchos y muchas jóvenes no saben usar ordenadores - Y eso debería preocuparte</a></h3>
+        </header>
+        <section>
+            
+                <p><div>De vez en cuando algunos relatos se asumen como propios. Unos pocos de estos, a medio camino entre amargo e irónico, hacen que su lectura haga saltar sonrisas, y algún lagrimón de resignación. éste es el caso que he encontrado. Trata sobre el aún enorme abismo que existe entre usuarios básicos y los programadores, profesionales y/o usuarios avanzados. Y básicamente,&nbsp;causado por el desdén y la falta de interés de una alta proporción de usuarios que acaban alarmando al autor.</div>&lt;/p&gt;<!--more--></p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div></p>
+<p><div>La historia de&nbsp;<a href="http://coding2learn.org/blog/2013/07/29/kids-cant-use-computers/" target="_blank" shape="rect"><em>coding 2 learn</em></a>&nbsp;empieza explicando una de tantas anécdotas que se encuentra un informático. En cierto modo, parecido a las&nbsp;<a href="http://www.elconfidencial.com/alma-corazon-vida/2013-10-14/estas-son-las-cosas-que-hacen-que-los-informaticos-se-rian-de-nosotros_39817/" target="_blank" shape="rect">anécdotas que se podía leer en el confidencial</a>.&nbsp;Pero en la historia que comento, el tono es amargo.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><h2>&iquest;Nativos digitales? &iquest;En serio?</h2><br />
+El&nbsp;<a href="http://coding2learn.org/blog/2013/07/29/kids-cant-use-computers/" target="_blank" shape="rect">artículo de&nbsp;<em>coding 2 learn</em></a>&nbsp;también menciona el concepto de los nativos digitales y lo pone bajo duda. &iquest;Se puede identificar como nativo digital a alguien que ni siquiera sabe programar? Yo también dudo que esto sea algo más que un piropo para vender más portátiles y tableta molonas.&lt;/p&gt;</p>
+<p></div></p>
+<div></div></p>
+<div>&iquest;Podemos buscar referentes anteriores, para entender el concepto de <em>nativo</em>? Por supuesto. &nbsp;Acaso no vimos una o dos generaciones anteriores, el dominio que tenían en la mecánica de automóviles? Bueno, no todo el mundo sabía. Pero era más evidente un cierto grado de dominio: desde quien se atrevía al cambio de aceite y a mantener los niveles de los líquidos, hasta quien era capaz de desmontar y volver a montar el motor entero. La mecánica permitía mantenerse un vehículo, y eso era algo necesario para tener independencia.</div></p>
+<div></div></p>
+<div>
+<div>La generación actual no lo aborda así. En muchos de los casos, ignora o simplemente delega.</div></p>
+<div>
+<h2></h2></p>
+<h2>Los móviles lo empeoran</h2><br />
+</div><br />
+Por si lo anterior fuera poco, la llegada de los móviles han acabado de arreglarlo: las pocas posibilidades que existían de aprender un lenguaje de programación sin ayuda ni motivación, se esfumaron con los móviles. Sin teclado, grandes pantallas y acceso a contenidos multimedia. Nada que invite a entender el funcionamiento interno de estos dispositivos.</p>
+<h2>... y entonces apareció Snowden</h2><br />
+Y el autor llegó el día siguiente a su escuela y supo que casi nadie había oído la noticia. Lo peor de todo fue que a casi nadie le importó ni siquiera las consecuencias.</p>
+<p></div></p>
+<div>Es por eso que <em>no pueden</em> utilizar ordenadores: <strong>ponen en juego tu seguridad y privacidad</strong>, y la de los que comparten fotos, cuentas de servicios,...</div></p>
+<div></div></p>
+<div>
+<h2>Y el futuro...</h2><br />
+&nbsp;</p>
+<p>Es oscuro pero tiene posibilidades:</p>
+<p></div></p>
+<div>
+<ul>
+<li>Si eres padre/madre, deja de arreglar los cacharros averiados de tus hijos: deja que se rompan un poquito los cuernos intentando encontrar una solución.</li>
+<li>Si tienes ascendente en tu escuela, procura que la importancia de las tecnologías aumente, pero no como fines en sí mismos, sino como medios para entender la importancia de proteger la intimidad.</li>
+<li>Procura utilizar Linux. Tanto en móviles como en ordenadores. Eso ya lo decía&nbsp;<a href="http://www.theguardian.com/world/2013/sep/05/nsa-how-to-remain-secure-surveillance" target="_blank" shape="rect">Bruce Schneier hace unas semanas sobre cómo estar seguros</a>.</li>
+<li>Y si vas a entrar en política, haznos un favor a tus potenciales votantes: aprende tecnologías. Es casi tan importante como aprender idiomas, no haces el ridículo, y te hace más independiente.</li><br />
+</ul><br />
+</div></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                nov. 4<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/movimientos-de-refugiados-desde-1960-segun-datos-de-la-onu-refugees/">Movimientos de refugiados desde 1960  según datos de la ONU (@Refugees)</a></h3>
+        </header>
+        <section>
+            
+                <p>Desde hace unos meses es posible navegar por los datos de refugiados de todo el mundo con la ayuda de un mapa interactivo creado por la <a href="http://www.unhcr.org/pages/4a013eb06.html">Alto Comisionado por los Refugiados de las Naciones Unidas</a> creado sobre la <a title="UNHCR Population Statistics" href="http://popstats.unhcr.org/">base de datos de la propia entidad</a>.</p><!--more-->
+<div>En el mapa es posible ver los datos mundiales, o bien seleccionar un país y analizar los movimientos migratorios tanto de entrada como de salida, a lo largo de los últimos 60 a&ntilde;os. También es posible seleccionar un país en tanto que lugar de origen o de destino de esos movimientos.</div></p>
+<div></div></p>
+<div>Aunque el gráfico parece mejorable, tiene el mérito de mostrar una gran densidad de información de una forma estructurada y bastante navegable. El punto débil es que quizá no se acaba de entender la relación entre cada uno de los gráficos. Quizá faltaría alguna especie de titular que permita sintetizar las partes para facilitar su comprensión. En cuanto al resto, me gusta bastante.</div></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 16<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/opencorporates-y-la-nueva-utilidad/">@opencorporates y la nueva utilidad</a></h3>
+        </header>
+        <section>
+            
+                <p>En principios de Julio, Open Corporates anunció una nueva utilidad en su sitio: la <a href="http://blog.opencorporates.com/2013/07/11/open-corporate-network-data-not-just-good-but-better/">disponibilidad de información que vincula diversas organizaciones</a>. En el anuncio se indicaban tres novedades:</p><!--more-->
+<ol>
+<li>Una plataforma de datos abiertos sobre redes de corporaciones.</li>
+<li>Disponibilidad de tres conjuntos de datos para testear su plataforma.</li>
+<li>Un ejemplo del potencial de las nuevas funcionalidades.</li><br />
+</ol><br />
+Y desde luego, el potencial es enorme: la utilidad presentada está disponible como interactivo para <a href="http://opencorporates.com/viz/financial/index.html#">visualizar las interrelaciones entre algunas organizaciones</a>:</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/09/Selecció_016.png"><img class="size-large wp-image-27411 alignnone" alt="Opencorporates: Interactivo de relaciones entre empresas" src="http://www.sopadebits.com/wp-content/uploads/2013/09/Selecció_016-1024x560.png" width="580" height="317" /></a></p>
+<p>&nbsp;</p>
+<p>Es posible seleccionar una organización, y comprobar las interrelaciones entre ésta y sus diversas conexiones (diferenciando las que están en paraísos fiscales, aunque marca Holanda como tal y no estoy seguro que eso sea cierto).</p>
+<p>Aunque existe información sobre <a href="http://opencorporates.com/companies/es">empresas espa&ntilde;olas en OpenCorporates</a>, ésta es aún escasa, basándose casi exclusivamente en los datos del registro mercantil. &nbsp;Así que sólo cabe esperar que progresivamente se amplíen estos datos, aunque me temo que aún queda tiempo. Sin embargo esto no le resta ningún mérito al proyecto, faltaría más.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 13<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/the-flavor-connection-dataviz-interactivo-entre-conexiones-de-alimentos/">The flavor connection: #dataviz interactivo entre conexiones de alimentos</a></h3>
+        </header>
+        <section>
+            
+                <p><div>Si te gusta la visualización de datos y además te gusta cocinar, resérvate un rato para este tragatiempos: Un diagrama de&nbsp;<a href="http://www.scientificamerican.com/article.cfm?id=flavor-connection-taste-map-interactive" target="_blank" shape="rect">relaciones entre alimentos</a>, según el número de compuestos de sabor que comparten:</div>&lt;/p&gt;<!--more--></p>
+<p><div><a href="http://www.sopadebits.com/wp-content/uploads/2013/10/Selecció_017.png"><img class="size-full wp-image-27407 alignnone" alt="Selecció_017" src="http://www.sopadebits.com/wp-content/uploads/2013/10/Selecció_017.png" width="707" height="850" /></a></div>&lt;/p&gt;</p>
+<p><div><br clear="none" />Personalmente me ha encantado algunas ideas del artículo, aunque el gráfico ha resultado algo confuso. La idea de poder combinar diversos ingredientes parece compleja, porque sólo aparecen las relaciones entre los alimentos con componentes afines, pero no sus posibles complementariedades. En cualquier caso, quizá quieras consultar parte de los <a href="http://www.nature.com/srep/2011/111215/srep00196/full/srep00196.html#supplementary-information">datos utilizados para el estudio</a> (aunque no está toda esta información).</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>&iexcl;Buen provecho!</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 10<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/nada-que-ocultar-pero-quiero-poder-ocultarlo/">Nada que ocultar (pero quiero poder ocultarlo)</a></h3>
+        </header>
+        <section>
+            
+                <p>Con esta frase se acostumbra a replicar cuando alguien saca el tema de la vigilancia y la invasión de la privacidad empieza un artículo escrito hace dos a&ntilde;os y medio. Me ha gustado su lectura porque no tiene la contaminación provocada por el caso Snowden, y en cambio apunta a temas de gran actualidad. Así que, &iquest;No tienes nada que ocultar? Y por eso, &iquest;Crees que la invasión de la privacidad ya no importa?</p><!--more-->
+<p>Daniel J. Solove no está de acuerdo. este profesor de derecho de la Universidad George Washington considera que la <a title="Why Privacy Matters Even if You Have 'Nothing to Hide'" href="http://chronicle.com/article/Why-Privacy-Matters-Even-if/127461/">privacidad sigue siendo importante a pesar de que no tengas nada que ocultar</a>. Y &iquest;por qué? En su artículo (y supongo que en <a href="http://docs.law.gwu.edu/facweb/dsolove/Nothing-to-Hide/index.html">su libro</a>, que no he leído ni necesariamente recomiendo) pone algunas preguntas adicionales. Porque si no tienes nada que ocultar...</p>
+<ul>
+<li>&iquest;Acaso no tienes cortinas?</li>
+<li>&iquest;Te molesta que vea los movimientos que has hecho con tu tarjeta de crédito a lo largo del último a&ntilde;o?</li>
+<li>En general, &iquest;te da igual que alguien meta las narices en algún aspecto de tu vida que no es de su incumbencia?</li>
+<li>&iquest;Se podría deducir que puedo hacer una foto de alguien en desnudo integral, disponer de todos los derechos, y compartirla con quien quiera?</li><br />
+</ul><br />
+Pero en definitiva, el argumento de fondo es que&nbsp;<strong>si no tienes nada que ocultar, no tienes vida</strong>.</p>
+<p>Pero claro, puedes seguir pensando que esto no va contigo. Que si un organismo de seguridad accede a tus fotos íntimas, tus movimientos bancarios y demás, no pasa nada. Sin embargo, según el autor, a menudo se considera que la privacidad es algo simple y condensable en una esencia.</p>
+<p>Basándose en las metáforas del <a href="http://es.wikipedia.org/wiki/1984_(novela)">1984 de Orwell</a> (la vigilancia y control de la comunicación) ni <a href="http://es.wikipedia.org/wiki/El_proceso">El Proceso de Kafka</a> (más centrado en el procesamiento y análisis de datos, y las relaciones de poder entre las instituciones y las personas), llega al punto central que aclara el motivo del artículo, y que es más propio del la segunda novela que de la primera:</p>
+<blockquote><p>Legal and policy solutions focus too much on the problems under the Orwellian metaphor&mdash;those of surveillance&mdash;and aren't adequately addressing the Kafkaesque problems&mdash;those of information processing. The difficulty is that commentators are trying to conceive of the problems caused by databases in terms of surveillance when, in fact, those problems are different.</p>
+<p>Commentators often attempt to refute the nothing-to-hide argument by pointing to things people want to hide. But <strong>the problem with the nothing-to-hide argument is the underlying assumption that privacy is about hiding bad things</strong>. By accepting this assumption, we concede far too much ground and invite an unproductive discussion about information that people would very likely want to hide.</blockquote><br />
+Es decir, que los partidarios del&nbsp;<em>nada que ocultar</em> confunden la privacidad con el secretismo. Pero el caso es que no necesariamente es así. Privacidad es también ocultar cosas no necesariamente malas, sino simplemente cosas que no deseas que sean conocidas por los demás. Los motivos, siempre que estén dentro de la ética y la convivencia más elementales, no importan: para eso tienes tu esfera privada.</p>
+<p>Una vez se puerde esa esfera de privacidad, el problema principal está en dos puntos clave:</p>
+<ul>
+<li>La agregación de informaciones (Alguien compra un libro sobre cáncer y una peluca. &iquest;Qué deducción sacaríamos?)</li>
+<li>Su uso secundario, es decir, utilizar esa información para unos fines diferentes a los que provocaron su recolección.</li><br />
+</ul><br />
+Entonces, tú tienes una vida normal y,... &iquest;Qué sucede si erróneamente se diagnostica que tus patrones de comportamiento presentan indicios de actos delictivos? &iquest;Qué sucede si entonces se te denegara la posibilidad de viajar fuera de tu país? &iquest;Y si congelan tus cuentas bancarias?</p>
+<p>Aunque siempre quedará la duda de si no pasa nada porque <a href="https://www.aclu.org/blog/technology-and-liberty-national-security/my-life-circles-why-metadata-incredibly-intimate">nos espíen los metadatos</a>:</p>
+<blockquote><p>A tool developed by MIT Media Lab proves how intrusive the collection and analysis of metadata is over time, especially for those who are overly reliant on email as their main method of communication. Dubbed "<span style="text-decoration: underline;"><a href="https://immersion.media.mit.edu/">Immersion</a></span>," the tool analyzes the metadata--From, To, Cc and Timestamp fields-- from a volunteer's Gmail account and visualizes it.</blockquote><br />
+Espero que al menos ahora lo veas diferente. Iremos sumándonos al club.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 9<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/editores-online-wysiwyg-markdown-y-otras-opciones/">editores online: WYSIWYG, markdown y otras opciones</a></h3>
+        </header>
+        <section>
+            
+                <p><div>El uso de los editores online seguirán siendo mayoritario. Y lo cierto es que con el aumento de potencia de los equipos actuales, la sensación de lentitud que provocaban algunos de ellos parece ser cada vez menos importante.</div>&lt;/p&gt;<!--more--></p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Pero el editor WYSIWYG no siempre es imprescindible, ni deseable. &nbsp;Por ejemplo entre desarrolladores y geeks varios, habituados a la sintaxis wiki y a los atajos de teclado, el WYSIWYG sea quizá innecesario. Por no hablar de las ocasiones en el que es necesario generar markup manualmente, que luego es "lavado" por los filtros del editor.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Y también tenemos las situaciones en las que la edición online no va dirigido a humanos sino... a máquinas. Es decir, código fuente que queremos teclear en nuestro navegador con resaltado de sintaxis y otras opciones propias de los entornos de desarrollo.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Para todo ello, algunas de las opciones son:</div>&lt;/p&gt;</p>
+<p><div></p>
+<p><ul></p>
+<p><li><a href="http://ace.c9.io/#nav=about">Ace</a>, el editor de código utilizado por el IDE&nbsp;<a href="https://c9.io/">Cloud9</a>.</li></p>
+<p><li><a href="http://epiceditor.com/" target="_blank" shape="rect">EpicEditor</a>&nbsp;puede ser de utilidad para sitios y funcionalidades con interfaz web que quieren utilizar alternativas ligeras y sin necesidad del WYSIWYG. &nbsp;Utiliza la sintaxis Markdown por defecto, aunque sería posible utilizar un intérprete (<em>parser</em>) distingo. &nbsp;En el sitio web del proyecto se pueden realizar.</li></p>
+<p><li><a href="http://markitup.jaysalvat.com/home/" target="_blank" shape="rect">MarkItUp</a>, aunque parece que está algo menos actualizado.</li><br />
+&lt;/ul&gt;&lt;/p&gt;</p>
+<p><div>Opciones que pueden ser interesantes para diversos contextos.</div><br />
+&lt;/div&gt;&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 7<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/albertocairo-estudios-de-ddj-carga-emocional-antiheroes-dataviz/">@albertocairo sobre estudios de #ddj, carga emocional y (anti)héroes de la #dataviz</a></h3>
+        </header>
+        <section>
+            
+                <p><div>Alberto Cairo (<a href="http://twitter.com/albertocairo">@albertocairo</a>, <a title="The Functional Art" href="http://thefunctionalart.com">The functional Art</a>) ha publicado una serie de tres artículos sobre tres aspectos variados, no centrales de la representaciones gráficas, sino más bien sobre la actividad profesional. Aquí van los enlaces:</div><br />
+<a href="http://www.peachpit.com/articles/article.aspx?p=2036558">Sobre la existencia de peque&ntilde;os grupos/estudios de periodismo de datos y grafismo que sustituyan a "los grandes"</a>:&lt;/p&gt;<!--more--></p>
+<p><blockquote><p>Can independent organizations make up for the dwindling of Big Media? That's an unsettling question, although there are some glimpses of hope: ProPublica and the Texas Tribune, for instance. [4] In the case of visualization, would small graphics groups or individuals be able to act as merciless watchdogs if most large organizations vanish? Perhaps, but only if, right after they somehow secure funding, they're true to certain ideals.</blockquote><br />
+<a href="http://www.peachpit.com/articles/article.aspx?p=2048358">Sobre la representación de información con carga emocional</a>&lt;/p&gt;</p>
+<p><blockquote><p>But rational persuasion lies at the core of rhetoric, and rhetoric has a noble and long tradition in philosophy and science. It just needs to be handled with care, perhaps even more so when we use it in visual displays of information.</blockquote><br />
+<a href="http://www.peachpit.com/articles/article.aspx?p=2126864">Sobre los héroes y antihéroes de la visualización</a>&lt;/p&gt;</p>
+<p><blockquote><p>We immortalize the Snows of this world and condemn the Aclands to oblivion. Perhaps we shouldn't. We know too little about the hard-working losers who struggled mightily and mightily failed.</blockquote>&lt;/p&gt;</p>
+<p><div>Lecturas interesantes, todas buenas compa&ntilde;eras de un rato tranquilo de reflexión.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/11/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">10</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/9/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>

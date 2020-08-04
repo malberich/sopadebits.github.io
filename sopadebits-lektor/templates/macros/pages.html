@@ -1,8 +1,0 @@
-{% macro render_pages() %}
-  <h3>Resources</h3>
-  <ul>
-    {% for static_page in site.get('/page').children %}
-        <p><a href="{{site.baseurl}}{{static_page[0]}}.html">{{static_page[1]}} &raquo;</a></p>
-    {% endfor %}
-  </ul>
-{% endmacro %}
