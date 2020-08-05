@@ -36,19 +36,15 @@ jobs:
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
           git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
           git pull github master
-          if [ -d "build" ];then
-            git rm -rf ./build/
+          if [ -d "docs" ];then
+            git rm -rf ./docs/
           fi
           git commit -m "Removed old build" ./build/
           mkdir ./build
           cd sopadebits-lektor
-          python3 -m lektor build --output-path ../build
-          cp ../CNAME ../build/
+          python3 -m lektor build --output-path ../docs
+          cp ../CNAME ../docs/
           cd ..
-          git add build/
-          git commit -m "Page build ${GITHUB_RUN_ID}" build/*
+          git add docs/
+          git commit -m "Page build ${GITHUB_RUN_ID}" docs/*
           git push github master
-          git fetch github
-          git pull --ff-only github master
-          # git push github `git subtree split --prefix build master`:gh-pages --force
-          git subtree push --prefix build github gh-pages
