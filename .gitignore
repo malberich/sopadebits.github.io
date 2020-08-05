@@ -1,6 +1,6 @@
 .idea/*
 _site/*
-build/.lektor/buildstate
+build/.lektor
 venv/*
 Gemfile.lock
 # _data/tags.yml
