@@ -40,7 +40,7 @@ jobs:
           if [ -d "docs" ];then
             git rm -rf ./docs/
           fi
-          git commit -m "Removed old build" ./build/
+          git commit -m "Removed old build" ./docs/
       - name: "Build"
         run: |
           mkdir ./docs
