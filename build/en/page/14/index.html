@@ -1,0 +1,889 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../en/page/15/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">14</a>
+        
+        
+          <a class="btn btn-primary" href="../../../en/page/13/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 18<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-vi-llamadas-entre-tareas/">Phing (VI) - Llamadas entre tareas</a></h3>
+        </header>
+        <section>
+            
+                <p><h2>Encapsular grupos de tareas</h2><br />
+Es posible que a medida que se utiliza Phing, veamos que los <em>targets</em> generados sean reutilizables. Lógico, al fin y al cabo estamos utilizando Phing para automatizar tareas repetitivas. Pero la estructura del archivo build.xml empieza a ser excesiva, o bien los targets son muy extensos. &nbsp;A pesar de la utilidad, el XML no es el formato al que está acostumbrado un programador: &nbsp;el mantenimiento se dificulta y los problemas ofuscan la utilidad inicial.&lt;/p&gt;<!--more--></p>
+<p>Para eso Phing incluye algunas tareas que permiten separar los archivos de proyectos, para luego llamarlos con diversos métodos. Aquí comento tres métodos, que tienen diferencias de matiz, pero puedes utilizar sin grandes diferencias.</p>
+<h2>phing</h2><br />
+Esta llamada permite hacer operaciones como la siguiente:</p>
+<pre class="brush: xml; gutter: true">
+<phing phingfile="limpiar_codigo.xml" target="quitaespacios" /></pre><br />
+Carga el archivo limpiar_codigo.xml, ejecuta el <em>target</em> quitaespacios. &nbsp;Esta operación, sin más, permite tener un conjunto de <em>targets</em> para limpiar el código (convertir tabuladores en espacios, eliminar saltos de carro \r, cambiar el juego de caracteres), otra para auditar el código, y así hasta donde se considere oportuno.</p>
+<p>En algunos de estos casos se deseará compartir el contexto de ejecución, para así utilizar las propiedades inicializadas en el target padre. &nbsp;Para estos casos, se puede a&ntilde;adir el argumento <em>inheritAll</em> y asignarle el valor "true":</p>
+<pre class="brush: actionscript3; gutter: true">
+<phing phingfile="limpiar_codigo.xml" target="quitaespacios" inerhitAll="true"/></pre><br />
+Pero, como en otras tareas de Phing, también es posible enviar valores de propiedades nuevas, así:</p>
+<pre class="brush: actionscript3; gutter: true">
+<phing phingfile="limpiar_codigo.xml" target="quitaespacios">
+<property name="tab_to_spaces" value="true" />
+<property name="tab_amount" value="4" />
+</phing></pre><br />
+En este caso suponemos que el target <em>quitaespacios</em> tiene la opción de convertir los tabuladores en 4 espacios.</p>
+<p>&nbsp;</p>
+<h2>phingcall</h2><br />
+Casi idéntico a phing, pero... para el proyecto actual. Es decir, phingcall se encarga de llamar a subrutinas, utilizadas en otros <em>targets</em> del mismo proyecto (o bien, utilizando la anterior tarea <em>phing</em>, llamable desde otros proyectos).</p>
+<p>En este caso, el único parámetro es target. Y como en el caso de la tarea <em>phing</em> puede enviar propiedades a la tarea llamada:</p>
+<pre class="brush: xml; gutter: true">
+<phingcall target="tabtospaces">
+<property name="tab_amount" value="4" />
+</phingcall></pre><br />
+La anterior llamada podría estar situada dentro del archivo <em>limpiar_codigo.xml</em>, y ser llamada, por ejemplo, desde el target <em>quitaespacios</em>.</p>
+<p>&nbsp;</p>
+<h2>import</h2><br />
+Este caso es un intermedio: permite guardar los <em>targets</em> en otro archivo, pero no se realiza una llamada externa, porque en realidad los <em>targets</em> se están importando y se pueden ejecutar como si estuvieran en el mismo archivo.</p>
+<pre class="brush: xml; gutter: true">
+<project name="limpiar_codigo" basedir="." default="...">
+  <import file="limpiar_codigo.xml"/><br />
+</project></pre><br />
+Puede suceder que los dos archivos XML incluyan un target con el mismo nombre. &nbsp;En ese caso, el target del archivo principal (el que realiza el <em>import</em>) tiene precedencia. Sin embargo, se puede llamar al target del archivo importado utilizando el nombre <em>proyecto.target</em>.</p>
+<p>Por ejemplo, si limpiar_codigo.xml tiene como nombre de proyecto "limpiar_codigo", incluye la tarea <em>tabtospaces</em>, y el proyecto principal también tiene ese mismo nombre de tarea, puedes llamar a la tarea hija con una phingcall cuyo atributo <em>target</em> sea <em>limpiar_codigo.tabtospaces</em>.</p>
+<p>Otro detalle clave en las importaciones es que un target importado utilizará las variables de entorno de su nuevo contexto de ejecución. &nbsp;Por ejemplo, su ruta será la del proyecto padre, y las rutas relativas (por ejemplo para cargar archivos de propiedades) también tendrán ese comportamiento.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 12<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-operaciones-sistema-archivos/">Phing (V) - Operaciones con el sistema de archivos</a></h3>
+        </header>
+        <section>
+            
+                <p><h2>Creación y acceso a directorios</h2><br />
+Algunas de las operaciones que puedes realizar con el sistema de archivos son:&lt;/p&gt;<!--more--></p>
+<p><h3>Operaciones con directorios</h3><br />
+Para crear un directorio:&lt;/p&gt;</p>
+<p><pre class="brush: xml; gutter: true"><mkdir dir="/tmp/sopadebits" /><br /></p>
+<p><mkdir dir="/tmp/sopadebits" mode="0755"/>&lt;/pre&gt;<br />
+Lo anterior genera el archivo /tmp/sopadebits. Si se utiliza el segundo formato, se establecen los permisos de acceso (chmod) de ese directorio. El valor es octal y utiliza la misma estructura que el comando de consola <em>chmod</em>.&lt;/p&gt;</p>
+<p class="brush: xml; gutter: true">Para <em>absolutizar</em> un path relativo:</p></p>
+<pre class="brush: xml; gutter: true"><resolvepath propertyName="my_abs_path" file="./test.txt"/></pre><br />
+Nos devuelve la ruta completa hasta el archivo test.txt.</p>
+<p>Si lo que queremos es cambiar los permisos o el propietario/grupo de un archivo o directorio, tenemos las tareas <em>chmod</em> y <em>chown</em>:</p>
+<pre class="brush: xml; gutter: true"><chown file="./test.txt" user="www-data" /></pre><br />
+y:</p>
+<pre class="brush: actionscript3; gutter: true"><chown file="./test.txt" user="www-data" group="www-data" /></pre><br />
+Aunque pueda aparentar lo contrario, el atributo <em>file</em> permite tanto archivos como directorios.</p>
+<pre class="brush: xml; gutter: true"><chmod file="./test.txt" mode="0555" /><br />
+<chmod file="/tmp/sopadebits" mode="0775" verbose="true"/></pre><br />
+En el primer caso establecemos los permisos de lectura y ejecución para todos los usuarios para el archivo test.txt, mientras que en el segundo lo hacemos sobre un directorio y solicitamos que la ejecución del comando muestre más detalles de la operación (<em>verbose</em>).</p>
+<h2>Manipulación de archivos</h2><br />
+Para el caso, se puede resumir con los comandos Copy, Delete, Move, LoadFile, FileHash y Touch... Uno por uno funcionan de la siguiente manera:</p>
+<pre class="brush: xml; gutter: true"><copy file="./test.txt" tofile="/tmp/sopadebits/test.txt" overwrite="true"/></pre><br />
+Copia el archivo al directorio /tmp/sopadebits/, y lo sobreescribe si existe.</p>
+<pre class="brush: xml; gutter: true"><delete file="/tmp/sopadebits/test.txt" /><br />
+<delete dir="/tmp/sopadebits" verbose="true" failonerror="true" /></pre><br />
+Lo primero borra el archivo que habíamos copiado con la tarea <copy>. Lo segundo borraría el directorio /tmp/sopadebits al completo. &nbsp;Como en casos anteriores, hemos a&ntilde;adido la opción <em>verbose</em> para que nos facilite detalles de la operación. &nbsp;Sin embargo, en este caso solicitamos que, en caso de error, la ejecución de la tarea finalice. Esto puede ser útil para evitar estropicios o tareas inútiles que requieran de este borrado.</p>
+<pre class="brush: xml; gutter: true"><move file="./test.txt" tofile="/tmp/sopadebits/test.txt" overwrite="true"/></pre><br />
+En este caso Phing mueve el archivo test.txt al directorio temporal, sobreescribiendo la copia antigua si ésta existe.</p>
+<pre class="brush: actionscript3; gutter: true"><filehash file="./test.txt" hashtype="1" /></pre><br />
+Calcula el hash SHA1 de test.txt. Si no indicara hashtype, o indicara el valor 0, se calcularía el MD5. El valor de este hash se puede guardar en una variable, si se especifica el atributo propertyName:</p>
+<pre class="brush: actionscript3; gutter: true"><filehash file="./test.txt" hashtype="1" propertyName="myhash" /></pre><br />
+En este caso, podré utilizar la varialbe ${myhash} para indicar el resultado de esta operación. &nbsp;Pero lo cierto es que no es necesario indicar un nombre de variable. Por defecto, puedes utilizar la variable ${filehashvalue}, que es la variable donde se guarda este valor por defecto.</p>
+<p>&nbsp;</p>
+<p>Y finalmente, operación <em>touch</em>, que permite modificar algunos atributos del archivo o directorio sin modificar le contenido:</p>
+<pre class="brush: actionscript3; gutter: true"><touch file="./test.txt" millis="123456789" /><br />
+<touch file="./test.txt" datetime="10/10/2012 07:45 PM" /></pre><br />
+Lo primero establece la fecha de modificación en base a los milisegundos transcurridos desde el <em>Unix Epoch</em> (1/1/1970 00:00:00). En el segundo caso establece la fecha de una forma más <em>amigable</em>.</p>
+<p>Filesize:</p>
+<pre class="brush: xml; gutter: true"><filesize file="./test.txt" /></pre><br />
+Mide el tama&ntilde;o de un archivo. Podemos indicar una variable que guarde ese dato indicando el atributo <em>propertyname</em>, pero por defecto se guarda en la variable <em>${filesize}</em>.</p>
+<p>Y hasta aquí las operaciones más habituales con ficheros que puedes hacer utilizando Phing. No son todas, ni mucho menos. Puedes continuar la lectura en la <a title="Página de documentación de Phing" href="http://www.phing.info/docs/guide/stable/">página de documentación de Phing</a>.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 10<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/autenticacion-ssh-por-clave-publica/">Autenticación SSH por clave pública</a></h3>
+        </header>
+        <section>
+            
+                <p>Las operaciones de carga de contenidos y de gestión de servidores por SSH es imprescindible. La operativa implica el conocimiento de las claves de acceso, y cuando se llega a un determinado número de servidores distintos, cada uno con sus propias claves, la memoria empieza a fallar, se empiezan a apuntar las contrase&ntilde;as en sitios no siempre seguros (al menos no tanto como nuestra memoria), y ni siquiera así las recordamos todas.</p><!--more-->
+<p>Así que, quizá, podríamos disponer de una sola clave para todas estas autenticaciones. O quizá ninguna clave, sólo un elemento que nos identifique en el servidor.</p>
+<h2>Una clave para todos los accesos</h2><br />
+Afortunadamente SSH permite generar claves públicas. Una clave pública no es más que un peque&ntilde;o archivo con un código derivado de nuestra clave SSH privada, y que permite que un servidor, mediante operaciones criptográficas, pueda confirmar que nosotros somos los creadores de ese archivo.</p>
+<h2>Pero entonces, contrase&ntilde;a, &iquest;Sí o no?</h2><br />
+Pues no es necesario, pero sí <strong>muy</strong> recomendable. &nbsp;Piensa que si alguien tiene acceso a tu equipo de trabajo (o al pendrive, o cualquier soporte donde estén esas claves), la contrase&ntilde;a es la única barrera entre éste y el acceso a ese servidor.</p>
+<p>Lo cierto es que con la clave pública puedes utilizar unas pocas contrase&ntilde;as (o una sola, eso depende de ti) para todas las claves públicas de acceso, y por ello ya no deberás que recordarlas. Pero entre eso y prescindir completamente de contrase&ntilde;as, mejor usa unas pocas con criterio.</p>
+<p>Bueno y ahora, basta de cháchara, vamos al grano.</p>
+<h2>Crear clave pública</h2></p>
+<pre class="brush: bash; gutter: true">~$ ssh-keygen -t rsa<br />
+Generating public/private rsa key pair.<br />
+Enter file in which to save the key (/home/mario/.ssh/id_dsa): <strong>mynewpubkey</strong><br />
+Enter passphrase (empty for no passphrase):&nbsp;<br />
+Enter same passphrase again:&nbsp;<br />
+Your identification has been saved in <strong>mynewpubkey</strong>.<br />
+Your public key has been saved in <strong>mynewpubkey.pub</strong>.<br />
+The key fingerprint is: 60:d6:96:ba:40:11:72:78:f0:c4:xx:xx:xx:xx:xx:xx user@host<br />
+The key&#039;s randomart image is:<br />
++--[ RSA 1024]----+<br />
+| &nbsp;o+=o . &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp;.=o.+. . &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; .oo+++ &nbsp; &nbsp; &nbsp; &nbsp;|<br />
+| &nbsp; .+oE+ &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; &nbsp;.=. S &nbsp; &nbsp; &nbsp; &nbsp;|<br />
+| &nbsp; &nbsp;.... &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; &nbsp; .. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br />
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |<br />
++-----------------+</pre><br />
+Así que ahora podemos encontrar los archivos mypubkey y mypubkey.pub. El primer archivo es la clave privada. Debemos copiarlo al directorio .ssh de nuestro usuario local, y cargar la clave pública al servidor al cual queremos acceder. Puedes tener varios archivos de claves en ese mismo directorio.</p>
+<h2>Autenticación indicando la clave</h2><br />
+Es necesario cargar ese archivo de clave pública al servidor SSH al que queremos autenticarnos con clave pública. Para ello hay que acceder al directorio del usuario con el que nos identificaremos (supongamos que sea "myuser") y crear/modificar el archivo de claves aceptadas:</p>
+<pre class="brush: bash; gutter: true">~$ cd /home/myuser/.ssh<br />
+# si ya existe, no es necesario crear el archivo&nbsp;<br />
+~$ touch authorized_keys<br />
+~$ cat mypubkey.pub >> &nbsp;authorized_keys</pre><br />
+Lo anterior supone &nbsp;que hemos cargado vía SCP el archivo mypubkey.pub al servidor que queremos conectar, y que lo hemos dejado en /home/myuser/.ssh/mypubkey.pub.</p>
+<p>Después de cargar la clave, podemos conectarnos vía SSH. La contrase&ntilde;a que se nos pedirá es la de la clave SSH y no la del servidor, si es que hemos indicado contrase&ntilde;a de la clave.</p>
+<p>Finalmente estamos dentro, y ya tenemos una contrase&ntilde;a menos que recordar ;-).</p>
+<p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 8<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/version-visual-del-teorema-central-del-limite/">Versión visual del Teorema Central del Límite</a></h3>
+        </header>
+        <section>
+            
+                <p><p>Desde luego es una peque&ntilde;a curiosidad visual. A veces intentar relacionar lo aplastante de los teoremas con la simple realidad es una tarea compleja, y muy preciada en estadística.<br />
+<a id="more"></a><a id="more-27145"></a><br />
+Por eso se agradece encontrar ejemplos tan sencillos y evidentes como éste, demostrando que <a href="http://blog.vctr.me/posts/central-limit-theorem.html">la caída de bolas acaba formando una campana de Gauss </a></p><!--more--></p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 7<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-condiciones-operadores-comparacion/">Ping (IV) - Condiciones y operadores de comparación</a></h3>
+        </header>
+        <section>
+            
+                <p>Los if's y else's no son muy diferentes en Phing que en el resto de lenguajes. Sí cambia el formato en el que se presentan, debido a la propia estructura del XML. Y en algunos casos es necesario atender a los detalles.</p><!--more-->
+<h2>El if más simple</h2><br />
+Aquí lo tienes. Poco más simple puede ser:</p>
+<pre class="brush: xml; gutter: true"><if><br />
+  <equals arg1="a" arg2="b"></p>
+<then>
+    <echo>a = b</echo><br />
+  </then><br />
+</if></pre><br />
+También puedes a&ntilde;adir un else...</p>
+<pre class="brush: actionscript3; gutter: true"><if><br />
+  <equals arg1="a" arg2="b"></p>
+<then>
+    <echo>a = b</echo><br />
+  </then><br />
+  <else><br />
+    <echo>a != b</echo><br />
+  </else><br />
+</if></pre><br />
+O un elseif...</p>
+<p class="brush: actionscript3; gutter: true">&nbsp;</p></p>
+<pre class="brush: actionscript3; gutter: true"><if><br />
+  <equals arg1="a" arg2="b"/></p>
+<then>
+    <echo>a = b</echo><br />
+  </then><br />
+  <elseif></p>
+<then>
+      <equals arg1="a" arg2="c"/><br />
+    </then><br />
+    <echo>a = c</echo><br />
+  </elseif><br />
+  <else><br />
+    <echo>a != b</echo><br />
+  </else><br />
+</if></pre><br />
+Entonces, &iquest;ya está? No, ahora se complica un pelín más, pero sólo un pelín.</p>
+<h2>Operadores booleanos en la comparación</h2><br />
+A diferencia de otros muchas tareas (o tags, si lo prefieres) de Phing, if no lleva directamente argumentos, sino que todo se realiza mediante los tags hijos (<em>nested elements</em> en la documentación de Phing). Entonces, una comparación que incluya un operador OR se mostraría así:</p>
+<pre class="brush: bash; gutter: true"><if><br />
+  <or><br />
+    <equals arg1="a" arg2="b"/><br />
+    <equals arg1="a" arg2="c"/><br />
+  </or></p>
+<then>
+    ...<br />
+  </then><br />
+</if></pre><br />
+Pues no parece tan difícil, &iquest;verdad? Pues a ver con un <em>not</em>...</p>
+<pre class="brush: actionscript3; gutter: true"><if><br />
+  <not><br />
+    <or><br />
+      <equals arg1="a" arg2="b"/><br />
+      <equals arg1="a" arg2="c"/><br />
+    </or><br />
+  </not></p>
+<then>
+    ...<br />
+  </then><br />
+</if></pre><br />
+Y entonces, un <em>and</em> dentro del <em>or</em>, &iquest;cómo queda?</p>
+<pre class="brush: bash; gutter: true"><if><br />
+  <not><br />
+    <or><br />
+      <and><br />
+        <equals arg1="a" arg2="b"/><br />
+        <equals arg1="a" arg2="d"/><br />
+      </and><br />
+      <equals arg1="a" arg2="c"/><br />
+    </or><br />
+  </not></p>
+<then>
+    ...<br />
+  </then><br />
+</if></pre><br />
+Todo esto se puede ir complicando hasta ciertos límites. &nbsp;Lo que sucede es que los mismos tags actúan como "paréntesis", definen el contexto de la comparación, por lo que está claro qué orden de comparaciones se ejecutarán en cada estado de la operación.</p>
+<p>Al final, no resulta tan difícil, &iquest;verdad?</p>
+<h2>Operadores que podemos usar dentro de un if</h2><br />
+Aquí tienes una <a title="Phing Nested operators - Conditions" href="http://www.phing.info/docs/guide/stable/chapters/ProjectComponents.html#Conditions">lista de los <em>nested operators</em></a> que puedes utilizar dentro de un bloque if. échale un vistazo, seguro que se te ocurren cosas ;-).</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 5<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/siege-extraer-urls-reales-de-los-logs-ii/">Siege: extraer URLs reales de los logs (II)</a></h3>
+        </header>
+        <section>
+            
+                <p>Con el proceso anterior, ya teníamos las URIs, y nos faltaba a&ntilde;adir el host y el protocolo para tener una URL completa. &nbsp;Esto se puede conseguir echando mano del comando sed:</p><!--more-->
+<pre>~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039;</pre><br />
+Qué hace esto exactamente? Busca el inicio de la cadena (el carácter "^" es una expresión regular que indica eso) y le a&ntilde;ade el dominio (en mi caso, el de este blog sin el ".com"). Es necesario&nbsp;<em>escapar</em> las barras (\/), como ya es habitual en las expresiones regulares.</p>
+<p>Con lo anterior, nos sale una lista de URLs completas. Cambiando lo anterior, a punto para ser usadas con siege. Sólo falta guardarlas en un archivo de texto. Así que el proceso completo sería:</p>
+<pre>~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039; > urls.txt</pre></p>
+<h2>Ejecutar Siege con una lista de URLs</h2><br />
+Con lo anterior, sólo queda indicar a Siege que queremos utilizar ese archivo "urls.txt" para que realice las pruebas. Esto es tan sencillo como:</p>
+<pre>~$ siege -c {concurrencia} -f ./urls.txt</pre><br />
+&iexcl;Ahí tienes la ejecución! Dependiendo del número de URLs y usuarios concurrentes, el test tardará más o menos en ejecutarse y mostrará los resultados al final.</p>
+<h2>Filtrar/eliminar algunas URLs del listado</h2><br />
+Si por ejemplo queremos limpiar las URLs que cargan CSS, o archivos JS o imágenes PNG, podemos utilizar la herramienta grep:</p>
+<pre>~$ grep -vE "\.(js|css|gif|png|kml)"</pre><br />
+Integrándola en el conjunto de pipes anteriores, el resultado quedaría así:</p>
+<pre>~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; <strong>| grep -vE "\.(js|css|gif|png)"</strong> | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039; &amp;gt; urls.txt</pre><br />
+La opción "-v" de grep permite seleccionar las líneas que NO contengan la expresión indicada, y la opción "E" permite indicar una expresión regular. Con eso ya tenemos la lista de URLs limpias y podemos volver a ejecutar la prueba.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Jun 3<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/siege-extraer-urls-reales-de-los-logs-i/">Siege: extraer URLs reales de los logs (I)</a></h3>
+        </header>
+        <section>
+            
+                <p><a title="Siege Home" href="http://www.joedog.org/siege-home/" target="_blank">Siege</a> es una herramienta de pruebas de carga, que permite simular el comportamiento de una web bajo condiciones extremas (el asedio del servidor).</p><!--more-->
+<p>Un número de peticiones altas, fuerte nivel de concurrencia, etc., son circunstancias a las que se enfrentará una web con una audiencia elevada, o a puntas de consultas, como por ejemplo debido a campa&ntilde;as publicitarias, eventos específicos, salida a la venta de nuevos productos, y otros.</p>
+<p>Así que nos encontramos en esa situación, y decidimos que la herramienta es siege. &nbsp;&iquest;qué más hay que hacer?</p>
+<p>En ubuntu/debian, la instalación es sencilla, desde una terminal:</p>
+<pre class="brush: bash; gutter: true">~$ sudo apt-get install siege</pre><br />
+Con eso ya tendremos instalado siege, y podremos ejecutarlo. &nbsp;Podemos ejecutar una prueba, contra la web que queremos testear:</p>
+<pre class="brush: bash; gutter: true">~$ siege http://{host}/</pre><br />
+o también:</p>
+<pre class="brush: bash; gutter: true">~$ siege -c 30 http://{host}/</pre><br />
+para simular 30 usuarios concurrentes.</p>
+<p>Donde {host} es el nombre del dominio que se quiere probar. Obvia decir que esta prueba debe realizarse en un <strong>entorno controlado y bajo nuestra propia responsabilidad</strong>, y que en ningún caso se debe ejecutar sobre servidores y webs ajenas. Las consecuencias de ese uso impropio quedan bajo la responsabilidad del usuario.</p>
+<h2>Paso 1: Obtener las direcciones</h2><br />
+Bien, si con lo anterior ya se puede realizar la prueba, &iquest;Para qué necesitamos más? Pues porque las simulaciones pueden requerir una variedad mayor de URLs, que cargan diversos componentes, tienen estrategias diversas de caché, o por lo que sea.</p>
+<p>Y &iquest;de dónde sacamos esas URLs? Una de las opciones es un archivo de logs de Apache. &nbsp;Si dispones de un log de apache con datos de navegación real, o se puede generar uno visitando la web. &nbsp;Por ejemplo, se puede programar un crawler sencillo, tal como <a title="Httrack" href="http://www.httrack.com/" target="_blank">Httrack</a> o similar. Lo que interesa no es la descarga de contenidos, sino que se navegue por la web para generar logs de Apache.</p>
+<h2>Paso 2: Limpiar y preparar las URLs</h2><br />
+El log de apache tiene un formato similar al siguiente:</p>
+<pre class="brush: text; gutter: true">189.147.178.214 - - [19/May/2013:06:41:18 +0200] "GET /wp-content/themes/retina/style.css HTTP/1.1" 200 5213 "http://www.sopadebits.com/patrones-organizativos-gestion-informacion" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"</pre><br />
+Podemos identificar:</p>
+<ul>
+<li>Dirección IP</li>
+<li>Fecha y hora de acceso</li>
+<li>Método de acceso (GET), URI (sin dominio) y versión del protocolo</li>
+<li>resultado de la petición (200 = Ok) y tama&ntilde;o del contenido retornado (5213 bytes)</li>
+<li>URL desde donde se ha llegado (el referer)</li>
+<li>Firma del navegador, y sistema operativo.</li><br />
+</ul><br />
+Lo que nos interesa es la URI, a la que posteriormente deberemos a&ntilde;adir el dominio completo.</p>
+<p>&iquest;Cómo extraeremos esa URL? Con <a title="GNU's AWK guide" href="http://www.gnu.org/software/gawk/manual/gawk.html" target="_blank">awk</a>. Esto permite extraer los contenidos separándolos por espacios (entre infinidad de otras posibilidades, vale la pena echarle un ojo). &nbsp;En nuestro caso, la instrucción en consola puede ser:</p>
+<pre class="brush: bash; gutter: true">~$ cat {archivo-de-log} | awk &#039;{print $7}&#039;</pre><br />
+Bien, eso genera un listado considerable de URLs, muchas de ellas repetidas. Las ordenaremos y obtendremos la lista única de URIs:</p>
+<pre class="brush: bash; gutter: true">~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; | sort | uniq</pre><br />
+Voil&agrave;! Aquí tienes una lista de URIs únicas, casi ya lo tenemos. Sólo queda a&ntilde;adir el protocolo y el nombre del host. Se puede conseguir echando mano del comando sed:</p>
+<pre class="brush: bash; gutter: true">~$ cat {archivo-de-log} | awk &#039;{print $7}&#039; | sort | uniq | sed -e &#039;s/^/http:\/\/sopadebits/g&#039;</pre><br />
+Qué hace esto exactamente? Busca el inicio de la cadena (el carácter "^" es una expresión regular que indica eso) y le a&ntilde;ade el dominio (en mi caso, el de este blog sin el ".com"). Es necesario&nbsp;<em>escapar</em> las barras (\/), como ya es habitual en las expresiones regulares.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                May 31<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/phing-iii-crear-variables-y-ejecutar-comandos-shell/">Phing (III) - Crear variables y ejecutar comandos shell</a></h3>
+        </header>
+        <section>
+            
+                <p>En el último artículo de Phing nos habíamos quedado en la introducción de datos, y con la posibilidad de definir las opciones que tiene el usuario. Vamos a ver dos funcionalidades más de Phing.</p><!--more-->
+<h2>Propiedades (variables)</h2></p>
+<h3>Creación</h3><br />
+Puedes utilizar dos formas generales. Para empezar la más simple, utilizando el tag
+<property>, o propertyTask. Esto se indica así:</p>
+<pre>
+<property name="variable1" value="var1"/></pre><br />
+Otra opción es utilizar la introducción de datos, tal como lo vimos en el segundo ejemplo:</p>
+<pre><input propertyName="variable1" defaultValue="var1">Valor de variable1</input></pre><br />
+Con cualquiera de estas opciones estás inicializando una variable que podrás utilizar.</p>
+<p>El contexto de las variables es el mismo que el de su creación: es decir, una variable creada en un <em>target</em> sólo estará disponible en su propio target. Si se crea en el contexto
+<project>, estará disponible en todas las operaciones del proyecto (el archivo XML), pero no estará disponible en otros proyectos llamados desde éste.</p>
+<h3>Invocación</h3><br />
+Las variables en Phing se invocan utilizando el formato ${nombre-variable}:</p>
+<pre class="brush: xml; gutter: true">...</p>
+<property name="variable1" value="var1"/>
+<echo>Variable1 has value ${var1}</echo><br />
+...</pre></p>
+<p class="brush: xml; gutter: true">Así que ahora ya puedes generar y utilizar variables en los builds.</p></p>
+<h2>Archivos de propiedades</h2><br />
+En algunos casos, en vez de indicar los valores en tags
+<property> o solicitándolos al usuario, te puede interesar indicarlos en un archivo de propiedades. &nbsp;Estos archivos deben tener un nombre acabado en ".properties".</p>
+<p>El contenido de un archivo de propiedades al que, por ejemplo, puede tener un archivo INI. Es decir, un conjunto de claves y valores, pero sin apartados [separados por títulos con claves].</p>
+<pre class="brush: text; gutter: true"># Los archivos de propiedades contienen pares clave/valor<br />
+# Los valores de propiedades pueden contener:<br />
+# 1. caracteres alfanuméricos<br />
+# 2. y puntos<br />
+# Pero no pueden contener caracteres especiales<br />
+# Aprovecha para crear "namespaces" de variables<br />
+myapp.cache.enable=1<br />
+myapp.cache.ttl=500<br />
+myapp.session.save=1<br />
+</pre><br />
+Así que ahora puedes cargar este archivo (supongamos que se llama file.properties y está en el mismo directorio que el archivo build.xml), en el proyecto (o el target) que lo necesiten, con la instrucción:</p>
+<pre class="brush: xml; gutter: true">...</p>
+<property file="./file.properties"/>
+...</pre><br />
+Esto permite diferenciar los datos del proceso, y por ello simplifica la parametrización de algunas operaciones, como por ejemplo:</p>
+<ul>
+<li>cargar ciertas configuraciones según el sistema operativo.</li>
+<li>Solicitar un <input> al usuario y obtener las propiedades de su archivo específico.</li><br />
+</ul><br />
+Supongo que ya ves por dónde va el tema: reutilizar más fácilmente el proceso, con sólo variar las configuraciones.</p>
+<h2>Propiedades disponibles proporcionadas por Phing</h2><br />
+La siguiente es una lista de las propiedades, tal como constan en la documentación de Phing. Estas variables están disponibles desde cualquier punto de la ejecución:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th></p>
+<th>Contenido</th><br />
+</tr><br />
+</thead></p>
+<tbody>
+<tr>
+<td>application.startdir</td></p>
+<td>Directorio actual de ejecución</td><br />
+</tr></p>
+<tr>
+<td>env.*</td></p>
+<td>Variables de entorno extraídas de&nbsp;<em>$_SERVER</em>.</td><br />
+</tr></p>
+<tr>
+<td>host.arch</td></p>
+<td>Arquitectura del sistema, ej.&nbsp;<em>i586</em>.&nbsp;<em>No disponible en equipos Windows</em></td><br />
+</tr></p>
+<tr>
+<td>host.domain</td></p>
+<td>Nombre del dominio, ej. php.net. No disponible en equipos Windows</td><br />
+</tr></p>
+<tr>
+<td>host.fstype</td></p>
+<td>Tipo de sistema de archivos. Los valores posibles son&nbsp;<em>UNIX</em>,&nbsp;<em>WINNT</em> y&nbsp;<em>WIN32</em></td><br />
+</tr></p>
+<tr>
+<td>host.name</td></p>
+<td>Nombre de host del sistema operativo, según lo retorna la función <em>posix_uname()</em>.&nbsp;<em>No disponible en equipos Windows.</em></td><br />
+</tr></p>
+<tr>
+<td>host.os</td></p>
+<td>Descripción del sistema operativo, proporcionada por la variable PHP_OS</td><br />
+</tr></p>
+<tr>
+<td>host.os.release</td></p>
+<td>Número de entrega del sistema operativo. No disponible en equipos Windows<em>.</em></td><br />
+</tr></p>
+<tr>
+<td>host.os.version</td></p>
+<td>Versión del sistema operativo i.e.&nbsp;<em>#4 Tue Jul 20 17:01:36 MEST 1999</em>.&nbsp;<em>No disponible en equipos Windows</em></td><br />
+</tr></p>
+<tr>
+<td>line.separator</td></p>
+<td>Caracter(es) que marcan el final de línea, "\n" para Linux, "\r\n" para Windows, "\r" para Macintosh.</td><br />
+</tr></p>
+<tr>
+<td>os.name</td></p>
+<td>Descripción del sistema operativo, proporcionada por la variable PHP_OS</td><br />
+</tr></p>
+<tr>
+<td>phing.file</td></p>
+<td>Ruta completa hasta el archivo build.</td><br />
+</tr></p>
+<tr>
+<td>phing.dir</td></p>
+<td>Ruta que contiene el <em>buildfile</em> actual.</td><br />
+</tr></p>
+<tr>
+<td>phing.home</td></p>
+<td>Directorio de instalación de Phing, no indicado en las instalaciones desde PEAR.</td><br />
+</tr></p>
+<tr>
+<td>phing.version</td></p>
+<td>Versión actual de Phing.</td><br />
+</tr></p>
+<tr>
+<td>phing.project.name</td></p>
+<td>Nombre del proyecto que se procesa en este momento.</td><br />
+</tr></p>
+<tr>
+<td>php.classpath</td></p>
+<td>Valor de la variable de entorno&nbsp;<em>PHP_CLASSPATH</em>.</td><br />
+</tr></p>
+<tr>
+<td>php.version</td></p>
+<td>Versión del intérprete PHP. El mismo que la constante&nbsp;<em>PHP_VERSION</em>.</td><br />
+</tr></p>
+<tr>
+<td>project.basedir</td></p>
+<td>El directorio base actual.</td><br />
+</tr></p>
+<tr>
+<td>user.home</td></p>
+<td>Valor de la variable de entorno&nbsp;<em>HOME</em>.</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+<span style="color: #222222; font-size: 22px; line-height: 1.35;">Ejecuciones de comandos shell</span></p>
+<p>Por ejemplo, uno muy sencillito: obtener el nombre del usuario que está ejecutando el script:</p>
+<pre class="brush: bash; gutter: true"><exec command="whoami" outputProperty="username"/></pre></p>
+<p class="brush: bash; gutter: true">El comando <em>whoami</em> nos devuelve el nombre de usuario que está autenticado en la consola. &nbsp;Puedes ejecutarlo directamente en una consola y verificar que retorna los mismos valores.</p></p>
+<p class="brush: bash; gutter: true">Con esta opción tan sencilla, tendremos una variable llamada username que tendrá el nombre del usuario. Y podremos ejecutar algo así como:</p></p>
+<pre class="brush: bash; gutter: true"><echo>El usuario ${username} está ejecutando el script</script></pre></p>
+<p class="brush: bash; gutter: true">El <a title="Phing: ExecTask" href="http://www.phing.info/docs/guide/stable/chapters/appendixes/AppendixB-CoreTasks.html#ExecTask" target="_blank">comando <exec></a> tiene otras varias opciones que te recomiendo conocer. Por ahora lo dejamos aquí.</p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                May 29<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/automatizar-con-phing-ii-builds-y-targets/">Automatizar con Phing (II) - projects y targets</a></h3>
+        </header>
+        <section>
+            
+                <p></p><!--more-->
+<p class="brush: xml; gutter: true">En un artículo anterior, Phing quedó instalado y listo para probar. Así que ahora toca ponerlo en marcha, manos a la obra. Crearemos un directorio llamado "phingtest", donde crearemos un archivo llamado build.xml. &nbsp;Introduciremos el siguiente contenido en el XML:</p></p>
+<pre class="brush: xml; gutter: true"><?xml version="1.0" encoding="UTF-8" ?></p>
+<project name="proyecto1" default="liked">
+  <target name="liked"><br />
+    <echo>Esto es un primer comentario</echo><br />
+    <input propertyName="like">&iquest;Te ha gustado?</input><br />
+    <echo>Tu respuesta es &#039;${like}&#039;</echo><br />
+  </target><br />
+</project></pre><br />
+Ahora, guardando y abriendo un terminal, podemos dirigirnos a la carpeta phingtest y teclear:</p>
+<pre class="brush: bash; gutter: true">~$ phing</pre></p>
+<p class="brush: bash; gutter: true">Cuyo resultado es:</p></p>
+<pre class="brush: bash; gutter: true">[echo] Esto es un primer comentario<br />
+[input] &iquest;Te ha gustado? Sí<br />
+[echo] Tu respuesta es &#039;Sí&#039;</pre></p>
+<h2 class="brush: bash; gutter: true">Builds y <em>targets</em></h2><br />
+En el archivo XML (que en Phing se denomina <em>buildfile</em>) podemos ver que el tag raíz es
+<project>. &nbsp;Todas las operaciones disponibles para un archivo de build estarán dentro de este tag.</p>
+<p>El tag project contiene dos atributos:</p>
+<ul>
+<li>name: Identifica el proyecto de forma única.</li>
+<li>default: Es el <em>target</em> que se ejecutar&agrave; por defecto.</li><br />
+</ul><br />
+Pero &iquest;Qué es un target? Pues son las <em>tareas programadas que se pueden realizar</em>. A excepción que indiquemos lo contrario, todas los targets se pueden ejecutar directamente, y se pueden entender como peque&ntilde;os procesos <em>batch</em> (o interactivos si a&ntilde;adimos inputs). &nbsp;En otros contextos serían comandos complejos, macros o scripts, formados por tareas (tasks en la documentación de Phing).</p>
+<p>Pero el caso es que, y esto es lo importante, las tareas son clases PHP, y lo que hace Phing es ahorrarnos la programación a medida para situaciones que no requieren de tal complejidad.</p>
+<p>Eso siempre con el permiso de la sintaxis XML. Pero es relativamente fácil acostumbrarse, para el esfuerzo que te ahorras ;-).</p>
+<h2 class="brush: bash; gutter: true">Ejemplo: introducción de datos</h2></p>
+<p class="brush: bash; gutter: true">En el ejemplo inicial todo es muy simple: dos <em>echos</em> y la entrada de texto. Pero vamos a mejorarlo un poco. Vamos a establecer un valor por defecto al input. Abrimos el archivo y lo editamos para que quede así:</p></p>
+<pre class="brush: xml; gutter: true"><?xml version="1.0" encoding="UTF-8" ?></p>
+<project name="proyecto1" default="liked">
+  <target name="liked"><br />
+    <echo>Esto es un primer comentario&amp;lt;/echo><br />
+    <input propertyName="like" defaultValue="Sí">&iquest;Te ha gustado?</input><br />
+    <echo>Tu respuesta es &#039;${like}&#039;</echo><br />
+  </target><br />
+</project></pre></p>
+<p class="brush: bash; gutter: true">Así que ya tenemos un valor por defecto. Si lo ejecutas, verás que aparece entre corchetes el texto que hemos indicado. &nbsp;Pero en realidad queremos que el usuario sólo pueda escoger entre dos opciones: Sí o No. &iquest;Podemos? Sí, y resulta bastante fácil. Sólo hay que a&ntilde;adir lo siguiente:</p></p>
+<pre class="brush: xml; gutter: true"><?xml version="1.0" encoding="UTF-8" ?></p>
+<project name="proyecto1" default="liked">
+  <target name="liked"><br />
+    <echo>Esto es un primer comentario&amp;lt;/echo><br />
+    <input propertyName="like" defaultValue="Sí" validArgs="Sí,No">&iquest;Te ha gustado?</input><br />
+    <echo>Tu respuesta es &#039;${like}&#039;</echo><br />
+  </target><br />
+</project></pre></p>
+<p class="brush: bash; gutter: true">Si el usuario ahora intenta introducir un valor distinto a los dos indicados, no podrá seguir. Si deja el valor vacío, se asumirá el valor por defecto (Sí).</p></p>
+<p class="brush: bash; gutter: true">Es probable que con estas dos opciones ya empieces a ver cómo se simplifican ciertas tareas. En este caso es la validación de la introducción de datos. Pero hay más, en ejemplos posteriores lo iremos viendo.</p><br />
+</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                May 27<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/automatizar-con-phing-i-objetivos-e-instalacion/">Automatizar con Phing (I) Objetivos e instalación</a></h3>
+        </header>
+        <section>
+            
+                <p>Phing es una herramienta desarrollada en PHP que permite la automatización de tareas. Si has oído hablar de Apache Ant, Phing es la herramienta análoga para el PHP. &nbsp;Phing permite, mediante la generación de archivos XML (que a pesar del formato, son programas simples), facilitar la automatización de tareas.</p><!--more-->
+<h2>Tareas que pueden ayudar</h2><br />
+Las tareas más habituales (pero no las únicas) son:</p>
+<ul>
+<li>Despliegues/actualizaciones de aplicaciones (entornos locales y remotos, tanto vía FTP com SSH).</li>
+<li>Documentación de código.</li>
+<li>Testeo e integración continua.</li>
+<li>Checkouts de repositorios de código.</li>
+<li>Deploys de bases de datos.</li><br />
+</ul><br />
+Las tareas más habituales acostumbran a ser tareas repetitivas, con poco valor a&ntilde;adido, poco creativas, y en las que resulta fácil equivocarse por errores humanos. En situaciones así, &iquest;Por qué no automatizar?</p>
+<h2>Instalación</h2><br />
+Para &nbsp;instalar Phing, se puede realizar utilizando la herramienta Pear. Si no la tienes instalada, puedes hacerlo instalando el paquete php-pear:</p>
+<pre class="brush: bash; gutter: false">~$ sudo apt-get install php-pear</pre><br />
+Una vez instalado, puedes a&ntilde;adir el canal de Phing:</p>
+<pre class="brush: bash; gutter: false">~$ sudo pear channel-discover pear.phing.info</pre></p>
+<p class="brush: bash; gutter: true">Y después ya puedes instalarlo:</p></p>
+<pre class="brush: bash; gutter: false">~$ sudo pear install --alldeps phing/phing</pre><br />
+Bien, esto te facilita la disponibilidad de Phing, pero algunas de funcionalidades <em>de serie</em> sólo estarán disponibles en versiones más avanzadas. Si es tu caso, será necesario hacer un peque&ntilde;o a&ntilde;adido:</p>
+<pre class="brush: bash; gutter: true">~$ sudo pear config-set preferred_state alpha<br />
+~$ sudo pear install --alldeps phing/phing<br />
+~$ sudo pear config-set preferred_state stable</pre><br />
+Con esto, podremos instalar Phing con las opciones más actuales (y también inestables) para luego volver a instalar versiones estables de paquetes pear.</p>
+<p>Con este proceso, ya puedes empezar a utilizar Phing. &nbsp;Comentaré algunos ejemplos en artículos posteriores. Puedes echar un vistazo a esta presentación en Slideshare, que introduce los conceptos básicos de los componentes de Phing:</p>
+<p>[slideshare id=11755071&amp;doc=phingphpuk2012-120226083028-phpapp02]</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../en/page/15/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">14</a>
+        
+        
+          <a class="btn btn-primary" href="../../../en/page/13/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
