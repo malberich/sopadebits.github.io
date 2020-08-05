@@ -1,0 +1,548 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../../en/blog/page/10/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">9</a>
+        
+        
+          <a class="btn btn-primary" href="../../../../en/blog/page/8/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Dec 8<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/enlaces-interesantes/">Enlaces interesantes</a></h3>
+        </header>
+        <section>
+            
+                <p>&nbsp;</p><!--more-->
+<ul>
+<li>Las búsquedas más populares que se están realizando en google, en tiempo real, dentro del <a href="http://www.google.com/trends/hottrends/visualize?nrow=5&amp;ncol=5">Google Hot trends</a>.</li>
+<li>Algunas veces, <a href="http://www.perceptualedge.com/blog/?p=1271">menos es simplemente menos</a>, por <a href="http://www.perceptualedge.com/">Stephen Few</a>.</li>
+<li>Usar <a href="http://viscomvibz.wordpress.com/">explicaciones visuales para el aprendizaje</a>, contiene ideas interesantes, recogidas también en el blog <a href="http://visualexplanationlibrary.wordpress.com/">visual explanation library</a>, como parte de un proyecto de investigación de un&nbsp;alumno&nbsp;de dise&ntilde;o/bellas artes en Oslo.</li>
+<li>Para ir más a fondo, puedes leer también <a href="http://chimera.labs.oreilly.com/books/1230000000345/index.html">Interactive data visualization for the web</a>, por Scott Murray.</li>
+<li>Y si lo que te gusta es también recopilar y analizar los datos (en concreto de Twitter), aquí tienes <a href="http://tweettracker.fulton.asu.edu/tda/">Twitter Data Analytics</a>, un libro que describe todas las partes del proceso, con código fuente de ejemplos e información para ponerte manos a la obra.</li>
+<li>Aplicar el uso de&nbsp;<a href="http://magentotutorial.net/function-composer-magento/">Composer para Magento</a>.</li>
+<li>&iquest;Qué tal si aplicamos <a title="WHEN IT COMES TO YOUR DATA, IT'S TIME TO ENFORCE YOUR OWN TERMS AND CONDITIONS" href="http://www.fastcocreate.com/1683545/when-it-comes-to-your-data-its-time-to-enforce-your-own-terms-and-conditions">Términos y condiciones de uso de nuestros datos</a>?</li><br />
+</ul></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Dec 5<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/unspeak-y-los-neologismos-que-venden/">Unspeak y los neologismos que venden</a></h3>
+        </header>
+        <section>
+            
+                <p>Hace tiempo que no tocaba <a title="La teoría de la relevancia en ling&uuml;ística" href="http://www.sopadebits.com/teoria-de-la-relevancia-en-linguistica">temas relacionados con la ling&uuml;ística</a>, y he aquí una peque&ntilde;a joya para degustar, un documental,&nbsp;<a href="http://www.amazon.co.uk/Unspeak-Words-Weapons-Steven-Poole/dp/0349119244">libro</a>,&nbsp;estudio o una combinación de los anteriores, sobre el poder de manipulación del lenguaje en base a la creación de nuevos términos que sirven para lanzar nuevas ideas, conceptos o productos a vender: <a href="http://unspeak.submarinechannel.com/main.php?x=b">Unspeak</a>.</p><!--more-->
+<p>El documental está (por ahora) formado por seis episodios:</p>
+<ul>
+<li>Introducción</li>
+<li>La crisis financiera.</li>
+<li>Desastres naturales.</li>
+<li>Social Media</li>
+<li>El uso de la retórica y la repetición en las campa&ntilde;as presidenciales de estados unidos.</li>
+<li>Las "nuevas enfermedades" (y sus nuevos medicamentos).</li><br />
+</ul><br />
+&iquest;Y ya está? En absoluto. El motivo por el que para mí es una peque&ntilde;a joya son todos los datos con los que se rodea los vídeos. Un ejemplo más que aplicable al periodismo de datos. Por ejemplo:</p>
+<ul>
+<li>Puedes ver el contexto en el que se mencionan <a href="http://unspeak.submarinechannel.com/twitter_context/erectile_dysfunction#1375574400">estas palabras en Twitter (la disfunción eréctil, por ejemplo)</a>&nbsp;y ver los términos relacionados. Esa visualización permite diferenciar el uso de los términos en base al sentimiento (positivo/negativo/neutro), el género y la edad.</li>
+<li>También puedes encontrar un <a href="http://unspeak.submarinechannel.com/dictionary/">diccionario</a> de nuevos términos.</li>
+<li>Y más cosas...</li><br />
+</ul><br />
+Pásate por ahí, seguro que algo interesante vas a encontrar.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Dec 1<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/enlaces-interesantes-sobre-dataviz/">Enlaces interesantes 2013-49 #dataviz</a></h3>
+        </header>
+        <section>
+            
+                <p>Lecturas, ejemplos, tutoriales y proyectos interesantes, por si te pueden dar ideas.</p><!--more-->
+<ul>
+<li><a href="https://www.mapbox.com/blog/visualizing-3-billion-tweets/">Visualizar 3000 millones de tweets</a>, con <a href="https://www.mapbox.com/blog/">MapBox</a>.</li>
+<li>Una lista interesante de <a href="http://exploreyourdata.wordpress.com/2013/07/29/gephi-curated-list-of-tutorials/">tutoriales sobre Gephi</a>.</li>
+<li><a href="https://github.com/kapadia/ruse.js">ruse.js</a>, una biblioteca javascript para visualizaciones de datos utilizando WebGL para gráficos 2D.</li>
+<li>Luces y sombras en algunos ejemplos de visualización, y la <a href="http://source.opennews.org/en-US/learning/visual-literacy-age-data/">necesidad de crear un lenguaje visual</a>, en el <a href="http://source.opennews.org/en-US/">blog Source de Open News</a>.</li>
+<li>Los <a href="http://uxmag.com/articles/five-steps-to-storytelling-with-data">cinco pasos para narrar historias con los datos</a>, según <a href="http://uxmag.com/">UX Magazine</a>.</li><br />
+</ul><br />
+&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 25<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/la-saturacion-visual-donde-esta-wally/">La saturación visual - &amp;iquest;dónde está Wally?</a></h3>
+        </header>
+        <section>
+            
+                <p><div>El umbral de la saturación visual es el punto en el que nuestro cerebro empieza a ser incapaz de distinguir objetos cotidianos y símbolos abstractos (como letras) de forma intuitiva, a simple vista y sin fijarse.</div>&lt;/p&gt;<!--more--></p>
+<p><div>Esa habilidad tiene mucho valor para el procesamiento de la información, porque agiliza la asimilación de nuevos conocimientos. Por eso mismo conocer ese límite importa mucho cuando tratamos de comunicar algo gráficamente. Si se intenta introducir demasiada información, el soporte&nbsp; se satura y al final el mensaje se diluye entre el ruido.</div>&lt;/p&gt;</p>
+<p><div></p>
+<p>Vale, todo eso está muy bien, pero &iquest;cómo afecta cada cambio? &iquest;Todos los cambios afectan por igual?&nbsp; Esto es lo que explica el artículo&nbsp;<em><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2772078/" target="_blank" shape="rect">The uncrowded window of object recognition</a></em>, un&nbsp;<em>paper</em>&nbsp;del 2008 de&nbsp;Denis G Pelli y Katharine A Tillman&nbsp;con mucho jugo:</p>
+<blockquote><p>Let us begin by sketching a popular two-step model of object recognition: feature detection and combination. Features are components of images that are detected independently. They are typically simple and nonoverlapping.</p>
+<p>The first step in object recognition is feature detection.&nbsp;<strong>Each&nbsp;neuron&nbsp;in&nbsp;the&nbsp;primary visual cortex responds when&nbsp;a&nbsp;feature matches its receptive field.&nbsp;Only the features that&nbsp;drive&nbsp;neurons hard&nbsp;enough are detected</strong>. In the second step, the brain combines some of the detected features to recognize the object. This combining step (including &lsquo;integration&rsquo;, &lsquo;binding&rsquo;, &lsquo;segmentation&rsquo;, &lsquo;pooling&rsquo;, &lsquo;grouping&rsquo;, &lsquo;contour integration&rsquo; and &lsquo;selective attention&rsquo;) is still mysterious.(...)</blockquote><br />
+Y ante esa capacidad para reconocer y combinar características, permite identificar conjuntos complejos de rasgos como una unidad... Siempre que estén lo suficientemente aislados:</p>
+<blockquote><p>We take this observation to its most general form, which we call the&nbsp;<strong>Bouma law</strong>: for an object that can be identified <strong>in isolation</strong>, our ability to identify it among similar objects depends solely on the ratio of the object spacing to the observer&rsquo;s critical spacing at that location.</blockquote><br />
+</div></p>
+<div>En ambos casos la negrita es mía.</div></p>
+<div></div></p>
+<div>Es decir, que sólo somos capaces de reconocer un elemento si el cerebro puede identificar sus componentes de forma aislada. Es lo que nos sucede, por ejemplo, con las caras. Los ojos son reconocibles, pero no podemos asegurar que sean de una persona. Necesitamos la combinación de ojos, nariz, boca, etc.</div></p>
+<div></div></p>
+<div>Ese grado de&nbsp;<em>aislamiento</em>&nbsp;del objeto se pierde cuando existe la saturación del entorno, pero lo que define ese aislamiento no es el tama&ntilde;o, sino el&nbsp;<strong>espaciado entre ese objeto y el resto de elementos</strong>. Es por eso que <a href="http://es.wikipedia.org/wiki/%C2%BFD%C3%B3nde_est%C3%A1_Wally%3F" target="_blank">Wally</a>, a pesar de ese jersey tan cantón, nos cuesta tanto encontrar. En ese caso es un entretenimiento, pero si crees que sucede lo mismo en una visualización, quizá puedas echar una lectura al artículo.</div></p>
+<div></div></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 22<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/ventanas-rotas-y-seguridad-ciudadana/">Ventanas rotas y seguridad ciudadana</a></h3>
+        </header>
+        <section>
+            
+                <p><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/20130724110102-0.jpg"><img class="size-large wp-image-27482 alignleft" style="border: 0px; margin: 10px;" alt="20130724110102-0" src="http://www.sopadebits.com/wp-content/uploads/2013/11/20130724110102-0-808x1024.jpg" width="580" height="735" /></a></p><!--more-->
+<p>La <a href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_las_ventanas_rotas">teoría de las ventanas rotas</a>&nbsp;fue propuesta a principios de los 80 como un buen <a title="Indicadores: El ajo dorado" href="http://www.sopadebits.com/indicadores-el-ajo-dorado" target="_blank">indicador</a> del nivel de violencia de un barrio. Explicado en pocas palabras: la cantidad de ventanas rotas o de otros signos de dejadez promovía el crimen. Esta teoría tuvo una gran aceptación, pero actualmente ha sido sometida a críticas considerables, entre otras razones porque es complejo cuantificar algo tan subjetivo como el desorden visible.</p>
+<p>Esta situación es habitual en muchos procesos de análisis científicos: falta un eslabón que permita aplicar un método objetivo (cuantificar el desorden visual) para llegar a la afirmación anterior (hay más o menos desorden visual). Para conseguir superar esa subjetividad, unos <a href="http://web.mit.edu/newsoffice/2013/quantifying-urban-perceptions-0724.html" target="_blank">investigadores del MIT han publicado un paper para cuantificar esos elementos subjetivos</a>.</p>
+<h2>Google Street View</h2><br />
+Para conseguirlo se han recopilado una serie de imágenes de Google Street View, y se han presentado ante una serie de voluntarios. Las imágenes se presentan por parejas, y se solicita a los voluntarios que decidan cuál de las dos imágenes ejemplifica mejor un atributo cualitativo ("clase alta", por ejemplo).</p>
+<p>Con ese proceso de selección los investigadores pudieron establecer valoraciones generales de las áreas seleccionadas para el estudio, cuyos resultados concretos para el área de Nueva York se pueden ver en la imagen lateral.</p>
+<h2>&iquest;Se puede afirmar que la teoría de las ventanas rotas funciona?</h2><br />
+En los resultados obtenidos se detectó que algunas ciudades presentaban una experiencia de estar a salvo muy dispar; polarizada. Eso puede implicar que el propio status del voluntario puede condicionar su votación introduciendo un sesgo.</p>
+<p>Por ejemplo, los coches aparcados en esa calle denotan parcialmente el status de quienes viven ahí: una persona que identifique modelos de gamas más altas o más bajas que en su barrio tenderá a acentuar su valoración hacia el extremo.</p>
+<h2>&iquest;Está todo perdido?</h2><br />
+No. Si se consigue obtener una lista de características de los voluntarios que pudieran introducir sesgos en la valoración, probablemente el modelo se enriquecerá. Por lo tanto es posible mejorar la fiabilidad de los resultados.</p>
+<p>El valor de obtener un modelo así es el de tener una herramienta que permita establecer políticas económicas en áreas especialmente deprimidas para invertir en mejoras (sería deseable que no sólo para maquillar el entorno). También &nbsp;podrían servir como herramienta de detección precoz de la degradación del entorno.</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 20<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/kindred-sangre-de-su-sangre/">Kindred: sangre de su sangre</a></h3>
+        </header>
+        <section>
+            
+                <p><div>Anteriormente <a title="The flavor connection: #dataviz interactivo entre conexiones de alimentos" href="http://www.sopadebits.com/the-flavor-connection-dataviz-interactivo-entre-conexiones-de-alimentos" target="_blank">comentaba la conexión entre alimentos</a>, hoy toca la conexión... sanguínea. Así nos lo muestran desde Stanford con&nbsp;<a href="http://kindred.stanford.edu" target="_blank" shape="rect">kindred</a>: Ahí se visualizan las relaciones de parentesco de unos 30.000 individuos relevantes de la cultura británica.</div>&lt;/p&gt;<!--more--></p>
+<p><div><br clear="none" /><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_021.png"><img class="aligncenter size-medium wp-image-27469" alt="Selecció_021" src="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_021-300x254.png" width="300" height="254" /></a></div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>No sólo eso, sino que es posible establecer los vínculos entre dos nodos de la red:</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div><a href="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_022.jpg"><img class="aligncenter size-full wp-image-27470" alt="Selecció_022" src="http://www.sopadebits.com/wp-content/uploads/2013/11/Selecció_022.jpg" width="950" height="436" /></a></div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Así que ya ves, puedes entretenerte viendo las relaciones que, como la anterior, quizá te sorprendan.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 19<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/diabetes-informacional-leer-noticias-perjudica-tu-mente/">Diabetes informacional - Leer noticias perjudica tu mente?</a></h3>
+        </header>
+        <section>
+            
+                <p>Así lo enfocaba Rolf Dobelli en <a href="http://www.theguardian.com/">The guardian</a> con el artículo <a href="http://www.theguardian.com/media/2013/apr/12/news-is-bad-rolf-dobelli">News is bad for you</a>. Sus argumentos (y siempre bajo su opinión) son:</p><!--more-->
+<ul>
+<li><strong>No centran su atención en el foco de la noticia (news misleads)</strong>: Al buscar la dramatización de la noticia, pueden perder el foco de interés</li>
+<li><strong>Son irrelevantes</strong>: Pocas o ninguna noticia ayudan a sus lectores a tomar mejores decisiones.</li>
+<li><strong>No tienen capacidad para explicar el trasfondo</strong>: Los elementos profundos que generan el cambio están fuera del&nbsp;<em>radar</em> informativo, mientras las noticias sólo son&nbsp;<em>burbujas</em> que emergen de ese trasfondo. Seguir las burbujas no ayuda a entender el trasfondo.</li>
+<li><strong>Son tóxicas para tu cuerpo</strong>: Al centrarse en la dramatización, disparan nuestro sistema límbico y aumentan nuestro estrés. La lista de las consecuencias que indica el autor no es apta para hipocondríacos.</li>
+<li><strong>Aumentan los errores cognitivos</strong>: Por todo lo anterior, las noticias aumentan el sesgo informacional (dar más fundamentos a la opinión propia para que se mantenga intacta).</li>
+<li><strong>Inhiben el pensamiento crítico:</strong> Las noticias tratan de captar tu atención, y por ello distraen de otras tareas que ocupaban tu memoria a corto plazo. En realidad, las noticias están dise&ntilde;adas para ese objetivo.</li>
+<li><strong>Funcionan como una droga:</strong>&nbsp;Por la naturaleza plástica de nuestro cerebro, si tenemos el hábito de leer cosas rápidas y superficiales, frente a lecturas más profundas, cambia nuestra estructura neuronal.</li>
+<li><strong>Malgastan el tiempo:</strong>&nbsp;Porque la información no es un un recurso escaso, pero sí lo es la atención.</li>
+<li><strong>Nos hace pasivos:</strong>&nbsp;Las noticias que se muestran son por lo general&nbsp;<em>demasiado grandes</em> para que aparentemente podamos</li>
+<li><strong>News kills creativity:&nbsp;</strong>Las noticias son por lo general buenas fuentes de información para&nbsp;<em>soluciones antiguas</em>, pero si estás buscando nuevas soluciones, probablemente no las encontrarás ahí.</li><br />
+</ul><br />
+La lista es contundente, y se presta a no pocos matices. &nbsp;En realidad, para mí la diferencia es actitudinal: &iquest;cómo procesamos la información de las noticias? &iquest;Contrastamos la información? &iquest;Analizamos las fuentes? &iquest;Sabemos diferenciar los hechos objetivos de las interpretaciones introducidas en la edición de la noticia? Es muy probable que no siempre sea así: tenemos poco tiempo.</p>
+<p>Eso no me parece que sea todo responsabilidad de los generadores de noticias. No al menos por completo. Es una <a title="Rolf Dobelli's ideas about not needing news are dangerous - The Guardian" href="http://www.theguardian.com/commentisfree/2013/apr/18/rolf-dobelli-ideas-news-dangerous">cuestión de moderación</a>. Estamos saturados de información y cualquier lectura nos obliga a desbrozar conscientemente para mantener abierto el camino de la relevancia. Por su naturaleza (rápida, agresiva, fácil lectura, y en parte superficiales), las noticias son especialmente complejas, pero no me parecen las culpables de todo.</p>
+<p>Después de esa lectura, siempre nos queda volver a mirar hacia adentro y quizá también&nbsp;<a href="http://www.javierleiva.info/nuevo-proyecto-los-content-curators/">buscar soluciones que nos mantengan a dieta</a>.</p>
+<p>Buen provecho.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 18<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/que-grafico-escoger-algunas-ideas/">Qué gráfico escojo para mostrar mis datos: algunas ideas</a></h3>
+        </header>
+        <section>
+            
+                <p><div>Ya te puedes imaginar que no son pocas las veces que alguien se hace esta pregunta. &nbsp;Algunas propuestas para tomar decisiones rápidas son:</div>&lt;/p&gt;<!--more--></p>
+<p><ul></p>
+<p><li>Un mapa mental sobre criterios de selección:&nbsp;<a href="http://columnsandcoffee.com/quel-graphique-choisir/" target="_blank">http://columnsandcoffee.com/quel-graphique-choisir/</a>&nbsp;y&nbsp;<a href="http://annkemery.tumblr.com/image/57624499100" target="_blank">http://annkemery.tumblr.com/image/57624499100</a></li></p>
+<p><li>La recopilación de gráficos que es posible hacer con Protovis (y con D3, aunque debas reprogramarlo)&nbsp;<a href="http://hci.stanford.edu/jheer/files/zoo/" target="_blank">http://hci.stanford.edu/jheer/files/zoo/</a></li></p>
+<p><li>Una taxonomía interesante sobre combinaciones de preguntas factuales y gráficos: <a href="http://www.vizualism.com/images/stories/2013_Infographics_5W_v1.png" target="_blank">http://www.vizualism.com/images/stories/2013_Infographics_5W_v1.png</a></li></p>
+<p><li>Una peque&ntilde;a reflexión sobre el <a title="Perfect visualization - Eager eyes" href="http://eagereyes.org/blog/2013/perfect-visualization" target="_blank">gráfico perfecto</a> (o de cómo acercarnos a él) en Eager eyes.</li></p>
+<p><li>En una dirección muy distinta los <a href="http://blogs.hbr.org/2013/04/the-three-elements-of-successf/" target="_blank">tres elementos de la visualización de datos exitosa</a>.</li></p>
+<p><li>Un objetivo: desnuda los datos, cuanto más, mejor: en <a href="http://darkhorseanalytics.com/blog/data-looks-better-naked/" target="_blank">Darkhorse Analytics</a>.</li></p>
+<p><li>Y para saber qué hacer, también vale la pena aprender de los errores en <a href="http://wtfviz.net/">WTF Viz</a>.</li></p>
+<p><li>Una lista bastante amplia de <a href="http://www.statsoft.com/Textbook/Graphical-Analytic-Techniques">gráficos en Statsoft</a>.</li></p>
+<p><li>Por supuesto, la <a href="http://www.visual-literacy.org/periodic_table/periodic_table.html">tabla periódica de las visualizaciones</a>, o un esquema (aún en vías de desarrollo) para <a href="http://www.baligu.com/bowman_graphic_communication/index.html">explicar las funciones de la visualización</a>.</li><br />
+&lt;/ul&gt;&lt;/p&gt;</p>
+<p><div>Además todo es mejorable, por lo que la remodelación (y mejora) de un gráfico ya existente puede ser una buena base de experimentación. Es lo que hicieron en el blog de SAS: &nbsp;<a href="http://blogs.sas.com/content/iml/2013/08/21/comparing-two-groups-graphically/" target="_blank">http://blogs.sas.com/content/iml/2013/08/21/comparing-two-groups-graphically/</a></div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Pero si la introducción anterior no te basta, Dan Roam (the back of the napkin) comparte una&nbsp;buena presentación, en la que no sólo ense&ntilde;a (diapositiva 43) una relación entre las preguntas factuales (qué, quién, cómo,...) y los gráficos, sino también su propio proceso de dedución para realizar gráficos:&nbsp;<a href="http://www.slideshare.net/stsanto/the-back-of-the-napkin-dan-roam" target="_blank">http://www.slideshare.net/stsanto/the-back-of-the-napkin-dan-roam</a>.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 17<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/enlaces-de-interes/">Enlaces de interés</a></h3>
+        </header>
+        <section>
+            
+                <p>Lecturas dispersas y algo retrasadas respecto a su fecha de publicación. Pero no revenidas ;-). Un aperitivo de domingo.</p><!--more-->
+<ul>
+<li>Para quien se preocupa por las velocidades de carga de los contenidos en dispositivos móviles, en <em>A list Apart</em> publicaron el artículo&nbsp;<a href="http://alistapart.com/blog/post/breaking-the-1000ms-time-to-glass-mobile-barrier" target="_blank">Breaking the 1000ms Time to Glass Mobile Barrier</a>.</li>
+<li><a title="Cuando hables de salarios utiliza la mediana - Gaussianos | Gaussianos" href="http://gaussianos.com/cuando-hables-de-salarios-utiliza-la-mediana/" target="_blank">Cuando hables de salarios utiliza la mediana</a>, no la media.</li>
+<li><a href="http://flowingdata.com/2013/08/02/teacher-forces-student-to-do-math-to-unlock-phone/" target="_blank">&iquest;Bloquear el móvil con un código que es el resultado de un problema matemático motivará lo suficiente al alumno?</a></li>
+<li>Un resumen de cómo está el mundo&nbsp;(en cuanto a TIC), según los datos del Banco Mundial, en su <a title="The Little Data Book on Information and Communication Technology 2013" href="http://data.worldbank.org/products/data-books/little-data-book-on-info-communication-tech" target="_blank">Little Data Book on ICT 2013</a>. La página incluye también enlaces a ediciones anteriores.</li>
+<li><a href="http://www.visualisingdata.com/index.php/2013/07/a-big-collection-of-sites-and-services-for-accessing-data/">Listado de sitios y servicios para acceder a datos</a>, en <a href="http://www.visualisingdata.com/">VisualizingData</a>.</li>
+<li>Otro listado de <a href="http://moz.com/blog/the-right-keyword-data-for-the-right-job">herramientas para obtener información de keywords SEO</a>, en <a href="http://moz.com/blog/">Blog de Moz</a>.</li><br />
+</ul><br />
+&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                Nov 14<br/>
+                2013
+            </p>
+            <h3><a href="../../../../blog/the-times-lamenta-el-error-de-un-programador/">The Times lamenta el error de un programador</a></h3>
+        </header>
+        <section>
+            
+                <p><div>The Times se ha quejado del error del programador. Aún no ha sucedido. Pero ya sucederá. Los periódicos cada vez introducen más informaciones y noticias qué se basan en la visualización de datos. Esta tendencia y la relativa complejidad del proceso (limpieza, recodificación, integración) va a provocar que en algún momento alguien cometa un error.</div>&lt;/p&gt;<!--more--></p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>Esta es la hipótesis que defiende Mozilla Open News en&nbsp;<a href="http://source.mozillaopennews.org/en-US/learning/times-regrets-programmer-error/" target="_blank" shape="rect">un artículo que refleja un escenario hipotético</a>&nbsp;(que no irreal), en el que los medios de comunicación dependen cada vez más de la tecnología y sus profesionales para presentar datos.</div>&lt;/p&gt;</p>
+<p><div></div>&lt;/p&gt;</p>
+<p><div>El mensaje del autor del artículo es claro:&nbsp; aún son muchos los procesos que deben realizarse para hacer una visualización de datos. Probablemente es debido en parte a que la metodología no está lo suficientemente asentada como para automatizar algunas partes del proceso.</div>&lt;/p&gt;</p>
+
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../../en/blog/page/10/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">9</a>
+        
+        
+          <a class="btn btn-primary" href="../../../../en/blog/page/8/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
