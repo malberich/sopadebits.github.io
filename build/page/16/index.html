@@ -1,0 +1,817 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../page/17/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">16</a>
+        
+        
+          <a class="btn btn-primary" href="../../page/15/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                mar. 28<br/>
+                2011
+            </p>
+            <h3><a href="../../blog/los-datos-abiertos-son-el-micelio-de-la-transparencia/">Los datos abiertos son el micelio de la transparencia</a></h3>
+        </header>
+        <section>
+            
+                <p>Hace pocos días <a title="Open Data is not transparency - Data Mining Blog" href="http://datamining.typepad.com/data_mining/2011/03/open-data-is-not-transparency.html">Matthew Hurst hacía un comentario en su blog <em>Data Mining</em></a> que posteriormente fue&nbsp;<a title="Presentación del Open Data Cordoba - Barrapunto" href="http://ciberderechos.barrapunto.com/article.pl?sid=11/03/23/1550213">mencionado en Barrapunto</a> a propósito de la presentación de <a title="Open Data Cordoba" href="http://www.opendatacordoba.com/">Open Data Cordoba</a>:</p><!--more-->
+<blockquote><p>Los datos abiertos son una parte de la transparencia. &nbsp;Son condición necesaria pero no suficiente.</blockquote><br />
+Coincido con esta visión. &nbsp;Sólo se puede afirmar que <em>datos abiertos=transparencia</em> cuando se disponen de las herramientas, la metodología y un criterio técnico mínimo. &nbsp;Con esta receta es posible convertir datos abiertos en respuestas objetivas (<em>transparencia</em>) a preguntas concretas. &nbsp;Luego <em>sólo</em> hace falta plantear las preguntas adecuadas.</p>
+<h2>Fuentes y datos</h2><br />
+Cada vez son más las entidades están dando a conocer la disponibilidad de&nbsp;sus&nbsp;datos en abierto , ya sea por publicidad de las entidades que aplican las ideas del <a title="Proyecto Aporta" href="http://www.aporta.es/">proyecto aporta</a>, o bien por iniciativas tan imprescindibles como <a title="abredatos.es" href="http://www.abredatos.es/">abredatos.es</a>.</p>
+<p>Quizá estamos presenciando una fase de crecimiento que permita imaginar (léase so&ntilde;ar) en una masa crítica de fuentes y datos. &nbsp;Tanto unas como otros son imprescindibles para garantizar la posibilidad de contrastar, verificar y también adaptarse a las necesidades concretas.</p>
+<p>En mi opinión, se llegará a la masa crítica en el momento que existan datos potencialmente vinculables (<a title="Open data Linked Data" href="http://www.ted.com/talks/tim_berners_lee_on_the_next_web.html">no sólo open, sino también <em>linked</em></a>) y posibilidad de consultas a nivel <em>atómico</em>, sólo recuperando una&nbsp;parte de la información (y no descargar necesariamente 100MB de datos, por ejemplo).</p>
+<h2>Datos abiertos públicos y privados</h2><br />
+No sólo las administraciones públicas pueden abrir sus datos. &nbsp;Entidades privadas (quizá sin ánimo de lucro o participadas por organismos públicos) pueden abrir conjuntos de datos para facilitar la creación de un ecosistema alrededor de su proyecto.</p>
+<p>Ahora suena a una idea lejana, pero &iquest;no es así como floreció y maduró el código abierto? &iquest;Por qué no los datos? Como sucede con el primero, la idea de abrir datos puede tener efectos distintos en cada caso, pero eso no lo hace descartable. &nbsp;Como <a title="Open For Business - Think Quarterly" href="http://thinkquarterly.co.uk/01-data/open-for-business/">comenta Nigel Shaboldt</a> en la <a title="Think Quarterly" href="http://thinkquarterly.co.uk/">nueva revista thinkquarterly de Google</a>:</p>
+<blockquote><p>Pregúntate: &iquest;Qué informaciones tienes? &iquest;Algunas de estas pueden ser publicadas libremente para mejorar la transparencia o mejorar la imagen de marca?</blockquote><br />
+El escenario actual en relación a los datos abiertos guarda analogías con el del <em>open source</em>. &nbsp;Por un lado la escasedad aparente, los riesgos de ceder terreno a la competencia, y la (aparente) inexistencia de un contexto adecuado.</p>
+<p>No siempre funciona, pero ha funcionado.</p>
+<h2>Transparencia también es privacidad</h2><br />
+Sinceramente no creo que la fase <em>linked</em> venga de la administración pública. &nbsp;Sería deseable pero no lo veo factible a medio plazo (por ejemplo, por los <a title="The net delusion (Evgeny Morozov)" href="http://www.sopadebits.com/the-net-delusion-evgeny-morozov">riesgos en la privacidad</a> derivados de seleccionar muestras muy peque&ntilde;as e identificar individuos concretos) y en la mayoría de casos incluso será innecesario.</p>
+<p>Por ejemplo, en el caso de los datos municipales, varias administraciones pueden facilitar información. &nbsp;Si es posible obtener datos de varias fuentes para los municipios de una provincia (por ejemplo, a través de la <a title="relación de municipios - INE base - ine.es" href="http://www.ine.es/daco/daco42/codmun/codmun06/06codmunmapa.htm">codificación de municipios</a>), ya es suficiente. Utilizando estas codificaciones ya disponemos de un valor clave para vincular, por lo que se puede dar el paso al procesado (seleccionar los datos necesarios, crear variables derivadas, etc.) y análisis (obtener las respuestas).</p>
+<p>La convivencia entre transparencia y privacidad es la garantía de subsistencia de los datos abiertos. &nbsp;Todo aquello que enturbie esta convivencia (llámese <em>cotilleo</em>, vigilancia&nbsp;o como se quiera) es mejor que se quede al margen.</p>
+<h2>Generar el micelio</h2><br />
+Buscando la imagen que más se ajusta al camino que queda por recorrer, pienso en el <a title="MyCelium - Wikipedia (Inglés)" href="http://en.wikipedia.org/wiki/Mycelium">micelio</a>.</p>
+<p>Su forma, su existencia (principalmente en el subsuelo) y su ubicuidad lo asemejan a la existencia de datos. &nbsp;Estos datos, que hasta hace poco eran difíciles de obtener, están empezando a aparecer (sí, como setas). En gran parte por nuestra actividad a través de dispositivos electrónicos e <a title="Open Data Linked Data" href="http://linkeddata.org/">Internet</a>, pero también por los datos abiertos.</p>
+<p>Su existencia altera el contenido del substrato para crear relaciones simbióticas con (y a veces incluso preparar el terreno para) vegetales superiores. &nbsp;Su <a title="Hongos en Chernobyl" href="http://www.novaciencia.com/2008/03/03/un-hongo-encontrado-en-chernobyl-absorbe-las-radiaciones-perjudiciales/">capacidad para aparecer en los lugares más inhóspitos</a> (porque los datos crecen en todas partes donde alguien quiera buscarlos)&nbsp;no tiene igual. Y por si fuera poco, evitan la erosión del suelo fértil donde se desarrolla.</p>
+<p>Esas son las características deseables para los datos abiertos. &nbsp;Pero quizá para explicar esto, lo mejor sea un vídeo de TED:<a title="Paul Stamets - 6 ways mushrooms can save the world" href="http://www.ted.com/talks/paul_stamets_on_6_ways_mushrooms_can_save_the_world.html"> seis maneras en que los hongos pueden salvar al mundo</a>.</p>
+<p>En especial me llamó la atención el fragmento de los minutos 8:00-9:35, pero el video en conjunto es muy recomendable: Paul Stamet impregna con pasión todas las revelaciones del vídeo.</p>
+<p><!--copy and paste--><object width="446" height="326" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" bgcolor="#ffffff"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="wmode" value="transparent" /><param name="bgColor" value="#ffffff" /><param name="flashvars" value="vu=http://video.ted.com/talks/dynamic/PaulStamets_2008-medium.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/PaulStamets-2008.embed_thumbnail.jpg&amp;vw=432&amp;vh=240&amp;ap=0&amp;ti=258&amp;introDuration=15330&amp;adDuration=4000&amp;postAdDuration=830&amp;adKeys=talk=paul_stamets_on_6_ways_mushrooms_can_save_the_world;year=2008;theme=a_greener_future;theme=tales_of_invention;theme=medicine_without_borders;theme=inspired_by_nature;theme=unconventional_explanations;event=TED2008;&amp;preAdTag=tconf.ted/embed;tile=1;sz=512x288;" /><param name="src" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" /><param name="allowscriptaccess" value="always" /><param name="allowfullscreen" value="true" /><param name="pluginspace" value="http://www.macromedia.com/go/getflashplayer" /><embed width="446" height="326" type="application/x-shockwave-flash" src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" allowFullScreen="true" allowScriptAccess="always" wmode="transparent" bgColor="#ffffff" flashvars="vu=http://video.ted.com/talks/dynamic/PaulStamets_2008-medium.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/PaulStamets-2008.embed_thumbnail.jpg&amp;vw=432&amp;vh=240&amp;ap=0&amp;ti=258&amp;introDuration=15330&amp;adDuration=4000&amp;postAdDuration=830&amp;adKeys=talk=paul_stamets_on_6_ways_mushrooms_can_save_the_world;year=2008;theme=a_greener_future;theme=tales_of_invention;theme=medicine_without_borders;theme=inspired_by_nature;theme=unconventional_explanations;event=TED2008;&amp;preAdTag=tconf.ted/embed;tile=1;sz=512x288;" allowscriptaccess="always" allowfullscreen="true" pluginspace="http://www.macromedia.com/go/getflashplayer" bgcolor="#ffffff" /></object></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                mar. 17<br/>
+                2011
+            </p>
+            <h3><a href="../../blog/the-net-delusion-evgeny-morozov/">The net delusion (Evgeny Morozov)</a></h3>
+        </header>
+        <section>
+            
+                <p><a href="http://www.sopadebits.com/wp-content/uploads/2011/03/morozov-delusion.jpg"><img class="alignleft" title="morozov the net delusion" alt="" src="http://www.sopadebits.com/wp-content/uploads/2011/03/morozov-delusion.jpg" width="300" height="300" /></a></p><!--more-->
+<p>De los días posteriores al 11-M, una de las cosas que recuerdo es que Internet y los SMS jugaron un papel decisivo. &nbsp;Mientras que en Espa&ntilde;a se mantenía una versión oficial, fuentes externas desvelaron que la situación no apuntaba hacia allí; algo pasaba. &nbsp;Y algo pasó.</p>
+<p>Decir que Internet ha proporcionado cosas buenas es evidenciar lo vivido. &nbsp;La comunicación con amigos o familiares lejanos, conocer las noticias por varias fuentes, en tiempo real y sin intermediaciones...</p>
+<p>Pero esta evolución no sólo (o <em>no siempre</em>) tiene efectos positivos.</p>
+<p>Aunque estoy encantado con este medio, estoy más cercano al <em>creyente poco convencido. </em>Así que cuando tuve conocimiento de este libro (323pp., por ahora&nbsp;<a title="The net delusion - Amazon.com" href="http://www.amazon.com/Net-Delusion-Dark-Internet-Freedom/dp/1586488740">sólo en inglés</a>) me decidí a leerlo. Os traslado algunas pinceladas de lo que más me ha atraído, y recomiendo su lectura, al menos por su disonancia respecto al mensaje predominante.</p>
+<h2>Un punto de vista diferente</h2><br />
+Desde las primeras páginas queda muy clara su postura: <strong>Internet está llena de <em>ciberutópicos </em>(o <em>ciberutopistas</em>), el autor no es uno de ellos y va a dejar claro el por qué</strong>. &nbsp;Aunque pone algunos ejemplos de situaciones vividas en países <em>democráticos</em>, el trabajo se centra en el papel de Internet, la tecnología y los <em>gadgets </em>en regímenes represivos o con con limitada libertad de expresión. &nbsp;Las críticas que transmite se pueden ampliar a toda nuestra actividad en la red, pero se focaliza en esos casos más peliagudos.</p>
+<p>Entre los primeros pasos que da el libro, una de ellas es marcar una distancia entre lo que considera el <em>referente equivocado</em> que se está aplicando sobre Internet como herramienta de apertura democrática: &nbsp;la caída del muro de Berlín y el rol de los <a title="Samizdat - Wikipedia" href="http://es.wikipedia.org/wiki/Samizdat">Samizdat</a> o de <em><a title="Radio Free Europe - Wikipedia" href="http://en.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty">Radio Free Europe</a></em>.</p>
+<p>En un esquema que repetirá con otros estereotipos, Morozov desmonta la falsa idea que los Samizdat ayudaron a la caída del muro. &nbsp;Expone que en algunos casos la llegada de la cultura occidental más bien ayudó a <strong>mantener el régimen durante los últimos a&ntilde;os</strong>. &nbsp;Cita por ejemplo el caso de la se&ntilde;al de televisión que llegaba desde la RFA: Realizaron&nbsp;estudios de <em>satisfacción</em> (lo digo así para que se entienda)&nbsp;sobre la población y comprobaron que la crítica hacia el régimen se acentuaba... cuanto menor era la intensidad de la se&ntilde;al de la TV occidental.</p>
+<p>&iquest;Por qué? Pues simplemente porque la gente estaba entretenida mirando los concursos y los shows, se evadían de su rutina diaria y seguían con su vida. &nbsp;El gobierno de Honnecker, a sabiendas de esta situación, decidió no hacer nada. &nbsp;Hasta el momento en que, debido al previsible colapso de la URSS, todo cambió rápidamente.</p>
+<p>Al aplicar la idea de los <em>samizdat</em> a Internet se comete un error grave: no todos los regímenes totalitarios tienen las mismas fortalezas y debilidades. &nbsp;El bloque del este era un aparato relativamente más homogéneo en cuanto a estructuras de poder, medios y cultura. &nbsp; Utilizar las mismas herramientas para un mundo tan heterogéneo como el actual tiene poco sentido y muchos peligros, porque <strong>no está claro si la introducción de Internet refuerza más a los disidentes o al poder que oprime</strong>.</p>
+<h2>Los <em>malos</em> también aprenden</h2><br />
+Quizá en los inicios de Internet se podría pensar que las dictaduras y otros regímenes totalitarios no entenderían el nuevo canal. &nbsp;Quizás sí. &nbsp;Pero ese tiempo ya pasó.</p>
+<p>Aplicar los criterios de privacidad de Facebook a Twitter en un país democrático puede provocar situaciones comprometidas, pero... &iquest;y si se aplica en un país en los que existe un riesgo físico para los disidentes?</p>
+<p>Los gobiernos han aprendido a integrar Internet como a herramienta complementaria en sus tres estrategias de control sobre la información: censura, propaganda y <strong>vigilancia</strong> [surveillance]. La herramienta de la libertad se convierte en represión.</p>
+<p>Internet ha potenciado las tres estrategias, pero la última es la más delicada: si tú puedes seguir una cuenta de twitter que te cuenta desde un país determinado lo que está ocurriendo, &iquest;por qué no lo va a seguir alguien implicado en contra? &nbsp;Si eso sucede, &iquest;Qué opciones tiene un disidente para garantizar su integridad y la de su entorno?</p>
+<p>Es la situación que pueden vivir disidentes que utilizan las redes para transmitir las novedades. &nbsp;&iquest;Tú les lees? Ellos también.</p>
+<p>Para rematar lo anterior, Facebook, Twitter y Google no siempre han ofrecido un mensaje claro respecto a su connivencia/implicación/rechazo en estos contextos. &nbsp;La administración americana (Obama incluido) es foco de críticas por su ambivalencia y por la, siempre según su opinión, poca visión de las consecuencias.</p>
+<p>Carga también sobre la afirmación de <em>La próxima revolución empezará en Twitter</em>. &nbsp;Dejando de lado que el único éxito que ha conseguido esta frase es la campa&ntilde;a de marketing gratuita que se ha hecho sobre el servicio del pajarito, Morozov carga contra los <em>ilusos</em> que piensan así.</p>
+<blockquote><p>&iquest;Creen realmente que por unas páginas en Facebook con muchos fans y otros cuantos tweets, el regimen saldrá a la puerta y dirá "tenéis razón, os dejamos el país en vuestras manos"?.</blockquote><br />
+<a title="The dark side of Internet for Egyptian and Tunisian protesters" href="http://www.theglobeandmail.com/news/world/africa-mideast/the-dark-side-of-internet-for-egyptian-and-tunisian-protesters/article1887170/print/">No parece que Morozov cambie de opinión al ver lo que ha pasado últimamente en el norte de áfrica</a> (y que coincide al menos en parte con lo que comentaba mismo <a title="Julian Assange tells Cambridge students of the 'world&rsquo;s greatest spying machine'" href="http://www.cambridgefirst.co.uk/news/julian_assange_tells_cambridge_students_of_the_world_s_greatest_spying_machine_1_831425">Julian Assange ayer en Cambridge</a>).&nbsp;Sí que hay algo que advertí mientras seguía las noticias: que el uso de las redes sociales fue intenso, pero que lo que finalmente movió los engranajes para provocar una situación crítica en Egipto fueron las huelgas de trabajadores.</p>
+<p>Organizados o no, convocaron huelgas que (probablemente) provocaron más escasez de la que había y/o disturbios, que acabaron desembocando en lo que hemos vivido últimamente.</p>
+<h2>La dispersión no levanta revoluciones</h2><br />
+En la RDA de 1989 los canales de TV/Radio eran muy escasos, pero actualmente es casi imposible conseguir cuotas de atención suficientes a través de un solo canal que sirva para articular un mensaje unívoco. &nbsp;La dispersión de canales genera más atención, pero dispersa la capacidad de acción.</p>
+<p>La cuestión es que Internet se ha demostrado, por lo general, como un mal canal para <strong>iniciar</strong> revoluciones. &nbsp;No se trata de&nbsp;<em>seguir</em> ni <em>recopilar información sobre</em>. &nbsp;Se trata de <em>hacer</em> la revolución. &nbsp;Y para hacer la revolución es necesario <strong>focalizar</strong>.</p>
+<p>Internet puede ser un excelente canal para la coordinación, pero no está pensado específicamente para ello. &nbsp; Es necesario entenderlo más a fondo para que sirva a los objetivos de acciones organizadas.</p>
+<h2>Conclusiones y valoraciones</h2><br />
+Dejando a un lado todo lo comentado, el libro sólo me ha presentado una decepción: la falta de contrapropuestas más estructuradas y articuladas. &nbsp;En este aspecto el libro me ha dejado en ascuas.</p>
+<p>Ahora bien, es cierto que para exponer un punto de vista tan diferente es necesario dedicarle espacio. &nbsp;Sus argumentaciones se basan en una buena cantidad de fuentes, que van desde estudios de población, discursos políticos, informes de organizaciones de defensa de los derechos humanos, etc.</p>
+<p>Quizá otras propuestas más claras llegarán con una segunda obra, quién sabe.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                ene. 12<br/>
+                2010
+            </p>
+            <h3><a href="../../blog/visualizando-estadisticas-navegadores-iii/">Visualizando: Estadísticas de navegadores (III)</a></h3>
+        </header>
+        <section>
+            
+                <p></p>
+<h2>Comparando los gráficos</h2><br />
+Dejando a un lado los criterios estéticos (ajustando todos los anillos para cerrar la circunferencia, por ejemplo), hay algunos cambios significativos entre el original y la nueva versión:</p>
+<ul>
+<li>Algunos navegadores (sus versiones) se han unificado. En concreto, las versiones de Opera. Se podría haber hecho lo mismo con Netscape 3 y 4 (NS3 / NS4), pero la similitud de colores lo hace innecesario.</li>
+<li>Ahora sabemos que el tiempo transcurrido entre los límites de dos anillos son dos meses.</li>
+<li>Los navegadores se han ordenado con un criterio específico que trata de transmitir un mensaje.</li><br />
+</ul></p>
+<h2>Mensaje 1: Guerra y evolución de los navegadores</h2><br />
+Aunque el gráfico empieza en el 2002, es posible ver la agonía de Netscape, y su disgregación (Mozilla, AOL y versiones varias de NS).&nbsp; Por ejemplo, vemos el navegador AOL (peque&ntilde;a franja naranja claro que se extingue en noviembre-diciembre de 2002) y comprobamos que casi "enlaza" con IE5.&nbsp; Por lo pronto, eso quiere decir que los navegadores situados "a su derecha" no aprovechan su extinción.&nbsp; Tampoco lo hace IE5.&nbsp; Pero si revisamos los porcentajes de IE6, vemos que prácticamente asume toda su cuota.</p>
+<p>&iquest;Casualidad? Según la <a title="Wikipedia: AOL Explorer" href="http://en.wikipedia.org/wiki/AOL_Explorer">Wikipedia</a>, en 2003 AOL firma un contrato para para utilizar el layout Engine de Internet Explorer. Si esto tiene una relación directa con la desaparición "de facto" de este navegador (o al menos de su <a title="Wikipedia: User Agent String" href="http://en.wikipedia.org/wiki/User_agent_string">firma identificativa</a>), ya es algo a contrastar.</p>
+<p>Pero sigamos con Netscape. Precisamente AOL (propietaria de Netscape) dejó de acompa&ntilde;ar a Mozilla Organization en Julio de 2003 (&iquest;habrá relación entre esto y el acuerdo con Internet Explorer?). En esos momentos se creó la <em>Mozilla Foundation</em>, que ya llevaba trabajando en una versión preliminar de su navegador Mozilla (primero Phoenix, luego Firebird, y desde enero de 2004, Firefox). Es interesante ver que, a partir de ese momento, la franja marrón empieza a crecer, para ser finalmente absorbida por la franja naranja.&nbsp; Mientras Netscape da coletazos agónicos (que acaban en <a title="Wikipedia: AOL's Netscape end of development support" href="http://en.wikipedia.org/wiki/Netscape_Communications_Corporation#End_of_development_and_support ">Marzo de 2008</a>), y la versión 6 de Internet Explorer es líder indiscutible de la parte derecha del gráfico, algo va creciendo por el flanco izquierdo.</p>
+<p>Y mientras eso sucede, Internet Explorer 7 intenta cerrar el espacio a Internet Explorer 6, incluso cuando ha llegado la versión 8 (que ya no sale en el gráfico).&nbsp; Quizá en este esfuerzo exista una clave del por qué del crecimiento de navegadores alternativos.</p>
+<h2>Mensaje 2: Los navegadores estables</h2><br />
+Es el caso de Opera.&nbsp; La guerra de los navegadores no parece que vaya con él.&nbsp; Mantiene su cuota de mercado o crece lentamente, sin angustias.&nbsp; Vale decir que la visión de Opera va más allá de los PCs, ya que se encuentra muy extendido en móviles, consolas (como a Wii) y otros dispositivos similares.</p>
+<p>Lo mismo sucede con Safari.&nbsp; Es ligero y ágil, su ecosistema es muy concreto (MacOS, aunque ahora exista versión para Windows) y dispone de un público fiel. Ambos van a su ritmo, sin altibajos.</p>
+<h2>Mensaje 3: los nuevos participantes</h2><br />
+Chrome aparece sólo en los últimos anillos del gráfico (parte superior, color verde) pero entra con fuerza.&nbsp; La marca que lo abraza y el destino que le están preparando facilitan la entrada al mercado.</p>
+<p>El gráfico en este sentido es ambiguo.&nbsp; Observando el anillo externo, parece que Firefox gana terreno, pero vemos que es porque Chrome le <em>muerde</em> un trozo de la tarta.&nbsp; Si se puede decir que alguien está avanzando en cuota de mercado, no es estrictamente Firefox, sino los navegadores alternativos. a Internet Explorer &nbsp; Habrá que ver a lo largo del próximo a&ntilde;o si Internet Explorer recupera terreno. De momento parece que lo pierde, y rápido.</p>
+<h2>Diagnóstico del gráfico</h2><br />
+Comentaré brevemente los puntos a favor y en contra que le veo al gráfico.</p>
+<p>A favor:</p>
+<ul>
+<li>La superposición de información ayuda a explicar una historia, representar un ritmo (crecimiento de usuarios) y a transmitir un mensaje.</li>
+<li>El gráfico es estático pero la información que muestra es muy dinámica.&nbsp; Es fácil entretenerse siguiendo las franjas de color y comprobar las evoluciones.</li>
+<li>Al reorganizar los navegadores siguiendo criterios objetivos (motor DOM o javascript, empresa responsable, variación de la cuota de mercado, etc.) podemos establecer itinerarios que apoyen un argumento.</li>
+<li>El uso de Axiis ha sido una experiencia muy gratificante, aunque los retoques han sido muy limitados. Ofrece garantías para a&ntilde;adir interactividad y otras combinaciones de gráficos en el futuro.&nbsp; Es un proyecto a seguir de cerca, como su proyecto base: [Degrafa].</li><br />
+</ul><br />
+En contra:</p>
+<ul>
+<li>Los porcentajes de cada navegador son globales, pero los anillos son proporcionales.&nbsp; Es decir, que los arcos de cada anillo reflejan el estado actual. Al a&ntilde;adir un anillo tras de otro, la sensación de dominio puede ser errónea.&nbsp; Eso es lo que pasa con Internet Explorer (6 y 7): el azul predomina, pero su cuota de mercado es menos cómoda de lo que parece. Eso sí, nos da perspectiva de su gran dominio, igual que nos da perspectiva en la evolución de los navegadores Netscape/Mozilla. Esto se podría corregir tratando los datos de proporciones de acuerdo con los datos históricos (priorizando el área total en detrimento del área de cada anillo), pero entonces ya hablaríamos de otro gráfico.</li>
+<li>Los datos no son 100% fiables, y parten de fuentes distintas con objetivos diversos.&nbsp; No voy a insistir más en esto.</li>
+<li>Aunque no sea realmente crítico, se han "retocado" los porcentajes de cada anillo para cerrar el círculo.&nbsp; En la línea de lo anterior, es una licencia que me tomo con fines puramente estéticos, aunque facilita la lectura del gráfico.</li>
+<li>Al mezclar dos tipos de datos tan diferentes (navegadores y crecimiento de usuarios) es importante no llegar a conclusiones del tipo "los nuevos usuarios de Internet prefieren cada vez más Firefox". Probablemente eso sea falso. Es más, los nuevos usuarios acostumbran a escoger el navegador por defecto, y son los más experimentados quienes prueban alternativas. Quizá lo que esté pasando es que el cambio de navegador cada vez tarda menos (la velocidad de cambio) pero nada más.</li>
+<li>El gráfico sólo contempla una evolución "creciente".&nbsp; Si en algún momento Internet sufriera un descenso de usuarios, este gráfico sería inútil: tendríamos que dibujar anillos superpuestos.&nbsp; Aunque se puede abordar (con texturas), su interacción se vería perjudicada.</li><br />
+</ul></p>
+<h2>Aplicaciones y conclusiones</h2><br />
+En general, el único condicionante real es el penúltimo punto en contra (el decrecimiento). El resto son criterios de representación y fuentes de información.&nbsp; Por lo tanto, es posible aplicar este gráfico en contextos de evolución o crecimiento. Los escenarios que contemplen decrecimiento precisarán una adaptación.</p>
+<p>Un posible uso del gráfico puede ser el seguimiento de un servicio de atención al cliente, o simplemente de trazabilidad de un servicio en general.&nbsp; Por ejemplo, en entornos de desarrollo puede ser interesante mostrar los tipos de actuaciones según su tipo. Aparecerían acciones como programar nuevas funcionalidades de una aplicación, mejorar las existentes, corrección de errores, reuniones con el cliente...</p>
+<p>Cada anillo puede representar una entrega o versión de la aplicación con su fecha correspondiente (o el número de horas dedicado). Y probablemente con este sistema se detectarían esos límites de crecimiento de las aplicaciones que requieren de un parón y refactorización.</p>
+<p>Sobre el gráfico en sí extraigo una conclusión.&nbsp; <strong>Al centrarnos en un mensaje visual, nos vemos obligados a obviar una serie de datos o características que describen mejor el conjunto</strong>.&nbsp; En este caso, hay que optar entre una lectura radial (como en los clásicos gráficos de sectores) o una de conjunto, y siempre tener en cuenta esta decisión en el momento de interpretar el gráfico. Si vamos a presentar este gráfico a alguien que desconoce su origen, vale la pena matizar su explicación con texto o bien con otro gr&agrave;fico complementario.</p>
+<p>Sólo me queda felicitar a Michael Van Daniker por su excelente trabajo, tanto por ejemplo de este gráfico como por la propia biblioteca Axiis.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                ene. 11<br/>
+                2010
+            </p>
+            <h3><a href="../../blog/visualizando-estadisticas-navegadores-ii/">Visualizando: Estadísticas de navegadores (II)</a></h3>
+        </header>
+        <section>
+            
+                <p>La primera parte es relativamente sencilla, teniendo el archivo XML generado en la hoja de cálculo.&nbsp; Sólo hay que tener en cuenta de no olvidarse de los tags ... que engloban todo el contenido.&nbsp; Pasamos al segundo paso.</p>
+<h2>Modificación del código</h2><br />
+Para adaptar los anillos hay que ir a las líneas 148-149, donde se definen las variables <em>innerRadius</em> y <em>outerRadius</em>.&nbsp; Aquí se define el valor del límite interno y externo de cada anillo.</p>
+<p>En la versión original estos radios son constantes.&nbsp; Pero ahora lo que hay que hacer es utilizar los atributos innerRadius y outerRadius generados en el archivo XML.&nbsp; Los valores aquí ya tienen que ser absolutos, por lo que hemos de multiplicar los radios normalizados a 1 por el radio total del gráfico. Las líneas deben contener lo siguiente:</p>
+<p><em>innerRadius="{radialLayout.currentDatum.innerRadius*radialLayout.height/2}"</em><br />
+<em>outerRadius="{radialLayout.currentDatum.outerRadius*radialLayout.height/2}"</em></p>
+<p>Describo brevemente los parámetros de las fórmulas:</p>
+<ul>
+<li>Estamos recogiendo el valor de innerRadius (u outerRadius en la segunda) y los estamos multiplicando por la mitad de la altura de la caja donde se mostrará el gráfico.&nbsp; <strong>Dado que el gráfico está centrado, dividimos la altura entre dos para conseguir el mayor radio posible</strong>. La altura total es el diámetro, por lo que su mitad es el radio.</li>
+<li>Luego, dado que innerRadius y outerRadius en el XML son valores entre 0 y 1 (el innerRadius del anillo más interior es 0 y el outerRadius del anillo más exterior es 1) y son contiguos, <strong>los anillos toman su máxima medida posible para la caja del gráfico (radialLayout)</strong>.</li><br />
+</ul><br />
+<!-- comentario -->Aparte de estos cambios, he comentado las líneas 178-180 (etiqueta "January 2002" que aparecía en la parte central) y las líneas 121 a 123 (la etiqueta "August 2009", que aparecía en la parte exterior). Hay que tener en cuenta que el modo de comentario es XML, no ActionScript.</p>
+<h2>Compilación</h2><br />
+Ya sólo queda generar el archivo SWF. Para ello es necesario que descargar Flex SDK (gratuito, precisa Java), instalarlo (se descomprime en un directorio, sin más) y compilar.&nbsp; Abriendo una consola y situándote en el directorio "src" del ejemplo, pues compilar (en Linux) así:</p>
+<p><em>/ruta/hasta/flex/bin/mxmlc BrowserMarketShare.mxml -include-libraries ../libs/DegrafaLibrary.swc ../libs/AxiisLibrary.swc</em></p>
+<p>Compilando en <strong>Windows</strong>, el programa es <strong>mxmlc.exe</strong>, y las rutas a los directorios se indican con contrabarra (\).</p>
+<p>Aparecerán algunos avisos pero todo funciona correctamente.&nbsp; La última línea del proceso será algo así como:</p>
+<p><em>/home/_usuario_/..../axiis examples/src/BrowserMarketShare.swf (568757 bytes)</em></p>
+<p>Puedes abrir el archivo SWF en tu navegador y verás algo parecido a la siguiente imagen:</p>
+<p><a title="Browser Statistics con anillos proporcionales (Flash)" href="//wp-content/uploads/2011/03/4514-BrowserMarketShare.swf" target="_blank"><img title="Axiis Browser Statistics: Anillos proporcionales al crecimiento" src="..//wp-content/uploads/2011/03/4515-browser-statistics.png" alt="Axiis Browser Statistics: Anillos proporcionales al crecimiento" width="550" height="332" /></a></p>
+<p>&iquest;Todo bien? &iquest;Algo no ha funcionado? Si dejas algún comentario quizá lo aclaremos.&nbsp; Clicando con el botón derecho en la versión de pantalla completa puedes ver el código del archivo MXML.</p>
+<p>Queda un último apartado para comentar los resultados del gráfico, compararlo con el original, analizar qué podemos extraer de él, y valorar las ventajas e inconvenientes por los criterios que he seguido.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                ene. 9<br/>
+                2010
+            </p>
+            <h3><a href="../../blog/visualizando-estadisticas-navegadores-i/">Visualizando: Estadísticas de navegadores (I)</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>El origen: Browser Market Share</h2><br />
+<a title="Michael Van Daniker" href="http://michaelvandaniker.com/blog/">Michael Van Daniker</a> publicaba en su blog <a title="Visualizing historic browser statistics with Axiis" href="http://michaelvandaniker.com/blog/2009/10/31/visualizing-historic-browser-statistics-with-axiis/">un gráfico sobre las estadísticas de navegadores</a> como <a title="Axiis: Browser Market Share" href="http://www.axiis.org/examples/BrowserMarketShare.html">ejemplo de utilización de Axiis</a>.&nbsp; El gráfico me despertó el interés por su enfoque novedoso y por su combinación entre los conceptos de proporciones y serie temporal.</p>
+<p>Observando el gráfico, se puede encontrar una analogía con los anillos de un tronco de árbol.&nbsp; Los datos que muestra se refieren a las estadísticas de navegadores de <a href="http://www.w3schools.com/">w3schools.com (W3S)</a> desde Enero de 2002 hasta finales del 2009. Empezando desde el centro, cada anillo representa el porcentaje de un intervalo de tiempo determinado.&nbsp; Navegando por la versión Flash se puede ver el mes/a&ntilde;o, el navegador de cada arco y su porcentaje de penetración.</p>
+<p>Sin embargo, hay una serie de cuestiones que me interesaron en aras a mejorar el resultado final:</p>
+<ul>
+<li>El gráfico se muestra "abierto", ya que las estadísticas de W3S no suman el 100% (los navegadores con un uso por debajo del 0,5% quedan fuera).</li>
+<li>Los periodos de cada anillo no son rítmicos: En el 2002 pueden ser trimestrales o semestrales, mientras que en el 2009 los datos son mensuales.</li>
+<li>Los anillos tienen un tama&ntilde;o idéntico, lo cual no representa de forma fidedigna el crecimiento de los usuarios de Internet.</li><br />
+</ul><br />
+A partir de estas observaciones, he definido una serie de criterios:</p>
+<ul>
+<li><strong>"Cerrar" el círculo</strong>, aunque sean recalculando los porcentajes existentes.</li>
+<li>Aplicar tama&ntilde;os de cada anillo <strong>proporcionales al crecimiento de usuarios de internet a lo largo de ese periodo</strong>.</li>
+<li>Establecer un <strong>ritmo fijo en los intervalos de tiempo</strong>, estimando el crecimiento de usuarios si faltan datos. De este modo, cada línea se refiere a un ciclo de tiempo fijo, y su anchura representa el incremento de usuarios.</li><br />
+</ul></p>
+<h2>Las fuentes de datos</h2><br />
+Antes de entrar en los detalles sobre los datos, tengo que decir que mi objetivo principal <strong>no ha sido encontrar la serie más fiable</strong> desde 2002 hasta la actualidad.&nbsp; Actualmente es posible encontrar algunas fuentes con datos mensuales bastante fiables, pero muchas no se extienden hasta ocho a&ntilde;os atrás.</p>
+<p>Los datos de W3S no incluyen el volumen (ni real ni estimado) de usuarios conectados a Internet.&nbsp; Por lo tanto, hay que buscar fuentes complementarias.&nbsp; Sin entrar en criterios estrictos de veracidad ni fiabilidad, he seleccionado la fuente <a title="Internet World Stats: Internet Growth Statistics" href="http://www.internetworldstats.com/emarketing.htm">Internet Growth Statistics</a> del <a title="Internet World Stats" href="http://www.internetworldstats.com/">Internet World Stats</a>.&nbsp; Para el objetivo que me ocupa, es suficiente.</p>
+<p>Como se puede comprobar en el enlace, <strong>los datos distan de ser concretos</strong>.&nbsp; Para acabar de arreglarlo, <strong>las series de datos no concuerdan con las del W3S</strong>.&nbsp; En este punto tenemos dos opciones: seguir buscando, o echar mano de la hoja de cálculo y algunas fórmulas matemáticas. Opto por la segunda.</p>
+<h2>Unificación de las series de datos</h2><br />
+Esta fase es quizá la más larga (y seguro que la más ardua) de todo el proceso.&nbsp; Importar los datos, eliminar el formato, convertir el texto en información tratable... Todo lo que no esté en una fuente estructurada requiere ese peaje.</p>
+<p>Una vez organizados los datos, queda unificar las series. &iquest;Cómo podemos llevarlo a cabo? Por <a title="Wikipedia: Interpolación" href="http://es.wikipedia.org/wiki/Interpolaci%C3%B3n ">interpolación</a>. La ventaja es que es un proceso relativamente sencillo, y el inconveniente es que sacrificamos algunos datos (pocos) de la serie.</p>
+<p>En este caso he escogido la interpolación lineal.&nbsp; Muy probablemente no sea la mejor (&iquest;lo será la <a title="Wikipedia (en) Interpolación cúbica" href="http://en.wikipedia.org/wiki/Spline_interpolation#Cubic_spline_interpolation">cúbica</a>?): en este caso es útil y suficiente.</p>
+<p>Para realizar interpolación entre fechas, éstas se convierten en valores numéricos (por ejemplo, días transcurridos desde el <a title="Wikipedia: Unix Time" href="http://en.wikipedia.org/wiki/Unix_time">1/1/1970</a>). Otros dos detalles que considero son:</p>
+<ul>
+<li>Asumo que las estadísticas de "Marzo de 2005" se refieren a los datos "hasta el 31/5/2005". Es lo habitual pero no se especifica en la fuente.</li>
+<li>Decido que la serie sea <strong>bimensual</strong>.&nbsp; Podría ser trimestral o semestral, pero lo hago para aprovechar más los datos (y no echar de menos los sacrificados).</li><br />
+</ul><br />
+Dado que la interpolación requiere una fecha anterior y otra posterior a la&nbsp; intermedia que queremos calcular, <strong>pierdo al menos dos datos de la serie: el primero y el último</strong>. La alternativa a esto es empezar justo en la misma fecha que empieza la serie.&nbsp; Obteniendo la distancia entre los dos puntos puedo calcular la parte proporcional (suponiendo incremento constante = lineal) del crecimiento de usuarios.&nbsp; Por lo tanto, <strong>para cada fecha concreta de mi serie unificada, tengo el número estimado de crecimiento de usuarios</strong>.</p>
+<p>Para obtener esta diferencia, sacrifico otro dato del inicio de la serie. (ya van tres)&nbsp; Al precisar la <em>diferencia respecto al anterior</em>, el primero (que se supone que no tiene anterior) se cae de la lista.</p>
+<p>Podría solucionar este detalle utilizando la cifra absoluta (el número de usuarios al iniciar ese periodo) para dibujar el círculo más interior del gráfico,. Sin embargo, lo descarto porque eso <strong>supone perder un espacio considerable</strong>. Se puede comprobar que el primer círculo sería proporcional a unos 500 millones de usuarios, mientras que el resto de anillos tienen un crecimiento mucho inferior (una décima parte en los mejores casos).</p>
+<h2>Cálculo del tama&ntilde;o de los anillos</h2><br />
+El siguiente paso es decidir qué proporción sigue el radio del anillo.&nbsp; Existían dos opciones:</p>
+<ul>
+<li><strong>Radio proporcional al crecimiento</strong>: El radio se calcula de forma directamente propocional al crecimiento de usuarios (un usuario aumenta el mismo radio tanto en los anillos interiores como en los más exteriores). El radio total del gráfico es equivalente al total de usuarios, y&nbsp; el radio de cada anillo se corresponde con la proporción de nuevos usuarios de cada periodo.</li>
+<li><strong>área proporcional a crecimiento</strong>: el radio se calcula teniendo en cuenta que el incremento de usuarios es <strong>proporcional al área del anillo</strong>.</li><br />
+</ul><br />
+&iquest;Qué diferencia hay?&nbsp; Visualmente, mucha. Basándonos sólo en el radio, tenemos un gráfico bastante representativo si miramos por evolución (centro->exterior), pero sesgado como conjunto (visión del <em>tronco</em>).&nbsp; 10 píxeles de radio en el segundo anillo inferior ocupan mucha menos área que 10 píxeles en el anillo más externo.&nbsp; Por lo tanto, el color del primer anillo ocupa mucho más espacio visual del que su volumen de usuarios representa.</p>
+<p>Hay otra razón para escoger el criterio de la proporción por área: representar el crecimiento actual en relación al pasado.&nbsp; Esto es algo interesante porque el grueso del tronco nos muestra la <strong>velocidad</strong> de crecimiento. Si este mismo gráfico se realizara con barras o columnas relativas (ocupando una misma altura, ajustando la anchura al crecimiento de usuarios, y repartiendo el área proporcionalmente), <strong>el efecto visual de las columnas "anchas" sería mucho más acusado</strong>.</p>
+<p>En cambio, al repartirse por un área concéntrica que aumenta de radio, <strong>lo visualmente constante</strong> (anillos de un mismo grueso) es el crecimiento respecto al anillo anterior, que no el crecimiento en sí.&nbsp; Por ejemplo, revisando los datos se puede comprobar que los anillos interiores crecen a un ritmo de 15-20 millones de usuarios, a pesar que se ven gruesos. En cambio, los anillos más exteriores, que parecen <em>normalitos</em> están creciendo a un ritmo de 40 millones de usuarios. Esto quiere decir que <strong>requiere más esfuerzo aumentar el radio en cada anillo más exterior</strong>. Es un comportamiento habitual, por ejemplo, al analizar las tasas de crecimiento de las empresas. Y es algo directamente relacionado con la <em>viralidad</em> de este medio (el <a title="Wikipedia: Ley de Metcalfe" href="http://es.wikipedia.org/wiki/Ley_de_Metcalfe">efecto red</a> una teoría a<a title="Bob Briscoe: Metcalfe's law is wrong" href="http://spectrum.ieee.org/print/4109">lgo criticada</a>).</p>
+<p>La pregunta es: &iquest;Se está enga&ntilde;ando? No: se está centrando el mensaje en la tasa de crecimiento.&nbsp; Volviendo a la analogía de los anillos del árbol, podemos suponer que el tronco parezca mantener un crecimiento gradual.&nbsp; Pero <strong>lo que está sucediendo es que el tronco crece proporcionalmente un poco más rápido... ocupando el mínimo espacio posible</strong>.&nbsp; En el gráfico sucede lo mismo: si utilizáramos barras, el espacio de representación sería mucho mayor y quitaría importancia a los primeros datos de la serie.</p>
+<p>Como efecto derivado, en este gráfico podemos ver el efecto de la "viralidad" de los navegadores. Siguiendo la analogía del tronco, el gráfico muestra el cambio de <em>nutrientes del substrato</em> que es el mercado de los navegadores.</p>
+<h2>El cálculo</h2><br />
+Para acabar esta primera parte, comento las ideas esenciales para el cálculo de los radios.&nbsp; Para empezar, tenemos lo siguiente:</p>
+<ul>
+<li>El espacio en el que se va a mostrar el gráfico varía según el tama&ntilde;o de pantalla que tengas, por lo que debemos calcular los radios de los anillos en cantidades relativas (tanto por uno, o porcentajes).</li>
+<li>Hay que establecer una relación directa entre el total de usuarios de cada anillo, y el área del propio anillo. Es decir, que esté donde esté, un nuevo usuario ocupa los mismos píxeles de superficie.</li>
+<li>Hay que tener en cuenta un radio inicial para el primer anillo (el nudo central). En mi caso supondré que es 0 (el primer dato empieza en el centro del tronco).</li><br />
+</ul><br />
+Lo que hago es considerar el área completa del anillo, que se corresponde con los <strong>1.146 millones de usuarios</strong> de crecimiento entre Enero de 2002 hasta Julio de 2009 (datos ya interpolados).&nbsp; Lo primero que hago es <strong>dividir el incremento de cada periodo por este total</strong>. Con ello tengo un valor proporcional al área de cada anillo (si el gráfico ocupara un área de 1 unidad). Es decir, obtengo la proporción de <strong>área por usuario</strong> que le correspondería a cada anillo.</p>
+<p>Ahora debo deducir el <em>radio</em> para que el círculo ocupe este área.&nbsp; Para ello, tengo que invertir la fórmula del área del círculo: A = &pi;&middot;r<sup>2</sup>. Pero ojo, tengo que <strong>restar siempre el área de los anillos interiores</strong>.&nbsp; Por lo tanto, calculo los radios de dentro hacia a fuera.</p>
+<p>Para saber el radio del nuevo anillo debo:</p>
+<ul>
+<li>Calcular el &agrave;rea de todos los anillos interiores (sumo los radios interiores y calculo el área del círculo correspondiente).</li><br />
+</ul><br />
+Luego resuelvo el cálculo:</p>
+<p>r = sqrt(a+A), donde:</p>
+<ul>
+<li>sqrt(a+A) es la raíz cuadrada de (a+A).</li>
+<li>r = <strong>radio absoluto</strong> (distancia desde el centro hasta la parte exterior de este anillo).</li>
+<li>a = <strong>área que debe ocupar el anillo</strong>.</li>
+<li>A = área de los <strong>anillos inferiores</strong>.</li><br />
+</ul><br />
+Una vez obtengo r, le resto los radios de los anillos interiores y ya tengo el <em>ancho</em> (radio relativo al anillo). Se podría tratar el gráfico directamente con los radios absolutos, pero requeriría empezar a dibujar desde fuera hacia dentro y por lo tanto invertir la serie. Mi opción es no retocar la serie, para no manipular la hoja de cálculo más de lo necesario.</p>
+<p>Dado que hemos supuesto que el área del círculo es 1, la suma de los radios no equivaldrá a uno (en realidad es de unos 0,564...). Esto es correcto: lo podemos comprobar <strong>calculando el área del círculo con radio 0,564... y nos dará como resultado 1</strong>.</p>
+<p>Y finalmente, el último paso: debemos <em>estirar</em> los radios para que el total sea 1.&nbsp; &iquest;Por qué? Pues para poder calcular con más facilidad los radios del gráfico en la pantalla. Esto es sencillo: basta dividir cada fragmento de radio por 0,564..., y ya tenemos los radios proporcionados a 1. Lo que estoy haciendo aquí no es más que <a title="Sopa de bits: Normalización y distancias normalizadas" href="/normalizacion-distancias-normalizadas">normalizar</a>: ajustar una serie de valores a una medida global concreta. (la norma) Es importante no confundir con <em>estandarizar</em> (convertir un valor de una distribución normal a la normal estándar de media 0 y desviación 1).</p>
+<p>Con este cálculo y algunas manipulaciones de texto en la hoja de cálculo, ya tenemos un <strong>archivo XML similar al original</strong>.&nbsp; Sólo he a&ntilde;adido los valores del radio interno (la suma de radios interiores) y externo (interiores + radio del anillo). También muestro en la etiqueta de cada sector (navegador del periodo concreto) el número total de usuarios que aumentan en cada anillo, para que sea más fácil comprobar las diferencias entre las cifras y el efecto visual.</p>
+<p>El siguiente paso es <strong>modificar el código del ejemplo original</strong> (para adaptar los radios y cambiar algunas etiquetas) y ya podremos compilar. En el siguiente artículo comento las modificaciones y el resultado.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                oct. 17<br/>
+                2009
+            </p>
+            <h3><a href="../../blog/visualizacion-datos-aproximacion-ingenua/">Visualización de datos: Una aproximación ingénua</a></h3>
+        </header>
+        <section>
+            
+                <p>La razón de ser de la visualización de datos es muy representativa (valga la redundancia) de la época actual.&nbsp; Tenemos infinidad de datos que necesitamos procesar, y necesitamos <a title="Sopadebits: Indicadores" href="/indicadores-el-ajo-dorado">indicadores</a> y técnicas para resumirlos. Sin embargo, por ahora disponemos de pocas herramientas que sean útiles y estables para estos objetivos.</p>
+<p>Ante esta aparente falta de herramientas, mi opción es adoptar una postura ingenua y buscar referentes que me ayuden a determinar los aspectos clave.</p>
+<h2>Buscando referentes</h2></p>
+<h3>Diagnóstico por la imagen</h3><br />
+Por cuestiones que no vienen al caso he tenido la oportunidad de entender de cerca cómo funcionan los sistemas de diagnósticos por la imagen en sanidad.&nbsp; Las técnicas de de diagnóstico por la imagen (con términos relacionados como radiografía, ecografía, contraste, TAC, PET, etc.) y su considerable cantidad de parámetros es una herramienta poco invasiva (salvo por la radiación, obviamente).&nbsp; Comparémoslo con la alternativa: <em>abrir</em> al paciente o extraer una biopsia es algo mucho más desagradable (y doloroso).</p>
+<p>Desde un punto de vista ingenuo, sorprende ver cómo al primer vistazo un profesional puede detectar los factores clave del diagnóstico.&nbsp; Pero adentrándose en los aspectos técnicos, sorprende entender la cantidad de parámetros posibles (técnicos y humanos) que pueden afectar para que una imagen permita las garantías básicas del diagnóstico.&nbsp; Por resumirlo en una frase: la clave está en <strong>combinar la focalización en los detalles sin pérdida de contexto</strong>.</p>
+<p>Para resaltar estos detalles, la clave está en la posición del cuerpo del paciente, la potencia de la radiación emitida (los huesos de la cabeza necesitan más radiación porque son mucho más densos que, por ejemplo, el tórax), el ángulo del disparo (el encuadre de la imagen, por llamarlo así), e incluso la posibilidad que el paciente tenga los pulmones llenos de aire. Pura <a title="Sopa de bits: muestreo estadístico" href="/muestreo-estadistico">técnica de muestreo</a>.</p>
+<p>Un cambio en los parámetros altera el resultado final, con lo que se obtiene una imagen borrosa, oscura o demasiado clara. Dado que sus fines no son estéticos sino de salud, la nitidez del órgano o fragmento a radiografiar son claves para el diagnóstico.</p>
+<h2>Representación, visualización e interacción</h2><br />
+El término clásico de representación gráfica de datos constituye el puente entre la emisión de datos y la representación visual.&nbsp; Ese camino representa un gran paso para aquellas personas ajenas a las cifras. Nuestra capacidad de representar mentalmente los datos para extraer información varía fuertemente dependiendo de los conocimientos previos y la experiencia.</p>
+<p>Sin embargo, la representación gráfica <em>clásica</em> <strong>se concentra en unos pocos parámetros</strong>.&nbsp; Con este límite, es relativamente fácil representar datos, ya que se puede utilizar formas geométricas simples, espacios delimitados, colores concretos, y cifras fijadas.&nbsp; Dada la tradicional escasez de datos, esta relación entre complejidad y resultados es más que suficiente. De hecho, va bien que sea así: <a title="Wikipedia: Principio KISS" href="http://es.wikipedia.org/wiki/Principio_KISS">cuanto más simple, mejor</a>.</p>
+<p>Lo que sucede actualmente es que tenemos muy a mano gran cantidad de datos. Por si fuera poco, el nivel de interrelación entre conjuntos de datos ha aumentado mucho: antes conseguir estas características era difícil, especialmente por el coste asociado al muestreo.&nbsp; Ahora es una cuestión casi de rutina.</p>
+<p>Con el aumento del volumen de los datos llegan varias consecuencias:</p>
+<ul>
+<li>Es necesario realizar tareas de depuración y "limpieza" de estos datos.&nbsp; Esta tarea es mucho más cercana a las labores de restauración (eliminar las impurezas), que al del lavado de un coche. Una limpieza con criterios erróneos conduce al sesgo de los datos y por ello a conclusiones equivocadas.</li>
+<li>Los conjuntos de datos pueden implicar varios niveles de información.&nbsp; Podemos tratar una muestra primaria, y relacionar este subconjunto de datos con otros datos secundarios.&nbsp; Por ejemplo: podemos tratar el nivel de ventas de un producto en varias zonas geográficas, y en un segundo nivel podemos analizar factores sociodemogr&agrave;ficos de cada zona como la natalidad, niveles de estudios, distribución de riqueza, etc.</li>
+<li>Es necesario reinventar la forma de representar estos datos, ya que la linealidad de las representaciones gráficas clásicas ya no son tan útiles para transferir ideas.&nbsp; Esto depende también del público al que se dirige, sus conocimientos, circunstancias, o motivaciones. La representación de los datos debe reflejar los <em>estratos de la relevancia</em>.</li>
+<li>La disponibilidad casi en tiempo real de algunos datos permite pensar en representaciones visuales actualizables, que evolucionan cambiando de color, tama&ntilde;o u otros efectos. Estas alteraciones reflejarían cambios cualitativos que afectan al equilibrio del conjunto.</li>
+<li>Un usuario capacitado puede extraer más conclusiones si tiene la posibilidad de modificar perspectivas, filtrar ciertos datos y establecer un "camino" en la representación. Ese camino transcurre desde sus dudas hasta las conclusiones.</li><br />
+</ul><br />
+Los aspectos interesantes, bajo mi punto de vista, radican en la posibilidad de establecer sistemas más personalizables de visualización de datos, organizados en niveles de representación, y combinados con la posibilidad que el usuario interactúe, con el objetivo de agruparlos, disgregarlos, relacionarlos, etc.</p>
+<p><strong>Creo que estos tres niveles (visualización, organización e interacción) corren paralelos a los niveles de información (datos, información y conocimiento).</strong> Los datos con un buen nivel de interacción y personalización podrían transmitir un mensaje adecuado para el receptor (por contraposición a un mensaje predefinido por el emisor), que mejora la transferencia de ideas.</p>
+<h2>Qué podemos extraer de la visualización de datos</h2></p>
+<ul>
+<li>Menor tiempo (y procesos intermedios) entre generación de datos y toma de decisiones.</li>
+<li>Disponibilidad de un solo entorno para los distintos niveles de decisión.</li>
+<li>Capacidad para extraer y representar subgrupos de información mediante una interacción visual, descartando en gran parte las consultas textuales.</li>
+<li>Vinculación de recursos adicionales (archivos audiovisuales, comentarios de los usuarios, etc.).</li>
+<li>La forma de interacción puede ser similar al de una Wiki, en la que los comentarios de los usuarios pueden ayudar a extraer el conocimiento.</li>
+<li>Integración de estos datos con entornos virtuales/simulados de una organización. Es decir, un sistema de realidad aumentada que conecte los datos con el entorno real en el que se generan (por ejemplo en una planta de producción).</li>
+<li>Cerrar el ciclo: analizar las interacciones de los usuarios con la visualización, para explicitar el proceso de toma de decisiones, la detección de comunidades y el filtrado.</li>
+<li>Selección y agrupación de estos datos, informaciones y documentos para la generación de informes estructurados, que puedan servir para la difusión externa (publicidad, informes, resúmenes) o interna (formación de empleados, comunicación interna, etc.).</li><br />
+</ul></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                jun. 5<br/>
+                2009
+            </p>
+            <h3><a href="../../blog/elecciones-europeas-decision-voto/">Sobre las Elecciones Europeas y la decisión de voto</a></h3>
+        </header>
+        <section>
+            
+                <p>Entre los tipos de votos hay que diferenciar a dos niveles: los que cuentan (de algún modo), y los que no cuentan en la determinación de esca&ntilde;os..</p>
+<ul>
+<li>En la primera categoría encontramos el <strong>voto a partidos políticos</strong> y el <strong>voto en blanco</strong>.</li>
+<li>En la segunda tenemos los <strong>votos nulos</strong> y la <strong>abstención</strong> (considero también el no-voto como una decisión, dado que afecta al proceso).</li><br />
+</ul><br />
+Resumiendo sus consecuencias:</p>
+<p>El voto nulo o la abstención son decisiones que no afectan al reparto de esca&ntilde;os ni al umbral de votos mínimos, por lo que <em>no condicionan</em> la representación política.&nbsp; La diferencia principal es que el voto nulo consta en las actas de las mesas electorales, mientras que la abstención sólo consta al comparar estas actas con el censo.</p>
+<p>En lo relativo al voto a partidos o en blanco, estos tipos votos son considerados votos válidos.&nbsp; Este detalle es incide, como se comentará más adelante, sobre el umbral mínimo de votos para el reparto de esca&ntilde;os.&nbsp; Cabe comentar que, según la <a title="Legislación de las Elecciones Europeas" href="http://www.europarl.europa.eu/workingpapers/poli/w13/country_es.htm#espania">Legislación Electoral para las Elecciones Europeas (apartado de Espa&ntilde;a)</a>, los partidos reciben una subvención de 3 millones de pesetas (Unos 18030 Euros) por esca&ntilde;o, y 100 pesetas (60 céntimos de euro) por voto recibido.</p>
+<h2>El proceso de recuento de votos: la secuencia</h2><br />
+Para comprender el reparto de esca&ntilde;os más a fondo, se puede representar el proceso de votación mediante una peque&ntilde;a secuencia:</p>
+<ul>
+<li>Votación: el elector tiene cuatro opciones principales:
+<ul>
+<li>Voto a un partido.</li>
+<li>Voto en blanco.</li>
+<li>Voto nulo.</li>
+<li>Abstención</li><br />
+</ul><br />
+</li></p>
+<li>Contabilización de votos:
+<ul>
+<li>Se contabilizan los votos que hay dentro de la urna. Implícitamente se descarta la abstención, por lo que los votos que pasan a la siguiente fase son los votos a un partido, los votos en blanco y los votos nulos.</li>
+<li>Una vez contabilizados, se descartan los votos nulos para el siguiente proceso.</li><br />
+</ul><br />
+</li></p>
+<li>Unificación de las actas de los colegios electorales:
+<ul>
+<li>Se suman los votos que cada partido ha recibido en los colegios electorales (en las elecciones Europeas, Espa&ntilde;a es una circunscripción única, en otros casos, la suma se aplica según las circunscripciones electorales definidas).</li>
+<li>Los partidos que no superen el 3% de los <strong>votos válidos </strong>(ojo con esto) quedan descartados.</li><br />
+</ul><br />
+</li></p>
+<li>Reparto de esca&ntilde;os:
+<ul>
+<li>Los partidos que superan el <strong>3% de votos válidos</strong> se reparten sus esca&ntilde;os, que según la Legislación Electoral para las elecciones Europeas, es de 64.</li>
+<li>El proceso de reparto aplica la <strong>Ley d'Hondt</strong>.</li><br />
+</ul><br />
+</li><br />
+</ul><br />
+A grandes rasgos, éste es el proceso.&nbsp; Vale decir que la Legislación Electoral para las Elecciones Europeas comenta claramente que todo lo que no cubra la Legislación Europea queda en manos de la Legislación espa&ntilde;ola (y la Junta Electoral Central). No conozco suficientemente la legislación al respecto, así que si alguien quiere matizar algo, los comentarios están abiertos.</p>
+<h2>Los efectos del voto en blanco en este proceso</h2><br />
+La última parte que es clave en el proceso es repartir los votos entre partidos, &iquest;Es así? La respuesta es <strong>NO</strong>.</p>
+<p>Antes de eso hay que aclarar el efecto del voto en blanco.&nbsp; Mientras que el voto nulo y la abstención quedan atrás, el voto blanco llega a las <em>semifinales</em> del proceso.&nbsp; Y afecta en un aspecto clave: determina el umbral mínimo de votos válidos. El voto en blanco presenta posturas <a title="A favor del voto en blanco" href="http://ciudadanoenblanco.blogspot.com/2008/01/el-voto-en-blanco-el-voto-nulo-y-la.html">a favor</a> y <a title="Contra el voto en blanco" href="http://urioste.eu/2007/05/11/contra-el-voto-en-blanco/">en contra</a>. No entraré en ese detalle, que cada cual valore.</p>
+<p>Sobre los enlaces anteriores, vale la pena comentar algo: creo que el cálculo que se realiza en el enlace <em>en contra del voto en blanco</em> es incorrecto, aunque su valoración final es correcta.</p>
+<p>Según el caso que comenta: Si hay 10000 votos a partidos y 5000 votos en blanco, el total de votos válidos es de 15000, por lo que el 3% de esta cantidad sería de 450 votos.&nbsp; Esto significaría que los partidos con menos de 450 votos se quedan fuera del reparto de esca&ntilde;os.</p>
+<p>Si no hubieran votos en blanco (sólo 10000 votos a partidos), el umbral se situaría en 300 votos. Si esos votos en blanco se dirigieran a partidos (15000 votos a partidos, 0 en blanco) el umbral quedaría en 450 igualmente. Es decir, el <strong>voto en blanco afecta al umbral mínimo de votos como si fuera otro partido, pero luego se descarta en el reparto de esca&ntilde;os</strong>.</p>
+<p>El 3% parece poco, pero ahora hay que mirar a las consecuencias: &iquest;A qué partidos afecta más este tipo de voto? <strong>el efecto del voto en blanco incide más en los partidos minoritarios</strong>. El voto en blanco dice quién pasa a las <em>finales</em> electorales (mis disculpas por utilizar un argot <em>deportivo</em>), que es el reparto de esca&ntilde;os según los votos recibidos por los partidos.</p>
+<h2>Análisis de sensibilidad</h2><br />
+A veces cuesta explicar la relación causa-efecto con porcentajes. En estos casos acostumbro a plantearlo definiendo un escenario extremo. Por ejemplo, con la siguiente pregunta: <strong>&iquest;cuántos votos en blanco deben emitirse para que el partido mayoritario no tenga representación?</strong> Tomando el ejemplo anterior, y si consideramos 15000 votantes que han ejercido su derecho a voto, a partir del 90% podría darse esta situación.</p>
+<p>Este 90% obedece a un caso más práctico, ya que el 10% de votos a partidos quedaría repartido entre partidos, pero es una cifra orientativa, no exacta. Para ser exactos, por encima del 97% de votos todos los partidos quedarían fuera.&nbsp; Considerando 15000 votos válidos, si 14550 fueran en blanco, ningún partido llegaría al reparto de esca&ntilde;os.</p>
+<p>Entre los dos extremos (minoría de votos en blanco, y mayoría de votos en blanco), se puede aplicar una técnica habitual en economía: el <strong><em>análisis de sensibilidad</em></strong>.&nbsp; El objetivo es entender cómo afectan los&nbsp; cambios graduales (en este caso el total de votos en blanco) sobre el resultado final.</p>
+<p>Si simuláramos un aumento gradual en los votos blancos, veríamos que l<strong>os partidos menos votados van <em>cayendo</em> de la lista de <em>finalistas</em></strong>.&nbsp; La lista de descartados aumentaría, hasta llegar al extremo comentado antes: no hay partidos que superen el umbral del 3%.</p>
+<p>Pero ojo: antes de eso, podría darse un caso extremo: que sólo el partido más votado superara el 3% y contara en el reparto de esca&ntilde;os (por lo que se quedaría con todos los esca&ntilde;os)&nbsp; Esta situación revela la principal consecuencia del voto en blanco: perjudica primero a partidos minoritarios, y luego, gradualmente, a partidos más votados.</p>
+<p>Como efecto derivado de lo anterior, y siempre <em>a <strong>efectos de reparto de esca&ntilde;os</strong></em>, el voto en blanco equipara el voto a partidos minoritarios (que no llegan al 3%) al de la abstención o el voto nulo.</p>
+<h2>El reparto de esca&ntilde;os y el juego cerrado de suma cero</h2><br />
+Ahora sí, llegamos a la última parte del proceso: Aplicar la Ley d'Hondt.&nbsp; Ya he <a title="Sopa de bits: Sistema d'Hondt" href="/sistema-hondt">comentado</a> y <a title="Demo Sopa de bits: Ley d'Hondt" href="http://demo.sopadebits.com/hondt/">simulado</a> este sistema de reparto, así que sólo me permito recalcar un detalle: el valor individual de cada voto.&nbsp; Si el elector ha votado a un partido, su voto es de apoyo hacia esa opción política, e indirectamente de rechazo al resto.&nbsp; No hay votos negativos (rechazar explícitamente a un partido) ni votos ponderados (repartir el voto entre varios partidos), así que el voto <em>positivo</em> es la única opción.</p>
+<p>El proceso de reparto de esca&ntilde;os obedece a una proporcionalidad. Si convertimos los votos absolutos en porcentajes de votos (con mucha precisión en los decimales de los porcentajes), el resultado es el mismo.&nbsp; Esto lleva a concluir que el reparto de esca&ntilde;os es un <strong>juego cerrado de suma cero</strong>: un voto hacia un partido es un voto menos para el resto. Eso sí, su peso depende del total de votos. Por lo tanto, cuantos más votos quedan fuera del reparto, más importancia tiene un peso adicional.</p>
+<p>Esta consecuencia, en el contexto de alta abstención que están presentando las elecciones europeas, tiene un efecto muy importante.&nbsp; Esto también afecta a la importancia del voto en blanco: cuando el total de votos a partidos es menor de lo habitual, cada voto a un partido cuenta mucho más, y cada voto en blanco hace más probable el descarte de partidos minoritarios.</p>
+<h2>Conclusiones y decisiones</h2><br />
+Después de todo el análisis, si dibuja un panorama de decisiones y efectos abiertos.&nbsp; La decisión de no votar, votar nulo, votar en blanco, o a un partido es una decisión de cada cual.&nbsp; De todos modos, se puede dibujar un escenario general sobre los efectos de cada opción.<strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<ul>
+<li><strong>Abstención (no-voto)</strong>: Queda constancia por contraste con el nivel de participación. Las razones pueden ser varias, y las consecuencias son que no afecta a la representación de esca&ntilde;os ni a los partidos minoritarios, pero puede recalcar el descontento con las opciones posibles.</li>
+<li><strong>Voto nulo</strong>: Queda constancia en relación a los votos válidos y la abstención.&nbsp; Se descartan para pasar al siguiente paso, ya que no se consideran votos válidos.</li>
+<li><strong>Voto en blanco</strong>: Afecta al umbral de votos que hay que conseguir para acceder al reparto de esca&ntilde;os, pero no al reparto final.&nbsp; Como consecuencia, el voto puede limitar el acceso al reparto a los partidos que no acceden a ese umbral.</li>
+<li><strong>Voto a partidos</strong>: Tiene valor (que aumenta cuantos menos votos a partidos se emitan) en la superación del umbral mínimo, y en el reparto de esca&ntilde;os.</li><br />
+</ul><br />
+Ante estos posibles escenarios, y como he dicho antes, el voto (y el no-voto) es una opción de cada cual.&nbsp; Mi intención ha sido aclarar los detalles, para que la decisión sea consciente, nada más.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                may. 4<br/>
+                2009
+            </p>
+            <h3><a href="../../blog/programacion-neurolinguistica-hipnosis-buscadores/">Programación Neuroling&amp;uuml;ística, hipnosis y buscadores</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>El modelo de Milton Erickson</h2></p>
+<p>Para desmitificar este término ,los autores proponen utilizar el término <em>trance </em>como sustituto y así eliminar prejuicios.</p></p>
+<p>&iquest;Qué es el trance? Entrar en trance no es algo que requiera un gran aprendizaje ni técnicas espectaculares.&nbsp; De hecho, el trance tal como lo exponen los autores es algo que sucede mucho más a menudo de lo que nos parece.&nbsp; Si has conducido y durante un rato tu mente se ha evadido, has entrado en trance.&nbsp; Si has perdido el hilo de la conversación, has entrado en trance.&nbsp; El hecho de <strong>hacer algo queriendo pero sin ser totalmente conscientes nos traslada al estado de trance</strong>.&nbsp; Sólo es eso.</p></p>
+<p>Milton Erickson utilizaba la hipnosis para inducir el trance en sus pacientes.&nbsp; Lo que consiguió Erickson fue utilizar ciertos patrones del lenguaje para que las personas entraran en estado de trance.&nbsp; Estos patrones provocan una especie de cortocircuito en nuestra consciencia: aprovechan <a title="Wikipedia: Puerta trasera" href="http://es.wikipedia.org/wiki/Backdoor">puertas traseras</a> que dan acceso directo al inconsciente.</p></p>
+<p>Sorprende que este proceso de entrada en trance es algo que hayamos vivido todos... si te contaban cuentos en la infancia.&nbsp; Frases ambiguas como <em>érase una vez...</em> o <em>Hace muchos a&ntilde;os en un país muy lejano...</em> desbordan la capacidad consciente de un ni&ntilde;o, igual que nos desborda el concepto de <strong>infinito</strong> cuando tratamos de representarlo. Para tratar de resolver ese desbordamiento, el inconsciente se activa para dar una respuesta plausible.</p></p>
+<p>La primera conclusión de todo esto es que hemos crecido hipnotizados <img title="Laughing" src="../../../resources/tiny_mce/jscripts/tiny_mce/plugins/emotions/img/smiley-laughing.gif" border="0" alt="Laughing" />. La segunda, como apuntan los autores, es que la poesía es una gran fuente de términos que inducen al trance.</p></p>
+<h2>Patrones del lenguaje de Erickson</h2></p>
+<p>El modelo de Milton se basa en generalizar.&nbsp; Es decir, ascender en las categorías de nuestros modelos mentales.&nbsp; El objetivo de la generalización es relajar el contexto de unos valores.&nbsp; Con esta generalización la parte consciente del individuo se ve desbordada en la capacidad de concretar y deja paso al inconsciente. Explicar este proceso en dos frases lo muestra como algo superficial, por eso recomendaría a los interesados una lectura más a fondo sobre el tema.</p></p>
+<p>Para conseguir este objetivo, el modelo Erickson propone utilizar formas de lenguaje explícitamente difusas, que se resumen en la siguiente serie de patrones:</p></p>
+<ul>
+<li><strong>Coletillas interrogativas</strong> (... &iquest;No es cierto? &iquest;Verdad?)</li>
+<li><strong>Acompasamiento con la experiencia actual</strong> (mientras lees estas líneas en la pantalla, puedes sentir los latidos de tu corazón...)</li>
+<li><strong>Dobles vínculos</strong> (Puedes seguir leyendo ahora o bien hacerlo más tarde).</li>
+<li><strong>Postulados conversacionales</strong> (&iquest;Puedes cerrar la puerta? &iquest;Puedes bajar la basura?). Es una pregunta que en realidad es una orden.</li>
+<li><strong>Citas extendidas</strong> (Creo que lo que dice este libro sobre lo que decía Grinder en relación a lo que afirmaba Erickson...).</li>
+<li><strong>Violaciones de la restricción selectiva</strong> (consultaré con mi almohada. Las paredes oyen. La pantalla de tu ordenador está cansada). Atribuir sentimientos o propiedades a un animal u objeto.</li>
+<li><strong>Ambig&uuml;edades fonológicas</strong>: Términos con significados y escritura diferente que se pronuncian igual.</li>
+<li><strong>Ambig&uuml;edad sintáctica</strong>: Sucede cuando no podemos determinar la función sintáctica de una palabra dentro de la frase que utilizamos.</li>
+<li><strong>Ambig&uuml;edad de ámbito</strong>: (Loción para pies de menta: &iquest;qué es de menta? &iquest;La loción o los pies?).</li>
+<li><strong>Ambig&uuml;edad en la puntuación</strong>: Cualquier defecto de construcción en los signos de puntuación que genera una ambig&uuml;edad en el significado.</li>
+<li><strong>Utilización</strong>: Se basa en aprovechar una circunstancia ajena a nuestro discurso para implicar al receptor. Puede ser un sonido o imagen del entorno, o bien parte de la frase que nuestro interlocutor ha mencionado.</li>
+<li><strong>órdenes incrustadas y marcado analógico</strong>: Son partes de una frase que se pronuncian con un tono más bajo y un volumen más alto y que implican una orden.</li>
+<li><strong>Deletrado de palabras</strong>.</li>
+<li><strong>Lenguaje de conexión (conjunción y disyunción)</strong>. Al conectar sentencias se rompe el límite del significado en cada caso, por lo que la capacidad de procesar el conjunto es superior. Al hacer esto se distrae a la consciencia. (No sé si te estás concentrando mucho al leer este texto, o estás escuchando música a la vez, o si te gustaría estar haciendo otras cosas, pero sé que puedes relajarte en cuanto lo desees).</li><br />
+</ul></p>
+<p>Otro de los conceptos interesantes deducibles del modelo Erickson es el <a title="Wikipedia: Isomorfismo" href="http://es.wikipedia.org/wiki/Isomorfismo">Isomorfismo</a>: dos elementos que actúan igual a nivel externo pero que tienen un contenido diferente son isomórficos.&nbsp; El término isomorfismo parece algo lejano al lenguaje, pero tiene una relación muy directa: si hablamos de <em>metáforas</em>, <em>fábulas</em> y cualquier recurso estilístico que represente una analogía en la relación Imagen-Representación, estamos utilizando un isomorfismo.</p></p>
+<h2>Buscadores en trance</h2></p>
+<p>En la lista anterior algunos de los puntos son aplicables casi de forma exclusiva en la comunicación sonora, pero en otros casos los patrones son plenamente aplicables a cualquier forma de comunicación, incluyendo la escrita.</p></p>
+<p>Me parece curioso comprobar las analogías que existen entre los patrones del lenguaje que inducen al trance, y el estado de ambig&uuml;edad, tanto terminológica como sintáctica.&nbsp; Parece que el proceso de aprendizaje y el trance corren paralelos.&nbsp; Recibimos una información que intentamos manejar para conceptualizar y contextualizar, y resulta que la ambig&uuml;edad bloquea nuestros engranajes conscientes. Si la información se puede desambiguar, aprendemos; en caso contrario, quizá entramos en trance.</p></p>
+<p>Trasladando este proceso de "trance" a la recuperación de la información, se sabe que la ambig&uuml;edad (y la generalización) genera mayor exhaustividad que precisión (muchos resultados, poco precisos). Si el buscador fuera humano, su trance se traduciría en verborrea, como si fuera un diálogo interno.</p></p>
+<p>Las técnicas de desambiguación de los <a title="Lenguaje documental" href="http://www.enciclonet.com/documento/lenguaje+documental/">lenguajes documentales</a> tratan de resolver ese ruido, porque se espera que el modelo cognitivo del individuo y el índice del sistema sean suficientemente similares.&nbsp; Lo que sucede actualmente es que esta circunstancia no es habitual (exceptuando a profesionales recuperando en base a lenguajes controlados), y especialmente cuando se utilizan los buscadores generalistas del entorno web.&nbsp; La cantidad ingente de información oculta un poco esa situación, pero muy pocas veces tenemos la certeza que una búsqueda nos aporta el documento <strong>más</strong> relevante.</p></p>
+<p>Aplicando el modelo de Erickson a los buscadores, quizá "hipnotizar" a los buscadores permita mejorar la recuperación, utilizando un proceso inverso al actual: ambiguar para crear situaciones de serendipia o simplemente de interacción del usuario.&nbsp; En base a los estudios realizados en la recuperación, parece que hay una analogía interesante entre los niveles del modelo Erickson y el <a href="http://www.scils.rutgers.edu/~tefko/ProcASIS1997.doc">modelo estratificado</a> de <a title="Tefko Saracevic" href="http://www.scils.rutgers.edu/~tefko/">Saracevic</a>.&nbsp; Uno y otro caminan en sentidos contrarios, pero quizá se pueda encontrar un punto de intersección entre ambos y abrir vías para introducir mejoras en algoritmos.</p></p>
+<p>Las búsquedas ambiguas del usuario (y no el documento ni el algoritmo) pueden ser vías para diagnosticar los desórdenes (por ambig&uuml;edad) en el índice del buscador. Desde luego, esto último no es tarea del propio usuario, sino de la mejora continua de los algoritmos.</p></p>
+<p>Como en otros casos, la inversión de criterios (ambiguar en vez de concretar) puede aportar vías alternativas de análisis para responder algunas cuestiones que los análisis clásicos, basados en criterios de consciencia y coherencia, quizá no puedan resolver.</p></p>
+<p>Para muestra un botón: las palabras vacías son teóricamente un engorro para la recuperación de información desambiguada, pero pueden ser un recurso muy interesante para detectar el idioma de un documento.&nbsp; Dada su constante presencia en el texto, pueden incluso ayudar a detectar fragmentos de texto con un idioma distinto al general del documento. La detección del idioma forma parte de la indexación y no de la recuperación, pero afecta a la relevancia.</p></p>
+<p>La ambig&uuml;edad en la búsqueda trata de perseguir un objetivo similar: destilar factores de relevancia distintos al que nos aporta el contenido. No se van a resolver en el mismo momento de la recuperación (si lo que queremos es que el usuario desambig&uuml;e, ya existe la opción de recibir el <em>feedback</em> del usuario), sino que mejoraran el proceso de indexación.</p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                abr. 6<br/>
+                2009
+            </p>
+            <h3><a href="../../blog/ya-van-dos-anos/">Y ya van dos a&amp;ntilde;os</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>Cuatro datos</h2></p>
+<p>Son dos a&ntilde;os, dedicados a encontrar momentos para escribir algo que pueda interesar a los más o menos 25 lectores de mis feeds y a los visitantes ocasionales del sitio.</p></p>
+<p>Dos a&ntilde;os que han ido evolucionando para encontrar un tono y unos temas de interés que puedan ser tan originales como sea posible, ya sea por la temática o por el enfoque.</p></p>
+<p>Fruto de esto, el blog a crecido.&nbsp; Con humildad desde luego, pero al menos uno tiene la sensación que ya tengo datos suficientes para saber qué&nbsp; distancia hay que recorrer entre lo que puede interesar a otros y lo que me interesa a mí.</p></p>
+<p>Desde que cambié el dise&ntilde;o los indicadores básicos han crecido. Comparando este último mes con la misma época del a&ntilde;o pasado, el crecimiento también es palpable. Todos los indicadores han mejorado positivamente &nbsp; Por ejemplo:</p></p>
+<ul>
+<li>Las visitas han crecido en un 80% (de las 840 a las 1500), y las páginas vistas en un 99% (de 1000 a 2100).</li>
+<li>El número de páginas por visitas ha aumentado un 11% (es decir, poco: de 1,26 a 1,4), </li>
+<li>el tiempo medio en las páginas ha aumentado un 74% (de 1:17 a 2:14), </li>
+<li>y tanto el porcentaje de rebote com el de visitas nuevas ha mejorado (estos indicadores son algo relativos, vale decirlo).</li><br />
+</ul></p>
+<p>Tomados los datos así la verdad es que el crecimiento parece bueno.&nbsp; Echando un vistazo a los datos, creo que valdría la pena evaluar estas cantidades descartando las visitas que han durado menos de 20 segundos: de este modo se reduce mucho el número de páginas vistas, pero aumenta bastante el tiempo medio por página y el número de páginas vistas (al final, el objetivo es que la lectura sea interesante, y que sea de uno o más artículos).</p></p>
+<p>Una parte de las mejoras las atribuyo al cambio de dise&ntilde;o, que permite una mejor navegación entre apartados, de modo que mejora ligeramente el número de páginas vistas. Estoy bastante convencido que este dise&ntilde;o evolucionará un poquito más a nivel de navegación, y bastante más a nivel de funcionalidades, pero dado que este blog es un proceso a largo plazo, mejor no avanzar eventos.</p></p>
+<p>El otro detalle que seguramente ha provocado el aumento de visitas es el mayor ritmo de publicación (el a&ntilde;o pasado dejé de publicar por exceso de trabajo y eso se notó).</p></p>
+<p>Pero lo que sí provoca un efecto positivo es el del enlace desde otros blogs, y aquí (una vez más) merece mención aparte la <a title="Human Computer: Más allá del seguimiento visual" href="http://www.human-computer.net/blog/2009/02/26/mas-alla-del-seguimiento-visual/">recomendación de Yusef</a> (gracias), que ha dado visibilidad al artículo. Lo mejor es comprobar que existen fuentes que, como la suya, tratan (con humor, que no falte), la importancia de entender a utilizar los datos y las herramientas estadísticas para mejorar el entendimiento de lo que nos rodea.</p></p>
+<h2>De aquí en adelante</h2></p>
+<p>últimamente me he aficionado a comentar temas relacionados con la estadística, dándoles un enfoque más llano e informal.&nbsp; Internet es una fuente más que suficiente para los contenidos formales en estadística, aunque desde luego hay que saber filtrar las fuentes.</p></p>
+<p>La razón por la que escribo sobre este tema es que, de los tres temas principales que trato habitualmente, la estadística es la que acostumbra a presentar una mayor barrera de entrada.</p></p>
+<p>Por ejemplo, la informática puede generar rechazo, pero hay infinidad de posibilidades y necesidades que dan la oportunidad de perderle el miedo y ganar tiempo. Lo mismo sucede con la documentación: un edificio conceptual dirigido a organizar contenidos tiene sentido cuando tomamos conciencia del tiempo quer perdemos leyendo blogs, y luego buscando los artículos que nos interesaban.</p></p>
+<p>Eso no significa que deje de lado el resto de temas. Mi principal objetivo es encontrar temas que combinen dos o más disciplinas, ya que creo que de este modo se crean más <em>puntos de acceso</em> al aprendizaje.</p></p>
+<p>Cada día que pasa sigo pensando que l<a title="Sopadebits: Efecto Medici - Innovación interdisciplinar" href="/efecto-medici-innovacion-interdisciplinar">as tres disciplinas se interrelacionan formando un cruce de caminos muy fértil</a>, especialmente por la lluvia de datos que cae sobre nosotros en la actualidad.</p></p>
+<p>Así que siguiendo adelante, es probable que me centre durante un tiempo en explicar los cuatro conceptos clave de la estadística, para luego poder utilizar esta base en artículos relacionados con los otros temas. Siempre con más ánimo didáctico que formal, por si a alguien le interesa.</p></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                mar. 11<br/>
+                2009
+            </p>
+            <h3><a href="../../blog/open-flash-chart-2-mejorando-graficos-estadisticos/">Open Flash Chart 2 - Mejorando los gráficos estadísticos</a></h3>
+        </header>
+        <section>
+            
+                <p><br />
+<h2>El Cambio a JSON</h2><br />
+En la <a title="Open Flash Chart 1" href="http://teethgrinder.co.uk/open-flash-chart/">versión 1 de OFC</a>, el formato para transferir los datos era el "nativo" de Flash.&nbsp; Esto implicaba que los datos estaban incluidos <em>&amp;entre ampersands&amp;</em>.&nbsp; Ante las pocas posibilidades del formato, uno puede esperar cualquier problema derivado de entidades HTML, etiquetas con un simple signo &amp; o cualquier otra cosa.</p>
+<p>Con el cambio, los datos se transfieren con una estructura equivalente a la que podría incluir una matriz de datos, para luego ser capturados e interpretados por el archivo SWF en el navegador.</p>
+<h2>Implantación</h2><br />
+Como efecto secundario positivo, es más fácil implantar una solución con esta versión.&nbsp; Esto incluye el desarrollo de funcionalidades (si no satisfacen las bibliotecas en entorno servidor disponibles en el sitio), su integración, depuración y testeo. Por no hablar del soporte <a title="UTF8" href="http://www.utf-8.com/">UTF8</a> de Flash y JSON, algo teóricamente básico pero a veces dramático (es de esperar que PHP6 solucione esto de una vez). Todo esto parece simplificarnos la vida en el desarrollo.</p>
+<p>La opción de crear una biblioteca alternativa a las ya existentes puede tener sentido por cuestiones de simplificación.&nbsp; Por ejemplo, en la versión PHP5 de la biblioteca las funcionalidades se encuentran disgregadas en varias clases y archivos.&nbsp; Quizá esta estructura tenga sentido en el futuro para albergar gran cantidad de configuraciones, pero actualmente parece excesiva. Por otro lado, las aplicaciones potenciales de la biblioteca en un caso concreto pueden ser muy concretas, con lo que simplificar el código del servidor puede reducir levemente el tiempo de carga (esto se puede notar en sitios con altas tasas de tráfico, no en el resto).</p>
+<p>Actualmente casi todos los tipos de gráficos comparten una gran cantidad de las caracter&Atilde;&shy;sticas de configuración, mientras que sólo en algunos casos concretos se utilizan atributos o estructuras de valores diferentes.&nbsp; Esto dice mucho en favor de la parte cliente (el archivo SWF Flash que se inserta en la página para mostrar el gráfico) de OFC, pero poco en favor de la parte servidor (la biblioteca PHP5 al menos). De todos modos esta crí&shy;tica es muy relativa: creo que se trata de una visión de futuro por parte del creador del proyecto, que se verá en versiones posteriores. Hay que tener algo de paciencia.</p>
+<h2>Modelo de datos</h2><br />
+Para entender las posibilidades que ofrece OFC2, hay que ir un poco más al fondo en la estructura de la configuración de un gráfico.&nbsp; Resumiendo las caracterí&shy;sticas principales del modelo de datos, se puede diferenciar entre la configuración del gráfico como elemento genérico y la representación de cada serie de datos.&nbsp; En la primera parte se puede configurar el gráfico a nivel de cabecera, y luego pasar a configurar cada grupo de datos (serie).</p>
+<h3>Cabecera del gráfico</h3><br />
+En el caso de la cabecera podemos encontrar los siguientes elementos de configuración:</p>
+<ul>
+<li><strong>title</strong>: Texto y estilo (en formato tipo CSS) del tí&shy;tulo principal del gráfico.</li>
+<li><strong>y_legend</strong>: Texto y estilo del eje vertical.&nbsp; Esto no es aplicable en gráficos como el diagrama de sectores.</li>
+<li><strong>x_axis</strong>: Caracterí&shy;sticas de configuración del eje horizontal del gráfico.&nbsp; Estas caracterí&shy;sticas incluyen el grueso y color del eje, sus etiquetas, y otros detalles.</li>
+<li><strong>y_axis</strong>: Prácticamente idéntico al caso de x_axis, salvo en detalles, como definir los valores del límite inferior y superior del gráfico.</li><br />
+</ul><br />
+Todos estos elementos son opcionales, por lo que se pueden dejar de lado al iniciar los testeos iniciales y entrar a fondo cuando sea cuestión de dejarlo bonito. En los casos de gráficos que no tienen ejes de coordenadas X-Y (como los gráficos de sectores), las configuraciones de coordenadas pueden ser directamente inútiles porque los gráficos no lo necesitan.</p>
+<h3>Elementos del gráfico</h3><br />
+Cada representación gráfica de datos se denomina Element en la biblioteca OFC2, y se encuentra incluido en el apartado "elements" de la configuración.&nbsp; Para crear un diagrama de barras, de sectores o cualquier otro se define un elemento con su configuración concreta.&nbsp; Esta configuración debe adaptarse a la configuración de cabecera, básicamente en lo relativo a escala y etiquetas.</p>
+<p>Muchos de los atributos de configuración de cada gráfico son comunes, entre los cuales podemos encontrar los siguientes:</p>
+<ul>
+<li><strong>type</strong>: Es el que define el tipo de gráfico.&nbsp; Los tipos disponibles por ahora son: pie, bar, bar_glass, bar_3d, hbar, line, scatter, scatter_line, line_dot, line_hollow, y area_hollow (en este caso es posible crear gráficos de tipo radar).</li>
+<li><strong>alpha</strong>: Transparencia del gráfico.&nbsp; Cuanto menor es el valor, más transparencia.</li>
+<li><strong>colour</strong>: Color de la serie de datos, en formato hexadecimal.</li>
+<li><strong>text</strong>: Texto de la leyenda que etiqueta la serie.</li>
+<li><strong>font-size</strong>: Tama&Atilde;&plusmn;o de la fuente de las etiquetas de datos (no de la leyenda).</li>
+<li><strong>values</strong>: Listado de valores de la serie.&nbsp; En este campo hay peque&ntilde;as variaciones (en algunos casos hay que indicar dos valores), y en el gráfico de sectores hay que indicar el par valor/etiqueta).</li><br />
+</ul><br />
+Otras configuraciones (en principio específicas) que podemos encontrar son:</p>
+<ul>
+<li><strong>animate</strong>: Crea una agradable animación del gráfico para desplegar los datos.&nbsp; en algunos casos (por ejemplo del gráfico de sectores, "pie") el grafico se inicia plegado y se abre en abanico hasta cerrar el c&Atilde;&shy;rculo. Puede ser que no funcione en todos los casos.</li>
+<li><strong>stroke</strong>: Tama&ntilde;o de la línea delimitadora del gráfico.</li>
+<li><strong>dot-size</strong>: Tama&ntilde;o del punto en el gráfico de lí&shy;neas con puntos (line_dot), entre otros.</li><br />
+</ul></p>
+<h2>Algunos ejemplos</h2><br />
+He generado algunos ejemplos con datos estáticos para mostrar algunos ejemplos.&nbsp; En el apartado de tutoriales del sitio podéis encontrar muestras de gráficos con enlaces a sus archivos de configuración, con lo que es suficiente para profundizar en el modelo de datos.</p>
+<p>&nbsp;</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="250" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" /><param name="quality" value="high" /><param name="flashvars" value="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4502-ofc2-grafic1.txt" /><embed type="application/x-shockwave-flash" width="500" height="250" src="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4502-ofc2-grafic1.txt" align="middle"></embed></object></p>
+<p>&nbsp;</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="250" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" /><param name="quality" value="high" /><param name="flashvars" value="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4503-ofc2-grafic2.txt" /><embed type="application/x-shockwave-flash" width="500" height="250" src="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4503-ofc2-grafic2.txt" align="middle"></embed></object></p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="500" height="250" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" /><param name="quality" value="high" /><param name="flashvars" value="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4506-ofc2_grafic3.txt" /><embed type="application/x-shockwave-flash" width="500" height="250" src="http://www.sopadebits.com/wp-content/uploads/2011/03/open-flash-chart.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="data-file=http%3A%2F%2Fwww.sopadebits.com%2Fwp-content%2Fuploads%2F2011%2F03%2F4506-ofc2_grafic3.txt" align="middle"></embed></object></p>
+<h2>Comentarios</h2><br />
+Desde el punto de vista de la implantación, la versión 2 de OFC es mucho más simple, aunque su configuración queda reservada a desarrolladores y no como utilidad (widget) para usuarios finales. Eso es una cuestión a mejorar en cualquiera de estos tipos de bibliotecas, algo que facilitaría su popularización. Me gustarí&shy;a publicar un peque&ntilde;o asistente de creación de gráficos <em>standalone</em> (introducir la configuración y los datos, y obtener el código para incrustarlo): queda apuntado en la lista de tareas pendientes.</p>
+<p>Por otro lado, OFC2 sigue siendo una biblioteca sencilla en cuanto a la variedad de gráficos que se pueden utilizar, aunque han mejorado.&nbsp; También hay que decir que con esta nueva versión parecen sentarse buenas bases para el desarrollo de una herramienta completa y potente. Por lo tanto, habrá que esperar a nuevas versiones para ver más tipos de gráficos.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../page/17/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">16</a>
+        
+        
+          <a class="btn btn-primary" href="../../page/15/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
