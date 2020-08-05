@@ -30,7 +30,7 @@ jobs:
             text-unidecode==1.3 \
             watchdog==0.10.3 \
             Werkzeug==1.0.1
-      - name: "Build"
+      - name: "Configure and clean"
         run: |
           git config --global user.name ${GITHUB_ACTOR}
           git config --global user.email ${GITHUB_ACTOR}@sopadebits.github.io
@@ -40,11 +40,13 @@ jobs:
             git rm -rf ./docs/
           fi
           git commit -m "Removed old build" ./build/
-          mkdir ./build
+      - name: "Build"
+        run: |
+          mkdir ./docs
           cd sopadebits-lektor
           python3 -m lektor build --output-path ../docs
           cp ../CNAME ../docs/
           cd ..
           git add docs/
-          git commit -m "Page build ${GITHUB_RUN_ID}" docs/*
+          git commit -m "Page build ${GITHUB_RUN_ID}" docs/* docs/
           git push github master
