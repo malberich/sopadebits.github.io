@@ -1,0 +1,622 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sopa de bits</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A blog about data, information and Tech by Mario Alberich"/>
+    <meta name="keywords" content="Statistics, Data, Experimentation, Technology, Data visualization" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/js/cookiecuttr/cookiecuttr.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" media="print"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css" media="print" />
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 nopad-l">
+          <div class="sidebar-nav-fixed affix hidden-sm">
+            <div class="well">
+              <div class="row">
+                <!-- <div class="col-xs-12">
+                  <input class="form-control" type="text" id="search-query" name="q" placeholder="Search in sopadebits.com" data-toggle="popover" autocomplete="off">
+                </div> -->
+                <div class="col-xs-12 text-center">
+                  <a href="https://sopadebits.com"><h1>Sopa de bits</h1></a>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="https://sopadebits.com">
+                    <img src="/static/images/avatar.jpg"
+                      class="img img-responsive img-circle"
+                      alt="Sopa de bits"
+                      title="Sopa de bits" />
+                  </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-sm-12 hidden-xs" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+                <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+                  
+  <!-- render_site_categories -->
+  <h3>Categories</h3>
+  <div class="row">
+    
+      <div class="col-xs-2">
+        <span class="badge">45</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/documentacion/">Documentación</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">40</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/economia/">Economía</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">139</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/informatica/">Informática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">82</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/matematica/">Matemática</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">1</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/miscelanea/">Miscelánea</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">8</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/ocio/">Ocio</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">11</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/personas/">Personas</a>
+      </div>
+      <div class="col-xs-2">
+        <span class="badge">7</span>
+      </div>
+      <div class="col-xs-10">
+        <a href="/categories/sin-categorizar/">Sin categorizar</a>
+      </div>
+  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron visible-sm visible-xs">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4 text-center">
+                    <a href="https://sopadebits.com">
+                        <img src="/static/images/avatar.jpg"
+                          class="img img-responsive img-circle"
+                          alt="Sopa de bits"
+                          title="Sopa de bits" />
+                    </a>
+                </div>
+                <div class="col-sm-10 col-xs-12">
+                    <h1 class="hidden-xs"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                    <h1 class="visible-xs text-center"><a href="https://sopadebits.com">Sopa de bits</a></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+                  <p>A blog about data, information and Tech by Mario Alberich</p>
+                </div>
+                <div class="col-xs-12" rel="icons">
+                  
+  
+    <a target="_new" href="https://linkedin.com/in/marioalberich" alt="LinkedIn" title="LinkedIn">
+      <span class="icon fa fa-2x fa-linkedin"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+    <a target="_new" href="https://twitter.com/sopadebits" alt="Twitter" title="Twitter">
+      <span class="icon fa fa-2x fa-twitter"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://github.com/malberich" alt="Github profile" title="Github profile">
+      <span class="icon fa fa-2x fa-github"></span>
+    </a>&nbsp;&nbsp;
+  
+  
+  
+    <a target="_new" href="https://marioalberich.com" alt="Portfolio" title="Portfolio">
+      <span class="icon fa fa-2x fa-user"></span>
+    </a>
+  
+
+                </div>
+            </div>
+        </div>
+        <!-- <div
+          id="search-results"
+          style="background-color: #fff; border: 1px solid black; z-index:125; height: 50%; overflow: scroll; display: none; position:absolute" class="col-xs-12 col-sm-4 col-sm-offset-2">
+        </div> -->
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+  <!-- blog layout -->
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/9/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">8</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/7/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                ene. 5<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2014-1/">Enlaces de interés 2014-1</a></h3>
+        </header>
+        <section>
+            
+                <p>&nbsp;</p><!--more-->
+<p>Y para acabar un vídeo totalmente contrapuesto al del último del 2013: Martin Kleppe y sus 1024 segundos de magia (con Javascript).</p>
+<p><iframe src="//www.youtube.com/embed/RTxtiLp1C8Y" height="315" width="420" allowfullscreen="" frameborder="0"></iframe></p>
+<p>Si lo vas a ver, prepárate para pausar y rebobinar unas cuantas veces. Y buena suerte con el <a title="JS fuck" href="http://jsfuck.com">jsfuck</a> :-D.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                ene. 2<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/hhvm-magento-symfony/">#hhvm en #magento y #symfony</a></h3>
+        </header>
+        <section>
+            
+                <p>A partir de lo comentado en el anterior artículo sobre HHVM, me quedaba por aclarar su funcionamiento con la herramienta PHP más popular para crear sitios e-commerce: <a title="Magento" href="http://www.magentocommerce.com">Magento</a>.</p><!--more-->
+<p>Magento es uno de los casos más evidentes de la lentitud de PHP para aplicaciones medianamente grandes. El caso de Magento es el de una aplicación que utiliza varios miles de clases, con una estructura de directorios en los que se buscan estas clases, y en un proceso de interpretación del código que provoca una ejecución lenta. A pesar de usar PHP de forma intensiva (si no lo haces, puedes morir en el intento), Magento es lento. Y parte de la <em>responsabilidad</em> de ese hecho es de PHP.</p>
+<p>Así que una vez aceptado el problema, HHVM puede ser la solución.&nbsp;&iquest;Cómo funciona HHVM con Magento? Pues la respuesta: no funcionaba. HHVM no incluye <em>de serie</em> algunas funcionalidades necesarias para Magento.</p>
+<h2>Adaptar HHVM, adaptar Magento</h2><br />
+Mejorar el rendimiento de Magento es un objetivo común en todo el ecosistema de Magento, por eso no se hizo de esperar un análisis sobre el proceso de&nbsp;<a title="Magento on HHVM" href="https://docs.google.com/presentation/d/18HIS06kjYjVR5Km9JiSu0iZcSIHlQIEP3C4--hFfcfE/edit?pli=1">adaptación de HHVM a Magento</a>, y un poco más tarde una <a title="A vagrant configuration for getting a basic version of Magento with HHVM up and running" href="https://github.com/mzeis/vagrant-magento-hhvm">solución publicada en Github</a> por <a href="http://twitter.com/mzeiss">Matheus Zeiss</a>&nbsp;para poder ejecutar un Magento básico sobre HHVM. &nbsp;Con esta implementación, podemos ver una muestra de importación de productos en Magento usando HHVM, que tiene una pinta impresionante:</p>
+<p><iframe src="//player.vimeo.com/video/74368652" height="375" width="500" allowfullscreen="" frameborder="0"></iframe></p>
+<p><a href="http://vimeo.com/74368652">magento-import-test-hhvm</a> from <a href="http://vimeo.com/user20799717">derp</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>También podemos ver unas instrucciones de <a href="https://github.com/SchumacherFM">Cyrill Schumacher en Github</a> para <a href="https://gist.github.com/SchumacherFM/6204170">ejecutar Magento Enterprise Edition con HHVM</a>, o el proceso de reindexación ejecutado por <a href="https://twitter.com/daniel_sloof">Dani&euml;l Sloof</a> y mostrado en una <a href="https://twitter.com/daniel_sloof/status/401414537204625408/photo/1">captura de pantalla en su cuenta de Twitter</a>.</p>
+<p>&iquest;Y ya está? &iquest;Magento funciona sobre HHVM? Para nada. Cada nuevo módulo que se instale en Magento deberá ser probado para que funcione sobre HHVM, y en caso contrario modificar su código. O eso, o bien esperar a que HHVM vaya incorporando esas funcionalidades.</p>
+<h2>Symfony</h2><br />
+Symfony, el Framework PHP que tiene más estrellas en GitHub, es otro de los <em>agraciados</em>&nbsp;con la mejora de rendimiento. Además de las <a href="http://www.hhvm.com/blog/2813/we-are-the-98-5-and-the-16">mejoras publicadas en los tests del blog de HHVM</a>, hay otras <a href="http://symfony.puentesdiaz.com.ar/php-performance-hhvm-php5-5-opcache/">pruebas más básicas realizadas con ApacheBench</a>. Digna de mención es esta presentación en Slideshare sobre HHVM y Symfony:</p>
+<p><iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/27652309" height="356" width="427" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<div style="margin-bottom: 5px;"><strong> <a title="HipHop VM: overclocking Symfony" href="https://es.slideshare.net/mrjaver/hip-hop-vm-overclocking-symfony" target="_blank">HipHop VM: overclocking Symfony</a> </strong> from <strong><a href="http://www.slideshare.net/mrjaver" target="_blank">Vadim Borodavko</a></strong></div></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 30<br/>
+                2014
+            </p>
+            <h3><a href="../../../blog/si-desarrollas-en-php-y-tienes-un-rato-prueba-hhvm/">Si desarrollas en #PHP y tienes un rato, prueba #HHVM</a></h3>
+        </header>
+        <section>
+            
+                <p>Después de estos a&ntilde;os trabajando con PHP, una cosa queda clara: a partir de un cierto punto, el uso de memoria y de CPU son elementos limitadores en el rendimiento de nuestras aplicaciones. Con el tiempo y la introducción de frameworks de desarrollo, el consumo de recursos se incrementa notablemente, y aunque el coste de la RAM se ha reducido, esto no es un argumento aceptable: si hay lenguajes más eficientes acabarán siendo los preferidos, especialmente en un momento en el que los buscadores exigen el mínimo tiempo de respuesta.</p><!--more-->
+<h2>HipHop para agilizar PHP</h2><br />
+Hace algo menos de 3 a&ntilde;os Haiping Zhao anunció en el <a href="https://developers.facebook.com/blog/">blog de desarrolladores de Facebook</a> la <a href="https://developers.facebook.com/blog/post/2010/02/02/hiphop-for-php--move-fast/">disponibilidad de HipHop para PHP</a>, una herramienta para generar código C++ optimizado a partir de PHP. Esta primera aproximación (que empezaba en el 2008) dejaba fuera del proceso de traducción funcionalidades tales como&nbsp;<em>eval()</em>.</p>
+<p>Aunque el objetivo no es nuevo (<a href="http://pecl.php.net/package/APC">APC</a>, <a href="http://eaccelerator.net/">eAccelerator</a> y el Zend Engine van en una dirección similar), la aproximación en aquel momento fue diferente: HipHop convertía el código en C++ (para luego compilarlo), no en opcode (para luego ejecutarlo sobre el propio motor de PHP).</p>
+<p>Esta mejora en la ejecución tampoco redundaba en mejoras de velocidad para otras operaciones, como por ejemplo consultas de la base de datos: si el cuello de botella de una aplicación estaba en ese punto, el resultado final no mejoraría significativamente. Aún así, la promesa de un PHP más eficiente en el uso de la CPU y de la memoria era generar unas altas expectativas.&nbsp;Desde entonces el proyecto ha ido evolucionando sin mucho ruido, y quizá debido a sus limitaciones, la implantación no fue extensiva.</p>
+<h2>De HipHop a HHVM</h2><br />
+Casi dos a&ntilde;os después, <a href="http://www.hhvm.com/blog/">apareció el blog de HHVM</a>, mostrando que <a href="http://www.hhvm.com/blog/date/2012/09">Wordpress 3.4.2 podía correr sobre HHVM</a>.</p>
+<p>Sin embargo el proceso de HHVM es diferente al de HipHop. &nbsp;En el caso de HHVM, se convierte PHP a un bytecode que luego es convertido a lenguaje máquina con un compilador JIT. Este procedimiento es similar al utilizado por la Máquina Virtual de Java, por ejemplo. Este cambio evita el proceso de compilación que sí requería HipHop, por lo que el proceso de actualización de código resulta más ágil con HHVM. Algunas de las ideas son similares a APC, pero desde luego el proceso no es el mismo. APC es un componente que se puede instalar aparte, y HHVM es la base sobre la que corre PHP.</p>
+<p>Con el tiempo, la carrera se ha encaminado a tener una herramienta de aplicación en un espectro lo suficientemente amplio de frameworks y aplicaciones populares que asegure su difusión.&nbsp;Sin ir más lejos, actualmente no parece posible configurar HHVM para que utilice Apache, aunque <a href="https://github.com/facebook/hhvm/wiki/FAQ#what-is-the-roadmap-for-hhvm">está en su Roadmap</a>.</p>
+<p>En esa dirección, el pasado 19 de Diciembre se publicaba en el blog de HHVM un artículo sobre la ejecución de <a href="http://www.hhvm.com/blog/2813/we-are-the-98-5-and-the-16">pruebas unitarias de diversos frameworks en HHVM</a>. Desde el <a href="http://www.hhvm.com/blog/1499/locking-down-for-performance-and-parity">inicio de esas pruebas</a> hasta el resultado final, la mejora ha sido notable en algunos casos (Symfony o Yii por poner dos casos populares), con una media de un 9.62% de la superación de pruebas unitarias, y una mejora del 16% del rendimiento (ojo, sobre la ejecución de la base de código de facebook.com).</p>
+<p>En resumen, HHVM es a mi modo de ver un proyecto que hay que seguir de cerca. En un momento en el que <a href="https://github.com/php-fig/fig-standards">PHP-FIG trabaja a fondo en las PSR</a>&nbsp;y que el uso de frameworks es indiscutible para el desarrollo de aplicaciones web medianamente escalables, HHVM puede ayudar a dar el paso para superar los problemas de rendimiento de un lenguaje que no fue originalmente concebido para este enfoque.</p>
+<p>He encontrado este <a title="The future of PHP .. at a distance" href="http://pooteeweet.org/blog/2259">artículo sobre las implicaciones del uso de HHVM</a>, interesante lectura.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 29<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2013-52/">Enlaces de interés 2013-52</a></h3>
+        </header>
+        <section>
+            
+                <p>Hoy poca cosa por comentar, algunos enlaces dispersos para amenizar el domingo post-manjares.</p><!--more-->
+<ul>
+<li><a title="El mundo sigue mejorando" href="http://politikon.es/2013/08/02/el-mundo-sigue-mejorando/">El mundo sigue mejorando</a>, un artículo en <a href="http://politikon.es/">Politikon</a>.</li>
+<li><a href="http://www.principiamarsupia.com/2013/11/21/la-gran-mentira-de-la-sanidad-privada-en-8-graficos/">La gran mentira de la sanidad en 8 gráficos</a>, en <a href="http://www.principiamarsupia.com/">Principia Marsupia</a>.</li>
+<li><a href="http://97cosas.com/programador/">97 cosas que todo programador debería saber</a>.</li>
+<li>El <a title="Manual de Open Data" href="http://opendatahandbook.org/es/">manual de Open data</a>, que no falte.</li><br />
+</ul><br />
+Y para acabar, un video bastante alejado de lo que muestro habitualmente: Teaching to See. Introspectivo, relajante, sugestivo, sobre la experiencia de ense&ntilde;ar las bases del dise&ntilde;o y su aspiración por la simplicidad. Si tienes un rato, déjate llevar.</p>
+<p><iframe src="//player.vimeo.com/video/45232468?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" height="281" width="500" allowfullscreen="" frameborder="0"></iframe></p>
+<p><a href="http://vimeo.com/45232468">Inge Druckrey: Teaching to See</a> from <a href="http://vimeo.com/et">Edward Tufte</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>En el fondo es mi deseo para vosotros durante el 2014: Aprender un poco más a ver lo que nos llegue por delante.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 23<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/github-ya-es-mas-que-un-servicio-para-programadores/">#github ya es más que un servicio para programadores</a></h3>
+        </header>
+        <section>
+            
+                <p>En una lectura veraniega el <a href="http://www.newyorker.com/online/blogs/elements/2013/08/the-software-that-builds-software.html">New Yorker repasaba la peque&ntilde;a historia de Github</a>, que a su vez es la peque&ntilde;a historia de la colaboración en el desarrollo de aplicaciones, ya que Git surge de la necesidad de los desarrolladores de Linux por tener una herramienta que se adaptara mejor a su forma de trabajar, y en especial al número y organización de los programadores.</p><!--more-->
+<h2>Del servicio al entorno social</h2><br />
+Y lo cierto es que Github ha evolucionado. Aunque ya existen servicios para gestionar el código como <a href="http://sourceforge.net/">Sourceforge</a> o <a href="http://code.google.com/">Google Code</a>, Github ha conseguido capitalizar a la comunidad de desarrolladores. La facilidad para clonar, <em>forkear</em> y documentar las aplicaciones, generar documentación de la aplicación, entre otros; todas estas utilidades han facilitado el ascenso de github.</p>
+<p>También es posible seguir (watch) un proyecto, marcar un repositorio como favorito, identificar el origen de los forks, comentar los cambios y proporcionar ejemplos (Gists), por lo que Github aglutina lo que es importante en un proyecto (comunicar, compartir y colaborar) con lo que lo hace social (la visibilidad para otros, su feedback y su ayuda).</p>
+<p>Pero no hay que descartar otra vertiente: Github se puede llegar a convertir en una especie de&nbsp;<em>LinkedIn</em>&nbsp;o el CV del desarrollo.&nbsp;Este último paso, el profesional, es también digno de seguir. A su vez existen voces críticas con la visión de que <a href="https://blog.jcoglan.com/2013/11/15/why-github-is-not-your-cv/">Github no es tu CV</a>, derivadas del hecho que el <a href="http://ashedryden.com/blog/the-ethics-of-unpaid-labor-and-the-oss-community">Open Source es mano de obra gratuita</a>&nbsp;y las <a href="http://java.dzone.com/articles/hiring-indicators-oss-and">réplicas matizando la inutilidad de GitHub</a>. Es un debate abierto que no tiene pinta de cerrarse en breve.</p>
+<h2>Del servicio a la metodología</h2><br />
+El siguiente paso es el que merece más atención, porque sale del contexto del desarrollo. Se trata de utilizar Github com una herramienta de propósito general, algo que puedes&nbsp;<em>conectar</em> a tu procesador de textos y usarlo para redactar un manual, o simplemente un documento. &nbsp;Github ya permite soportar la generación de páginas para el repositorio sitio, y en realidad existe una cantidad importante de repositorios que son también manuales, tutoriales o recopilaciones de buenas prácticas, consejos, etc.</p>
+<p>Es decir, &iquest;Github a medio camino entre un interfaz para Git, y un google drive básico? Pues no tan básico: Github ya permite <a href="https://help.github.com/articles/rendering-csv-and-tsv-data">editar datos CSV directamente desde su entorno</a>. Y probablemente se vayan sumando más utilidades del mismo estilo, para así facilitar la entrada a usuarios no-programadores.</p>
+<p>Pero el paso más llamativo es el de&nbsp;<a href="http://government.github.com/"><em>Github and Government</em></a>, un proyecto que aspira a facilitar y catalizar las iniciativas de Open Government proporcionando un entorno de colaboración con las herramientas del propio Github. &iquest;Y cómo va a funcionar esto? Pues quizá Clay Shirky tenga algo que explicarnos en este video, sobre cómo se podría redactar leyes utilizando herramientas de desarrollo de aplicaciones de software (y en concreto, Git):</p>
+<p>[ted id=1546]</p>
+<p>Me encanta cómo expone este hombre, para qué negarlo. Espero que os guste y os inspire igualmente.</p>
+<p>&iexcl;Felices fiestas!</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 22<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/enlaces-2013-51/">Enlaces 2013-51</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li><a href="http://eyeseast.github.io/visible-data/2013/08/26/responsive-d3/">Responsive maps con D3</a>.</li></p>
+<p><li>Sobre <a href="http://tecnologia.elpais.com/tecnologia/2013/11/11/actualidad/1384185785_914526.html">el ritmo que lleva BitCoin</a>.</li></p>
+<p><li>Multitud de <a href="http://www.pbs.org/idealab/2013/05/lessons-from-the-school-of-data-journalism-125/">recursos de interés para data driven journalism</a>.</li></p>
+<p><li>Nociones básicas sobre <a href="http://tech.i.tv/09-17-2013/dependency-injection-in-nodejs/">inyección de dependencias en NodeJS</a>.</li><br />
+&lt;/ul&gt;<br />
+Una presentación de Roca Salvatella que me ha gustado sobre estrategias de negocio utilizando las redes:&lt;/p&gt;<!--more--></p>
+<p><iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/26468420" height="356" width="427" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<div style="margin-bottom: 5px;"><strong> <a title="Estrategias de negocio utilizando las redes - Colombia 3.0" href="https://es.slideshare.net/RocaSalvatella/colombia-30-26468420" target="_blank">Estrategias de negocio utilizando las redes - Colombia 3.0</a> </strong> from <strong><a href="http://www.slideshare.net/RocaSalvatella" target="_blank">Roca Salvatella</a></strong></div></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 19<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/aprender-y-ensenar-visualizacion-de-la-informacion/">Aprender y ense&amp;ntilde;ar visualización de la información</a></h3>
+        </header>
+        <section>
+            
+                <p>A pesar de ser una especie cuyo valor diferencial está en su capacidad para transmitir información verbalmente, a menudo da la sensación que las metodologías de aprendizaje aún distan de ser eficientes. &nbsp;Sin bajar a la realidad de las políticas educativas, las técnicas pedagógicas se enfrentan a un reto importante: cómo transmitir los conceptos, procesos y criterios a un público heterogéneo.</p><!--more-->
+<p>Este punto es especialmente importante cuando tratamos áreas de conocimiento relativamente nuevas, como es el caso de la visualización de la información. Claro que sus ingredientes principales no son nuevos, pero la forma como se combinan sí lo son, y aún es pronto para saber las&nbsp;<em>recetas</em> que facilitan una visualización adecuada.</p>
+<p>Y entonces, &iquest;Cómo podemos aprender y/o ense&ntilde;ar a visualizar datos? Hay varios recursos al respecto:</p>
+<ul>
+<li>En <a href="http://fellinlovewithdata.com/reflections/teach-visualization">Fell in love with Data comentan la mejor manera de ense&ntilde;ar</a>.</li>
+<li>En <a title="Visualising data - Response to: &lsquo;What&rsquo;s the best way to teach visualization?&rsquo;" href="http://www.visualisingdata.com/index.php/2013/07/response-to-whats-the-best-way-to-teach-visualization/">Visualising data dan una respuesta a la pregunta</a>.</li>
+<li><a href="http://www.thefunctionalart.com/p/instructors-guide.html">Alberto Cairo proporciona una guía</a> sobre los materiales que utiliza para la formación.</li><br />
+</ul><br />
+Hago un resumen de los puntos que me han parecido más interesantes.</p>
+<h2>Aprender visualización después de haber aprendido visualización</h2><br />
+Resumiendo lo comentado</p>
+<ul>
+<li><strong>Trabajar con los datos</strong>: Como en cualquier actividad fuertemente basada en la técnica (que no tecnología), la experiencia con los datos se basa en trabajar con ellos. Puedes buscar repositorios sobre datos que te interesen, para a&ntilde;adir aliciente a tus análisis. Parte de ese proceso implica aprender y reforzar las técnicas, y a la vez las tecnologías asociadas. La otra opción</li>
+<li><strong>Buscar opiniones de terceros</strong>: Como contrapunto, después del esfuerzo por mejorar personalmente, es importante mostrar nuestros resultados a otros ojos. Las opiniones de los demás, salvo excepciones, aportan información sobre la dirección en la que mejorar.</li>
+<li><strong>Leer más</strong>: Después del proceso anterior, vale la pena (re)leer y buscar respuestas que otros han dado a las preguntas que te planteas.</li><br />
+</ul></p>
+<h2>Después de aprender, &iquest;Cómo ense&ntilde;ar?</h2><br />
+Aunque en este punto se está enfocando a ense&ntilde;ar a profesionales, algunos de los aspectos son válidos para&nbsp;fines didácticos hacia el público en general.</p>
+<ul>
+<li><strong>Iteraciones en el desarrollo de materiales</strong>: Como en cualquier disciplina inmadura, ense&ntilde;ar visualización de la información tiene menos paradigmas, y por ello requiere más adaptación al público, tema y objetivos. Es por ello que los materiales didácticos variarán en más grado.</li>
+<li><strong>Linearidad en la exposición</strong>: Como oposición a lo anterior, la exposición debe ser linear para evitar las máximas dudas, ineficiencias. A pesar de ello debe acomodar la incertidumbre, creatividad y experimentación.</li>
+<li><strong>Craft vs. instructional</strong>: Buscar el balance entre los principios y reglas, y lo hecho a medida.</li>
+<li><strong>Convicciones</strong>: De lo anterior se deduce algo importante: para afrontar las novedades, los alumnos deben desarrollar sus propias convicciones, más allá de lo que gusta o no. Se trata de que identifiquen los atributos que les conducen a esa opinión.</li>
+<li><strong>Elecciones</strong>: Provocar que los alumnos tomen decisiones como actitud natural, y con sentido.</li>
+<li><strong>Variedad</strong>: El público objetivo al que se dirige esa formación contará con una gran variedad de perfiles, desde tecnológicos hasta artísticos. Ningún estándar encaja en esta variedad, hay que ajustar y personalizar.</li>
+<li><strong>Herramientas y tecnología</strong>: Las herramientas evolucionan, por lo que importa es que sus usuarios tengan la habilidad para sacarles partido.</li><br />
+</ul></p>
+<h2>Lo que sabemos y lo que nos queda por descubrir</h2><br />
+No existe la <a title="Eager eyes - Perfect visualization" href="http://eagereyes.org/blog/2013/perfect-visualization">visualización perfecta</a>&nbsp;y por ello se trata de adecuar las técnicas que conocemos al caso que se nos presenta. Ese grado de adecuación puede ser automatizado hasta un cierto grado, para convertirse en parte de una metodología, o más aún de un algoritmo.</p>
+<p>Pero en cuanto el número de dimensiones de los datos aumenta, las posibilidades también lo hacen, y es cuando más importante resulta mantener el foco en lo que estamos intentando comunicar, sintetizar, responder.</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 15<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/enlaces-de-interes-2013-50/">Enlaces de interés 2013-50</a></h3>
+        </header>
+        <section>
+            
+                <p><ul></p>
+<p><li>Acceso a un PDF sobre <a href="http://kar.kent.ac.uk/21931/1/display_models-ways_roberts.pdf">Sistemas de clasificación de gráficos</a>, parcialmente basado en la semiología de los gráficos de Bertin.</li></p>
+<p><li>En un plano más técnico, <a href="http://do.minik.us/blog/oecd-bli-tech">técnicas para desarrollar gráficos con animaciones rápidas en HTML5</a> en el blog de Dominikus Baur.</li></p>
+<p><li>Un análisis interesante sobre <a href="https://blog.twitter.com/2013/new-tweets-per-second-record-and-how">el proceso de Twitter para adaptar su arquitectura a su crecimiento</a>.</li></p>
+<p><li><a title="38 Tools For Beautiful Data Visualisations | Elisa DBI" href="http://www.elisa-dbi.co.uk/blog/38-tools-for-beautiful-data-visualisations/">38 herramientas para visualización de datos</a>.</li></p>
+<p><li>Sobre países y su actividad:</p>
+<p><ul></p>
+<p><li>&iquest;<a href="http://atlas.media.mit.edu/explore/tree_map/net_import/usa/all/show/2010/">Qué exporta Estados Unidos</a>?</li></p>
+<p><li>Y en Estados Unidos, <a href="http://www.beehivemedia.com/dataviz/hospitalpricing/">&iquest;cuánto pagarías por una intervención, dependiendo del centro médico?</a></li></p>
+<p><li>En Australia, &iquest;<a href="http://www.theguardian.com/news/datablog/interactive/2013/aug/28/australian-migration-refugees-map?view=desktop">De dónde vienen los trabajadores con capacitación</a>?</li></p>
+<p><li><a href="http://www.census.gov/dataviz/visualizations/055/">Un siglo de pirámides poblacionales en América</a>.</li><br />
+&lt;/ul&gt;<br />
+&lt;/li&gt;&lt;/p&gt;<!--more--></p>
+<p><li><a href="http://datascience101.wordpress.com/2013/08/26/7-important-data-science-papers/">7 Papers importantes</a> en&nbsp;<a title="Donde pone estadístico, lea usted Data Scientist" href="http://www.sopadebits.com/donde-pone-estadistico-lea-usted-data-scientist"><em>Data Science</em></a>.</li><br />
+&lt;/ul&gt;<br />
+Y la imagen, que <a href="http://www.spiegel.de/politik/deutschland/bundestagswahl-2013-wahlergebnis-grafik-bundestag-wahlkreis-a-923496.html#startTab=1">publicó Der Spiegel</a> después de las elecciones alemanas de este pasado Septiembre: Alemania aún sigue [ideológicamente] dividida. &nbsp;Un <a title="Indicadores: El ajo dorado" href="http://www.sopadebits.com/indicadores-el-ajo-dorado">indicador</a>: los votos que recibió Die Linke por cada municipio. A la izquierda se puede ver en rojo la parte de Alemania oriental (fuente: <a href="http://en.wikipedia.org/wiki/File:Soviet_Sector_Germany.png">Wikipedia</a>). A la derecha, los votos obtenidos por Die Linke (el partido Comunista) en las elecciones de este a&ntilde;o.&lt;/p&gt;</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/12/nHNNIvW.png"><img class="wp-image-27529 alignleft" alt="Votos de Die Linke" src="http://www.sopadebits.com/wp-content/uploads/2013/12/nHNNIvW-781x1024.png" width="351" height="460" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://www.sopadebits.com/wp-content/uploads/2013/12/Soviet_Sector_Germany.png"><img alt="Soviet_Sector_Germany" src="http://www.sopadebits.com/wp-content/uploads/2013/12/Soviet_Sector_Germany.png" width="411" height="333" /></a></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 12<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/predecir-disturbios-con-modelos-matematicos/">Predecir disturbios con modelos matemáticos</a></h3>
+        </header>
+        <section>
+            
+                <p>Vía <a href="http://flowingdata.com/2013/07/18/predicting-riots/">flowingdata</a> leí hace meses que un grupo de investigadores han analizado los disturbios de Londres en 2011, para destilar un <a href="http://www.nature.com/srep/2013/130221/srep01303/full/srep01303.html">modelo matemático de predicción de tales disturbios</a>.</p><!--more-->
+<p>Aunque se pone hincapié en la parte matemática del estudio, hay que destacar también la base teórica de ciencias sociales que se aplica para dar cuerpo a ese modelo. En este caso, la sociología permite acotar el enfoque del modelo y darle más sentido.</p>
+<p>Para resumir algunos de los puntos interesantes:</p>
+<ul>
+<li>La distancia a la que se desplazan los responsables de los disturbios sigue el mismo modelo matemático que la distancia que recorren compradores para ir a los centros comerciales. Esto explica el por qué algunas áreas de las ciudades quedaron prácticamente devastadas mientras que otras se mantuvieron intactas.</li>
+<li>El proceso de los disturbios es iterativo, y responde a un esquema de <a title="Ecuaciones de Lotka Volterra / Presa-depredador" href="http://es.wikipedia.org/wiki/Ecuaciones_Lotka%E2%80%93Volterra">presa-depredador</a>, por lo que a mayor presencia de policía menores disturbios, que a su vez se dispersan por otras áreas.</li>
+<li>El aumento de masa crítica de participantes en los disturbios tiene un comportamiento viral, potenciado especialmente por los mensajes de texto.</li>
+<li>La semilla para que todo este proceso surja y crezca hay que buscarlo en zonas con altos niveles de pobreza y paro, a la vez que con déficit de escolarización.</li><br />
+</ul><br />
+En el siguiente video se puede ver una explicación de Hannah Fry, &nbsp;coautora del estudio. Creo que salvo en la parte final de la explicación, está muy centrado en explicar cómo el modelo puede ser de utilidad para la policía, y poco en explicar cómo las causas originales de los disturbios inciden en su proliferación. Pero al fin y al cabo, lo primero es el objeto del estudio.</p>
+<p><iframe src="//www.youtube.com/embed/cY5iARq0nCc" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+    
+    <div class="col-xs-12">
+        <header>
+            <p class="alert alert-info text-center pull-right">
+                dic. 11<br/>
+                2013
+            </p>
+            <h3><a href="../../../blog/magento-iteracion-con-muchos-modelos/">Magento: cómo iterar más agilmente sobre una colección extensa de modelos</a></h3>
+        </header>
+        <section>
+            
+                <p>Una de las primeras cuestiones que se encuentra un programador en Magento es que es necesario ser estricto en el uso de los recursos (memoria y CPU), ya que en caso contrario es fácil quedarse sin memoria.</p><!--more-->
+<p>Una de las situaciones típicas en este proceso son el manejo de colecciones de productos. &nbsp;La carga de una página de categoría que contenga una docena de productos no es un problema, pero sí lo es cuando queremos procesar centenares o miles de productos en bloque. &nbsp;En ese caso, no es extra&ntilde;o acabar viendo un mensaje como éste:</p>
+<blockquote>
+<pre>Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 49 bytes) in ... on line ...</pre><br />
+</blockquote><br />
+La primera reacción, la más natural, es aumentar la memoria. Pero eso no es una solución ni ayuda a entender el funcionamiento de Magento. Además, lo que hoy son 128 MB, ma&ntilde;ana es el doble, y así va creciendo.</p>
+<h2>Uso de Mage::getModel()->getCollection()</h2><br />
+La forma <em>clásica</em>&nbsp;en Magento de recopilar un conjunto de modelos es utilizando getCollection(), para luego definir los atributos a recuperar, los filtros de la consulta, joins, el límite y el offset. Más sobre esto en otro artículo.</p>
+<p>Finalmente, se realiza la llamada al método&nbsp;<em>load()</em>, que es el método que ejecuta realmente la consulta contra el servidor. En ese momento tenemos todos los modelos (que son instancias de la clase modelo correspondiente) en memoria, con todo lo que ello implica:</p>
+<pre class="brush: php; gutter: true">Mage::getModel("catalog/product")<br />
+  ->getCollection()<br />
+  ->addAttributeToSelect(&#039;sku&#039;)<br />
+  ->setPage(1)<br />
+  ->setPageSize(10)<br />
+  ->load();</pre><br />
+Aunque esta aproximación es factible para consultas con límites no muy largos, el incremento en el número de productos recuperados dispara el uso de memoria. Lo que sucede es que para cada ítem, Magento genera una instancia del objeto del modelo, y eso implica instanciaciones, relaciones con otras clases, &nbsp;y al fin y al cabo mucha más memoria de la necesaria para lo que ocupan los datos.</p>
+<h2>Uso del iterador</h2><br />
+Por suerte para los que no siempre necesitamos ese volumen de información, Magento proporciona el&nbsp;<em>Resource Iterator</em>. El archivo implicado se encuentra en app/code/core/Mage/Core/Model/Resource/Iterator.php, y podrás ver que es bastante sencillo. En concreto, el método que nos interesa (walk) contiene el siguiente código:</p>
+<pre class="brush: php; gutter: true">    public function walk($query, array $callbacks, array $args=array(), $adapter = null)<br />
+    {<br />
+        $stmt = $this->_getStatement($query, $adapter);<br />
+        $args[&#039;idx&#039;] = 0;<br />
+        while ($row = $stmt->fetch()) {<br />
+            $args[&#039;row&#039;] = $row;<br />
+            foreach ($callbacks as $callback) {<br />
+                $result = call_user_func($callback, $args);<br />
+                if (!empty($result)) {<br />
+                    $args = array_merge($args, $result);<br />
+                }<br />
+            }<br />
+            $args[&#039;idx&#039;]++;<br />
+        }<br />
+        return $this;<br />
+    }</pre><br />
+Lo que hace este método es cargar la lista de modelos de la colección, uno por uno, y para cada cual ejecuta la (o las!) $callbacks que se han enviado. &nbsp;A cada una de las callbacks se le envía la lista de argumentos $args.</p>
+<p>Ojo también al detalle en el interior if (!empty($result)) {...}, porque es interesante. &nbsp;Si enviamos más de una función de callback, la segunda función puede recibir el valor retornado por la primera, y la tercera lo retornado por la segunda, y así hasta el final. &nbsp;Esto nos permite trabajar en operaciones muy atomizadas (como siempre, sin abusar).</p>
+<p>También es interesante comprobar que el contenido recuperado de la base de datos se a&ntilde;ade al array $args dentro del índice 'row', por lo que los datos retornados del registro estarán en $args['row']. &nbsp;También es interesante darse cuenta que los datos recuperados por&nbsp;<em>fetch</em> ya no son un objeto, sino un Array, por lo que todo lo que rodea al objeto&nbsp;<em>modelo</em> queda al margen de esta operativa.</p>
+<p>Bueno pues, dicho esto, &iquest;cómo llamamos al iterador? Con una peque&ntilde;a diferencia respecto a antes: dejamos de lado <em>load()</em> y utilizaremos <em>getSelect()</em>. Tomando como base la consulta anterior, puedes quitar los límites</p>
+<pre class="brush: actionscript3; gutter: true">$productos = Mage::getModel("catalog/product")<br />
+  ->getCollection()<br />
+  ->addAttributeToSelect(&#039;sku&#039;);</pre></p>
+<pre>Mage::getSingleton(&#039;core/resource_iterator&#039;)-&amp;gt;walk($productos-&amp;gt;<strong>getSelect()</strong>, <a href="http://www.php.net/array" target="_blank" shape="rect">array</a>(&#039;funcionCallback&#039;), <a href="http://www.php.net/array" target="_blank" shape="rect">array</a>(&#039;arg1&#039; =&amp;gt; &#039;nombredemitienda&#039;, &#039;arg2&#039; =&amp;gt; &#039;idioma de la tienda&#039;, ...));</pre><br />
+Bien, entonces &iquest;ya estamos? No. Es necesario disponer de la función&nbsp;<em>funcionCallback</em>, que es a la que se llamará para cada producto. &nbsp;Esta función debería tener la forma siguiente y puede tener una forma tan sencilla como:</p>
+<pre class="brush: php; gutter: true">function funcionCallback($args) {<br />
+    print_r($args);<br />
+}</pre><br />
+Com esto puedes ver el contenido de la matriz $args.</p>
+<p>Pero por lo comentado arriba, podemos enviar más callbacks, y también podemos enviar callbacks a métodos de este objeto u otros. &nbsp;Para cada caso, las llamadas serían:</p>
+<ul>
+<li>Una llamada a un método del propio objeto: array(array($this, 'nombreDelMetodo'))</li>
+<li>Varias llamadas a métodos del propio objeto: array(array($this, 'metodo1'), array($this, 'metodo2))</li>
+<li>Combinación de llamadas a métodos y a funciones básicas: array('funcionExterna', array($this, 'metodo1'), array($this, 'metodo2))</li><br />
+</ul></p>
+<h2>Comprobación de las diferencias</h2><br />
+Al ejecutar un proceso de recorrido por los modelos de una colección podrás experimentar dos diferencias notables:</p>
+<ul>
+<li>El volumen de memoria se mantiene estable, que es algo que no siempre sucede cuando se cargan instancias de la clase modelo (más sobre la gestión de memoria en PHP en otro momento).</li>
+<li>Si no es necesario que instancies un objeto (del producto que estás iterando) dentro de las funciones de callback, vas a notar que la velocidad de proceso se dispara en uno o dos órdenes de magnitud. Esto no siempre es posible, porque a veces es necesario guardar los cambios en el producto, pero si consigues evitarlo, verás que la mejora es impresionante.</li><br />
+</ul><br />
+&nbsp;</p>
+<p>&nbsp;</p>
+                <a href=".html">Read more &raquo;</a>
+            
+        </section>
+    </div>
+
+  
+  
+  
+    <div class="row">
+      <div class="pagination col-xs-12 col-xs-offset-6 center-block">
+        
+          <a class="btn btn-primary" href="../../page/22/"><span class="fa fa-fast-backward"></span></a>
+          <a class="btn btn-primary" href="../../../blog/page/9/"><span class="fa fa-step-backward"></span></a>
+        
+        
+          <a class="btn btn-secondary" href="#">8</a>
+        
+        
+          <a class="btn btn-primary" href="../../../blog/page/7/"><span class="fa fa-step-forward"></span></a>
+        
+        
+          <a class="btn btn-primary" href="../../"><span class="fa fa-fast-forward"></span></a>
+        
+      </div>
+    </div>
+  
+
+
+        </div>
+        <div class="col-xs-12 col-md-10 col-md-offset-2">
+          
+        </div>
+        <div class="col-xs-12 col-md-offset-2">
+          <p class="alert text-center">
+            &copy; 2007 and beyond Mario Alberich, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> unless stated otherwise.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(
+      function (){
+        $.cookieCuttr();
+      }
+    );
+    </script>
+    
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3459440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/cookiecuttr/jquery.cookiecuttr.js" type="text/javascript"></script>
+    <script src="/static/js/cookiecuttr/js.cookie.js"></script>
+  </body>
+</html>
