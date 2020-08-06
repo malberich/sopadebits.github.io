@@ -1,0 +1,57 @@
+{
+  "title":{
+    "text":"Nube de puntos y recta Y=0",
+    "style":"{font-size: 20px;}"
+  },
+
+  "y_legend":{
+    "text":"Demo OFC2",
+    "style":"{font-size: 14px; color:#736AFF;}"
+  },
+  "y_axis":
+  {
+    "max":   50,
+    "stroke":   1,
+    "tick-length": 5
+  },
+  "x_axis":
+  {
+    "steps": 1,
+    "tick-height": 10,
+    "tick-length": 10,
+    "labels": ["A","B","C","D","E","F","G"]
+  },
+  "elements":
+  [ 
+    {
+      "type": "scatter",
+      "colour": "#0000FF",
+      "dot-size": 3,
+      "values": 
+      [
+        { "x": "1.00", "y": "3.00" }, 
+        { "x": "-1.00", "y": "-2.00" }, 
+        { "x": "2.00", "y": "6.00" }, 
+        { "x": "5.00", "y": "8.00" }, 
+        { "x": "6.00", "y": "3.00" }, 
+        { "x": "4.00", "y": "1.00" }
+      ] 
+    },
+    {
+      "type": "scatter_line",
+      "colour": "#FF0000",
+      "dot-size": 3,
+      "values": 
+      [
+        { "x": "-1.00","y": "0.00" }, 
+        { "x": "0.00", "y": "0.00" },
+        { "x": "1.00", "y": "0.00" }, 
+        { "x": "2.00", "y": "0.00" }, 
+        { "x": "3.00", "y": "0.00" }, 
+        { "x": "4.00", "y": "0.00" }, 
+        { "x": "5.00", "y": "0.00" },
+        { "x": "6.00", "y": "0.00" }
+      ]
+    } 
+  ], "title": { "text": "Mon Mar 09 2009" }, "x_axis": { "min": -1, "max": 12 }, "y_axis": { "min": -1, "max": 12 } }
+}
