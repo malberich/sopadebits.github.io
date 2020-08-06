@@ -1,5 +1,6 @@
 {% from "macros/badges.html" import render_badges %}
 {% from "macros/pagination.html" import render_pagination %}
+{% from "macros/_ga.html" import render_ga %}
 {% from "macros/site_categories.html" import render_site_categories %}
 {% from "macros/site_tags.html" import render_site_tags %}
 <!DOCTYPE html>
@@ -101,6 +102,7 @@
       }
     );
     </script>
+    {{ render_ga() }}
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap/bootstrap.min.js"></script>
     <script src="/static/js/search.min.js" type="text/javascript" charset="utf-8"></script>
